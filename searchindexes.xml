@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<search>
+  
+  <entry>
+    <title>欢迎加入 VxWorks 俱乐部！</title>
+    <url>/post/welcome-to-vxworks-club/</url>
+    <categories><category>Announce</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>WindRiver</tag>
+    </tags>
+    <content type="html"><![CDATA[欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
+免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
+欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux 进程概念: 冯 • 诺依曼体系结构</title>
+    <url>/post/linux/linux-process-concept-von-neumann-architecture.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Process</tag>
+      <tag>Von Neumann Architecture</tag>
+    </tags>
+    <content type="html"><![CDATA[在 1945 年冯诺依曼和其他计算机科学家们提出了计算机具体实现的报告，其遵循了[图灵机]的设计，而且还提出用电子元件构造计算机，并约定了用二进制进行计算和存储。
+冯诺依曼体系结构 冯诺依曼体系，最重要的是定义计算机基本结构为 5 个部分，分别是[运算器]、控制器、存储器、输入设备、输出设备，这 5 个部分也被称为冯诺依曼模型。
+下图为冯 • 诺依曼体系结构流程图：
+运算器、控制器是在中央处理器里的，存储器就是我们常见的内存，输入输出设备则是计算机外接的设备，比如键盘就是输入设备，显示器就是输出设备。 
+我们常见的计算机，如笔记本。我们不常见的计算机，如服务器，大部分都遵守冯诺依曼体系，截至目前，我们所认识的计算机，都是有一个个的硬件组件组成。
+存储单元和输入输出设备要与中央处理器打交道的话，离不开总线。所以，它们之间的关系如下图：
+接下来，分别介绍内存、中央处理器、总线、输入输出设备。
+输入、输出设备 输入设备向计算机输入数据，计算机经过计算后，把数据输出给输出设备。  常见的输入和输出设备有：
+ 输入设备：键盘，话筒，摄像头，磁盘，网卡等等… 输出设备：显示器，音响，磁盘，网卡，显卡等等…  注意：同种设备在不同场景下可能属于输入设备，也可能属于输入设备。
+中央处理器 中央处理器也就是我们常说的 CPU，它是由运算器和控制器组成。
+CPU 内部还有一些组件，常见的有寄存器、控制单元 和 逻辑运算单元 等。其中，控制单元负责控制 CPU 工作，逻辑运算单元负责计算，而寄存器可以分为多种类，每种寄存器的功能又不尽相同。
+CPU 中的寄存器主要作用是存储计算时的数据，你可能好奇为什么有了内存还需要寄存器？原因很简单，因为内存离 CPU 太远了，而寄存器就在 CPU 里，还紧挨着控制单元和逻辑运算单元，自然计算时速度会很快。
+常见的寄存器种类：
+ 通用寄存器，用来存放需要进行运算的数据，比如需要进行加和运算的两个数据。 程序计数器，用来存储 CPU 要执行下一条指令「所在的内存地址」，注意不是存储了下一条要执行的指令，此时指令还在内存中，程序计数器只是存储了下一条指令「的地址」。 指令寄存器，用来存放当前正在执行的指令，也就是指令本身，指令被执行完成之前，指令都存储在这里。  内存 内存，也就是所谓的存储器。
+我们的程序和数据都是存储在内存，存储的区域是线性的。
+在计算机数据存储中，存储数据的基本单位是字节（byte），1 字节等于 8 位（8 bit）。每一个字节都对应一个内存地址。
+内存的地址是从 0 开始编号的，然后自增排列，最后一个地址为内存总字节数 - 1，这种结构好似我们程序里的数组，所以内存的读写任何一个数据的速度都是一样的。
+思考一个问题： 当我们的体系结构中，有了输入、输出设备和 CPU 以后，就能正常工作了，那么为什么还需要内存呢？
+从技术角度来说 CPU 的运算速度 &gt; &raquo; 寄存器的速度 &gt; &raquo; L1~L3Cache &gt; &raquo; 内存 &gt; &raquo; 外设（磁盘）&gt; &raquo; 光盘磁带
+也就是说，输入设备和输出设备相对于 CPU 来说是非常慢的。
+如果没有内存的话，那么当前这个体系整体呈现出来的就是：输入设备和输出设备很慢，而 CPU 很快。
+相信大家知道木桶原理吧，那么最终整个体系结构所呈现出来的速度将会是很慢的。
+所以，从数据角度出发，外设几乎不和 CPU 打交道，它是直接和内存打交道，CPU 也同样如此。
+进言之，内存在我们看来，就是体系结构的一个大的缓存，用来适配外设和 CPU 速度不均的问题！
+从成本角度来说 既然上面说了内存是用来适配外设和 CPU 速度不均的问题，那么为什么不直接在 CPU 里面开发一个类似于内存的东西呢？
+这个想法可以，但是如果真要去实现的话，那么一台计算机的成本起码得 10W+，而计算机它是蔓延全世界的，也就是说人人都能用得起的！
+寄存器的价格 &gt; &raquo; 内存 &gt; &raquo; 外设 (磁盘)
+所以内存就是方便我们使用较低的成本，获得较高的性能。
+总线 总线是用于 CPU 和内存以及其他设备之间的通信，总线可分为 3 种：   地址总线，用于指定 CPU 将要操作的内存地址； 数据总线，用于读写内存的数据； 控制总线，用于发送和接收信号，比如中断、设备复位等信号，CPU 收到信号后自然进行响应，这时也需要控制总线；  当 CPU 要读写内存数据的时候，一般需要通过下面这三个总线：
+ 首先要通过「地址总线」来指定内存的地址； 然后通过「控制总线」控制是读或写命令； 最后通过「数据总线」来传输数据；  局部性原理 我相信大家应该还有个疑惑：就是，先将输入设备的数据交给内存，再由内存将数据交给 CPU，这个过程真的比 CPU 直接从输入设备获取数据更快吗？
+说明这个问题之前，我们首先需要知道：内存具有数据存储的能力。虽然内存的大小只有 4G/8G，但是既然内存有大小，那么它就有预装数据的能力，而这就是提高该体系结构效率的秘诀。
+这里不得不说到的就是 局部性原理：根据统计学原理，当一个数据正在被访问时，那么下一次有很大可能会访问其周围的数据。所以当 CPU 需要获取某一行数据时，内存可以将该行数据之后的数据一同加载进来，而 CPU 处理数据和内存加载数据是可以同时进行的，这样下次 CPU 就可以直接从内存当中获取数据。
+输出数据的时候也一样，CPU 处理完数据后直接将数据放到内存当中，当输出设备需要时再在内存当中获取即可，这也就有了我们平常所说的缓冲区的概念。
+例如，缓冲区满了才将数据打印到屏幕上，使用 fflush 函数将缓冲区当中的数据直接输出之类的，都是将内存当中的数据直接拿到输出设备当中进行显示输出。
+总结 冯 • 诺依曼体系结构核心原理为：用户输入的数据先放到内存当中，CPU 读取数据的时候就直接从内存当中读取，CPU 处理完数据后又写回内存当中，然后内存再将数据输出到输出设备当中，最后由输出设备进行输出显示。
+我们可以知道，站在硬件角度或是数据层面上，CPU 和外设不能直接交互，而是通过内存，也就是说，所有设备都只能和内存打交道。
+由此可以说明一个问题：为什么程序运行之前必须先加载到内存？
+因为可执行程序（文件）是在硬盘（外设）上的，而 CPU 只能从内存当中获取数据，所以必须先将硬盘上的数据加载到内存，也就是必须先将程序加载到内存。
+数据的流动过程 对冯诺依曼的理解，不能停留在概念上，要深入到对软件数据流理解上。
+从你登录上 QQ 和某位朋友聊天开始，数据的流动过程是怎样的呢？从你打开窗口，开始给他发消息，到他的到消息之后的数据流动过程。
+要使用 QQ，首先需要联网，而你和你的朋友的电脑都是冯诺依曼体系结构，在你向朋友发送消息这个过程中，你的电脑当中的键盘充当输入设备，显示器和网卡充当输出设备，你朋友的电脑当中的网卡充当输入设备，显示器充当输出设备。
+刚开始你在键盘当中输入消息，键盘将消息加载到内存，此时你的显示器就可以从内存获取消息进而显示在你自己的显示器上，此时你就能在你自己的电脑上看到你所发的消息了。
+在键盘将消息加载到内存后，CPU 从内存获取到消息后对消息进行各种封装，然后再将其写回内存，此时你的网卡就可以从内存获取已经封装好的消息，然后在网络当中经过一系列处理（这里忽略网络处理细节）。
+之后你朋友的网卡从网络当中获取到你所发的消息后，将该消息加载到内存当中，你朋友的 CPU 再从内存当中获取消息并对消息进行解包操作，然后将解包好的消息写回内存，最后你朋友的显示器从内存当中获取消息并显示在他的电脑上。
+那么如果是在 QQ 上发送文件呢？
+首先你的文件最开始是在你本地的磁盘上的，先从磁盘上把文件读到内存中，文件里面的东西其实还是数据，把数据再经过 CPU 封装成报文，然后刷新到我们的内存中，定期再经过网卡，把数据刷新到网卡上，然后再发出去。
+传文件的本质就是：两端的磁盘进行通信。 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>40个简单但有效的Linux Shell脚本示例</title>
+    <url>/post/linux/40-simple-and-useful-linux-shell-script.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>shell script</tag>
+    </tags>
+    <content type="html"><![CDATA[历史上，shell一直是类Unix系统的本地命令行解释器。它已被证明是Unix的主要功能之一，并发展成为一个全新的主题。Linux提供了各种功能强大的shell，包括Bash、Zsh、Tcsh和Ksh。这些外壳最令人惊讶的特性之一是其可编程性。创建简单而有效的Linux shell脚本来处理日常工作非常容易。
+Hello World 程序员经常通过学习hello world程序来学习新语言。这是一个简单的程序，将字符串“HelloWorld”打印到标准输出中。然后，使用vim或nano等编辑器创建hello-world.sh文件，并将以下行复制到其中。
+#!/bin/bash echo &#34;Hello World&#34; 保存并退出文件。接下来，您需要使用以下命令使该文件可执行。
+$ chmod a+x hello-world.sh 可以使用以下两个命令中的任何一个来运行此命令。
+$ bash hello-world.sh $ ./hello-world.sh 它将打印出传递给脚本内部回显的字符串。
+使用echo打印 echo命令用于在bash中打印信息。它类似于C函数“printf”，并提供了许多常见选项，包括转义序列和重定向。将以下行复制到名为echo.sh的文件中，并使其可执行，如上所述。
+#!/bin/bash echo &#34;Printing text&#34; echo -n &#34;Printing text without newline&#34; echo -e &#34;\nRemoving \t special \t characters\n&#34; 运行脚本以查看其功能。-e选项用于告诉echo传递给它的字符串包含特殊字符，需要扩展功能。
+使用注释 注释对文档很有用，是高质量代码库的要求。将注释放在处理关键逻辑的代码中是一种常见的做法。要注释掉一行，只需在其前面使用#（hash）字符。例如，请查看下面的bash脚本示例。
+#!/bin/bash  # Adding two values ((sum=25+35)) #Print the result echo $sum 此脚本将输出数字60。首先，在某些行之前使用#检查注释的使用方式。不过，第一行是一个例外。它被称为shebang，让系统知道在运行这个脚本时要使用哪个解释器。
+多行注释 许多人使用多行注释来记录他们的shell脚本。在下一个名为comment.sh的脚本中检查这是如何完成的。
+#!/bin/bash : &#39; This script calculates the square of 5. &#39; ((area=5*5)) echo $area 注意多行注释是如何放置在内部的：“和”字符。
+While循环 while循环构造用于多次运行某些指令。查看以下名为while.sh的脚本，以更好地理解此概念。
+#!/bin/bash #!/bin/bash i=0 while [ $i -le 2 ] do echo Number: $i ((i++)) done 因此，while循环采用以下形式。
+#!/bin/bash while [ condition ] do commands 1 commands n done 方括号周围的空格是必填的。
+For循环 for循环是另一种广泛使用的bashshell构造，它允许用户高效地迭代代码。下面演示了一个简单的示例。
+#!/bin/bash  for (( counter=1; counter&lt;=10; counter++ )) do echo -n &#34;$counter&#34; done printf &#34;\n&#34; 接收用户输入 #!/bin/bash  echo -n &#34;Enter Something:&#34; read something echo &#34;You Entered: $something&#34; If语句 if CONDITION then STATEMENTS fi 只有当条件为真时，才会执行这些语句。fi关键字用于标记if语句的结尾。下面显示了一个快速示例。
+#!/bin/bash  echo -n &#34;Enter a number: &#34; read num if [[ $num -gt 10 ]] then echo &#34;Number is greater than 10.&#34; fi 如果通过输入提供的数字大于10，上述程序将仅显示输出。-gt表示大于；类似地-lt表示小于-le表示小于等于；且-ge表示大于等于。此外，还需要[[]]。
+使用If Else进行更多控制 将else构造与if结合起来，可以更好地控制脚本的逻辑。下面显示了一个简单的示例。
+#!/bin/bash  read n if [ $n -lt 10 ]; then echo &#34;It is a one digit number&#34; else echo &#34;It is a two digit number&#34; fi 其他部分需要放在if的动作部分之后和fi之前。
+使用AND运算符 AND运算符允许我们的程序检查是否同时满足多个条件。由AND运算符分隔的所有部分必须为true。否则，包含AND的语句将返回false。查看下面的bash脚本示例，以更好地了解AND的工作原理。
+#!/bin/bash  echo -n &#34;Enter Number:&#34; read num if [[ ( $num -lt 10 ) &amp;&amp; ( $num%2 -eq 0 ) ]]; then echo &#34;Even Number&#34; else echo &#34;Odd Number&#34; fi AND运算符由&amp;&amp;符号表示。
+使用OR运算符 OR运算符是另一个关键的构造，它允许我们在脚本中实现复杂、健壮的编程逻辑。与AND相反，当OR运算符的任一操作数为真时，由OR运算符组成的语句返回真。仅当由OR分隔的每个操作数为假时，它才返回假。
+#!/bin/bash  echo -n &#34;Enter any number:&#34; read n if [[ ( $n -eq 15 || $n -eq 45 ) ]] then echo &#34;You won&#34; else echo &#34;You lost!&#34; fi 这个简单的示例演示了OR运算符如何在Linuxshell脚本中工作。只有当用户输入数字15或45时，它才会宣布用户为获胜者。||符号表示OR运算符。
+使用El if elif语句代表else if，并为实现链逻辑提供了一种方便的方法。通过评估以下示例，了解elif的工作原理。
+#!/bin/bash  echo -n &#34;Enter a number: &#34; read num if [[ $num -gt 10 ]] then echo &#34;Number is greater than 10.&#34; elif [[ $num -eq 10 ]] then echo &#34;Number is equal to 10.&#34; else echo &#34;Number is less than 10.&#34; fi 上面的程序是不言自明的，所以我们不会逐行剖析它。相反，更改脚本中的变量名称和值等部分，以检查它们如何一起工作。
+case 条件 switch构造是Linux bash脚本提供的另一个强大功能。它可以用于需要嵌套条件的地方，但不希望使用复杂的if-else elif链。看看下一个例子。
+#!/bin/bash  echo -n &#34;Enter a number: &#34; read num case $num in 100) echo &#34;Hundred!!&#34; ;; 200) echo &#34;Double Hundred!!&#34; ;; *) echo &#34;Neither 100 nor 200&#34; ;; esac 条件写在case和esac关键字之间。*）用于匹配除100和200以外的所有输入。
+命令行参数 在许多情况下，直接从命令shell获取参数是有益的。下面的示例演示了如何在bash中执行此操作。
+#!/bin/bash echo &#34;Total arguments : $#&#34; echo &#34;First Argument = $1&#34; echo &#34;Second Argument = $2&#34; 运行此脚本时，在其名称后添加两个附加参数。我将其命名为test.sh，调用过程概述如下。
+$ ./test.sh Hey Howdy 因此，$1用于访问第一个参数，$2用于访问第二个参数，依此类推。最后，$#用于获取参数总数。
+使用名称获取参数 下面的示例显示了如何获取带有名称的命令行参数。
+#!/bin/bash  for arg in &#34;$@&#34; do index=$(echo $arg | cut -f1 -d=) val=$(echo $arg | cut -f2 -d=) case $index in X) x=$val;; Y) y=$val;; *) esac done ((result=x+y)) echo &#34;X+Y=$result&#34; 将此脚本命名为test.sh，并按如下所示调用它。
+$ ./test.sh X=44 Y=100 它应该返回X+Y=144。这里的参数存储在“$@”中，脚本使用Linuxcut命令获取它们。
+连接字符串 字符串处理对于广泛的现代bash脚本来说非常重要。值得庆幸的是，它在bash中更加舒适，并允许以更精确、简洁的方式实现这一点。请参见下面的示例，了解bash字符串连接。
+#!/bin/bash  string1=&#34;Ubuntu&#34; string2=&#34;Pit&#34; string=$string1$string2 echo &#34;$stringis a great resource for Linux beginners.&#34; 字符串截取 与许多编程语言不同，bash不提供任何用于剪切字符串部分的内置函数。然而，下面的示例演示了如何使用参数展开来实现这一点。
+#!/bin/bash Str=&#34;Learn Bash Commands from UbuntuPit&#34; subStr=${Str:0:20} echo $subStr 该脚本应打印出“学习Bash命令”作为其输出。参数展开形式为${VAR_NAME:S:L}。这里，S表示起始位置，L表示长度。
+使用cut 做截取 可以在脚本中使用Linux cut命令来截取字符串的一部分，也就是子字符串。下一个示例显示了如何做到这一点。
+#!/bin/bash Str=&#34;Learn Bash Commands from UbuntuPit&#34; #subStr=${Str:0:20} subStr=$(echo $Str| cut -d &#39; &#39; -f 1-3) echo $subStr 添加两个值 在Linux shell脚本中执行算术运算非常容易。下面的示例演示了如何从用户接收两个数字作为输入并将它们相加。
+#!/bin/bash echo -n &#34;Enter first number:&#34; read x echo -n &#34;Enter second number:&#34; read y (( sum=x+y )) echo &#34;The result of addition=$sum&#34; 如您所见，在bash中添加数字相当简单。
+添加多个值 您可以使用循环获取多个用户输入并将其添加到脚本中。以下示例显示了这一点。
+#!/bin/bash sum=0 for (( counter=1; counter&lt;5; counter++ )) do echo -n &#34;Enter Your Number:&#34; read n (( sum+=n )) #echo -n &#34;$counter &#34; done printf &#34;\n&#34; echo &#34;Result is: $sum&#34; 但是，省略(())将导致字符串串联而不是相加。所以，在你的程序中检查类似的情况。
+Bash中的函数 与任何编程方言一样，函数在Linux shell脚本中扮演着重要角色。它们允许管理员创建自定义代码块以供频繁使用。下面的演示将概述函数如何在Linux bash脚本中工作。
+#!/bin/bash function Add() { echo -n &#34;Enter a Number: &#34; read x echo -n &#34;Enter another Number: &#34; read y echo &#34;Adiition is: $(( x+y ))&#34; } Add 这里我们像以前一样添加了两个数字。但在这里，我们使用了一个名为Add的函数来完成这项工作。因此，每当您需要再次添加时，只需调用此函数，而不必再次编写该部分。
+具有返回值的函数 最神奇的功能之一是允许数据从一个函数传递到另一个函数。它在各种场景中都很有用。查看下一个示例。
+#!/bin/bash  function Greet() { str=&#34;Hello $name, what brings you to UbuntuPit.com?&#34; echo $str } echo &#34;-&gt; what&#39;s your name?&#34; read name val=$(Greet) echo -e &#34;-&gt; $val&#34; 这里，输出包含从Greet（）函数接收的数据。
+从Bash脚本创建目录 使用shell脚本运行系统命令的能力使开发人员的工作效率大大提高。下面的简单示例将向您展示如何在shell脚本中创建目录。
+#!/bin/bash echo -n &#34;Enter directory name -&gt;&#34; read newdir cmd=&#34;mkdir $newdir&#34; eval $cmd 该脚本只需调用标准shell命令mkdir，并在仔细查看时将目录名传递给它。这个程序应该在文件系统中创建一个目录。您还可以传递命令以在backticks（“）内部执行，如下所示。
+`mkdir $newdir` 确认存在后创建目录 如果当前工作目录中已包含同名文件夹，则上述程序将无法运行。例如，下面的程序将检查是否存在名为$dir的文件夹，如果找不到，则只创建一个。
+#!/bin/bash echo -n &#34;Enter directory name -&gt;&#34; read dir if [ -d &#34;$dir&#34; ] then echo &#34;Directory exists&#34; else `mkdir $dir` echo &#34;Directory created&#34; fi 使用eval编写此程序以提高bash脚本编写技能。 读取文件 Bash脚本允许用户非常有效地读取文件。下面的示例将展示如何使用shell脚本读取文件。首先，创建一个名为editors.txt的文件，其中包含以下内容。
+1. Vim 2. Emacs 3. ed 4. nano 5. Code 此脚本将输出上述5行中的每一行。
+#!/bin/bash file=&#39;editors.txt&#39; while read line; do echo $line done &lt; $file 删除文件 以下程序将演示如何在Linux shell脚本中删除文件。程序将首先要求用户提供文件名作为输入，如果文件名存在，则将其删除。Linux rm命令在此处执行删除操作。
+#!/bin/bash echo -n &#34;Enter filename -&gt;&#34; read name rm -i $name 让我们输入editors.txt作为文件名，并在要求确认时按y。它应该删除该文件。
+附加到文件 下面的shell脚本示例将向您展示如何使用bash脚本将数据附加到文件系统上的文件。它向早期的editors.txt文件添加了一行。
+#!/bin/bash echo &#34;Before appending the file&#34; cat editors.txt echo &#34;6. NotePad++&#34; &gt;&gt; editors.txt echo &#34;After appending the file&#34; cat editors.txt 现在您应该注意到，我们直接从Linux bash脚本使用日常终端命令。
+测试文件存在 下一个shell脚本示例显示如何检查bash程序中文件的存在。
+#!/bin/bash filename=$1 if [ -f &#34;$filename&#34; ]; then echo &#34;File exists&#34; else echo &#34;File does not exist&#34; fi 我们直接从命令行传递文件名作为参数。
+从Shell脚本发送邮件 从bash脚本发送电子邮件非常简单。下面的简单示例将演示一种从bash应用程序执行此操作的方法。
+#!/bin/bash recipient=”admin@example.com” subject=”Greetings” message=”Welcome to UbuntuPit” `mail -s $subject $recipient &lt;&lt;&lt; $message` 它将向收件人发送包含给定主题和消息的电子邮件。
+解析日期和时间 下一个bash脚本示例将向您展示如何使用脚本处理日期和时间。同样，Linuxdate命令用于获取必要的信息，我们的程序执行解析。
+#!/bin/bash year=`date +%Y` month=`date +%m` day=`date +%d` hour=`date +%H` minute=`date +%M` second=`date +%S` echo `date` echo &#34;Current Date is: $day-$month-$year&#34; echo &#34;Current Time is: $hour:$minute:$second&#34; 运行此程序以了解其工作原理。此外，尝试从终端运行date命令。
+sleep命令 sleep命令允许shell脚本在指令之间暂停。它在许多场景中都很有用，例如执行系统级作业。下一个示例显示了shell脚本中的sleep命令。
+#!/bin/bash echo &#34;How long to wait?&#34; read time sleep $time echo &#34;Waited for $timeseconds!&#34; 该程序暂停最后一条指令的执行，直到$time秒，在本例中，用户提供了这一点。
+wait命令 wait命令用于暂停Linux bash脚本中的系统进程。查看下面的示例，详细了解这在bash中的工作方式。
+#!/bin/bash echo &#34;Testing wait command&#34; sleep 5 &amp; pid=$! kill $pid wait $pid echo $pid was terminated. 显示上次更新的文件 有时，您可能需要为某些操作查找最后更新的文件。下面的简单程序向我们展示了如何在bash中使用awk命令执行此操作。它将列出当前工作目录中最近更新或创建的文件。
+#!/bin/bash  ls -lrt | grep ^- | awk &#39;END{print $NF}&#39; 为了简单起见，我们将避免在本示例中描述awk的功能。相反，您可以简单地复制此代码来完成任务。
+添加批处理扩展 下面的示例将对目录中的所有文件应用自定义扩展名。创建一个新目录，并将一些文件放在其中以供演示。我的文件夹共有五个文件，每个文件名为test，后跟（0-4）。我已将此脚本编程为在文件末尾添加（.UP）。您可以添加所需的任何扩展名。
+#!/bin/bash dir=$1 for file in `ls $1/*` do mv $file $file.UP done 首先，不要从任何常规目录尝试此脚本；相反，请从测试目录运行此命令。此外，您需要提供文件的目录名作为命令行参数。对当前工作目录使用句点（.）。
+打印文件或目录的数量 下面的Linuxbash脚本查找给定目录中存在的文件或文件夹的数量。它使用Linux find命令来执行此操作。首先，需要传递目录名以从命令行搜索文件。
+#!/bin/bash  if [ -d &#34;$@&#34; ]; then echo &#34;Files found: $(find &#34;$@&#34; -type f | wc -l)&#34; echo &#34;Folders found: $(find &#34;$@&#34; -type d | wc -l)&#34; else echo &#34;[ERROR] Please retry with another folder.&#34; exit 1 fi 如果指定的目录不可用或存在权限问题，程序将要求用户重试。
+清理日志文件 下一个简单的示例演示了在现实生活中使用shell脚本的简便方法。该程序只需删除/var/log目录中的所有日志文件。您可以更改保存此目录的变量以清理其他日志。
+#!/bin/bash LOG_DIR=/var/log cd $LOG_DIR cat /dev/null &gt; messages cat /dev/null &gt; wtmp echo &#34;Logs cleaned up.&#34; 请记住以root身份运行此Linuxshell脚本。
+使用Bash备份脚本 Shell脚本提供了一种强大的方法来备份文件和目录。以下示例将备份过去24小时内修改的每个文件或目录。该程序使用find命令执行此操作。
+#!/bin/bash  BACKUPFILE=backup-$(date +%m-%d-%Y) archive=${1:-$BACKUPFILE} find . -mtime -1 -type f -print0 | xargs -0 tar rvf &#34;$archive.tar&#34; echo &#34;Directory $PWDbacked up in archive file \&#34;$archive.tar.gz\&#34;.&#34; exit 0 备份过程成功后，它将打印文件和目录的名称。
+检查你是否是root用户 下面的示例演示了通过Linux bash脚本快速确定用户是否为root用户的方法。
+#!/bin/bash ROOT_UID=0 if [ &#34;$UID&#34; -eq &#34;$ROOT_UID&#34; ] then echo &#34;You are root.&#34; else echo &#34;You are not root&#34; fi exit 0 此脚本的输出取决于运行它的用户。它将根据$UID匹配根用户。
+从文件中删除重复行 文件处理需要相当长的时间，并在许多方面阻碍了管理员的工作效率。例如，在文件中搜索重复项可能会成为一项艰巨的任务。幸运的是，您可以使用一个简短的shell脚本来完成此操作。
+#! /bin/sh  echo -n &#34;Enter Filename-&gt; &#34; read filename if [ -f &#34;$filename&#34; ]; then sort $filename | uniq | tee sorted.txt else echo &#34;No $filenamein $pwd...try again&#34; fi exit 0 上面的脚本逐行遍历文件并删除所有重复的行。然后，它将新内容放入新文件，并保持原始文件的完整性。
+系统维护 我经常使用一个小的Linuxshell脚本来升级我的系统，而不是手动升级。下面的简单shell脚本将向您展示如何做到这一点。
+#!/bin/bash  echo -e &#34;\n$(date &#34;+%d-%m-%Y --- %T&#34;)--- Starting work\n&#34; apt-get update apt-get -y upgrade apt-get -y autoremove apt-get autoclean echo -e &#34;\n$(date &#34;+%T&#34;)\t Script Terminated&#34; 该脚本还处理不再需要的旧包。您需要使用sudo运行此脚本，否则它将无法正常工作。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux中touch命令的8个实际例子</title>
+    <url>/post/linux/8-examples-of-touch-cmd-in-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>touch</tag>
+    </tags>
+    <content type="html"><![CDATA[在本文中，我们将介绍一些有用的 Linux   实际示例touch command。这touch command是一个标准程序Unix/Linux操作系统，用于创建、更改和修改文件的时间戳。在开始接触命令示例之前，请查看以下选项。
+touch命令选项   -a, 只更改访问时间 -c, 如果文件不存在，不创建 -d, 更新访问和修改时间 -m, 只更改修改时间 -r, 使用文件的访问和修改次数 -t, 使用指定时间创建文件  如何创建一个空文件  以下 touch 命令创建一个名为的空（零字节）新文件sheena.
+ # touch sheena 如何创建多个文件  通过使用 touch 命令，您还可以创建多个文件。例如，以下命令将创建 3 个名为的文件，sheena,meena和temp.
+ # touch sheena meena temp 如何更改文件访问和修改时间 更改或更新名为的文件的上次访问和修改时间temp， 使用-a选项如下。以下命令设置文件的当前时间和日期。如果temp文件不存在，它将创建具有名称的新空文件。  # touch -a temp  find 命令使用时间戳来列出和查找文件。
+ 如何避免创建新文件 使用-c带有 touch 命令的选项可避免创建新文件。例如，以下命令不会创建名为temp如果它不存在。  # touch -c temp ##如何更改文件修改时间
+如果您想更改名为的文件的唯一修改时间temp，然后使用-m带有触摸命令的选项。请注意，它只会更新文件的最后修改时间（而不是访问时间）。  # touch -m temp ##明确设置访问和修改时间
+ 您可以使用显式设置时间-c和-t带有触摸命令的选项。格式如下。
+ # touch -c -t YYDDHHMM temp  例如，以下命令设置文件的访问和修改日期和时间temp作为17:30(17:30 p.m.)August 10当年（2021）。
+ # touch -c -t 12101730 temp  接下来验证文件的访问和修改时间temp， 和ls -l命令。
+ # ls -l total 2 -rw-r--r--. 1 root root 0 Dec 10 17:30 temp 如何使用另一个文件的时间戳  以下触摸命令与-r选项，将更新文件的时间戳meena带有时间戳temp文件。因此，两个文件都拥有相同的时间戳。
+ # touch -r temp meena 使用指定时间创建文件  如果你想创建一个指定时间而不是当前时间的文件，那么格式应该是。
+ # touch -t YYMMDDHHMM.SS rumenz  例如下面的命令 touch 命令-t选项将给出rumenz归档时间戳18:30:55 p.m.在August 5,2021.
+ # touch -t 202108051830.55 rumenz ]]></content>
+  </entry>
+  
+  <entry>
+    <title>C语言回调函数，提升C技巧必备</title>
+    <url>/post/linux/c-programming-callback-function.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>c</tag>
+      <tag>callback</tag>
+    </tags>
+    <content type="html"><![CDATA[本文简要介绍了C语言编程中的回调函数
+函数指针 在讲回调函数之前，我们需要了解函数指针。
+我们都知道，C语言的灵魂是指针，我们经常使用整型指针，字符串指针，结构体指针等。
+int *p1; char *p2; STRUCT *p3; // STRUCT为我们定义的结构体 但是好像我们一般很少使用函数指针，我们一般使用函数都是直接使用函数调用。
+下面我们来了解一下函数指针的概念和使用方法。
+概念 函数指针是指向函数的指针变量。
+通常我们说的指针变量是指向一个整型、字符型或数组等变量，而函数指针是指向函数。
+函数指针可以像一般函数一样，用于调用函数、传递参数。
+函数指针的定义方式为：
+函数返回值类型 (* 指针变量名) (函数参数列表);  “函数返回值类型”表示该指针变量可以指向具有什么返回值类型的函数；“函数参数列表”表示该指针变量可以指向具有什么参数列表的函数。这个参数列表中只需要写函数的参数类型即可。
+我们看到，函数指针的定义就是将“函数声明”中的“函数名”改成“（指针变量名）”。但是这里需要注意的是：“（指针变量名）”两端的括号不能省略，括号改变了运算符的优先级。如果省略了括号，就不是定义函数指针而是一个函数声明了，即声明了一个返回值类型为指针型的函数。
+那么怎么判断一个指针变量是指向变量的指针变量还是指向函数的指针变量呢？首先看变量名前面有没有“”，如果有“”说明是指针变量；其次看变量名的后面有没有带有形参类型的圆括号，如果有就是指向函数的指针变量，即函数指针，如果没有就是指向变量的指针变量。
+最后需要注意的是，指向函数的指针变量没有 ++ 和 – 运算。
+一般为了方便使用，我们会选择：
+typedef 函数返回值类型 (* 指针变量名) (函数参数列表);  比如：
+typedef int (*Fun1)(int); //声明也可写成int (*Fun1)(int x)，但习惯上一般不这样。 typedef int (*Fun2)(int, int); //参数为两个整型，返回值为整型 typedef void (*Fun3)(void); //无参数和返回值 typedef void* (*Fun4)(void*); //参数和返回值都为void*指针 如何用函数指针调用函数 给大家举一个例子：
+int Func(int x); /*声明一个函数*/ int (*p) (int x); /*定义一个函数指针*/ p = Func; /*将Func函数的首地址赋给指针变量p*/ p = &amp;Func; /*将Func函数的首地址赋给指针变量p*/ 赋值时函数 Func 不带括号，也不带参数。由于函数名 Func 代表函数的首地址，因此经过赋值以后，指针变量 p 就指向函数 Func() 代码的首地址了。
+下面来写一个程序，看了这个程序你们就明白函数指针怎么使用了：
+#include &lt;stdio.h&gt;int Max(int, int); //函数声明 int main(void) { int(*p)(int, int); //定义一个函数指针  int a, b, c; p = Max; //把函数Max赋给指针变量p, 使p指向Max函数  printf(&#34;please enter a and b:&#34;); scanf(&#34;%d%d&#34;, &amp;a, &amp;b); c = (*p)(a, b); //通过函数指针调用Max函数  printf(&#34;a = %d\nb = %d\nmax = %d\n&#34;, a, b, c); return 0; } int Max(int x, int y) //定义Max函数 { int z; if (x &gt; y) { z = x; } else { z = y; } return z; } 特别注意的是，因为函数名本身就可以表示该函数地址（指针），因此在获取函数指针时，可以直接用函数名，也可以取函数的地址。
+p = Max可以改成 p = &amp;Max c = (*p)(a, b) 可以改成 c = p(a, b)  函数指针作为某个函数的参数 既然函数指针变量是一个变量，当然也可以作为某个函数的参数来使用的。示例：
+#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt; typedef void(*FunType)(int); //前加一个typedef关键字，这样就定义一个名为FunType函数指针类型，而不是一个FunType变量。 //形式同 typedef int* PINT; void myFun(int x); void hisFun(int x); void herFun(int x); void callFun(FunType fp,int x); int main() { callFun(myFun,100);//传入函数指针常量，作为回调函数  callFun(hisFun,200); callFun(herFun,300); return 0; } void callFun(FunType fp,int x) { fp(x);//通过fp的指针执行传递进来的函数，注意fp所指的函数有一个参数 } void myFun(int x) { printf(&#34;myFun: %d\n&#34;,x); } void hisFun(int x) { printf(&#34;hisFun: %d\n&#34;,x); } void herFun(int x) { printf(&#34;herFun: %d\n&#34;,x); } 输出：
+myFun: 100 hisFun: 200 herFun: 300 函数指针作为函数返回类型 有了上面的基础，要写出返回类型为函数指针的函数应该不难了，下面这个例子就是返回类型为函数指针的函数：
+void (* func5(int, int, float ))(int, int) { ... } 在这里， func5 以 (int, int, float) 为参数，其返回类型为 void (\*)(int, int) 。在C语言中，变量或者函数的声明也是一个大学问，想要了解更多关于声明的话题，可以参考我之前的文章 - C专家编程》读书笔记(1-3章)。这本书的第三章花了整整一章的内容来讲解如何读懂C语言的声明。
+函数指针数组 在开始讲解回调函数前，最后介绍一下函数指针数组。既然函数指针也是指针，那我们就可以用数组来存放函数指针。下面我们看一个函数指针数组的例子：
+/* 方法1 */ void (*func_array_1[5])(int, int, float); /* 方法2 */ typedef void (*p_func_array)(int, int, float); p_func_array func_array_2[5]; 上面两种方法都可以用来定义函数指针数组，它们定义了一个元素个数为5，类型是 * void (\*)(int, int, float) * 的函数指针数组。
+函数指针总结 函数指针常量 ：Max；函数指针变量：p；
+数名调用如果都得如(*myFun)(10)这样，那书写与读起来都是不方便和不习惯的。所以C语言的设计者们才会设计成又可允许myFun(10)这种形式地调用（这样方便多了，并与数学中的函数形式一样）。
+在函数指针变量也可以存入一个数组内。数组的声明方法：int (*fArray[10]) ( int );
+ 回调函数 什么是回调函数 我们先来看看百度百科是如何定义回调函数的：
+回调函数就是一个通过函数指针调用的函数。如果你把函数的指针（地址）作为参数传递给另一个函数，当这个指针被用来调用其所指向的函数时，我们就说这是回调函数。回调函数不是由该函数的实现方直接调用，而是在特定的事件或条件发生时由另外的一方调用的，用于对该事件或条件进行响应。  这段话比较长，也比较绕口。下面我通过一幅图来说明什么是回调：
+假设我们要使用一个排序函数来对数组进行排序，那么在主程序(Main program)中，我们先通过库，选择一个库排序函数(Library function)。但排序算法有很多，有冒泡排序，选择排序，快速排序，归并排序。同时，我们也可能需要对特殊的对象进行排序，比如特定的结构体等。库函数会根据我们的需要选择一种排序算法，然后调用实现该算法的函数来完成排序工作。这个被调用的排序函数就是回调函数(Callback function)。
+结合这幅图和上面对回调函数的解释，我们可以发现，要实现回调函数，最关键的一点就是要将函数的指针传递给一个函数(上图中是库函数)，然后这个函数就可以通过这个指针来调用回调函数了。注意，回调函数并不是C语言特有的，几乎任何语言都有回调函数。在C语言中，我们通过使用函数指针来实现回调函数。
+我的理解是：把一段可执行的代码像参数传递那样传给其他代码，而这段代码会在某个时刻被调用执行，这就叫做回调。
+如果代码立即被执行就称为同步回调，如果过后再执行，则称之为异步回调。
+回调函数就是一个通过函数指针调用的函数。如果你把函数的指针（地址）作为参数传递给另一个函数，当这个指针被用来调用其所指向的函数时，我们就说这是回调函数。
+回调函数不是由该函数的实现方直接调用，而是在特定的事件或条件发生时由另外的一方调用的，用于对该事件或条件进行响应。
+为什么要用回调函数？ 因为可以把调用者与被调用者分开，所以调用者不关心谁是被调用者。它只需知道存在一个具有特定原型和限制条件的被调用函数。
+简而言之，回调函数就是允许用户把需要调用的方法的指针作为参数传递给一个函数，以便该函数在处理相似事件的时候可以灵活的使用不同的方法。
+int Callback() // /&lt; 回调函数 { // TODO  return 0; } int main() // /&lt; 主函数 { // TODO  Library(Callback); // /&lt; 库函数通过函数指针进行回调  // TODO  return 0; } 回调似乎只是函数间的调用，和普通函数调用没啥区别。
+但仔细看，可以发现两者之间的一个关键的不同：在回调中，主程序把回调函数像参数一样传入库函数。
+这样一来，只要我们改变传进库函数的参数，就可以实现不同的功能，这样有没有觉得很灵活？并且当库函数很复杂或者不可见的时候利用回调函数就显得十分优秀。
+怎么使用回调函数？ int Callback_1(int a) // /&lt; 回调函数1 { printf(&#34;Hello, this is Callback_1: a = %d &#34;, a); return 0; } int Callback_2(int b) // /&lt; 回调函数2 { printf(&#34;Hello, this is Callback_2: b = %d &#34;, b); return 0; } int Callback_3(int c) // /&lt; 回调函数3 { printf(&#34;Hello, this is Callback_3: c = %d &#34;, c); return 0; } int Handle(int x, int (*Callback)(int)) // /&lt; 注意这里用到的函数指针定义 { Callback(x); } int main() { Handle(4, Callback_1); Handle(5, Callback_2); Handle(6, Callback_3); return 0; } 如上述代码：可以看到，Handle() 函数里面的参数是一个指针，在 main() 函数里调用 Handle() 函数的时候，给它传入了函数 Callback_1()/Callback_2()/Callback_3() 的函数名，这时候的函数名就是对应函数的指针，也就是说，回调函数其实就是函数指针的一种用法。
+下面是一个四则运算的简单回调函数例子： #include &lt;stdio.h&gt;#include &lt;stdlib.h&gt; /**************************************** * 函数指针结构体 ***************************************/ typedef struct _OP { float (*p_add)(float, float); float (*p_sub)(float, float); float (*p_mul)(float, float); float (*p_div)(float, float); } OP; /**************************************** * 加减乘除函数 ***************************************/ float ADD(float a, float b) { return a + b; } float SUB(float a, float b) { return a - b; } float MUL(float a, float b) { return a * b; } float DIV(float a, float b) { return a / b; } /**************************************** * 初始化函数指针 ***************************************/ void init_op(OP *op) { op-&gt;p_add = ADD; op-&gt;p_sub = SUB; op-&gt;p_mul = &amp;MUL; op-&gt;p_div = &amp;DIV; } /**************************************** * 库函数 ***************************************/ float add_sub_mul_div(float a, float b, float (*op_func)(float, float)) { return (*op_func)(a, b); } int main(int argc, char *argv[]) { OP *op = (OP *)malloc(sizeof(OP)); init_op(op); /* 直接使用函数指针调用函数 */ printf(&#34;ADD = %f, SUB = %f, MUL = %f, DIV = %f\n&#34;, (op-&gt;p_add)(1.3, 2.2), (*op-&gt;p_sub)(1.3, 2.2), (op-&gt;p_mul)(1.3, 2.2), (*op-&gt;p_div)(1.3, 2.2)); /* 调用回调函数 */ printf(&#34;ADD = %f, SUB = %f, MUL = %f, DIV = %f\n&#34;, add_sub_mul_div(1.3, 2.2, ADD), add_sub_mul_div(1.3, 2.2, SUB), add_sub_mul_div(1.3, 2.2, MUL), add_sub_mul_div(1.3, 2.2, DIV)); return 0; } 回调函数实例（很有用） 一个 GPRS 模块联网的小项目，使用过的同学大概知道 2G、4G、NB 等模块要想实现无线联网功能都需要经历模块上电初始化、注册网络、查询网络信息质量、连接服务器等步骤，这里的的例子就是，利用一个状态机函数（根据不同状态依次调用不同实现方法的函数），通过回调函数的方式依次调用不同的函数，实现模块联网功能，如下：
+/********* 工作状态处理 *********/ typedef struct { uint8_t mStatus; uint8_t (* Funtion)(void); //函数指针的形式 } M26_WorkStatus_TypeDef; //M26的工作状态集合调用函数  /********************************************** ** &gt;M26工作状态集合函数 ***********************************************/ M26_WorkStatus_TypeDef M26_WorkStatus_Tab[] = { {GPRS_NETWORK_CLOSE, M26_PWRKEY_Off }, //模块关机  {GPRS_NETWORK_OPEN, M26_PWRKEY_On }, //模块开机  {GPRS_NETWORK_Start, M26_Work_Init }, //管脚初始化  {GPRS_NETWORK_CONF, M26_NET_Config }, //AT指令配置  {GPRS_NETWORK_LINK_CTC, M26_LINK_CTC }, //连接调度中心  {GPRS_NETWORK_WAIT_CTC, M26_WAIT_CTC }, //等待调度中心回复  {GPRS_NETWORK_LINK_FEM, M26_LINK_FEM }, //连接前置机  {GPRS_NETWORK_WAIT_FEM, M26_WAIT_FEM }, //等待前置机回复  {GPRS_NETWORK_COMM, M26_COMM }, //正常工作  {GPRS_NETWORK_WAIT_Sig, M26_WAIT_Sig }, //等待信号回复  {GPRS_NETWORK_GetSignal, M26_GetSignal }, //获取信号值  {GPRS_NETWORK_RESTART, M26_RESET }, //模块重启 } /********************************************** ** &gt;M26模块工作状态机，依次调用里面的12个函数 ***********************************************/ uint8_t M26_WorkStatus_Call(uint8_t Start) { uint8_t i = 0; for(i = 0; i &lt; 12; i++) { if(Start == M26_WorkStatus_Tab[i].mStatus) { return M26_WorkStatus_Tab[i].Funtion(); } } return 0; } 所以，如果有人想做个 NB 模块联网项目，可以 copy 上面的框架，只需要修改回调函数内部的具体实现，或者增加、减少回调函数，就可以很简洁快速的实现模块联网。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>DDR、DDR2、DDR3、DDR4、LPDDR区别</title>
+    <url>/post/hardware/difference-between-different-generation-DDRs.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>DDR</tag>
+    </tags>
+    <content type="html"><![CDATA[今天我们和大家介绍一下各代DDR的区别
+什么是DDR DDR是Double Data Rate的缩写，即“双比特翻转”。DDR是一种技术，中国大陆工程师习惯用DDR称呼用了DDR技术的SDRAM，而在中国台湾以及欧美，工程师习惯用DRAM来称呼。
+DDR的核心要义是在一个时钟周期内，上升沿和下降沿都做一次数据采样，这样400MHz的主频可以实现800Mbps的数据传输速率。
+每一代DDR的基本区别 关键技术解释 VTT VTT为DDR的地址线，控制线等信号提供上拉电源，上拉电阻是50Ω左右。VTT=1/2VDDQ，并且VTT要跟随VDDQ，因此需要专用的电源同时提供VDDQ和VTT。例如芯片TPS51206DSQT，LP2996。用专门的电源芯片，还有一个重要的原因，在Fly-by的拓扑中，VTT提供电流，增强DDR信号线的驱动能力。
+DDR的接收器是一个比较器，其中一端是VREF，另一端是信号，例如地址线A2在有VTT上拉的时候，A2的信号在0和1.8V间跳动，当A2电压高于VTT时，电流流向VTT。当A2低于VTT时，VTT流向DDR。因此VTT需要有提供电流和吸收电流的能力，一般的开关电源不能作为VTT的提供者。此外，VTT电源相当于DDR接收器信号输入端的直流偏执，且这个偏执等于VREF，因此VTT的噪声要越小越好，否则当A2的状态为高阻态时，DDR接收器的比较器容易产生误触发。
+上文说过，VTT相当于DDR接收器的直流偏执，其实如果没有VTT，这个直流偏执也存在，它在芯片的内部，提供电流的能力很弱。如果只有1个或2个DDR芯片，走Fly-by拓扑，那么不需要外部的VTT上拉。如果有2个以上的DDR芯片，则一定需要VTT上拉。
+Prefetch Prefetch字面意思就是预存取，每一代的DDR预存取大小不同，详见第2章中表格。以DDR3为例，它的Prefetch=8n，相当于DDR的每一个IO都有一个宽度为8的buffer，从IO进来8个数据后，在第8个数据进来后，才把这8个数据一次性的写入DDR内部的存储单元。下图是一个形象的解释，同时我们关注一下几个速率。DDR3的时钟是800MHz，Data Rate是1600Mbps，由于这个Buffer的存在，DDR内部的时钟只需要200MHz就可以了（注意DDR内部不是双比特翻转采样）。
+我们来做一个频率对照表，如下：
+DDR内部的最小存储单元（1bit）是一个晶体管+一个电容，电容会放电，需要不断的“刷新”（充电）才能保持正常的工作状态，由于电容充放电需要时间，DDR内部的频率受限于此，很难提高，目前技术一般在100~200MHz。因此需要用Prefetch技术来提内部数据高吞吐率（其实就是串并转换原理）。Prefetch位宽的提高，是DDR2,3,4非常显著的变化。
+第一段提到，对于DDR3，在第8个数据进来后，FIFO满了，然后才把这8个数据一次性的写入DDR内部的存储单元，那么必须要求DDR的内部时钟和外部时钟有一定的约束关系，FIFO满的时候一定是以DQS下降沿采样结束的，数据手册中对DQS的下降沿与clk有一个建立时间和保持时间的约束要求的目的原来是这样。
+SSTL SSTL（Stub Series Terminated Logic）接口标准也是JEDEC所认可的标准之一。该标准专门针对高速内存(特别是SDRAM)接口。SSTL规定了开关特点和特殊的端接方案。
+SSTL标准规定了IC供电，IO的DC和AC输入输出门限，差分信号门限，Vref电压等。SSTL_3是3.3V标准，SSTL_2是2.5V标准，SSTL_18是1.8V标准，SSTL_15是1.5V。
+SSTL最大的特点是需要终端匹配电阻，也叫终端终结电阻，上拉到VTT（1/2VDDQ）。这个短接电阻最大的作用是为了信号完整性，特别是在1拖多的Fly-by走线拓扑下，还能增强驱动能力。
+Bank 以下图为例，一个Bank中包含若干个Array，Array相当于一个表单，选中“行地址”和“列地址”后，表单中的一个单元格就被选中，这个单元格就是一个bit。Bank中的所有Array的行地址是连在一起的，列地址也是。那么选中“行地址”和“列地址”后，将一起选中所有Array的bit。有多少个array，就有多少个bit被选中。以DDR3为例，Data线宽度是32，prefetch是8，那么Array就有32x8=256.内部一次操作会选中256bit的数据。
+Bank数量越多，需要的Bank选择线越多，DDR3有8个bank，需要3个BA信号BA0~2。BA，行地址，列地址共同组成了存储单元的访问地址，缺一不可。
+DDR的容量计算 下图是DDR3 1Gb的寻址配置，以其中128Mbx8为例说明，其中x8表示IO数据（DQ）位宽度。
+ DDD容量=2Bank Addressx2Row Addressx2Col Addressx位宽=23x214x210x8=1Gb Page Site=2Col Addressx位宽➗8（Byte)  我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。
+上表是JESD-3D中的表格，Row Address和Column Address都是真实需要寻址的地址，其他用途的地址比如A10，A12或者A11等并没有计算在内。在计算时，不要因为有A13，就认为Column Address就是A0~A13。
+Burst Burst字面意思是突发，DDR的访问都是以突发的方式连续访问同一行的相邻几个单元。进行Brust时，需要有几个参数：
+ Burst Length：一次突发访问几个列地址。 Read/Write: 是读还是写 Starting Column：从哪一列开始Burst Burst：突发的顺序。  下图是DDR3中突发类型和顺序，Burst是通过A12/BC#选择的。但对于DDR，DDR2和DDR4，不一定就是通过A12/BC#，详见PIN定义章节。
+DDR的tRDC，CL，tAC 在实际工作中，Bank地址与相应的行地址是同时发出的，此时这个命令称之为“行激活”（Row Active）。在此之后，将发送列地址寻址命令与具体的操作命令（是读还是写），这两个命令也是同时发出的，所以一般都会以“读/写命令”来表示列寻址。根据相关的标准，从行有效到读/写命令发出之间的间隔被定义为tRCD，即RAS to CAS Delay（RAS至CAS延迟，RAS就是行地址选通脉冲，CAS就是列地址选通脉冲），我们可以理解为行选通周期。tRCD是DDR的一个重要时序参数，广义的tRCD以时钟周期（tCK，Clock Time）数为单位，比如tRCD=3，就代表延迟周期为两个时钟周期，具体到确切的时间，则要根据时钟频率而定，DDR3-800，tRCD=3，代表30ns的延迟。
+接下来，相关的列地址被选中之后，将会触发数据传输，但从存储单元中输出到真正出现在内存芯片的 I/O 接口之间还需要一定的时间（数据触发本身就有延迟，而且还需要进行信号放大），这段时间就是非常著名的 CL（CAS Latency，列地址脉冲选通潜伏期）。CL 的数值与 tRCD 一样，以时钟周期数表示。如 DDR3-800，时钟频率为 100MHz，时钟周期为 10ns，如果 CL=2 就意味着 20ns 的潜伏期。不过CL只是针对读取操作。
+由于芯片体积的原因，存储单元中的电容容量很小，所以信号要经过放大来保证其有效的识别性，这个放大/驱动工作由S-AMP负责，一个存储体对应一个S- AMP通道。但它要有一个准备时间才能保证信号的发送强度（事前还要进行电压比较以进行逻辑电平的判断），因此从数据I/O总线上有数据输出之前的一个时钟上升沿开始，数据即已传向S-AMP，也就是说此时数据已经被触发，经过一定的驱动时间最终传向数据I/O总线进行输出，这段时间我们称之为 tAC（Access Time from CLK，时钟触发后的访问时间）。
+目前内存的读写基本都是连续的，因为与CPU交换的数据量以一个Cache Line（即CPU内Cache的存储单位）的容量为准，一般为64字节。而现有的Rank位宽为8字节（64bit），那么就要一次连续传输8次，这就涉及到我们也经常能遇到的突发传输的概念。突发（Burst）是指在同一行中相邻的存储单元连续进行数据传输的方式，连续传输的周期数就是突发长度（Burst Lengths，简称BL）。
+在进行突发传输时，只要指定起始列地址与突发长度，内存就会依次地自动对后面相应数量的存储单元进行读/写操作而不再需要控制器连续地提供列地址。这样，除了第一笔数据的传输需要若干个周期（主要是之前的延迟，一般的是tRCD+CL）外，其后每个数据只需一个周期的即可获得。
+突发连续读取模式：只要指定起始列地址与突发长度，后续的寻址与数据的读取自动进行，而只要控制好两段突发读取命令的间隔周期（与BL相同）即可做到连续的突发传输。
+谈到了突发长度时。如果BL=4，那么也就是说一次就传送4×64bit的数据。但是，如果其中的第二笔数据是不需要的，怎么办？还都传输吗？为了屏蔽不需要的数据，人们采用了数据掩码（Data I/O Mask，简称DQM）技术。通过DQM，内存可以控制I/O端口取消哪些输出或输入的数据。这里需要强调的是，在读取时，被屏蔽的数据仍然会从存储体传出，只是在“掩码逻辑单元”处被屏蔽。DQM由北桥控制，为了精确屏蔽一个P-Bank位宽中的每个字节，每个DIMM有8个DQM 信号线，每个信号针对一个字节。这样，对于4bit位宽芯片，两个芯片共用一个DQM信号线，对于8bit位宽芯片，一个芯片占用一个DQM信号，而对于 16bit位宽芯片，则需要两个DQM引脚。
+在数据读取完之后，为了腾出读出放大器以供同一Bank内其他行的寻址并传输数据，内存芯片将进行预充电的操作来关闭当前工作行。还是以上面那个Bank示意图为例。当前寻址的存储单元是B1、R2、C6。如果接下来的寻址命令是B1、R2、C4，则不用预充电，因为读出放大器正在为这一行服务。但如果地址命令是B1、R4、C4，由于是同一Bank的不同行，那么就必须要先把R2关闭，才能对R4寻址。从开始关闭现有的工作行，到可以打开新的工作行之间的间隔就是tRP（Row Precharge command Period，行预充电有效周期），单位也是时钟周期数。
+ODT ODT是内建核心的终结电阻，它的功能是让一些信号在终结电阻处消耗完，防止这些信号在电路上形成反射。换句话说就是在片内设置合适的上下拉电阻，以获得更好的信号完整性。被ODT校准的信号包括：
+ DQ, DQS, DQS# and DM for x4 configuration DQ, DQS, DQS#, DM, TDQS and TDQS# for X8 configuration DQU, DQL, DQSU, DQSU#, DQSL, DQSL#, DMU and DML for X16 configuration  当一个CPU挂了很多个DDR芯片的时候，他们是共用控制线，地址线的，走线肯定要分叉，如果没有中端匹配电阻，肯定会产生信号完整性问题。那么如果只有一个DDR芯片的时候，需不需要呢？正常情况下，走线很短，有符合规则，是不需要的。
+下图是DDR中的IO上下拉电阻，RON是DDR的输出结构的上下拉电阻，RTT是DDR输入结构的上下拉电阻。这两个电阻的阻值都是可调的。
+下图是RON的调节，注意这不是ODT的任务，调节是通过寄存器实现。
+下图是RTT的调节，是ODT要做的事情，而且RTT的档位要多，也是通过寄存器调节的。
+注意，DDR3的PIN定义上有一个引脚是ODT，如果ODT=0，DRAM Termination State功能关闭；ODT=1，DRAM Termination State的功能参考寄存器设置。如下是一个真值表。因为DRAM Termination State非常耗电，所以不用的时候最好不要打开。
+DDR3的ZQ ZQ信号在DDR3时代开始引入，要求在ZQ引脚放置一个240Ω±1%的高精度电阻到地，注意必须是高精度。而且这个电阻是必须的，不能省略的。进行ODT时，是以这个引脚上的阻值为参考来进行校准的。
+校准需要调整内部电阻，以获得更好的信号完整性，但是内部电阻随着温度会有些细微的变化，为了将这个变化纠正回来，就需要一个外部的精确电阻作为参考。详细来讲，就是为RTT和RON提供参考电阻。
+OCD OCD 是在 DDR-II 开始加入的新功能，而且这个功能是可选的，有的资料上面又叫离线驱动调整。OCD的主要作用在于调整 I/O 接口端的电压，来补偿上拉与下拉电阻值， 从而调整DQS 与 DQ 之间的同步确保信号的完整与可靠性。调校期间，分别测试 DQS 高电平和 DQ高电平，以及 DQS 低电平和 DQ 高电平的同步情况。如果不满足要求，则通过设定突发长度的地址线来传送上拉 / 下拉电阻等级（加一档或减一档），直到测试合格才退出 OCD 操作，通过 OCD 操作来减少 DQ 、 DQS的倾斜从而提高信号的完整性及控制电压来提高信号品质。由于在一般情况下对应用环境稳定程度要求并不太高，只要存在差分 DQS时就基本可以保证同步的准确性， 而且 OCD 的调整对其他操作也有一定影响， 因此 OCD 功能在普通台式机上并没有什么作用，其优点主要体现在对数据完整性非常敏感的服务器等高端产品领域。
+DDR3的PIN定义 下面是三星K4B4G0446Q/K4B4G0846Q的PIN定义，每一个都有很详细的解释。
+以x8的配置为例，如下是其Ball Map。
+  一对时钟线CK和CKn
+  数据线DQ0~DQ7共8位。
+  一对差分对DQS和DQSn
+  地址线A0~A15，其中，A10和A12有特殊用途。
+  行选中信号RASn
+  列选中信号CASn
+  写使能Wen
+  片选CSn
+  Bank选择BA0~2
+  一个Reset信号，是DDR3新增的一项重要功能，并为此专门准备了一个引脚。这一引脚将使DDR3的初始化处理变得简单。当Reset命令有效时，DDR3 内存将停止所有的操作，并切换至最少量活动的状态，以节约电力。在Reset期间，DDR3内存将关闭内在的大部分功能，所有数据接收与发送器都将关闭，且所有内部的程序装置将复位，DLL（延迟锁相环路）与时钟电路将停止工作，甚至不理睬数据总线上的任何动静。这样一来，该功能将使DDR3达到最节省电力的目的。
+  ZQ和ODT PIN上文已经说明。
+  DDR的走线规则 DDR的信号线需要分组：
+数据线一组（DQ,DQS,DQM），误差控制在20mil以内；
+控制线一组（Address，控制线，时钟），以时钟为中心，误差控制在100mil以内。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>什么是DSP</title>
+    <url>/post/dsp/what-is-dsp.html</url>
+    <categories><category>DSP</category>
+    </categories>
+    <tags>
+      <tag>DSP</tag>
+    </tags>
+    <content type="html"><![CDATA[嵌入式工程师都知道什么是CPU、MCU，还有一位成员——DSP，DSP到底是什么？
+DSP概述 DSP（digital signal processor）是一种独特的微处理器，有自己的完整指令系统，是以数字信号来处理大量信息的器件。其最大特点是内部有专用的硬件乘法器和哈佛总线结构对大量的数字信号处理的速度快。一个数字信号处理器在一块不大的芯片内包括有控制单元、运算单元、各种寄存器以及一定数量的存储单元等等，在其外围还可以连接若干存储器，并可以与一定数量的外部设备互相通信，有软、硬件的全面功能，本身就是一个微型计算机。
+DSP采用的是哈佛设计，即数据总线和地址总线分开，使程序和数据分别存储在两个分开的空间，允许取指令和执行指令完全重叠。也就是说在执行上一条指令的同时就可取出下一条指令，并进行译码，这大大的提高了微处理器的速度。另外还允许在程序空间和数据空间之间进行传输，因为增加了器件的灵活性。
+当今的数字化时代背景下，DSP己成为通信、计算机、消费类电子产品等领域的基础器件。
+根据数字信号处理的要求，DSP芯片一般具有如下的一些主要特点：
+ 在一个指令周期内可完成一次乘法和一次加法。 程序和数据空间分开，可以同时访问指令和数据。 片内具有快速RAM，通常可通过独立的数据总线在两块中同时访问。 具有低开销或无开销循环及跳转的硬件支持。 快速的中断处理和硬件I/O支持。 具有在单周期内操作的多个硬件地址产生器。 可以并行执行多个操作。 支持流水线操作，使取指、译码和执行等操作可以重叠执行。  与通用微处理器相比，DSP芯片的其他通用功能相对较弱些。
+DSP 芯片的诞生过程 DSP 芯片的诞生是时代所需。20世纪60年代以来，随着计算机和信息技术的飞速发展，数字信号处理技术应运而生并得到迅速的发展。在 DSP 芯片出现之前数字信号处理只能依靠微处理器来完成。但由于微处理器较低的处理速度不快，根本就无法满足越来越大的信息量的高速实时要求。
+上世纪 70 年代，DSP芯片的理论和算法基础已成熟。但那时的DSP仅仅停留在教科书上，即使是研制出来的 DSP 系统也是由分立元件组成的，其应用领域仅局限于军事、航空航天部门。
+ 1978 年， AMI 公司发布世界上第一个单片 DSP 芯片 S2811，但没有现代 DSP芯片所必须有的硬件乘法器； 1979 年， 美国 Intel 公司发布的商用可编程器件 2920 是 DSP 芯片的一个主要里程碑，但其依然没有硬件乘法器； 1980 年，日本 NEC 公司推出的 MPD7720 是第一个具有硬件乘法器的商用 DSP芯片，从而被认为是第一块单片 DSP 器件； 1982 年世界上诞生了第一代 DSP 芯片 TMS32010 及其系列产品。这种 DSP 器件采用微米工艺 NMOS 技术制作，虽功耗和尺寸稍大，但运算速度却比微处理器快了几十倍。  DSP 芯片的问世是个里程碑，它标志着 DSP 应用系统由大型系统向小型化迈进了一大步。至 80 年代中期，随着 CMOS 工艺的 DSP 芯片应运而生，其存储容量和运算速度都得到成倍提高，成为语音处理、图像硬件处理技术的基础。
+80 年代后期，第三代 DSP 芯片问世，运算速度进一步提高，其应用范围逐步扩大到通信、计算机领域；
+90 年代 DSP 发展最快，相继出现了第四代和第五代 DSP 芯片。第五代与第四代相比系统集成度更高，将 DSP 芯核及外围元件综合集成在单一芯片上。
+进入 21 世纪后，第六代 DSP 芯片横空出世。第六代芯片在性能上全面碾压第五代芯片，同时基于商业目的的不同发展出了诸多个性化的分支，并开始逐渐拓展新的领域。
+DSP 芯片的应用领域 如今，各种各样的DSP器件已相当丰富。大大小小封装形式的DSP器件，已广泛应用于各种产品的生产领域，而且DSP的应用领域仍在不断地扩大，发展迅速异常。
+DSP芯片强调数字信号处理的实时性。DSP作为数字信号处理器将模拟信号转换成数字信号，用于专用处理器的高速实时处理。它具有高速，灵活，可编程，低功耗的界面功能，在图形图像处理，语音处理，信号处理等通信领域起到越来越重要的作用。
+根据美国的权威资讯公司统计，目前 DSP 芯片在市场上应用最多的是通信领域，其次是计算机领域。
+DSP芯片的应用领域 1）DSP芯片在多媒体通信领域的应用。 媒体数据传输产生的信息量是巨大的，多媒体网络终端在整个过程中需要对获取的信息量进行快速分析和处理，因此 DSP 被运用在语音编码，图像压缩和减少语音通信上。如今 DSP 对于语音解码计算产生实时效果，设计协议要求已经成为最基本的一条国际标准。
+2）DSP芯片在工业控制领域的应用。 在工业控制领域， 工业机器人被广泛应用，对机器人控制系统的性能要求也越来越高。机器人控制系统重中之重就是实时性，在完成一个动作的同时会产生较多的数据和计算处理，这里可以采用高性能的 DSP。DSP通过应用到机器人的控制系统后，充分利用自身的实时计算速度特性，使得机器人系统可以快速处理问题，随着不断提高 DSP 数字信号芯片速度，在系统中容易构成并行处理网络，大大提高控制系统的性能，使得机器人系统得到更为广泛的发展。
+3）DSP芯片在仪器仪表领域的应用。 DSP 丰富的片内资源可以大大简化仪器仪表的硬件电路，实现仪器仪表的 SOC 设计。器仪表的测量精度和速度是一项重要的指标，使用 DSP 芯片开发产品可使这两项指标大大提高。例如 TI 公司的 TMS320F2810 具有高效的 32 位 CPU 内核，12 位 A/D 转换器，丰富的片上存储器和灵活的指挥系统，为高精密仪器搭建了广阔的平台。高精密仪器现在已经发展成为 DSP 的一个重要应用，正处于快速传播时期，将推动产业的技术创新。
+4）DSP芯片在汽车安全与无人驾驶领域的应用。 汽车电子系统日益兴旺发达起来，诸如装设红外线和毫米波雷达，将需用 DSP 进行分析。如今，汽车愈来愈多，防冲撞系统已成为研究热点。而且，利用摄像机拍摄的图像数据需要经过 DSP 处理，才能在驾驶系统里显示出来，供驾驶人员参考。
+5）DSP芯片在军事领域的应用。 DSP 的功耗低、体积小、实时性反应速度都是武器装备中特别需要的。如机载空空导弹，在有限的体积内装有红外探测仪和相应的 DSP信号处理器等部分，完成目标的自动锁定与跟踪。先进战斗机上装备的目视瞄准器和步兵个人携带的头盔式微光仪，需用 DSP 技术完成图像的滤波与增强，智能化目标搜索捕获。DSP 技术还用于自动火炮控制、巡航导弹、预警飞机、相控阵天线等雷达数字信号处理中。
+未来DSP技术将向以下几个方向继续发展： 1）DSP芯核集成度越来越高。 缩小 DSP 芯片尺寸一直是 DSP 技术的发展趋势，当前使用较多的是基于 RISC 结构，随着新工艺技术的引入，越来越多的制造商开始改进DSP 芯核，并且把多个 DSP 芯核、 MPU 芯核以及外围的电路单元集成在一个芯片上，实现了 DSP 系统级的集成电路。
+2）可编程DSP芯片将是未来主导产品。 随着个性化发展的需要， DSP 的可编程化为生产厂商提供了更多灵活性，满足厂家在同一个 DSP 芯片上开发出更多不同型号特征的系列产品，也使得广大用户对于 DSP 的升级换代。例如冰箱、洗衣机，这些原来装有微控制器的家电如今已换成可编程 DSP 来进行大功率电机控制。
+3）定点DSP占据主流。 目前，市场上所销售的 DSP 器件中，占据主流产品的依然是16 位的定点可编程 DSP 器件，随着 DSP 定点运算器件成本的不断低，能耗越来越小的优势日渐明显，未来定点 DSP 芯片仍将是市场的主角。
+DSP芯片的分类 DSP的芯片可以按照以下的三种方式进行分类。
+（1）按基础特性分 这是根据DSP芯片的工作时钟和指令类型来分类的。如果DSP芯片在某时钟频率范围内的任何频率上能正常工作，除计算速度有变化外，没有性能的下降，这类DSP芯片一般称之为静态DSP芯片。
+如果有两种或两种以上的DSP芯片,它们的指令集和相应的机器代码机管脚结构相互兼容,则这类DSP芯片称之为一致性的DSP芯片。
+（2）按数据格式分 这是根据DSP芯片工作的数据格式来分类的。数据以定点格式工作的DSP芯片称之为定点DSP芯片。以浮点格式工作的称为DSP芯片。不同的浮点DSP芯片所采用的浮点格式不完全一样，有的DSP芯片采用自定义的浮点格式，有的DSP芯片则采用IEEE的标准浮点格式。
+（3）按用途分 按照DSP芯片的用途来分，可分为通用型DSP芯片和专用型的DSP芯片。通用型DSP芯片适合普通的DSP应用，如TI公司的一系列DSP芯片。专用型DSP芯片为特定的DSP运算而设计，更适合特殊的运算，如数字滤波，卷积和FFT等。
+DSP芯片的基本结构 DSP芯片的基本结构包括： （1）哈佛结构。哈佛结构的主要特点是将程序和数据存储在不同的存储空间中，即程序存储器和数据存储器是两个相互独立的存储器，每个存储器独立编址，独立访问。与两个存储器相对应的是系统中设置了程序总线和数据总线，从而使数据的吞吐率提高了一倍。由于程序和存储器在两个分开的空间中，因此取指和执行能完全重叠。
+（2）流水线操作。流水线与哈佛结构相关，DSP芯片广泛采用流水线以减少指令执行的时间，从而增强了处理器的处理能力。处理器可以并行处理二到四条指令，每条指令处于流水线的不同阶段。
+（3）专用的硬件乘法器。乘法速度越快，DSP处理器的性能越高。由于具有专用的应用乘法器，乘法可在一个指令周期内完成。
+（4）特殊的DSP指令。特殊的DSP指令DSP芯片是采用特殊的指令。
+（5）快速的指令周期。快速的指令周期哈佛结构、流水线操作、专用的硬件乘法器、特殊的DSP指令再加上集成电路的优化设计可使DSP芯片的指令周期在200ns以下。
+DSP系统的特点、构成和设计过程 数字信号处理系统是以数字信号处理为基础，因此具有数字处理的全部特点：
+ 接口方便。DSP系统与其它以现代数字技术为基础的系统或设备都是相互兼容，这样的系统接口以实现某种功能要比模拟系统与这些系统接口要容易的多。 编程方便。DSP系统中的可编程DSP芯片可使设计人员在开发过程中灵活方便地对软件进行修改和升级。 稳定性好。DSP系统以数字处理为基础，受环境温度以及噪声的影响较小，可靠性高。 精度高。16位数字系统可以达到的精度。 可重复性好。模拟系统的性能受元器件参数性能变化比较大，而数字系统基本上不受影响，因此数字系统便于测试，调试和大规模生产。 集成方便。DSP系统中的数字部件有高度的规范性，便于大规模集成。   DSP系统的设计过程  根据需求确定DSP系统的性能指标 算法研究及模拟实现和功能验证 选择适合的DSP芯片和外围组件 软件设计及调试 硬件设计及调试 系统集成及测试  定点DSP和浮点DSP的区别 一般来说，定点DSP处理器具有速度快，功耗低，价格便宜的特点；而浮点DSP处理器则计算精确，动态范围大，速度快，易于编程，功耗大，价格高。
+而它们的区别，还可以从各方面去比较。
+ 宏观上  从宏观上讲，浮点DSP比定点DSP的动态范围大得多。定点运算中，程序员必须时刻关注溢出的发生，为了防止溢出，要么不断进行移位定标，要么做截尾。前者耗费大量时间和空间，后者则带来精度的损失。相反，浮点运算DSP扩大了动态范围，提高了精度，节省了运算时间和存储空间，因而大大减少了定标，移位和溢出检查。
+硬件上  单纯从技术的角度来看，定点与浮点的区别主要在两个方面，即硬件和软件。硬件上的区别来自于：浮点DSP处理器具有浮点/整数乘法器，整数/浮点算术逻辑运算单元ALU，适合存放扩展精度的浮点结果的寄存器等。
+软件上  再看看在软件开发上的不同之处，主要有浮点DSP编程的特点以及注意事项；定点DSP进行浮点运算时的定标，移位，检测溢出操作。比较两个浮点数时，永远不要使用操作符==来判断是否相等。即使比较两个相同的数，还是可能有微小的舍入差别。甚至定义精确的0，也不是很安全，尽管C语言中有0的表示，永远不要写这样的代码(x==0)，而应该写成(fabs(x) &lt; TINY)，其中TINY定义为一个很小的值，也就是处理器的浮点格式舍入误差。
+应用实例  另外一个比较重要区别涉及应用场合对定点与浮点dsp处理器的选择。设计师关心的是最后的系统性能、成本以及上市时间。
+例如，在移动电视中，没必要进行浮点处理。而在军用雷达中，经常用到浮点处理器。
+DSP芯片的选择依据  运算速度 运算精度 功耗 价格 硬件资源 开发工具 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>如何为Ubuntu 22.04安装拼音输入法</title>
+    <url>/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Input Method</tag>
+      <tag>Pinyin</tag>
+    </tags>
+    <content type="html"><![CDATA[本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。
+Ubuntu到目前为止都没有提供一个简单，很好的文档化的指南来描述如何添加拼音输入法。但是，为了在Ubuntu 22.04上获得基本的拼音输入法的支持，你可以简单地：
+依次打开 Settings(设定) -&gt; Region &amp; Language(区域和语言) -&gt; Manage Installed Languages(管理安装的语言) -&gt; Install / Remove languages(安装/删除语言)。
+选择Chinese(Simplified)，确保键盘输入法系统已经选择了Ibus，然后点Apply(应用)，重启系统。
+重新登陆系统，再次打开Settings(设定)，依次选择到键盘。
+点击输入源的&quot;+&ldquo;图标，选择中文(中国)，然后中文(智能拼音)。
+现在你应该可以看到一个小的&quot;en&quot;图表(或者你的Ubuntu安装的任何语言代码)在你的主屏幕的右上角，你可以点击然后看到可用的输入法的列表，包含中文(智能拼音)。
+选中中文(智能拼音)，然后打开任何可以接受输入的应用(比如gedit, openoffice, vim, etc.)，你也可以通过快捷键 Win+space来进行输入法的切换。
+再次重新启动系统，确保输入法的图表还在那儿。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux下大文件切割与合并</title>
+    <url>/post/linux/linux-big-file-cut-and-cat.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>file</tag>
+    </tags>
+    <content type="html"><![CDATA[往往是因为网络传输的限制，导致很多时候，我们需要在 Linux 系统下进行大文件的切割。这样将一个大文件切割成为多个小文件，进行传输，传输完毕之后进行合并即可。
+文件切割split 在 Linux 系统下使用 split 命令进行大文件切割很方便  命令语法 split [-a] [-d] [-l &lt;行数&gt;] [-b &lt;字节&gt;] [-C &lt;字节&gt;] [要切割的文件] [输出文件名] 使用实例 $ split -l 300000 users.sql /data/users_ $ split -d -l 300000 users.sql /data/users_ $ split -d -b 100m users.sql /data/users_ 帮助信息 $ split --help 文件合并 - cat 在 Linux 系统下使用 cat 命令进行多个小文件的合并也很方便  命令语法 cat [-n] [-e] [-t] [输出文件名] 使用实例 $ cat /data/users_* &gt; users.sql 帮助信息 $ cat --h ]]></content>
+  </entry>
+  
+  <entry>
+    <title>从实用的角度聊聊MOS管</title>
+    <url>/post/hardware/mosfet-tube-application-introduction.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>MOS Tube</tag>
+    </tags>
+    <content type="html"><![CDATA[说起MOS管，有些人的脑子里可能是一团浆糊。大部分的教材都会告诉你长长的一段话：MOS管全称金属氧化半导体场效应晶体管
+英文名Metal-Oxide-Semiconductor Field-Effect Transistor，属于绝缘栅极场效晶体管，以硅片为秤体，利用扩散工艺制作&hellip;&hellip;.有N沟道和P沟道两个型。不仅如此，它还有两个兄弟，分别是结型场效应管以及晶体场效应管&hellip;
+面对这么大一段话，我不知道你有没有搞明白，反正我大学里是完全没有搞明白，学了一个学期就学了个寂寞。
+那么，为什么这些教材要这么的反人类，他们难道就不能好好写说人话吗？
+我大概分析了一下，因为同一本教材他需要面对不同专业的学生，所以教材最重要的是严谨。和全面相比是不是通俗易懂就没有那么重要了。而且一般的教材也不会告诉你学了有什么用，这就导致了在学习中你很容易迷失在这些概念中，抓不到重点。
+那本文呢，我想根据自己的工作学习经历，抛开书本上这些教条的框架，从应用侧出发来给大家介绍一下MOS管里面最常见的，也是最容易使用的一种：增强型NMOS管，简称NMOS。当你熟悉了这个NMOS的使用之后，再回过头去看这个教材上的内容，我相信就会有不同的体会了。
+NMOS的用法 首先来看这么一张简单的图（图1），我们可以用手去控制这个开关的开合，以此来控制这个灯光的亮灭。
+图1
+那如果我们想要用Arduino或者单片机去控制这个灯泡的话，就需要使用MOS管来替换掉这个开关了。为了更加符合我们工程的实际使用习惯呢，我们需要把这张图稍微转换一下，就像如图2这样子。
+图2
+那这两张图是完全等价的，我们可以看到MOS管是有三个端口，也就是有三个引脚，分别是GATE、DRAIN和SOURCE。至于为啥这么叫并不重要，只要记住他们分别简称G、D、S就可以。
+图3
+我们把单片机的一个IO口接到MOS管的gate端口，就可以控制这个灯泡的亮灭了。当然别忘了供电。当这个单片机的IO口输出为高的时候，NMOS就等效为这个被闭合的开关，指示灯光就会被打开；那输出为低的时候呢，这个NMOS就等效为这个开关被松开了，那此时这个灯光就被关闭，是不很简单。
+那如果我们不停的切换这个开关，那灯光就会闪烁。如果切换的这个速度再快一点，因为人眼的视觉暂留效应，灯光就不闪烁了。此时我们还能通过调节这个开关的时间来调光，这就是所谓的PWM波调光，以上就是MOS管最经典的用法，它实现了单片机的IO口控制一个功率器件。当然你完全可以把灯泡替换成其他的器件。器件比如说像水泵、电机、电磁铁这样的东西。
+图4：PWM波调光
+如何选择NMOS 明白了NMOS的用法之后呢，我们来看一下要如何选择一个合适的NMOS，也就是NMOS是如何选型的。
+那对于一个初学者来说，有四个比较重要的参数需要来关注一下。第一个是封装，第二个是Vgs(th)，第三个是Rds(on)上，第四个是Cgs。
+封装比较简单，它指的就是一个MOS管这个外形和尺寸的种类也有很多。一般来说封装越大，它能承受的电流也就越大。为了搞明白另外三个参数呢，我们先要来介绍一下NMOS的等效模型。
+图5：NMOS等效模型
+MOS其实可以看成是一个由电压控制的电阻。这个电压指的是G、S的电压差，电阻指的是D、S之间的电阻。这个电阻的大小会随着G、S电压的变化而变化。当然它们不是线性对应的关系，实际的关系差不多像这样的，横坐标是G、S电压差。
+图6：Rds与Vgs关系图
+纵坐标是电阻的值，当G、S的电压小于一个特定值的时候呢，电阻基本上是无穷大的。然后这个电压值大于这个特定值的时候，电阻就接近于零，至于说等于这个值的时候会怎么样，我们先不用管这个临界的电压值，我们称之为Vgs(th)，也就是打开MOS管需要的G、S电压，这是每一个MOS管的固有属性，我们可以在MOS管的数据手册里面找到它。
+图7：MOS管数据手册
+显然，Vgs(th)一定要小于这个高电平的电压值，否则就没有办法被正常的打开。所以在你选择这个MOS管的时候，如果你的高电平是对应的5V，那么选3V左右的Vgs(th)是比较合适的。太小的话会因为干扰而误触发，太大的话又打不开这个MOS管。
+接下来，我们再来看看NMOS的第二个重要参数Rdson，刚才有提到NMOS被完全打开的时候，它的电阻接近于零。但是无论多小，它总归是有一个电阻值的，这就是所谓的Rds(on)。它指的是NMOS被完全打开之后，D、S之间的电阻值。同样的你也可以在数据手册上找到它。这个电阻值当然是越小越好。越小的话呢，它分压分的少，而且发热也相对比较低。但实际情况一般Rds(on)越小，这个NMOS的价格就越高，而且一般对应的体积也会比较大。所以还是要量力而行，选择恰好合适。
+最后说一下Cgs，这个是比较容易被忽视的一个参数，它指的是G跟S之间的寄生电容。所有的NMOS都有，这是一个制造工艺的问题，没有办法被避免。
+那它会影响到NMOS打开速度，因为加载到gate端的电压，首先要给这个电容先充电，这就导致了G、S的电压并不能一下子到达给定的一个数值。
+图8
+它有一个爬升的过程。当然因为Cgs比较小，所以一般情况下我们感觉不到它的存在。但是当我们把这个时间刻度放大的时候，我们就可以发现这个上升的过程了。对于这个高速的PWM波控制场景是致命的。当PWM波的周期接近于这个爬升时间时，这个波形就会失真。一般来说Cgs大小和Rds(on)是成反比的关系。Rds(on)越小，Cgs就越大。所以大家要注意平衡他们之间的关系。
+以上就是关于NMOS大家需要初步掌握的知识了，希望能对大家有所帮助。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>MOS管驱动电路设计</title>
+    <url>/post/hardware/the-drive-circuit-design-of-MOS-tube.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>MOS Tube</tag>
+    </tags>
+    <content type="html"><![CDATA[MOS管因为其导通内阻低，开关速度快，因此被广泛应用在开关电源上。而用好一个MOS管，其驱动电路的设计就很关键。下面分享几种常用的驱动电路。
+电源IC直接驱动 电源IC直接驱动是最简单的驱动方式，应该注意几个参数以及这些参数的影响。
+ 查看电源IC手册的最大驱动峰值电流，因为不同芯片，驱动能力很多时候是不一样的。 了解MOS管的寄生电容，如图C1、C2的值，这个寄生电容越小越好。如果C1、C2的值比较大，MOS管导通的需要的能量就比较大，如果电源IC没有比较大的驱动峰值电流，那么管子导通的速度就比较慢，就达不到想要的效果。  推挽驱动 当电源IC驱动能力不足时，可用推挽驱动。 这种驱动电路好处是提升电流提供能力，迅速完成对于栅极输入电容电荷的充电过程。这种拓扑增加了导通所需要的时间，但是减少了关断时间，开关管能快速开通且避免上升沿的高频振荡。
+加速关断驱动 MOS管一般都是慢开快关。在关断瞬间驱动电路能提供一个尽可能低阻抗的通路供MOSFET栅源极间电容电压快速泄放，保证开关管能快速关断。 为使栅源极间电容电压的快速泄放，常在驱动电阻上并联一个电阻和一个二极管，如上图所示，其中D1常用的是快恢复二极管。这使关断时间减小，同时减小关断时的损耗。Rg2是防止关断的时电流过大，把电源IC给烧掉。
+如上图，是我之前用的一个电路，量产至少上万台，推荐使用。 用三极管来泄放栅源极间电容电压是比较常见的。如果Q1的发射极没有电阻，当PNP三极管导通时，栅源极间电容短接，达到最短时间内把电荷放完，最大限度减小关断时的交叉损耗。 还有一个好处，就是栅源极间电容上的电荷泄放时电流不经过电源IC，提高了可靠性。
+隔离驱动 为了满足高端MOS管的驱动，经常会采用变压器驱动。其中R1目的是抑制PCB板上寄生的电感与C1形成LC振荡，C1的目的是隔开直流，通过交流，同时也能防止磁芯饱和。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>SPI总线详解</title>
+    <url>/post/hardware/spi-bus-introduction.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>SPI</tag>
+    </tags>
+    <content type="html"><![CDATA[SPI是串行外设接口（Serial Peripheral Interface）的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议，比如AT91RM9200。
+什么是SPI？ SPI是串行外设接口(Serial Peripheral Interface)的缩写，是 Motorola 公司推出的一种同步串行接口技术，是一种高速、全双工、同步的通信总线。
+SPI优点  支持全双工通信 通信简单 数据传输速率块 SPI电路图  缺点 没有指定的流控制，没有应答机制确认是否接收到数据，所以跟IIC总线协议比较在数据可靠性上有一定的缺陷。
+特点  高速、同步、全双工、非差分、总线式 主从机通信模式  SPI电路连接  SPI的通信原理很简单，它以主从方式工作，这种模式通常有一个主设备和一个或多个从设备，有三线制和四线制之分。信号线包括SDI(串行数据输入 Serial Digital IN)、SDO(串行数据输出 Serial Digital OUT)、SCLK(时钟)、CS(片选)。 SDO/MOSI – 主设备数据输出，从设备数据输入 SDI/MISO – 主设备数据输入，从设备数据输出 SCLK – 时钟信号，由主设备产生; CS/SS – 从设备使能信号，由主设备控制。当有多个从设备的时候，因为每个从设备上都有一个片选引脚接入到主设备机中，当主设备和某个从设备通信时将需要将从设备对应的片选引脚电平拉低(一般低有效)。  SPI通信模式分析 SPI通信有4种不同的模式，不同的从设备在出厂时配置模式已经固定， 这是不能改变的，但通信双方设备必须工作在同一模式下，所以可以对主设备的SPI模式进行配置，通过CPOL（时钟极性）和CPHA（时钟相位）来控制主设备的通信模式。
+具体模式具体如下：
+ Mode0：CPOL=0，CPHA=0 Mode1：CPOL=0，CPHA=1 Mode2：CPOL=1，CPHA=0 Mode3：CPOL=1，CPHA=1     模式 CPOL CPHA     Mode0 0 0   Mode1 0 1   Mode2 1 0   Mode3 1 1    时钟极性CPOL是用来配置SCLK电平的有效态的;
+时钟相位CPHA是用来配置数据采样是发生在第几个边沿的。
+ CPOL=0表示当SCLK=0时处于空闲态，所以SCLK处于高电平时有效； CPOL=1表示当SCLK=1时处于空闲态，所以SCLK处于低电平时有效； CPHA=0表示数据采样是在第1个边沿，数据发送在第2个边沿； CPHA=1表示数据采样是在第2个边沿，数据发送在第1个边沿； SPI主模块和与之通信的外设通信时，两者的时钟相位和极性应该保持一致。  SPI 时序详解 CPOL=0，CPHA=0：此时空闲态时，SCLK处于低电平，数据采样是在第1个边沿，也就是SCLK由低电平到高电平的跳变，所以数据采样是在上升沿，数据发送是在下降沿。
+CPOL=0，CPHA=1：此时空闲态时，SCLK处于低电平，数据发送是在第1个边沿，也就是SCLK由低电平到高电平的跳变，所以数据采样是在下降沿，数据发送是在上升沿。
+CPOL=1，CPHA=0：此时空闲态时，SCLK处于高电平，数据采集是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在下降沿，数据发送是在上升沿。
+CPOL=1，CPHA=1：此时空闲态时，SCLK处于高电平，数据发送是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在上升沿，数据发送是在下降沿。
+注意：SPI主设备能够控制时钟信号，因为SPI通信并不像UART或者IIC通信那样有专门的通信周期、通信起始信号、通信结束信号；所以SPI协议只能通过控制时钟信号线，在没有数据交流的时候，时钟线要么是保持高电平，要么是保持低电平。
+例如：工作在模式0这种时序（CPOL＝0，CPHA＝0），如下：
+我们来关注SCK的第一个时钟周期，在时钟的前沿采样数据（上升沿，第一个时钟沿），在时钟的后沿输出数据（下降沿，第二个时钟沿）。首先来看主器件，主器件的输出口（MOSI）输出的数据bit1，在时钟的前沿被从器件采样，那主器件是在何时刻输出bit1的呢？bit1的输出时刻实际上在SCK信号有效以前，比SCK的上升沿还要早半个时钟周期。bit1的输出时刻与SSEL信号没有关系。再来看从器件，主器件的输入口MISO同样是在时钟的前沿采样从器件输出的bit1的，那从器件又是在何时刻输出bit1的呢。从器件是在SSEL信号有效后，立即输出bit1，尽管此时SCK信号还没有起效。
+从这张图就可以很清楚的看出主从器件的bit1是怎样输出的。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>10个超赞的C语言开源项目</title>
+    <url>/post/linux/ten-great-c-language-open-source-project.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>C language</tag>
+      <tag>open source</tag>
+    </tags>
+    <content type="html"><![CDATA[今天给大家分享10个超赞的C语言开源项目，希望这些内容能对大家有所帮助！
+Webbench Webbench是一个在 Linux 下使用的非常简单的网站压测工具。
+它使用fork()模拟多个客户端同时访问我们设定的URL，测试网站在压力下工作的性能。
+最多可以模拟 3 万个并发连接去测试网站的负载能力。Webbench使用C语言编写，代码非常简洁，源码加起来不到 600 行。
+项目地址 http://home.tiscali.cz/~cz210552/webbench.html Tinyhttpd tinyhttpd是一个超轻量型Http Server，使用C语言开发，全部代码只有 502 行（包括注释），附带一个简单的 Client
+可以通过阅读这段代码理解一个 Http Server 的本质。
+项目地址 http://sourceforge.net/projects/tinyhttpd/ cJSON cJSON是C语言中的一个JSON编解码器，非常轻量级，C文件只有 500 多行，速度也非常理想。
+虽然cJSON功能不是非常强大，但cJSON的小身板和速度是最值得赞赏的。
+其代码被非常好地维护着，结构也简单易懂，可以作为一个非常好的C语言项目进行学习。
+项目主页 http://sourceforge.net/projects/cjson/ CMockery CMockery是google发布的用于C单元测试的一个轻量级的框架。
+它很小巧，对其他开源包没有依赖，对被测试代码侵入性小。
+CMockery 的源代码行数不到3K，阅读一下will_return和mock的源代码就一目了然了。
+主要特点  免费且开源，google 提供技术支持； 轻量级的框架，使测试更加快速简单； 避免使用复杂的编译器特性，对老版本的编译器来讲，兼容性好； 并不强制要求待测代码必须依赖 C99 标准，这一特性对许多嵌入式系统的开发很有用。   项目地址 http://code.google.com/p/cmockery/downloads/list Libev libev 是一个开源的事件驱动库，基于 epoll、kqueue 等 OS 提供的基础设施。
+其以高效出名，它可以将 IO 事件、定时器、和信号统一起来，统一放在事件处理这一套框架下处理。
+基于 Reactor 模式，效率较高，并且代码精简（4.15 版本 8000 多行），是学习事件驱动编程的很好的资源。
+项目地址 http://software.schmorp.de/pkg/libev.html Memcached Memcached 是一个高性能的分布式内存对象缓存系统，用于动态 Web 应用以减轻数据库负载。
+它通过在内存中缓存数据和对象来减少读取数据库的次数，从而提供动态数据库驱动网站的速度。
+Memcached 基于一个存储键/值对的 hashmap。Memcached-1.4.7 的代码量还是可以接受的，只有 10K 行左右。
+项目地址 http://memcached.org/ Lua Lua 很棒，在任何支持 ANSI C 编译器的平台上都可以轻松编译通过。 Lua 的代码数量足够小，5.1.4 仅仅 1.5W 行，去掉空白行和注释估计能到 1W 行。
+项目地址 http://www.lua.org/ SQLite SQLite 是一个开源的嵌入式关系数据库，实现自包容、零配置、支持事务的 SQL 数据库引擎。其特点是高度便携、使用方便、结构紧凑、高效、可靠。
+足够小，大致 3 万行C代码，250K。
+项目地址 http://www.sqlite.org/ UNIX v6 UNIX V6 的内核源代码包括设备驱动程序在内约有 1 万行，这个数量的源代码，初学者是能够充分理解的。有一种说法是一个人所能理解的代码量上限为 1 万行，UNIX V6 的内核源代码从数量上看正好在这个范围之内。
+看到这里，大家是不是也有“如果只有 1 万行的话没准儿我也能学会”的想法呢？
+另一方面，最近的操作系统，例如 Linux   最新版的内核源代码据说超过了 1000 万行。
+就算不是初学者，想完全理解全部代码基本上也是不可能的。
+项目地址 http://minnie.tuhs.org/cgi-bin/utree.pl?file=V6 NETBSD NetBSD 是一个免费的，具有高度移植性的 UNIX-like 操作系统。
+NetBSD 计划的口号是：“Of course it runs NetBSD”。
+它设计简洁，代码规范，拥有众多先进特性，使得它在业界和学术界广受好评。
+由于简洁的设计和先进的特征，使得它在生产和研究方面，都有卓越的表现，而且它也有受使用者支持的完整的源代码。
+许多程序都可以很容易地通过 NetBSD Packages Collection 获得。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux环境监控工具基础参考</title>
+    <url>/post/linux/linux-environment-monitor-tool.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>monitor tool</tag>
+    </tags>
+    <content type="html"><![CDATA[Linux 操作系统有很多自带和第三方监控工具，这篇文章从不同维度整理了一些，但仅限基础了解，因为，单独讲任何一个指令，都可以成篇文章，具体指令参数，可以检索 man，从中理解。
+CPU top(任务管理工具)
+top -n 1 -b vmstat(展现给定时间间隔的服务器的状态值，包括服务器的 CPU 使用率，内存使用)
+vmstat 1 10 #每1秒采集一次共采集10次 pidstat(进程实时监控)
+pidstat -u 1 -p pid mpstat(多 CPU 实时监控工具)
+mpstat -P ALL 1 5 sar(性能监控和瓶颈检查)
+sar -u dstat(dstat 是一个可以取代 vmstat，iostat，netstat 和 ifstat 这些命令的多功能产品)
+dstat 2 10 #每2秒采集一次共采集10次 内存 top
+top -n 1 -b pidstat
+pidstat -r free(查看当前系统的物理内存使用情况)
+free -mh sar(性能监控和瓶颈检查)
+sar -r 10 3 #每10秒采样一次，连续采样3次 vmstat
+vmstat 2 1 磁盘 IO iostat(IO 实时监控)
+iostat -d -x -k 1 10 iotop(监控系统中各个进程对 IO 的使用量)
+iotop pidstat
+示例: pidstat -d sar
+sar -d vmstat
+vmstat 2 1 网络 netstat(监控 TCP/IP 网络)
+netstat -nltup iftop(实时流量监控工具)
+iftop -i em2 ss(获取 socket 统计信息，他可以显示和 netstat 类似的内容)
+ss -aA tcp sar
+sar -n EDEV 1 5 tcpdump(抓包工具)
+tcpdump -i em1 host 192.168.1.1 and port 80 tcpflow(分析网络流量)
+tcpflow -i em1 port 80 nload(用于查看 Linux 网络流量状况，实时输出)
+nload -t 200 -i 1024 -o 128 -U M 系统负载 (1) CPU 负载说明
+ 如果某个程序频繁的进行计算、逻辑判断等操作，那么此类程序主要依赖于 CPU 的处理速度，故称之为 &ldquo;计算密集型程序&rdquo;。
+ (2) IO 负载说明
+ 如果某个程序频繁的从磁盘中读取写入文件，那么这种类型的操作主要依赖于磁盘的读取速度，也就是输入输出 (input/output)，简写为 I/O。此类 I/O 负载的程序，称为 I/O 密集型程序。
+ top
+top uptime
+uptime sar
+sar -q 1 20 其他工具  htop(类似 top，比 top 更加人性化) glances(类似 top，基于 Python 的系统遥测监控工具) strace(常用来跟踪进程执行时的系统调用和所接收的信号) dtrace(动态跟踪) valgrind(内存泄漏检测) dmesg(内核信息) ]]></content>
+  </entry>
+  
+  <entry>
+    <title>详解TCP和UDP协议的原理和区别</title>
+    <url>/post/linux/tcp-and-udp-principle-and-difference.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>tcp</tag>
+      <tag>udp</tag>
+    </tags>
+    <content type="html"><![CDATA[ 最近重新认知了一下TCP和UDP的原理以及区别，做一个简单的总结。
+ 作用 首先，tcp和udp都是工作再传输层，用于程序之间传输数据的。数一般包含：文件类型，视频类型，jpg图片等。
+区别 TCP是基于连接的，而UDP是基于非连接的。
+tcp传输数据稳定可靠，适用于对网络通讯质量要求较高的场景，需要准确无误的传输给对方，比如，传输文件，发送邮件，浏览网页等等。
+udp的优点是速度快，但是可能产生丢包，所以适用于对实时性要求较高但是对少量丢包并没有太大要求的场景。比如：域名查询，语音通话，视频直播等。udp还有一个非常重要的应用场景就是隧道网络，比如：vpn，VXLAN。
+以人与人之间的通信为例：UDP协议就相当于是写信给对方，寄出去信件之后不能知道对方是否收到信件，信件内容是否完整，也不能得到及时反馈，而TCP协议就像是打电话通信，在这一系列流程都能得到及时反馈，并能确保对方及时接收到。如下图：
+TCP通信的过程 tcp是如何保证以上过程的:分为三个步骤，三次握手，传输确认，四次挥手。三次握手是建立连接的过程。
+三次握手 当客户端向服务端发起连接时，会先发一包连接请求数据，过去询问一下，能否与你建立连接？这包数据称之为SYN包，如果对端同意连接，则回复一包SYN+ACK包，客户端收到之后，发送一包ACK包，连接建立，因为这个过程中互相发送了三包数据，所以称之为三次握手。
+为什么要三次握手而不是两次握手？
+**这是为了防止，因为已失效的请求报文，突然又传到服务器，引起错误，**这是什么意思？
+假设采用两次握手建立连接，客户端向服务端发送一个syn包请求建立连接，因为某些未知的原因，并没有到达服务器，在中间某个网络节点产生了滞留，为了建立连接，客户端会重发syn包，这次的数据包正常送达，服务端发送syn+ack之后就建立起了连接，但是第一包数据阻塞的网络突然恢复，第一包syn包又送达到服务端，这是服务端会认为客户端又发起了一个新的连接，从而在两次握手之后进入等待数据状态，服务端认为是两个连接，而客户端认为是一个连接，造成了状态不一致，如果在三次握手的情况下，服务端收不到最后的ack包，自然不会认为连接建立成功，所以三次握手本质上来说就是为了解决网络信道不可靠的问题，为了在不可靠的信道上建立起可靠的连接，经过三次握手之后，客户端和服务端都进入了数据传输状态。
+数据传输 数据传输： 一包数据可能会被拆成多包发送,如何处理丢包问题，这些数据包到达的先后顺序不同，如何处理乱序问题？针对这些问题，tcp协议为每一个连接建立了发送缓冲区，从建立链接后的第一个字节的序列号为0，后面每个字节的序列号就会增加1，发送数据时，从数据缓冲区取一部分数据组成发送报文，在tcp协议头中会附带序列号和长度，接收端在收到数据后需要回复确认报文，确认报文中的ack等于接受序列号加长度，也就是下包数据发送的起始序列号，这样一问一答的发送方式，能够使发送端确认发送的数据已经被对方收到，发送端也可以发送一次的连续的多包数据，接受端只需要回复一次ack就可以了如图：
+四次挥手 处于连接状态的客户端和服务端，都可以发起关闭连接请求，此时需要四次挥手来进行连接关闭，假设客户端主动发起连接关闭请求，他给服务端发起一包FIN包，标识要关闭连接，自己进入终止等待1装填，服务端收到FIN包，发送一包ACK包，标识自己进入了关闭等待状态，客户端进入终止等待2状态。这是第二次挥手，服务端此时还可以发送未发送的数据，而客户端还可以接受数据，待服务端发送完数据之后，发送一包FIN包，最后进入确认状态，这是第3次挥手，客户端收到之后恢复ACK包，进入超时等待状态，经过超时时间后关闭连接，而服务端收到ACK包后，立即关闭连接，这是第四次挥手。为什么客户端要等待超时时间这是为了保证对方已经收到ACK包，因为假设客户端发送完最后一包ACK包后释放了连接，一旦ACK包在网络中丢失，服务端将一直停留在 最后确认状态，如果等待一段时间，这时服务端会因为没有收到ack包重发FIN包，客户端会响应 这个FIN包进行重发ack包，并刷新超时时间，这个机制跟第三次握手一样。也是为了保证在不可靠的网络链路中进行可靠的连接断开确认。
+UDP协议 udp:首先udp协议是非连接的，发送数据就是把简单的数据包封装一下，然后从网卡发出去就可以了，数据包之间并没有状态上的联系，正因为udp这种简单的处理方式，导致他的性能损耗非常少，对于cpu,内存资源的占用也远小于tcp,但是对于网络传输过程中产生的丢包，udp并不能保证，所以udp在传输稳定性上要弱于tcp，所以，tcp和udp的主要却别：tcp传输数据稳定可靠，适用于对网络通讯质量要求较高的场景，需要准确无误的传输给对方，比如，传输文件，发送邮件，浏览网页等等，udp的优点是速度快，但是可能产生丢包，所以适用于对实时性要求较高但是对少量丢包并没有太大要求的场景。比如：域名查询，语音通话，视频直播等。udp还有一个非常重要的应用场景就是隧道网络，比如：vpn，VXLAN。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>分享一种通信协议的应用编程原理和思路</title>
+    <url>/post/linux/communication-protocol-programming-principle-and-idea.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>programming</tag>
+      <tag>uart</tag>
+      <tag>can</tag>
+      <tag>usb</tag>
+    </tags>
+    <content type="html"><![CDATA[ 嵌入式开发过程中，UART、 CAN、 USB等通信基本离不开通信协议。
+ 下面给大家分享一种通信协议（MAVLink）在应用编程中的编程原理和思路。
+应用编程主要内容 发送和接收说明 利用MAVLink通信协议进行编程，主要实现的功能就是：
+发送端 将需要发送的数据（如：SysState, BatVol），添加MAVLink通信协议，通过硬件（如：UART、CAN）发送出去。
+接收端 硬件（如：UART、CAN）接收到的数据，通过MAVLink协议解析，得到一帧完整的MAVLink数据包，提取发送端发送的数据（如：SysState, BatVol），将得到的数据应用到我们程序中。
+主要流程：数据 -&gt; MAVLink封装 -&gt; 发送 -&gt; 接收 -&gt; MAVLink解析 -&gt;数据
+发送和接收流程图 该流程图是结合我上一篇文章提供的源代码例程画出来，包含的只是主要内容，更多细节没有在流程图中呈现。
+提示：
+我提供例程是针对初学者提供比较单一发送和接收例程（MDK-ARM和EWARM包含各自的发送和接收工程）。
+而实际项目可能会：
+  发送和接收在一个工程；
+  包含操作系统；
+  发送、接收数据FIFO（队列）处理；
+  所以，实际项目，请按需修改我提供的源码。
+MAVLink函数接口详细说明 这一章节讲述发送和接收主要用到的函数接口，请参考我提供的源代码例程理解。 为方便初学者理解，我将其分为发送和接收两个部分来讲述。
+发送主要函数接口 上面是我提供例程的代码，主要讲4个接口。
+MAVLink_SendTest 这个接口是根据自己情况进行封装函数，用于应用程序调用，这里不多说。
+mavlink_msg_sys_info_pack 这个函数接口主要目的：将变量信息（SysID、CompID、SysState、BatVol）打包，最终得到MAVLink_Msg这个消息包。
+mavlink_msg_to_send_buffer 将上一步得到的MAVLink_Msg转换成我们要发送的数据BUF缓存。
+MAV_USART_SendNByte 这个函数接口也是我自己根据硬件（UART）封装的，如果你是其它硬件通信，只需要封装一个类似的接口（参数具有BUF，LEN）即可。
+发送数据的流程：从应用代码 -&gt; 底层硬件（发送出去）。
+如果要深入了解，可以先熟悉软件流程，再结合源代码工程，同时参看接口函数具体实现。相信你很快就明白了。
+接收主要函数接口 上面是我提供例程的代码（方便截图，去掉了部分），主要讲以上4点内容。
+MAV_USART_GetByte 该函数接口也是硬件底层通信接口，请根据自己情况修改，只需要传递数据（流）进来即可。
+mavlink_parse_char MAVLink解析是按照一个一个字符进行解析，我们接收到一个字符，就对其进行解析，直到解析完（根据返回标志判断）一帧数据为止。
+if(MAVLINK_MSG_ID_SYS_INFO == MAVLinkMsg.msgid) 这里就是对解析好的一包完整消息进行分类判断吧。其实，我是想说，这个地方还有两个ID需要进行判断，SysID系统ID和CompID部件ID。
+我提供例程为方便初学者快速理解，未提供SysID和CompID判断，在后续应用编程中会用到。
+mavlink_msg_sys_info_get_voltage_battery 通过该接口获取消息变量，看图中说明文字，前面是消息，后面是消息变量。
+接收数据的流程：从底层硬件（接收数据） -&gt; 应用代码。
+以上就是发送和接收的主要函数接口，如果你只是简单的进行通信，这几个接口就够你使用了。当然，更高级的编程应用还需要你进一步掌握其中的内容。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux之awk使用技巧</title>
+    <url>/post/linux/awk-usage-skills.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>awk</tag>
+    </tags>
+    <content type="html"><![CDATA[AWK 是一种处理文本文件的语言，是一个强大的文本分析工具。
+之所以叫 AWK 是因为其取了三位创始人 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 的 Family Name 的首字符。
+打印文件的第一列
+awk &#39;{print $1}&#39; vxworks.txt 打印文件的前两列
+awk &#39;{print $1,$2}&#39; vxworks.txt 打印文件的最后一列
+awk &#39;{print $NF}&#39; vxworks.txt 打印文件的总行数
+awk &#39;END{print NR}&#39; vxworks.txt 打印文件的第一行
+awk &#39;NR==1{print}&#39; vxworks.txt NR是指awk正在处理的记录位于文件中的位置（行号）
+打印文件的第3行第2列
+sed -n &#39;3,1p&#39; vxworks.txt | awk &#39;{print $2}&#39; 删除空行
+awk &#39;NF&#39; vxworks.txt 打印奇数行
+awk &#39;b=!b&#39; vxworks.txt 打印文件按#分割后,行长度为3的所有行
+awk -F &#39;#&#39; &#39;if(NF==3){print}&#39; vxworks.txt NF是指awk正在处理的记录包含几个域（字段），这与域分隔符有关，默认为空
+统计Linux系统中每个用户所用的shell
+cat /etc/passwd | awk -F &#34;:&#34; &#39;{print $1&#34; : &#34;$7}&#39; 用awk统计linux系统中所有的用户数
+cat /etc/passwd | awk &#39;{count++}END{ print count}&#39; 统计某个文件夹下文件所占的字节数
+ls -l | awk &#39;BEGIN{size=0}{size=size+$5}END{print size}&#39; 统计某个文件夹下文件所占的字节数,按M显示
+ls -l | awk &#39;BEGIN{size=0}{size=size+$5}END{print size}&#39; netstat结合awk统计TCP连接数
+netstat -tunlp | awk &#39;/^tcp/{++a[$6]}END{for(i in a) print i,a[i]}&#39; 过滤空行
+awk &#39;/^[^$]/ {print $0}&#39; vxworks.txt 列运算
+awk &#39;/^[^$]/ {print $0}&#39; vxworks.txt cat 1.txt 1 2 3 求和
+cat 1.txt | awk &#39;{a+=$1}END{print a}&#39; 求平均值
+cat 1.txt | awk &#39;{a+=$1}END{print a/NR}&#39; 求列的最大值
+cat 1.txt | awk &#39;BEGIN{a=0}{if($1&gt;a) a=$1 fi}END{print a}&#39; ]]></content>
+  </entry>
+  
+  <entry>
+    <title>关于Linux下的crontab，你不知道的那些知识点</title>
+    <url>/post/linux/linux-crontab-knowledge.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>crontab</tag>
+    </tags>
+    <content type="html"><![CDATA[实际工作中，crontab出现的问题是多种多样的，下面就深入介绍下crontab在具体工作中容易出现的问题和解决问题的办法。
+crontab能干啥 crond是linux下用来周期性的执行某种任务或等待处理某些事件的一个守护进程，与windows下的计划任务类似，当安装完成操作系统后，默认会安装此服务工具，并且会自动启动crond进程，crond进程每分钟会定期检查是否有要执行的任务，如果有要执行的任务，则自动执行该任务。
+Linux下的任务调度分为两类，系统任务调度和用户任务调度。
+ 系统任务调度：系统周期性所要执行的工作，比如写缓存数据到硬盘、日志清理等。 用户任务调度：用户定期要执行的工作，比如用户数据备份、定时邮件提醒等。用户可以使用 crontab 工具来定制自己的计划任务。所有用户定义的crontab 文件都被保存在 /var/spool/cron目录中。其文件名与用户名一致。  关于crontab的用途，在企业实际应用中非常广泛，常见的有定时数据备份、定时系统检测、定时数据收集、定时更新配置、定时生成报表等等。
+crontab应用实例 crontab使用格式 crontab常用的使用格式有如下两种：
+crontab [-u user] [file] crontab [-u user] [-e|-l|-r |-i] 选项含义如下：
+  -u user：用来设定某个用户的crontab服务，例如，“-u ixdba”表示设定ixdba用户的crontab服务，此参数一般有root用户来运行。
+  file：file是命令文件的名字,表示将file做为crontab的任务列表文件并载入crontab。如果在命令行中没有指定这个文件，crontab命令将接受标准输入（键盘）上键入的命令，并将它们载入crontab。
+  -e：编辑某个用户的crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件。
+  -l：显示某个用户的crontab文件内容，如果不指定用户，则表示显示当前用户的crontab文件内容。
+  -r：从/var/spool/cron目录中删除某个用户的crontab文件，如果不指定用户，则默认删除当前用户的crontab文件。
+  -i：在删除用户的crontab文件时给确认提示。
+  crontab文件语法 用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下：
+minute hour day month week command 其中：
+? minute：表示分钟，可以是从0到59之间的任何整数。 ? hour：表示小时，可以是从0到23之间的任何整数。 ? day：表示日期，可以是从1到31之间的任何整数。 ? month：表示月份，可以是从1到12之间的任何整数。 ? week：表示星期几，可以是从0到7之间的任何整数，这里的0或7代表星期日。 ? command：要执行的命令，可以是系统命令，也可以是自己编写的脚本文件。 在以上各个字段中，还可以使用以下特殊字符：
+? 星号（）：代表所有可能的值，例如month字段如果是星号，则表示在满足其它字段的制约条件后每月都执行该命令操作。 ? 逗号（,）：可以用逗号隔开的值指定一个列表范围，例如，“1,2,5,7,8,9” ? 中杠（-）：可以用整数之间的中杠表示一个整数范围，例如“2-6”表示“2,3,4,5,6” ? 正斜线（/）：可以用正斜线指定时间的间隔频率，例如“0-23/2”表示每两小时执行一次。同时正斜线可以和星号一起使用，例如/10，如果用在minute字段，表示每十分钟执行一次。 几个crontab例子 0 /3 /usr/local/apache2/apachectl restart 表示每隔3个小时重启apache服务一次。
+30 3 6 /webdata/bin/backup.sh 表示每周六的3点30分执行/webdata/bin/backup.sh脚本的操作。
+0 0 1,20 fsck /dev/sdb8 表示每个月的1号和20号检查/dev/sdb8磁盘设备。
+10 5 /5 * echo &#34;&#34;&gt;/usr/local/apache2/log/access_log 表示每个月的5号、10号、15号、20号、25号、30号的5点10分执行清理apache日志操作。
+系统级任务调度/etc/crontab 在/etc目录下有一个crontab文件，这个就是系统任务调度的配置文件。
+/etc/crontab文件包括下面几行：
+SHELL=/bin/bash PATH=/sbin:/bin:/usr/sbin:/usr/bin MAILTO=root HOME=/ # run-parts 01 * * * * root run-parts /etc/cron.hourly 02 4 * * * root run-parts /etc/cron.daily 22 4 * * 0 root run-parts /etc/cron.weekly 42 4 1 * * root run-parts /etc/cron.monthly 从上面的示例文件可看出，crontab的任务列表主要由两部分组成：环境变量配置与定时任务配置。可能大家在工作中更多是只用到了任务配置部分。
+前四行是用来配置crond任务运行的环境变量，第一行SHELL变量指定了系统要使用哪个shell，这里是bash，第二行PATH变量指定了系统执行命令的路径，第三行MAILTO变量指定了crond的任务执行信息将通过电子邮件发送给root用户，如果MAILTO变量的值为空，则表示不发送任务执行信息给用户，第四行的HOME变量指定了在执行命令或者脚本时使用的主目录。第六至九行就是crontab执行格式的具体写法。
+##crontab调试解析神器
+通常在使用crontab添加任务时，我们会依靠自己已有知识编写定时语句。当需要测试语句是否正确时，还需要在服务器上不断调试，，这种方式太不高效了。有没有一款工具，只要我们给出语句，就能告诉具体执行时间以及对错呢？还真有，下面介绍一款老外开发的crontab在线解析工具。
+工具地址：https://crontab.guru
+给出这个工具的截图如下：
+好用不好用，你试试就知道。
+crontab使用的各种坑 环境变量问题 当我们刚使用crontab时，运维老鸟们一般会告知所有命令尽量都使用绝对路径，以防错误。这是为什么？这就和我们下面要谈的环境变量有关了。
+首先，获取shell终端环境变量，内容如下：
+[root@SparkWorker1 dylogs]# env XDG_SESSION_ID=1629 HOSTNAME=SparkWorker1 TERM=linux SHELL=/bin/bash HISTSIZE=1000 SSH_CLIENT=172.16.213.132 50080 22 HADOOP_PREFIX=/opt/hadoop/current CATALINA_BASE=/opt/hadoop/current/share/hadoop/httpfs/tomcat SSH_TTY=/dev/pts/1 QT_GRAPHICSSYSTEM_CHECKED=1 USER=root MAIL=/var/spool/mail/root PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/java/default/bin:/opt/hadoop/current/bin:/opt/hadoop/current/sbin:/root/bin PWD=/data/dylogs LANG=zh_CN.UTF-8 HOME=/root 要获取crontab环境变量信息，可以设置如下计划任务：
+* * * * * /usr/bin/env &gt; /tmp/env.txt 等待片刻，env.txt输出内容如下：
+[root@SparkWorker1 dylogs]# cat /tmp/env.txt XDG_SESSION_ID=1729 SHELL=/bin/sh USER=root PATH=/usr/bin:/bin PWD=/root LANG=zh_CN.UTF-8 SHLVL=1 HOME=/root LOGNAME=root XDG_RUNTIME_DIR=/run/user/0 _=/usr/bin/env 从上面输出结果可知，shell命令行的PATH值为
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/java/default/bin:/opt/hadoop/current/bin:/opt/hadoop/current/sbin:/root/bin 而crontab中的PATH值为：
+PATH=/usr/bin:/bin 对比crontab环境变量与shell终端环境变量的输出，可以发现两者的差异很大。大家可能遇到过，在shell命令行执行脚本都没有问题，而放到crontab后却执行异常，或者执行失败，此时，我们就需要考虑是否命令涉及的环境变量在crontab和shell命令行间存在差异。
+例如，我们在crontab中执行了如下定时任务：
+20 16 * * * php autosave.php 而如果我们的php是安装在/usr/local/bin/目录下的话，那么上面这个定时任务由于无法找到php命令，会运行失败。
+那么，知道了环境变量问题，可能导致计划任务无法正常执行，怎么才能避免这个问题呢，这个交给大家一个终极大招，可以在crontab中加入如下配置，保证你的计划任务执行不会出现环境变量问题：
+* * * * * source /$HOME/.bash_profile &amp;&amp; command 这个其实是在执行计划任务命令之前，先加载了用户环境变量信息，由此可保证所有环境变量都可正常加载。
+定时时间配置误区 时间是crontab的核心，稍微配置不当，就会出现问题，先看在整点时间设置时可能出现的错误，例如，设定每天2点执行一次任务，很多朋友可能这么写过：
+* 2 * * * command 很明显，这个时间写法是错误的，当我们听到每天2点执行一次某任务时，很多人会把重点放在2点，而忽略了执行一次的需求。上面这个定时任务他会在2点开始执行，每分钟执行一次，总共执行60次。
+正确的写法应该是这样的：
+0 2 * * * command 这个才表示每天2点0分执行command对应的任务。
+特殊符号%问题 %在crontab中是特殊符号，具体含义如下：
+第一个%表示标准输入的开始，其余%表示换行符，看下面两个例子：
+* * * * * cat &gt;&gt; /tmp/cat.txt 2&gt;&amp;1 % stdin out 查看/tmp/cat.txt的内容为：
+stdin out 再看下面这个例子：
+* * * * * cat &gt;&gt; /tmp/cat1.txt 2&gt;&amp;1 % stdin out 1 % stdin out 2 % stdin out 3 查看 /tmp/cat1.txt的内容如下：
+stdin out 1 stdin out 2 stdin out 3 有输出内容可知，第一个%表示标准输入的开始，其余%表示换行符。
+既然&quot;%&ldquo;是特殊字符,那么在crontab中使用时，就要特别注意，怎么使用这些特殊字符呢，很明显，使用转移字符即可，例如：
+* * * * * cat &gt;&gt; /tmp/cat2.txt 2&gt;&amp;1 % Special character escape \%. 查看输出/tmp/cat2.txt 输出内容如下：
+Special character escape %. 可以看到，执行成功了，并成功避开这个坑了。
+关于crontab的输出重定向 在crontab执行的计划任务中，有些任务如果不做输出重定向，那么原本会输出到屏幕的信息，会以邮件的形式输出到某个文件中，例如，执行下面这个计划任务：
+* * * * * /bin/date 这个计划任务是没有做输出重定向的，他的主要用途是输出时间，由于没有配置输出重定向，那么这个时间信息默认将以邮件的形式输出到/var/spool/mail/$USER（这个$USER对应的是系统用户，这里是root用户）文件中，大致内容如下：
+From root@SparkWorker1.localdomain Fri Sep 21 12:58:02 2022 Return-Path: &lt;root@SparkWorker1.localdomain&gt; X-Original-To: root Delivered-To: root@SparkWorker1.localdomain Received: by SparkWorker1.localdomain (Postfix, from userid 0) id F2745192AE; Fri, 21 Sep 2022 12:58:01 +0800 (CST) From: &#34;(Cron Daemon)&#34; &lt;root@SparkWorker1.localdomain&gt; To: root@SparkWorker1.localdomain Subject: Cron &lt;root@SparkWorker1&gt; /bin/date Content-Type: text/plain; charset=UTF-8 Auto-Submitted: auto-generated Precedence: bulk X-Cron-Env: &lt;XDG_SESSION_ID=1820&gt; X-Cron-Env: &lt;XDG_RUNTIME_DIR=/run/user/0&gt; X-Cron-Env: &lt;LANG=zh_CN.UTF-8&gt; X-Cron-Env: &lt;SHELL=/bin/sh&gt; X-Cron-Env: &lt;HOME=/root&gt; X-Cron-Env: &lt;PATH=/usr/bin:/bin&gt; X-Cron-Env: &lt;LOGNAME=root&gt; X-Cron-Env: &lt;USER=root&gt; Message-Id: &lt;20220921045801.F2745192AE@SparkWorker1.localdomain&gt; Date: Fri, 21 Sep 2022 12:58:01 +0800 (CST) 2022年 09月 21日 星期五 12:58:01 CST 由此可见，输出内容还是很多的，如遇到任务有大量输出的话，会占用大量磁盘空间，显然，这个邮件输出最好关闭，怎么关闭呢，只需设置MAILTO环境变量为空即可，上面的计划任务，可做如下修改：
+MAILTO=&#34;&#34; * * * * * /bin/date 这样，就不会发邮件信息到/var/spool/mail/$USER下了，但是问题并没有彻底解决，关闭mail功能后，输出内容将继续写入到/var/spool/clientmqueue中，长期下去，可能占满分区的inode资源，导致任务无法执行。
+为了避免此类问题发生，建议任务都加上输出重定向，例如，可以在crontab文件中设置如下形式，忽略日志输出：
+0 */3 * * * /usr/local/apache2/apachectl restart &gt;/dev/null 2&gt;&amp;1 其中，“/dev/null 2&gt;&amp;1”表示先将标准输出重定向到/dev/null，然后将标准错误重定向到标准输出，由于标准输出已经重定向到了/dev/null，因此标准错误也会重定向到/dev/null，这样日志输出问题就解决了。
+调试crontab问题的一般思路 要解决crontab相关异常问题，可按照如下思路进行调试：
+（1）、通过/var/log/cron日志确认任务是否执行
+（2）、如未执行则分析定时语句，是否是环境变量问题、特殊字符问题、时间配置问题、权限问题等。
+（3）、确认crond服务开启，如果定时语句也正确，检查crond服务是否开启。
+Systemd方式(centos7及以上)
+[root@SparkWorker1 spool]# systemctl status crond.service SysVinit方式(centos7以下)
+[root@SparkWorker1 spool]# service crond status （4）确认定时任务中命令是否执行成功
+这个问题可通过输出获取错误信息进行调试，方法就是利用重定向获取输出，然后进行分析。举例如下：
+* * * * * python /usr/local/dyserver/dypos.py &gt;&gt; /tmp/dypos.log 2&gt;&amp;1 通过加上“/tmp/dypos.log 2&gt;&amp;1”，就可以很快定位问题，因为这个dypos.py脚本在执行的时候会把错误信息都输出到dypos.log 中，接着查看dypos.log文件，问题一目了然：
+[root@SparkWorker1 spool]# cat /tmp/dypos.log /bin/sh: python: 未找到命令 /bin/sh: python: 未找到命令 显示python命令没有找到，很明显的就可以确定是环境变量的问题。这种方式定位问题非常有效。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>I2C总线接上拉电阻的原因</title>
+    <url>/post/hardware/why-add-pull-up-resistor-for-i2c.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>I2C</tag>
+    </tags>
+    <content type="html"><![CDATA[I2C为什么要接上拉电阻？因为它是开漏输出。
+为什么是开漏输出？ I2C协议支持多个主设备与多个从设备在一条总线上，如果不用开漏输出，而用推挽输出，会出现主设备之间短路的情况。所以总线一般会使用开漏输出。
+为什么要接上拉电阻？ 接上拉电阻是因为I2C通信需要输出高电平的能力。一般开漏输出无法输出高电平，如果在漏极接上拉电阻，则可以进行电平转换。
+I2C由两条总线SDA和SCL组成。连接到总线的器件的输出级必须是漏极开路，都通过上拉电阻连接到电源，这样才能够实现“线与”功能。当总线空闲时，这两条线路都是高电平。
+上拉电阻阻值怎么确定？ 一般IO端口的驱动能力在2mA～4mA量级。
+考虑到功耗问题，阻值不能过小
+如果上拉阻值过小，VDD灌入端口的电流将较大，功耗会很大，导致端口输出的低电平值增大(I2C协议规定，端口输出低电平的最高允许值为0.4V)。故通常上拉电阻应选取不低于1K的电阻（当VDD＝3V时，灌入电流不超过3mA）。
+考虑到速度问题，阻值不能过大
+它取决于上拉电阻和线上电容形成的RC延时，RC延时越大，波形越偏离方波趋向于正弦波，数据读写正确的概率就越低，所以上拉电阻不能过大。
+I2C总线上的负载电容不能超过400pF。当I2C总线上器件逐渐增多时，总线负载电容也相应增加。当总的负载电容大于400pF时，就不能可靠的工作。这也是I2C的局限性。
+建议上拉电阻可选用1.5K，2.2K，4.7K。
+I2C总线基本操作 根据I2C总线规范，总线空闲时两根线都必须为高。假设主设备A需要启动I2C，他需要在SCL高电平时，将SDA由高电平转换为低电平作为启动信号。
+主设备A在把SDA拉高后，它需要再检查一下SDA的电平。为什么? 因为线与，如果主设备A拉高SDA时，已经有其他主设备将SDA拉低了，由于 1 &amp; 0 = 0 那么主设备A在检查SDA电平时, 会发现不是高电平，而是低电平。说明其他主设备抢占总线的时间比它早，主设备A只能放弃占用总线。如果SDA是高电平，说明主设备A可以占用总线，然后主设备A将SDA拉低，开始通信。
+因此，模拟I2C一定要将GPIO端口设置为开漏输出并加上拉电阻。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux编程之经典多级时间轮定时器</title>
+    <url>/post/linux/linux-programming-multiple-time-wheel-timer.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>timer</tag>
+    </tags>
+    <content type="html"><![CDATA[mmap用于把文件映射到内存空间中，简单说mmap就是把一个文件的内容在内存里面做一个映像。
+多级时间轮实现框架 上图是5个时间轮级联的效果图。中间的大轮是工作轮，只有在它上的任务才会被执行；其他轮上的任务时间到后迁移到下一级轮上，他们最终都会迁移到工作轮上而被调度执行。
+多级时间轮的原理也容易理解：就拿时钟做说明，秒针转动一圈分针转动一格；分针转动一圈时针转动一格；同理时间轮也是如此：当低级轮转动一圈时，高一级轮转动一格，同时会将高一级轮上的任务重新分配到低级轮上。从而实现了多级轮级联的效果。
+多级时间轮对象 多级时间轮应该至少包括以下内容：
+ 每一级时间轮对象 轮子上指针的位置 关于轮子上指针的位置有一个比较巧妙的办法：那就是位运算。比如定义一个无符号整型的数：  通过获取当前的系统时间便可以通过位操作转换为时间轮上的时间，通过与实际时间轮上的时间作比较，从而确定时间轮要前进调度的时间，进而操作对应时间轮槽位对应的任务。
+为什么至少需要这两个成员呢？
+ 定义多级时间轮，首先需要明确的便是级联的层数，也就是说需要确定有几个时间轮。 轮子上指针位置，就是当前时间轮运行到的位置，它与真实时间的差便是后续时间轮需要调度执行，它们的差值是时间轮运作起来的驱动力。  多级时间轮对象的定义
+//实现5级时间轮 范围为0~ (2^8 * 2^6 * 2^6 * 2^6 *2^6)=2^32 struct tvec_base { unsigned long current_index; pthread_t thincrejiffies; pthread_t threadID; struct tvec_root tv1; /*第一个轮*/ struct tvec tv2; /*第二个轮*/ struct tvec tv3; /*第三个轮*/ struct tvec tv4; /*第四个轮*/ struct tvec tv5; /*第五个轮*/ }; 时间轮对象 我们知道每一个轮子实际上都是一个哈希表，上面我们只是实例化了五个轮子的对象，但是五个轮子具体包含什么，有几个槽位等等没有明确(即struct tvec和struct tvec_root)。
+#define TVN_BITS 6 #define TVR_BITS 8 #define TVN_SIZE (1&lt;&lt;TVN_BITS) #define TVR_SIZE (1&lt;&lt;TVR_BITS) struct tvec { struct list_head vec[TVN_SIZE];/*64个格子*/ }; struct tvec_root{ struct list_head vec[TVR_SIZE];/*256个格子*/ }; 此外，每一个时间轮都是哈希表，因此它的类型应该至少包含两个指针域来实现双向链表的功能。这里我们为了方便使用通用的struct list_head的双向链表结构。
+定时任务对象 定时器的主要工作是为了在未来的特定时间完成某项任务，而这个任务经常包含以下内容：
+ 任务的处理逻辑(回调函数) 任务的参数 双向链表节点 到时时间  定时任务对象的定义
+typedef void (*timeouthandle)(unsigned long ); struct timer_list{ struct list_head entry; //将时间连接成链表  unsigned long expires; //超时时间  void (*function)(unsigned long); //超时后的处理函数  unsigned long data; //处理函数的参数  struct tvec_base *base; //指向时间轮 }; 在时间轮上的效果图：
+双向链表 在时间轮上我们采用双向链表的数据类型。采用双向链表的除了操作上比单链表复杂，多占一个指针域外没有其他不可接收的问题。而多占一个指针域在今天大内存的时代明显不是什么问题。至于双向链表操作的复杂性，我们可以通过使用通用的struct list结构来解决，因为双向链表有众多的标准操作函数，我们可以通过直接引用list.h头文件来使用他们提供的接口。
+struct list可以说是一个万能的双向链表操作框架，我们只需要在自定义的结构中定义一个struct list对象即可使用它的标准操作接口。同时它还提供了一个类似container_of的接口，在应用层一般叫做list_entry，因此我们可以很方便的通过struct list成员找到自定义的结构体的起始地址。
+关于应用层的log.h, 我将在下面的代码中附上该文件。如果需要内核层的实现，可以直接从linux源码中获取。
+联结方式 多级时间轮效果图：
+多级时间轮C语言实现 双向链表头文件: list.h 提到双向链表，很多的源码工程中都会实现一系列的统一的双向链表操作函数。它们为双向链表封装了统计的接口，使用者只需要在自定义的结构中添加一个struct list_head结构，然后调用它们提供的接口，便可以完成双向链表的所有操作。这些操作一般都在list.h的头文件中实现。Linux源码中也有实现（内核态的实现）。他们实现的方式基本完全一样，只是实现的接口数量和功能上稍有差别。可以说这个list.h文件是学习操作双向链表的不二选择，它几乎实现了所有的操作：增、删、改、查、遍历、替换、清空等等。这里我拼凑了一个源码中的log.h函数，终于凑够了多级时间轮中使用到的接口。
+#if !defined(_BLKID_LIST_H) &amp;&amp; !defined(LIST_HEAD) #define _BLKID_LIST_H #ifdef __cplusplus extern &#34;C&#34; { #endif /* * Simple doubly linked list implementation. * * Some of the internal functions (&#34;__xxx&#34;) are useful when * manipulating whole lists rather than single entries, as * sometimes we already know the next/prev entries and we can * generate better code by using them directly rather than * using the generic single-entry routines. */ struct list_head { struct list_head *next, *prev; }; #define LIST_HEAD_INIT(name) { &amp;(name), &amp;(name) } #define LIST_HEAD(name) \ struct list_head name = LIST_HEAD_INIT(name) #define INIT_LIST_HEAD(ptr) do { \ (ptr)-&gt;next = (ptr); (ptr)-&gt;prev = (ptr); \ } while (0) static inline void __list_add(struct list_head *entry, struct list_head *prev, struct list_head *next) { next-&gt;prev = entry; entry-&gt;next = next; entry-&gt;prev = prev; prev-&gt;next = entry; } /** * Insert a new element after the given list head. The new element does not * need to be initialised as empty list. * The list changes from: * head → some element → ... * to * head → new element → older element → ... * * Example: * struct foo *newfoo = malloc(...); * list_add(&amp;newfoo-&gt;entry, &amp;bar-&gt;list_of_foos); * * @param entry The new element to prepend to the list. * @param head The existing list. */ static inline void list_add(struct list_head *entry, struct list_head *head) { __list_add(entry, head, head-&gt;next); } /** * Append a new element to the end of the list given with this list head. * * The list changes from: * head → some element → ... → lastelement * to * head → some element → ... → lastelement → new element * * Example: * struct foo *newfoo = malloc(...); * list_add_tail(&amp;newfoo-&gt;entry, &amp;bar-&gt;list_of_foos); * * @param entry The new element to prepend to the list. * @param head The existing list. */ static inline void list_add_tail(struct list_head *entry, struct list_head *head) { __list_add(entry, head-&gt;prev, head); } static inline void __list_del(struct list_head *prev, struct list_head *next) { next-&gt;prev = prev; prev-&gt;next = next; } /** * Remove the element from the list it is in. Using this function will reset * the pointers to/from this element so it is removed from the list. It does * NOT free the element itself or manipulate it otherwise. * * Using list_del on a pure list head (like in the example at the top of * this file) will NOT remove the first element from * the list but rather reset the list as empty list. * * Example: * list_del(&amp;foo-&gt;entry); * * @param entry The element to remove. */ static inline void list_del(struct list_head *entry) { __list_del(entry-&gt;prev, entry-&gt;next); } static inline void list_del_init(struct list_head *entry) { __list_del(entry-&gt;prev, entry-&gt;next); INIT_LIST_HEAD(entry); } static inline void list_move_tail(struct list_head *list, struct list_head *head) { __list_del(list-&gt;prev, list-&gt;next); list_add_tail(list, head); } /** * Check if the list is empty. * * Example: * list_empty(&amp;bar-&gt;list_of_foos); * * @return True if the list contains one or more elements or False otherwise. */ static inline int list_empty(struct list_head *head) { return head-&gt;next == head; } /** * list_replace - replace old entry by new one * @old : the element to be replaced * @new : the new element to insert * * If @old was empty, it will be overwritten. */ static inline void list_replace(struct list_head *old, struct list_head *new) { new-&gt;next = old-&gt;next; new-&gt;next-&gt;prev = new; new-&gt;prev = old-&gt;prev; new-&gt;prev-&gt;next = new; } /** * Retrieve the first list entry for the given list pointer. * * Example: * struct foo *first; * first = list_first_entry(&amp;bar-&gt;list_of_foos, struct foo, list_of_foos); * * @param ptr The list head * @param type Data type of the list element to retrieve * @param member Member name of the struct list_head field in the list element. * @return A pointer to the first list element. */ #define list_first_entry(ptr, type, member) \ list_entry((ptr)-&gt;next, type, member) static inline void list_replace_init(struct list_head *old, struct list_head *new) { list_replace(old, new); INIT_LIST_HEAD(old); } /** * list_entry - get the struct for this entry * @ptr: the &amp;struct list_head pointer. * @type: the type of the struct this is embedded in. * @member: the name of the list_struct within the struct. */ #define list_entry(ptr, type, member) \ ((type *)((char *)(ptr)-(unsigned long)(&amp;((type *)0)-&gt;member))) /** * list_for_each - iterate over elements in a list * @pos: the &amp;struct list_head to use as a loop counter. * @head: the head for your list. */ #define list_for_each(pos, head) \ for (pos = (head)-&gt;next; pos != (head); pos = pos-&gt;next) /** * list_for_each_safe - iterate over elements in a list, but don&#39;t dereference * pos after the body is done (in case it is freed) * @pos: the &amp;struct list_head to use as a loop counter. * @pnext: the &amp;struct list_head to use as a pointer to the next item. * @head: the head for your list (not included in iteration). */ #define list_for_each_safe(pos, pnext, head) \ for (pos = (head)-&gt;next, pnext = pos-&gt;next; pos != (head); \ pos = pnext, pnext = pos-&gt;next) #ifdef __cplusplus } #endif #endif /* _BLKID_LIST_H */这里面一般会用到一个重要实现：container_of, 它的原理这里不叙述
+调试信息头文件: log.h 这个头文件实际上不是必须的，我只是用它来添加调试信息(代码中的errlog(), log()都是log.h中的宏函数)。它的效果是给打印的信息加上颜色，效果如下：
+log.h的代码如下：
+#ifndef _LOG_h_ #define _LOG_h_ #include &lt;stdio.h&gt;#define COL(x) &#34;\033[;&#34; #x &#34;m&#34; #define RED COL(31) #define GREEN COL(32) #define YELLOW COL(33) #define BLUE COL(34) #define MAGENTA COL(35) #define CYAN COL(36) #define WHITE COL(0) #define GRAY &#34;\033[0m&#34; #define errlog(fmt, arg...) do{ \ printf(RED&#34;[#ERROR: Toeny Sun:&#34;GRAY YELLOW&#34; %s:%d]:&#34;GRAY WHITE fmt GRAY, __func__, __LINE__, ##arg);\ }while(0) #define log(fmt, arg...) do{ \ printf(WHITE&#34;[#DEBUG: Toeny Sun: &#34;GRAY YELLOW&#34;%s:%d]:&#34;GRAY WHITE fmt GRAY, __func__, __LINE__, ##arg);\ }while(0) #endif 时间轮代码: timewheel.c /* *毫秒定时器 采用多级时间轮方式 借鉴linux内核中的实现 *支持的范围为1 ~ 2^32 毫秒(大约有49天) *若设置的定时器超过最大值 则按最大值设置定时器 **/ #include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;#include &lt;unistd.h&gt;#include &lt;pthread.h&gt;#include &lt;sys/time.h&gt;#include &#34;list.h&#34;#include &#34;log.h&#34; #define TVN_BITS 6 #define TVR_BITS 8 #define TVN_SIZE (1&lt;&lt;TVN_BITS) #define TVR_SIZE (1&lt;&lt;TVR_BITS)  #define TVN_MASK (TVN_SIZE - 1) #define TVR_MASK (TVR_SIZE - 1)  #define SEC_VALUE 0 #define USEC_VALUE 2000  struct tvec_base; #define INDEX(N) ((ba-&gt;current_index &gt;&gt; (TVR_BITS + (N) * TVN_BITS)) &amp; TVN_MASK)  typedef void (*timeouthandle)(unsigned long ); struct timer_list{ struct list_head entry; //将时间连接成链表  unsigned long expires; //超时时间  void (*function)(unsigned long); //超时后的处理函数  unsigned long data; //处理函数的参数  struct tvec_base *base; //指向时间轮 }; struct tvec { struct list_head vec[TVN_SIZE]; }; struct tvec_root{ struct list_head vec[TVR_SIZE]; }; //实现5级时间轮 范围为0~ (2^8 * 2^6 * 2^6 * 2^6 *2^6)=2^32 struct tvec_base { unsigned long current_index; pthread_t thincrejiffies; pthread_t threadID; struct tvec_root tv1; /*第一个轮*/ struct tvec tv2; /*第二个轮*/ struct tvec tv3; /*第三个轮*/ struct tvec tv4; /*第四个轮*/ struct tvec tv5; /*第五个轮*/ }; static void internal_add_timer(struct tvec_base *base, struct timer_list *timer) { struct list_head *vec; unsigned long expires = timer-&gt;expires; unsigned long idx = expires - base-&gt;current_index; #if 1  if( (signed long)idx &lt; 0 ) /*这里是没有办法区分出是过时还是超长定时的吧?*/ { vec = base-&gt;tv1.vec + (base-&gt;current_index &amp; TVR_MASK);/*放到第一个轮的当前槽*/ } else if ( idx &lt; TVR_SIZE ) /*第一个轮*/ { int i = expires &amp; TVR_MASK; vec = base-&gt;tv1.vec + i; } else if( idx &lt; 1 &lt;&lt; (TVR_BITS + TVN_BITS) )/*第二个轮*/ { int i = (expires &gt;&gt; TVR_BITS) &amp; TVN_MASK; vec = base-&gt;tv2.vec + i; } else if( idx &lt; 1 &lt;&lt; (TVR_BITS + 2 * TVN_BITS) )/*第三个轮*/ { int i = (expires &gt;&gt; (TVR_BITS + TVN_BITS)) &amp; TVN_MASK; vec = base-&gt;tv3.vec + i; } else if( idx &lt; 1 &lt;&lt; (TVR_BITS + 3 * TVN_BITS) )/*第四个轮*/ { int i = (expires &gt;&gt; (TVR_BITS + 2 * TVN_BITS)) &amp; TVN_MASK; vec = base-&gt;tv4.vec + i; } else /*第五个轮*/ { int i; if (idx &gt; 0xffffffffUL) { idx = 0xffffffffUL; expires = idx + base-&gt;current_index; } i = (expires &gt;&gt; (TVR_BITS + 3 * TVN_BITS)) &amp; TVN_MASK; vec = base-&gt;tv5.vec + i; } #else  /*上面可以优化吧*/; #endif  list_add_tail(&amp;timer-&gt;entry, vec); } static inline void detach_timer(struct timer_list *timer) { struct list_head *entry = &amp;timer-&gt;entry; __list_del(entry-&gt;prev, entry-&gt;next); entry-&gt;next = NULL; entry-&gt;prev = NULL; } static int __mod_timer(struct timer_list *timer, unsigned long expires) { if(NULL != timer-&gt;entry.next) detach_timer(timer); internal_add_timer(timer-&gt;base, timer); return 0; } //修改定时器的超时时间外部接口 int mod_timer(void *ptimer, unsigned long expires) { struct timer_list *timer = (struct timer_list *)ptimer; struct tvec_base *base; base = timer-&gt;base; if(NULL == base) return -1; expires = expires + base-&gt;current_index; if(timer-&gt;entry.next != NULL &amp;&amp; timer-&gt;expires == expires) return 0; if( NULL == timer-&gt;function ) { errlog(&#34;timer&#39;s timeout function is null\n&#34;); return -1; } timer-&gt;expires = expires; return __mod_timer(timer,expires); } //添加一个定时器 static void __ti_add_timer(struct timer_list *timer) { if( NULL != timer-&gt;entry.next ) { errlog(&#34;timer is already exist\n&#34;); return; } mod_timer(timer, timer-&gt;expires); } /*添加一个定时器 外部接口 *返回定时器 */ void* ti_add_timer(void *ptimewheel, unsigned long expires,timeouthandle phandle, unsigned long arg) { struct timer_list *ptimer; ptimer = (struct timer_list *)malloc( sizeof(struct timer_list) ); if(NULL == ptimer) return NULL; bzero( ptimer,sizeof(struct timer_list) ); ptimer-&gt;entry.next = NULL; ptimer-&gt;base = (struct tvec_base *)ptimewheel; ptimer-&gt;expires = expires; ptimer-&gt;function = phandle; ptimer-&gt;data = arg; __ti_add_timer(ptimer); return ptimer; } /* *删除一个定时器 外部接口 * * */ void ti_del_timer(void *p) { struct timer_list *ptimer =(struct timer_list*)p; if(NULL == ptimer) return; if(NULL != ptimer-&gt;entry.next) detach_timer(ptimer); free(ptimer); } /*时间轮级联*/ static int cascade(struct tvec_base *base, struct tvec *tv, int index) { struct list_head *pos,*tmp; struct timer_list *timer; struct list_head tv_list; /*将tv[index]槽位上的所有任务转移给tv_list,然后清空tv[index]*/ list_replace_init(tv-&gt;vec + index, &amp;tv_list);/*用tv_list替换tv-&gt;vec + index*/ list_for_each_safe(pos, tmp, &amp;tv_list)/*遍历tv_list双向链表，将任务重新添加到时间轮*/ { timer = list_entry(pos,struct timer_list,entry);/*struct timer_list中成员entry的地址是pos, 获取struct timer_list的首地址*/ internal_add_timer(base, timer); } return index; } static void *deal_function_timeout(void *base) { struct timer_list *timer; int ret; struct timeval tv; struct tvec_base *ba = (struct tvec_base *)base; for(;;) { gettimeofday(&amp;tv, NULL); while( ba-&gt;current_index &lt;= (tv.tv_sec*1000 + tv.tv_usec/1000) )/*单位：ms*/ { struct list_head work_list; int index = ba-&gt;current_index &amp; TVR_MASK;/*获取第一个轮上的指针位置*/ struct list_head *head = &amp;work_list; /*指针指向0槽时，级联轮需要更新任务列表*/ if(!index &amp;&amp; (!cascade(ba, &amp;ba-&gt;tv2, INDEX(0))) &amp;&amp;( !cascade(ba, &amp;ba-&gt;tv3, INDEX(1))) &amp;&amp; (!cascade(ba, &amp;ba-&gt;tv4, INDEX(2))) ) cascade(ba, &amp;ba-&gt;tv5, INDEX(3)); ba-&gt;current_index ++; list_replace_init(ba-&gt;tv1.vec + index, &amp;work_list); while(!list_empty(head)) { void (*fn)(unsigned long); unsigned long data; timer = list_first_entry(head, struct timer_list, entry); fn = timer-&gt;function; data = timer-&gt;data; detach_timer(timer); (*fn)(data); } } } } static void init_tvr_list(struct tvec_root * tvr) { int i; for( i = 0; i&lt;TVR_SIZE; i++ ) INIT_LIST_HEAD(&amp;tvr-&gt;vec[i]); } static void init_tvn_list(struct tvec * tvn) { int i; for( i = 0; i&lt;TVN_SIZE; i++ ) INIT_LIST_HEAD(&amp;tvn-&gt;vec[i]); } //创建时间轮 外部接口 void *ti_timewheel_create(void ) { struct tvec_base *base; int ret = 0; struct timeval tv; base = (struct tvec_base *) malloc( sizeof(struct tvec_base) ); if( NULL==base ) return NULL; bzero( base,sizeof(struct tvec_base) ); init_tvr_list(&amp;base-&gt;tv1); init_tvn_list(&amp;base-&gt;tv2); init_tvn_list(&amp;base-&gt;tv3); init_tvn_list(&amp;base-&gt;tv4); init_tvn_list(&amp;base-&gt;tv5); gettimeofday(&amp;tv, NULL); base-&gt;current_index = tv.tv_sec*1000 + tv.tv_usec/1000;/*当前时间毫秒数*/ if( 0 != pthread_create(&amp;base-&gt;threadID,NULL,deal_function_timeout,base) ) { free(base); return NULL; } return base; } static void ti_release_tvr(struct tvec_root *pvr) { int i; struct list_head *pos,*tmp; struct timer_list *pen; for(i = 0; i &lt; TVR_SIZE; i++) { list_for_each_safe(pos,tmp,&amp;pvr-&gt;vec[i]) { pen = list_entry(pos,struct timer_list, entry); list_del(pos); free(pen); } } } static void ti_release_tvn(struct tvec *pvn) { int i; struct list_head *pos,*tmp; struct timer_list *pen; for(i = 0; i &lt; TVN_SIZE; i++) { list_for_each_safe(pos,tmp,&amp;pvn-&gt;vec[i]) { pen = list_entry(pos,struct timer_list, entry); list_del(pos); free(pen); } } } /* *释放时间轮 外部接口 * */ void ti_timewheel_release(void * pwheel) { struct tvec_base *base = (struct tvec_base *)pwheel; if(NULL == base) return; ti_release_tvr(&amp;base-&gt;tv1); ti_release_tvn(&amp;base-&gt;tv2); ti_release_tvn(&amp;base-&gt;tv3); ti_release_tvn(&amp;base-&gt;tv4); ti_release_tvn(&amp;base-&gt;tv5); free(pwheel); } /************demo****************/ struct request_para{ void *timer; int val; }; void mytimer(unsigned long arg) { struct request_para *para = (struct request_para *)arg; log(&#34;%d\n&#34;,para-&gt;val); mod_timer(para-&gt;timer,3000); //进行再次启动定时器  sleep(10);/*定时器依然被阻塞*/ //定时器资源的释放是在这里完成的  //ti_del_timer(para-&gt;timer); } int main(int argc,char *argv[]) { void *pwheel = NULL; void *timer = NULL; struct request_para *para; para = (struct request_para *)malloc( sizeof(struct request_para) ); if(NULL == para) return 0; bzero(para,sizeof(struct request_para)); //创建一个时间轮  pwheel = ti_timewheel_create(); if(NULL == pwheel) return -1; //添加一个定时器  para-&gt;val = 100; para-&gt;timer = ti_add_timer(pwheel, 3000, &amp;mytimer, (unsigned long)para); while(1) { sleep(2); } //释放时间轮  ti_timewheel_release(pwheel); return 0; } 编译运行 peng@ubuntu:/mnt/hgfs/timer/4. timerwheel/2. 多级时间轮$ ls a.out list.h log.h mutiTimeWheel.c toney@ubantu:/mnt/hgfs/timer录/4. timerwheel/2. 多级时间轮$ gcc mutiTimeWheel.c -lpthread toney@ubantu:/mnt/hgfs/timer/4. timerwheel/2. 多级时间轮$ ./a.out [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 [#DEBUG: Toeny Sun: mytimer:370]:100 从结果可以看出：如果添加的定时任务是比较耗时的操作，那么后续的任务也会被阻塞，可能一直到超时，甚至一直阻塞下去，这个取决于当前任务是否耗时。
+这个理论上是绝不能接受的：一个任务不应该也不能去影响其他的任务吧。但是目前没有对此问题进行改进和完善，以后有机会再继续完善吧。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Linux mmap内存映射详解</title>
+    <url>/post/linux/linux-mmap-explanation.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>device driver</tag>
+    </tags>
+    <content type="html"><![CDATA[mmap用于把文件映射到内存空间中，简单说mmap就是把一个文件的内容在内存里面做一个映像。
+mmap基础概念 mmap是一种内存映射的方法，这一功能可以用在文件的处理上，即将一个文件或者其它对象映射到进程的地址空间，实现文件磁盘地址和进程虚拟地址空间中一段虚拟地址的一一对映关系。在编程时可以使某个磁盘文件的内容看起来像是内存中的一个数组。如果文件由记录组成，而这些记录又能够用结构体来描述的话，可以通过访问结构体来更新文件的内容。
+实现这样的映射关系后，进程就可以采用指针的方式读写操作这一段内存，而系统会自动回写到页面到对应的文件磁盘上，即完成了对文件的操作而不必再调用read,write等系统调用函数。内核空间对这段区域的修改也直接反映用户空间，从而可以实现不同进程间的文件共享。如图所示：
+进程的虚拟地址空间，由多个虚拟内存区域构成。虚拟内存区域是进程的虚拟地址空间中的一个同质区间，即具有同样特性的连续地址范围。上图中所示的text数据段（代码段）、初始数据段、BSS数据段、堆、栈和内存映射，都是一个独立的虚拟内存区域。而为内存映射服务的地址空间处在堆栈之间的空余部分。
+内核为系统中的每个进程维护一个单独的任务结构（task_struct）。任务结构中的元素包含或者指向内核运行该进程所需的所有信息(PID、指向用户栈的指针、可执行目标文件的名字、程序计数器等)。Linux内核使用vm_area_struct结构来表示一个独立的虚拟内存区域，由于每个不同质的虚拟内存区域功能和内部机制都不同，因此一个进程使用多个vm_area_struct结构来分别表示不同类型的虚拟内存区域。各个vm_area_struct结构使用链表或者树形结构链接，方便进程快速访问，如下图所示：
+vm_area_struct结构中包含区域起始和终止地址以及其他相关信息，同时也包含一个vm_ops指针，其内部可引出所有针对这个区域可以使用的系统调用函数。这样，进程对某一虚拟内存区域的任何操作需要用要的信息，都可以从vm_area_struct中获得。mmap函数就是要创建一个新的vm_area_struct结构，并将其与文件的物理磁盘地址相连。
+mm_struct：描述了虚拟内存的当前状态。pgd指向一级页表的基址（当内核运行这个进程时， pgd会被存放在CR3控制寄存器，也就是页表基址寄存器中），mmap指向一个vm_area_structs 的链表，其中每个vm_area_structs都描述了当前虚拟地址空间的一个区域。 vm_starts 指向这个区域的起始处。 vm_end 指向这个区域的结束处。 vm_prot 描述这个区域内包含的所有页的读写许可权限。 vm_flags 描述这个区域内的页面是与其他进程共享的，还是这个进程私有的以及一些其他信息。 vm_next 指向链表的下一个区域结构。  mmap内存映射原理 mmap内存映射的实现过程，总的来说可以分为三个阶段：
+(一)启动映射过程，并在虚拟地址空间中为映射创建虚拟映射区域    进程在用户空间调用库函数mmap，原型：void *mmap(void *start, size_t length, int prot, int flags, int fd, off_t offset);
+  在当前进程的虚拟地址空间中，寻找一段空闲的满足要求的连续的虚拟地址。
+  为此虚拟区分配一个vm_area_struct结构，接着对这个结构的各个域进行了初始化。
+  将新建的虚拟区结构（vm_area_struct）插入进程的虚拟地址区域链表或树中。
+  (二)调用内核空间的系统调用函数mmap（不同于用户空间函数），实现文件物理地址和进程虚拟地址的一一映射关系   为映射分配了新的虚拟地址区域后，通过待映射的文件指针，在文件描述符表中找到对应的文件描述符，通过文件描述符，链接到内核“已打开文件集”中该文件的文件结构体（struct file），每个文件结构体维护者和这个已打开文件相关的各项信息。
+  通过该文件的文件结构体，链接到file_operations模块，调用内核函数mmap，其原型为：int mmap(struct file *filp, struct vm_area_struct *vma)，不同于用户空间库函数。
+  内核mmap函数通过虚拟文件系统inode模块定位到文件磁盘物理地址。
+  通过remap_pfn_range函数建立页表，即实现了文件地址和虚拟地址区域的映射关系。此时，这片虚拟地址并没有任何数据关联到主存中。
+  (三)进程发起对这片映射空间的访问，引发缺页异常，实现文件内容到物理内存（主存）的拷贝  注：前两个阶段仅在于创建虚拟区间并完成地址映射，但是并没有将任何文件数据的拷贝至主存。真正的文件读取是当进程发起读写操作时。
+ 进程的读或写操作访问虚拟地址空间这一段映射地址，通过查询页表，发现这一段地址并不在物理页面上。因为目前只建立了地址映射，真正的硬盘数据还没有拷贝到内存中，因此引发缺页异常。
+  缺页异常进行一系列判断，确定无非法操作后，内核发起请求调页过程。
+  调页过程先在交换缓存空间（swap cache）中寻找需要访问的内存页，如果没有则调用nopage函数把所缺的页从磁盘装入到主存中。
+  之后进程即可对这片主存进行读或者写的操作，如果写操作改变了其内容，一定时间后系统会自动回写脏页面到对应磁盘地址，也即完成了写入到文件的过程。
+  注意：修改过的脏页面并不会立即更新回文件中，而是有一段时间的延迟，可以调用msync()来强制同步, 这样所写的内容就能立即保存到文件里了。
+mmap 示例代码 mmap (内存映射)函数的作用是建立一段可以被两个或更多个程序读写的内存。一个程序对它所做出的修改可以被其他程序看见。这要通过使用带有特殊权限集的虚拟内存段来实现。对这类虚拟内存段的读写会使操作系统去读写磁盘文件中与之对应的部分。mmap 函数创建一个指向一段内存区域的指针，该内存区域与可以通过一个打开的文件描述符访问的文件的内容相关联。mmap 函数原型如下：
+#include &lt;sys/mman.h&gt;void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset); 可以通过传递 off 参数来改变共享内存段访问的文件中数据的起始偏移值。打开的文件描述符由 fildes 参数给出。可以访问的数据量(即内存段的长度)由 len 参数设置。
+可以通过 addr 参数来请求使用某个特定的内存地址。如果它的取值是零，结果指针就将自动分配。这是推荐的做法，否则会降低程序的可移植性，因为不同系统上的可用地址范围是不一样的。
+prot 参数用于设置内存段的访问权限。它是下列常数值的按位或的结果：
+PROT_READ 内存段可读。 PROT_WRITE 内存段可写。 PROT_EXEC 内存段可执行。 PROT_NONE 内存段不能被访问。 flags 参数控制程序对该内存段的改变所造成的影响：
+msync 函数的作用是：把在该内存段的某个部分或整段中的修改写回到被映射的文件中(或者从被映射文件里读出)。
+#include &lt;sys/mman.h&gt;int msync(void *addr, size_t len, int flags); 内存段需要修改的部分由作为参数传递过来的起始地址 addr 和长度 len 确定。flags 参数控制着执行修改的具体方式，可以使用的选项如下：
+MS_ASYNC 采用异步写方式 MS_SYNC 采用同步写方式 MS_INVALIDATE 从文件中读回数据 munmap 函数的作用是释放内存段：
+#include &lt;sys/mman.h&gt;int munmap(void *addr, size_t length); 示例代码：
+(1) 定义一个 RECORD 数据结构，然后创建出 NRECORDS 每个记录，每个记录中保存着它们各自的编号。然后把这些记录都追加到文件 records.dat 里去。
+(2) 接着，把第 43 记录中的整数值由 43 修改为 143，并把它写入第 43 条记录中的字符串。
+(3) 把这些记录映射到内存中，然后访问第 43 条记录，把它的整数值修改为 243 (同时更新该记录中的字符串)，使用的还是内存映射的方法。
+可以将上述 (2) (3) 分别编写程序验证结果。
+#include &lt;unistd.h&gt;#include &lt;stdio.h&gt;#include &lt;sys/mman.h&gt;#include &lt;fcntl.h&gt;#include &lt;stdlib.h&gt;typedef struct{ int integer; char string[24]; }RECORD; #define NRECORDS (100) int main() { RECORD record, *mapped; int i, f; FILE *fp; fp = fopen(&#34;records.dat&#34;, &#34;w+&#34;); for( i = 0; i &lt; NRECORDS; i++) { record.integer = i; sprintf(record.string, &#34;[RECORD-%d]&#34;, i); fwrite(&amp;record, sizeof(record), 1, fp); } fclose(fp); fp = fopen(&#34;records.dat&#34;, &#34;r+&#34;); fseek(fp, 43 * sizeof(record), SEEK_SET); fread(&amp;record, sizeof(record), 1, fp); record.integer = 143; sprintf(record.string, &#34;[RECORD-%d]&#34;, record.integer); fseek(fp, 43 * sizeof(record), SEEK_SET); fwrite(&amp;record, sizeof(record), 1, fp); fclose(fp); f = open(&#34;records.dat&#34;, O_RDWR); mapped = (RECORD*)mmap(0, NRECORDS * sizeof(record), PROT_READ | PROT_WRITE, MAP_SHARED, f, 0); printf(&#34;f:[%d]\n&#34;, f); //open是系统调用，返回文件描述符。fopen是库函数，返回指针。 	mapped[43].integer = 243; sprintf(mapped[43].string, &#34;[RECORD-%d]&#34;, mapped[43].integer); msync((void *) mapped, NRECORDS * sizeof(record), MS_ASYNC); munmap((void *)mapped, NRECORDS * sizeof(record)); close(f); return 0;	} mmap 和常规文件操作的区别 使用系统调用，函数的调用过程：
+  进程发起读文件请求。
+  内核通过查找进程文件描述符表，定位到内核已打开文件集上的文件信息，从而找到此文件的inode。
+  inode在address_space上查找要请求的文件页是否已经缓存在页缓存中。如果存在，则直接返回这片文件页的内容。
+  如果不存在，则通过inode定位到文件磁盘地址，将数据从磁盘复制到页缓存。之后再次发起读页面过程，进而将页缓存中的数据发给用户进程。
+  总结来说，常规文件操作为了提高读写效率和保护磁盘，使用了页缓存机制。这样造成读文件时需要先将文件页从磁盘拷贝到页缓存中，由于页缓存处在内核空间，不能被用户进程直接寻址，所以还需要将页缓存中数据页再次拷贝到内存对应的用户空间中。这样，通过了两次数据拷贝过程，才能完成进程对文件内容的获取任务。写操作也是一样，待写入的buffer在内核空间不能直接访问，必须要先拷贝至内核空间对应的主存，再写回磁盘中（延迟写回），也是需要两次数据拷贝。
+而使用mmap操作文件中，创建新的虚拟内存区域和建立文件磁盘地址和虚拟内存区域映射这两步，没有任何文件拷贝操作。而之后访问数据时发现内存中并无数据而发起的缺页异常过程，可以通过已经建立好的映射关系，只使用一次数据拷贝，就从磁盘中将数据传入内存的用户空间中，供进程使用。
+总而言之，常规文件操作需要从磁盘到页缓存再到用户主存的两次数据拷贝。而mmap操控文件，只需要从磁盘到用户主存的一次数据拷贝过程。说白了，mmap的关键点是实现了用户空间和内核空间的数据直接交互而省去了空间不同、数据不通的繁琐过程。因此mmap效率更高。
+由上文讨论可知，mmap优点共有一下几点：
+  对文件的读取操作跨过了页缓存，减少了数据的拷贝次数，用内存读写取代I/O读写，提高了文件读取效率。
+  实现了用户空间和内核空间的高效交互方式。两空间的各自修改操作可以直接反映在映射的区域内，从而被对方空间及时捕捉。
+  提供进程间共享内存及相互通信的方式。不管是父子进程还是无亲缘关系的进程，都可以将自身用户空间映射到同一个文件或匿名映射到同一片区域。从而通过各自对映射区域的改动，达到进程间通信和进程间共享的目的。
+  同时，如果进程A和进程B都映射了区域C，当A第一次读取C时通过缺页从磁盘复制文件页到内存中；但当B再读C的相同页面时，虽然也会产生缺页异常，但是不再需要从磁盘中复制文件过来，而可直接使用已经保存在内存中的文件数据。
+可用于实现高效的大规模数据传输。内存空间不足，是制约大数据操作的一个方面，解决方案往往是借助硬盘空间协助操作，补充内存的不足。但是进一步会造成大量的文件I/O操作，极大影响效率。这个问题可以通过mmap映射很好的解决。换句话说，但凡是需要用磁盘空间代替内存的时候，mmap都可以发挥其功效。  mmap 使用的细节   使用mmap需要注意的一个关键点是，mmap映射区域大小必须是物理页大小(page_size)的整倍数（32位系统中通常是4k字节）。原因是，内存的最小粒度是页，而进程虚拟地址空间和内存的映射也是以页为单位。为了匹配内存的操作，mmap从磁盘到虚拟地址空间的映射也必须是页。
+  内核可以跟踪被内存映射的底层对象（文件）的大小，进程可以合法的访问在当前文件大小以内又在内存映射区以内的那些字节。也就是说，如果文件的大小一直在扩张，只要在映射区域范围内的数据，进程都可以合法得到，这和映射建立时文件的大小无关。
+  映射建立之后，即使文件关闭，映射依然存在。因为映射的是磁盘的地址，不是文件本身，和文件句柄无关。同时可用于进程间通信的有效地址空间不完全受限于被映射文件的大小，因为是按页映射。
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>几道简单的Linux驱动相关面试题</title>
+    <url>/post/linux/linux-device-driver-questions-and-answers.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>device driver</tag>
+    </tags>
+    <content type="html"><![CDATA[今天给大家分享几道Linux设备驱动相关的面试题，希望能对需要的网友一些帮助！
+Linux基础 任意3种网络操作的Linux命令,并说明他们的含义 ifconfig 命令 ifconfig 用于查看和配置 Linux 系统的网络接口。 查看所有网络接口及其状态：ifconfig -a 。 使用 up 和 down 命令启动或停止某个接口：ifconfig eth0 up 和 ifconfig eth0 down 。
+iptables 命令 iptables ，是一个配置 Linux 内核防火墙的命令行工具。功能非常强大，对于我们开发来说，主要掌握如何开放端口即可。
+netstat 命令 Linux netstat命令用于显示网络状态。
+利用netstat指令可让你得知整个Linux系统的网络情况。
+ping 命令 Linux ping命令用于检测主机。
+执行ping指令会使用ICMP传输协议，发出要求回应的信息，若远端主机的网络功能没有问题，就会回应该信息，因而得知该主机运作正常。
+telnet 命令 Linux telnet命令用于远端登入。
+执行telnet指令开启终端机阶段作业，并登入远端主机。
+Linux支持的文件类型  普通文件类型 - 目录文件类型 d 块设备文件类型 b 字符设备类型 c 套接字文件类型 s FIFO管道文件类型 p 链接文件类型 l  Linux系统编程 嵌入式操作系统进程间有哪些同步通信服务？ Linux进程间通信方式主要有  信号(signal) 信号量 管道(pipe)、流管道(s_pipe)、有名管道(FIFO)。 消息队列 共享内存 套接字（本地的还有域套接字）  ARM 请问ARM支持哪几种异常类型？ 异常源分类
+要进入异常模式，一定要有异常源，ARM规定有7种异常源：
+   异常源 描述     Reset 上电时执行   Undef 当流水线中的某个非法指令到达执行状态时执行   SWI 当一个软中断指令被执行完的时候执行   Prefetch 当一个指令被从内存中预取时，由于某种原因而失败，如果它能到达执行状态这个异常才会产生   Data 如果一个预取指令试图存取一个非法的内存单元，这时异常产生   IRQ 通常的中断   FIQ 快速中断    请简述什么是中断？中断发生后，CPU做了哪些操作 中断：是指CPU在执行程序的过程中，出现了某些突发事件时CPU必须暂停执行当前的程序，转去处理突发事件，处理完毕后CPU又返回源程序被中断的位置并继续执行。
+中断发生后，ARM核的操作步骤可以总结为4大步3小步。
+4大步3小步  保存执行状态：将CPSR复制到发生的异常模式下SPSR中； 模式切换：   CPSR模式位强制设置为与异常类型相对应的值， 处理器进入到ARM执行模式， 禁止所有IRQ中断，当进入FIQ快速中断模式时禁止FIQ中断；   保存返回地址：将下一条指令的地址（被打断程序）保存在LR(异常模式下LR_excep)中。 跳入异常向量表：强制设置PC的值为相应异常向量地址，跳转到异常处理程序中。  什么是GPIO？ general purpose input/output GPIO是相对于芯片本身而言的，如某个管脚是芯片的GPIO脚，则该脚可作为输入或输出高或低电平使用，当然某个脚具有复用的功能，即可做GPIO也可做其他用途。
+也就是说你可以把这些引脚拿来用作任何一般用途的输入输出，例如用一根引脚连到led的一极来控制它的亮灭，也可以用一根（一些）引脚连到一个传感器上以获得该传感器的状态，这给cpu提供了一个方便的控制周边设备的途经。如果没有足够多的gpio管脚，在控制一些外围设备时就会力有不逮，这时可采取的方案是使用CPLD来帮助管理。
+IIC引脚名称及功能？  SDA 数据线，用于传输数据 SCL 时钟线，用于同步数据  IIC的S、P信号如何发出？ 每次通信都必须由主设备发起，当主设备决定开始通讯时，需要发送开始（S）信号，需要执行以下动作；
+ 空闲时SCL默认是高电平； 将SDA线从高压电平切换到低压电平； 然后将SCL从高电平切换到低电平。 在主设备发送开始条件信号之后，所有从机即使处于睡眠模式也将变为活动状态，并等待接收地址位。 当双方决定结束通讯时，需要发送停止（P）信号，需要执行以下动作； 先将SDA、SCL设置为低电平； 然后将SCL从低电平切换到高电平； 将SDA从低电平切换到高电平。 在停止条件信号之后，I2C总线即处于空闲状态。  SPI引脚名称及功能？ 串行时钟线（SCK）、 主机输入/从机输出数据线MISO、 主机输出/从机输入数据线MOSI 从机选择线SS
+(有的SPI接口芯片带有中断信号线INT或INT、有的SPI接口芯片没有主机输出/从机输入数据线MOSI)
+驱动  查看驱动模块中打印信息应该使用什么命令？如何查看内核中已有的字符设备的信息？如何查看正在使用的有哪些中断号？
+ 查看驱动模块中打印信息的命令： dmesg 查看加载模块信息可以用 lsmod 已经分配的字符设备块设备号信息可以查看下面文件 cat /proc/devices 内核会为每一个驱动模块建立一个文件夹，如下： ls /sys/module/ 显示当前使用的中断号 cat /proc/interrupts  如何手动创建字符设备？并简述主设备号和次设备号的用途。
+ 创建字符设备命令如下:
+mknod chartest c 4 64， mknod : 创建设备节点 chartest ：设备节点名字 c ： 字符设备， 4 ： 主设备号 64： 次设备号 主设备号：主设备号标识设备对应的驱动程序。虽然现代的linux内核允许多个驱动程序共享主设备号，但我们看待的大多数设备仍然按照“一个主设备对应一个驱动程序”的原则组织。
+次设备号：次设备号由内核使用，用于正确确定设备文件所指的设备。依赖于驱动程序的编写方式，我们可以通过次设备号获得一个指向内核设备的直接指针，也可将此设备号当作设备本地数组的索引。
+比如：
+硬件平台可能又4个串口，他们驱动非常类似，区别仅仅是个字对应的SFR基地址不同， 那么我们可以让着几个串口共用同一个串口设备驱动 通过次设备号来区别具体是哪一个串口  内核中使用共享资源时，为了使之满足互斥条件，通常有哪些方法？
+ 原子操作，自旋锁，信号量，互斥锁
+ Linux内核包括那几个子系统？
+ Linux内核主要由进程调度（SCHED）、内存管理（MM）、虚拟文件系统（VFS）、网络接口（NET）和进程间通信（IPC）5个子系统组成
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>10个Python脚本来自动化你的日常任务</title>
+    <url>/post/python/ten-python-script-to-automatically-execute-your-daily-task.html</url>
+    <categories><category>Python</category>
+    </categories>
+    <tags>
+      <tag>python</tag>
+    </tags>
+    <content type="html"><![CDATA[ 在这个自动化时代，我们有很多重复无聊的工作要做。 想想这些你不再需要一次又一次地做的无聊的事情，让它自动化，让你的生活更轻松。 那么在本文中，我将向您介绍 10 个 Python 自动化脚本，以使你的工作更加自动化，生活更加轻松。 因此，没有更多的重复任务将这篇文章放在您的列表中，让我们开始吧。
+ 解析和提取 HTML  此自动化脚本将帮助你从网页 URL 中提取 HTML，然后还为你提供可用于解析 HTML 以获取数据的功能。这个很棒的脚本对于网络爬虫和那些想要解析 HTML 以获取重要数据的人来说是一种很好的享受。
+ # Parse and Extract HTML # pip install gazpacho import gazpacho # Extract HTML from URL url = &#39;https://www.example.com/&#39; html = gazpacho.get(url) print(html) # Extract HTML with Headers headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0&#39;} html = gazpacho.get(url, headers=headers) print(html) # Parse HTML parse = gazpacho.Soup(html) # Find single tags tag1 = parse.find(&#39;h1&#39;) tag2 = parse.find(&#39;span&#39;) # Find multiple tags tags1 = parse.find_all(&#39;p&#39;) tags2 = parse.find_all(&#39;a&#39;) # Find tags by class tag = parse.find(&#39;.class&#39;) # Find tags by Attribute tag = parse.find(&#34;div&#34;, attrs={&#34;class&#34;: &#34;test&#34;}) # Extract text from tags text = parse.find(&#39;h1&#39;).text text = parse.find_all(&#39;p&#39;)[0].text 二维码扫描仪  拥有大量二维码图像或只想扫描二维码图像，那么此自动化脚本将帮助你。该脚本使用 Qrtools 模块，使你能够以编程方式扫描 QR 图像。
+ # Qrcode Scanner # pip install qrtools from qrtools import Qr def Scan_Qr(qr_img): qr = Qr() qr.decode(qr_img) print(qr.data) return qr.data print(&#34;Your Qr Code is: &#34;, Scan_Qr(&#34;qr.png&#34;)) 截图  现在，你可以使用下面这个很棒的脚本以编程方式截取屏幕截图。使用此脚本，你可以直接截屏或截取特定区域的屏幕截图。
+ # Grab Screenshot # pip install pyautogui # pip install Pillow from pyautogui import screenshot import time from PIL import ImageGrab # Grab Screenshot of Screen def grab_screenshot(): shot = screenshot() shot.save(&#39;my_screenshot.png&#39;) # Grab Screenshot of Specific Area def grab_screenshot_area(): area = (0, 0, 500, 500) shot = ImageGrab.grab(area) shot.save(&#39;my_screenshot_area.png&#39;) # Grab Screenshot with Delay def grab_screenshot_delay(): time.sleep(5) shot = screenshot() shot.save(&#39;my_screenshot_delay.png&#39;) 创建有声读物  厌倦了手动将您的 PDF 书籍转换为有声读物，那么这是你的自动化脚本，它使用 GTTS 模块将你的 PDF 文本转换为音频。
+ # Create Audiobooks # pip install gTTS # pip install PyPDF2 from PyPDF2 import PdfFileReader as reader from gtts import gTTS def create_audio(pdf_file): read_Pdf = reader(open(pdf_file, &#39;rb&#39;)) for page in range(read_Pdf.numPages): text = read_Pdf.getPage(page).extractText() tts = gTTS(text, lang=&#39;en&#39;) tts.save(&#39;page&#39; + str(page) + &#39;.mp3&#39;) create_audio(&#39;book.pdf&#39;) PDF 编辑器  使用以下自动化脚本使用 Python 编辑 PDF 文件。该脚本使用 PyPDF4 模块，它是 PyPDF2 的升级版本，下面我编写了 Parse Text、Remove pages 等常用功能。当你有大量 PDF 文件要编辑或需要以编程方式在 Python 项目中使用脚本时，这是一个方便的脚本。
+ # PDF Editor # pip install PyPDf4 import PyPDF4 # Parse the Text from PDF def parse_text(pdf_file): reader = PyPDF4.PdfFileReader(pdf_file) for page in reader.pages: print(page.extractText()) # Remove Page from PDF def remove_page(pdf_file, page_numbers): filer = PyPDF4.PdfReader(&#39;source.pdf&#39;, &#39;rb&#39;) out = PyPDF4.PdfWriter() for index in page_numbers: page = filer.pages[index] out.add_page(page) with open(&#39;rm.pdf&#39;, &#39;wb&#39;) as f: out.write(f) # Add Blank Page to PDF def add_page(pdf_file, page_number): reader = PyPDF4.PdfFileReader(pdf_file) writer = PyPDF4.PdfWriter() writer.addPage() with open(&#39;add.pdf&#39;, &#39;wb&#39;) as f: writer.write(f) # Rotate Pages def rotate_page(pdf_file): reader = PyPDF4.PdfFileReader(pdf_file) writer = PyPDF4.PdfWriter() for page in reader.pages: page.rotateClockwise(90) writer.addPage(page) with open(&#39;rotate.pdf&#39;, &#39;wb&#39;) as f: writer.write(f) # Merge PDFs def merge_pdfs(pdf_file1, pdf_file2): pdf1 = PyPDF4.PdfFileReader(pdf_file1) pdf2 = PyPDF4.PdfFileReader(pdf_file2) writer = PyPDF4.PdfWriter() for page in pdf1.pages: writer.addPage(page) for page in pdf2.pages: writer.addPage(page) with open(&#39;merge.pdf&#39;, &#39;wb&#39;) as f: writer.write(f) 迷你 Stackoverflow  作为一名程序员，我知道我们每天都需要 StackOverflow，但你不再需要在 Google 上搜索它。现在，在您继续处理项目的同时，在你的 CMD 中获得直接解决方案。通过使用 Howdoi 模块，你可以在命令提示符或终端中获得 StackOverflow 解决方案。你可以在下面找到一些可以尝试的示例。
+ # Automate Stackoverflow # pip install howdoi # Get Answers in CMD #example 1 &gt; howdoi how do i install python3 # example 2 &gt; howdoi selenium Enter keys # example 3 &gt; howdoi how to install modules # example 4 &gt; howdoi Parse html with python # example 5 &gt; howdoi int not iterable error # example 6 &gt; howdoi how to parse pdf with python # example 7 &gt; howdoi Sort list in python # example 8 &gt; howdoi merge two lists in python # example 9 &gt;howdoi get last element in list python # example 10 &gt; howdoi fast way to sort list 自动化手机  此自动化脚本将帮助你使用 Python 中的 Android 调试桥 (ADB) 自动化你的智能手机。下面我将展示如何自动执行常见任务，例如滑动手势、呼叫、发送短信等等。您可以了解有关 ADB 的更多信息，并探索更多令人兴奋的方法来实现手机自动化，让您的生活更轻松。
+ # Automate Mobile Phones # pip install opencv-python import subprocess def main_adb(cm): p = subprocess.Popen(cm.split(&#39; &#39;), stdout=subprocess.PIPE, shell=True) (output, _) = p.communicate() return output.decode(&#39;utf-8&#39;) # Swipe  def swipe(x1, y1, x2, y2, duration): cmd = &#39;adb shell input swipe {}{}{}{}{}&#39;.format(x1, y1, x2, y2, duration) return main_adb(cmd) # Tap or Clicking def tap(x, y): cmd = &#39;adb shell input tap {}{}&#39;.format(x, y) return main_adb(cmd) # Make a Call def make_call(number): cmd = f&#34;adb shell am start -a android.intent.action.CALL -d tel:{number}&#34; return main_adb(cmd) # Send SMS def send_sms(number, message): cmd = &#39;adb shell am start -a android.intent.action.SENDTO -d sms:{}--es sms_body &#34;{}&#34;&#39;.format(number, message) return main_adb(cmd) # Download File From Mobile to PC def download_file(file_name): cmd = &#39;adb pull /sdcard/{}&#39;.format(file_name) return main_adb(cmd) # Take a screenshot def screenshot(): cmd = &#39;adb shell screencap -p&#39; return main_adb(cmd) # Power On and Off def power_off(): cmd = &#39;&#34;adb shell input keyevent 26&#34;&#39; return main_adb(cmd) 监控 CPU/GPU 温度  你可能使用 CPU-Z 或任何规格监控软件来捕获你的 Cpu 和 Gpu 温度，但你也可以通过编程方式进行。好吧，这个脚本使用 Pythonnet 和 OpenhardwareMonitor 来帮助你监控当前的 Cpu 和 Gpu 温度。你可以使用它在达到一定温度时通知自己，也可以在 Python 项目中使用它来简化日常生活。
+ # Get CPU/GPU Temperature # pip install pythonnet import clr clr.AddReference(&#34;OpenHardwareMonitorLib&#34;) from OpenHardwareMonitorLib import * spec = Computer() spec.GPUEnabled = True spec.CPUEnabled = True spec.Open() # Get CPU Temp def Cpu_Temp(): while True: for cpu in range(0, len(spec.Hardware[0].Sensors)): if &#34;/temperature&#34; in str(spec.Hardware[0].Sensors[cpu].Identifier): print(str(spec.Hardware[0].Sensors[cpu].Value)) # Get GPU Temp def Gpu_Temp() while True: for gpu in range(0, len(spec.Hardware[0].Sensors)): if &#34;/temperature&#34; in str(spec.Hardware[0].Sensors[gpu].Identifier): print(str(spec.Hardware[0].Sensors[gpu].Value)) Instagram 上传机器人  Instagram 是一个著名的社交媒体平台，你现在不需要通过智能手机上传照片或视频。你可以使用以下脚本以编程方式执行此操作。
+ # Upload Photos and Video on Insta # pip install instabot from instabot import Bot def Upload_Photo(img): robot = Bot() robot.login(user) robot.upload_photo(img, caption=&#34;Medium Article&#34;) print(&#34;Photo Uploaded&#34;) def Upload_Video(video): robot = Bot() robot.login(user) robot.upload_video(video, caption=&#34;Medium Article&#34;) print(&#34;Video Uploaded&#34;) def Upload_Story(img): robot = Bot() robot.login(user) robot.upload_story(img, caption=&#34;Medium Article&#34;) print(&#34;Story Photos Uploaded&#34;) Upload_Photo(&#34;img.jpg&#34;) Upload_Video(&#34;video.mp4&#34;) 视频水印  使用此自动化脚本为你的视频添加水印，该脚本使用 Moviepy，这是一个方便的视频编辑模块。在下面的脚本中，你可以看到如何添加水印并且可以自由使用它。
+ # Video Watermark with Python # pip install moviepy from moviepy.editor import * clip = VideoFileClip(&#34;myvideo.mp4&#34;, audio=True) width,height = clip.size text = TextClip(&#34;WaterMark&#34;, font=&#39;Arial&#39;, color=&#39;white&#39;, fontsize=28) set_color = text.on_color(size=(clip.w + text.w, text.h-10), color=(0,0,0), pos=(6,&#39;center&#39;), col_opacity=0.6) set_textPos = set_color.set_pos( lambda pos: (max(width/30,int(width-0.5* width* pos)),max(5*height/6,int(100* pos))) ) Output = CompositeVideoClip([clip, set_textPos]) Output.duration = clip.duration Output.write_videofile(&#34;output.mp4&#34;, fps=30, codec=&#39;libx264&#39;) ]]></content>
+  </entry>
+  
+  <entry>
+    <title>FPGA硬核和软核处理器的区别</title>
+    <url>/post/fpga/difference-between-hard-core-processor-and-soft-core-processor-of-fpga.html</url>
+    <categories><category>FPGA</category>
+    </categories>
+    <tags>
+      <tag>CPU</tag>
+      <tag>fpga</tag>
+      <tag>processor</tag>
+      <tag>Altera</tag>
+      <tag>Xilinx</tag>
+    </tags>
+    <content type="html"><![CDATA[ 从架构的角度来说，SOPC和SoC FPGA是统一的，都是由FPGA部分和处理器部分组成。在SoC FPGA 中，嵌入的是纯硬件基础的硬核处理器，简称HPS(Hardware Processor System)，而SOPC技术中，嵌入的是使用FPGA逻辑资源实现的软核处理器，两者指令集不一样，处理器性能也不一样。
+ 软核处理器 SOPC技术，即软核处理器，最早是由Altera公司提出来的，它是基于 FPGA  的SOC片上系统设计技术。是使用FPGA的逻辑和资源搭建的一个软核CPU系统，由于是使用FPGA的通用逻辑搭建的CPU，因此具有一定的灵活性，用户可以根据自己的需求对CPU进行定制裁剪，增加一些专用功能，例如除法或浮点运算单元，用于提升CPU在某些专用运算方面的性能，或者删除一些在系统里面使用不到的功能，以节约逻辑资源。
+另外也可以根据用户的实际需求，为CPU添加各种标准或定制的外设，例如UART，SPI，IIC等标准接口外设，同时，用户也可以自己使用FPGA的逻辑资源，编写各种专用的外设，然后连接到CPU总线上，由CPU进行控制，以实现软硬件的协同工作，在保证系统性能的同时，增加了系统的灵活性。
+而且，如果单个的软核CPU无法满足用户需求，可以添加多个CPU软核，搭建多核系统，通过多核CPU协同工作，让系统拥有更加灵活便捷的控制能力。
+由于是使用FPGA资源实现的，所以具有很大的灵活性，可以实现根据需要实现多种处理器，如8051，RISC-V，Xilinx的 MicroBlaze ，Altera的Nios-II等等。
+硬核处理器 由于软核CPU是使用FPGA的通用逻辑资源搭建的，相较使用经过布局布线优化的硬核处理器来说，软核处理器够运行的最高实时钟主频要低一些，而且也会相应的消耗较多的FPGA逻辑资源以及片上存储器资源，因此SOPC方案仅适用于对于数处理器整体性能要求不高的应用，例如整个系统的初始化配置，人机交互，多个功能模块间的协调控制等功能。
+所以，各大FPGA厂家推出了SoC FPGA技术，是在芯片设计之初，就在内部的硬件电路上添加了硬核处理器，是纯硬件实现的，不会消耗FPGA的逻辑资源，硬核处理器和FPGA逻辑在一定程度上是相互独立的，简单的说，就是SoC FPGA就是把一块ARM处理器和一块FPGA芯片封装成了一个芯片。
+例如比较有名的Xilinx的ZYNQ/PYNQ系列集成ARM Cortex-A9处理器，同时具有ARM软件的可编程性和FPGA 的硬件可编程性，不仅可实现重要分析与硬件加速，同时还在单个器件上高度集成 CPU、DSP、ASSP 以及混合信号功能。
+ZYNQ开发板 Intel的Cyclone V系列，集成双核Cortex-A9，于2013年发布，在单一芯片上集成了双核的ARM Cortex-A9处理器和FPGA逻辑资源的新型SoC芯片，相较于传统的单一ARM处理器或FPGA芯片，它既拥有了ARM处理器灵活高效的数据运算和事务处理能力，同时又集成了FPGA的高速并行处理优势，同时，基于两者独特的片上互联结构，使用时可以将FPGA上的通用逻辑资源经过配置，映射为ARM处理器的一个或多个具有特定功能的外设，通过高达128位宽的AXI高速总线进行通信，完成数据和控制命令的交互。由于片上的ARM处理器是经过布局布线的硬线逻辑，因此其能工作的时钟主频较高，因此单位时间内能够执行的指令也更多。
+区别和联系 从架构的角度来说，SOPC和SoC FPGA是统一的，都是由FPGA部分和处理器部分组成。在SoC FPGA 中，嵌入的是纯硬件基础的硬核处理器，简称HPS(Hardware Processor System)，而SOPC技术中，嵌入的是使用FPGA逻辑资源实现的软核处理器，两者指令集不一样，处理器性能也不一样。
+一般来说，硬核处理器的性能要远远高于软核处理器。另外，硬核处理器除了CPU部分，还集成了各种高性能外设，如MMU、DDR3控制器、Nand FLASH控制器等，可以运行成熟的Linux操作系统和应用程序，提供统一的系统API，降低开发者的软件开发难度。而软核CPU虽然可以通过配置，用逻辑资源来搭建相应的控制器以支持相应功能，但是从性能和开发难度上来说，基于SoC FPGA架构进行设计开发是比较好的选择。
+ZYNQ内部框图 另外，虽然SoC FPGA芯片上既包含了有ARM，又包含了有FPGA，但是两者一定程度上是相互独立的，SoC芯片上的ARM处理器核并非是包含于FPGA逻辑单元内部的，FPGA和ARM（HPS）处理器只是封装到同一个芯片中，JTAG接口、电源引脚和外设的接口引脚都是独立的，因此，如果使用SoC FPGA芯片进行设计，即使不使用到片上的ARM处理器，ARM处理器部分占用的芯片资源也无法释放出来，不能用作通用的FPGA资源。
+而SOPC则是使用FPGA通用逻辑和存储器资源搭建的CPU，当不使用CPU时，CPU部分占用的资源可以被释放，重新用作通用FPGA资源。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>详解嵌入式LCD的接口类型</title>
+    <url>/post/fpga/embedded-lcd-interface-model.html</url>
+    <categories><category>FPGA</category>
+    </categories>
+    <tags>
+      <tag>LCD</tag>
+      <tag>RGB</tag>
+    </tags>
+    <content type="html"><![CDATA[ 从架构的角度来说，SOPC和SoC FPGA是统一的，都是由FPGA部分和处理器部分组成。在SoC FPGA 中，嵌入的是纯硬件基础的硬核处理器，简称HPS(Hardware Processor System)，而SOPC技术中，嵌入的是使用FPGA逻辑资源实现的软核处理器，两者指令集不一样，处理器性能也不一样。
+ LCD的接口有多种，分类很细。主要看LCD的驱动方式和控制方式，目前手机上的彩色LCD的连接方式一般有这么几种：MCU模式，RGB模式，SPI模式，VSYNC模式，MDDI模式，DSI模式。MCU模式(也写成MPU模式的)。只有TFT模块才有RGB接口。
+但应用比较多的就是MUC模式和RGB模式，区别有以下几点：
+MCU接口: 会解码命令，由timing generator产生时序信号，驱动COM和SEG驱器。
+RGB接口: 在写LCD register setting时，和MCU接口没有区别。区别只在于图像的写入方式。
+用MCU模式时由于数据可以先存到IC内部GRAM后再往屏上写，所以这种模式LCD可以直接接在MEMORY的总线上。
+用RGB模式时就不同了，它没有内部RAM，HSYNC，VSYNC，ENABLE，CS，RESET，RS可以直接接在MEMORY的GPIO口上，用GPIO口来模拟波形.
+MPU接口方式: 显示数据写入DDRAM，常用于静止图片显示。
+RGB接口方式: 显示数据不写入DDRAM，直接写屏，速度快，常用于显示视频或动画用。
+主要的区别是: MCU接口方式: 显示数据写入DDRAM，常用于静止图片显示。 RGB接口方式: 显示数据不写入DDRAM，直接写屏，速度快，常用于显示视频或动画用。
+MCU模式 因为主要针对单片机的领域在使用,因此得名.后在中低端手机大量使用,其主要特点是价格便宜的。MCU-LCD接口的标准术语是Intel提出的8080总线标准，因此在很多文档中用I80 来指MCU-LCD屏。主要又可以分为8080模式和6800模式，这两者之间主要是时序的区别。数据位传输有8位，9位，16位，18位，24位。连线分为：CS/，RS(寄存器选择)，RD/，WR/，再就是数据线了。优点是：控制简单方便，无需时钟和同步信号。缺点是：要耗费GRAM，所以难以做到大屏(3.8以上)。对于MCU接口的LCM，其内部的芯片就叫LCD驱动器。主要功能是对主机发过的数据/命令，进行变换，变成每个象素的RGB数据，使之在屏上显示出来。这个过程不需要点、行、帧时钟。
+MCU接口的LCD的DriverIC都带GRAM，Driver IC作为MCU的一片协处理器，接受MCU发过来的Command/Data，可以相对独立的工作。对于MCU接口的LCM(LCD Module)，其内部的芯片就叫LCD驱动器。主要功能是对主机发过的数据/命令，进行变换，变成每个象素的RGB数据，使之在屏上显示出来。这个过程不需要点、行、帧时钟。
+M6800模式 M6800模式支持可选择的总线宽度8/9/16/18-bit(默认为8位)，其实际设计思想是与I80的思想是一样的，主要区别就是该模式的总线控制读写信号组合在一个引脚上(/WR)，而增加了一个锁存信号(E)数据位传输有8位，9位，16位和18位。
+I8080模式 I80模式连线分为：CS/，RS(寄存器选择)，RD/，WR/，再就是数据线了。优点是：控制简单方便，无需时钟和同步信号。缺点是：要耗费GRAM，所以难以做到大屏(QVGA以上)。
+ MCU接口标准名称是I80，管脚的控制脚有5个： CS 片选信号 RS (置1为写数据,置0为写命令) /WR (为0表示写数据) 数据命令区分信号 /RD (为0表示读数据) RESET 复位LCD( 用固定命令系列 0 1 0来复位)  VSYNC模式 该模式其实就是就是在MCU模式上加了一个VSYNC信号，应用于运动画面更新，这样就与上述两个接口有很大的区别。该模式支持直接进行动画显示的功能，它提供了一个对MCU接口最小的改动，实现动画显示的解决方案。在这种模式下，内部的显示操作与外部VSYNC信号同步。可以实现比内部操作更高的速率的动画显示。但由于其操作方式的不同，该模式对速率有一个限制，那就是对内部SRAM的写速率一定要大于显示读内部SRAM的速率。
+RGB模式 大屏采用较多的模式，数据位传输也有6位，16位和18位，24位之分。连线一般有：VSYNC，HSYNC，DOTCLK，CS，RESET，有的也需要RS，剩下就是数据线。它的优缺点正好和MCU模式相反。
+MCU-LCD屏它与RGB-LCD屏主要区别在于显存的位置。RGB-LCD的显存是由系统内存充当的，因此其大小只受限于系统内存的大小，这样RGB-LCD可以做出较大尺寸，象现在4.3&quot;只能算入门级，而MID中7&quot;,10&quot;的屏都开始大量使用。而MCU-LCD的设计之初只要考虑单片机的内存较小，因此都是把显存内置在LCD模块内部.然后软件通过专门显示命令来更新显存，因此MCU屏往往不能做得很大。同时显示更新速度也比RGB-LCD慢。显示数据传输模式也有差别。RGB屏只需显存组织好数据。启动显示后，LCD-DMA会自动把显存中的数据通过RGB接口送到LCM。而MCU屏则需要发送画点的命令来修改MCU内部的RAM(即不能直接写MCU屏的RAM)。所以RGB显示速度明显比MCU快，而且播放视频方面，MCU-LCD也比较慢。
+对于RGB接口的LCM，主机输出的直接是每个象素的RGB数据，不需要进行变换(GAMMA校正等除外)，对于这种接口，需要在主机部分有个LCD控制器，以产生RGB数据和点、行、帧同步信号。
+彩色TFT液晶屏主要有2种接口：TTL接口(RGB颜色接口)， LVDS接口(将RGB颜色打包成差分信号传输)。TTL接口主要用于12.1寸一下的小尺寸TFT屏，LVDS接口主要用于8寸以上的大尺寸TFT屏。TTL接口线多，传输距离短;LVDS接口传输距离长，线的数量少。大屏采用较多的模式，控制脚是VSYNC，HSYNC，VDEN，VCLK， S3C2440最高支持24个数据脚，数据脚是VD[23-0]。
+CPU或显卡发出的图像数据是TTL信号(0-5V、0-3.3V、0-2.5V、或0-1.8V)，LCD本身接收的也是TTL信号，由于TTL信号在高速率的长距离传输时性能不佳，抗干扰能力比较差，后来又提出了多种传输模式，比如LVDS、TDMS、GVIF、P&amp;D、DVI和DFP等。他们实际上只是将CPU或显卡发出的TTL信号编码成各种信号以传输，在LCD那边将接收到的信号进行解码得到TTL信号。
+但是不管采用何种传输模式，本质的TTL信号是一样的。
+注意: TTL/LVDS分别是两种信号的传输模式，TTL是高电平表示1，低电平表示0的模式，LVDS是正负两个对应波形，用两个波形的差值来表示当前是1还是0
+SPI模式 采用较少，有3线和4线的，连线为CS/，SLK，SDI，SDO四根线，连线少但是软件控制比较复杂。
+MDDI模式(MobileDisplayDigitalInterface) 高通公司于2004年提出的接口MDDI，通过减少连线可提高移动电话的可靠性并降低功耗，这将取代SPI模式而成为移动领域的高速串行接口。 连线主要是host_data,host_strobe,client_data,client_strobe,power,GND几根线。
+DSI模式 该模式串行的双向高速命令传输模式，连线有D0P，D0N，D1P，D1N，CLKP，CLKN。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>带你走进Linux内核源码中最常见的数据结构之「mutex」</title>
+    <url>/post/linux/linux-kernel-source-code-data-structure-mutex.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>kernel</tag>
+      <tag>mutex</tag>
+    </tags>
+    <content type="html"><![CDATA[定义 互斥锁（英语：Mutual exclusion，缩写 Mutex）是一种用于多线程编程中，防止两条线程同时对同一公共资源（比如全域变量）进行读写的机制。
+该目的通过将代码切片成一个一个的**临界区域（critical section）**达成。临界区域指的是一块对公共资源进行存取的代码，并非一种机制或是算法。一个程序、进程、线程可以拥有多个临界区域，但是并不一定会应用互斥锁。
+例如：一段代码（甲）正在分步修改一块数据。这时，另一条线程（乙）由于一些原因被唤醒。如果乙此时去读取甲正在修改的数据，而甲碰巧还没有完成整个修改过程，这个时候这块数据的状态就处在极大的不确定状态中，读取到的数据当然也是有问题的。更严重的情况是乙也往这块地方写数据，这样的一来，后果将变得不可收拾。因此，多个线程间共享的数据必须被保护。达到这个目的的方法，就是确保同一时间只有一个临界区域处于运行状态，而其他的临界区域，无论是读是写，都必须被挂起并且不能获得运行机会。
+互斥锁实现多线程同步的核心思想是：有线程访问进程空间中的公共资源时，该线程执行“加锁”操作（将资源“锁”起来），阻止其它线程访问。访问完成后，该线程负责完成“解锁”操作，将资源让给其它线程。当有多个线程想访问资源时，谁最先完成“加锁”操作，谁就最先访问资源。
+当有多个线程想访问“加锁”状态下的公共资源时，它们只能等待资源“解锁”，所有线程会排成一个等待（阻塞）队列。资源解锁后，操作系统会唤醒等待队列中的所有线程，第一个访问资源的线程会率先将资源“锁”起来，其它线程则继续等待。当有多个线程想访问“加锁”状态下的公共资源时，它们只能等待资源“解锁”，所有线程会排成一个等待（阻塞）队列。资源解锁后，操作系统会唤醒等待队列中的所有线程，第一个访问资源的线程会率先将资源“锁”起来，其它线程则继续等待。
+mutex有什么缺点？ 不同于mutex最初的设计与目的，现在的struct mutex是内核中最大的锁之一，比如在x86-64上，它差不多有32bytes的大小，而struct samaphore是24bytes，rw_semaphore为40bytes，更大的数据结构意味着占用更多的CPU缓存和更多的内存占用。
+什么时候应该使用mutex？ 除非mutex的严格语义要求不合适或者临界区域阻止锁的共享，否则相较于其他锁原语来说更倾向于使用mutex
+mutex与spinlock的区别？ spinlock是让一个尝试获取它的线程在一个循环中等待的锁，线程在等待时会一直查看锁的状态。而mutex是一个可以让多个进程轮流分享相同资源的机制
+spinlock通常短时间持有，mutex可以长时间持有
+spinlock任务在等待锁释放时不可以睡眠，mutex可以
+看到一个非常有意思的解释：
+spinlock就像是坐在车后座的熊孩子，一直问“到了吗？到了吗？到了吗？…”
+mutex就像一个司机返回的信号，说“我们到了！”
+实现 看一下Linux kernel-5.8是如何实现mutex的2 实现
+struct mutex { atomic_long_t owner; spinlock_t wait_lock; #ifdef CONFIG_MUTEX_SPIN_ON_OWNER  struct optimistic_spin_queue osq; /* Spinner MCS lock */ #endif  struct list_head wait_list; #ifdef CONFIG_DEBUG_MUTEXES  void *magic; #endif #ifdef CONFIG_DEBUG_LOCK_ALLOC  struct lockdep_map dep_map; #endif }; 可以看到，mutex使用了原子变量owner来追踪锁的状态，owner实际上是指向当前mutex锁拥有者的struct task_struct *指针，所以当锁没有被持有时，owner为NULL。
+/* * This is the control structure for tasks blocked on mutex, * which resides on the blocked task&#39;s kernel stack: * 表示等待队列wait_list中进程的结构体 */ struct mutex_waiter { struct list_head list; struct task_struct *task; struct ww_acquire_ctx *ww_ctx; #ifdef CONFIG_DEBUG_MUTEXES  void *magic; #endif }; 上锁 当要获取mutex时，通常有三种路径方式
+fastpath: 通过 cmpxchg() 当前任务与所有者来尝试原子性的获取锁。这仅适用于无竞争的情况（cmpxchg() 检查 0UL，因此上面的所有 3 个状态位都必须为 0）。如果锁被争用，它会转到下一个可能的路径。
+midpath: 又名乐观旋转（optimistic spinning）—在锁的持有者正在运行并且没有其他具有更高优先级（need_resched）的任务准备运行时，通过旋转来获取锁。理由是如果锁的所有者正在运行，它很可能很快就会释放锁。mutex spinner使用 MCS 锁排队，因此只有一个spinner可以竞争mutex。
+MCS 锁（由 Mellor-Crummey 和 Scott 提出）是一个简单的自旋锁，具有公平的理想属性，每个 cpu 都试图获取在本地变量上旋转的锁，排队采用的是链表实现的FIFO。它避免了常见的test-and-set自旋锁实现引起的昂贵的cacheline bouncing。类似MCS的锁是专门为睡眠锁的乐观旋转而量身定制的（毕竟如果只是短暂的自旋比休眠效率要高）。自定义 MCS 锁的一个重要特性是它具有额外的属性，即当spinner需要重新调度时，它们能够直接退出 MCS 自旋锁队列。这有助于避免需要重新调度的 MCS spinner持续在mutex持有者上自旋，而仅需直接进入慢速路径获取MCS锁。
+slowpath: 最后的手段，如果仍然无法获得锁，则将任务添加到等待队列并休眠，直到被解锁路径唤醒。在正常情况下它阻塞为 TASK_UNINTERRUPTIBLE。 虽然正式的内核互斥锁是可休眠的锁，但midpath路径 (ii) 使它们更实际地成为混合类型。通过简单地不中断任务并忙于等待几个周期而不是立即休眠，此锁的性能已被视为显着改善了许多工作负载。请注意，此技术也用于 rw 信号量。
+具体代码调用链很长…
+/*不可中断的获取锁*/ void __sched mutex_lock(struct mutex *lock) { might_sleep(); /*fastpath*/ if (!__mutex_trylock_fast(lock)) /*midpath and slowpath*/ __mutex_lock_slowpath(lock); } __mutex_trylock_fast(lock) -&gt; atomic_long_try_cmpxchg_acquire(&amp;lock-&gt;owner, &amp;zero, curr) -&gt; atomic64_try_cmpxchg_acquire(v, (s64 *)old, new); __mutex_lock_slowpath(lock)-&gt;__mutex_lock(lock, TASK_UNINTERRUPTIBLE, 0, NULL, _RET_IP_) -&gt; __mutex_lock_common(lock, state, subclass, nest_lock, ip, NULL, false) /*可中断的获取锁*/ int mutex_lock_interruptible(struct mutex *lock); 尝试上锁 int __sched mutex_trylock(struct mutex *lock) { bool locked; #ifdef CONFIG_DEBUG_MUTEXES  DEBUG_LOCKS_WARN_ON(lock-&gt;magic != lock); #endif  locked = __mutex_trylock(lock); if (locked) mutex_acquire(&amp;lock-&gt;dep_map, 0, 1, _RET_IP_); return locked; } static inline bool __mutex_trylock(struct mutex *lock) { return !__mutex_trylock_or_owner(lock); } 释放锁 void __sched mutex_unlock(struct mutex *lock) { #ifndef CONFIG_DEBUG_LOCK_ALLOC  if (__mutex_unlock_fast(lock)) return; #endif  __mutex_unlock_slowpath(lock, _RET_IP_); } 跟加锁对称，也有fastpath, midpath, slowpath三条路径。 判断锁状态
+bool mutex_is_locked(struct mutex *lock) { return __mutex_owner(lock) != NULL; } 很显而易见，mutex持有者不为NULL即表示锁定状态。
+实际案例 实验：
+#include &lt;pthread.h&gt;#include &lt;stdio.h&gt; #define LOOP 1000000  int cnt = 0; int cs1 = 0, cs2 = 0; void* task(void* args) { while(1) { if(cnt &gt;= LOOP) { break; } cnt++; if((int)args == 1) cs1 ++; else cs2++; } return NULL; } int main() { pthread_t tid1; pthread_t tid2; /* create the thread */ pthread_create(&amp;tid1, NULL, task, (void*)1); pthread_create(&amp;tid2, NULL, task, (void*)2); /* wait for thread to exit */ pthread_join(tid1, NULL); pthread_join(tid2, NULL); printf(&#34;cnt = %d cs1=%d cs2=%d total=%d\n&#34;, cnt,cs1,cs2,cs1+cs2); return 0; } 输出：
+cnt = 1000000 cs1=958560 cs2=1520226 total=2478786 正确结果不应该是1000000吗？为什么会出错呢，我们可以从汇编角度来分析一下。
+$&gt; g++ -E test.c -o test.i $&gt; g++ -S test.i -o test.s $&gt; vim test.s .file &#34;test.c&#34; .globl _cnt .bss .align 4 _cnt: .space 4 .text .globl __Z5task1Pv .def __Z5task1Pv; .scl 2; .type 32; .endef __Z5task1Pv: ... 我们可以看到一个简单的cnt++，对应
+movl _cnt, %eax addl $1, %eax movl %eax, _cnt CPU先将cnt的值读到寄存器eax中，然后将[eax] + 1，最后将eax的值返回到cnt中，这些操作不是**原子性质(atomic)**的，这就导致cnt被多个线程操作时，+1过程会被打断。
+加入mutex保护临界资源
+#include &lt;pthread.h&gt;#include &lt;stdio.h&gt; #define LOOP 1000000  pthread_mutex_t mutex; int cnt = 0; int cs1 = 0, cs2 = 0; void* task(void* args) { while(1) { pthread_mutex_lock(&amp;mutex); if(cnt &gt;= LOOP) { pthread_mutex_unlock(&amp;mutex); break; } cnt++; pthread_mutex_unlock(&amp;mutex); if((int)args == 1) cs1 ++; else cs2++; } return NULL; } int main() { pthread_mutex_init(&amp;mutex , NULL); pthread_t tid1; pthread_t tid2; /* create the thread */ pthread_create(&amp;tid1, NULL, task, (void*)1); pthread_create(&amp;tid2, NULL, task, (void*)2); /* wait for thread to exit */ pthread_join(tid1, NULL); pthread_join(tid2, NULL); printf(&#34;cnt = %d cs1=%d cs2=%d total=%d\n&#34;, cnt,cs1,cs2,cs1+cs2); return 0; } 输出：
+cnt = 1000000 cs1=517007 cs2=482993 total=1000000 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>openssl命令</title>
+    <url>/post/linux/openssl.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>openssl</tag>
+      <tag>系统管理</tag>
+      <tag>系统安全</tag>
+    </tags>
+    <content type="html"><![CDATA[ 强大的安全套接字层密码库
+ OpenSSL是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及SSL协议，并提供丰富的应用程序供测试或其它目的使用。在OpenSSL被曝出现严重安全漏洞后，发现多数通过SSL协议加密的网站使用名为OpenSSL的开源软件包。由于这是互联网应用最广泛的安全传输方法，被网银、在线支付、电商网站、门户网站、电子邮件等重要网站广泛使用，所以该漏洞影响范围广大。
+OpenSSL有两种运行模式：交互模式和批处理模式。
+直接输入openssl回车进入交互模式，输入带命令选项的openssl进入批处理模式。
+OpenSSL整个软件包大概可以分成三个主要的功能部分：密码算法库、SSL协议库以及应用程序。OpenSSL的目录结构自然也是围绕这三个功能部分进行规划的。 对称加密算法 OpenSSL一共提供了8种对称加密算法，其中7种是分组加密算法，仅有的一种流加密算法是RC4。这7种分组加密算法分别是AES、DES、Blowfish、CAST、IDEA、RC2、RC5，都支持电子密码本模式（ECB）、加密分组链接模式（CBC）、加密反馈模式（CFB）和输出反馈模式（OFB）四种常用的分组密码加密模式。其中，AES使用的加密反馈模式（CFB）和输出反馈模式（OFB）分组长度是128位，其它算法使用的则是64位。事实上，DES算法里面不仅仅是常用的DES算法，还支持三个密钥和两个密钥3DES算法。 非对称加密算法 OpenSSL一共实现了4种非对称加密算法，包括DH算法、RSA算法、DSA算法和椭圆曲线算法（EC）。DH算法一般用户密钥交换。RSA算法既可以用于密钥交换，也可以用于数字签名，当然，如果你能够忍受其缓慢的速度，那么也可以用于数据加密。DSA算法则一般只用于数字签名。 信息摘要算法 OpenSSL实现了5种信息摘要算法，分别是MD2、MD5、MDC2、SHA（SHA1）和RIPEMD。SHA算法事实上包括了SHA和SHA1两种信息摘要算法，此外，OpenSSL还实现了DSS标准中规定的两种信息摘要算法DSS和DSS1。 密钥和证书管理 密钥和证书管理是PKI的一个重要组成部分，OpenSSL为之提供了丰富的功能，支持多种标准。 首先，OpenSSL实现了ASN.1的证书和密钥相关标准，提供了对证书、公钥、私钥、证书请求以及CRL等数据对象的DER、PEM和BASE64的编解码功能。OpenSSL提供了产生各种公开密钥对和对称密钥的方法、函数和应用程序，同时提供了对公钥和私钥的DER编解码功能。并实现了私钥的PKCS#12和PKCS#8的编解码功能。OpenSSL在标准中提供了对私钥的加密保护功能，使得密钥可以安全地进行存储和分发。 在此基础上，OpenSSL实现了对证书的X.509标准编解码、PKCS#12格式的编解码以及PKCS#7的编解码功能。并提供了一种文本数据库，支持证书的管理功能，包括证书密钥产生、请求产生、证书签发、吊销和验证等功能。 事实上，OpenSSL提供的CA应用程序就是一个小型的证书管理中心（CA），实现了证书签发的整个流程和证书管理的大部分机制。
+实例 1、消息摘要算法应用例子 用SHA1算法计算文件file.txt的哈西值，输出到stdout：
+# openssl dgst -sha1 file.txt 用SHA1算法计算文件file.txt的哈西值，输出到文件digest.txt：
+# openssl sha1 -out digest.txt file.txt 用DSS1(SHA1)算法为文件file.txt签名，输出到文件dsasign.bin。签名的private key必须为DSA算法产生的，保存在文件dsakey.pem中。
+# openssl dgst -dss1 -sign dsakey.pem -out dsasign.bin file.txt 用dss1算法验证file.txt的数字签名dsasign.bin，验证的private key为DSA算法产生的文件dsakey.pem。
+# openssl dgst -dss1 -prverify dsakey.pem -signature dsasign.bin file.txt 用sha1算法为文件file.txt签名,输出到文件rsasign.bin，签名的private key为RSA算法产生的文件rsaprivate.pem。
+# openssl sha1 -sign rsaprivate.pem -out rsasign.bin file.txt # 用sha1算法验证file.txt的数字签名rsasign.bin，验证的public key为RSA算法生成的rsapublic.pem。 # openssl sha1 -verify rsapublic.pem -signature rsasign.bin file.txt 2、对称加密应用例子 对称加密应用例子，用DES3算法的CBC模式加密文件plaintext.doc，加密结果输出到文件ciphertext.bin。
+# openssl enc -des3 -salt -in plaintext.doc -out ciphertext.bin 用DES3算法的OFB模式解密文件ciphertext.bin，提供的口令为trousers，输出到文件plaintext.doc。注意：因为模式不同，该命令不能对以上的文件进行解密。
+# openssl enc -des-ede3-ofb -d -in ciphertext.bin -out plaintext.doc -pass pass:trousers 用Blowfish的CFB模式加密plaintext.doc，口令从环境变量PASSWORD中取，输出到文件ciphertext.bin。
+# openssl bf-cfb -salt -in plaintext.doc -out ciphertext.bin -pass env:PASSWORD 给文件ciphertext.bin用base64编码，输出到文件base64.txt。
+# openssl base64 -in ciphertext.bin -out base64.txt 用RC5算法的CBC模式加密文件plaintext.doc，输出到文件ciphertext.bin，salt、key和初始化向量(iv)在命令行指定。
+# openssl rc5 -in plaintext.doc -out ciphertext.bin -S C62CB1D49F158ADC -iv E9EDACA1BD7090C6 -K 89D4B1678D604FAA3DBFFD030A314B29 3、Diffie-Hellman应用例子 使用生成因子2和随机的1024-bit的素数产生D0ffie-Hellman参数，输出保存到文件dhparam.pem
+# openssl dhparam -out dhparam.pem -2 1024 从dhparam.pem中读取Diffie-Hell参数，以C代码的形式，输出到stdout。
+# openssl dhparam -in dhparam.pem -noout -C 4、DSA应用例子应用例子 生成1024位DSA参数集，并输出到文件dsaparam.pem。
+# openssl dsaparam -out dsaparam.pem 1024 使用参数文件dsaparam.pem生成DSA私钥匙，采用3DES加密后输出到文件dsaprivatekey.pem
+# openssl gendsa -out dsaprivatekey.pem -des3 dsaparam.pem 使用私钥匙dsaprivatekey.pem生成公钥匙，输出到dsapublickey.pem
+# openssl dsa -in dsaprivatekey.pem -pubout -out dsapublickey.pem 从dsaprivatekey.pem中读取私钥匙，解密并输入新口令进行加密，然后写回文件dsaprivatekey.pem
+# openssl dsa -in dsaprivatekey.pem -out dsaprivatekey.pem -des3 -passin 5、RSA应用例子 产生1024位RSA私匙，用3DES加密它，口令为trousers，输出到文件rsaprivatekey.pem
+# openssl genrsa -out rsaprivatekey.pem -passout pass:trousers -des3 1024 从文件rsaprivatekey.pem读取私匙，用口令trousers解密，生成的公钥匙输出到文件rsapublickey.pem
+# openssl rsa -in rsaprivatekey.pem -passin pass:trousers -pubout -out rsapubckey.pem 用公钥匙rsapublickey.pem加密文件plain.txt，输出到文件cipher.txt
+# openssl rsautl -encrypt -pubin -inkey rsapublickey.pem -in plain.txt -out cipher.txt 使用私钥匙rsaprivatekey.pem解密密文cipher.txt，输出到文件plain.txt
+# openssl rsautl -decrypt -inkey rsaprivatekey.pem -in cipher.txt -out plain.txt 用私钥匙rsaprivatekey.pem给文件plain.txt签名，输出到文件signature.bin
+# openssl rsautl -sign -inkey rsaprivatekey.pem -in plain.txt -out signature.bin 用公钥匙rsapublickey.pem验证签名signature.bin，输出到文件plain.txt
+# openssl rsautl -verify -pubin -inkey rsapublickey.pem -in signature.bin -out plain 从X.509证书文件cert.pem中获取公钥匙，用3DES加密mail.txt，输出到文件mail.enc
+# openssl smime -encrypt -in mail.txt -des3 -out mail.enc cert.pem 从X.509证书文件cert.pem中获取接收人的公钥匙，用私钥匙key.pem解密S/MIME消息mail.enc，结果输出到文件mail.txt
+# openssl smime -decrypt -in mail.enc -recip cert.pem -inkey key.pem -out mail.txt cert.pem为X.509证书文件，用私匙key,pem为mail.txt签名，证书被包含在S/MIME消息中，输出到文件mail.sgn
+# openssl smime -sign -in mail.txt -signer cert.pem -inkey key.pem -out mail.sgn 验证S/MIME消息mail.sgn，输出到文件mail.txt，签名者的证书应该作为S/MIME消息的一部分包含在mail.sgn中
+# openssl smime -verify -in mail.sgn -out mail.txt ]]></content>
+  </entry>
+  
+  <entry>
+    <title>syslog命令</title>
+    <url>/post/linux/syslog.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>syslog</tag>
+      <tag>系统管理</tag>
+      <tag>系统安全</tag>
+    </tags>
+    <content type="html"><![CDATA[ 系统默认的日志守护进程
+ syslog是Linux系统默认的日志守护进程。
+概述 默认的syslog配置文件是/etc/syslog.conf文件。程序，守护进程和内核提供了访问系统的日志信息。因此，任何希望生成日志信息的程序都可以向 syslog 接口呼叫生成该信息。
+几乎所有的网络设备都可以通过syslog协议，将日志信息以用户数据报协议(UDP)方式传送到远端服务器，远端接收日志服务器必须通过syslogd监听UDP 端口514，并根据 syslog.conf配置文件中的配置处理本机，接收访问系统的日志信息，把指定的事件写入特定文件中，供后台数据库管理和响应之用。意味着可以让任何事件都登录到一台或多台服务器上，以备后台数据库用off-line(离线) 方法分析远端设备的事件。
+通常，syslog 接受来自系统的各种功能的信息，每个信息都包括重要级。/etc/syslog.conf 文件通知 syslogd 如何根据设备和信息重要级别来报告信息。
+使用方法 在/var/log中创建并写入日志信息是由syslog协议处理的，是由守护进程sylogd负责执行。每个标准的进程都可以用syslog记录日志。可以使用logger命令通过syslogd记录日志。
+要向syslog文件/var/log/messages中记录日志信息：
+logger this is a test log line 输出： tail -n 1 messages Jan 5 10:07:03 localhost root: this is a test log line 如果要记录特定的标记（tag）可以使用：
+logger -t TAG this is a test log line 输出： tail -n 1 messages Jan 5 10:37:14 localhost TAG: this is a test log line ]]></content>
+  </entry>
+  
+  <entry>
+    <title>如何在Ubuntu Linux下将mp4转成mp3</title>
+    <url>/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>ubuntu</tag>
+      <tag>ffmpeg</tag>
+      <tag>mp4</tag>
+      <tag>mp3</tag>
+    </tags>
+    <content type="html"><![CDATA[ FFmpeg是一款开源软件，用于生成处理多媒体数据的各类库和程序。FFmpeg可以转码、处理视频和图片（调整视频、图片大小，去噪等）、打包、传输及播放视频。
+ 本文描述了如何在Ubuntu Linux系统下，通过ffmpeg将mp4文件转成mp3文件。
+为什么要将mp4转成mp3 因为这样可以节省空间，一些基本的设备是不支持mp4扩展名的文件，在这个例子里，我们将使用ffmpeg将mp4文件转成mp3文件。
+FFmpeg是一个完整的跨平台的解决方案，用来录制，转化以及分流音视频，它包括业界领先的音视频编码库 labavcodec 。
+在ubuntu上安装ffmpeg sudo apt-get install ffmpeg libavcodec-extra-53 将mp4转成mp3 基本的命令
+ffmpeg -i filename.mp4 filename.mp3 可以用命令`man ffmpeg&rsquo;来查看更多选项
+ffmpeg -i filename.mp4 -b:a 192K -vn filename.mp3 一个流的说明符可以匹配一些流，这些选项会适用于所有的流，比如，在-b:a 128k选项中的流说明符可以匹配所有的音频流。
+通过脚本 下面这个脚本会将Music目录下的带有.mp4扩展名的文件转成.mp3扩展名的文件。
+#!/bin/bash MP4FILE=$(ls ~/Music/ |grep .mp4) for filename in $MP4FILE do name=`echo &#34;$filename&#34; | sed -e &#34;s/.mp4$//g&#34;` ffmpeg -i ~/Music/$filename -b:a 192K -vn ~/Music/$name.mp3 done ]]></content>
+  </entry>
+  
+  <entry>
+    <title>风河携手TCS建构5G/Open RAN分布式移动网络基础设施生态系统</title>
+    <url>/post/news/windriver-and-TCS-build-5G-Open-Ran-ecos.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>WindRiver</tag>
+      <tag>vRan</tag>
+      <tag>TCS</tag>
+      <tag>5G</tag>
+    </tags>
+    <content type="html"><![CDATA[ 全球领先的关键任务智能系统软件提供商风河公司®宣布，正在与塔塔咨询服务公司（TCS）合作，在Wind River Studio上托管vRAN解决方案。这项战略合作将创建一个全栈移动基础设施解决方案，在4G-5G vRAN下一代网络中开展TCS部署和工程服务，并以Studio作为云平台。
+ TCS网络解决方案与服务副总裁Vimal Kumar表示：“我们很高兴与风河合作，帮助我们的客户借助5G技术改善他们的业务。我们的Cognitive Network Operations平台运行在Wind River Studio之上，由此帮助电信网络运营商运用AI和ML技术来监测网络健康状况，预测可能发生的故障，提供以客户为中心的网络体验，并确保卓越的服务质量。”
+风河公司首席产品官Avijit Sinha表示：“运营商正在致力于创造数字化、云原生的未来，他们正在寻求灵活、经济的解决方案，以便降低部署复杂度并进行持续性维护。风河公司提供了成熟的生产就绪产品，与领先运营商实现了实用化部署，其基础正是经过广泛验证的Wind River Studio技术。”
+风河公司印度销售主管Rajeev Rawal表示：“与TCS携手，提供敏捷、安全、可靠和超低延迟解决方案，以支持新的应用场景，让云计算、边缘计算和智能化技术承担起更加重要的任务。”
+作为5G市场的领导者，风河在世界首次成功5G数据会话和商业vRAN/O-RAN项目中发挥了关键作用，其中包括世界上最大的Open RAN网络。
+Wind River Studio提供了一个完全基于云原生、Kubernetes和容器的体系结构，可用于大规模分布式边缘网络的开发、部署、运营和服务。这套平台为地理分布的管理解决方案提供了基础，能够为数千个节点提供单一窗口（SPoG）、零接触的自动化管理，从而简化Day 1和Day 2运营，而且与节点的物理位置无关。Studio解决了部署和管理物理地理分散云原生vRAN基础设施的复杂挑战，在vRAN部署中提供了传统的RAN性能。
+ 塔塔咨询服务 (TCS）简介
+ 塔塔咨询服务公司是一家IT服务、咨询和业务解决方案提供商，50多年来一直与许多全球最大企业合作，帮助他们实现转型。TCS提供以咨询为主导、以认知为动力的综合性商业、技术和工程服务以及解决方案。所有这些都通过独特的Location Independent Agile™ 模式来提供，被作为卓越软件开发的基准指标。
+作为印度最大的跨国商业集团塔塔集团的一部分，TCS在55个国家拥有超过606,000名训练有素的咨询师。在截至2022年3月31日的财年中，TCS创造了257亿美元的合并营收，并在印度的BSE和NSE上市。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>VxWorks 6.8下基于QT的串口编程</title>
+    <url>/post/vxworks/vxworks-6.8-qt-uart-programming.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>VxWorks 6.8</tag>
+      <tag>UART</tag>
+      <tag>QT</tag>
+      <tag>串口</tag>
+      <tag>编程</tag>
+    </tags>
+    <content type="html"><![CDATA[文章简要记录了VxWorks 6.8下基于Qt实现的串口编程。
+相关的VxWorks 和 串口，请参阅 VxWorks下的串口测试程序设计和源码  。
+VxWorks简介 VxWorks 操作系统是美国WindRiver公司于1983年设计开发的一种嵌入式实时操作系统（RTOS），是嵌入式开发环境的关键组成部分。良好的持续发展能力、高性能的内核以及友好的用户开发环境，在嵌入式实时操作系统领域占据一席之地。它以其良好的可靠性和卓越的实时性被广泛地应用在通信、军事、航空、航天等高精尖技术及实时性要求极高的领域中，如卫星通讯、军事演习、弹道制导、飞机导航等。在美国的 F-16、FA-18战斗机、B-2 隐形轰炸机和爱国者导弹上，甚至连1997年4月在火星表面登陆的火星探测器、2008年5月登陆的凤凰号，和2012年8月登陆的好奇号也都使用到了VxWorks。
+串口简介 串行接口(Serial Interface) 简称串口，也称串行通信接口或串行通讯接口（通常指COM接口），是采用串行通信方式的扩展接口，指数据一位一位地顺序传送。
+串行接口的特点是通信线路简单，只要一对传输线就可以实现双向通信（可以直接利用电话线作为传输线），从而大大降低了成本，特别适用于远距离通信，但传送速度较慢。常见的有一般计算机应用的RS-232（使用 25 针或 9 针连接器）和工业计算机应用的半双工RS-485与全双工RS-422。
+我这里使用了232和422传输方式，在我本人理解这两种方式根据需求硬件已经做好的传输方式（也可以在BIOS设置），我们知道是什么传输方式，做到心中有数和如何搭建测试环境，今天在这里教大家个简单的232-9针连接器的接线方式，一般没接触过的拿过来一脸懵逼，好家伙9跟针都不知道是干嘛的，那么我告诉你如果是 232-9针，什么也别管直接找到第2针和第3针用杜邦线回连，这时你就具备环境自己检测板卡串口模块是否好用，如果测试程序一定记得把第5跟针要连接上，否则会出现数据不精准的情况（文章底部有贴图）。
+在软件层面上只需要关注数据位、停止位、奇偶效验、读取方式和效率即可；
+232串口接线说明 RS232串口接线方法：直连和交叉接法
+一般情况下，设备和电脑的连接通讯，需用到RS232串口线直连线；而设备和设备的连接通讯，就会用到RS232串口线的交叉线。用户在选择的时候，应根据两个设备之间连接的实际情况，选择不同接法的RS232串口线。
+代码实例 VxWorks串口所需要包含的头文件 #include &#34;vxWorks.h&#34;#include &#34;stdIo.h&#34;#include &#34;ioLib.h&#34;#include &#34;sysLib.h&#34;#include &#34;string.h&#34;#include &#34;taskLib.h&#34;VxWorks串口配置函数 ioctl(m_SeriPort,SIO_HW_OPTS_SET, CLOCAL | CS8 | PARODD | PARENB);	//8位数据位|1位停止位|偶效验 ioctl(m_SeriPort,FIOBAUDRATE,9600);	//波特率9600 ioctl(m_SeriPort,FIOSETOPTIONS,OPT_RAW);	//设置串口raw模式 ioctl(m_SeriPort,FIOFLUSH,0);	//清空输入输出的缓冲区 open函数 #define SERI_NAME &#34;/tyCo/0&#34; int m_SeriPort = open(SERI_NAME ,O_RDWR,0); int m_SeriPort = open(SERI_NAME ,O_WRONLY,0); write函数 char* sendData; int writeCom = write(m_SeriPort, sendData,strlen(sendData)); read函数 char data; int readCom = read(m_SeriPort,&amp;data,1); Seri_Demo_Qt_Vx #ifndef THREAD_H #define THREAD_H #include &lt;QThread&gt;#include &lt;QDebug&gt;#include &#34;vxWorks.h&#34;#include &#34;stdIo.h&#34;#include &#34;ioLib.h&#34;#include &#34;sysLib.h&#34;#include &#34;string.h&#34;#include &#34;taskLib.h&#34;class Thread : public QThread { Q_OBJECT public: explicit Thread(QObject *parent = 0); ~Thread(); void run(); //重写run函数 public: bool openSeri(QString comPort,int baudRate); //打开串口  void closeSeri(); //关闭串口  void writeSeri(char* sendData); //发送数据  void setFlag(bool flag = true); //线程数据标志位 signals: void RecvData(char data); private: bool seriStop; //读取数据标志位 true读取数据 false退出循环  int m_SeriPort; //串口文件描述符  QString m_SeriName; //串口名  int m_baud; //波特率 }; #endif //THREAD_H #include &#34;thread.h&#34; Thread::Thread(QObject *parent) : QThread(parent) { } Thread::~Thread() { } void Thread::run() { sysClkRateSet(1000); char rData; while(1) { int readCom = read(m_SeriPort,&amp;rData,1); if(readCom &gt; 0) { printf(&#34;%c\n&#34;,rData); emit RecvData(rData); if(seriStop == false) { qDebug()&lt;&lt; &#34;isStop == false break&#34;; break; } } else { taskDelay(10); } } } bool Thread::openSeri(QString comPort, int baudRate) { this-&gt;m_SeriName = comPort; this-&gt;m_baud = baudRate; qDebug()&lt;&lt; &#34;Thread::openSeri&#34; &lt;&lt; comPort.toUtf8().data() &lt;&lt; baudRate; m_SeriPort = open(comPort.toUtf8().data(),O_RDWR,0); if(m_SeriPort == ERROR) { qDebug()&lt;&lt; &#34;open :&#34; &lt;&lt; comPort.toUtf8().data() &lt;&lt; &#34; = &#34; &lt;&lt;m_SeriPort &lt;&lt; &#34;failed !&#34;; return false; } ioctl(m_SeriPort,SIO_HW_OPTS_SET, CLOCAL | CS8 | PARODD | PARENB); ioctl(m_SeriPort,FIOBAUDRATE,baudRate); ioctl(m_SeriPort,FIOSETOPTIONS,OPT_RAW); ioctl(m_SeriPort,FIOFLUSH,0); qDebug()&lt;&lt; &#34;open :&#34; &lt;&lt; comPort.toUtf8().data() &lt;&lt; &#34; = &#34; &lt;&lt; m_SeriPort &lt;&lt; &#34;succeeded !&#34;; return true; } void Thread::closeSeri() { if(seriStop == false) { qDebug()&lt;&lt; &#34;Thread::closeSeri&#34;; close(m_SeriPort); } } void Thread::writeSeri(char* sendData) { if(m_SeriPort == ERROR) { openSeri(m_SeriName,m_baud); } int writeCom = write(m_SeriPort, sendData,strlen(sendData)); qDebug()&lt;&lt; sendData &lt;&lt; writeCom; } void Thread::setFlag(bool flag) { this-&gt;seriStop = flag; qDebug()&lt;&lt; &#34;Thread::setFlag&#34; &lt;&lt; flag; } TestSeri_Demo_Qt_Vx_Demo #ifndef SERI_H #define SERI_H  #include &lt;QObject&gt;#include &lt;QDebug&gt;#include &#34;thread.h&#34; class Seri : public QObject { Q_OBJECT public: explicit Seri(QObject *parent = 0); ~Seri(); public: /*	open_Seri	打开串口 * comName	串口名 * comBaud	串口波特率 *	return 成功 true 失败 false */ bool open_Seri(QString comName,int comBaud); /* write_Seri	发送数据 * comData	发送数据内容 */ void write_Seri(QByteArray comData); /*	* close_Seri	关闭串口 */ void close_Seri(); signals: send_Seri(char data); private: Thread* m_pThread; }; #endif // SERI_H #include &#34;Seri.h&#34; Seri::Seri(QObject *parent) : QObject(parent) { m_pThread = new Thread; } Seri::~Seri() { if(m_pThread){ delete m_pThread; m_pThread=NULL; } } bool Seri::open_Seri(QString comName,int comBaud) { if(m_pThread-&gt;openSeri(comName,comBaud))//如果打开成功 	{ m_pThread-&gt;setFlag(true); m_pThread-&gt;start(); } return false; } void Seri::write_Seri(QByteArray comData) { m_pThread-&gt;writeSeri(comData.data()); } void Seri::close_Seri() { if(m_pThread-&gt;isRunning())//如果线程还在运行 --&gt; 退出循环接收数据 --&gt; 关闭串口 --&gt; 退出线程 --&gt; 回收线程 	{ m_pThread-&gt;setFlag(false); m_pThread-&gt;closeSeri(); m_pThread-&gt;quit(); m_pThread-&gt;wait(); } } 程序代码说明：  thread类为配置串口类 seri类为外部使用类 接收到的数据是利用信号槽为接口把数据传输出去 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>VxWorks操作系统下的串口读写程序</title>
+    <url>/post/vxworks/vxworks-uart-read-write-programming.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>UART</tag>
+      <tag>串口</tag>
+      <tag>编程</tag>
+    </tags>
+    <content type="html"><![CDATA[关于传统的串口编程，在各大操作系统下的流程基本是一致的，只是针对不同的操作系统，函数接口可能有所差异而已，下面讲述VxWorks操作系统下对于串口读写的编程步骤和代码
+相关的VxWorks 和 串口，请参阅 VxWorks下的串口测试程序设计和源码  。
+串口配置过程 打开串口 fd = open(&#34;/tyCo/0&#34;, O_RDWR, 0);  &ldquo;/tyCo/0&rdquo;: 串口1的设备名 O_RDWR: 按照读写方式打开串口  设置串口raw模式，清空输入输出的缓冲区 在VxWorks中配置串口可以直接通过ioctl的控制命令来实现
+ioctl(fd,FIOSETOPTIONS,OPT_RAW); ioctl(fd,FIOFLUSH,0); ioctl(int fd,int function,int arg); function的参数如下：
+   参数 说明     FIOBAUDRATE 设置波特率，arg为一整数，表示要设定的波特率   FIOGETOPTIONS 取得设备控制字，arg表示读出的内容存放的位置   FIOSETOPTIONS 设置设备控制字，arg表示要设置的选项   FIOGETNAME 取得文件描述符对应的文件名，arg存放文件名的缓冲区   FIOREAD 取得输入缓冲区内未读取的字符数，arg用于接收结果的整型指针   FIOWRITE 取得输出缓冲区内的字符个数，arg用于接收结果的整型指针   FIOFLUSH 清空输入输出缓冲区的字符   FIOCANCEL 取消读和写    设置波特率，数据位，停止位，校验方式 在 VxWorks 中设置串口也是用 &lsquo;ioctl&rsquo; 系统调用加控制命令实现，其控制命令为&rsquo;SIO_HW_OPTS_SET'，第三个参数跟配置参数，如：数据位为8，停止位为1，无奇偶校验位，无流控可以这样配置
+ioctl(fd,SIO_HW_OPTS_SET,CS8|PARENB|CLOCAL|CREAD); 具体各项参数意义如下：
+   参数 说明     CLOCAL 忽略modem控制信号   CREAD 启动接收器   CSIZE 指定数据位：CS5~CS8   HUPCL 最后关闭时挂断modem连接   STOP8 被设置时指定2位停止位，否则默认为1位停止位   PARENB 被设置时启用奇偶校验，否则默认为无奇偶校验   PARODD 被设置时启用奇校验，否则默认为偶校验(PARENB设置时才有效)    串口读写操作 在VxWorks系统中串口的读写操作非常简单，直接使用系统调用函数 read() 和 write() 就能实现串口的读写操作。
+int read(int fd, char *buffer, size_t maxbytes) 参数说明：
+ fd: 用open函数打开串口设备返回的文件描述符 buffer: 读取的内容将要存放的地址，为指针变量 maxbytes: 读取的最大字节数  int write(int fd, char *buffer, size_t nbytes) 参数说明：
+ fd: 用open函数打开串口设备返回的文件描述符 buffer: 将要写的内容的地址，为指针变量，通常为字符串首地址 nbytes: 将要写入的字节数，通常为要写入的字符串的长度  实例代码 VxWorks系统下串口读写的实例代码，仅供参考。
+#include &#34;vxWorks.h&#34;#include &#34;stdio.h&#34;#include &#34;ioLib.h&#34;#include &#34;taskLib.h&#34;#include &#34;sioLib.h&#34;#include &#34;sdLib.h&#34;#include &#34;semLib.h&#34;#include &#34;msgQLib.h&#34; char wbuf[] = &#34;hello&#34;; #define DEV_NAME &#34;/tyCo/2&#34; #define MAX_BUF_SIZE 20 #define SD_COMMDATA_NAME &#34;share_data&#34; #define SD_COMMDATA_MUTEX &#34;share_sem&#34; #define SHARE_DATA_LENGTH 20  typedef struct unix_clock_struct { UINT32 sec; /* ms */ UINT32 msec; /* s */ UINT8 quality; /* 时标质量 */ } UNIX_CLOCK_STRUCT; char *comdata; int set_serial(int fd); SEM_ID mutexComdata; void taskUart(void); int main(void) { int ret; int sdCommId; char r_buff[MAX_BUF_SIZE]; mutexComdata = semOpen(SD_COMMDATA_MUTEX, SEM_TYPE_MUTEX, SEM_FULL, SEM_Q_PRIORITY | SEM_DELETE_SAFE | \ SEM_INVERSION_SAFE, OM_CREATE | OM_DELETE_ON_LAST_CLOSE, NULL); if(mutexComdata == NULL) { /*致命错误，无法创建互斥锁*/ printf(&#34;ERROR TO OPEN SD_COMMDATA_MUTEX\n&#34;); taskExit(0); } /* 申请公共数据共享内存 */ sdCommId = sdOpen(SD_COMMDATA_NAME, SD_LINGER, OM_CREATE, SHARE_DATA_LENGTH, 0, SD_ATTR_RW|SD_CACHE_OFF, &amp;comdata); if(sdCommId == NULL) { /*致命错误，无法分配公共数据内存，报错退出*/ printf(&#34;ERROR TO OPEN SD_COMMDATA\n&#34;); taskExit(0); } if((ret = taskSpawn(&#34;taskUart&#34;,90,0x100, 20000, (FUNCPTR)taskUart,\ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)) &lt; 0) { printf(&#34;taskSpawn failed:ret = %s\n&#34;); } return 0; } void taskUart(void) { int ret; int fd = -1; UNIX_CLOCK_STRUCT w_buff; if((fd = open(DEV_NAME, O_RDWR,0)) &lt; 0) { printf(&#34;open %s failed.\n&#34;,DEV_NAME); } /*配置串口参数*/ if((ret = set_serial(fd)) &lt; 0) { printf(&#34;ret = %d\nset_serial failed.\n&#34;); } while(1) { semRTake(mutexComdata,WAIT_FOREVER); #if 0/*清空输入输出缓冲*/ if((ret = ioctl(fd, FIOFLUSH, 0))&lt;0) { printf(&#34; ret = %d\nset FIOFLUSH failed.\n&#34;,ret); } memset(r_buff,0,sizeof(r_buff)); /*读取串口中的值*/ if((ret = read(fd,r_buff,sizeof(r_buff)))&lt;0) { printf(&#34;ret = %d:read %s failed.\n&#34;,ret,DEV_NAME); } else printf(&#34;Received:%s\n&#34;,r_buff); #endif  #if 1  /*清空输入输出缓冲*/ if((ret = ioctl(fd, FIOFLUSH, 0))&lt;0) { printf(&#34; ret = %d\nset FIOFLUSH failed.\n&#34;,ret); } if(NULL == bzero(&amp;w_buff,sizeof(w_buff))) { printf(&#34;memset failed.\n&#34;); } if(NULL == memcpy(&amp;w_buff,comdata,sizeof(w_buff))) { printf(&#34;memset failed.\n&#34;); } if(&amp;w_buff != NULL) { /*往串口中写值*/ if((ret = write(fd, &amp;w_buff.sec, sizeof(ret)))&lt;0) // if((ret = write(fd, wbuf, sizeof(wbuf)))&lt;0)  { printf(&#34;ret = %d:write %s failed.\n&#34;,ret,DEV_NAME); } else { printf(&#34;write success:%d\n&#34;,w_buff.sec); } } semGive(mutexComdata); #endif  taskDelay(sysClkRateGet()*2); } } int set_serial(int fd) { int error = -1; int ok = 0; int ret; if(fd&lt;0) { printf(&#34;error:fd is %d\n&#34;,fd); } /*设定波特率为9600*/ if((ret = ioctl(fd, FIOBAUDRATE, 9600))&lt;0) { printf(&#34;ret = %d\nset baudrate failed\n&#34;,ret); return error; } /*设定：数据位为8，无奇偶校验，1位停止位*/ /*CLOCAL:忽略modem控制信号 * CREAD：启动接收器 * CS8:设定数据位为8*/ if((ret = ioctl(fd, SIO_HW_OPTS_SET,CREAD|CS8 |CLOCAL))&lt;0) { printf(&#34;ret = %d\nset SIO_HW_OPTS_SET failed.\n&#34;); return error; } return ok; } ]]></content>
+  </entry>
+  
+  <entry>
+    <title>针对VxWorks的QT 5.15.10发布了</title>
+    <url>/post/vxworks/qt-5-15-10-for-vxworks-released.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>QT</tag>
+      <tag>图像</tag>
+    </tags>
+    <content type="html"><![CDATA[Qt是一个多平台的C++图形用户界面应用程序框架。它提供给应用程序开发者建立艺术级的图形用户界面所需的所用功能。Qt是完全面向对象的编程，所以具有易扩展和组件编程的优势。
+相关的VxWorks 和 QT的文章，请参阅 VxWorks 6.8操作系统下QT的安装设置和运行方法  。
+我们非常激动地发布了支持VxWorks的QT 5.15.10 支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布。这个发行从早期的QT 5的版本官方升级了针对VxWorks的QT支持，这是对诸如航空和国防以及医疗等行业的市场需求的积极回应。它提供了QT版本的升级同时也提供了VxWorks系统具体的问题解决，还有别的一些改进。
+这次发行支持基于iMX6硬件的Ubuntu主机，我们也同时在准备基于x68和基于Windows主机的支持。此次的发行包开放给拥有QT账户的客户，也同时通过git仓库的形式开放给具有商业许可证的客户，请和我们联系以获取更多细节。
+从这儿开始 这儿有关于安装和配置的独立的文章，要获取更多关于QT和支持VxWorks的QT的详细信息，请查看这儿关于QT 5.15的在线文档。
+   https://doc.qt.io/qt-5/vxworks.html  
+   https://doc.qt.io/qt-5/index.html  
+   https://wiki.qt.io/Getting_Commercial_Qt_Sources  
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>北南南北</title>
+    <url>/about.html</url>
+    <categories>
+    </categories>
+    <tags>
+    </tags>
+    <content type="html"><![CDATA[北南南北 是众多使用 VxWorks 嵌入式实时操作系统的网友分享经验的平台，为的就是让 VxWorks 的学习和应用变得相对开放一些，在此也欢迎你的加入！
+我们的愿景 技术创新是技术持续发展的生命力，紧跟技术的发展趋势，研究最新的技术，保持对新技术的热情和好奇心，让技术为生产和生活服务。
+使用反馈  加入 VxWorks Club   或 Google AI TPU     欢迎你的加入
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>VxWorks实时性能探究</title>
+    <url>/post/vxworks/vxworks-real-time-feature-explore.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>实时性</tag>
+    </tags>
+    <content type="html"><![CDATA[ VxWorks操作系统是一款硬实时操作系统，一直听闻其实时性能非常优秀，但是一直没有一个直观地概念。
+ 笔者最近在使用 VxWorks  , 由大名鼎鼎的风河（WindRiver）开发。本篇文章就是将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比。
+前期知识准备 实时性能和响应时间有关，为此，先对计算机操作系统中的时间概念和时间尺度进行一下介绍。
+1 s = 1000 ms = 1000000 us = 1000000000 ns，看不出来1 s时间还是很长的嘛
+  时钟周期：主频为4 GHz的CPU的时钟周期为1/4G = 0.25 ns，时钟周期是计算机中最基本的、最小的[时间单位。在一个时钟周期内，CPU仅完成一个最基本的动作。
+  CPU周期：CPU周期亦称机器周期，一条指令执行过程被划分为若干阶段，每一阶段完成所需时间。完成一个基本操作所需要的时间称为机器周期。通常用内存中读取一个指令字的最短时间来规定CPU周期。
+  指令周期：取出并执行一条指令的时间。想要详细了解可以看这篇文章【浅析】CPU中的指令周期、CPU周期和时钟周期
+  内存时钟周期：相比CPU，一般的DDR内存芯片速率仅为400 MHz，时钟周期达2.5 ns, 再加上总线延时，导致内存访问时间达到几十纳秒。CPU运行速率与内存访问速率比大致为100：1。
+  硬盘读取时间：硬盘的读写速度就更慢了，一般的机械硬盘的完成一次读写所需要的时间，主要取决寻道时间+旋转时间，完成一次读或者写的时间量级大致为ms级别，因此内存访问速率与磁盘存取速度比大致为1000:1。
+  上面是有关硬件方面的时间周期情况，对于操作系统或者应用程序来说，我们一般关注的是算法的时间复杂度和空间复杂度，这是从整理理想的情况来衡量一个算法的优劣。如果想要详细了解每条代码的执行所耗时间，我们需要更深入了解代码是怎么在计算机上执行的。
+C语言代码都是经过预处理、编译，产生汇编代码（汇编代码几乎已经接近机器码了），一句高级语言代码相当于汇编语言的几行甚至几十行。而学过汇编语言的都应该知道，不同的汇编代码指令执行所耗费的时间也是不同的。一般来说,移位,加法,取反这种指令只需要一个时钟周期,而乘法,除法等指令需要几个乃至几十个时钟周期执行。
+实时操作系统（RTOS）的实时性能评价指标 实时操作系统的实时性能评价指标一般有两个：
+ 任务切换时间  当多任务应用程序运行在操作系统上时，它把正在运行的任务的状态保存到任务自己的栈区之中，然后把下一个将要运行的任务的当前状态从该任务的栈区装入CPU的寄存器，并开始这个任务的执行，这个过程就叫做任务切换。
+ 中断响应时间  计算机接收到中断信号到操作系统做出响应，并完成切换转入中断服务程序的时间。
+下图是几种实时操作系统的实时性能对比：
+可以看出不管是任务切换时间还是中断响应，VxWorks都是最好的，当然VxWorks也是最贵的。
+此外我们还可以看出不管是任务切换还是中断响应，时间尺度都是在几个us，根据CPU主频的不同，大概是几千个时钟周期的样子。 下面代码是测试执行100万次简单循环语句所耗费的时间:
+int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100万次该循环所耗时间，可以将执行每次的时间和任务切换的时间进行对比 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>风河公司的资本交易历史</title>
+    <url>/post/vxworks/windriver-capital-transaction.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>WindRiver</tag>
+    </tags>
+    <content type="html"><![CDATA[日前，安波福宣布同意以43亿美元现金从私募股权公司TPG Capital收购风河公司（ Wind River  ），以帮助其在多个行业的关键软件领域建立独特地位，继续其智能转型，向边缘支持、软件定义的未来迈进。
+该交易预计将于2022年年中完成，在被收购之后，风河将隶属于安波福主动安全与用户体验事业部，继续在公司总裁兼首席执行官Kevin Dallas的领导下作为独立业务单位运营。
+实时操作系统 作为实时操作系统领域，全球最优秀的选手，它值得我们所有的溢美之词，无论怎么夸它，都不过分。
+VxWorks是风河公司推出的实时多任务操作系统（RTOS）。过去40年间，风河和VxWorks在嵌入式OS领域一直处于领先地位，在航空航天、通信、工业控制等行业有着广泛的应用，在业内被称为嵌入式OS的常青树。
+风河公司目前有2个嵌入式OS平台：Linux和VxWorks。
+VxWorks是由支持多核、32/64位嵌入式处理器、内存包含和内存管理的VxWorks 6.x和VxWorks5.x，Workbench开发工具（包括多种C/C++编译器和调试器），连接组件（USB、IPv4/v6、多种文件系统等），先进的网络协议和图像多媒体等模块组成。除了通用平台外，VxWorks还包括支持工业、网络、医疗和消费电子等的特定平台产品。
+老当益壮 风河成立于1981年，2021年收入大约4亿美元，毛利率超过80%。
+1987年风河基于VRTX推出VxWorks，1993年IPO上市，1995年VxWorks在NASA Clementine月球探测器上，被发射入太空。
+1997年NASA火星探险者号飞船的实时操作系统，登陆火星。
+风河是全球第一大嵌入式RTOS厂家，也是全球第一大嵌入式Linux厂家，硬实时操作系统长达30年的霸主，市场占有率超30%。
+它的主要收入来自4个领域：
+ 宇航与国防 工业与医疗 电信 汽车  宇航与国防所占比例最高，接近50%，各种飞船或者说航天飞行器基本都是风河VxWorks的市场，SpaceX也是它的忠实用户，中国神舟系列的SpaceOS也有借鉴VxWorks653。
+除了航天飞行器，AH-64阿帕奇武装直升机、F-16V（全球空军主力机型）、F-18大黄蜂，B-2战略轰炸机，X-47A，波音787都是VxWorks。
+美国的F-22猛禽、F-35、B-52轰炸机、B-1B轰炸机、C-17运输机和F-16改进型，以及欧洲的A-400M运输机，X-47B无人机，还有民航空客的A380，爱国者防空导弹，都是Vxworks的忠实用户。
+把竞争对手买下来，然后干掉！
+1999年风河收购一个主要竞争对手，pSOS的发明者，一家集成系统公司。从那以后风河公司不再支持pSOS产品线，并推荐现存的pSOS客户转向VxWorks。
+2004年针对网络和通信市场，推出便携的Linux平台，正式进军嵌入式Linux市场。
+VxWorks通过了汽车领域最高的ASIL-D级认证，以及远超汽车标准的DO-178C A级认证，它也通过了，已经准备好了对汽车行业进行降维打击。  卖来卖去 2009年英特尔以8.84亿美元收购风河；
+2018年4月英特尔出售风河给投资公司TPG。
+英特尔刚刚收购4年不到，就卖给了TPG，英特尔也是颇具渣男属性了。
+不过，风河公司貌似还不是最后一个被卖来卖去的此类企业，另外一个汽车级嵌入式系统的大牛供应商，Green Hills也在被卖的路上了，我们接下来的文章会保持对它的追踪，及时报道相关信息。
+戳穿实时操作系统 在日常的HIL测试工作中，几乎没有哪个测试任务是因为“实时仿真机的实时性不够高”而导致出问题。
+HIL工作最容易出问题的地方，往往是功能定义不明确、工具链不完整、协同自动化测试做不起来、线束掉链子以及项目上各种瞎搞等等。
+换句话说，在汽车HIL测试领域，哪怕是最low逼的实时操作系统，也足够了，人家Vector公司用wince做实时机，照样玩得飞起，不耽误事。
+HIL实时机诞生的历史环境，已经不复存在了，当年的PC机真是太鸡肋了。
+而且，在近些年大火的自动驾驶测试领域，我见过太多实时性差得一批的测试系统，响应滞后得跟PID调节似的，却闭口不谈实时性问题，忽忽悠悠就验收通过了……
+资本市场 通过这些收购案例，我们也能看到资本唯利是图的本性，什么来钱快干什么，脑子一热就买了，兴奋劲儿过了之后又卖了，不符合自己的产品路线，也照样卖掉。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Mermaid支持流程图</title>
+    <url>/post/mermaid-charts.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>流程图</tag>
+      <tag>时序图</tag>
+    </tags>
+    <content type="html"><![CDATA[本主题已支持 Mermaid 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 Mermaid 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站： https://mermaid-js.github.io/  。
+使用说明  通过 hugo new 命令创建一篇新的文章 在文章头部配置 mermaid: true 使用短代码书写各种类型的图，自带2个参数： align（对齐） 和 bc（背景色），可参考如下使用示例   流程图 {{&lt; mermaid align=&#34;left&#34; &gt;}} graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; {{&lt; /mermaid &gt;}} graph TD; A--B; A--C; B--D; C--D;  时序图 {{&lt; mermaid bc=&#34;#eee&#34; &gt;}} sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! {{&lt; /mermaid &gt;}} sequenceDiagram participant Alice participant Bob Alice-John: Hello John, how are you? loop Healthcheck John-John: Fight against hypochondria end Note right of John: Rational thoughts prevail! John--Alice: Great! John-Bob: How about you? Bob--John: Jolly good!  类图 {{&lt; mermaid &gt;}} classDiagram Class01 &lt;|-- AveryLongClass : Cool Class03 *-- Class04 Class05 o-- Class06 Class07 .. Class08 Class09 --&gt; C2 : Where am i? Class09 --* C3 Class09 --|&gt; Class07 Class07 : equals() Class07 : Object[] elementData Class01 : size() Class01 : int chimp Class01 : int gorilla Class08 &lt;--&gt; C2: Cool label {{&lt; /mermaid &gt;}} classDiagram Class01 C2 : Where am i? Class09 --* C3 Class09 --| Class07 Class07 : equals() Class07 : Object[] elementData Class01 : size() Class01 : int chimp Class01 : int gorilla Class08  C2: Cool label  甘特图 {{&lt; mermaid &gt;}} gantt dateFormat YYYY-MM-DD title Adding GANTT diagram to mermaid excludes weekdays 2014-01-10 section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d {{&lt; /mermaid &gt;}} gantt dateFormat YYYY-MM-DD title Adding GANTT diagram to mermaid excludes weekdays 2014-01-10 section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d  实体关系图 {{&lt; mermaid &gt;}} erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses {{&lt; /mermaid &gt;}} erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses  用户旅程 {{&lt; mermaid &gt;}} journey title My working day section Go to work Make tea: 5: Me Go upstairs: 3: Me Do work: 1: Me, Cat section Go home Go downstairs: 5: Me Sit down: 5: Me {{&lt; /mermaid &gt;}} journey title My working day section Go to work Make tea: 5: Me Go upstairs: 3: Me Do work: 1: Me, Cat section Go home Go downstairs: 5: Me Sit down: 5: Me ]]></content>
+  </entry>
+  
+  <entry>
+    <title>数学公式渲染</title>
+    <url>/post/math-formula.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>数学公式</tag>
+      <tag>mathjax</tag>
+      <tag>katex</tag>
+    </tags>
+    <content type="html"><![CDATA[本主题支持 mathjax 和 katex 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。
+接下的示例中，将使用 MathJax   方案来展示渲染效果。
+ 使用 hugo new 命令创建一篇新的文章 可以全局启用数据公式渲染，请在项目配置参数 math: katex 或 math: mathjax 或是将该参数配置到需要显示数学公式的页面头部（减少不必要的加载消耗）   注意： 使用 支持的TeX功能  的联机参考资料。
+例子 重复的分数 $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$
+总和记号 $$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$
+几何级数之和 我把接下来的两个例子分成了几行，这样它在手机上表现得更好。这就是为什么它们包含 \displaystyle。
+$$ \displaystyle\sum_{i=1}^{k+1}i $$
+$$ \displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1) $$
+$$ \displaystyle= \frac{k(k+1)}{2}+k+1 $$
+$$ \displaystyle= \frac{k(k+1)+2(k+1)}{2} $$
+$$ \displaystyle= \frac{(k+1)(k+2)}{2} $$
+$$ \displaystyle= \frac{(k+1)((k+1)+1)}{2} $$
+乘记号 $$ \displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1. $$
+随文数式 这是一些线性数学: $$ k_{n+1} = n^2 + k_n^2 - k_{n-1} $$ ， 然后是更多的文本。
+希腊字母 $$ \Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega \alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi $$
+箭头 $$ \gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow $$
+$$ \Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow \leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow $$
+$$ \Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup $$
+$$ \rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow $$
+符号 $$ \surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup $$
+$$ \bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle $$
+微积分学 $$ \int u \frac{dv}{dx},dx=uv-\int \frac{du}{dx}v,dx $$
+$$ f(x) = \int_{-\infty}^\infty \hat f(\xi),e^{2 \pi i \xi x} $$
+$$ \oint \vec{F} \cdot d\vec{s}=0 $$
+洛伦茨方程 $$ \begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y - xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned} $$
+交叉乘积 这在KaTeX中是可行的，但在这种环境中馏分的分离不是很好。
+$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix} $$
+这里有一个解决方案:使用“mfrac”类(在MathJax情况下没有区别)的额外类使分数更小:
+$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix} $$
+强调 $$ \hat{x}\ \vec{x}\ \ddot{x} $$
+有弹性的括号 $$ \left(\frac{x^2}{y^3}\right) $$
+评估范围 $$ \left.\frac{x^3}{3}\right|_0^1 $$
+诊断标准 $$ f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases} $$
+麦克斯韦方程组 $$ \begin{aligned} \nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned} $$
+统计学 固定词组：
+$$ \frac{n!}{k!(n-k)!} = {^n}C_k {n \choose k} $$
+分数在分数 $$ \frac{\frac{1}{x}+\frac{1}{y}}{y-z} $$
+ｎ次方根 $$ \sqrt[n]{1+x+x^2+x^3+\ldots} $$
+矩阵 $$ \begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23}\\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix} \begin{bmatrix} 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 0 \end{bmatrix} $$
+标点符号 $$ f(x) = \sqrt{1+x} \quad (x \ge -1) f(x) \sim x^2 \quad (x\to\infty) $$
+现在用标点符号:
+$$ f(x) = \sqrt{1+x}, \quad x \ge -1 f(x) \sim x^2, \quad x\to\infty $$
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>支持用户自定义设计</title>
+    <url>/post/custom-files.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>自定义</tag>
+      <tag>个性化</tag>
+      <tag>布局</tag>
+    </tags>
+    <content type="html"><![CDATA[对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。
+打开配置参数 首先要明确在配置文件的 params 区域中有配置如下参数：
+customFilePath: sidebar: custom_sidebar.html footer: custom_footer.html style: /css/custom_style.css 注意： sidebar 和 footer 的文件命名不可以与它们的参数名称相同，不然会影响系统默认的布局设计，切记！！！ 😄  然后在站点的根目录下创建 layouts/partials 2个目录，用于存放自定布局设计文件，另外在站点根目录下创建 statics/css 2个目录，用于存放自定义 CSS 样式文件。一切就绪后，就可以参考如下的步骤，完成自己的设计想法。
+侧边栏设计 在前面创建 partials 目录中新一个后缀名为 html 的文件，可以在里面书写你所想表达的设计或内容，比如引入一些第三方组件内容。示例如下：
+&lt;div class=&#34;mydefined animated&#34; itemprop=&#34;custom&#34;&gt; &lt;span&gt;支持自定义CSS和Sidebar布局啦💄💄💄&lt;/span&gt; &lt;/div&gt; 再把该文件的路径配置到相应的参数中，效果请查看左侧边栏底部的效果。
+底部设计 在前面创建 partials 目录中新一个后缀名为 html 的文件，可以在里面书写你所想表达的设计或内容，比如引入一些第三方组件内容。示例如下：
+&lt;div class=&#34;custom-footer&#34;&gt; Website source code &lt;a href=&#34;https://github.com/hugo-next/hugo-theme-next/tree/develop/exampleSite/layouts/partials/custom-footer.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; &lt;/div&gt; 再把该文件的路径配置到相应的参数中，效果请查看站点底部的效果。
+自定义样式 在前面创建 css 目录中新一个后缀名为 css 的文件，然后可以在里面把站点的样式进行重定义，或是增加一些自己定义的样式设计，在写文章时进行引用，示例如下：
+.custom-head5 { font-size: 1.2em; color: #ed6c24; font-weight: bold; } 再把该文件的路径配置到相应的参数中，效果参考如下：
+我是自定义的标题样式效果!!!
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>自定义短语示例</title>
+    <url>/post/shortcodes.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>短代码</tag>
+      <tag>语法</tag>
+    </tags>
+    <content type="html"><![CDATA[虽然 Markdown 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。
+块引用 在引用一些经典名言名句时，可以采用此短语，语法参考如下：
+{{&lt; quote &gt;}} ### block quote 写下你想表达的话语！ {{&lt; /quote &gt;}} 实际效果：
+希望是无所谓有，无所谓无的，这正如地上的路。
+其实地上本没有路，走的人多了，也便成了路。
+鲁迅
+ 信息块 支持 default，info，success，warning，danger 等五种不同效果的展示，语法参考如下：
+{{&lt; note [class] [no-icon] &gt;}} 书写表达的信息 支持 Markdown 语法 {{&lt; /note &gt;}} 实际效果：
+Default Header without icon Welcome to Hugo NexT!  Default Header Welcome to Hugo NexT!  Info Header Welcome to Hugo NexT!  Success Header Welcome to Hugo NexT!  Warning Header Welcome to Hugo NexT!  Danger Header Welcome to Hugo NexT! ]]></content>
+  </entry>
+  
+  <entry>
+    <title>文章目录导航</title>
+    <url>/post/table-of-content.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>目录</tag>
+      <tag>导航</tag>
+      <tag>博客</tag>
+    </tags>
+    <content type="html"><![CDATA[巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。
+早年的故事 起始 2014年的春天，在云南省华宁县和宜良县的交界处，一座名叫矣则的小山村里，一处已经有上百年历史的古旧四合院宅子被拆掉。村委会正带领村民们进行“美丽乡村”的建设，一年以后，旧有村居将再也看不到，代之而起的是钢筋混凝土的新式民居。就像10年、20年前中国大小城市的改造一样，这个群山围绕的小村子也开始陷入“工地模式”。
+童年浪花 在江河边长大的孩子几乎都有一个当仁不让的特长：善水。褚时健也不例外，他不仅从小就在南盘江和花鱼塘里扑腾出了上佳的游泳技术，五六岁已经可以一个猛子扎出老远，而且从七八岁就可以在南盘江和河滩上的鱼塘里捉鱼了。
+少年故事 褚时健在乡村自由自在生活的十多年，其实正是中国社会风雨飘摇的十多年。特别是1937年卢沟桥事变后，日本人发动全面侵华战争，短短两三年间，中国的大部分国土相继沦陷
+激情的青春十年 当上了游击队员 1948年夏天，褚时健回乡，在禄丰车站小学做了一名老师，同时也和褚时仁、褚时杰一起继续保持与共产党组织的联系，做一些传递情报的工作
+战火纷飞 因为战斗力相较悬殊，所以游击队只能是靠打一枪换一个地方的办法，专找敌人薄弱的地方攻击，但更多时候，都是在防御和转移阵地。
+迎来解放 1949年12月，国民党云南省主席卢汉在昆明宣布起义，云南正式拉开解放的序幕。1950年2月20日，陈赓、宋任穷、周保中率解放军第二野战军第四兵团进入昆明，24日，陈赓宣布云南全境解放。
+生活的断层 跌入生活底层 “反右”运动中被打倒的人在“右派”身份确定后，只有一条路可走：下放到农场。农场名副其实，就是干农活儿的地方，必须过和农民一样的生活。
+尾声 岁月像一条河 2015年，是褚时健和马静芬结婚60周年，被称为“钻石婚”的纪念年份。这简直是一份人生的奖赏,在中国离婚率愈益升高的当下，60年的婚姻，几乎就像一个前世之梦。一个甲子的相伴相随，褚时健和马静芬共同经历了国家和个人的各种风浪，共同面对过生死。他们两人已经不仅是夫妻，更是一对战友。尽管马静芬偶尔会对褚时健年轻时候的粗心抱怨上两句，但说到最后，她会说一句：“没有我就没有他，没有他也就没有我。”
+作者致谢 这本书从2014年初夏开始采访，到今天完稿，历时18个月。封面上“作者”只能是我一个人的名字，但也只有我自己知道，这本书，包含了太多人的心力和体力。我当然首先要致谢王石先生，没有他就没有这本书。我自己细想下来，没有王石先生一直的鞭策和鼓励，也没有我写作工作的今天。从2006年我开始从事专业写作工作以来，他给我创造了很多写作的机会，并且不吝自己诸多人生和学习的体会和感悟，一一传递予我。知遇之恩，感谢非常。
+最后，我当然要把最大的感谢致予褚时健先生。不仅是因为他慷慨、坦率面对我的各种提问，更重要的是，在倾听他的故事的过程里，他繁盛的人生经历，他的强大生命力，他对生活、对事业的一片赤子之心，也丰富了我对自己人生的思考。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>Hugo 内置的 Chroma 语法高亮</title>
+    <url>/post/syntax-highlighting.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>语法</tag>
+      <tag>高亮</tag>
+      <tag>Chroma</tag>
+    </tags>
+    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
+以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
+编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }   Java import javax.swing.JFrame; //Importing class JFrame import javax.swing.JLabel; //Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); //Creating frame  frame.setTitle(&#34;Hi!&#34;); //Setting title frame  frame.add(new JLabel(&#34;Hello, world!&#34;));//Adding text to frame  frame.pack(); //Setting size to smallest  frame.setLocationRelativeTo(null); //Centering frame  frame.setVisible(true); //Showing frame  } } Python print &#34;Hello, world!&#34; Git 对比 *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line 文件 Make 文件 CC=gcc CFLAGS=-I. hellomake: hellomake.o hellofunc.o $(CC) -o hellomake hellomake.o hellofunc.o -I. Markdown 文档 **bold** *italics* [link](www.example.com) 数据内容 JSON 数据 {&#34;employees&#34;:[ {&#34;firstName&#34;:&#34;John&#34;, &#34;lastName&#34;:&#34;Doe&#34;}, ]} XML 内容 &lt;employees&gt; &lt;employee&gt; &lt;firstName&gt;John&lt;/firstName&gt; &lt;lastName&gt;Doe&lt;/lastName&gt; &lt;/employee&gt; &lt;/employees&gt; SQL 查询 SELECT column_name,column_name FROM Table WHERE column_name = &#34;condition&#34; 除以上列举的代码高亮显示外，还支持诸如：C 语言、C++、HTML、CSS、Shell脚本等各主流的代码语言高亮显示，可自行测试效果。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>支持 Emoji 表情</title>
+    <url>/post/emoji-support.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>表情</tag>
+      <tag>emoji</tag>
+    </tags>
+    <content type="html"><![CDATA[Emoji 可以通过多种方式在 Hugo 项目中启用。
+ emojify   方法可以直接在模板中调用, 或者使用 行内 Shortcodes  .
+要全局使用 emoji, 需要在你的 网站配置  中设置 enableEmoji 为 true， 然后你就可以直接在文章中输入 emoji 的代码。
+它们以冒号开头和结尾，并且包含 emoji 的 代码：
+去露营啦! {:}tent: 很快就回来. 真开心! {:}joy: 呈现的输出效果如下:
+去露营啦! ⛺ 很快就回来。
+真开心! 😂
+以下符号清单是 emoji 代码的非常有用的参考。
+表情与情感 笑脸表情    图标 代码 图标 代码     😀 grinning 😃 smiley   😄 smile 😁 grin   😆 laughing satisfied 😅 sweat_smile   🤣 rofl 😂 joy   🙂 slightly_smiling_face 🙃 upside_down_face   😉 wink 😊 blush   😇 innocent      爱意表情    图标 代码 图标 代码     😍 heart_eyes 😘 kissing_heart   😗 kissing ☺️ relaxed   😚 kissing_closed_eyes 😙 kissing_smiling_eyes    吐舌头表情    图标 代码 图标 代码     😋 yum 😛 stuck_out_tongue   😜 stuck_out_tongue_winking_eye 😝 stuck_out_tongue_closed_eyes   🤑 money_mouth_face      国家和地区旗帜    图标 代码 图标 代码     🇦🇩 andorra 🇦🇪 united_arab_emirates   🇦🇫 afghanistan 🇦🇬 antigua_barbuda   🇦🇮 anguilla 🇦🇱 albania   🇦🇲 armenia 🇦🇴 angola   🇦🇶 antarctica 🇦🇷 argentina   🇦🇸 american_samoa 🇦🇹 austria   🇦🇺 australia 🇦🇼 aruba   🇦🇽 aland_islands 🇦🇿 azerbaijan   🇧🇦 bosnia_herzegovina 🇧🇧 barbados   🇧🇩 bangladesh 🇧🇪 belgium   🇧🇫 burkina_faso 🇧🇬 bulgaria   🇧🇭 bahrain 🇧🇮 burundi   🇧🇯 benin 🇧🇱 st_barthelemy   🇧🇲 bermuda 🇧🇳 brunei   🇧🇴 bolivia 🇧🇶 caribbean_netherlands   🇧🇷 brazil 🇧🇸 bahamas   🇧🇹 bhutan 🇧🇼 botswana   🇧🇾 belarus 🇧🇿 belize   🇨🇦 canada 🇨🇨 cocos_islands   🇨🇩 congo_kinshasa 🇨🇫 central_african_republic   🇨🇬 congo_brazzaville 🇨🇭 switzerland   🇨🇮 cote_divoire 🇨🇰 cook_islands   🇨🇱 chile 🇨🇲 cameroon   🇨🇳 cn 🇨🇴 colombia   🇨🇷 costa_rica 🇨🇺 cuba   🇨🇻 cape_verde 🇨🇼 curacao   🇨🇽 christmas_island 🇨🇾 cyprus   🇨🇿 czech_republic 🇩🇪 de   🇩🇯 djibouti 🇩🇰 denmark   🇩🇲 dominica 🇩🇴 dominican_republic   🇩🇿 algeria 🇪🇨 ecuador   🇪🇪 estonia 🇪🇬 egypt   🇪🇭 western_sahara 🇪🇷 eritrea   🇪🇸 es 🇪🇹 ethiopia   🇪🇺 eu european_union 🇫🇮 finland   🇫🇯 fiji 🇫🇰 falkland_islands   🇫🇲 micronesia 🇫🇴 faroe_islands   🇫🇷 fr 🇬🇦 gabon   🇬🇧 gb uk 🇬🇩 grenada   🇬🇪 georgia 🇬🇫 french_guiana   🇬🇬 guernsey 🇬🇭 ghana   🇬🇮 gibraltar 🇬🇱 greenland   🇬🇲 gambia 🇬🇳 guinea   🇬🇵 guadeloupe 🇬🇶 equatorial_guinea   🇬🇷 greece 🇬🇸 south_georgia_south_sandwich_islands   🇬🇹 guatemala 🇬🇺 guam   🇬🇼 guinea_bissau 🇬🇾 guyana   🇭🇰 hong_kong 🇭🇳 honduras   🇭🇷 croatia 🇭🇹 haiti   🇭🇺 hungary 🇮🇨 canary_islands   🇮🇩 indonesia 🇮🇪 ireland   🇮🇱 israel 🇮🇲 isle_of_man   🇮🇳 india 🇮🇴 british_indian_ocean_territory   🇮🇶 iraq 🇮🇷 iran   🇮🇸 iceland 🇮🇹 it   🇯🇪 jersey 🇯🇲 jamaica   🇯🇴 jordan 🇯🇵 jp   🇰🇪 kenya 🇰🇬 kyrgyzstan   🇰🇭 cambodia 🇰🇮 kiribati   🇰🇲 comoros 🇰🇳 st_kitts_nevis   🇰🇵 north_korea 🇰🇷 kr   🇰🇼 kuwait 🇰🇾 cayman_islands   🇰🇿 kazakhstan 🇱🇦 laos   🇱🇧 lebanon 🇱🇨 st_lucia   🇱🇮 liechtenstein 🇱🇰 sri_lanka   🇱🇷 liberia 🇱🇸 lesotho   🇱🇹 lithuania 🇱🇺 luxembourg   🇱🇻 latvia 🇱🇾 libya   🇲🇦 morocco 🇲🇨 monaco   🇲🇩 moldova 🇲🇪 montenegro   🇲🇬 madagascar 🇲🇭 marshall_islands   🇲🇰 macedonia 🇲🇱 mali   🇲🇲 myanmar 🇲🇳 mongolia   🇲🇴 macau 🇲🇵 northern_mariana_islands   🇲🇶 martinique 🇲🇷 mauritania   🇲🇸 montserrat 🇲🇹 malta   🇲🇺 mauritius 🇲🇻 maldives   🇲🇼 malawi 🇲🇽 mexico   🇲🇾 malaysia 🇲🇿 mozambique   🇳🇦 namibia 🇳🇨 new_caledonia   🇳🇪 niger 🇳🇫 norfolk_island   🇳🇬 nigeria 🇳🇮 nicaragua   🇳🇱 netherlands 🇳🇴 norway   🇳🇵 nepal 🇳🇷 nauru   🇳🇺 niue 🇳🇿 new_zealand   🇴🇲 oman 🇵🇦 panama   🇵🇪 peru 🇵🇫 french_polynesia   🇵🇬 papua_new_guinea 🇵🇭 philippines   🇵🇰 pakistan 🇵🇱 poland   🇵🇲 st_pierre_miquelon 🇵🇳 pitcairn_islands   🇵🇷 puerto_rico 🇵🇸 palestinian_territories   🇵🇹 portugal 🇵🇼 palau   🇵🇾 paraguay 🇶🇦 qatar   🇷🇪 reunion 🇷🇴 romania   🇷🇸 serbia 🇷🇺 ru   🇷🇼 rwanda 🇸🇦 saudi_arabia   🇸🇧 solomon_islands 🇸🇨 seychelles   🇸🇩 sudan 🇸🇪 sweden   🇸🇬 singapore 🇸🇭 st_helena   🇸🇮 slovenia 🇸🇰 slovakia   🇸🇱 sierra_leone 🇸🇲 san_marino   🇸🇳 senegal 🇸🇴 somalia   🇸🇷 suriname 🇸🇸 south_sudan   🇸🇹 sao_tome_principe 🇸🇻 el_salvador   🇸🇽 sint_maarten 🇸🇾 syria   🇸🇿 swaziland 🇹🇨 turks_caicos_islands   🇹🇩 chad 🇹🇫 french_southern_territories   🇹🇬 togo 🇹🇭 thailand   🇹🇯 tajikistan 🇹🇰 tokelau   🇹🇱 timor_leste 🇹🇲 turkmenistan   🇹🇳 tunisia 🇹🇴 tonga   🇹🇷 tr 🇹🇹 trinidad_tobago   🇹🇻 tuvalu 🇹🇼 taiwan   🇹🇿 tanzania 🇺🇦 ukraine   🇺🇬 uganda 🇺🇸 us   🇺🇾 uruguay 🇺🇿 uzbekistan   🇻🇦 vatican_city 🇻🇨 st_vincent_grenadines   🇻🇪 venezuela 🇻🇬 british_virgin_islands   🇻🇮 us_virgin_islands 🇻🇳 vietnam   🇻🇺 vanuatu 🇼🇫 wallis_futuna   🇼🇸 samoa 🇽🇰 kosovo   🇾🇪 yemen 🇾🇹 mayotte   🇿🇦 south_africa 🇿🇲 zambia   🇿🇼 zimbabwe     ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Markdown 语法支持</title>
+    <url>/post/markdown-syntax.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>Markdown</tag>
+      <tag>语法</tag>
+    </tags>
+    <content type="html"><![CDATA[仅以此篇文章来测试下在 NexT 主题中在通过 Hugo 引擎来建站时，是否支持 Markdown 文件内容中所写的各种语法，并展示下实际的效果。
+标题样式 让我们从所有可能的标题开始，在 HTML 中 &lt;h1&gt;-&lt;h6&gt;元素分别表示六个不同级别的标题样式，其中 &lt;h1&gt; 为最大标题，&lt;h6&gt;为最小标题，效果如下：
+标题 1 标题 2 标题 3 标题 4 标题 5 标题 6 段落格式 根据 W3C  定义的 HTML5 规范  ，HTML 文档由元素和文本组成。每个元素的组成都由一个 开始标记  表示，例如： &lt;body&gt; ，和 结束标记  表示，例如： &lt;/body&gt; 。（某些开始标记和结束标记在某些情况下可以省略，并由其他标记暗示。） 元素可以具有属性，这些属性控制元素的工作方式。例如：超链接是使用 a 元素及其 href 属性形成的。
+Markdown 语法 ![图像说明](图像地址) HTML IMG 标签 &lt;img src=&#34;图像地址&#34; width=&#34;宽度&#34; height=&#34;高度&#34; /&gt; SVG 格式 &lt;svg&gt;xxxxxx&lt;/svg&gt; 
+列表类型 有序列表  第一个元素 第二个元素 第三个元素  无序列表  列表元素 另一个元素 和其它元素  嵌套列表 借助 HTML 的 ul 元素来实现。
+ 第一项 第二项  第二项第一个子项目 第二项第二个子项目  第二项第二分项第一分项 第二项第二分项第二分项 第二项第二分项第三分项   第二项第三个子项目  第二项第三分项第一分项 第二项第三分项第二分项 第二项第三分项第三分项    第三项  自定义列表 通过 HTML 的 dl 元素还支持自定义列表（表格列表）。
+ Hugo 目录结构 assets config.toml content data theme static Hugo 模板 基础模板 列表模板 单页模板  块引用 blockquote 元素表示从另一个源引用的内容，可以选择引用必须在 footer 或 cite 元素中，也可以选择使用注释和缩写等行内更改。
+ 引用文本 这一行也是同样的引用 同样你也在 blockquote 中使用 Markdown 语法书写
+ 带有引文的 Blockquote 元素效果。
+ 我的目标不是赚大钱,是为了制造好的电脑。当我意识到我可以永远当工程师时，我才创办了这家公司。
+— 史蒂夫·沃兹尼亚克  根据 Mozilla 的网站记录，Firefox 1.0 于 2004 年发布，并取得了巨大成功。
+表格 表格并不算是 Markdown 的核心要素，但 Hugo 同样支持它。
+   ID 创建者 模型 年份     1 Honda Accord 2009   2 Toyota Camry 2012   3 Hyundai Elantra 2010    可以使用 : （英文格式冒号）来对表格内容进行对齐。
+   表格 可以是 很酷     左对齐 居中 右对齐   左对齐 居中 右对齐   左对齐 居中 右对齐    同样也可以在表格中使用 Markdown 语法。
+   表格 中 使用 Markdown 语法     斜体 粗体 中划线 代码块    Code &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; 其它元素： abbr、sub、sup、kbd等等 GIF 是位图图像格式。
+H2O
+C6H12O6
+Xn + Yn = Zn
+按X获胜。或按CTRL+ALT+F显示 FPS 计数器。
+比特作为信息论中的信息单位，也被称为 shannon ，以信息论领域的创始人 Claude shannon 的名字命名。
+参考：
+ 来自 Mainroad 主题的 Basic Elements   内容 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>友情链接</title>
+    <url>/flinks.html</url>
+    <categories>
+    </categories>
+    <tags>
+    </tags>
+    <content type="html"><![CDATA[如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：
+- name: VxWorks俱乐部 desc: VxWorks实时操作系统 avatar: https://www.vxworks.net/images/vxworks-club-logo.png link: https://www.vxworks.net ]]></content>
+  </entry>
+  
+</search>
