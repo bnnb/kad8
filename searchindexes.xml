@@ -16,6 +16,39 @@
   </entry>
   
   <entry>
+    <title>动图演示常用通信协议原理</title>
+    <url>/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>SPI</tag>
+      <tag>UART</tag>
+      <tag>I2C</tag>
+      <tag>PWM</tag>
+    </tags>
+    <content type="html"><![CDATA[本文分享电子系统中信号波形的动图，有助于帮助我们理解传输的机理。
+SPI传输 图1 SPI 数据传输
+图1.2 SPI数据传输（2）
+图1.3 SPI时序信号
+I²C传输 图1.2.1 I2C总线以及寻址方式
+UART传输 图1.3.1 PC 上通过UART来调试MCU
+图1.3.2 RS-232通过电平转换芯片与MCU通讯
+串口通信相关文章:VxWorks下的串口测试程序设计和源码。
+红外控制 图1.4.1 红外控制信号也是一个串行通讯信号
+图1.4.2 红外信号接收与放大整形电路
+图1.4.3 一个使用红外接收光电管控制继电器进行鱼食投喂电路
+串并转换电路 图1.5.1 串入、并出移位寄存器
+图1.5.2 由八个D寄存器组成的移位寄存器
+图1.5.3 串行传输示意图
+其他波形动画 图1.6.1 PWM控制LED亮度
+图1.6.2 PWM控制LED亮度
+图1.6.3 调幅与调频信号
+图1.6.4 相位调制信号
+图1.6.5 方波边沿抖动波形
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux 进程概念: 冯 • 诺依曼体系结构</title>
     <url>/post/linux/linux-process-concept-von-neumann-architecture.html</url>
     <categories><category>Linux</category>

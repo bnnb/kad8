@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Mar 2023 04:31:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 00:00:24 -0400</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,33 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>动图演示常用通信协议原理</title>
+      <link>https://www.kad8.com/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</guid>
+      <description>本文分享电子系统中信号波形的动图，有助于帮助我们理解传输的机理。
+SPI传输 图1 SPI 数据传输
+图1.2 SPI数据传输（2）
+图1.3 SPI时序信号
+I²C传输 图1.2.1 I2C总线以及寻址方式
+UART传输 图1.3.1 PC 上通过UART来调试MCU
+图1.3.2 RS-232通过电平转换芯片与MCU通讯
+串口通信相关文章:VxWorks下的串口测试程序设计和源码。
+红外控制 图1.4.1 红外控制信号也是一个串行通讯信号
+图1.4.2 红外信号接收与放大整形电路
+图1.4.3 一个使用红外接收光电管控制继电器进行鱼食投喂电路
+串并转换电路 图1.5.1 串入、并出移位寄存器
+图1.5.2 由八个D寄存器组成的移位寄存器
+图1.5.3 串行传输示意图
+其他波形动画 图1.6.1 PWM控制LED亮度
+图1.6.2 PWM控制LED亮度
+图1.6.3 调幅与调频信号
+图1.6.4 相位调制信号
+图1.6.5 方波边沿抖动波形</description>
     </item>
     
     <item>

@@ -6,7 +6,43 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Mar 2023 04:31:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 00:00:24 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I2C</title>
+      <link>https://www.kad8.com/tags/i2c/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWM</title>
+      <link>https://www.kad8.com/tags/pwm/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/pwm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPI</title>
+      <link>https://www.kad8.com/tags/spi/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/spi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UART</title>
+      <link>https://www.kad8.com/tags/uart/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/uart/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Process</title>
       <link>https://www.kad8.com/tags/process/</link>
@@ -125,15 +161,6 @@
     </item>
     
     <item>
-      <title>SPI</title>
-      <link>https://www.kad8.com/tags/spi/</link>
-      <pubDate>Thu, 22 Dec 2022 09:13:52 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/tags/spi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>C language</title>
       <link>https://www.kad8.com/tags/c-language/</link>
       <pubDate>Thu, 22 Dec 2022 08:41:53 -0500</pubDate>
@@ -197,15 +224,6 @@
     </item>
     
     <item>
-      <title>uart</title>
-      <link>https://www.kad8.com/tags/uart/</link>
-      <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/tags/uart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>usb</title>
       <link>https://www.kad8.com/tags/usb/</link>
       <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
@@ -229,15 +247,6 @@
       <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
       
       <guid>https://www.kad8.com/tags/crontab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>I2C</title>
-      <link>https://www.kad8.com/tags/i2c/</link>
-      <pubDate>Sat, 17 Dec 2022 04:57:58 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/tags/i2c/</guid>
       <description></description>
     </item>
     

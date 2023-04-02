@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>uart on 北南南北</title>
+    <title>UART on 北南南北</title>
     <link>https://www.kad8.com/tags/uart/</link>
-    <description>Recent content in uart on 北南南北</description>
+    <description>Recent content in UART on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Dec 2022 08:57:23 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/uart/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 00:00:24 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/uart/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>动图演示常用通信协议原理</title>
+      <link>https://www.kad8.com/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</guid>
+      <description>本文分享电子系统中信号波形的动图，有助于帮助我们理解传输的机理。
+SPI传输 图1 SPI 数据传输
+图1.2 SPI数据传输（2）
+图1.3 SPI时序信号
+I²C传输 图1.2.1 I2C总线以及寻址方式
+UART传输 图1.3.1 PC 上通过UART来调试MCU
+图1.3.2 RS-232通过电平转换芯片与MCU通讯
+串口通信相关文章:VxWorks下的串口测试程序设计和源码。
+红外控制 图1.4.1 红外控制信号也是一个串行通讯信号
+图1.4.2 红外信号接收与放大整形电路
+图1.4.3 一个使用红外接收光电管控制继电器进行鱼食投喂电路
+串并转换电路 图1.5.1 串入、并出移位寄存器
+图1.5.2 由八个D寄存器组成的移位寄存器
+图1.5.3 串行传输示意图
+其他波形动画 图1.6.1 PWM控制LED亮度
+图1.6.2 PWM控制LED亮度
+图1.6.3 调幅与调频信号
+图1.6.4 相位调制信号
+图1.6.5 方波边沿抖动波形</description>
+    </item>
+    
     <item>
       <title>分享一种通信协议的应用编程原理和思路</title>
       <link>https://www.kad8.com/post/linux/communication-protocol-programming-principle-and-idea.html</link>

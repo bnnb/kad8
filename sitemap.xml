@@ -8,7 +8,52 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-03-19T04:31:28-04:00</lastmod>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/hardware/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/i2c/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/pwm/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/spi/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/uart/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/hardware/animation-demonstrates-principles-of-common-communication-protocols.html</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -22,27 +67,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-03-19T04:31:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/process/</loc>
     <lastmod>2023-03-19T04:31:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-03-19T04:31:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/von-neumann-architecture/</loc>
-    <lastmod>2023-03-19T04:31:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-03-19T04:31:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -93,11 +123,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/hardware/difference-between-different-generation-DDRs.html</loc>
-    <lastmod>2023-01-01T09:14:46-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/hardware/</loc>
     <lastmod>2023-01-01T09:14:46-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -157,11 +182,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/spi/</loc>
-    <lastmod>2022-12-22T09:13:52-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/hardware/spi-bus-introduction.html</loc>
     <lastmod>2022-12-22T09:13:52-05:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -217,11 +237,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/uart/</loc>
-    <lastmod>2022-12-19T08:57:23-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/usb/</loc>
     <lastmod>2022-12-19T08:57:23-05:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,11 +264,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</loc>
     <lastmod>2022-12-18T09:30:20-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/i2c/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
