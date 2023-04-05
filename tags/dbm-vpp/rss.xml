@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dBm, Vpp on 北南南北</title>
+    <link>https://www.kad8.com/tags/dbm-vpp/</link>
+    <description>Recent content in dBm, Vpp on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 05 Apr 2023 07:28:59 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/dbm-vpp/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dBm-Vpp-W转换</title>
+      <link>https://www.kad8.com/post/hardware/dBm-Vpp-convert.html</link>
+      <pubDate>Wed, 05 Apr 2023 07:28:59 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/dBm-Vpp-convert.html</guid>
+      <description>&lt;p&gt;在不同的应用领域，大家对一个信号的表示各不相同，如RF领域喜欢使用dBm来描述一个信号的功率，而实际的调试或测试过程中，大家更喜欢使用示波器来测试一个信号的峰峰值&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
