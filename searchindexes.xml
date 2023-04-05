@@ -29,6 +29,8 @@
 $$ P_{dBm} = 10*lg \left(\frac{P_{w}}{1mW}\right) $$
 示波器看到的电压值为：
 $$ V_{pp} = 20* \sqrt{P_{w}} $$
+dBm-Vpp-W转换表 下表是50欧姆系统中的正弦波信号参数的转换关系：
+小程序实现 使用电路设计小程序可以很方便的实现dBm-Vpp-W的转换：
 ]]></content>
   </entry>
   
