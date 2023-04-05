@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 05 Apr 2023 07:28:59 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 11:17:21 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>PCB板上镀金与镀银有什么区别</title>
+      <link>https://www.kad8.com/post/hardware/difference-between-gold-plating-and-silver-plating-on-PCB.html</link>
+      <pubDate>Wed, 05 Apr 2023 11:17:21 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/difference-between-gold-plating-and-silver-plating-on-PCB.html</guid>
+      <description>&lt;p&gt;很多DIY玩家会发现，市场中各种各样的板卡产品所使用的PCB颜色五花八门，令人眼花缭乱。比较常见的PCB颜色有黑色、绿色、蓝色、黄色、紫色、红色、棕色。&lt;/p&gt;</description>
     </item>
     
     <item>
