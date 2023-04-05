@@ -28,7 +28,7 @@
 频谱仪看到的功率值为：
 $$ P_{dBm} = 10*lg \left(\frac{P_{w}}{1mW}\right) $$
 示波器看到的电压值为：
-$$ V_{pp} = 20*\sqrt{Pw} $$
+$$ V_{pp} = 20* \sqrt{Pw} $$
 ]]></content>
   </entry>
   
