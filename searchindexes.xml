@@ -16,6 +16,28 @@
   </entry>
   
   <entry>
+    <title>自制STM32的下载器</title>
+    <url>/post/hardware/smt32-download-fixture-how-to.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>SMT32, STLINK-V2</tag>
+    </tags>
+    <content type="html"><![CDATA[本文介绍制作一个STM32下载器的过程。
+原理图 STLINK-V2下载器电路原理图如下。
+上图中，H5接口是固件下载口。H4接口是STLINK-V2下载口（实现下载功能的接口 T_JTCK就是SWCLK, T_JTMS就是 SWDIO）。其他都是测试接口。
+制作过程 首先我们焊接完的板子是不能用的，需要往里面下载固件。前提是你手头有一块好的ST-LinkV2下载器，不然就白搞了。
+使用好的STLINK-V2下载器给我们自己制作的STLINK-V2板子下载固件，将STLINK-V2下载器连接角与板子上的H5固件下载接口对应连接，再将STLINK-V2连接到电脑，
+安装ST的ST-LINK Utility软件，使用STM32 ST-LINK Utility 软件下载固件（这个软件官网可以下载）。先连接后下载，要是软件识别不了你的芯片，那你得仔细检查下你的板子啦！
+连接成功后，然后开始下载固件。
+图中框1打开固件STLinkV2.J16.S4.bin文件（这个最新固件官网可以下载的到）。
+点击框2下载，弹出下载窗口。
+点击框3开始下载。
+下载完后，将自制的ST-Link插上电脑，然后，更新固件。点击框1，弹出窗口然后点击框2连接自制的ST-Link,识别出来后，点击框3开始更新固件。如果没有识别出来，可能是你同时插上了2个ST-Link，或者是你的板子有问题，得耐心排查。到这里，就算完成啦！接下来你可以体验你自制的ST-Link任意下载程序啦！这个电路我测试的是keil，IAR都支持，STM8也能下载。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>PCB板上镀金与镀银有什么区别</title>
     <url>/post/hardware/difference-between-gold-plating-and-silver-plating-on-PCB.html</url>
     <categories><category>Hardware</category>

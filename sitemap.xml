@@ -8,12 +8,37 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/hardware/</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/smt32-stlink-v2/</loc>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/hardware/smt32-download-fixture-how-to.html</loc>
+    <lastmod>2023-04-06T02:50:50-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -23,21 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/hardware/difference-between-gold-plating-and-silver-plating-on-PCB.html</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-04-05T11:17:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

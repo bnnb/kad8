@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 05 Apr 2023 11:17:21 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Apr 2023 02:50:50 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自制STM32的下载器</title>
+      <link>https://www.kad8.com/post/hardware/smt32-download-fixture-how-to.html</link>
+      <pubDate>Thu, 06 Apr 2023 02:50:50 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/smt32-download-fixture-how-to.html</guid>
+      <description>&lt;p&gt;本文介绍制作一个STM32下载器的过程。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>PCB板上镀金与镀银有什么区别</title>
       <link>https://www.kad8.com/post/hardware/difference-between-gold-plating-and-silver-plating-on-PCB.html</link>
