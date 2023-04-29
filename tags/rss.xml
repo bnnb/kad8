@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Apr 2023 02:50:50 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 00:01:05 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computing</title>
+      <link>https://www.kad8.com/tags/computing/</link>
+      <pubDate>Sat, 29 Apr 2023 00:01:05 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edge</title>
+      <link>https://www.kad8.com/tags/edge/</link>
+      <pubDate>Sat, 29 Apr 2023 00:01:05 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/edge/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>SMT32, STLINK-V2</title>
       <link>https://www.kad8.com/tags/smt32-stlink-v2/</link>
