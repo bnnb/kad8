@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Apr 2023 02:50:50 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 12:56:13 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5G和边缘计算</title>
+      <link>https://www.kad8.com/post/hardware/5g-and-edge-computing.html</link>
+      <pubDate>Sat, 29 Apr 2023 12:56:13 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/5g-and-edge-computing.html</guid>
+      <description>&lt;p&gt;第五代 (5G) 蜂窝网络和边缘计算是近年来出现的两项最具创新性的技术。两者都准备好彻底改变企业的运营方式，并且潜在的好处是非常巨大的。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>自制STM32的下载器</title>
       <link>https://www.kad8.com/post/hardware/smt32-download-fixture-how-to.html</link>
