@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Apr 2023 12:56:13 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2023 09:15:30 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kernel</title>
+      <link>https://www.kad8.com/tags/kernel/</link>
+      <pubDate>Sun, 30 Apr 2023 09:15:30 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.kad8.com/tags/linux/</link>
+      <pubDate>Sun, 30 Apr 2023 09:15:30 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Computing</title>
       <link>https://www.kad8.com/tags/computing/</link>
@@ -103,15 +121,6 @@
       <pubDate>Sun, 19 Mar 2023 04:31:28 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/von-neumann-architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://www.kad8.com/tags/linux/</link>
-      <pubDate>Sat, 18 Mar 2023 11:35:48 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -382,15 +391,6 @@
       <pubDate>Fri, 28 Oct 2022 06:53:45 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/rgb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kernel</title>
-      <link>https://www.kad8.com/tags/kernel/</link>
-      <pubDate>Sun, 16 Oct 2022 11:52:03 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/kernel/</guid>
       <description></description>
     </item>
     

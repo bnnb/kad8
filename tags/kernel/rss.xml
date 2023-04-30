@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kernel on 北南南北</title>
+    <title>Kernel on 北南南北</title>
     <link>https://www.kad8.com/tags/kernel/</link>
-    <description>Recent content in kernel on 北南南北</description>
+    <description>Recent content in Kernel on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 16 Oct 2022 11:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/kernel/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2023 09:15:30 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/kernel/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux内核设计与实现—进程调度</title>
+      <link>https://www.kad8.com/post/linux/linux-kernel-design-and-implementation-process-schedule.html</link>
+      <pubDate>Sun, 30 Apr 2023 09:15:30 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-kernel-design-and-implementation-process-schedule.html</guid>
+      <description>&lt;p&gt;最近开始学习Linux内核，主要参考书籍为《Linux内核设计与实现》，所以本系列大章节和小章节会遵从原书结构，再辅以其他书籍或网上资料对其未理解部分进行补充。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>带你走进Linux内核源码中最常见的数据结构之「mutex」</title>
       <link>https://www.kad8.com/post/linux/linux-kernel-source-code-data-structure-mutex.html</link>
