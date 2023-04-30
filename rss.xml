@@ -24,7 +24,11 @@
       <pubDate>Sun, 30 Apr 2023 09:15:30 -0400</pubDate>
       
       <guid>https://www.kad8.com/post/linux/linux-kernel-design-and-implementation-process-schedule.html</guid>
-      <description>&lt;p&gt;最近开始学习Linux内核，主要参考书籍为《Linux内核设计与实现》，所以本系列大章节和小章节会遵从原书结构，再辅以其他书籍或网上资料对其未理解部分进行补充。&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近开始学习
+&lt;a href=&#34;https://www.pudn.club&#34; title=&#34;Linux&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Linux
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;内核，主要参考书籍为《Linux内核设计与实现》，所以本系列大章节和小章节会遵从原书结构，再辅以其他书籍或网上资料对其未理解部分进行补充。&lt;/p&gt;</description>
     </item>
     
     <item>
