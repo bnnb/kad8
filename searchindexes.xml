@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>苦战15年，谷歌云业务终于实现首次盈利</title>
+    <url>/post/news/google-cloud-business-is-finally-profitable-for-the-first-time.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>Cloud</tag>
+      <tag>Google</tag>
+    </tags>
+    <content type="html"><![CDATA[谷歌云业务（Google Cloud）是谷歌母公司 Alphabet 旗下的一个部门，负责提供云计算、数据分析、机器学习等服务。
+自从 2008 年推出以来，谷歌云业务一直处于亏损状态，直到今年第一季度才终于首次实现了盈利。
+根据 Alphabet 公布的财报，截至 3 月 31 日的季度，谷歌云业务的收入为 74 亿美元，运营利润为 1.91 亿美元（约 13.24 亿元人民币），盈利率为 2.5%。虽然这是一个历史性的突破，但与其竞争对手相比，谷歌云业务仍然显得弱小。
+亚马逊旗下的 AWS（Amazon Web Services）在 2022 年的收入达到了 800 亿美元，运营利润为 228 亿美元，盈利率为 28%。微软旗下的 Azure 也在不断增长，虽然没有公布具体的数字，但据估计其市场份额已经超过了谷歌云业务的两倍。
+谷歌云业务为什么一直亏损？主要原因是其投入了大量的资金来扩大基础设施、开发新产品、招募新客户和人才。在过去的三年里，谷歌云业务累计亏损了 146 亿美元。
+Alphabet 的 CEO Sundar Pichai 并不在意这些亏损，他认为这是为了未来的增长而做出的必要投资，并且谷歌本身有足够的利润来支撑这些投资。他对这次盈利表示满意，并称谷歌云业务已经成为全球最大的企业软件公司之一。
+谷歌云业务能否在未来缩小与领先者之间的差距，还要看它能否继续保持创新和竞争力。目前，谷歌云业务正在开发一些新技术，如生成式人工智能（generative AI），以提升其搜索服务的质量和效率。Pichai 表示，他认为这些技术不会增加太多的基础设施成本，并且会给用户提供更多的选择。
+同时，谷歌云业务也面临着一些挑战和压力。首先是市场环境的变化，由于新冠疫情和芯片短缺等因素，导致整个行业的需求和收入都有所下降。Alphabet 本季度的总收入只增长了 3%，达到 698 亿美元。其次是成本控制的问题，Alphabet 本季度承担了 26 亿美元的费用，主要包括裁员和取消闲置办公空间等项目。这些费用导致其运营收入和利润、利润率都有所下降。最后是战略调整的问题，Alphabet 的首席财务官 Ruth Porat 表示，该公司将致力于实现长期增长，并通过优化成本结构来为最有前景的领域创造投资空间。这意味着谷歌云业务可能会面临更多的内部竞争和审查，而不是无限制的支持和扶持。
+ Google AI TPU  
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux内核设计与实现—进程调度</title>
     <url>/post/linux/linux-kernel-design-and-implementation-process-schedule.html</url>
     <categories><category>Linux</category>
