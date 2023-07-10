@@ -6,7 +6,16 @@
     <description>Recent content in 5G on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Oct 2022 08:53:45 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/5g/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2023 11:01:55 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/5g/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三大网口类型：千兆网口、2.5G网口和5G网口</title>
+      <link>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</link>
+      <pubDate>Mon, 10 Jul 2023 11:01:55 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</guid>
+      <description>&lt;p&gt;当涉及到网络连接速度时，选择正确的网口类型非常重要。在现代网络中，千兆网口、2.5G网口和5G网口是常见的选项。本文将详细介绍这些网口类型以及如何选择适合你的需求的网口。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>风河携手TCS建构5G/Open RAN分布式移动网络基础设施生态系统</title>
       <link>https://www.kad8.com/post/news/windriver-and-TCS-build-5G-Open-Ran-ecos.html</link>

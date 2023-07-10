@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1G on 北南南北</title>
+    <link>https://www.kad8.com/tags/1g/</link>
+    <description>Recent content in 1G on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 10 Jul 2023 11:01:55 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/1g/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三大网口类型：千兆网口、2.5G网口和5G网口</title>
+      <link>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</link>
+      <pubDate>Mon, 10 Jul 2023 11:01:55 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</guid>
+      <description>&lt;p&gt;当涉及到网络连接速度时，选择正确的网口类型非常重要。在现代网络中，千兆网口、2.5G网口和5G网口是常见的选项。本文将详细介绍这些网口类型以及如何选择适合你的需求的网口。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
