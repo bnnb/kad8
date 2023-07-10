@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="VXLAN：数据中心网络的未来" />
+<meta itemprop="description" content="VXLAN：数据中心网络的未来" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="VXLAN" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VXLAN：数据中心网络的未来" />
+<meta property="og:description" content="VXLAN：数据中心网络的未来" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/vxlan-the-future-of-data-center.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-06-23 11:46:30 -0400 EDT" />
+<meta property="article:modified_time" content="2023-06-23 11:46:30 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"vxlan-the-future-of-data-center.html","permalink":"https://www.kad8.com/post/datacenter/vxlan-the-future-of-data-center.html","title":"VXLAN：数据中心网络的未来"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>VXLAN：数据中心网络的未来 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">52</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#vxlan概述">VXLAN概述</a></li>
+    <li><a href="#vxlan工作原理">VXLAN工作原理</a></li>
+    <li><a href="#vxlan的优势">VXLAN的优势</a></li>
+    <li><a href="#vxlan在数据中心网络中的应用">VXLAN在数据中心网络中的应用</a></li>
+    <li><a href="#结论">结论</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">84</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="12488"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="94"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-06-23T11:46:30-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/vxlan-the-future-of-data-center.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="VXLAN：数据中心网络的未来">
+      <meta itemprop="description" content="VXLAN：数据中心网络的未来">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">VXLAN：数据中心网络的未来 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-06-23 11:46:30 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-06-23 11:46:30 -0400 EDT">2023-06-23</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>31</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/vxlan-the-future-of-data-center.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>随着云计算和虚拟化技术的快速发展，数据中心网络正面临着越来越大的挑战。</p>
+<p>传统的网络架构在适应大规模数据中心的需求方面存在一些限制，如扩展性、隔离性和灵活性等方面。为了克服这些限制，并为数据中心网络提供更好的性能和可扩展性，VXLAN（Virtual Extensible LAN）作为一种新兴的网络虚拟化技术应运而生。本文将详细介绍VXLAN的工作原理、优势以及在数据中心网络中的应用，探讨VXLAN作为数据中心网络的未来发展趋势。</p>
+<p><img src="https://www.kad8.com/imgs/post/vxlan-datacenter-1.png" alt="VXLAN 数据中心的未来"></p>
+<h2 id="vxlan概述">VXLAN概述</h2>
+<p>VXLAN是一种网络虚拟化技术，旨在解决传统以太网的限制，并提供更好的可扩展性和隔离性。VXLAN通过在现有的IP网络上创建一个虚拟的二层网络，将传统的以太网帧封装在UDP报文中进行传输。这种封装使得VXLAN可以在现有的网络基础设施上运行，而无需对网络进行大规模改造。</p>
+<p>VXLAN使用一个24位的VXLAN标识符（VNI）来标识虚拟网络，允许同时存在多个独立的虚拟网络。VXLAN报文的目的地MAC地址被替换为VXLAN网络中的虚拟机或物理主机的MAC地址，从而实现虚拟机之间的通信。VXLAN还支持多路径传输（MP-BGP EVPN）以及网络中的多租户隔离。</p>
+<h2 id="vxlan工作原理">VXLAN工作原理</h2>
+<p>VXLAN的工作原理可以简单地分为封装和解封装两个过程。</p>
+<ol>
+<li>
+<p>封装：当虚拟机（VM）发送一个以太网帧时，VXLAN模块将这个以太网帧封装在一个UDP报文中。报文的源IP地址是VM所在主机的IP地址，目的IP地址是VXLAN隧道的远程端点的IP地址。VXLAN头中的VNI字段标识了目标虚拟网络。随后，UDP报文被发送到底层网络中，到达目标主机。</p>
+</li>
+<li>
+<p>解封装：当接收到一个VXLAN报文时，VXLAN模块会解析UDP报文头，提取出封装的以太网帧。通过查找VNI字段，VXLAN模块可以确定目标虚拟网络，并将以太网帧发送到相应的虚拟机或物理主机。</p>
+</li>
+</ol>
+<p>这种封装和解封装的过程使得VXLAN可以在底层网络上透明地传输以太网帧，同时提供了逻辑上隔离的虚拟网络。</p>
+<p><img src="https://www.kad8.com/imgs/post/vxlan-datacenter-2.png" alt="VXLAN 数据中心的未来"></p>
+<h2 id="vxlan的优势">VXLAN的优势</h2>
+<p>VXLAN作为一种新兴的网络虚拟化技术，在数据中心网络中具有以下优势：</p>
+<ol>
+<li>
+<p>可扩展性：VXLAN使用24位的VNI标识符，可以支持高达16,777,216个虚拟网络，每个虚拟网络都可以拥有独立的二层命名空间。这种可扩展性使得VXLAN能够满足大规模数据中心的需求，并支持多租户隔离。</p>
+</li>
+<li>
+<p>跨子网通信：传统以太网在跨越不同子网时需要依赖于三层路由器进行转发。而VXLAN通过使用底层IP网络作为传输介质，可以实现虚拟网络的跨子网通信，使得虚拟机可以自由迁移而无需改变IP地址。</p>
+</li>
+<li>
+<p>灵活性：VXLAN可以在现有的网络基础设施上运行，无需进行大规模的网络改造。它可以与现有的网络设备和协议兼容，如交换机、路由器和BGP等。这种灵活性使得组建和管理虚拟网络变得更加简单和高效。</p>
+</li>
+<li>
+<p>多路径传输：VXLAN结合了多路径传输（MP-BGP EVPN）的特性，可以在数据中心网络中实现负载均衡和冗余。它可以根据网络负载和路径可用性来选择最佳的路径进行数据传输，提供更好的性能和可靠性。</p>
+</li>
+<li>
+<p>安全性：VXLAN支持隧道加密，可以在底层IP网络上保护数据的机密性和完整性。通过使用安全协议（如IPsec）或虚拟专用网络（VPN），VXLAN可以提供更高级别的数据传输安全。</p>
+</li>
+</ol>
+<h2 id="vxlan在数据中心网络中的应用">VXLAN在数据中心网络中的应用</h2>
+<p>VXLAN在数据中心网络中有广泛的应用场景，以下是其中一些典型的应用：</p>
+<ol>
+<li>
+<p>虚拟机迁移：VXLAN使得虚拟机可以自由地在不同的物理主机之间迁移，而无需改变IP地址。这种灵活性和可扩展性对于实现数据中心的负载均衡、资源调度和容错性非常重要。</p>
+</li>
+<li>
+<p>多租户隔离：通过使用不同的VNI，VXLAN可以将数据中心划分为多个独立的虚拟网络，实现不同租户之间的隔离。这种隔离性保证了租户之间的数据安全和隐私，并且可以为每个租户提供独立的网络策略和服务质量保证。</p>
+</li>
+<li>
+<p>跨数据中心连接：VXLAN可以扩展到跨多个数据中心的网络环境中，使得不同数据中心之间可以建立虚拟网络连接。这种功能可以支持数据中心间的资源共享、业务扩展和灾备备份等需求。</p>
+</li>
+<li>
+<p>云服务提供商：VXLAN可以帮助云服务提供商构建高度可扩展的虚拟化网络基础设施。通过使用VXLAN，云服务提供商可以提供灵活的虚拟网络服务，并支持多租户环境下的资源隔离和安全性。</p>
+</li>
+<li>
+<p>虚拟网络功能（VNF）：VXLAN与网络功能虚拟化（NFV）相结合，可以实现虚拟网络功能的部署和管理。VXLAN可以作为底层网络虚拟化技术，为VNF提供灵活的网络连接和隔离，从而实现网络功能的快速部署和弹性扩展。</p>
+</li>
+</ol>
+<h2 id="结论">结论</h2>
+<p>VXLAN作为一种新兴的数据中心网络虚拟化技术，具有强大的可扩展性、灵活性和隔离性，为数据中心网络的未来发展提供了新的方向和解决方案。通过使用VXLAN，数据中心可以实现虚拟机迁移、多租户隔离、跨数据中心连接以及云服务提供商的支持。VXLAN的工作原理和优势使其成为构建高性能、可靠和安全的数据中心网络的关键技术之一。</p>
+<p>随着云计算和大数据应用的不断发展，数据中心网络将继续面临更多的挑战和需求。VXLAN作为数据中心网络的未来发展趋势之一，将继续演进和完善，以满足不断变化的业务需求，并推动数据中心网络的创新和发展。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/vxlan">
+    VXLAN
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      VXLAN：数据中心网络的未来
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/vxlan-the-future-of-data-center.html" title="VXLAN：数据中心网络的未来">https://www.kad8.com/post/datacenter/vxlan-the-future-of-data-center.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/news/google-cloud-business-is-finally-profitable-for-the-first-time.html" rel="prev" title="苦战15年，谷歌云业务终于实现首次盈利">
+      苦战15年，谷歌云业务终于实现首次盈利
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
