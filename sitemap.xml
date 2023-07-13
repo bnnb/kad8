@@ -7,6 +7,51 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/categories/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/hardware/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/rs422/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/mcu/design-points-of-rs422-485-circuit.html</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/rs485/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/uart/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/tags/1g/</loc>
     <lastmod>2023-07-10T11:01:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -22,32 +67,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-07-10T11:01:55-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/categories/datacenter/</loc>
     <lastmod>2023-07-10T11:01:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-07-10T11:01:55-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-07-10T11:01:55-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</loc>
-    <lastmod>2023-07-10T11:01:55-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-07-10T11:01:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -117,11 +142,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/hardware/</loc>
-    <lastmod>2023-04-29T12:56:13-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/news/5-best-use-cases-for-edge-computing.html</loc>
     <lastmod>2023-04-29T00:01:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,11 +188,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/spi/</loc>
-    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/uart/</loc>
     <lastmod>2023-04-02T00:00:24-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
