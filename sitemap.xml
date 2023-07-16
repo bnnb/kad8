@@ -7,17 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <loc>https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/hardware/</loc>
-    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
+    <loc>https://www.kad8.com/categories/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/hdd/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/nand/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/ssd/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/storage/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/hardware/</loc>
     <lastmod>2023-07-13T11:28:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,17 +72,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/uart/</loc>
-    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-07-13T11:28:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

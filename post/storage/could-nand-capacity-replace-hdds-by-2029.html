@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="2029年前，NAND是否能够替代HDD" />
+<meta itemprop="description" content="2029年前，NAND是否能够替代HDD" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="SSD,NAND,HDD" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="2029年前，NAND是否能够替代HDD" />
+<meta property="og:description" content="2029年前，NAND是否能够替代HDD" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-07-15 23:12:03 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-15 23:12:03 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"could-nand-capacity-replace-hdds-by-2029.html","permalink":"https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html","title":"2029年前，NAND是否能够替代HDD"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>2029年前，NAND是否能够替代HDD - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">55</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hdd和ssd价格趋势">HDD和SSD价格趋势</a></li>
+    <li><a href="#nand制造能力">NAND制造能力</a></li>
+    <li><a href="#nand制造建模">NAND制造建模</a></li>
+    <li><a href="#模型假设">模型假设</a></li>
+    <li><a href="#供应商观点">供应商观点</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">55</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="12683"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="97"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-07-15T23:12:03-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2029年前，NAND是否能够替代HDD">
+      <meta itemprop="description" content="2029年前，NAND是否能够替代HDD">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">2029年前，NAND是否能够替代HDD </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-07-15 23:12:03 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-15 23:12:03 -0400 EDT">2023-07-15</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/storage" itemprop="url" rel="index">
+      <span itemprop="name">Storage</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>61</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/storage/could-nand-capacity-replace-hdds-by-2029.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>分析：Pure Storage表示，2028年后将不再出售新的硬盘驱动器（HDD）。Pure的这一大胆声明意味着，2029年本应销售的所有新HDD容量（不包括更换故障驱动器的容量）将被SSD容量取而代之。这将是大量额外的SSD出货量，并提出了一个问题：全球NAND制造能力是否能够生产足够的闪存？</p>
+<p>我们试图从NAND制造的角度来判断Pure Storage的预测是否可能，暂时忽略了HDD和SSD的总拥有成本（TCO）的影响。这需要有所解释。</p>
+<h2 id="hdd和ssd价格趋势">HDD和SSD价格趋势</h2>
+<p>硬盘驱动器的出货量在单位数量方面已经连续下降了五年以上，因为SSD在越来越多的驱动器类别中提供了一个引人注目的替代方案。SSD比HDD更快地响应I/O请求，因为它们不必等待读写头在磁盘表面上移动到正确的磁道，然后等待磁盘的旋转将正确的数据块带到头部。</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/07/Statista-HDD-ships-1976-2021-chart-2.png" alt="HDD SSD Price Trend"></p>
+<p>Statista图表显示，从2010年开始，每年的磁盘驱动器出货量都在下降
+SSD成本一直在稳步下降，但随着晶圆中闪存容量的增加，下降速度在减小。这是由以下三件事引起的：NAND晶圆组件缩小，3DNAND技术中添加了更多层单元，以及使用TLC（3位/单元）现在已成为主流的多位单元。数据还原技术（压缩和重复数据删除）意味着SSD可以比其原始物理容量存储更多的数据，将其每TB的成本与不使用数据还原的HDD的成本更接近。</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/07/Client-SSDs-vs-HDDs-chart-1.png" alt="HDD SSD Price Trend"></p>
+<p>Wells Fargo图表比较了2012年至2020年的PC HDD和SSD价格。这显示了SSD价格（每TB）比HDD价格下降得更快
+整体而言，由于这个原因，硬盘驱动器（HDD）市场已经出现下滑。笔记本电脑几乎完全转向了SSD，台式电脑也在紧随其后，而快速（10000转每分钟的2.5英寸）的关键任务HDD也正在被SSD所取代。HDD业务市场正逐渐围绕着近线（7400转每分钟的3.5英寸）驱动器聚集。然而，QLC（每个单元4位）SSD技术进一步降低了每TB的成本，而持续的层次增加将维持这一下降趋势。</p>
+<p>HDD制造商表示，他们的技术进步，如HAMR，将继续将他们的价格降低，并因此保持他们对SSD的成本优势。闪存驱动器的价格不会低于HDD价格，因为HDD的成本下降将保持磁介质的经济性。</p>
+<p>Wells Fargo高级分析师Aaron Rakers在2019年预测，企业存储买家将在价格降至硬盘驱动器的5倍时开始更喜欢SSD。他注意到2017年企业SSD比大容量近线磁盘驱动器高出18倍。这在2019年降至9倍。2020年，Rakers表示，企业SSD的一般成本为185美元/TB，而近线HDD的成本约为19美元/TB，这意味着企业SSD的价格溢价为9.7倍。这在几个季度内保持不变，如下图所示：</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/07/enterprise-ssd.png" alt="Enterprise SSD"></p>
+<p>HDD的客户通常希望更快的数据访问速度，如果SSD的成本与HDD相等，或者至少不比HDD高太多，并且SSD的使用寿命与HDD一样长，他们会使用SSD。正如分析师指出的，发生这种情况的障碍是，世界上没有足够的NAND制造能力来取代所有客户购买的HDD容量。</p>
+<p>Pure已成为第一个明确表示闪存将取代硬盘驱动器的闪存存储供应商。它声称其QLC闪存系统可以取代近线存储驱动器阵列，因为其5年TCO低于近线驱动器阵列。闪存每TB成本的持续下降，来自更高密度驱动器，将加强这一优势。</p>
+<p>总拥有成本（TCO）的计算从采购价格开始，然后考虑驱动器的使用寿命、功耗和冷却成本，以及寿命周期结束时的处置成本。由于这些成本是未来的估计值，而且磁盘驱动器制造商可以根据不同的假设提供不同的数据。</p>
+<p>即使不考虑成本和价格问题，问题仍然是是否有足够的NAND制造能力来替代每年销售的数百万个硬盘驱动器。</p>
+<h2 id="nand制造能力">NAND制造能力</h2>
+<p>Micron高级总监Colm Lysaght在2019年表示：“很明显，SSD的每GB价格会随着时间的推移接近HDD的每GB价格。但是，从近线HDD到SSD进行“批量切换”所需的EB数量对于NAND闪存行业来说太大了。生成所需EB所需的资本投资……是过于昂贵的。”</p>
+<p>“SSD可能会蚕食（甚至可能吞噬）近线HDD市场，但两者将在未来许多年内共存。”</p>
+<p>像Wikibon的David Floyer等分析师表示，NAND制造能力不会成为限制因素。他预测，2026年，NAND生产效率将导致SSD在每TB美元的基础上比HDD更便宜。这是一个大胆的说法。</p>
+<p>现在是2023年，Pure基本上表示它认为闪存制造能力不会是一个限制因素——“生成所需EB所需的资本投资”不再是“过于昂贵”。这是真的吗？NAND制造能力能否应对硬盘驱动器容量替代的需求？</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/07/NAND-foundry-output-by-2029-wih-1.4-layer-increase-factor.png" alt="NAND 制造能力"></p>
+<h2 id="nand制造建模">NAND制造建模</h2>
+<p>要计算NAND代工厂行业是否能够生产满足SSD数据存储需求增长和2029年取代新HDD所需的容量，我们必须估计存储数据增长率、当前出货的HDD和SSD容量以及NAND代工厂容量。代工厂的产能需要增加多少才能满足需求，增加的NAND层数和每单元位数会如何影响制造产量？</p>
+<p>我们制定了一个初步的简化电子表格模型，并与一些分析师和供应商分享了该模型，他们的意见改进并完善了该模型。简而言之，它表明2029年将有5.7%的NAND代工厂产能缺口，即405EB。</p>
+<h2 id="模型假设">模型假设</h2>
+<p>我们从2022年出货的约1320EB的HDD容量和277EB的SSD容量开始，这是通过检查供应商和研究机构的数字得出的。如果2022年出货的1320EB的HDD容量在2029年降至零，而数据增长继续，那么SSD行业将不得不增长以满足其自身的市场需求，并提供缺失的HDD贡献。</p>
+<p>它将受到存储数据增长的间接影响。这将涉及相当简单的假设，但这在这里是可以接受的，因为我们只试图看看制造能力的基础是否已经到位。Objective Analysis的Jim Handy表示：“IDC的数据领域经常被引用为衡量数据生产增长速度的指标。他们说，2026年将生成221178EB的数据，并可以趋势到2029年的394127EB。”这提供了从2026年到2029年的21.2%的数据增长复合年增长率。</p>
+<p>我们将其应用于2022年出货的HDD容量，得出2029年需要5071EB。接下来，我们问2022年有多少NAND制造能力存在？Handy告诉我们：“2021年的EB出货量为538EB，因此他们至少有能力在2022年出货这么多。”这就是我们的起点。</p>
+<p>我们使用21.2%的复合年增长率将其趋势到2029年，达到2029年的2067EB。然后，我们加上HDD替换数量，5071EB，得到2029年需要的7137.8EB的NAND制造能力。</p>
+<p>额外的3D层叠和QLC将带来多少产能？Handy告诉我们：“需要新的产能，它将以每年约30%的速度上线，以支持每年EB增长。闪存层大约每两年翻一番。这给了该行业约40%的增长率，因此他们不必以那么高的速度增加层数。我不知道层数翻倍是否会需要双倍的晶圆厂工具和地板空间来处理固定数量的晶圆。”</p>
+<p>这是一个很大的变数</p>
+<p>我们将每年增加的40%的层叠率总结为2029年额外的3375.9EB的制造能力。如果从TLC（3位/单元）切换到QLC（4位/单元）NAND，则会增加33.3%。这将我们带到5671.2EBx1.33=7542.8EB，比需要的7137.8EB少405EB。这意味着需要额外的NAND制造能力，这意味着必须建造新的NAND代工厂。</p>
+<p>层叠率增长因子是一个关键数字。如果将其降低到每年30%，那么我们最终将在2029年面临2647.9EB的NAND制造缺口。</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/07/NAND-foundry-output-by-2029-with-1-dot-3-layer-increase-factor.png" alt="模型假设"></p>
+<h2 id="供应商观点">供应商观点</h2>
+<p>Dell发言人表示：“我们的看法是，我们的产品组合使Dell能够灵活地为客户提供非常广泛的驱动器选择。随着对高密度和低成本HDD的持续创新，我们预计现在还不能说客户需求不会在2028年之后存在。”</p>
+<p>Seagate首席技术官JohnMorris告诉我们：“简单地说，我们认为用NAND取代HDD在任何情况下都是不可能的。这不仅因为需要大量资本支出来指数级增加NAND供应，而且因为NAND无法达到驱动摆脱HDD所需的每位成本。”</p>
+<p>“更重要的是，SSD和HDD一直在相互协作，因为它们在企业世界中各自满足不同的工作负载需求。在大多数存储市场中，它们被部署在一起，以创建最具成本效益的解决方案。这种架构将在可预见的未来持续存在。我们对HDD价值的信念体现在我们对未来HDD创新的持续投资中。”</p>
+<p>他还建议：“与其看总的HDD和SSDEB，不如只关注近线HDD和企业SSD EB（以及相关的复合年增长率）。根据2022年的实际数据，近线HDD EB约为企业SSD的7倍。”</p>
+<p>Pure Storage的回应
+Pure Storage发言人表示：“在看NAND市场供应时，我们鼓励您超越当前的SSD消费，而是看整个市场……TrendFocus的研究……将整个NAND市场认定为约2.5倍于今天使用的SSD。</p>
+<p>“虽然SSD NAND不同于用于手机/平板电脑/USB闪存驱动器/汽车和家电的NAND，但这表明NAND制造和晶圆厂的可用池要大得多，可以从中驱动增长和平衡需求。最终，制造商将扩大生产并改装他们的晶圆厂，以满足最有利可图的市场，我们确实预计从HDD到SSD的转换将是该需求的主要因素。</p>
+<p>“您的模型假设传统HDD将1:1转换为SSD。虽然这对于这种规模的模型是合适的，但我们确实相信，随着企业从HDD转向SSD，会出现额外的容量整合机会，原因是增加了数据减少、提高了性能（减少了复制文件的需求）、降低了故障率和改进了纠删码效率。”</p>
+<p>总而言之，我们（非常简化的）建模演练表明，只要层数以每年40%的速度增加，SSD NAND制造产出缺口将低于6%。这还没有考虑到Pure的观点，即总的NAND制造能力“约为目前用于SSD的约2.5倍”。</p>
+<p>5.7%的差异也在误差范围之内。基本上，我们认为在建造闪存以取代2029年的新HDD方面，似乎不存在NAND代工容量问题。</p>
+<p>我们将会密切关注，看看未来会带来什么。</p>
+<p>原文地址:
+<a href="https://www.gaitpu.com/data-center/storage/could-nand-capacity-replace-hdds-by-2029" title="2029年前，NAND是否能够替代HDD" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    2029年前，NAND是否能够替代HDD
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/ssd">
+    SSD
+  </a>
+    <a href="/tags/nand">
+    NAND
+  </a>
+    <a href="/tags/hdd">
+    HDD
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      2029年前，NAND是否能够替代HDD
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html" title="2029年前，NAND是否能够替代HDD">https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/hardware/design-points-of-rs422-485-circuit.html" rel="prev" title="RS422/485接口电路设计要点">
+      RS422/485接口电路设计要点
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
