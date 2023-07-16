@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="AMD发布了最新款AI芯片Instinct MI300" />
+<meta itemprop="description" content="AMD发布了最新款AI GPU芯片Instinct MI300" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="AMD,MI300,GPU,CPU" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="AMD发布了最新款AI芯片Instinct MI300" />
+<meta property="og:description" content="AMD发布了最新款AI GPU芯片Instinct MI300" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-07-16 02:28:09 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-16 02:28:09 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"instinct-MI300-announced-by-amd.html","permalink":"https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html","title":"AMD发布了最新款AI芯片Instinct MI300"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>AMD发布了最新款AI芯片Instinct MI300 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">56</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#离不开cpu但离得开英特尔">离不开CPU，但离得开英特尔</a></li>
+    <li><a href="#难以逾越的cuda">难以逾越的CUDA</a></li>
+    <li><a href="#英伟达的反攻">英伟达的反攻</a></li>
+    <li><a href="#apu">APU</a></li>
+    <li><a href="#尾声">尾声</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">94</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="12769"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="98"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-07-16T02:28:09-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="AMD发布了最新款AI芯片Instinct MI300">
+      <meta itemprop="description" content="AMD发布了最新款AI GPU芯片Instinct MI300">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">AMD发布了最新款AI芯片Instinct MI300 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-07-16 02:28:09 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-16 02:28:09 -0400 EDT">2023-07-16</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>86</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/instinct-MI300-announced-by-amd.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>今年6月，AMD发布了一款专门针对AI需求的最新款芯片：Instinct MI300。</p>
+<p>MI300将CPU、GPU和内存封装在了一起，晶体管数量高达1460亿个，接近英伟达H100的两倍。其搭载的HBM（高带宽内存）密度也达到了H100的2.4倍。也就是说，MI300在理论上可以运行比H100更大的AI模型。</p>
+<p>受益于AI训练的增长，GPU需求肉眼可见的从游戏市场向高性能计算领域倾斜，就连刚开启GPU产品线的英特尔，也迫不及待的PPT首发了面向高性能计算场景的Falcon Shores架构芯片。</p>
+<p>伴随英伟达一路冲向万亿美元市值，资本市场对GPU行业老二的期待值也达到了顶峰。今年以来，AMD股价累计上涨已经超过90%。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-falcon-shores.png" alt="Intel Falcon Shores">
+英特尔的Falcon Shores，预计2024年推出</p>
+<p>然而MI300发布会结束，AMD股价下跌3.6%，反倒是英伟达上涨3.9%。资本市场表达好恶，向来是这么冷酷无情。</p>
+<p>原因可能在于，AMD没有在发布会中透露这款芯片的客户，这也是市场对英伟达以外的AI芯片最大的担心。</p>
+<p>长期以来，AMD在GPU市场一直被英伟达按在地上反复摩擦，Instinct产品线其实已经迭代了好几年，但相比英伟达的连战连捷，AMD在高性能计算领域的存在感一直比较稀薄。</p>
+<p>AI训练打开的市场空间，一度被市场视为AMD与英伟达拉进距离的机会，但事情似乎没那么简单。</p>
+<h2 id="离不开cpu但离得开英特尔">离不开CPU，但离得开英特尔</h2>
+<p>虽说在AI训练上，更擅长大规模并行计算的GPU承担了大部分计算工作，而整个系统仍需要CPU进行调度和统筹。也就是说，尽管GPU的需求量大幅度增加，但CPU仍是必需品。</p>
+<p>作为一家同时拥有CPU和GPU设计能力的芯片公司，AMD被看好也不意外。更何况过去几年，AMD在CPU市场连战连捷。</p>
+<p>AMD现任CEO苏姿丰在2014年接手，时值推土机架构性能孱弱，让英特尔心安理得的挤牙膏。而在卖掉Imageon后，AMD和拒绝为苹果设计iPhone芯片的英特尔一起，完美错过了智能手机的浪潮，公司一片风雨飘摇。</p>
+<p>面临多条战线的失血，苏姿丰只能将有限的资源集中在核心的CPU业务上，从苹果请回了架构大师吉姆·凯勒，开始Zen架构处理器的研发。</p>
+<p>2017年，Zen架构处理器横空出世，把挤牙膏上瘾的英特尔打了个措手不及。2019年，Zen处理器更换为台积电7nm工艺，此时英特尔10nm工艺姗姗来迟。</p>
+<p>虽然英特尔还占据着大部分市场份额，但AMD的反攻速度实在太快，尤其是在服务器市场，几乎是从0杀到了接近20%的市占率。</p>
+<p>2023年Q1，AMD的x86处理器市场份额达到了34.6%这一历史峰值[2]，这也是AMD市值超过英特尔的重要背景。</p>
+<p><img src="https://www.kad8.com/imgs/post/AMD-hardware.png" alt="AMD Hardware"></p>
+<p>今年5月，全球超级计算机Top500强公布：前500强中，使用AMD CPU进行驱动的超算达到121台，使用英特尔CPU的超算则从2016年的454台下降至360台，虽然看着不少，但其中很多是英特尔10年前的家底——至强（Xeon）处理器[3]。</p>
+<p>但同一时期，AMD与英伟达差距也越来越大。</p>
+<h2 id="难以逾越的cuda">难以逾越的CUDA</h2>
+<p>英伟达不仅是一流的硬件公司，更是一流的软件公司。</p>
+<p>虽然在理论性能上，MI300的一些参数甚至领先于英伟达，但市场对英伟达对手们最大的担心往往在于，就算硬件性能可以跟英伟达比肩，但是软件解决方案仍难以与英伟达的CUDA对抗。</p>
+<p>2006年，英伟达推出了CUDA平台，让开发者能够给予GPU进行编程和开发，最终形成了一个庞大稳固的生态。在推出CUDA之前，全球能用GPU进行编程的不足100人，目前CUDA的使用者超过400万。</p>
+<p>每一个成功的硬件公司背后，往往都有一个更强大的软件团队，苹果和英伟达都是如此。即便是光刻机制造商ASML也不例外，他们的官方网站上有这样一段话：</p>
+<p>您可能将ASML视为一家硬件公司，但实际上我们拥有世界上最大、最具开创性的软件社区之一。如果没有我们开发的软件，我们的客户就不可能制造出10纳米或更小的尺寸的芯片。</p>
+<p>想要芯片真正在具体场景的满足各种需求，就需要开发者对硬件进行编程以实现各种功能。如果说硬件编程的过程相当于进行各种复杂计算，那么CUDA就是提供给使用者的一部计算器。</p>
+<p>无论对英伟达的刀法多么怀恨在心，都不能否认黄仁勋对通用计算和人工智能的超前押注。</p>
+<p>AMD显然深知软件和生态的重要性，但对标CUDA的ROCm在2016年推出时，就已经比英伟达晚了十年。</p>
+<p>直到2023年4月，ROCm都仅支持Linux平台；而CUDA自问世以来，就提供Windows和Linux两个版本，后期还为苹果用户增设Mac OS版本。</p>
+<p>相比英伟达不遗余力的推广和洗脑，AMD在生态建设上也显得投入不足，据说早年英伟达对项目的GPU试用申请几乎是有求必应，动不动就去高校实验室发显卡。深度学习大神杰夫·辛顿带着学生训练AlexNet模型，就用了三块GTX 580。</p>
+<p>另外，AMD的软件能力也令人不安——AMD在今年6月发布了一份EPYC 7002 “Rome”服务器芯片指南，承认由于时钟倒计时器存在 BUG，导致第二代EPYC芯片运行1044天后，会出现内核卡死。如果有服务器使用这款芯片，需要每隔2.93年重新启动一次。</p>
+<p>原因也不难理解，直到推出ROCm的2016年，AMD甚至还没摆脱亏损。在这期间，AMD只能把有限的资源都聚焦在CPU的研发上，无法为GPU部门投入太多资源，更不要说ROCm的软件团队了。</p>
+<p>而当AMD在CPU市场收复失地，希望依靠AI卷土重来时，英伟达已经慢慢补齐了短板。</p>
+<h2 id="英伟达的反攻">英伟达的反攻</h2>
+<p>2020年9月，英伟达宣布准备以400亿美元的价格准备收购移动CPU架构商Arm，其背后意图人尽皆知：一方面是整合移动端资源，另一方面则是入局CPU。</p>
+<p>正如前文所说，尽管AI时代需要更多的GPU，但CPU仍不可或缺。当CPU与GPU共同在服务器中的工作时，实际场景更像是一个大学生（CPU）带领一群小学生（GPU）组队完成各种任务。这个时候，配合就显得尤为重要。</p>
+<p>因此，英伟达之所以自己做CPU，并非完全因为英特尔或AMD，而是从自身产品需求出发，使CPU和GPU紧密耦合，以发挥最大性能。比如CPU和GPU中，需要用到尽可能相似技术的一致内存，以保证数据之间的无缝共享[8]。</p>
+<p>虽然收购基本没有成功的可能性，但英伟达依然按部就班的招兵买马。2021年4月，黄仁勋在自家厨房里宣布，英伟达即将推出首款5nm制程工艺CPU Grace，基于Arm架构，面向超大型 AI 模型的和高性能计算。</p>
+<p>紧接着就是具体工作的有序展开：英伟达首先选定了根据地以色列，那里有全球第三多的纳斯达克上市公司（仅次于美国和中国）；然后对外招聘600名硬件工程师、软件工程师和芯片设计师，搭建CPU研发团队[7]。</p>
+<p>最后，英伟达挖来了英特尔在以色列的CPU架构专家Rafi Marom，后者曾参与10nm制程的Tiger Lake和Alder lake芯片开发工作。</p>
+<p>在2022年3月的GTC大会上，英伟达对外宣布Grace CPU性能：拥有144个Arm内核和1TB/s的内存带宽，性能较当前最先进的DGX A100搭载的双CPU相比高1.5倍以上。</p>
+<p>不过，原本预计在今年上半年可以开始供货的Grace芯片，目前已推迟至下半年。</p>
+<h2 id="apu">APU</h2>
+<p>Instinct MI300本质上是一颗“APU”，这是AMD早在2009年提出的一个概念——将CPU和GPU集成在一起，使得二者高速互联，实现1+1&gt;2的效果。</p>
+<p>在2006年收购了GPU公司ATI后，AMD成为了当时唯一同时拥有CPU和GPU设计能力的芯片公司，而且在两个市场都是行业老二——但坏消息是，市场主流玩家也就两个。</p>
+<p>在这种局面下，AMD希望借助APU打开市场局面。2011年，第一代APU推出后，AMD持续宣传APU是“x86架构三十年来的最大革命”，并向投资者强调，这款产品存在着“强劲且被压抑”的需求。</p>
+<p>市场最初也对APU概念充满期待，结果2012年Q3财报出炉，AMD收入下滑25%，顺便减记了1亿美元的库存——APU需求量并不高，芯片根本卖不出去[1]。紧接着，公司股价跌到1.86美元的历史性低点，苏姿丰临危受命，开始掌舵风雨飘摇中的AMD。</p>
+<p>APU的优势在于，由于CPU和GPU集成在了一起，数据传输效率得到了大幅度提高。苹果的M1 Ultra也采用了类似的“把几个小芯片拼成一块大芯片”的思路，换来了更强的数据吞吐能力。</p>
+<p>但在2009年，APU的理念显得过于超前。</p>
+<p>一方面，APU涉及芯片的先进封装技术，在当时既不成熟，成本也难以控制。另一方面，APU在需求高度多元化的消费市场很难行得通。</p>
+<p>比如10种型号的CPU和GPU，理论上有100种组合方案，这就导致做10种方案无法满足市场需求，做100种方案难以收回生产成本。</p>
+<p>因此在很长一段时间里，APU只能在PS4游戏机这类高度标准化的产品上才能找到市场。但深度学习的大爆发改变了这一点。</p>
+<p>相比游戏和渲染，AI训练对算力和数据吞吐效率的需求成百上千倍的增加，目前针对AI市场推出的芯片产品，除了算力的堆砌，往往都采用3D堆叠和先进封装等方式，增加数据传输的效率，这与APU的优势不谋而合。</p>
+<p>英特尔尚未正式发布的Falcon Shores，同样采用了将CPU、GPU、内存封装在一起的思路，只不过英特尔将其称为“XPU”。</p>
+<p>但目前来看，最接近这个目标的反而是英伟达的Grace Hopper芯片。</p>
+<p><img src="https://www.kad8.com/imgs/post/NVIDIA-Grace-Hopper.png" alt="Nvidia Grace Hopper">
+英伟达的Grace Hopper将CPU和GPU集成在了一起</p>
+<h2 id="尾声">尾声</h2>
+<p>在2009年APU的概念被提出时，AMD正经历公司历史上的最低谷，APU多少有些毕功一役的憋大招成分。</p>
+<p>但也正是因为处于低谷，导致AMD无法拿出足够的资金与技术支持，让APU的革命性理念真正落地，最终只变成了简单的CPU+GPU的组合。</p>
+<p>从商业角度看，最适合在2009年搞点革命性产品的反而是富可敌国的英特尔，但英特尔当时在干什么呢——心安理得的挤牙膏，同时拒绝为iPhone设计芯片。</p>
+<p>这似乎是高科技公司常常会出现的状况——在鼎盛年代忽视新的技术浪潮，在低谷期如梦方醒仓促憋大招。</p>
+<p>事实上，英特尔还尝试过“联A抗N”——2017年，英特尔宣布将在自家CPU上集成AMD的GPU，合作推出新的芯片。</p>
+<p>结果没过多久，英特尔就挖走了AMD的核心技术负责人之一：图形主管Raja Koduri，为英特尔开发高端独立GPU。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/amd">
+    AMD
+  </a>
+    <a href="/tags/mi300">
+    MI300
+  </a>
+    <a href="/tags/gpu">
+    GPU
+  </a>
+    <a href="/tags/cpu">
+    CPU
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      AMD发布了最新款AI芯片Instinct MI300
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html" title="AMD发布了最新款AI芯片Instinct MI300">https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/storage/could-nand-capacity-replace-hdds-by-2029.html" rel="prev" title="2029年前，NAND是否能够替代HDD">
+      2029年前，NAND是否能够替代HDD
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

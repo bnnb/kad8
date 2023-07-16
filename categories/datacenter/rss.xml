@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 Jul 2023 11:01:55 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 02:28:09 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMD发布了最新款AI芯片Instinct MI300</title>
+      <link>https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html</link>
+      <pubDate>Sun, 16 Jul 2023 02:28:09 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html</guid>
+      <description>&lt;p&gt;今年6月，AMD发布了一款专门针对AI需求的最新款芯片：Instinct MI300。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>三大网口类型：千兆网口、2.5G网口和5G网口</title>
       <link>https://www.kad8.com/post/datacenter/three-typical-bandwidth-network-adapters.html</link>

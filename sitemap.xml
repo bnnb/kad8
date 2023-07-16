@@ -7,12 +7,57 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html</loc>
-    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
+    <loc>https://www.kad8.com/tags/amd/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/instinct-MI300-announced-by-amd.html</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/cpu/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/datacenter/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/gpu/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/mi300/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-07-16T02:28:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/storage/could-nand-capacity-replace-hdds-by-2029.html</loc>
     <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -27,27 +72,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/ssd/</loc>
     <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/storage/</loc>
-    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -88,11 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/5g/</loc>
-    <lastmod>2023-07-10T11:01:55-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/datacenter/</loc>
     <lastmod>2023-07-10T11:01:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -468,11 +493,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/altera/</loc>
-    <lastmod>2022-10-29T06:53:45-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/cpu/</loc>
     <lastmod>2022-10-29T06:53:45-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
