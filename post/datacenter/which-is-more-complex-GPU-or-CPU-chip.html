@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="文章目录导航" />
-<meta itemprop="description" content="描述下 NexT 主题下的文章目录导航效果。" />
+<meta itemprop="name" content="GPU和CPU芯片谁更复杂" />
+<meta itemprop="description" content="GPU和CPU芯片谁更复杂" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
-<meta itemprop="keywords" content="目录,导航,博客" />
+<meta itemprop="keywords" content="CPU,GPU" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="文章目录导航" />
-<meta property="og:description" content="描述下 NexT 主题下的文章目录导航效果。" />
+<meta property="og:title" content="GPU和CPU芯片谁更复杂" />
+<meta property="og:description" content="GPU和CPU芯片谁更复杂" />
 <meta property="og:image" content="/imgs/hugo_next_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/post/table-of-content.html"/>
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2021-06-08 21:12:52 &#43;0800 &#43;0800" />
-<meta property="article:modified_time" content="2021-06-08 21:12:52 &#43;0800 &#43;0800" />
+<meta property="article:published_time" content="2023-07-18 11:04:49 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-18 11:04:49 -0400 EDT" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"table-of-content.html","permalink":"https://www.kad8.com/post/table-of-content.html","title":"文章目录导航"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"which-is-more-complex-GPU-or-CPU-chip.html","permalink":"https://www.kad8.com/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html","title":"GPU和CPU芯片谁更复杂"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>文章目录导航 - 北南南北</title>
+  <title>GPU和CPU芯片谁更复杂 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -173,37 +173,10 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#早年的故事">早年的故事</a>
-      <ul>
-        <li><a href="#起始">起始</a>
-          <ul>
-            <li><a href="#童年浪花">童年浪花</a></li>
-          </ul>
-        </li>
-        <li><a href="#少年故事">少年故事</a></li>
-      </ul>
-    </li>
-    <li><a href="#激情的青春十年">激情的青春十年</a>
-      <ul>
-        <li><a href="#当上了游击队员">当上了游击队员</a>
-          <ul>
-            <li><a href="#战火纷飞">战火纷飞</a></li>
-          </ul>
-        </li>
-        <li><a href="#迎来解放">迎来解放</a></li>
-      </ul>
-    </li>
-    <li><a href="#生活的断层">生活的断层</a>
-      <ul>
-        <li><a href="#跌入生活底层">跌入生活底层</a></li>
-      </ul>
-    </li>
-    <li><a href="#尾声">尾声</a>
-      <ul>
-        <li><a href="#岁月像一条河">岁月像一条河</a></li>
-      </ul>
-    </li>
-    <li><a href="#作者致谢">作者致谢</a></li>
+    <li><a href="#应用场景">应用场景</a></li>
+    <li><a href="#晶体管数量">晶体管数量</a></li>
+    <li><a href="#架构设计">架构设计</a></li>
+    <li><a href="#cpu架构">CPU架构</a></li>
   </ul>
 </nav></div>
       </div>
@@ -337,7 +310,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/table-of-content.html">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -347,11 +320,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="文章目录导航">
-      <meta itemprop="description" content="描述下 NexT 主题下的文章目录导航效果。">
+      <meta itemprop="name" content="GPU和CPU芯片谁更复杂">
+      <meta itemprop="description" content="GPU和CPU芯片谁更复杂">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">文章目录导航 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">GPU和CPU芯片谁更复杂 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -361,7 +334,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2021-06-08 21:12:52 &#43;0800 &#43;0800" itemprop="dateCreated datePublished" datetime="2021-06-08 21:12:52 &#43;0800 &#43;0800">2021-06-08</time>
+  <time title="发表于：2023-07-18 11:04:49 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-18 11:04:49 -0400 EDT">2023-07-18</time>
 </span>
     
     
@@ -371,8 +344,8 @@
   </span>
   <span class="post-meta-item-text">分类于：</span>
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/%E7%A4%BA%E4%BE%8B" itemprop="url" rel="index">
-      <span itemprop="name">示例</span>
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
     </a>
   </span>
 </span>
@@ -383,7 +356,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>24</span>
+  <span class="post-meta-item-text">字数：</span><span>117</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -402,7 +375,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/table-of-content.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -413,31 +386,45 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。</p>
-<p><img src="https://wfqqreader-1252317822.image.myqcloud.com/cover/568/814568/t6_814568.jpg" alt="禇老"></p>
-<h2 id="早年的故事">早年的故事</h2>
-<h3 id="起始">起始</h3>
-<p>2014年的春天，在云南省华宁县和宜良县的交界处，一座名叫矣则的小山村里，一处已经有上百年历史的古旧四合院宅子被拆掉。村委会正带领村民们进行“美丽乡村”的建设，一年以后，旧有村居将再也看不到，代之而起的是钢筋混凝土的新式民居。就像10年、20年前中国大小城市的改造一样，这个群山围绕的小村子也开始陷入“工地模式”。</p>
-<h4 id="童年浪花">童年浪花</h4>
-<p>在江河边长大的孩子几乎都有一个当仁不让的特长：善水。褚时健也不例外，他不仅从小就在南盘江和花鱼塘里扑腾出了上佳的游泳技术，五六岁已经可以一个猛子扎出老远，而且从七八岁就可以在南盘江和河滩上的鱼塘里捉鱼了。</p>
-<h3 id="少年故事">少年故事</h3>
-<p>褚时健在乡村自由自在生活的十多年，其实正是中国社会风雨飘摇的十多年。特别是1937年卢沟桥事变后，日本人发动全面侵华战争，短短两三年间，中国的大部分国土相继沦陷</p>
-<h2 id="激情的青春十年">激情的青春十年</h2>
-<h3 id="当上了游击队员">当上了游击队员</h3>
-<p>1948年夏天，褚时健回乡，在禄丰车站小学做了一名老师，同时也和褚时仁、褚时杰一起继续保持与共产党组织的联系，做一些传递情报的工作</p>
-<h4 id="战火纷飞">战火纷飞</h4>
-<p>因为战斗力相较悬殊，所以游击队只能是靠打一枪换一个地方的办法，专找敌人薄弱的地方攻击，但更多时候，都是在防御和转移阵地。</p>
-<h3 id="迎来解放">迎来解放</h3>
-<p>1949年12月，国民党云南省主席卢汉在昆明宣布起义，云南正式拉开解放的序幕。1950年2月20日，陈赓、宋任穷、周保中率解放军第二野战军第四兵团进入昆明，24日，陈赓宣布云南全境解放。</p>
-<h2 id="生活的断层">生活的断层</h2>
-<h3 id="跌入生活底层">跌入生活底层</h3>
-<p>“反右”运动中被打倒的人在“右派”身份确定后，只有一条路可走：下放到农场。农场名副其实，就是干农活儿的地方，必须过和农民一样的生活。</p>
-<h2 id="尾声">尾声</h2>
-<h3 id="岁月像一条河">岁月像一条河</h3>
-<p>2015年，是褚时健和马静芬结婚60周年，被称为“钻石婚”的纪念年份。这简直是一份人生的奖赏,在中国离婚率愈益升高的当下，60年的婚姻，几乎就像一个前世之梦。一个甲子的相伴相随，褚时健和马静芬共同经历了国家和个人的各种风浪，共同面对过生死。他们两人已经不仅是夫妻，更是一对战友。尽管马静芬偶尔会对褚时健年轻时候的粗心抱怨上两句，但说到最后，她会说一句：“没有我就没有他，没有他也就没有我。”</p>
-<h2 id="作者致谢">作者致谢</h2>
-<p>这本书从2014年初夏开始采访，到今天完稿，历时18个月。封面上“作者”只能是我一个人的名字，但也只有我自己知道，这本书，包含了太多人的心力和体力。我当然首先要致谢王石先生，没有他就没有这本书。我自己细想下来，没有王石先生一直的鞭策和鼓励，也没有我写作工作的今天。从2006年我开始从事专业写作工作以来，他给我创造了很多写作的机会，并且不吝自己诸多人生和学习的体会和感悟，一一传递予我。知遇之恩，感谢非常。</p>
-<p>最后，我当然要把最大的感谢致予褚时健先生。不仅是因为他慷慨、坦率面对我的各种提问，更重要的是，在倾听他的故事的过程里，他繁盛的人生经历，他的强大生命力，他对生活、对事业的一片赤子之心，也丰富了我对自己人生的思考。</p>
+  <p>高端的GPU，如NVIDIA的A100或AMD的Radeon Instinct MI100，包含了大量的CUDA核心或流处理器，以支持大规模并行计算。</p>
+<p>高端的CPU，如Intel的Xeon系列或AMD的EPYC系列，通常具有更多的核心、更高的频率和更复杂的超线程技术，以提高性能。</p>
+<p>那么GPU和CPU到底哪个更复杂呢？我们用应用场景、晶体管数量、架构设计几个维度来看看。</p>
+<h2 id="应用场景">应用场景</h2>
+<p>GPU具有大量的计算核心、专用的存储器和高速数据传输通道。GPU的设计注重于大规模并行计算、内存访问和图形数据流处理等方面，以满足图形渲染和计算密集型应用的要求。</p>
+<p>GPU 的核心设计理念是并行处理。相比于 CPU，GPU 拥有更多的处理单元，因此，它可以同时执行大量的并行任务。这使得 GPU 特别适合处理可以并行化的工作负载，如图形渲染、科学计算和深度学习等。</p>
+<p>CPU则专注于通用计算和广泛的应用领域。这些CPU通常具有多个处理核心、高速缓存层次和复杂的指令集体系结构。</p>
+<h2 id="晶体管数量">晶体管数量</h2>
+<p>从晶体管的数量来看，顶级的GPU通常包含更多的晶体管，这主要是因为它们需要大量的并行处理单元。例如，</p>
+<p>CPU: 
+<a href="https://www.gaitpu.com/data-center/server/nvidia-launched-a30-data-center-gpu" title="NVIDIA A100 GPU" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    NVIDIA A100 GPU
+    <i class="fa fa-external-link-alt"></i>
+</a>包含了540亿个晶体管。</p>
+<p>CPU: AMD的EPYC 7742，包含约390亿个晶体管。</p>
+<h2 id="架构设计">架构设计</h2>
+<p>从架构和设计的角度来看，CPU可能会被认为更复杂。CPU需要处理各种各样的任务，并且需要优化以尽可能快地执行这些任务。为了达到这个目标，CPU使用了许多复杂的技术，如流水线、乱序执行、分支预测、超线程等。</p>
+<p>顶级的GPU可能在硬件规模（例如，晶体管数量）上更大，而顶级的CPU在架构和设计上可能更复杂。</p>
+<p>GPU架构</p>
+<p>GPU 的一些关键架构特性：</p>
+<ol>
+<li>大量的并行处理单元（核心）：GPU 中的每一个处理单元可以被看作是一个微型的 CPU，它们可以同时执行指令。例如，NVIDIA 的一种 GPU 架构，叫做 Turing，有数千个并行处理单元（被称为 CUDA 核心）。</li>
+<li>分层的内存架构：GPU 有一个复杂的内存架构，包括全局内存、共享内存、本地内存和常量内存等。全局内存可以被所有核心访问，而其他类型的内存则用于缓存数据，以减少对全局内存的访问延迟。</li>
+<li>线程调度和执行：GPU 使用硬件进行线程调度，这使得它可以在执行大量线程时保持高效率。在 NVIDIA 的 GPU 中，线程是以 warp （32个线程）的形式进行调度和执行的。</li>
+<li>特殊功能单元：除了标准的计算核心外，GPU 还有一些特殊的功能单元，如纹理单元和光栅化单元，这些都是为图形渲染特化的。在最新的 GPU 中，还有一些专门为深度学习和人工智能设计的单元，如张量核心和RT核心。</li>
+</ol>
+<p>流多处理器和 SIMD 架构：GPU 使用了 SIMD（单指令多数据流）架构，这意味着在一个时钟周期内，一条指令可以在多个数据上并行执行。在 NVIDIA 的 GPU 中，每个流多处理器（SM）包含了数百个 CUDA 核心，以及其他资源如寄存器、缓存和功能单元。</p>
+<p>具体的 GPU 架构设计会根据制造商和产品线的不同而有所不同。例如，NVIDIA 的架构（如 Turing 和 Ampere）和 AMD 的架构（如 RDNA）有一些关键的差异。然而，所有的 GPU 架构都遵循并行处理的基本理念。</p>
+<h2 id="cpu架构">CPU架构</h2>
+<p>CPU（中央处理单元）的架构设计涉及众多领域，包括硬件设计、微体系结构、指令集设计等等。</p>
+<ol>
+<li>指令集架构（ISA）：这是 CPU 的基础，定义了 CPU 可以执行哪些操作（例如，加法、乘法、逻辑操作等），以及如何编码这些操作。常见的 ISA 包括 x86（Intel 和 AMD）、ARM、RISC-V 等。</li>
+<li>流水线：在现代的 CPU 中，指令被分解为多个阶段，例如，取指、译码、执行、访存和写回。这些阶段被组织成一个流水线，这样每个时钟周期内，可以有多个指令在不同阶段同时进行，从而提高了指令的吞吐量。</li>
+<li>缓存和内存层次结构：为了减少访问内存的延迟，CPU 包含了一套复杂的缓存系统。这通常包括 L1、L2、L3 缓存等多个级别。除此之外，还有 TLB（转译后援缓冲器）等机制来加速虚拟地址到物理地址的转换。</li>
+<li>乱序执行和寄存器重命名：这些是现代 CPU 的关键优化手段。乱序执行允许 CPU 在等待某些慢指令（如内存访问）完成时，先执行其他无关的指令。寄存器重命名则是解决数据冒险的一种方法，它允许 CPU 重新排列指令的执行顺序，而不会影响最后的结果。</li>
+<li>分支预测：分支预测是一种优化方法，用于预测条件跳转指令的结果。如果预测正确，CPU 可以提前取指和执行后续的指令，从而避免了因为等待跳转结果而产生的停顿。</li>
+<li>多核和多线程：现代的 CPU 通常包含多个处理核心，每个核心都可以独立执行指令。此外，一些 CPU 还支持多线程技术（如 Intel 的超线程），可以让一个核心同时执行多个线程，从而提高了核心的利用率。</li>
+</ol>
+<p>以上只是 CPU 架构设计的一部分。实际上，CPU 的设计是一个极其复杂的过程，需要考虑的因素非常多，包括性能、能耗、面积、成本、可靠性等等。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -457,14 +444,11 @@
 
 <div class="post-tags">
   
-    <a href="/tags/%e7%9b%ae%e5%bd%95">
-    目录
+    <a href="/tags/cpu">
+    CPU
   </a>
-    <a href="/tags/%e5%af%bc%e8%88%aa">
-    导航
-  </a>
-    <a href="/tags/%e5%8d%9a%e5%ae%a2">
-    博客
+    <a href="/tags/gpu">
+    GPU
   </a>
 </div>
 
@@ -492,7 +476,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      文章目录导航
+      GPU和CPU芯片谁更复杂
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -500,7 +484,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/post/table-of-content.html" title="文章目录导航">https://www.kad8.com/post/table-of-content.html</a>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html" title="GPU和CPU芯片谁更复杂">https://www.kad8.com/post/datacenter/which-is-more-complex-GPU-or-CPU-chip.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -525,13 +509,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/shortcodes.html" rel="next" title="自定义短语示例">
-      <i class="fa fa-chevron-left"></i> 自定义短语示例
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/syntax-highlighting.html" rel="prev" title="Hugo 内置的 Chroma 语法高亮">
-      Hugo 内置的 Chroma 语法高亮
+    <a href="/post/datacenter/instinct-MI300-announced-by-amd.html" rel="prev" title="AMD发布了最新款AI芯片Instinct MI300">
+      AMD发布了最新款AI芯片Instinct MI300
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
