@@ -7,12 +7,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/broadcom/</loc>
-    <lastmod>2023-07-22T10:28:52-04:00</lastmod>
+    <loc>https://www.kad8.com/categories/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/</loc>
+    <loc>https://www.kad8.com/categories/hardware/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/pcb-gold-plating-silver-plating/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/hardware/detailed-explanation-of-PCB-terminology-with-pictures-and-texts.html</loc>
+    <lastmod>2023-07-22T12:12:08-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/broadcom/</loc>
     <lastmod>2023-07-22T10:28:52-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -22,22 +52,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-07-22T10:28:52-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-07-22T10:28:52-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/vmware/</loc>
-    <lastmod>2023-07-22T10:28:52-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-07-22T10:28:52-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -104,11 +119,6 @@
   </url><url>
     <loc>https://www.kad8.com/categories/storage/</loc>
     <lastmod>2023-07-15T23:12:03-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/hardware/</loc>
-    <lastmod>2023-07-13T11:28:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -224,11 +234,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/hardware/smt32-download-fixture-how-to.html</loc>
     <lastmod>2023-04-06T02:50:50-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/pcb-gold-plating-silver-plating/</loc>
-    <lastmod>2023-04-05T11:17:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

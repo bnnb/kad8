@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Jul 2023 11:28:21 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jul 2023 12:12:08 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图文详解PCB术语</title>
+      <link>https://www.kad8.com/post/hardware/detailed-explanation-of-PCB-terminology-with-pictures-and-texts.html</link>
+      <pubDate>Sat, 22 Jul 2023 12:12:08 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/detailed-explanation-of-PCB-terminology-with-pictures-and-texts.html</guid>
+      <description>&lt;p&gt;文章将会详细解释PCB的构成，以及在PCB的领域里面常用的一些术语，简要的组装方法，以及简介PCB的设计过程。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>RS422/485接口电路设计要点</title>
       <link>https://www.kad8.com/post/hardware/design-points-of-rs422-485-circuit.html</link>
