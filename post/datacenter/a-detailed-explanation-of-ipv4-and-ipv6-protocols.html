@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="一文详解IPv4与IPv6协议" />
+<meta itemprop="description" content="一文详解IPv4与IPv6协议" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="IPv4,IPv6" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="一文详解IPv4与IPv6协议" />
+<meta property="og:description" content="一文详解IPv4与IPv6协议" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-07-23 03:19:30 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-23 03:19:30 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"a-detailed-explanation-of-ipv4-and-ipv6-protocols.html","permalink":"https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html","title":"一文详解IPv4与IPv6协议"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>一文详解IPv4与IPv6协议 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">60</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ipv4">IPv4</a>
+      <ul>
+        <li><a href="#ipv4-简介">IPv4 简介</a></li>
+        <li><a href="#ipv4-地址数量">IPv4 地址数量</a></li>
+        <li><a href="#ipv4-协议特点">IPv4 协议特点</a></li>
+        <li><a href="#ipv4-报文结构">IPv4 报文结构</a></li>
+        <li><a href="#ipv4-报文长度">IPv4 报文长度</a></li>
+      </ul>
+    </li>
+    <li><a href="#ipv6">IPv6</a>
+      <ul>
+        <li><a href="#ipv6-简介">IPv6 简介</a></li>
+        <li><a href="#ipv6-地址数量">IPv6 地址数量</a></li>
+        <li><a href="#ipv6-协议特点">IPv6 协议特点</a></li>
+        <li><a href="#ipv6-报文结构">IPv6 报文结构</a></li>
+        <li><a href="#ipv6-载荷长度">IPv6 载荷长度</a></li>
+      </ul>
+    </li>
+    <li><a href="#ipv4ipv6-报文比较">IPv4、IPv6 报文比较</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">60</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">98</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="13417"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="103"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-07-23T03:19:30-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="一文详解IPv4与IPv6协议">
+      <meta itemprop="description" content="一文详解IPv4与IPv6协议">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">一文详解IPv4与IPv6协议 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-07-23 03:19:30 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-23 03:19:30 -0400 EDT">2023-07-23</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>221</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>2分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>前段时间的工作大多与通信协议相关，随着协议相关工作的不断深入，相关数据包的分析占据了不少工作时间。</p>
+<p>在数据报文分析中，发现大学期间IP协议内容已经重新还给了老师，相关知识完全没有了印象，这篇文章算是一篇复习文，对相关IP协议进行重学习。</p>
+<ul>
+<li>IPv4 协议详解</li>
+<li>IPv6 协议详解</li>
+<li>IPv4 IPv6 报文对比</li>
+</ul>
+<h2 id="ipv4">IPv4</h2>
+<ul>
+<li>IPv4 协议简介</li>
+<li>IPv4 地址数量</li>
+<li>IPv4 协议特点</li>
+<li>IPv4 报文结构</li>
+<li>IPv4 报文最大长度</li>
+</ul>
+<h3 id="ipv4-简介">IPv4 简介</h3>
+<p>IPv4（Internet Protocol version 4）是网际协议的第四个修订版本，也是该协议第一个被广泛部署和使用的版本。其在1981年9月由IETF发布的RFC791中被描述，是一种面向无连接的协议，可以在使用分组交换的链路层（如以太网）上运行。在数据传输方面，IPv4协议会尽最大努力交付数据包，但不能保证所有数据包能够成功到达目的地，或者按照正确的顺序到达，这些方面由上层的传输协议（如TCP协议）处理。</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-1.png" alt="IPV4协议报文结构">
+IPV4协议报文结构</p>
+<h3 id="ipv4-地址数量">IPv4 地址数量</h3>
+<p>IPv4协议使用32位（4字节）地址，其地址空间为4,294,967,296（2^32）个。其中一些地址被保留用于特定用途，如专用网络（约1800万个地址）和多播地址（约2.7亿个地址），这减少了可供互联网路由的地址数量。
+随着地址被分配给最终用户，IPv4地址枯竭问题也日益严重。虽然基于分类网络、无类别域间路由和网络地址转换的地址结构重构减缓了地址枯竭的速度，但在2019年11月26日，全球近43亿个IPv4地址已分配完毕。</p>
+<p>IPv4地址数量的限制刺激了IPv6的部署，IPv6是唯一的长期解决方案。
+IPv6使用128位地址空间，提供了更多的地址，以及更好的安全性和性能。IPv6的广泛部署需要时间和努力，但已经成为解决IPv4地址短缺问题的主要途径。</p>
+<h3 id="ipv4-协议特点">IPv4 协议特点</h3>
+<ul>
+<li>面向无连接：</li>
+</ul>
+<p>IPv4是一种面向无连接的协议，每个数据包都是独立的，数据包的传输不需要建立和维护连接状态。这使得IPv4的数据包传输速度较快，但同时也增加了数据包传输的可靠性和安全性方面的挑战。</p>
+<ul>
+<li>分组交换：</li>
+</ul>
+<p>IPv4协议采用分组交换的技术，将数据分割成一系列小的数据包进行传输，每个数据包都包含了目标地址和源地址等必要的控制信息，这使得数据传输更加高效和灵活。同时，IPv4协议还支持多种传输协议，如TCP、UDP等，可以适应不同的数据传输需求。</p>
+<ul>
+<li>简单、可靠、稳定：</li>
+</ul>
+<p>IPv4协议的设计非常简单、可靠、稳定，已经被广泛应用于互联网和局域网等各种网络环境中，具有良好的兼容性和稳定性。</p>
+<ul>
+<li>地址格式：</li>
+</ul>
+<p>IPv4地址是一个32位的二进制数，通常用点分十进制表示法来表示，被分为四段，每段可以取0-255之间的整数。IPv4地址的短缺成为了一个问题，因此引入了私有地址和网络地址转换等技术来缓解IPv4地址短缺的问题。</p>
+<ul>
+<li>安全性：</li>
+</ul>
+<p>IPv4协议的安全性较低，容易受到各种网络攻击，如IP欺骗、数据包伪造等。因此，为了提高IPv4协议的安全性，通常需要通过路由器、防火墙等网络安全设备来进行加强和保护。</p>
+<h3 id="ipv4-报文结构">IPv4 报文结构</h3>
+<p>IPv4报文的最大长度是65,535字节，这个长度是由IP报文中的16位总长度字段决定的，下图为IPv4报文的结构：</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-2.png" alt="IPv4协议首部报文结构">
+IPv4协议首部报文结构</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-3.png" alt="IPV4协议首部报文抓包">
+IPV4协议首部报文抓包</p>
+<ul>
+<li>
+<p>版本(Version)：
+占用4比特位，表示IP协议的版本号，IPv4的值为4。</p>
+</li>
+<li>
+<p>首部长度(Internet Header Length)：
+占用4比特位，表示IP首部的长度，首部长度说明首部有多少32位字(4字节，也就是说单位为4字节)。这个字段的最小值是5(二进制0101)，相当于54=20字节<code>；最大十进制值是15，相当于</code>154=60字节</p>
+</li>
+<li>
+<p>服务类型(Type of Service，TOS)：
+占用8比特位，表示IP报文的服务类型，用于指定QoS(Quality of Service)和流量控制等参数。</p>
+</li>
+<li>
+<p>总长度(Total Length)：
+占用16比特位，表示整个IP数据报的长度，包括IP首部和数据部分，单位为字节。这个字段的最小值是20（20字节首部+0字节数据），最大值是2^16-1=65,535。</p>
+</li>
+<li>
+<p>标识(Identification)：
+占用16比特位，这个字段主要被用来唯一地标识一个报文的所有分片，因为分片不一定按序到达，所以在重组时需要知道分片所属的报文。每产生一个数据报，计数器加1，并赋值给此字段。</p>
+</li>
+<li>
+<p>标志(Flags)：占用3比特位，用于标识IP分片的状态。</p>
+</li>
+</ul>
+<p>** 位0：保留，必须为0；
+** 位1：禁止分片（Don’t Fragment，DF），当DF=0时才允许分片；
+** 位2：更多分片（More Fragment，MF），MF=1代表后面还有分片，MF=0 代表已经是最后一个分片。</p>
+<ul>
+<li>
+<p>分片偏移(Fragment Offset)：
+占用13比特位，用于表示分片相对于原始数据报的偏移量。</p>
+</li>
+<li>
+<p>生存时间(Time to Live)：
+占用8比特位，表示数据报在网络中最多可以被经过的路由器数量，用于防止数据报在网络中无限循环。</p>
+</li>
+<li>
+<p>协议(Protocol)：
+占用8比特位，表示数据报中的数据部分使用的协议类型，例如TCP、UDP、ICMP等。</p>
+</li>
+<li>
+<p>校验和(Header Checksum)：
+占用16比特位，用于检测IP头部在传输过程中是否出现了错误。</p>
+</li>
+<li>
+<p>源地址(Source Address)：
+占用32比特位，表示数据报的发送者IP地址。</p>
+</li>
+<li>
+<p>目标地址(Destination Address)：
+占用32比特位，表示数据报的接收者IP地址。</p>
+</li>
+<li>
+<p>选项(Options)
+附加的首部字段可选的跟在目的地址之后，但这并不被经常使用，从1到40个字节不等。如果首部长度大于5，那么选项字段必然存在。</p>
+</li>
+</ul>
+<h3 id="ipv4-报文长度">IPv4 报文长度</h3>
+<p>IPv4报文的最大长度是65,535字节，这个长度是由IP报文中的16位总长度字段决定的。该字段的最大值是65535，因为它是一个16位无符号整数，所以IP报文的最大长度不能超过该值。</p>
+<p>需要注意的是，在实际情况下，IP报文的长度通常会受到网络设备（如路由器、防火墙等）和网络链路的限制，另外，由于网络传输存在MTU(Maximum Transmission Unit)的限制，实际上能够传输的最大数据长度通常不会超过MTU值，一般为1500个字节左右，因此实际传输的IP报文长度可能会比最大长度小得多。</p>
+<p>网络传输MTU(Maximum Transmission Unit)大小并不是固定的，它的大小取决于底层网络传输协议和网络设备的配置。不同的网络传输协议和设备可能会有不同的MTU大小限制。</p>
+<p>以太网是最常见的网络传输协议之一，其MTU大小通常为1500字节。在以太网上传输的数据包如果超过1500字节，就会被分割成多个小块进行传输。其他网络传输协议的MTU大小可能会有所不同，例如PPP协议的MTU大小通常为1480字节，ATM网络的MTU大小通常为48字节等。</p>
+<p>此外，MTU还受到网络设备的配置影响。例如，路由器和交换机等网络设备可以通过配置MTU大小来优化网络传输效率和减少延迟。在实际应用中，为了保证网络传输的稳定性和效率，需要根据具体的网络环境和需求来设置MTU大小，并进行必要的优化和调整。</p>
+<h2 id="ipv6">IPv6</h2>
+<ul>
+<li>IPv6 协议简介</li>
+<li>IPv6 地址数量</li>
+<li>IPv6 协议特点</li>
+<li>IPv6 报文结构</li>
+<li>IPv6 载荷长度</li>
+</ul>
+<h3 id="ipv6-简介">IPv6 简介</h3>
+<p>IPv6（Internet Protocol version 6）是网际协议的最新版本，主要是为了解决IPv4地址枯竭问题，同时它也在其他方面对于IPv4有许多改进，协议由1998年12月公布的 RFC2960 定义。</p>
+<p>IPv6的设计目的是取代IPv4，然而长期以来IPv4在互联网流量中仍占据主要地位，IPv6的使用增长缓慢。在2022年4月，通过IPv6使用Google服务的用户百分率首次超过40%。</p>
+<p>虽然IPv6在1994年就已被IETF指定作为IPv4的下一代标准，由于早期的路由器、防火墙及相关应用程序皆须改写，所以在世界范围内使用IPv6部署的网络服务与IPv4相比相对较少，技术上仍以双架构并存居多。</p>
+<h3 id="ipv6-地址数量">IPv6 地址数量</h3>
+<p>IPv6地址总长度为128比特位(16字节)，分为8组(每组2个字节)，每组以4个十六进制数形式表示，组间用冒号分隔。例如：FC00:0000:130F:0000:0000:09C0:876A:130B</p>
+<p>因为IPv6地址使用128位（16字节）表示，其可以支持约3.4×10²³（2^128）个唯一地址。这个数量比IPv4地址空间（43亿个地址）大得多，可以满足未来数十年互联网的发展需求。IPv6地址空间的巨大规模不仅可以支持更多的设备连接到互联网，而且还可以提供更好的网络安全性和性能。</p>
+<h3 id="ipv6-协议特点">IPv6 协议特点</h3>
+<ul>
+<li>
+<p>更大的地址空间：
+IPv6地址使用128位长度表示，可以支持约3.4×10²³（2^128）个唯一地址，这个数量比IPv4地址空间（43亿个地址）大得多，可以满足未来数十年互联网的发展需求。</p>
+</li>
+<li>
+<p>改进的寻址和路由机制：
+IPv6协议引入了一些新的寻址和路由机制，包括多播寻址、任播寻址和移动IPv6等，使得网络路由更加高效和灵活。</p>
+</li>
+<li>
+<p>简化的头部结构：
+IPv6协议头部长度固定为40字节，相比于IPv4头部结构更加简化，可以提高网络数据传输效率。</p>
+</li>
+<li>
+<p>可选的扩展首部：
+IPv6定义了许多可选的的扩展首部，不仅可提供比IPv4更多的功能，而且还可以提高路由器的处理效率，因为路由器对逐跳扩展首部外的其他扩展首部都不进行处理。</p>
+</li>
+<li>
+<p>更好的安全性和隐私保护：
+IPv6协议提供了更好的安全性和隐私保护，包括IPsec协议的强制支持、地址隐私扩展等，可以有效地保护网络和用户的隐私。</p>
+</li>
+<li>
+<p>更好的流量控制和服务质量：
+IPv6协议引入了流量控制和服务质量（QoS）机制，可以更好地管理网络流量和提供不同的服务质量，提高用户体验。</p>
+</li>
+</ul>
+<h3 id="ipv6-报文结构">IPv6 报文结构</h3>
+<p>IPv6数据报首部长度为固定的40字节，在IPv6中所有的扩展首部并不属于IPv6数据报的首部，扩展首部与其后面的数据部分合起来构成有效载荷。</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-4.png" alt="IPv6报文首部与有效载荷">
+IPv6报文首部与有效载荷</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-5.png" alt="IPv6协议首部报文结构">
+IPv6协议首部报文结构</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-6.png" alt="IPV6协议首部报文抓包">
+IPV6协议首部报文抓包</p>
+<ul>
+<li>
+<p>版本号(Version)：
+占用4比特位，用于指示报文使用的IPv6协议版本号，固定为6。</p>
+</li>
+<li>
+<p>流量类别(Traffic Class)：
+占用8比特位，用于区分不同的IPv6数据报的类别或优先级。。</p>
+</li>
+<li>
+<p>流量标签(Flow Label)：
+占用20比特位，IPv6提出了流的抽象概念，流就是因特网上从特定源点到特定终点（单播或多播）的一系列IPv6数据报（如实时音视频数据的传送）。所有属于同一个流的IPv6数据报都具有同样的流量标签（相同的流量标签可进行同样的数据优先级设定）。因此，流标号对于实时音视频数据的传送特别有用，对于传统的非实时数据，流标号用处不大。</p>
+</li>
+<li>
+<p>负载长度(Payload Length)：
+占用16比特位，用于指示IPv6报文中载荷(Payload)的长度，不包括IPv6头部的长度。</p>
+</li>
+<li>
+<p>下一个报头(Next Header)：
+占用8比特位，用于指示IPv6头部后面的下一个报头类型，如TCP报头、UDP报头、ICMPv6报头等。</p>
+</li>
+<li>
+<p>跳数限制(Hop Limit)：
+占用8比特位，类似于IPv4中的生存时间(TTL)字段，用于限制报文在网络中经过的最大跳数。</p>
+</li>
+<li>
+<p>源地址(Source Address)：
+占用128比特位，表示发送端的IPv6地址。</p>
+</li>
+<li>
+<p>目标地址(Destination Address)：
+占用128比特位，表示接收端的IPv6地址。</p>
+</li>
+</ul>
+<h3 id="ipv6-载荷长度">IPv6 载荷长度</h3>
+<p>关于 IPv6 有效载荷长度：</p>
+<p>IPv6报文有效载荷长度主要由Payload Length字段决定，Payload Length字段占用16比特位，用于表示载荷Payload的长度，即除去IPv6报头(固定为40字节)之外的部分。鉴于此字段为16比特，其最大值为2^16 - 1，即65,535字节。</p>
+<p>然而，IPv6还支持一种叫做Jumbo Payload的选项。当使用这个选项时，载荷长度可以通过一个名为 Jumbo Payload Option 的扩展报头表示，该扩展报头中有一个32比特(4字节)的字段表示载荷长度。因此，最大载荷长度可以达到2^32 - 1，即4,294,967,295字节。</p>
+<p>尽管IPv6有效载荷最大长度可达到4294967295字节，但其承载的传输层协议数据(如TCP、UDP)仍然受到IPv6网络中MTU的限制，因此仍然需要遵循最大报文长度65,535字节的限制。</p>
+<h2 id="ipv4ipv6-报文比较">IPv4、IPv6 报文比较</h2>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-7.png" alt="IPv4报文首部结构">
+IPv4报文首部结构</p>
+<p><img src="https://www.kad8.com/imgs/post/IPv4-IPv6-8.png" alt="IPv6报文首部与有效载荷">
+IPv6报文首部与有效载荷</p>
+<p>IPv6数据报首部长度为固定的40字节，所有的扩展首部并不属于IPv6数据报的首部，扩展首部与其后面的数据部分合起来构成有效载荷。</p>
+<p>由于IPv6地址的长度扩展到了128比特位，使得IPv6数据报基本首部的长度增大到了40字节，比IPv4数据报首部固定部分的长度（20字节）增大了20字节。</p>
+<p>其相比于IPv4报文：</p>
+<p>取消了首部长度字段：IPv6数据报的首部长度是固定的40字节。</p>
+<p>取消了服务类型字段：IPv6数据报首部中的流量类别和流量标签字段实现了区分服务字段的功能。</p>
+<p>取消了总长度字段：改用有效载荷长度字段。这是因为IPv6数据报的首部长度是固定的40字节，只有其后面的有效载荷长度是可变的。</p>
+<p>取消了标识、标志和片偏移字段：这些功能已包含在IPv6数据报的分片扩展首部中。</p>
+<p>把生存时间TTL字段改称为跳数限制字段：这样名称与作用更加一致。</p>
+<p>取消了协议字段：改用下一个首部字段。</p>
+<p>取消了首部检验和字段：可以加快路由器处理IPv6数据报的速度。</p>
+<p>取消了选项字段：改用扩展首部来实现选项功能。</p>
+<h2 id="参考">参考</h2>
+<p>百科IPv4:
+
+<a href="https://zh.wikipedia.org/wiki/IPv4" title="https://zh.wikipedia.org/wiki/IPv4" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://zh.wikipedia.org/wiki/IPv4
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
+<p>RFC791 IPV4:
+
+<a href="https://datatracker.ietf.org/doc/html/rfc791" title="https://datatracker.ietf.org/doc/html/rfc791" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://datatracker.ietf.org/doc/html/rfc791
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
+<p>百科IPv6:
+
+<a href="https://zh.wikipedia.org/wiki/IPv4" title="https://zh.wikipedia.org/wiki/IPv4" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://zh.wikipedia.org/wiki/IPv4
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
+<p>RFC2460 IPV6:
+
+<a href="https://datatracker.ietf.org/doc/html/rfc2460" title="https://datatracker.ietf.org/doc/html/rfc2460" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://datatracker.ietf.org/doc/html/rfc2460
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/ipv4">
+    IPv4
+  </a>
+    <a href="/tags/ipv6">
+    IPv6
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      一文详解IPv4与IPv6协议
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html" title="一文详解IPv4与IPv6协议">https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/hardware/detailed-explanation-of-PCB-terminology-with-pictures-and-texts.html" rel="prev" title="图文详解PCB术语">
+      图文详解PCB术语
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
