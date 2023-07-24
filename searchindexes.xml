@@ -16,6 +16,42 @@
   </entry>
   
   <entry>
+    <title>61.44TB！全球第一SSD诞生：QLC闪存70年写不死</title>
+    <url>/post/datacenter/the-birth-of-the-world-first-SSD-of-61.44TB.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>Storage</tag>
+      <tag>SSD</tag>
+      <tag>Solidigm</tag>
+      <tag>P5336</tag>
+    </tags>
+    <content type="html"><![CDATA[Solidigm公司近日发布了新一代旗舰企业级SSD D5-P5336，容量起步就有7.68TB，最高更是做到了史无前例的61.44TB，是此前纪录的整整两倍，1U机箱就可以达成2PB的存储空间！
+Solidigm D5-P5336提供了多种形态、容量规格，首发出货的是E1.L，最高容量30.72TB。
+今年晚些时候增加U.2并升级E1.L，最高容量升至61.44TB，明年还会扩大到E3.S，最高容量30.72TB。
+它采用了QLC闪存，192层堆叠，企业级品质。
+按照Solidigm此前给出的数据，最大写入寿命可达65PBW，五年质保期内平均每天可以写入最多35.6TB，甚至能够坚持使用长达70年都不会坏。
+性能方面，目前官方只给出了首发的E1.L 15.36TB，支持PCIe 4.0 x4，顺序读写最高7GB/s、3.1GB/s，4K随机读取最高1005K IOPS，16KB随机写入最高35K IOPS，写入寿命14.11PBW，平均故障间隔时间200万小时。
+Solidigm表示，相比于全TLC闪存阵列，D5-P5336可节省17％的TCO成本，机架占地面积减少1.9倍，供电和散热能耗减少1.25倍，对比全SAS硬盘阵列、混合阵列的优势更大。
+如果61.44TB还是不够用，也有办法，一块不行就多块！
+Apex Storage曾经发布过一款SSD扩展卡“X21”，双卡并排，可以挂载21块M.2 SSD，单个最大容量8TB，合计最多168TB，而凭借100条PCIe 4.0系统通道，顺序读写速度可达31GB/s。
+现在，Apex Storage又发布了一款“X16”，支持16块SSD，看起来弱了一些，但其实更强悍了。
+它只用了一块PCB，正反面都可以挂载8块M.2 SSD，每块还是最大8TB，合计容量最多128TB。
+PCIe 4.0通道依然有84条，读写速度仍旧能达到31GB/s，也支持完整的UEFI、安全启动。
+正面中间布置了一个主动风扇和一些散热片，为PLX桥接控制器散热，同时让整体体积只有单插槽厚度，非常迷你。
+X21扩展卡的价格为2800美元(约合人民币2.0万元)，X16则是1800美元(约合人民币1.3万元)。
+当然，SSD你得另外单独购买。
+今年PCIe 5.0硬盘终于迎来了一波爆发，多家厂商的旗舰SSD都换成PCIe 5.0的了，主控也多是群联E26，速度冲上14GB/s，然而享受超高速度不是没代价，最近有多款硬盘热到崩溃了。
+出现问题的SSD此前主要是Corsair MP700，现在有用户报告Seagate FireCuda 540、Gigabyte Aorus Gen5 10000和Adata Legend 970等PCIe 5.0硬盘也会有问题，就是使用过程中会突然崩溃、关机。
+问题的根源并不负责，这些SSD设计之初是搭配散热器使用的，但是如果是没有散热器的情况下，PCIe 5.0的高性能会导致大量热量产生，SSD的保护机制甚至做不到过热降频，就直接停止工作了。
+解决方法也不复杂，已有厂商承诺发布固件升级，群联最新的22.1固件引入了链路状态热调节功能，降低了PCIe接口速度，也就是从5.0降至4.0甚至3.0，这样就能降低PCIe物理层温度，SSD不用热到崩溃、关机。
+当然，这样做就是变相降低了性能，PCIe 5.0变成PCIe 4.0、3.0而已。
+彻底解决办法就是上散热器，不要在没有散热器的情况下使用PCIe 5.0硬盘，甚至传统的被动散热都不够用了，最好是上那种带有小风扇的主动散热。
+如果风扇还不够用，还有厂商推出了SSD水冷散热器，之前大家还嘲笑厂商，现在应该理解厂商的一片苦心了吧。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux性能优化</title>
     <url>/post/linux/linux-performance-optimization.html</url>
     <categories><category>Linux</category>

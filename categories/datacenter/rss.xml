@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Jul 2023 03:19:30 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jul 2023 11:08:03 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>61.44TB！全球第一SSD诞生：QLC闪存70年写不死</title>
+      <link>https://www.kad8.com/post/datacenter/the-birth-of-the-world-first-SSD-of-61.44TB.html</link>
+      <pubDate>Mon, 24 Jul 2023 11:08:03 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/the-birth-of-the-world-first-SSD-of-61.44TB.html</guid>
+      <description>&lt;p&gt;Solidigm公司近日发布了新一代旗舰企业级SSD D5-P5336，容量起步就有7.68TB，最高更是做到了史无前例的61.44TB，是此前纪录的整整两倍，1U机箱就可以达成2PB的存储空间！&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>一文详解IPv4与IPv6协议</title>
       <link>https://www.kad8.com/post/datacenter/a-detailed-explanation-of-ipv4-and-ipv6-protocols.html</link>
