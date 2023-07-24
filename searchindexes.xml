@@ -16,6 +16,34 @@
   </entry>
   
   <entry>
+    <title>DDRC中的RAS：Parity & ECC</title>
+    <url>/post/datacenter/DDRC-RAS-Parity-and-ECC.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>DDRC</tag>
+      <tag>RAS</tag>
+      <tag>Parity & ECC</tag>
+    </tags>
+    <content type="html"><![CDATA[DDRC 中常见的RAS功能有两种：一种为Parity（奇偶）校验，一种为ECC（纠错码）校验。
+什么是RAS？ DDR subsystem会因为设计bug或传输过程中的干扰导致bit翻转出现数据错误，其中设计缺陷导致的通常认为是硬错误，而系统噪声或者其他原因导致DRAM阵列翻转的则认为是软错误。硬错误是永久性的错误，而软错误则是短暂性的。为了能够在运行中纠正软错误，保障Memory subsystem的稳定运行，DDRC（DDR Controller）需要具有先进的RAS功能（可靠性，可用性，可维护性功能）。如果没有 RAS 功能，系统很可能会因为内存错误而崩溃。RAS 功能允许系统在出现可纠正的错误时继续运行，同时记录不可纠正错误的详细信息，以便将来进行调试。DDRC 中常见的RAS功能有两种：一种为Parity（奇偶）校验，一种为ECC（纠错码）校验。
+Parity Check 奇偶校验是最简单的一种校验码，用于检测数据传输过程中是否发生错误，但是parity check只能用于检测1bit error，如果碰上2bit error，则无法检测，而且也无法区分出错是在data上出错，还是校验位出错。其次parity check也无法修复出错的数据。Parity check分为Odd parity check（奇校验）和Even parity check（偶校验）。
+ 奇校验：原始数据+校验位 总共有奇数个1 偶校验：原始数据+校验位 总共有偶数个1  Image DDRC中通常会有一根单独的信号用于传输Parity bit, 并且Pairty Check方式一般可以通过寄存器配置。
+ECC Check DDRC会针对数据产生ECC bits，并将ECC bits存储到DRAM存储器中, 可对DRAM发送的数据进行1bit ECC error纠错或者2bit ECC error检错。
+ECC生成校验数据步骤一般为：
+  DDRC接收到写数据，在DDRC内部产生ECC bits，然后将写数据和产生的ECC bits一起写入颗粒
+  DDRC收到读请求，DDRC从DRAM读取数据和对应ECC bits，然后DDRC通过读回数据重新产生ECC bits，然后和从DRAM读回的ECC数据进行比较。如果两者匹配，则认为该传输没有Error，如果不match，则开始检测是否为1bit ECC error或者2bit ECC error，如果为1bit ECC Error，则纠正单bit错误，然后继续传输。如果为2bit ECC error，直接通过中断上报。一般针对1bit ECC error，也可以设计一个阈值，例如一定时间内出现多少1bit ECC error, 也会上报中断。
+  ECC bit根据存储在DRAM中的位置可以分为两种类型：side-band ECC 或者 inline ECC。在 side-band ECC 中，ECC 数据存储在单独的 DRAM 上；在inline ECC 中，ECC 数据与实际数据一起存储在同一个 DRAM 上。
+Side-band ECC Side-band ECC一般运用在标准DDR内存（DDR4，DDR5）或者HBM中。ECC bits会作为side-band数据同实际数据一起发送到内存。例如64位数据，会增加8个数据位宽用于传输ECC bits。因此，一般企业级DDR4 ECC DIMM会有72bit位宽，并且DIMM会有两个额外x4 DRAM或者一个x8DRAM用于ECC bits存储。而对于HBM2E，则是通过复用DM（data mask）信号作为ECC bits传输，同样HBM中也有额外的区域用于存储ECC bits。因为Side-band ECC中，DDRC会同时写入或者读取ECC bits和实际数据，这种场景下不需要额外的WR或者RD command，因此和inline ECC方案相比，会有更高的Efficiency。
+Side-band ECC的WR 和 RD 操作流程：
+Inline ECC inline ECC常见于LPDDR或者GDDR中。通常LPDDR或者GDDR为固定信道宽度(GDDR6为x16), 因此side-band因为需要额外的side-band信号，这需要额外的昂贵花销。例如，对于 16 位数据宽度，需要为 7 位或 8 位 ECC 位宽的 inline ECC 额外分配 16 位 LPDDR 信道。此外，7 或 8 位 ECC 数据字段仅部分填充了 16 位额外的通路，导致存储效率低下，还给地址命令信道带来额外负载，可能会对性能有所影响。
+Inline ECC 中的控制器不需要额外的信道来存储 ECC，而是将 ECC 数据存储在存储实际数据的同一 DRAM 信道中。因此，内存信道的总体数据宽度与实际数据宽度相同。同side-band一样，假设64bit Data则对应8bit数据，由于ECC bits和Data存储在同一个DRAM，因此需要1/9的DRAM容量作为ECC bits区域，其余8/9则用于存放数据。
+当 ECC 数据未与读写数据一起发送时，控制器为 ECC 数据生成单独的开销 WR 和 RD 命令。因此，实际数据的每条 WR 和 RD 命令都伴有一条 ECC 数据的开销 WR 和 RD 命令。高性能控制器通过在一条 ECC WR 命令中封装几个连续地址的 ECC 数据，以此来降低此类 ECC 命令的损失。同样，控制器在一条 ECC RD 命令中读取内存发出的若干连续地址的 ECC 数据，并且可以将读出的 ECC 数据，应用于该连续地址产生的实际数据。因此traffic越有序，inline ECC导致的Efficiency Loss越小。假设GDDR中我们通过AXI发送AwLen=7，AwSize=5的一笔AXI transaction，那么一次发送2^5 * 8 = 256Byte的数据，并且产生32Byte的ECC bits。根据GDDR6的Spec，一个WR CMD能够写入32Byte的数据，那么正好9个cmd 能够完成256B data+32B ECC bits的写入，此时inline ECC导致的速率损失最小。因此可以计算得到inline ECC enable之后最大Efficiency为disable inline ECC的8/9 = 88.89%。如果不够64bit，即narrow transfer小于8Byte的场景，则还需要通过先读回DRAM内的数据，和narrow transfer data拼成64bit 计算 ECC bits，然后再写回DRAM，这种场景下inline ECC带来的效率损失会进一步扩大。
+Inline ECC 的 WR 和 RD 操作流程：
+]]></content>
+  </entry>
+  
+  <entry>
     <title>61.44TB！全球第一SSD诞生：QLC闪存70年写不死</title>
     <url>/post/datacenter/the-birth-of-the-world-first-SSD-of-61.44TB.html</url>
     <categories><category>DataCenter</category>

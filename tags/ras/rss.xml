@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAS on 北南南北</title>
+    <link>https://www.kad8.com/tags/ras/</link>
+    <description>Recent content in RAS on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 24 Jul 2023 11:22:13 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/ras/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DDRC中的RAS：Parity &amp; ECC</title>
+      <link>https://www.kad8.com/post/datacenter/DDRC-RAS-Parity-and-ECC.html</link>
+      <pubDate>Mon, 24 Jul 2023 11:22:13 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/DDRC-RAS-Parity-and-ECC.html</guid>
+      <description>&lt;p&gt;DDRC 中常见的RAS功能有两种：一种为Parity（奇偶）校验，一种为ECC（纠错码）校验。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
