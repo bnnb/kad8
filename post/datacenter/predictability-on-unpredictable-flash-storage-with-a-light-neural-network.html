@@ -421,9 +421,9 @@
 <p>以各种预测为代表，既不需要修改上层软件栈，也不需要修改SSD内部架构，是目前最流行的解决方案。其中一个经典的方案是Hedged Request，它的原理和应用环境将在下文中介绍。</p>
 <h3 id="hedged-request">Hedged Request</h3>
 <p>为了保证数据安全、实现负载均衡，现代的存储系统通常存在一定冗余，而多个不同的SSD的内部行为同时和用户请求产生冲突的概率非常低。基于这样的思考，Hedged  Request将一个请求发给一个SSD后，若等待请求完成的时间超过了阈值，则重发请求到另一个可用的SSD。如下图所示：</p>
-<p><img src="https://www.kontronn.com/imgs/post/Hedged-Request.png" alt="Hedged Request"></p>
+<p><img src="https://www.kad8.com/imgs/post/Hedged-Request.png" alt="Hedged Request"></p>
 <p>然而，传统Hedged Request中，快SSD需要等待一段时间（等待慢SSD处理的时间超过阈值）后才能处理请求，对于微秒级SSD而言，这个等待时间是致命的。如果可以学习SSD的特征，预测将要变慢的SSD而及时将请求重发到快SSD中，则可以节约出等待的时间，从而降低闪存组的尾端延迟——这就是LinnOS完成的工作，如下图所示，用户发送请求后，若经过LinnOS网络预测得知该SSD将变慢，则提前告知用户重发请求，随后请求将被送到下一个SSD，减少了Hedged Request中的等待时间。</p>
-<p><img src="https://www.kontronn.com/imgs/post/Lightweight.png" alt="Lightweight"></p>
+<p><img src="https://www.kad8.com/imgs/post/Lightweight.png" alt="Lightweight"></p>
 <h2 id="linnos的三大挑战">LinnOS的三大挑战</h2>
 <p>设计LinnOS存在三大挑战，接下来将一一阐述。</p>
 <ul>
@@ -454,7 +454,7 @@
 <li>LinnOS+HL：最终的LinnOS方案</li>
 </ul>
 <p>实验结果如下图：</p>
-<p><img src="https://www.kontronn.com/imgs/post/Experiment.png" alt="Experiment"></p>
+<p><img src="https://www.kad8.com/imgs/post/Experiment.png" alt="Experiment"></p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
