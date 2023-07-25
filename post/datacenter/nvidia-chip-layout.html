@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="英伟达的芯片版图" />
+<meta itemprop="description" content="英伟达的芯片版图" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="Nvidia,GPU,CUDA" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="英伟达的芯片版图" />
+<meta property="og:description" content="英伟达的芯片版图" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/nvidia-chip-layout.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-07-25 11:06:14 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-25 11:06:14 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"nvidia-chip-layout.html","permalink":"https://www.kad8.com/post/datacenter/nvidia-chip-layout.html","title":"英伟达的芯片版图"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>英伟达的芯片版图 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">65</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#三剑客的芯片版图">“三剑客”的芯片版图</a></li>
+    <li><a href="#英伟达没有fpga">英伟达没有FPGA</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">65</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">108</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="15590"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="116"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-07-25T11:06:14-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/nvidia-chip-layout.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="英伟达的芯片版图">
+      <meta itemprop="description" content="英伟达的芯片版图">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">英伟达的芯片版图 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-07-25 11:06:14 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-25 11:06:14 -0400 EDT">2023-07-25</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>44</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/nvidia-chip-layout.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>当英伟达市值站上万亿美元之巅时，全球最神秘资本大鳄罗斯柴尔德家族却传出减持英伟达股票的消息，股神巴菲特也作出了相同选择。</p>
+<p>这一最新投资动向似乎传递出一个信号：支撑英伟达万亿美元市值大厦的支柱，或许没有大家想象得那般牢固。站在芯片市值之颠的英伟达，其实少了一块芯片“拼图”。</p>
+<h2 id="三剑客的芯片版图">“三剑客”的芯片版图</h2>
+<p>在AI时代，仅凭借GPU或CPU，恐怕很难胜任高算力需求的大模型训练与推理。作为英伟达强有力的竞争对手，英特尔和AMD明显意识到了这点，不仅加快开发对标英伟达GPU的直接竞品，更是纷纷出手布局整个芯片版图。</p>
+<p>各企业加紧研发AI芯片
+<img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-1.png" alt="Nvidia Chip Layout"></p>
+<p>在GPU领域，英特尔其实是一位“老玩家”。1998年2月12日，英特尔发布了旗下首款独立GPU产品——英特尔i740 AGP显卡，但是i740的各项性能表现远不及预期，无法与同期英伟达的RIVA TNT同台竞技，故而在一年后含恨退市。而于2009年发布Larrabee也并未收获良好的市场表现，最终英特尔不得不终止该计划。虽在独立GPU上屡屡受挫，但自i740开始的技术积累和CPU的强大底蕴使得英特尔摸索出集成显卡的发展路径。即便如此，英特尔也仍未放弃对独立GPU的探索。2017年，英特尔推出Xe架构，这成为几年后英特尔开发GPU的基石架构。</p>
+<p><img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-2.png" alt="Nvidia Chip Layout">
+英特尔首款GPU i740</p>
+<p>英特尔对芯片的追逐不仅仅只有CPU和GPU。2015年，英特尔以167亿美元高调收购元老级FPGA厂商Altera，以求在芯片设计上弥补自身芯片灵活性不足的短板。2018年，英特尔首次推出了负责神经网络处理的处理器IPU。在同年的英特尔架构日上，英特尔向业界提出了XPU异构愿景：一个由标量、矢量、矩阵、空间组成的SVMS架构——分别对应了CPU、GPU、IPU和FPGA，可进行多种异构组合。</p>
+<p><img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-3.png" alt="Nvidia Chip Layout">
+AMD公布第四代EPYC家族处理器一系列更新</p>
+<p>AMD在GPU上也马不停蹄。AMD的GPU发展历程以2006年7月收购图形处理公司ATI为分水岭。被收购前的ATI凭借Radeon系列的自身性能与英伟达直接竞争；而收购ATI后的AMD，则利用高性价比战略抢占中端市场，并在此后不断同英伟达的GPU进行对抗和拉扯。</p>
+<p>2022年2月，AMD斥资498亿美元完成对FPGA厂商赛灵思的收购，以加强在数据中心业务的布局；同年4月，AMD宣布以19亿美元收购DPU芯片厂商Pensando，继续扩大数据中心业务。今年6月13日在美国旧金山的发布会上，CEO苏姿丰发布了多款面向数据中心领域的产品，AMD的“CPU+GPU+FPGA+DPU”的芯片版图也搭建完成，并逐渐成熟。</p>
+<p>面对挑战者的层层加码，英伟达不敢有丝毫怠慢。</p>
+<p><img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-4.png" alt="Nvidia Chip Layout">
+英伟达Grace Hopper使用Grace CPU</p>
+<p>英伟达深知自己能成为当今AI芯片的领头羊，依靠的绝不仅是CUDA平台这一条护城河。英伟达在手握GPU和软件生态上的先发优势的同时，也积极向CPU探索。虽然英伟达对Arm的收购计划因反垄断原因以失败告终，但其在CPU上布局的脚步仍未停止。早在2021年，英伟达便已经发布了名为Grace的处理器，而Grace Hopper于今年在ISC上亮相。这款包含了Hopper架构和Grace CPU的超级处理器，彰显了英伟达对CPU的野心。</p>
+<p>另外，2019年，英伟达以69亿美元的价格收购以色列网络芯片公司Mellanox，并于同年推出BlueField-2 DPU，自此拉开DPU高速发展的序幕，并实现了“CPU+GPU+DPU”三芯布局。</p>
+<p>对比三家的芯片版图，不难发现无论英特尔的XPU封装，还是AMD的异构集成，均把FPGA作为重要砝码。相反，英伟达在FPGA的部署上则稍显犹豫。业界不禁发出疑问：FPGA有多重要？它会是目前正坐在AI王座上的英伟达所忽略遗漏的那一块拼图吗？</p>
+<h2 id="英伟达没有fpga">英伟达没有FPGA</h2>
+<p>FPGA这块拼图，看似市场体量不大，但其实非常重要。与GPU相比，FPGA作为可编程逻辑列阵，具备更低能耗、更强的灵活度和可编辑性，因而具备较短的设计周期，更适合算法快速迭代、应用场景不断拓展的AI时代。</p>
+<p>各类芯片功能对比
+<img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-5.png" alt="Nvidia Chip Layout"></p>
+<p>进入AI时代，FPGA广泛应用于云计算、网络，如5G通信和边缘、端的垂直市场。整体而言，高性能计算与云服务提供商是FPGA扮演的两大重要角色。</p>
+<p><img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-6.png" alt="Nvidia Chip Layout">
+英特尔FPGA产品图</p>
+<p>“目前，AI在市场上仍处于早期萌芽状态，很多客户都在探索AI在边缘及嵌入式市场中究竟能够为大家带来什么。而FPGA的内在价值恰恰是可编程性和灵活性，可以赋予AI更高的灵活性。当客户在边缘领域运行AI相关工作负载时，FPGA能够为其特定工作负载进行优化，这一点至关重要。”英特尔数据中心与人工智能集团副总裁兼可编程解决方案事业部产品营销总经理Deepali Trehan对《中国电子报》记者表示。</p>
+<p>正是意识到了FPGA未来可期，英特尔和AMD纷纷展开收购FPGA厂商的行动。而被两大巨头收入囊中的Altera和赛灵思，一度占据80%以上的市场份额。完成收购后，英特尔、AMD在业务、营收规模、对下游的议价权等方面，会获得更大主动权。</p>
+<p><img src="https://www.kad8.com/imgs/post/Nvidia-Chip-Layout-7.png" alt="Nvidia Chip Layout">
+AMD收购FPGA企业赛灵思</p>
+<p>AMD AECG 有线与无线事业部高级总监 Gilles Garcia对《中国电子报》记者表示：“此前赛灵思在通信领域一直处于领先地位。AMD对赛灵思的收购使得AMD处理器与赛灵思原有产品在5G领域实现强强联合，在7大5G无线设备制造商中，AMD现已部署6家。”</p>
+<p>当前市场上已难有堪比Altera和赛灵思的优质标的。由于错失了通过收购抢占市场的先手棋，英伟达目前几乎不可能再通过收购来补充FPGA这块拼图。</p>
+<p>总体而言，相对于较早布局FPGA的英特尔和AMD，没有FPGA产品线的英伟达在技术解决方案的多样性和灵活性上略逊一筹。</p>
+<p>毕竟，高性能计算芯片不止GPU这一处理架构，“CPU+FPGA”的方案同样能满足AI的算力需求。FPGA芯片作为可编程芯片，可以针对特定功能进行扩展，在AI模型构建第二阶段具有一定的发挥空间。通过与CPU结合，FPGA能够实现深度学习功能，两者共同应用于深度学习模型。</p>
+<p>既然已经错过了收购的最佳时期，那么自研FPGA或许是另一条路。记者注意到，英伟达近日在求职网站上发布了招聘FPGA工程师的招聘信息。对于FPGA，英伟达或许已经暗中行动。</p>
+<p>但是，英伟达研发FPGA的道路并非坦途，短期来看性价比仍然较低。</p>
+<p>“FPGA研发的难点在于工具链和工艺，需要大量人力、物力、财力。”澎峰科技联合创始人兼首席运营官王军辉对《中国电子报》记者表示，行业通常将CPU、GPU、DSP（已经提的越来越少了）和FPGA这四类计算硬件，从计算能效、计算密度、计算性能、易用性等几个维度去进行对比，看它们适合于什么市场。在大算力、大模型时代，英伟达的“GPU+CUDA”方向可作为一个选择。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/nvidia">
+    Nvidia
+  </a>
+    <a href="/tags/gpu">
+    GPU
+  </a>
+    <a href="/tags/cuda">
+    CUDA
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      英伟达的芯片版图
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/nvidia-chip-layout.html" title="英伟达的芯片版图">https://www.kad8.com/post/datacenter/nvidia-chip-layout.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/datacenter/predictability-on-unpredictable-flash-storage-with-a-light-neural-network.html" rel="prev" title="聊聊闪存存储的延迟可预测性">
+      聊聊闪存存储的延迟可预测性
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

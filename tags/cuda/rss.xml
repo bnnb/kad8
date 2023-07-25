@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CUDA on 北南南北</title>
+    <link>https://www.kad8.com/tags/cuda/</link>
+    <description>Recent content in CUDA on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 25 Jul 2023 11:06:14 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/cuda/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达的芯片版图</title>
+      <link>https://www.kad8.com/post/datacenter/nvidia-chip-layout.html</link>
+      <pubDate>Tue, 25 Jul 2023 11:06:14 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/nvidia-chip-layout.html</guid>
+      <description>&lt;p&gt;当英伟达市值站上万亿美元之巅时，全球最神秘资本大鳄罗斯柴尔德家族却传出减持英伟达股票的消息，股神巴菲特也作出了相同选择。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

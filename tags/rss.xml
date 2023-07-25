@@ -6,7 +6,34 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 25 Jul 2023 10:28:46 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jul 2023 11:06:14 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://www.kad8.com/tags/cuda/</link>
+      <pubDate>Tue, 25 Jul 2023 11:06:14 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://www.kad8.com/tags/gpu/</link>
+      <pubDate>Tue, 25 Jul 2023 11:06:14 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>https://www.kad8.com/tags/nvidia/</link>
+      <pubDate>Tue, 25 Jul 2023 11:06:14 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>LinnOS</title>
       <link>https://www.kad8.com/tags/linnos/</link>
@@ -148,15 +175,6 @@
       <pubDate>Tue, 18 Jul 2023 11:04:49 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/cpu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GPU</title>
-      <link>https://www.kad8.com/tags/gpu/</link>
-      <pubDate>Tue, 18 Jul 2023 11:04:49 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/gpu/</guid>
       <description></description>
     </item>
     
