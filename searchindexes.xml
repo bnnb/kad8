@@ -16,6 +16,30 @@
   </entry>
   
   <entry>
+    <title>关于超级以太网，大佬有话要说</title>
+    <url>/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>Ethernet</tag>
+    </tags>
+    <content type="html"><![CDATA[关于超级以太网，大佬有话要说
+来自行业分析师引述 &ldquo;由于系统互连功能的弱点，许多HPC和AI用户发现很难从他们的系统中获得全部性能。用户也很难集成和学习多个新的或不同的解决方案。看到这群令人印象深刻的领先公司的共同努力，创建一个新的通用的更高性能互连解决方案，这令人兴奋。HPC和AI领域的买家具有非常苛刻的工作负载，Ultra Ethernet Consortium（UEC）可以极大地帮助提高互操作性、性能和功能。我们期待在不久的将来看到一套新产品进入市场。&quot;——Dr. Earl Joseph, CEO of Hyperion Research.
+“AI/ML和HPC的业务用例正在继续扩大，越来越多的公司希望利用可扩展的计算来获得竞争优势，无论是在自己的计算设施中还是在云中。如今，没有标准的、供应商中立的数据中心网络解决方案专注于并行应用程序的大规模性能。由于大多数数据中心都是基于以太网的，因此拥有由UEC驱动的可扩展解决方案将使可扩展性更加直接和可访问。参与UEC的公司能够开发一致的以太网解决方案，从单一连接到最大的超级计算机和超大规模数据中心。”——Addison Snell, CEO of Intersect360 Research.
+“我敢说，关于用于基础设施的最佳网络的讨论一直在进行，以支持生成式AI的大型语言模型的训练和推理。一些公司已经转向基于以太网的网络，更喜欢其易于安装和使用。UEC计划将成为AI社区的一个受欢迎的补充。”——Karl Freund, Founder and Principal Analyst at Cambrian-AI Research.
+UEC创始成员语录 “高度计算密集型工作负载（例如 AI 培训、机器学习以及 HPC 模拟和建模）需要可扩展且经济高效的行业解决方案，并将互操作性作为重中之重。为了创建基于以太网的开放式架构，以满足现代数据中心工作负载不断变化的需求，我们将作为创始成员加入超级以太网联盟。AMD 在支持开放行业标准方面有着悠久的历史，我们很自豪今天能继续与 UEC 一起走这条路。&quot;——Robert Hormuth, corporate vice president, Architecture and Strategy, Data Center Solutions Group, AMD.
+“Arista Networks 很高兴参与 UEC，支持以太网向更多用例的演进，作为 HPC 和 AI/ML 工作负载的无处不在的传输。”——Hugh Holbrook, Group Vice President, Software Engineering for Arista Networks.
+“凭借其无与伦比的生态系统、极高的灵活性和高性能，以太网已成为几乎所有类型数据网络的首选结构。Broadcom长期以来一直是以太网技术的支持者，推动网络堆栈各个方面的创新。我们很高兴能与许多云和网络行业巨头合作，推动以太网满足下一代人工智能和HPC网络的需求。“——Ram Velaga, senior vice president and general manager, Core Switching Group, Broadcom.
+“我们正处于几乎每个行业大规模转型的开始。AI / ML将从根本上改变我们做所有事情的内容，时间和方式。为了实现这种转变，行业需要改进未来网络的构建方式。思科支持UEC的目标，即识别和标准化优化，这将使部署AI/ML基础设施的客户受益。”——Rakesh Chopra, Cisco Fellow, Common Hardware Group, Cisco.
+“HPC 市场一直是开发高速互连的关键驱动力。随着 AI/ML/DL 密集型和大规模工作负载的出现，市场正在向创建包含互操作性、成本效益和真正高性能的新标准的方向趋同。我们很自豪也很热心成为超级以太网联盟（UEC）的创始成员之一，该联盟旨在通过基于以太网的通信协议和软件堆栈来应对这些挑战。我们相信UEC将提供强劲的结果，以满足市场需求和要求。”——Eric Eppe, Group VP, HPC/AI/Quantum Portfolio &amp; Strategy for Eviden at Atos Group.
+“生成式 AI 工作负载将要求我们构建网络以实现超级计算规模和性能。超级以太网联盟的重要性在于开发一个开放、可扩展且经济高效的基于以太网的通信堆栈，以支持这些高性能工作负载高效运行。以太网的普遍性和互操作性将为客户提供选择，以及处理各种数据密集型工作负载的性能，包括模拟以及AI模型的训练和调整。随着人工智能模型的数据和规模的持续增长，高度并行化的计算成为性能、可靠性和可持续性的重要组成部分。”—— Justin Hotard, executive vice president and general manager, HPC &amp; AI, at Hewlett Packard Enterprise.
+”人工智能、机器学习和大规模高性能工作负载的计算和网络性能需求是永不满足的。该行业需要开放式解决方案来满足这些需求，以实现专有解决方案的选择和自由。英特尔很荣幸成为超级以太网联盟 （UEC） 的创始成员，该联盟将通过更新和优化的基于以太网的高性能、可扩展和开放的网络解决方案和通信堆栈迎来未来的计算基础设施。“——Jeff McVeigh, corporate vice president &amp; general manager of the Super Compute Group at Intel.
+“下一代人工智能系统需要前所未有的规模和性能。Meta 致力于构建高性能以太网结构和技术的开放生态系统，以实现下一个计算时代。”——Alexis Björlin, Vice President of Infrastructure, AI Systems and Accelerated Platforms at Meta.
+“下一个计算时代的特点将是人工智能和人工智能优化的基础设施取得突破性进展，Microsoft致力于使组织能够利用Azure的强大功能推动一切可能。联手开发一套通用标准，以增强超大规模人工智能和高性能计算工作负载的以太网，将有助于实现现在和未来的持续创新。”——Steve Scott, Corporate Vice President of Azure Hardware Architecture at Microsoft.
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英伟达的芯片版图</title>
     <url>/post/datacenter/nvidia-chip-layout.html</url>
     <categories><category>DataCenter</category>

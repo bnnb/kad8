@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="关于超级以太网，大佬有话要说" />
+<meta itemprop="description" content="关于超级以太网，大佬有话要说" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="Ethernet" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="关于超级以太网，大佬有话要说" />
+<meta property="og:description" content="关于超级以太网，大佬有话要说" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-07-25 11:36:04 -0400 EDT" />
+<meta property="article:modified_time" content="2023-07-25 11:36:04 -0400 EDT" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"the-boss-has-something-to-say-about-super-ethernet.html","permalink":"https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html","title":"关于超级以太网，大佬有话要说"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>关于超级以太网，大佬有话要说 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">66</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#来自行业分析师引述">来自行业分析师引述</a></li>
+    <li><a href="#uec创始成员语录">UEC创始成员语录</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">109</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="15752"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="117"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-07-25T11:36:04-04:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="关于超级以太网，大佬有话要说">
+      <meta itemprop="description" content="关于超级以太网，大佬有话要说">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">关于超级以太网，大佬有话要说 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-07-25 11:36:04 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-25 11:36:04 -0400 EDT">2023-07-25</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>162</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>关于超级以太网，大佬有话要说</p>
+<h2 id="来自行业分析师引述">来自行业分析师引述</h2>
+<p>&ldquo;由于系统互连功能的弱点，许多HPC和AI用户发现很难从他们的系统中获得全部性能。用户也很难集成和学习多个新的或不同的解决方案。看到这群令人印象深刻的领先公司的共同努力，创建一个新的通用的更高性能互连解决方案，这令人兴奋。HPC和AI领域的买家具有非常苛刻的工作负载，Ultra Ethernet Consortium（UEC）可以极大地帮助提高互操作性、性能和功能。我们期待在不久的将来看到一套新产品进入市场。&quot;——Dr. Earl Joseph, CEO of Hyperion Research.</p>
+<p>“AI/ML和HPC的业务用例正在继续扩大，越来越多的公司希望利用可扩展的计算来获得竞争优势，无论是在自己的计算设施中还是在云中。如今，没有标准的、供应商中立的数据中心网络解决方案专注于并行应用程序的大规模性能。由于大多数数据中心都是基于以太网的，因此拥有由UEC驱动的可扩展解决方案将使可扩展性更加直接和可访问。参与UEC的公司能够开发一致的以太网解决方案，从单一连接到最大的超级计算机和超大规模数据中心。”——Addison Snell, CEO of Intersect360 Research.</p>
+<p>“我敢说，关于用于基础设施的最佳网络的讨论一直在进行，以支持生成式AI的大型语言模型的训练和推理。一些公司已经转向基于以太网的网络，更喜欢其易于安装和使用。UEC计划将成为AI社区的一个受欢迎的补充。”——Karl Freund, Founder and Principal Analyst at Cambrian-AI Research.</p>
+<h2 id="uec创始成员语录">UEC创始成员语录</h2>
+<p>“高度计算密集型工作负载（例如 AI 培训、机器学习以及 HPC 模拟和建模）需要可扩展且经济高效的行业解决方案，并将互操作性作为重中之重。为了创建基于以太网的开放式架构，以满足现代数据中心工作负载不断变化的需求，我们将作为创始成员加入超级以太网联盟。AMD 在支持开放行业标准方面有着悠久的历史，我们很自豪今天能继续与 UEC 一起走这条路。&quot;——Robert Hormuth, corporate vice president, Architecture and Strategy, Data Center Solutions Group, AMD.</p>
+<p>“Arista Networks 很高兴参与 UEC，支持以太网向更多用例的演进，作为 HPC 和 AI/ML 工作负载的无处不在的传输。”——Hugh Holbrook, Group Vice President, Software Engineering for Arista Networks.</p>
+<p>“凭借其无与伦比的生态系统、极高的灵活性和高性能，以太网已成为几乎所有类型数据网络的首选结构。Broadcom长期以来一直是以太网技术的支持者，推动网络堆栈各个方面的创新。我们很高兴能与许多云和网络行业巨头合作，推动以太网满足下一代人工智能和HPC网络的需求。“——Ram Velaga, senior vice president and general manager, Core Switching Group, Broadcom.</p>
+<p>“我们正处于几乎每个行业大规模转型的开始。AI / ML将从根本上改变我们做所有事情的内容，时间和方式。为了实现这种转变，行业需要改进未来网络的构建方式。思科支持UEC的目标，即识别和标准化优化，这将使部署AI/ML基础设施的客户受益。”——Rakesh Chopra, Cisco Fellow, Common Hardware Group, Cisco.</p>
+<p>“HPC 市场一直是开发高速互连的关键驱动力。随着 AI/ML/DL 密集型和大规模工作负载的出现，市场正在向创建包含互操作性、成本效益和真正高性能的新标准的方向趋同。我们很自豪也很热心成为超级以太网联盟（UEC）的创始成员之一，该联盟旨在通过基于以太网的通信协议和软件堆栈来应对这些挑战。我们相信UEC将提供强劲的结果，以满足市场需求和要求。”——Eric Eppe, Group VP, HPC/AI/Quantum Portfolio &amp; Strategy for Eviden at Atos Group.</p>
+<p>“生成式 AI 工作负载将要求我们构建网络以实现超级计算规模和性能。超级以太网联盟的重要性在于开发一个开放、可扩展且经济高效的基于以太网的通信堆栈，以支持这些高性能工作负载高效运行。以太网的普遍性和互操作性将为客户提供选择，以及处理各种数据密集型工作负载的性能，包括模拟以及AI模型的训练和调整。随着人工智能模型的数据和规模的持续增长，高度并行化的计算成为性能、可靠性和可持续性的重要组成部分。”—— Justin Hotard, executive vice president and general manager, HPC &amp; AI, at Hewlett Packard Enterprise.</p>
+<p>”人工智能、机器学习和大规模高性能工作负载的计算和网络性能需求是永不满足的。该行业需要开放式解决方案来满足这些需求，以实现专有解决方案的选择和自由。英特尔很荣幸成为超级以太网联盟 （UEC） 的创始成员，该联盟将通过更新和优化的基于以太网的高性能、可扩展和开放的网络解决方案和通信堆栈迎来未来的计算基础设施。“——Jeff McVeigh, corporate vice president &amp; general manager of the Super Compute Group at Intel.</p>
+<p>“下一代人工智能系统需要前所未有的规模和性能。Meta 致力于构建高性能以太网结构和技术的开放生态系统，以实现下一个计算时代。”——Alexis Björlin, Vice President of Infrastructure, AI Systems and Accelerated Platforms at Meta.</p>
+<p>“下一个计算时代的特点将是人工智能和人工智能优化的基础设施取得突破性进展，Microsoft致力于使组织能够利用Azure的强大功能推动一切可能。联手开发一套通用标准，以增强超大规模人工智能和高性能计算工作负载的以太网，将有助于实现现在和未来的持续创新。”——Steve Scott, Corporate Vice President of Azure Hardware Architecture at Microsoft.</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/ethernet">
+    Ethernet
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      关于超级以太网，大佬有话要说
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html" title="关于超级以太网，大佬有话要说">https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/datacenter/nvidia-chip-layout.html" rel="prev" title="英伟达的芯片版图">
+      英伟达的芯片版图
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -8,16 +8,41 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/cuda/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/datacenter/</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/ethernet/</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/the-boss-has-something-to-say-about-super-ethernet.html</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-07-25T11:36:04-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/cuda/</loc>
     <lastmod>2023-07-25T11:06:14-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -28,21 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/nvidia/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-07-25T11:06:14-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
