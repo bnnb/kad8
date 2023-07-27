@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Jul 2023 12:00:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 02:33:55 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何同时运行多个 Linux 命令</title>
+      <link>https://www.kad8.com/post/linux/how-to-run-multiple-linux-commands-simultaneously.html</link>
+      <pubDate>Thu, 27 Jul 2023 02:33:55 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-run-multiple-linux-commands-simultaneously.html</guid>
+      <description>&lt;p&gt;了解如何在 Linux 中同时执行多个命令可以显著提高您的效率和生产力。本文将指导您通过各种方式在单行中运行多个 Linux 命令，甚至如何自动化重复的任务。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux性能优化</title>
       <link>https://www.kad8.com/post/linux/linux-performance-optimization.html</link>
