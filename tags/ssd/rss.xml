@@ -6,7 +6,16 @@
     <description>Recent content in SSD on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 25 Jul 2023 10:28:46 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/ssd/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 22:19:49 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/ssd/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无惧SSD压力 8月起机械硬盘要涨价</title>
+      <link>https://www.kad8.com/post/datacenter/prices-of-hard-drive-will-raise-in-auguest.html</link>
+      <pubDate>Sat, 29 Jul 2023 22:19:49 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/prices-of-hard-drive-will-raise-in-auguest.html</guid>
+      <description>&lt;p&gt;在装机硬盘选择上，现在大家几乎默认选择SSD硬盘，系统盘没人选HDD机械硬盘了，然而对市场来说，HDD硬盘厂商似乎并不担心被SSD侵蚀份额，8月份还会上调价格。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>聊聊闪存存储的延迟可预测性</title>
       <link>https://www.kad8.com/post/datacenter/predictability-on-unpredictable-flash-storage-with-a-light-neural-network.html</link>
