@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 22 Jul 2023 12:12:08 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 12:50:46 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何做个PCB电动机</title>
+      <link>https://www.kad8.com/post/hardware/how-to-make-a-pcb-motor.html</link>
+      <pubDate>Sat, 05 Aug 2023 12:50:46 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/how-to-make-a-pcb-motor.html</guid>
+      <description>&lt;p&gt;电动机印制电路板的每一层都有一组线圈，它们堆叠在一起并互相连接以形成连续的迹线。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>图文详解PCB术语</title>
       <link>https://www.kad8.com/post/hardware/detailed-explanation-of-PCB-terminology-with-pictures-and-texts.html</link>
