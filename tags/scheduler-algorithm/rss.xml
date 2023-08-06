@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scheduler Algorithm on 北南南北</title>
+    <link>https://www.kad8.com/tags/scheduler-algorithm/</link>
+    <description>Recent content in Scheduler Algorithm on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 05 Aug 2023 23:13:15 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/scheduler-algorithm/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多核同构SMP--调度算法分析</title>
+      <link>https://www.kad8.com/post/linux/smp-scheduler-algorithm.html</link>
+      <pubDate>Sat, 05 Aug 2023 23:13:15 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/smp-scheduler-algorithm.html</guid>
+      <description>随着智能化产品的需求不断提高，慢慢的单芯片单核处理器已经不能满足我们的需求，于是就在一个芯片上集成两个或多个核心，进而转向了多核处理器的发展，多核处理器具有更高的计算密度和更强的并行处理能力，所以它也是大趋势。多核处理器从硬件的角度来区分，又分为同构和异构：
+ 多核同构处理器：一个处理器的多个核心的体系架构是一样的，如：T113 多核异构处理器：一个处理器中包含不同体系架构的核心，如：STM32MP157  多核处理器从软件的角度来区分，又分为SMP和AMP：
+ SMP：又称对称多处理（Symmetric multiprocessing），只有一个操作系统（OS）实例上运行多个核心，一个OS同等的管理各个内核，为各个内核分配工作负载，系统中所有的内核平等地访问内存资源和外设资源。 AMP：又称非对称多处理（Asymmetric Multi-Processing），每个核心运行自己的OS或同一OS的独立实例，或者说不运行OS，如运行裸机，每个内核有自己独立的内存空间，也可以和其它内核共享部分内存空间，每个核心相对独立地运行不同的任务，但是有一个核心为主要核心，它负责控制其它核心以及整个系统的运 行，而其它核心负责“配合”主核心来完成特定的任务。  本篇文章围绕SMP展开讲解。
+什么是SMP 对称多处理器结构 , 英文名称为 &amp;ldquo;Symmetrical Multi-Processing&amp;rdquo; , 简称SMP。SMP又称为UMA, 全称&amp;quot;Uniform Memory Access&amp;quot;, 中文名称&amp;quot;统一内存访问架构&amp;quot;。
+在 &amp;quot; 对称多处理器结构 &amp;quot; 的 系统中 , 所有的处理器单元的地位都是平等的 , 一般指的是服务器设备上 , 运行的 多个 CPU , 没有 主次/从属 关系，都是平等的。
+这些处理器共享所有的设备资源, 所有的资源对处理器单元具有相同的可访问性, 如: 内存, 总线等，多个CPU处理器共享相同的物理内存, 每个CPU访问相同的物理地址, 所消耗的时间是相同的;
+SMP的优缺点 优点：避免了结构障碍, 其最大的特点是所有的资源共享。
+缺点：SMP架构的系统, 扩展能力有限, 有瓶颈限制。如: 内存瓶颈限制, 每个CPU处理器必须通过相同的总线访问相同的内存资源, 如果CPU数量不断增加, 使用同一条总线, 就会导致内存访问冲突; 这样就降低了CPU的性能;
+操作系统如何满足SMP  公平共享: CPU的负载, 需要公平地共享, 不能出现某个CPU空闲, 造成资源浪费。 可设置线程(进程)与CPU亲和性: 可以为某些类型的线程（进程）与指定的处理器设置亲和性, 可以针对性地匹配线程（进程）与处理器。 线程（进程）迁移: 可以将线程（进程）在不同的CPU处理器之间进行迁移 。  总结：操作系统的SMP对称多处理器结构调度，核心就是将线程（进程）迁移到合适的处理器上, 并且可以保持各个处理器的负载均衡。</description>
+    </item>
+    
+  </channel>
+</rss>
