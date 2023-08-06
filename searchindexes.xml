@@ -16,6 +16,28 @@
   </entry>
   
   <entry>
+    <title>Napatech如何将服务器转变为网络安全设备</title>
+    <url>/post/datacenter/napatech-turned-servers-into-cybersecurity-appliances.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>Intel</tag>
+      <tag>Smart NIC</tag>
+    </tags>
+    <content type="html"><![CDATA[目前，几乎所有企业、政府机构、非营利实体及其它各类型组织都面临着网络安全挑战，随着网络罪犯不断提高作案能力，这类挑战将日益加剧。
+网络安全现状 病毒、木马、蠕虫和其它恶意软件数量的增加，分布式拒绝服务 (DDoS) 攻击的蔓延，物联网设备与互联网的融合，以及数据中心线路速度的不断增长（从 1 Gbps 增长至 10 Gbps、25 Gbps 乃至 40 Gbps），各种趋势进一步加剧了网络安全挑战。
+开源网络安全软件的缺点 在汹涌的数据海啸中，我们需要使用专业的软硬件确保网络安全性。网络安全呈现双轨并进的发展态势，其中既包括根据网络安全需求开发的自定义软硬件（较为昂贵），也包括开源网络安全软件，这些开源安全软件包括：
+ Zeek（前身为 Bro）：Zeek 入侵检测系统 (IDS) 框架是一款非常强大的网络监控工具，可捕捉有关网络连接的数百个元数据字段。这些元数据可为网络流量提供无与伦比的可视性，帮助我们识别异常行为，如可疑或威胁活动。 Suricata：Suricata 是一款成熟的开源网络威胁检测引擎，具备实时网络入侵检测、内联入侵防御 (IPS)、网络安全监控 (NSM) 和捕捉数据包离线处理等功能。 Snort：Snort 是一款开源网络 IPS 工具，可在 IP 网络上执行实时流量分析和数据包记录。该工具可实施协议分析、内容搜索/匹配，并可用于检测各种攻击与探头，包括缓冲区溢出、秘密端口扫描、CGI 攻击、服务器信息块 (SMB) 探头及操作系统指纹识别尝试等。 ntop n2disk 和 nProbe Cento：ntop n2disk 和 ntop nProbe Cento 分别是网络流量记录器和高速流量分析探头，支持 1/10/100 Gbps 以太网连接。  相比定制化的网络安全系统，开源网络安全软件具有更低的成本，但基于 CPU 的服务器无力应对流量增长。使用开源网络安全软件检测实时数据流时，每台基于 CPU 的服务器最高可达到约 15 Gbps 的速率。但是在数据中心，网络安全系统所产生的负载往往会远高于这个数值。
+这时候用户往往使用多台基于 CPU 的网络安全服务器处理较大负载，他们通常利用负载均衡器将入站流量分为大小适当的数据流，并将这些数据流分配至各个网络安全服务器。分别通过开源网络安全软件进行处理。在这种方式中，由于服务器节点增加、采购负载均衡器等原因，会推高网络安全系统的整体成本。
+英特尔® 可编程加速卡加速网络应用 借助一款基于 FPGA 的加速器卡，即采用英特尔® Arria® 10 GX FPGA 的英特尔® 可编程加速卡 (PAC)，Napatech 获得了一种中间方案，从而提升了开源网络安全应用的性能，实现了加速。
+此外，采用英特尔® Arria® 10 GX FPGA 的英特尔® PAC 基于 FPGA 的通用型加速技术还可帮助 Napatech 加速其他网络应用，包括：
+ TRex：TRex 是一款开源状态和无状态流量生成器，基于数据平面开发套件 (DPDK)。通过对真实流量模板的预处理和使用，TRex 可实现智能重播，生成第 4 层到第 7 层流量。 Wireshark：Wireshark 是一款广泛使用的网络协议分析器，可提供网络活动的微观视图。Wireshark 是实际上（通常也是法定的）协议分析标准，被众多企业、非营利机构、政府机构和教育机构广泛使用。  英特尔® PAC 中的英特尔® Arria® 10 FPGA 可加速关键网络安全与其它网络应用，支持具备适当配置的服务器全速处理 40-Gbps 流量，且不会遗漏任何数据包。最新的加速统计数据如下：
+ Suricata – 加速 4 倍 n2disk – 加速 3 倍 TRex – 加速 4 倍 Wireshark – 加速 7 倍  采用英特尔® Arria® 10 GX FPGA 的英特尔® 可编程加速卡 (PAC)
+面向采用英特尔® Arria® 10 GX FPGA 的英特尔® 可编程加速卡的 Napatech Link™ Capture Software 将英特尔® 加速器卡转变为 SmartNIC，对上述开源应用实施多种加速网络安全和其他网络功能，数据中心运营商可根据特定要求选择所需的网络安全应用。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>如何做个PCB电动机</title>
     <url>/post/hardware/how-to-make-a-pcb-motor.html</url>
     <categories><category>Hardware</category>
