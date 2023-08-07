@@ -6,7 +6,34 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Aug 2023 23:13:15 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 10:54:18 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Core</title>
+      <link>https://www.kad8.com/tags/core/</link>
+      <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://www.kad8.com/tags/intel/</link>
+      <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/intel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ultra</title>
+      <link>https://www.kad8.com/tags/ultra/</link>
+      <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/ultra/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Scheduler Algorithm</title>
       <link>https://www.kad8.com/tags/scheduler-algorithm/</link>
@@ -22,15 +49,6 @@
       <pubDate>Sat, 05 Aug 2023 23:13:15 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/smp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intel</title>
-      <link>https://www.kad8.com/tags/intel/</link>
-      <pubDate>Sat, 05 Aug 2023 22:59:53 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/intel/</guid>
       <description></description>
     </item>
     
@@ -130,15 +148,6 @@
       <pubDate>Thu, 27 Jul 2023 05:47:43 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/alder-lake-raptor-lake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Core</title>
-      <link>https://www.kad8.com/tags/core/</link>
-      <pubDate>Thu, 27 Jul 2023 05:47:43 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/core/</guid>
       <description></description>
     </item>
     

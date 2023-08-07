@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Aug 2023 23:13:15 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 10:54:18 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>Intel 4工艺太难了！酷睿Ultra终于突破5GHz</title>
+      <link>https://www.kad8.com/post/news/intel-core-ultra-finally-breaks-through-5G-HZ.html</link>
+      <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/news/intel-core-ultra-finally-breaks-through-5G-HZ.html</guid>
+      <description>&lt;p&gt;无论是14nm还是10nm，Intel这些年的新工艺都有一个通性：刚诞生的时候性能平平，高频率都上不去，只能用于笔记本移动端(分别对应5代酷睿、10代酷睿)，后期才不断成熟，比如到了13代酷睿就达到史无前例的6GHz。&lt;/p&gt;</description>
     </item>
     
     <item>
