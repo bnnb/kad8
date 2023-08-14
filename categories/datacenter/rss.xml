@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Aug 2023 22:59:53 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 12:37:51 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HPC需求高速增长推动224G以太网SerDes技术发展加速</title>
+      <link>https://www.kad8.com/post/datacenter/hpc-demand-growth-promotes-the-development-of-224G-Ethernet-SerDes-technology.html</link>
+      <pubDate>Mon, 14 Aug 2023 12:37:51 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/hpc-demand-growth-promotes-the-development-of-224G-Ethernet-SerDes-technology.html</guid>
+      <description>&lt;p&gt;数据，是现在网联社会的核心，数据量级的提升远超我们的想象。根据IDC的预测，到2025年全球的数据量将达到175 ZB。数据量的增长带动了对高带宽和网络速度这些新基础设施的需求。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Napatech如何将服务器转变为网络安全设备</title>
       <link>https://www.kad8.com/post/datacenter/napatech-turned-servers-into-cybersecurity-appliances.html</link>

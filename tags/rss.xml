@@ -6,7 +6,34 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 07 Aug 2023 10:54:18 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 12:37:51 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HPC</title>
+      <link>https://www.kad8.com/tags/hpc/</link>
+      <pubDate>Mon, 14 Aug 2023 12:37:51 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/hpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://www.kad8.com/tags/network/</link>
+      <pubDate>Mon, 14 Aug 2023 12:37:51 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SerDes</title>
+      <link>https://www.kad8.com/tags/serdes/</link>
+      <pubDate>Mon, 14 Aug 2023 12:37:51 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/serdes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Core</title>
       <link>https://www.kad8.com/tags/core/</link>
