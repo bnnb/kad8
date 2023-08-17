@@ -26,7 +26,8 @@
       <tag>Mint</tag>
       <tag>Debian</tag>
     </tags>
-    <content type="html"><![CDATA[Linux Mint 自带音视频解码器，开箱即用，Ubuntu还要下载编解码器才能播放
+    <content type="html"><![CDATA[在Linux的世界里，Ubuntu是广受欢迎的一个发行版，那么究竟还有哪些Linux的发行版可以和Ubuntu媲美的呢，今天就让我们一起来看看。
+Linux Mint 自带音视频解码器，开箱即用，Ubuntu还要下载编解码器才能播放
 主要利用免费和开源的编程，对一些限制性的编程，如 MP3、DVD 和 Adobe Flash 进行了豁免。 Linux Mint 对独占编程的考虑很奇怪； 许多 Linux 流通自然排除了限制性编程，因为一些 Linux 拨款的共同目标是坚持自由和开源编程的模型。 它可以通过各种桌面环境进行浏览，包括默认的 Cinnamon 桌面、APT、MATE 和 KDE。
 Linux Mint 伴随着大量引入的编程，其中包括 VLC 播放器、Firefox、LibreOffice 等。它允许组织端口利用其防火墙关闭，并且可以访问重做端口选择。 默认的 Linux Mint 桌面环境 CinnamonandMATE 支持多种语言。 通过利用适用于 Linux 的 Wine Windows 相似层编程或虚拟化编程（包括 VMware 或基于内核的虚拟机），它同样可以运行许多用于 Microsoft Windows 的项目。
 Debian GNU / Linux 于1993年首次公布。它的创始人Ian Murdock的初始想法是在空闲时间创建一个由数百名志愿者开发的完全非商业项目。当时怀疑论者远远超过乐观主义者，似乎注定要夭折收尾，但实际情况却恰恰相反。 Debian不仅幸存下来，而且还在不到十年的时间里成为了最大的Linux发行版，也是有史以来创建的最大的协作软件项目！
