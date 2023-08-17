@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Aug 2023 12:37:51 -0400</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Aug 2023 06:33:59 -0400</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,20 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>哪个Linux发行版可以替代Ubuntu</title>
+      <link>https://www.kad8.com/post/linux/which-linux-distribution-could-be-alternative-of-ubuntu.html</link>
+      <pubDate>Thu, 17 Aug 2023 06:33:59 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/which-linux-distribution-could-be-alternative-of-ubuntu.html</guid>
+      <description>Linux Mint 自带音视频解码器，开箱即用，Ubuntu还要下载编解码器才能播放
+主要利用免费和开源的编程，对一些限制性的编程，如 MP3、DVD 和 Adobe Flash 进行了豁免。 Linux Mint 对独占编程的考虑很奇怪； 许多 Linux 流通自然排除了限制性编程，因为一些 Linux 拨款的共同目标是坚持自由和开源编程的模型。 它可以通过各种桌面环境进行浏览，包括默认的 Cinnamon 桌面、APT、MATE 和 KDE。
+Linux Mint 伴随着大量引入的编程，其中包括 VLC 播放器、Firefox、LibreOffice 等。它允许组织端口利用其防火墙关闭，并且可以访问重做端口选择。 默认的 Linux Mint 桌面环境 CinnamonandMATE 支持多种语言。 通过利用适用于 Linux 的 Wine Windows 相似层编程或虚拟化编程（包括 VMware 或基于内核的虚拟机），它同样可以运行许多用于 Microsoft Windows 的项目。
+Debian GNU / Linux 于1993年首次公布。它的创始人Ian Murdock的初始想法是在空闲时间创建一个由数百名志愿者开发的完全非商业项目。当时怀疑论者远远超过乐观主义者，似乎注定要夭折收尾，但实际情况却恰恰相反。 Debian不仅幸存下来，而且还在不到十年的时间里成为了最大的Linux发行版，也是有史以来创建的最大的协作软件项目！
+Debian GNU / Linux的成功可以用下面的数字来说明。它由1000多名志愿者开发，它的软件库包含近50,000个二进制包（编译为8个处理器架构），有120个基于Debian的发行版和live CD。这些数字是任何其他基于Linux的操作系统无法比拟的。 Debian主要有三个主要分支（或四个，如果包括增加稳定性的“实验”分支）：“unstable”（也称为“sid”），“testing”和“stable ”。软件包和功能的逐步整合和稳定性，以及项目完善的质量控制机制，使得Debian获得了今天可用的最佳测试和无缺陷发行版之一的声誉。
+Fedora Linux 是由 Red Hat 赞助的社区构建发行版，在被 IBM 收购之前，它是世界上最赚钱的开源公司。Red Hat 仍然是开源世界的巨头，为维护整个 Linux 生态系统所依赖的大部分软件和基础设施的开发人员付费。</description>
     </item>
     
     <item>

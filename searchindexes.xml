@@ -16,6 +16,31 @@
   </entry>
   
   <entry>
+    <title>哪个Linux发行版可以替代Ubuntu</title>
+    <url>/post/linux/which-linux-distribution-could-be-alternative-of-ubuntu.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Ubuntu</tag>
+      <tag>Fedora</tag>
+      <tag>Mint</tag>
+      <tag>Debian</tag>
+    </tags>
+    <content type="html"><![CDATA[Linux Mint 自带音视频解码器，开箱即用，Ubuntu还要下载编解码器才能播放
+主要利用免费和开源的编程，对一些限制性的编程，如 MP3、DVD 和 Adobe Flash 进行了豁免。 Linux Mint 对独占编程的考虑很奇怪； 许多 Linux 流通自然排除了限制性编程，因为一些 Linux 拨款的共同目标是坚持自由和开源编程的模型。 它可以通过各种桌面环境进行浏览，包括默认的 Cinnamon 桌面、APT、MATE 和 KDE。
+Linux Mint 伴随着大量引入的编程，其中包括 VLC 播放器、Firefox、LibreOffice 等。它允许组织端口利用其防火墙关闭，并且可以访问重做端口选择。 默认的 Linux Mint 桌面环境 CinnamonandMATE 支持多种语言。 通过利用适用于 Linux 的 Wine Windows 相似层编程或虚拟化编程（包括 VMware 或基于内核的虚拟机），它同样可以运行许多用于 Microsoft Windows 的项目。
+Debian GNU / Linux 于1993年首次公布。它的创始人Ian Murdock的初始想法是在空闲时间创建一个由数百名志愿者开发的完全非商业项目。当时怀疑论者远远超过乐观主义者，似乎注定要夭折收尾，但实际情况却恰恰相反。 Debian不仅幸存下来，而且还在不到十年的时间里成为了最大的Linux发行版，也是有史以来创建的最大的协作软件项目！
+Debian GNU / Linux的成功可以用下面的数字来说明。它由1000多名志愿者开发，它的软件库包含近50,000个二进制包（编译为8个处理器架构），有120个基于Debian的发行版和live CD。这些数字是任何其他基于Linux的操作系统无法比拟的。 Debian主要有三个主要分支（或四个，如果包括增加稳定性的“实验”分支）：“unstable”（也称为“sid”），“testing”和“stable ”。软件包和功能的逐步整合和稳定性，以及项目完善的质量控制机制，使得Debian获得了今天可用的最佳测试和无缺陷发行版之一的声誉。
+Fedora Linux 是由 Red Hat 赞助的社区构建发行版，在被 IBM 收购之前，它是世界上最赚钱的开源公司。Red Hat 仍然是开源世界的巨头，为维护整个 Linux 生态系统所依赖的大部分软件和基础设施的开发人员付费。
+Red Hat 并不直接开发 Fedora Linux，尽管该公司的一些员工是 Fedora 社区的成员。相反，Red Hat 使用 Fedora Linux 开发自己的独立产品 CentOS 和 Red Hat Enterprise Linux。这两个版本的 Linux 广泛用于企业界、学术机构或任何需要维护自己的服务器的人。
+Fedora 提供易于学习的桌面，集成了大多数其他 Linux 发行版之前的最新功能，并内置了 SELinux 等安全工具。
+Arch Linux 是在2002年由加拿大计算机科学专业毕业生Judd Vinet在2002年推出的，几年来，它一直是一个为中级和高级Linux用户设计的边缘项目。但是它“滚动更新”，只需要安装一次，然后保持一直更新，不要从头安装新的系统。这都要感谢其强大的包管理器和一个总是最新的软件库。因此，Arch Linux的“发行版”很少，而且现在只限于一个基本的安装光盘，只有在基本系统发生相当大的变化时，才会发行新的安装介质。
+Arch Linux除了拥有备受推崇的“滚动发布”更新机制之外，还以其快速和强大的软件包管理器“Pacman”而闻名，能够从源代码安装软件包，并且由于其AUR基础架构，以及经过充分测试的软件包不断增加的软件库。其高度重视的文档，以及卓越的Arch Linux手册，使得一些高级Linux用户可以自行安装和定制分发。用户可以使用的强大工具意味着发行版可以无限定制到最细微的细节，并且没有两个安装可能是相同的。
+引用于 哪个Linux发行版可以替代Ubuntu  
+]]></content>
+  </entry>
+  
+  <entry>
     <title>HPC需求高速增长推动224G以太网SerDes技术发展加速</title>
     <url>/post/datacenter/hpc-demand-growth-promotes-the-development-of-224G-Ethernet-SerDes-technology.html</url>
     <categories><category>DataCenter</category>
