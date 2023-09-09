@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>2023Q2全球WLAN市场：思科、HPE、华为位列前三</title>
+    <url>/post/datacenter/worldwide-top-5-enterprise-wlan-companies.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>WLAN</tag>
+    </tags>
+    <content type="html"><![CDATA[根据IDC全球季度无线局域网跟踪报告发布的结果，WLAN企业细分市场在2023年第二季度的收入同比增长43.3%，达到30亿美元；WLAN消费细分市场同比下降14.0%。
+Wi-Fi 6 和 Wi-Fi 6E 作为 WLAN 行业的最新标准，将继续推动企业细分市场的增长。与此同时，Wi-Fi 6E 将 Wi-Fi 的使用扩展到 6 GHz 频谱频段，增长势头持续强劲，23 年第二季度，收入环比增长 51.5%。2023 年第二季度，Wi-Fi 6 占消费市场收入的 51.6%。
+IDC 企业网络研究经理Brandon Butler表示：“推动 WLAN 市场增长的一个重要因素仍然是组件短缺和供应链中断的缓解，这使得供应商从完成积压的产品订单中获得收入。同时，新 Wi-Fi 标准的采用也增加了市场动力。”
+企业 WLAN 市场在全球范围内普遍取得了强劲的业绩。2023 年第二季度，美国市场同比增长 79.5%，加拿大市场同比增长 79.1%，拉丁美洲市场同比增长 49.6%。西欧市场同比增长 29.7%，中欧和东欧市场同比增长 42.0%；在中东和非洲地区，市场收入增长了51.0%；亚太地区（不包括日本和中国），市场上涨36.8%；中国市场下降了 12.5%，日本市场上涨了 14.6%。
+企业市场份额 2023 年第二季度，思科企业 WLAN 收入同比增长 65.6%，达到 13 亿美元。截至本季度末，该公司的市场份额为43.5%。
+HPE Aruba Networking 收入同比增长 55.3%，该季度市场份额为 16.2%。
+华为企业WLAN收入同比增长26.6%，2023年第二季度的市场份额达到7.5%。
+Ubiquiti 企业 WLAN 收入同比增长了 4.4%，该季度市场份额为 5.8%。
+CommScope 企业 WLAN 收入同比增长 72.2%，市场份额为 4.8%。
+Juniper Networks 企业 WLAN 收入同比增长 39.3%，市场份额为3.7%。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>866.5亿！全球以太网交换机市场Top 3 出炉</title>
     <url>/post/datacenter/worldwide-top-3-ethernet-switch-companies.html</url>
     <categories><category>DataCenter</category>
@@ -23,7 +44,7 @@
     <tags>
       <tag>Network</tag>
       <tag>Ethernet</tag>
-      <tag>Top</tag>
+      <tag>Top 3</tag>
       <tag>Revenue</tag>
     </tags>
     <content type="html"><![CDATA[据IDC报告显示，2023年第二季度全球以太网交换机市场收入为118亿美元（约866.5亿人民币），同比增长 38.4%。2023 年第二季度，全球企业和服务提供商 (SP) 路由器市场总收入达到 46 亿美元，同比增长 9.4%。
