@@ -16,6 +16,31 @@
   </entry>
   
   <entry>
+    <title>CPU架构 C-states</title>
+    <url>/post/datacenter/cpu-architecture-c-state.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>CPU</tag>
+      <tag>C State</tag>
+    </tags>
+    <content type="html"><![CDATA[Power and Performance是使用CPU当中一个重要的课题，不管是芯片厂商，系统厂商，还是互联网大厂都会有专门的人员来做这方面的调优。
+我们希望CPU可以做到，静若处子，动若狡兔。
+当我需要你的时候，你就疯狂的运行，追求极致的性能，当我不需要你的时候，请你安静地休息，睡得越悄无声息越好。在之前的文章中，我们介绍了CPU的几种电源状态和性能状态，今天我们就来讲一讲其中的C-states。
+C-states介绍 在CPU中，C-states（C状态）为软件提供了请求CPU进入低功耗状态的能力，C-states就是通过关闭core或其他逻辑单元来实现的。
+如果CPU支持同时多线程（SMT：simultaneous multithreading ），那么单个CPU core可以支持多个软件线程。每个硬件线程都有自己的状态，并有机会请求不同的C-states。这些被称为线程C-states，以TCx表示（其中x是一个整数）。为了让一个core进入core C-state（以CCx表示），该core上的每个线程必须请求该状态或更深层次的状态。例如，对于支持两个线程的core，如果任何一个线程处于TC0状态，那么该core必须处于CC0状态。如果一个线程处于TC3状态，另一个线程处于TC6状态，那么该core将被允许进入CC3状态。线程C-states本身仅能节省少量的功耗，而core C-states可以显著地节省功耗。
+同样的道理，还有package C-states，当一个CPU的所有core进入深度C-state时，那么整个CPU的package就可以进入这些状态。这些状态通常表示为PCx或PkgCx（其中x是一个整数）。通常来说，package C-states的编号与该package中的core状态相关联，不过也不一定是这样。例如，某些服务器处理器上的PC2状态是在该package中的所有core都处于CC3或CC6状态，但还会有一些条件限制使得CPU只能停留在PC2，而不是更深的休眠状态。
+在实际应用中，C-states的运用对于节能和功耗管理至关重要。通过充分利用C-states，我们可以实现对CPU的动态功耗管理，根据实际使用情况灵活调整CPU的性能与功耗平衡。对于移动设备和笔记本电脑来说，C-states可以显著延长电池续航时间，提供更好的用户体验；对于服务器和数据中心来说，C-states可以降低能源消耗，提高整体系统效率。
+然而，C-states的管理也存在一些挑战。合理的C-states策略需要综合考虑性能需求、功耗控制和响应速度。过于激进的C-states配置可能导致性能下降，而过于保守的配置则无法发挥节能潜力。
+Thread C-states 软件可以在线程级别请求进入C-states。当一个线程进入线程C-state时，如果没有引发core C-state，那么通常不会产生可见的功耗节省效果，或者节省的功耗非常有限。在支持SMT的CPU上，线程C-states实际上是进入core C-states的一个中间步骤。而在不支持SMT的CPU上，线程C-states和core C-states实际上是相同的。
+通过将线程级别的C-states和core级别的C-states结合起来管理，我们可以更精确地控制CPU的功耗和性能。在一些高性能应用场景中，我们可以让某些线程进入较浅的C-states，以保持高性能，而其他较空闲的线程则可以进入更深的C-states，以实现节能效果。这种精细的管理方式可以使得CPU在兼顾性能的同时，最大限度地降低功耗。
+Core C-States 在C-states中，Core C-states的作用是确定core是处于开启还是关闭状态。在正常执行中，core通常处于C0状态，即活跃状态。当软件（通常是操作系统）指示逻辑处理器进入空闲状态时，它将进入一个C-state。
+各种唤醒事件可能触发core重新开始执行代码（常见的例子是中断和定时器）。软件向CPU提供关于应该进入的状态的提示。MWAIT指令用于告诉CPU进入C-state，并包含有关所需状态的参数。然而，CPU的电源管理子系统有权执行其认为最佳的状态（这称为C-state降级 C-state demotion），也就是说将在外，君命有所不受。操作系统可以建议CPU休息，但是CPU表示我还可以继续肝！
+Intel的不同代的CPU的C-state定义并没有硬性规定，但在跨多个产品系列中，这些定义基本保持一致。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>SR-IOV技术简介</title>
     <url>/post/datacenter/introduction-of-SR-IOV-technology.html</url>
     <categories><category>DataCenter</category>

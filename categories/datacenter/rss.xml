@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 10 Sep 2023 10:26:28 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 18:08:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU架构 C-states</title>
+      <link>https://www.kad8.com/post/datacenter/cpu-architecture-c-state.html</link>
+      <pubDate>Sun, 17 Sep 2023 18:08:45 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/cpu-architecture-c-state.html</guid>
+      <description>&lt;p&gt;Power and Performance是使用CPU当中一个重要的课题，不管是芯片厂商，系统厂商，还是互联网大厂都会有专门的人员来做这方面的调优。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>SR-IOV技术简介</title>
       <link>https://www.kad8.com/post/datacenter/introduction-of-SR-IOV-technology.html</link>
