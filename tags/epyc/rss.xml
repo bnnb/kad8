@@ -6,7 +6,16 @@
     <description>Recent content in EPYC on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 07 Sep 2023 22:23:28 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/epyc/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Sep 2023 12:00:27 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/epyc/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intel下代至强缓存暴增至448MB</title>
+      <link>https://www.kad8.com/post/datacenter/intel-next-xeon-Emerald-Rapids.html</link>
+      <pubDate>Mon, 25 Sep 2023 12:00:27 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/intel-next-xeon-Emerald-Rapids.html</guid>
+      <description>&lt;p&gt;Intel已经宣布，将在12月14日正式发布第五代可扩展至强Emerald Rapids，和酷睿Ultra同一天。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>降低29%能耗，AMD EPYC吊打同行</title>
       <link>https://www.kad8.com/post/datacenter/amd-epyc-helps-reducing-power-consumption.html</link>

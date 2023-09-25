@@ -16,6 +16,34 @@
   </entry>
   
   <entry>
+    <title>Intel下代至强缓存暴增至448MB</title>
+    <url>/post/datacenter/intel-next-xeon-Emerald-Rapids.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>EPYC</tag>
+      <tag>Bergamo</tag>
+      <tag>9754</tag>
+    </tags>
+    <content type="html"><![CDATA[Intel已经宣布，将在12月14日正式发布第五代可扩展至强Emerald Rapids，和酷睿Ultra同一天。
+它虽然只是Sapphire Rapids四代至强的升级版，不如明年Intel 3工艺的Granite Rapids、Sierra Forest变化那么大(后者288个小核)，但升级亮点依然不少。
+YuuKi_AnS放出了高端型号至强铂金8580的软件识别截图，证实为双芯片整合，60核心120线程，二级缓存每核心2MB、总计120MB，三级缓存多达300MB，合计420MB，比现在多了2.6倍。
+更关键的是，向上还有64核心旗舰，三级缓存增加到320MB，再加上128MB二级缓存，合计就是448MB，比现在增加足足3倍。
+当然，AMD EPYC那边更猛，96核心旗舰EPYC 9654 96MB二级缓存、384MB三级缓存，合计480MB，3D缓存加持的EPYC 9684X也又堆叠了768MB，合计1248MB。
+AMD Zen5如果能把二级缓存翻倍到每核心2MB，总缓存量又是一次突飞猛进。
+泄露消息显示，五代至强还会提升DDR5内存支持的频率，优化电源模式，集成Intel加速器引擎以提升能效，总体能效提升可达17％。
+回到桌面上，Intel最初计划在Meteor Lake这一代产品上更换新的接口LGA1851，但因为新的Intel 4工艺不够成熟，性能上不去，所以只能用于主流和轻薄笔记本，而高端游戏本、桌面都由13代酷睿的升级版14代酷睿来撑场面。
+事实上，Meteor Lake-S桌面版一度曾经做出样品，但最终被砍掉。
+Meteor Lake-S桌面版样品
+就在酷睿Ultra架构技术已经官宣、将于12月14日正式发布的时刻，Intel执行副总裁、客户端计算事业部总经理Michelle Johnston Holthaus却给出了惊人的说法。
+他确认，Meteor Lake确实会有桌面版，将在2024年发布，架构和移动版是完全一致的！
+从目前的情况看，Meteor Lake不可能突然变得足够高性能，达到i9-13900K这样的性能，毕竟已经可以基本确认，i9-14900K等首批六款K/KF型号将在10月17日发布，主流和低功耗版本的型号也已经流出。
+所谓的Meteor Lake桌面版，极有可能类似当年Boardwell五代酷睿唯二的桌面版i7-5775C、i5-5675C，本质上仍然是移动版本，只不过改成了桌面封装接口，当然不可能是下一代LGA1851，而肯定是现在的LGA1700。
+理论上，这样的产品型号不会多，也算是Meteor Lake最后的倔强了，但是也不排除完全可以满足65W主流市场需求，毕竟6+8核心用于i5、i3系列是足够了。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>CPU架构 C-states</title>
     <url>/post/datacenter/cpu-architecture-c-state.html</url>
     <categories><category>DataCenter</category>
