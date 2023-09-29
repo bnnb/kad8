@@ -16,6 +16,54 @@
   </entry>
   
   <entry>
+    <title>关于Linux下的crontab，你不知道的那些知识点</title>
+    <url>/post/linux/what-is-page-cache.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>page cache</tag>
+    </tags>
+    <content type="html"><![CDATA[什么是Page Cache Page Cache，翻译为页高速缓冲存储器。它是动态变化的，因为操作系统会将所有未直接分配给应用程序的物理内存都用于页面缓存。Page Cache是文件系统层级的缓存，用于缓存文件的页数据，属于内核管理的内存。从磁盘中读取到的内容是存储在page cache里的。
+为什么需要Page Cache Page Cache机制的目的是为了减少IO，提升IO磁盘读写的效率。由于程序的时间局部性和空间局部性，读写过的文件在下次还可能再次读取，如果每次读写文件都去磁盘中获取，显然读写性能太差，因为磁盘的读写速率相对于内存来说，慢了不止一点点。
+因为有Page Cache机制，所以我们可以发现读写一个文件第一次非常慢，但是第二次就会变得很快，这是因为第一次读写这个文件的时候，Linux内核已经把文件内容缓存到了内存中的Page Cache里面，第二次读写的时候，由于发现文件内容已经在内存中了，就直接从内存中读取了，这显然比从硬盘读取快很多。
+Page Cache的机制是很复杂的，那我们可不可以不用Page Cache呢？
+答案当然是可以的，我们可以在应用层实现自己的类似这种的Cache机制，比如MySQL的Buffer Pool，我们也可以在使用open打开文件时指定为Direct I/O来绕开Page Cache，所以说是否使用Page Cache还是由应用程序自己决定，Linux内核只是提供了这种机制，并非要求我们强制使用。
+Linux中Page Cache含义的变化 在 Linux 的实现中，文件 Cache 分为两个层面，一是 Page Cache，另一个是 Buffer Cache（块缓存）。page cache用于缓存文件的页数据，大小通常为4K；Buffer cache用于缓存块设备（如磁盘）的块数据，大小通常为1K。
+在Linux2.4版本的内核之前，page cache和buffer cache是完全分离的。但是块设备大多数是磁盘，磁盘上的数据又大多通过文件系统来组织，这种设计导致很多数据被缓存了两次，浪费内存空间。
+所以在2.4版本内核之后，两块内存近似融合在了一起，如果一个文件的页加载到了page cache，那么buffer cache只需要维护块指向页的指针。
+在2.6版本内核中，page cache和buffer cache进一步结合。每一个 Page Cache 包含若干 Buffer Cache。将文件一页一页缓存到page cache中，buffer cache里面的指针指向磁盘block。
+2.6内核中的buffer cache和page cache在处理上是保持一致的，但是存在概念上的差别，page cache是针对文件的cache，buffer是针对磁盘块数据的cache，仅此而已。
+Page Cache大小的计算 通过命令cat /proc/meminfo可以看到Linux内存管理统计相关的各项数据：
+Page Cache的大小有如下计算公式：
+Page Cache = Buffers + Cached + SwapCached = Active(file) + Inactive(file) + Shmem + SwapCached 先对等号左边的字段做一个说明：
+Buffers 是对原始磁盘块的临时存储，也就是用来缓存磁盘的数据，一般不会特别大（20MB 左右），Buffers 既可以用作“将要写入磁盘数据的缓存”，也可以用作“从磁盘读取数据的缓存”。
+Cached 是从磁盘读取文件的内存页缓存，但是不包括SwapCached，也就是用来缓存从文件读取的数据。Cached 既可以用作“从文件读取数据的页缓存”，也可以用作“写文件的页缓存”。
+SwapCached 是在打开了 Swap 分区后，把 Inactive(anon)+Active(anon) 这两项里的匿 名页给交换到磁盘（swap out），然后再读入到内存（swap in）后分配的内存。由于读入到 内存后原来的 Swap File 还在，所以 SwapCached 也可以认为是 File-backed page，即属 于 Page Cache。这样做的目的也是为了减少 I/O。注意，SwapCached 只在 Swap 分区打开的情况下才会有，我这个环境是关闭掉swap的，所以SwapCached为0。
+再来看右边的字段：
+在 Page Cache 中，Active(file)+Inactive(file) 是 File-backed page（与文件对应的内存 页），是最需要关注的部分。因为我们平时用的 mmap() 内存映射方式和 buffered I/O 来消 耗的内存就属于这部分。Active和Inactive的区别在于内存空间中是否包含最近被使用过的数据。当物理内存不足，不得不释放正在使用的内存空间时，会优先释放Inactive的内存空间。Linux内核中使用LRU表来分别记录对应的这两类文件内存页。
+Page Cache 中的 Shmem 是指匿名共享映射这种方式分配的内存 （free 命令中 shared 这一项），比如 tmpfs（临时文件系统）。
+free命令看到的buff/cache又是什么 Page Cache的概念很容易跟free命令看到的buff/cache混淆，所以这里我们有必要区分一下。
+free 命令中的 buff/cache 是由 Buffers、Cached 和 SReclaimable 这三项组成的，它强调的是内存的可回收性，也就是说，可以被回收的内存会 统计在这一项。它只是free命令为了统计内存可回收性人为将这三个值进行统计到一起的。
+buff/cache的大小还是来源于/proc/meminfo中看到的内存统计信息，计算公式如下：
+buff/cache = Buffers + Cached + SReclaimable Buffers和Cached的含义前面已经讲过了，我们来看看SReclaimable：
+SReclaimable 是 Slab 的一部分，是可以被回收的，例如缓存，linux内核使用 Slab 机制，管理文件系统的目录项和索引节点的缓存。Slab 包括两部分，其中的可回收部分，是指可以被回收的内核内存，包括目录项（dentry） 和索引节点（ inode ）的缓存等，用 SReclaimable 记录；而不可回收部分，用 SUnreclaim 记录。
+Linux 文件系统为每个文件都分配两个数据结构，索引节点（index node）和目录项（directory entry）。它们主要用来记录文件的元信息和目录结构。
+索引节点，简称为 inode，用来记录文件的元数据，比如 inode 编号、文件大小、访问权限、修改日期、数据的位置等。索引节点和文件一一对应，它跟文件内容一样，都会被持久化存储到磁盘中。所以记住，索引节点同样占用磁盘空间。
+目录项，简称为 dentry，用来记录文件的名字、索引节点指针以及与其他目录项的关联关系。多个关联的目录项，就构成了文件系统的目录结构。不过，不同于索引节点，目录项是由内核维护的一个内存数据结构，所以通常也被叫做目录项缓存。
+换句话说，索引节点是每个文件的唯一标志，而目录项维护的正是文件系统的树状结构。目录项和索引节点的关系是多对一，你可以简单理解为，一个文件可以有多个别名。举个例子，通过硬链接为文件创建的别名，就会对应不同的目录项，不过这些目录项本质上还是链接同一个文件，所以，它们的索引节点相同。
+目录项本身就是一个内存缓存，而索引节点则是存储在磁盘中的数据。在前面的 Buffers 和 Cached 原理中，我们提到过，为了协调慢速磁盘与快速内存和 CPU 的性能差异，文件内容会缓存到页缓存 Cache 中。其实，这些索引节点也会缓存到内存中，加速文件的访问。
+可以通过下面这张图，理解一下目录项、索引节点以及文件数据的关系：
+总结 内存页包括文件页和匿名页，内核缓存的磁盘数据（Buffer）和内核缓存的文件数据（Cache）都叫作文件页，包括page cache、slab中的dcache、icache、用户进程的可执行程序的代码段。
+匿名页包括进程使用各种api（malloc,mmap,brk/sbrk）申请到的物理内存(这些api通常只是申请虚拟地址，真实的页分配发生在page fault中)，包括堆、栈，进程间通信中的共享内存，bss段，数据段，tmpfs的页。
+文件页和匿名页两个内存的区别在于，物理内存的内容是否与物理磁盘上的文件相关联，文件页与物理磁盘的文件是有关联的，而匿名页没有。
+可以看出来，Page Cache的大小等于内核磁盘数据和文件数据的缓存与匿名页通过Swap机制交换出去的内存大小之和，也等于活跃文件页、未活跃文件页、匿名共享映射内存与匿名页通过Swap机制交换出去的内存大小之和。
+而free命令看到的buff/cache等于内核磁盘数据和文件数据的缓存与 Slab 机制中文件系统的目录项和索引节点的缓存的可回收部分之和，指的是可直接回收的内存大小。
+所以也可以看出来，文件页的缓存，在内存不足时是可以直接回收的（或者是脏页先会写到磁盘再回收），而匿名页是程序动态申请的内存，是不能直接回收的，即使是匿名页通过Swap机制换出的内存，以后也是得再从磁盘换入的。
+另外，对于上面Page Cache和buff/cache的计算公式，我们需要注意一下，在做比较的过程中，一定要考虑到这些数据是动态变化的，而且执行 命令本身也会带来内存开销，所以这个等式未必会严格相等。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Intel下代至强缓存暴增至448MB</title>
     <url>/post/datacenter/intel-next-xeon-Emerald-Rapids.html</url>
     <categories><category>DataCenter</category>

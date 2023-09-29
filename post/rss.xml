@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 25 Sep 2023 12:00:27 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 12:08:51 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,27 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>关于Linux下的crontab，你不知道的那些知识点</title>
+      <link>https://www.kad8.com/post/linux/what-is-page-cache.html</link>
+      <pubDate>Fri, 29 Sep 2023 12:08:51 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/what-is-page-cache.html</guid>
+      <description>什么是Page Cache Page Cache，翻译为页高速缓冲存储器。它是动态变化的，因为操作系统会将所有未直接分配给应用程序的物理内存都用于页面缓存。Page Cache是文件系统层级的缓存，用于缓存文件的页数据，属于内核管理的内存。从磁盘中读取到的内容是存储在page cache里的。
+为什么需要Page Cache Page Cache机制的目的是为了减少IO，提升IO磁盘读写的效率。由于程序的时间局部性和空间局部性，读写过的文件在下次还可能再次读取，如果每次读写文件都去磁盘中获取，显然读写性能太差，因为磁盘的读写速率相对于内存来说，慢了不止一点点。
+因为有Page Cache机制，所以我们可以发现读写一个文件第一次非常慢，但是第二次就会变得很快，这是因为第一次读写这个文件的时候，Linux内核已经把文件内容缓存到了内存中的Page Cache里面，第二次读写的时候，由于发现文件内容已经在内存中了，就直接从内存中读取了，这显然比从硬盘读取快很多。
+Page Cache的机制是很复杂的，那我们可不可以不用Page Cache呢？
+答案当然是可以的，我们可以在应用层实现自己的类似这种的Cache机制，比如MySQL的Buffer Pool，我们也可以在使用open打开文件时指定为Direct I/O来绕开Page Cache，所以说是否使用Page Cache还是由应用程序自己决定，Linux内核只是提供了这种机制，并非要求我们强制使用。
+Linux中Page Cache含义的变化 在 Linux 的实现中，文件 Cache 分为两个层面，一是 Page Cache，另一个是 Buffer Cache（块缓存）。page cache用于缓存文件的页数据，大小通常为4K；Buffer cache用于缓存块设备（如磁盘）的块数据，大小通常为1K。
+在Linux2.4版本的内核之前，page cache和buffer cache是完全分离的。但是块设备大多数是磁盘，磁盘上的数据又大多通过文件系统来组织，这种设计导致很多数据被缓存了两次，浪费内存空间。
+所以在2.4版本内核之后，两块内存近似融合在了一起，如果一个文件的页加载到了page cache，那么buffer cache只需要维护块指向页的指针。
+在2.6版本内核中，page cache和buffer cache进一步结合。每一个 Page Cache 包含若干 Buffer Cache。将文件一页一页缓存到page cache中，buffer cache里面的指针指向磁盘block。
+2.6内核中的buffer cache和page cache在处理上是保持一致的，但是存在概念上的差别，page cache是针对文件的cache，buffer是针对磁盘块数据的cache，仅此而已。
+Page Cache大小的计算 通过命令cat /proc/meminfo可以看到Linux内存管理统计相关的各项数据：
+Page Cache的大小有如下计算公式：
+Page Cache = Buffers + Cached + SwapCached = Active(file) + Inactive(file) + Shmem + SwapCached 先对等号左边的字段做一个说明：</description>
     </item>
     
     <item>
