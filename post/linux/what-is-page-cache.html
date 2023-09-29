@@ -390,7 +390,7 @@
       
   <h2 id="什么是page-cache">什么是Page Cache</h2>
 <p>Page Cache，翻译为页高速缓冲存储器。它是动态变化的，因为操作系统会将所有未直接分配给应用程序的物理内存都用于页面缓存。Page Cache是文件系统层级的缓存，用于缓存文件的页数据，属于内核管理的内存。从磁盘中读取到的内容是存储在page cache里的。</p>
-<p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-1.png" alt="Linux Page Cache"></p>
+<p><img src="https://www.kad8.com/imgs/post/linux-page-cache-1.png" alt="Linux Page Cache"></p>
 <h2 id="为什么需要page-cache">为什么需要Page Cache</h2>
 <p>Page Cache机制的目的是为了减少IO，提升IO磁盘读写的效率。由于程序的时间局部性和空间局部性，读写过的文件在下次还可能再次读取，如果每次读写文件都去磁盘中获取，显然读写性能太差，因为磁盘的读写速率相对于内存来说，慢了不止一点点。</p>
 <p>因为有Page Cache机制，所以我们可以发现读写一个文件第一次非常慢，但是第二次就会变得很快，这是因为第一次读写这个文件的时候，Linux内核已经把文件内容缓存到了内存中的Page Cache里面，第二次读写的时候，由于发现文件内容已经在内存中了，就直接从内存中读取了，这显然比从硬盘读取快很多。</p>
@@ -402,10 +402,10 @@
 <p>所以在2.4版本内核之后，两块内存近似融合在了一起，如果一个文件的页加载到了page cache，那么buffer cache只需要维护块指向页的指针。</p>
 <p>在2.6版本内核中，page cache和buffer cache进一步结合。每一个 Page Cache 包含若干 Buffer Cache。将文件一页一页缓存到page cache中，buffer cache里面的指针指向磁盘block。</p>
 <p>2.6内核中的buffer cache和page cache在处理上是保持一致的，但是存在概念上的差别，page cache是针对文件的cache，buffer是针对磁盘块数据的cache，仅此而已。</p>
-<p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-2.png" alt="Linux Page Cache"></p>
+<p><img src="https://www.kad8.com/imgs/post/linux-page-cache-2.png" alt="Linux Page Cache"></p>
 <h2 id="page-cache大小的计算">Page Cache大小的计算</h2>
 <p>通过命令cat /proc/meminfo可以看到Linux内存管理统计相关的各项数据：</p>
-<p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-3.png" alt="Linux Page Cache"></p>
+<p><img src="https://www.kad8.com/imgs/post/linux-page-cache-3.png" alt="Linux Page Cache"></p>
 <p>Page Cache的大小有如下计算公式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">Page Cache <span style="color:#f92672">=</span> Buffers <span style="color:#f92672">+</span> Cached <span style="color:#f92672">+</span> SwapCached <span style="color:#f92672">=</span> Active(file) <span style="color:#f92672">+</span> Inactive(file) <span style="color:#f92672">+</span> Shmem <span style="color:#f92672">+</span> SwapCached
 </code></pre></div><p>先对等号左边的字段做一个说明：</p>
@@ -415,13 +415,13 @@
 <p>再来看右边的字段：</p>
 <p>在 Page Cache 中，Active(file)+Inactive(file) 是 File-backed page（与文件对应的内存 页），是最需要关注的部分。因为我们平时用的 mmap() 内存映射方式和 buffered I/O 来消 耗的内存就属于这部分。Active和Inactive的区别在于内存空间中是否包含最近被使用过的数据。当物理内存不足，不得不释放正在使用的内存空间时，会优先释放Inactive的内存空间。Linux内核中使用LRU表来分别记录对应的这两类文件内存页。</p>
 <p>Page Cache 中的 Shmem 是指匿名共享映射这种方式分配的内存 （free 命令中 shared 这一项），比如 tmpfs（临时文件系统）。</p>
-<p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-4.png" alt="Linux Page Cache"></p>
+<p><img src="https://www.kad8.com/imgs/post/linux-page-cache-4.png" alt="Linux Page Cache"></p>
 <h2 id="free命令看到的buffcache又是什么">free命令看到的buff/cache又是什么</h2>
 <p>Page Cache的概念很容易跟free命令看到的buff/cache混淆，所以这里我们有必要区分一下。</p>
 <p>free 命令中的 buff/cache 是由 Buffers、Cached 和 SReclaimable 这三项组成的，它强调的是内存的可回收性，也就是说，可以被回收的内存会 统计在这一项。它只是free命令为了统计内存可回收性人为将这三个值进行统计到一起的。</p>
 <p>buff/cache的大小还是来源于/proc/meminfo中看到的内存统计信息，计算公式如下：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">buff<span style="color:#f92672">/</span>cache <span style="color:#f92672">=</span> Buffers <span style="color:#f92672">+</span> Cached <span style="color:#f92672">+</span> SReclaimable
-</code></pre></div><p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-5.png" alt="Linux Page Cache"></p>
+</code></pre></div><p><img src="https://www.kad8.com/imgs/post/linux-page-cache-5.png" alt="Linux Page Cache"></p>
 <p>Buffers和Cached的含义前面已经讲过了，我们来看看SReclaimable：</p>
 <p>SReclaimable 是 Slab 的一部分，是可以被回收的，例如缓存，linux内核使用 Slab 机制，管理文件系统的目录项和索引节点的缓存。Slab 包括两部分，其中的可回收部分，是指可以被回收的内核内存，包括目录项（dentry） 和索引节点（ inode ）的缓存等，用 SReclaimable 记录；而不可回收部分，用 SUnreclaim 记录。</p>
 <p>Linux 文件系统为每个文件都分配两个数据结构，索引节点（index node）和目录项（directory entry）。它们主要用来记录文件的元信息和目录结构。</p>
@@ -430,7 +430,7 @@
 <p>换句话说，索引节点是每个文件的唯一标志，而目录项维护的正是文件系统的树状结构。目录项和索引节点的关系是多对一，你可以简单理解为，一个文件可以有多个别名。举个例子，通过硬链接为文件创建的别名，就会对应不同的目录项，不过这些目录项本质上还是链接同一个文件，所以，它们的索引节点相同。</p>
 <p>目录项本身就是一个内存缓存，而索引节点则是存储在磁盘中的数据。在前面的 Buffers 和 Cached 原理中，我们提到过，为了协调慢速磁盘与快速内存和 CPU 的性能差异，文件内容会缓存到页缓存 Cache 中。其实，这些索引节点也会缓存到内存中，加速文件的访问。</p>
 <p>可以通过下面这张图，理解一下目录项、索引节点以及文件数据的关系：</p>
-<p><img src="htts://www.kad8.com/imgs/post/linux-page-cache-6.png" alt="Linux Page Cache"></p>
+<p><img src="https://www.kad8.com/imgs/post/linux-page-cache-6.png" alt="Linux Page Cache"></p>
 <h2 id="总结">总结</h2>
 <p>内存页包括文件页和匿名页，内核缓存的磁盘数据（Buffer）和内核缓存的文件数据（Cache）都叫作文件页，包括page cache、slab中的dcache、icache、用户进程的可执行程序的代码段。</p>
 <p>匿名页包括进程使用各种api（malloc,mmap,brk/sbrk）申请到的物理内存(这些api通常只是申请虚拟地址，真实的页分配发生在page fault中)，包括堆、栈，进程间通信中的共享内存，bss段，数据段，tmpfs的页。</p>
