@@ -439,7 +439,6 @@
 <p>而free命令看到的buff/cache等于内核磁盘数据和文件数据的缓存与 Slab 机制中文件系统的目录项和索引节点的缓存的可回收部分之和，指的是可直接回收的内存大小。</p>
 <p>所以也可以看出来，文件页的缓存，在内存不足时是可以直接回收的（或者是脏页先会写到磁盘再回收），而匿名页是程序动态申请的内存，是不能直接回收的，即使是匿名页通过Swap机制换出的内存，以后也是得再从磁盘换入的。</p>
 <p>另外，对于上面Page Cache和buff/cache的计算公式，我们需要注意一下，在做比较的过程中，一定要考虑到这些数据是动态变化的，而且执行 命令本身也会带来内存开销，所以这个等式未必会严格相等。</p>
-
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
