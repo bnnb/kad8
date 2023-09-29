@@ -6,7 +6,20 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 25 Sep 2023 12:00:27 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 22:06:12 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据中心的机架密度：何以见高峰</title>
+      <link>https://www.kad8.com/post/datacenter/data-center-rack-density-how-high-can-it-go.html</link>
+      <pubDate>Fri, 29 Sep 2023 22:06:12 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/data-center-rack-density-how-high-can-it-go.html</guid>
+      <description>&lt;p&gt;人工智能（
+&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    AI
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;）和高性能计算（HPC）已将计算、存储容量和网络资源的需求推向了极限。更强大的芯片是推动机架密度不断提升的主要驱动力之一。仅仅十年前，平均处理器的功耗还不到100瓦，但如今它们的功耗已经达到了约500瓦。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Intel下代至强缓存暴增至448MB</title>
       <link>https://www.kad8.com/post/datacenter/intel-next-xeon-Emerald-Rapids.html</link>
