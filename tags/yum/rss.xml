@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yum on 北南南北</title>
+    <link>https://www.kad8.com/tags/yum/</link>
+    <description>Recent content in yum on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 30 Sep 2023 11:53:41 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/yum/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yum安装PHP5.4的亲身体验系统管理员</title>
+      <link>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</link>
+      <pubDate>Sat, 30 Sep 2023 11:53:41 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</guid>
+      <description>&lt;p&gt;本文将以一位系统管理员的角度，分享在CentOS系统上使用yum安装PHP 5.4的亲身体验。通过8个方面的详细介绍嵌入式linux驱动程序设计从入门到精通，帮助读者顺利完成安装，并提供一些实用的技巧和注意事项。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

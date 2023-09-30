@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 29 Sep 2023 22:06:12 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 11:53:41 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>yum安装PHP5.4的亲身体验系统管理员</title>
+      <link>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</link>
+      <pubDate>Sat, 30 Sep 2023 11:53:41 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</guid>
+      <description>&lt;p&gt;本文将以一位系统管理员的角度，分享在CentOS系统上使用yum安装PHP 5.4的亲身体验。通过8个方面的详细介绍嵌入式linux驱动程序设计从入门到精通，帮助读者顺利完成安装，并提供一些实用的技巧和注意事项。&lt;/p&gt;</description>
     </item>
     
     <item>

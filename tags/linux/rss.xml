@@ -6,7 +6,16 @@
     <description>Recent content in linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Jul 2023 12:00:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 11:53:41 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yum安装PHP5.4的亲身体验系统管理员</title>
+      <link>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</link>
+      <pubDate>Sat, 30 Sep 2023 11:53:41 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-install-PHP5.4-through-yum.html</guid>
+      <description>&lt;p&gt;本文将以一位系统管理员的角度，分享在CentOS系统上使用yum安装PHP 5.4的亲身体验。通过8个方面的详细介绍嵌入式linux驱动程序设计从入门到精通，帮助读者顺利完成安装，并提供一些实用的技巧和注意事项。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux性能优化</title>
       <link>https://www.kad8.com/post/linux/linux-performance-optimization.html</link>
