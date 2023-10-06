@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on 北南南北</title>
+    <link>https://www.kad8.com/tags/ml/</link>
+    <description>Recent content in ML on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 06 Oct 2023 19:28:02 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/ml/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>揭穿四个常见的AI/ML数据存储迷思</title>
+      <link>https://www.kad8.com/post/datacenter/busting-four-common-AI-ML-and-Data-Storage-Myths.html</link>
+      <pubDate>Fri, 06 Oct 2023 19:28:02 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/busting-four-common-AI-ML-and-Data-Storage-Myths.html</guid>
+      <description>&lt;p&gt;如今，消费者和商业用户在不知不觉中与人工智能和机器学习互动。从消费者的角度来看，这涉及从流媒体上观看喜爱的节目到随时叫车的车辆服务。从商业的角度来看，组织利用人工智能和机器学习来获得更好的洞察，支持其业务目标。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
