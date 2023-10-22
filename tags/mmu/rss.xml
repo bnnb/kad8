@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mmu on 北南南北</title>
+    <link>https://www.kad8.com/tags/mmu/</link>
+    <description>Recent content in mmu on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 22 Oct 2023 17:23:50 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/mmu/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>详细讲解MMU—为什么嵌入式linux没他不行</title>
+      <link>https://www.kad8.com/post/linux/why-linux-need-mmu.html</link>
+      <pubDate>Sun, 22 Oct 2023 17:23:50 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/why-linux-need-mmu.html</guid>
+      <description>&lt;p&gt;MMU（Memory Management Unit，内存管理单元）是一种硬件模块，用于在CPU和内存之间实现虚拟内存管理。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
