@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="智能网卡（SmartNIC）才是未来" />
+<meta itemprop="description" content="智能网卡（SmartNIC）才是未来" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
+<meta itemprop="keywords" content="SmartNIC" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="智能网卡（SmartNIC）才是未来" />
+<meta property="og:description" content="智能网卡（SmartNIC）才是未来" />
+<meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-11-06 17:46:37 &#43;0800 CST" />
+<meta property="article:modified_time" content="2023-11-06 17:46:37 &#43;0800 CST" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"smart-nic-is-the-trend-for-future.html","permalink":"https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html","title":"智能网卡（SmartNIC）才是未来"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>智能网卡（SmartNIC）才是未来 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+      <img class="custom-logo-image" src="/imgs/VxWorks_7_logo.png" alt="北南南北">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">90</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#标准网卡nic传统的网络连接">标准网卡（NIC）：传统的网络连接</a>
+      <ul>
+        <li><a href="#标准网卡的功能">标准网卡的功能</a></li>
+        <li><a href="#传统硬件的限制">传统硬件的限制</a>
+          <ul>
+            <li><a href="#cpu负担过重">CPU负担过重</a></li>
+            <li><a href="#难以满足高性能需求">难以满足高性能需求</a></li>
+            <li><a href="#难以管理和维护">难以管理和维护</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#智能网卡smartnic超越传统网络">智能网卡（SmartNIC）：超越传统网络</a>
+      <ul>
+        <li><a href="#智能网卡的功能">智能网卡的功能</a></li>
+        <li><a href="#早期smartnic实现">早期SmartNIC实现</a></li>
+        <li><a href="#smartnic的多种部署方式">SmartNIC的多种部署方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#标准网卡与智能网卡的区别">标准网卡与智能网卡的区别</a>
+      <ul>
+        <li><a href="#联网功能">联网功能</a></li>
+        <li><a href="#存储功能">存储功能</a></li>
+        <li><a href="#任务卸载到smartnic">任务卸载到SmartNIC</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何选择标准网卡或智能网卡">如何选择标准网卡或智能网卡</a>
+      <ul>
+        <li><a href="#性能和速度">性能和速度</a></li>
+        <li><a href="#工作负载和用例">工作负载和用例</a></li>
+        <li><a href="#预算和成本">预算和成本</a></li>
+      </ul>
+    </li>
+    <li><a href="#结论">结论</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">90</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">147</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="17345"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="141"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-11-06T17:46:37&#43;08:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="智能网卡（SmartNIC）才是未来">
+      <meta itemprop="description" content="智能网卡（SmartNIC）才是未来">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">智能网卡（SmartNIC）才是未来 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-11-06 17:46:37 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-06 17:46:37 &#43;0800 CST">2023-11-06</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>57</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/smart-nic-is-the-trend-for-future.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>网络技术和硬件设备的不断发展已经改变了数据中心和云计算的格局。随着虚拟化、微服务架构的不断激增，以及移动设备和云服务的高度利用率，网络工作负载的增加速度已经远远超过了传统数据中心CPU的处理速度。这使得寻找更高性能、更灵活性以及更强大功能的网络解决方案变得迫切。</p>
+<p>当涉及到网络硬件的选择时，智能网卡（SmartNIC）和标准网卡（NIC）是两个备受关注的选项。本文将深入探讨这两种网卡的特性、差异以及如何在特定用例中选择合适的选项。</p>
+<h2 id="标准网卡nic传统的网络连接">标准网卡（NIC）：传统的网络连接</h2>
+<p>几十年来，标准网卡一直是网络连接的主要方式。它们是将计算机连接到网络的硬件组件，实现设备和互联网之间的通信。标准网卡主要用于数据传输和接收，通常因其可靠性和鲁棒性而在数据中心环境中得到广泛应用。</p>
+<h3 id="标准网卡的功能">标准网卡的功能</h3>
+<p>标准网卡具有以下基本功能：</p>
+<ul>
+<li>数据包传输和接收。</li>
+<li>数据包校验和校正。</li>
+<li>数据包分段和重组。</li>
+<li>MAC地址管理。</li>
+</ul>
+<p>这些功能足以支持常见的网络连接需求，但在面对数据密集型应用、虚拟化环境、云计算和高性能计算等要求更高性能和功能的情况下，标准网卡可能显得力不从心。</p>
+<h3 id="传统硬件的限制">传统硬件的限制</h3>
+<p>传统的数据中心硬件包括基于NIC的网络卡，这些硬件已经无法满足现代数据中心的需求。</p>
+<h4 id="cpu负担过重">CPU负担过重</h4>
+<p>传统基于NIC的架构将网络任务交给服务器的CPU来处理，这导致CPU负担过重，无法应对高强度网络工作负载。</p>
+<h4 id="难以满足高性能需求">难以满足高性能需求</h4>
+<p>计算密集型应用程序需要更高的性能和低延迟。传统硬件无法提供足够的性能，导致性能瓶颈。</p>
+<h4 id="难以管理和维护">难以管理和维护</h4>
+<p>随着数据中心规模的扩大，管理和维护传统硬件变得更加困难。虚拟化和微服务的增长也增加了管理的复杂性。</p>
+<h2 id="智能网卡smartnic超越传统网络">智能网卡（SmartNIC）：超越传统网络</h2>
+<p>智能网卡是一种新型网卡，它超越了传统的数据传输功能。它们配备了强大的处理器、内存和专用硬件，可以执行各种高级功能。这些功能包括网络增强、存储加速、安全功能等等。智能网卡的主要目标是从主机CPU上卸载和加速各种网络相关任务，提供专用处理能力和硬件功能，以增强网络性能、安全性和效率。</p>
+<h3 id="智能网卡的功能">智能网卡的功能</h3>
+<p>智能网卡提供了一系列高级功能，包括：</p>
+<ul>
+<li>数据包过滤和负载平衡。</li>
+<li>服务质量（QoS）实施。</li>
+<li>存储加速，包括远程直接内存访问（RDMA）、iSCSI和NVMe over Fabrics。</li>
+<li>安全功能，如防火墙处理和入侵检测系统（IDS）检查。</li>
+</ul>
+<p>这些功能使得智能网卡成为适用于各种高级用例的强大工具，从提高网络性能到加强安全性，再到存储加速。</p>
+<h3 id="早期smartnic实现">早期SmartNIC实现</h3>
+<p>早期的SmartNIC实现使用寄存器驱动的ASIC逻辑，这些设计在性能方面表现出色，具有极低的延迟、高数据包吞吐量和低功耗（通常在15瓦到35瓦之间）。然而，尽管在性能上具有优势，但它们通常缺乏必要的可编程性和灵活性。它们通常需要深奥的命令行工具来设置寄存器，缺乏以编程方式管理数据包和流的能力。</p>
+<h3 id="smartnic的多种部署方式">SmartNIC的多种部署方式</h3>
+<p>SmartNIC在多种不同的部署场景中发挥着关键作用，其中包括存储、安全和网络处理。SmartNIC可能承担的特定任务包括隧道协议（例如VxLAN）的处理以及复杂虚拟交换，如图1所示。它的最终目标是消耗更少的主机CPU处理器内核，同时以更低的成本提供更高的性能解决方案。</p>
+<h2 id="标准网卡与智能网卡的区别">标准网卡与智能网卡的区别</h2>
+<h3 id="联网功能">联网功能</h3>
+<p>标准网卡主要设计用于处理基本网络任务，例如数据包传输、分段和校验和校正。虽然智能网卡也执行这些任务，但它们在卡本身上实现了更复杂的网络功能，如数据包过滤、负载平衡和服务质量（QoS）实施，从而从主机CPU上卸载了这些任务。这降低了延迟、降低了CPU利用率，并提高了整体网络性能。</p>
+<h3 id="存储功能">存储功能</h3>
+<p>智能网卡在存储加速方面表现出色，特别适用于现代数据密集型应用。它们可以卸载远程直接内存访问（RDMA）、iSCSI和NVMe over Fabrics等存储功能，从而提高数据传输速度并减少CPU开销。相比之下，标准网卡缺乏这些存储密集型任务所需的硬件和处理能力。</p>
+<h3 id="任务卸载到smartnic">任务卸载到SmartNIC</h3>
+<p>智能网卡最显著的优势之一是能够将各种任务从主机CPU卸载到网卡上。这不仅包括网络和存储功能，还包括防火墙处理和入侵检测系统（IDS）检查等安全任务。通过将这些任务转移到智能网卡，主机CPU可以腾出时间来专注于应用程序特定的处理，从而提高应用程序性能并减少服务器蔓延。</p>
+<h2 id="如何选择标准网卡或智能网卡">如何选择标准网卡或智能网卡</h2>
+<p>在选择标准网卡或智能网卡时，需要评估特定网络需求和用例。以下是需要考虑的一些因素：</p>
+<h3 id="性能和速度">性能和速度</h3>
+<p>如果您的应用程序需要卓越的网络性能、更低的延迟以及负载平衡、存储加速等高级功能，那么智能网卡可能是更好的选择。它们可以卸载并加速各种任务，从而提高整体性能。</p>
+<h3 id="工作负载和用例">工作负载和用例</h3>
+<p>考虑工作负载和用例的性质。智能网卡在数据密集型场景、虚拟化环境、机器学习和云服务中尤其具有优势，因为在这些场景中，高级网络和存储功能至关重要。如果您的环境需要更多的功能和性能，那么智能网卡可能是更合适的选择。</p>
+<h3 id="预算和成本">预算和成本</h3>
+<p>在选择网卡时，还需要考虑您的预算限制。智能网卡通常比标准网卡更昂贵，因为它们提供了更多功能和性能。如果成本是一个关键因素，那么标准网卡可能是更经济的选择。</p>
+<h2 id="结论">结论</h2>
+<p>在网络连接领域，我们常常发现自己在标准网卡（NIC）和智能网卡（SmartNIC）之间做出选择。不同的用例和需求将决定您的最佳选择。一些基于Intel的以太网适配器，例如E810CAM2-2CP，具备许多高级功能，包括以太网、TCP/IP、UDP/IP等多种网络协议的支持，片上QoS、流量管理、iWARP/RDMA、RoCEv2/RDMA、智能卸载以及iSCSI和NFS的存储功能。这些适配器经过严格测试和认证，确保与各种操作系统和管理程序全面兼容，为那些寻求最佳网络性能和功能的用户提供了平衡且可靠的解决方案。</p>
+<p>除了这些特色的NIC解决方案外，还有Mellanox SmartNIC可供选择。与Mellanox Technologies合作，这些SmartNIC开启了网络增强、卸载和安全性的无限可能。无论您选择高级NIC还是SmartNIC，都可以根据您的网络需求，确保网络以最佳、安全和高效的方式运行。</p>
+<p>在不断演进的网络领域，选择合适的网卡是至关重要的，它将直接影响到您的网络性能、安全性和应用程序的运行。因此，深入了解标准网卡和智能网卡的优劣势以及如何根据特定需求进行选择，将有助于确保您的网络能够满足不断变化的需求。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/smartnic">
+    SmartNIC
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      智能网卡（SmartNIC）才是未来
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html" title="智能网卡（SmartNIC）才是未来">https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/linux/why-linux-need-mmu.html" rel="prev" title="详细讲解MMU—为什么嵌入式linux没他不行">
+      详细讲解MMU—为什么嵌入式linux没他不行
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
