@@ -16,6 +16,24 @@
   </entry>
   
   <entry>
+    <title>恒流电路的三种设计方案</title>
+    <url>/post/hardware/three-design-options-for-constant-current-circuits.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>Circuit Design</tag>
+      <tag>Constant Current</tag>
+    </tags>
+    <content type="html"><![CDATA[作为硬件研发工程师相信对恒流电路不会陌生，本文介绍下三种恒流电路的原理图。
+三极管恒流电路 三极管的恒流电路，主要是利用Q2三极管的基级导通电压为0.6~0.7V这个特性；当Q2三极管导通，Q1三极管基级电压被拉低而截止，负载R1不工作；负载R1流过的电流等于R6电阻的电流（忽略Q1与Q2三极管的基级电流），R6电阻的电流等于R6电阻两端的0.6~0.7V电压除以R6电阻阻值（固定不变），因此流过R1负载的电流即为恒定不变，即使R1负载的电源端VCC电压是可变的，也能达到恒流的电路效果。
+运放恒流电路 运放的恒流电路，主要是利用运放的“电压跟随特性”，即运放的两个输入引脚Pin3与Pin2电压相等电路特性；当在电阻R4输入Vin稳定电源电压时，电阻R7两端的电压也为Vin不变，因此无论外界电路如何变化，流过R7电阻的电流是不变的；同三极管恒流电路原理分析一样，R2负载的电流等于R7电阻的电流，所以即使R2负载的电源为可变电压电源，R2负载的电流也是保持固定不变，达到恒流的效果。
+除去运用三极管与运放设计的恒流电路，芯片哥介绍另外一种恒流电路设计方案，主要是利用稳压二极管的稳压特性。
+稳压二极管恒流电路 稳压二极管的恒流电路中，三极管Q4的基级电压被限定在稳压二极管工作的稳定电压Uzd下，因此R10电阻的电压等于Uzd减去三极管基级与发射级的导通压降0.7V，即U=Uzd-0.7保持恒定不变，所以流过R10电阻的电流在VCC电源即使可变的条件下也是固定不变，也就是R8负载的电流保持不变，达到恒流的效果。
+原文引用： 恒流电路的三种设计方案  
+]]></content>
+  </entry>
+  
+  <entry>
     <title>一图说清8 种流行的网络协议</title>
     <url>/post/datacenter/8-popular-network-protocols.html</url>
     <categories><category>DataCenter</category>
