@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Nov 2023 22:19:49 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 22:32:26 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一图说清8 种流行的网络协议</title>
+      <link>https://www.kad8.com/post/datacenter/8-popular-network-protocols.html</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/8-popular-network-protocols.html</guid>
+      <description>&lt;p&gt;网络协议是在网络中的两台计算机之间传输数据的标准方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>大型语言模型入门必知术语汇总</title>
       <link>https://www.kad8.com/post/datacenter/terminology-of-large-scale-language-models.html</link>

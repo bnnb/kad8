@@ -6,7 +6,79 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Nov 2023 22:19:49 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 22:32:26 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FTP</title>
+      <link>https://www.kad8.com/tags/ftp/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/ftp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>https://www.kad8.com/tags/http/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTPS</title>
+      <link>https://www.kad8.com/tags/https/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Protocol</title>
+      <link>https://www.kad8.com/tags/network-protocol/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/network-protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMTP</title>
+      <link>https://www.kad8.com/tags/smtp/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/smtp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TCP</title>
+      <link>https://www.kad8.com/tags/tcp/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/tcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UDP</title>
+      <link>https://www.kad8.com/tags/udp/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/udp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebSocket</title>
+      <link>https://www.kad8.com/tags/websocket/</link>
+      <pubDate>Sat, 18 Nov 2023 22:32:26 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/websocket/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI</title>
       <link>https://www.kad8.com/tags/ai/</link>
@@ -886,24 +958,6 @@
       <pubDate>Wed, 21 Dec 2022 09:53:46 -0500</pubDate>
       
       <guid>https://www.kad8.com/tags/monitor-tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tcp</title>
-      <link>https://www.kad8.com/tags/tcp/</link>
-      <pubDate>Tue, 20 Dec 2022 08:21:45 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/tags/tcp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>udp</title>
-      <link>https://www.kad8.com/tags/udp/</link>
-      <pubDate>Tue, 20 Dec 2022 08:21:45 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/tags/udp/</guid>
       <description></description>
     </item>
     

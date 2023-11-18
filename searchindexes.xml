@@ -16,6 +16,33 @@
   </entry>
   
   <entry>
+    <title>一图说清8 种流行的网络协议</title>
+    <url>/post/datacenter/8-popular-network-protocols.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>Network Protocol</tag>
+      <tag>HTTP</tag>
+      <tag>HTTPS</tag>
+      <tag>WebSocket</tag>
+      <tag>TCP</tag>
+      <tag>UDP</tag>
+      <tag>SMTP</tag>
+      <tag>FTP</tag>
+    </tags>
+    <content type="html"><![CDATA[网络协议是在网络中的两台计算机之间传输数据的标准方法。
+ HTTP（超文本传输协议：HyperText Transfer Protocol)  HTTP 是一种用于获取 HTML 文档等资源的协议。它是 Web 上任何数据交换的基础，是一种客户端-服务器协议。
+HTTP/3 HTTP/3  HTTP/3 是 HTTP 的下一个主要修订版。它运行在 QUIC 上，这是一种专为移动互联网使用而设计的新传输协议。它依赖于 UDP 而不是 TCP，从而实现更快的网页响应。VR 应用程序需要更多带宽来渲染虚拟场景的复杂细节，并且可能会从迁移到由 QUIC 提供支持的 HTTP/3 中受益。
+HTTPS（安全超文本传输协议：HyperText Transfer Protocol Secure)  HTTPS 扩展了 HTTP 并使用加密技术实现安全通信。
+WebSocket  WebSocket 是一种通过 TCP 提供全双工通信的协议。客户端建立WebSocket来接收来自后端服务的实时更新。与总是“拉取”数据的 REST 不同，WebSocket 允许“推送”数据。在线游戏、股票交易和消息传递应用程序等应用程序利用 WebSocket 进行实时通信。
+TCP（传输控制协议：Transmission Control Protocol)  TCP 旨在通过互联网发送数据包并确保通过网络成功传送数据和消息。许多应用层协议构建在 TCP 之上。
+UDP（用户数据报协议：User Datagram Protocol)  UDP 直接将数据包发送到目标计算机，无需先建立连接。UDP 通常用于时间敏感的通信，其中偶尔丢弃数据包比等待更好。语音和视频流量通常使用此协议发送。
+SMTP（简单邮件传输协议：Simple Mail Transfer Protocol)  SMTP 是一种用于将电子邮件从一个用户传输到另一个用户的标准协议。
+FTP（文件传输协议：File Transfer Protocol)  FTP 用于在客户端和服务器之间传输计算机文件。它具有单独的控制通道和数据通道连接。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>大型语言模型入门必知术语汇总</title>
     <url>/post/datacenter/terminology-of-large-scale-language-models.html</url>
     <categories><category>DataCenter</category>
