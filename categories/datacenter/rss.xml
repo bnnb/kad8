@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 Nov 2023 17:46:37 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 22:19:49 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大型语言模型入门必知术语汇总</title>
+      <link>https://www.kad8.com/post/datacenter/terminology-of-large-scale-language-models.html</link>
+      <pubDate>Sat, 18 Nov 2023 22:19:49 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/terminology-of-large-scale-language-models.html</guid>
+      <description>&lt;p&gt;在本文中，我将以一种非数据科学家易于理解的方式分解与LLM和AI相关的一些基本术语和概念。我将涵盖从神经网络到数据增强的所有内容，并为每个术语提供简单的解释和示例。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>智能网卡（SmartNIC）才是未来</title>
       <link>https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html</link>

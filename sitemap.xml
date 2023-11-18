@@ -7,32 +7,57 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/tags/ai/</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-11-06T17:46:37+08:00</lastmod>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/datacenter/</loc>
-    <lastmod>2023-11-06T17:46:37+08:00</lastmod>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/large-scale/</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/llm/</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-11-06T17:46:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/smartnic/</loc>
-    <lastmod>2023-11-06T17:46:37+08:00</lastmod>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-11-06T17:46:37+08:00</lastmod>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/terminology/</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/terminology-of-large-scale-language-models.html</loc>
+    <lastmod>2023-11-18T22:19:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/smartnic/</loc>
     <lastmod>2023-11-06T17:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -84,11 +109,6 @@
   </url><url>
     <loc>https://www.kad8.com/tags/%E7%94%B5%E8%B7%AF%E4%BF%9D%E6%8A%A4/</loc>
     <lastmod>2023-10-06T22:39:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/ai/</loc>
-    <lastmod>2023-10-06T19:28:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
