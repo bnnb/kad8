@@ -24,7 +24,7 @@
       <tag>Background IO</tag>
       <tag>Enterprise SSD</tag>
     </tags>
-    <content type="html"><![CDATA[Background IO，从字面理解即后台IO任务，它和前台IO是相对应的关系。前台IO，就是通常我们所理解的CPU访问SSD盘内数据、写数据到SSD闪存颗粒等工作。
+    <content type="html"><![CDATA[Background IO，从字面理解即后台IO任务，它和前台IO是相对应的关系。前台IO，就是通常我们所理解的CPU访问SSD盘内数据、写数据到 SSD  闪存颗粒等工作。
 Background IO是什么？ 但因为，SSD使用了相对HDD来说更加脆弱和敏感的NAND闪存颗粒，所以导致了SSD主控芯片不仅要处理数据的读写，还需要做一些额外的后台工作来保障SSD的正常工作。
 一般来说，一款标准的企业级SSD，它所需要做的Background IO主要有以下几种：
  PLP电容自检 BootLoader存放区域扫描 系统区域扫描（固件、坏块表存放区） 用户数据区域后台扫描 温度传感器采样 Log日志定时写入NAND Read disturb数据搬移 后台GC垃圾回收 磨损均衡  平时没怎么总结还没发现，原来SSD固件在后台需要处理的任务这么多了，而且还有一些这里没有列出来的。
