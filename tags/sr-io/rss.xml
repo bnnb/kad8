@@ -6,7 +6,16 @@
     <description>Recent content in SR-IO on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 10 Sep 2023 10:26:28 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/sr-io/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 21:19:14 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/sr-io/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPU市场分析：全球视野下的竞争格局与未来发展</title>
+      <link>https://www.kad8.com/post/datacenter/gpu-competitive-landscape-and-future-development-from-a-global-perspective.html</link>
+      <pubDate>Thu, 23 Nov 2023 21:19:14 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/gpu-competitive-landscape-and-future-development-from-a-global-perspective.html</guid>
+      <description>&lt;p&gt;谈到计算机与GPU的关系，就不得不提到IBM公司在1981年发布的世界上第一台个人电脑IBM5150，该电脑配备了黑白显示适配器和彩色图形适配器，这是最早的图形显示控制器。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>SR-IOV技术简介</title>
       <link>https://www.kad8.com/post/datacenter/introduction-of-SR-IOV-technology.html</link>

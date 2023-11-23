@@ -7,17 +7,47 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/background-io/</loc>
-    <lastmod>2023-11-23T19:43:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-11-23T19:43:47+08:00</lastmod>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/datacenter/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/gpu/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/gpu-competitive-landscape-and-future-development-from-a-global-perspective.html</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/sr-io/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-11-23T21:19:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/background-io/</loc>
     <lastmod>2023-11-23T19:43:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -27,22 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-11-23T19:43:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2023-11-23T19:43:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html</loc>
-    <lastmod>2023-11-23T19:43:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-11-23T19:43:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -357,11 +372,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/sr-io/</loc>
-    <lastmod>2023-09-10T10:26:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/datacenter/introduction-of-SR-IOV-technology.html</loc>
     <lastmod>2023-09-10T10:26:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -573,11 +583,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/cuda/</loc>
-    <lastmod>2023-07-25T11:06:14-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/gpu/</loc>
     <lastmod>2023-07-25T11:06:14-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
