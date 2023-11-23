@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Nov 2023 22:32:26 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 19:43:47 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>你以为你的SSD硬盘正在待机，实际上它快忙坏了</title>
+      <link>https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html</link>
+      <pubDate>Thu, 23 Nov 2023 19:43:47 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html</guid>
+      <description>&lt;p&gt;Background IO，从字面理解即后台IO任务，它和前台IO是相对应的关系。前台IO，就是通常我们所理解的CPU访问SSD盘内数据、写数据到SSD闪存颗粒等工作。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>一图说清8 种流行的网络协议</title>
       <link>https://www.kad8.com/post/datacenter/8-popular-network-protocols.html</link>

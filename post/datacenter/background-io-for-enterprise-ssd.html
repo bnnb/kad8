@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了" />
+<meta itemprop="description" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
+<meta itemprop="keywords" content="Background IO,Enterprise SSD" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了" />
+<meta property="og:description" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了" />
+<meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2023-11-23 19:43:47 &#43;0800 CST" />
+<meta property="article:modified_time" content="2023-11-23 19:43:47 &#43;0800 CST" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"background-io-for-enterprise-ssd.html","permalink":"https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html","title":"你以为你的SSD硬盘正在待机，实际上它快忙坏了"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>你以为你的SSD硬盘正在待机，实际上它快忙坏了 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+      <img class="custom-logo-image" src="/imgs/VxWorks_7_logo.png" alt="北南南北">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">98</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#background-io是什么">Background IO是什么？</a></li>
+    <li><a href="#为什么需要background-io">为什么需要Background IO？</a>
+      <ul>
+        <li><a href="#plp电容自检">PLP电容自检</a></li>
+        <li><a href="#bootloader存放区域扫描">BootLoader存放区域扫描</a></li>
+        <li><a href="#系统区域扫描固件坏块表存放区">系统区域扫描（固件、坏块表存放区）</a></li>
+        <li><a href="#用户数据区域后台扫描">用户数据区域后台扫描</a></li>
+        <li><a href="#温度传感器采样">温度传感器采样</a></li>
+        <li><a href="#log日志定时写入nand">Log日志定时写入NAND</a></li>
+        <li><a href="#read-disturb数据搬移">Read Disturb数据搬移</a></li>
+        <li><a href="#后台gc垃圾回收">后台GC垃圾回收</a></li>
+        <li><a href="#磨损均衡">磨损均衡</a></li>
+      </ul>
+    </li>
+    <li><a href="#最后">最后</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">98</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">168</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="17700"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="149"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2023-11-23T19:43:47&#43;08:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了">
+      <meta itemprop="description" content="你以为你的SSD硬盘正在待机，实际上它快忙坏了">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">你以为你的SSD硬盘正在待机，实际上它快忙坏了 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2023-11-23 19:43:47 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-23 19:43:47 &#43;0800 CST">2023-11-23</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/datacenter" itemprop="url" rel="index">
+      <span itemprop="name">DataCenter</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>82</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/background-io-for-enterprise-ssd.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>Background IO，从字面理解即后台IO任务，它和前台IO是相对应的关系。前台IO，就是通常我们所理解的CPU访问SSD盘内数据、写数据到SSD闪存颗粒等工作。</p>
+<h2 id="background-io是什么">Background IO是什么？</h2>
+<p>但因为，SSD使用了相对HDD来说更加脆弱和敏感的NAND闪存颗粒，所以导致了SSD主控芯片不仅要处理数据的读写，还需要做一些额外的后台工作来保障SSD的正常工作。</p>
+<p>一般来说，一款标准的企业级SSD，它所需要做的Background IO主要有以下几种：</p>
+<ol>
+<li>PLP电容自检</li>
+<li>BootLoader存放区域扫描</li>
+<li>系统区域扫描（固件、坏块表存放区）</li>
+<li>用户数据区域后台扫描</li>
+<li>温度传感器采样</li>
+<li>Log日志定时写入NAND</li>
+<li>Read disturb数据搬移</li>
+<li>后台GC垃圾回收</li>
+<li>磨损均衡</li>
+</ol>
+<p>平时没怎么总结还没发现，原来SSD固件在后台需要处理的任务这么多了，而且还有一些这里没有列出来的。</p>
+<h2 id="为什么需要background-io">为什么需要Background IO？</h2>
+<h3 id="plp电容自检">PLP电容自检</h3>
+<p>正常情况下，拆开一块企业级SSD，基本都可以看到下图中这一块黑色的上面写着1000uF的电容，当然也可以是很多个并联的小电容组成。</p>
+<p><img src="https://www.kad8.com/imgs/post/SSD-Background-IO.png" alt="Enterprise SSD Background IO"></p>
+<p>这块电容在SSD中充当着不可或缺的角色，因为企业级对异常掉电后的数据恢复是刚需，因此需要这块电容存储电荷，在掉电时再继续让SSD工作一段时间，将仍留在DRAM中的重要数据及时写到NAND颗粒中，保证了异常掉电下的数据安全。</p>
+<p>但是，只要是铝电解电容都会有一些缺点，那就是高温敏感、寿命短、漏电流大。因为铝电解电容内部基本是液态的电解质，当温度过高时，内部电解质会被加热导致挥发甚至是爆浆（有兴趣的读者，可以网上搜索“铝电解电容爆炸的各种姿势，还是挺有意思的”）。而且，如果长期在高温下使用，可能会造成电解质挥发至干涸，最终电容变成一具“干尸”。</p>
+<p>当然，做SSD设计时就已经考虑到了铝电解电容的这些特征，因此做了冗余设计，保证电容能够持续工作5年以上。但，基于铝电解电容的这些特性，还是需要定时去检查一下有没有问题，防止电容失效而引起数据丢失灾难。一般每隔24小时检查一次，当然你也可以设置更长或更短时间间隔。</p>
+<p>这就像，我们日常开的车，刹车片虽然不用每次保养都去更换，但每次保养都要去检查一下磨损程度。同样的道理。</p>
+<h3 id="bootloader存放区域扫描">BootLoader存放区域扫描</h3>
+<p>Bootloader的用途，做产品研发的同学应该是清楚的。它是一段非常精简的代码，用来引导整个固件或者系统代码的启动。</p>
+<p>因此，它真的非常重要！</p>
+<p>所以，BootLoader代码一般都不会存放在NAND颗粒中，而是在一颗很小的SPI Flash中，这个SPI Flash的可靠性要远高于NAND闪存颗粒。</p>
+<p>但，即使这样，对于BootLoader存放区域的介质健康检查不可省略，谁叫它这么重要呢？至于扫描的时间间隔，每家公司设计不同，可自行决定。</p>
+<p>就像，你在家里的密码箱存放了100斤黄金，就算它足够安全不会被偷，你也还是想每天晚上睡觉前打开柜子看看确保安全呢。</p>
+<h3 id="系统区域扫描固件坏块表存放区">系统区域扫描（固件、坏块表存放区）</h3>
+<p>系统区域，一般是指固件在NAND闪存内部开辟出来的多个高安全区域，这些区域的特点是，相比于其他区域，他们更加安全，更不容易出现bit error。</p>
+<p>在这些最安全的系统区域，我们会用来存放固件代码和备份、坏块表等数据，因为固件代码和坏块表足够重要，所以会有很多的备份存放在多个不同的系统区域。</p>
+<p>但是，最安全的系统区域，也只是相对安全，并非绝对安全。因此，对这些区域的扫描不可省略，一旦发现某些闪存块有问题，就要立马将数据搬到新的区域。至于扫描的时间间隔，一般是2-3周，或200-300个上下电循环，企业级一般是采用固定时间间隔很少采用上下电循环，消费类盘都可以。</p>
+<h3 id="用户数据区域后台扫描">用户数据区域后台扫描</h3>
+<p>用户数据区域，和刚刚说的系统区域，是一个相对的概念。</p>
+<p>相对于系统区域，用户数据区域的数据安全性相对低一些，但也是相当重要的，毕竟用户就是上帝，上帝的数据绝不能丢。</p>
+<p>但为什么需要定时去扫描用户的数据区域呢？因为所有的NAND闪存都有一个缺点，包括英特尔家的floating gate架构、或者其他家的charge trap架构，均存在电荷泄漏的问题。</p>
+<p>意思是，当已经保存有数据的NAND闪存断电时，其cell内部的电子会逐渐逃逸出去，导致电荷泄漏，最终数据丢失。当然，不要过度恐慌，这是一个非常缓慢的过程。正常情况下，企业级SSD断电情况下，数据可以在40摄氏度温度下安全存放3个月，即使是生命末期。而消费类的SSD，则数据可以在30摄氏度的温度下安全存放1年的时间（所以，如果有好久没有用过且存有重要数据的SSD，要赶紧拿出来溜溜了，通上电跑一跑）。</p>
+<p>它有个专业术语，叫数据保持-data retention。</p>
+<p>因此，一旦我们的SSD掉电一段时间后，尤其是经历过高温的情况，之前保存的数据可能会陷入险境之中。这时候，一旦重新上电，SSD固件就要开始马不停蹄地去检查，哪些数据存在风险，要赶紧搬移到新的区域。</p>
+<h3 id="温度传感器采样">温度传感器采样</h3>
+<p>温度传感器采样，这个比较简单，因为很多情况下，系统需要获取到SSD内部的温度，来决定散热风速的转速。</p>
+<p>因此，温度传感器的采用必不可少，一般都是每秒钟采样一次。</p>
+<h3 id="log日志定时写入nand">Log日志定时写入NAND</h3>
+<p>都知道Windows/Linux操作系统有各种各样的log日志，来记录系统的状态和debug用途。SSD也是一样，它内部也运行了一套庞大的类似系统一样的复杂逻辑和运算，因此也会存在各种各样的Log日志来记录系统状态、错误信息等内容。</p>
+<p>尤其是在SSD研发早期阶段，大量的debug工作非常依赖于系统log。同时，在如今的大型数据中心，越来越多的用户开始关注SSD Log，因为对于数据中心的运维来说，健全的Log可以大大提高debug效率。</p>
+<p>但，因为很多时候，最新Log其实是存放在DRAM中的，因为这样可以更快去刷新。而DRAM是易失性存储，即掉电数据丢失，因此，系统Log日志，同样也是需要定期维护刷写到非易失性的NAND闪存中的。至于刷写的时间间隔，因需求而异，可以设置5分钟，也可以设置半小时。</p>
+<h3 id="read-disturb数据搬移">Read Disturb数据搬移</h3>
+<p>Read Disturb，读干扰，也是NAND闪存的其中一个缺点。具体的原理呢，会比较复杂，一时半会很难说清楚，后续有时间单独开一篇来讲。</p>
+<p>这里，只简单说一下读干扰所带来的结果。因为现代NAND制程的进度，密度增加，导致cell之间的距离越来越小。而读干扰的现象也越来越明显，即当我们读取某个页数据非常多次数时（可能是200万~1000万次），会对它周边的页造成干扰，而影响到周边页的数据，严重时会造成周边页数据无法读取。</p>
+<p>因此，当我们选择一款NAND开发SSD时，NAND厂商的FAE会告诉我们，read disturb建议的次数时xx次。</p>
+<p>当固件发现某个页被连续读取了xx次时，触发了read disturb阈值，此时就要将周边页的数据进行搬移，防止数据丢失。</p>
+<h3 id="后台gc垃圾回收">后台GC垃圾回收</h3>
+<p>后台GC垃圾回收，这个已经不用说太多了吧。</p>
+<p>因此NAND闪存本身的特性，最小写入单位是页，而擦除最小单位是块。因此随着数据不断写入，每个块上都会随机散布着各种数据，这时候如果有新的数据再写进来，则可能没有足够的空间，这时候就需要擦除旧的数据块，并搬移有效数据到新的块。</p>
+<p>当经历过了长时间的随机写数据时，这部分GC的工作量是非常大的，而且非常影响这个SSD的性能。</p>
+<h3 id="磨损均衡">磨损均衡</h3>
+<p>二八定律无处不在，又或者说，正态分布才是自然的常态。</p>
+<p>经过不正经的调查，当没有任何认为干预时，我们随机性地往SSD中写入数据。</p>
+<p>当我们写满全盘时，没有太大发现，但是当写了很多次全盘之后，就会发现。</p>
+<p>NAND闪存中仅有20%的区域被写入了超过80%的数据，而另外80%的区域却并没有被写入太多数据。</p>
+<p>这样会造成一个问题，因为NAND闪存都是有寿命的，而这种写入方法会造成20%的NAND闪存块很快被写完，寿命殆尽。而剩下80%的NAND闪存块却还可以用很久。</p>
+<p>但这20%的闪存块的退役，会导致整个SSD系统无法正常工作，相当于一个本来完整的木桶，突然出现了一块短板，导致桶里的水大量流失。</p>
+<p>因此，Wear Leveling磨损均衡才被需要，而且相当重要，因为它决定了你的木桶到底能装多少水！</p>
+<h2 id="最后">最后</h2>
+<p>写到这里，我虽意犹未尽，但也累得腰酸背痛想要休息片刻。</p>
+<p>不知各位读者看完，作何感想，能写SSD固件代码固然不难，但如果要做好固件真心不易。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/background-io">
+    Background IO
+  </a>
+    <a href="/tags/enterprise-ssd">
+    Enterprise SSD
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      你以为你的SSD硬盘正在待机，实际上它快忙坏了
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html" title="你以为你的SSD硬盘正在待机，实际上它快忙坏了">https://www.kad8.com/post/datacenter/background-io-for-enterprise-ssd.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/news/samsung-is-rumored-to-have-won-some-orders-from-AMD.html" rel="prev" title="传三星斩获AMD部分订单">
+      传三星斩获AMD部分订单
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2023
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
