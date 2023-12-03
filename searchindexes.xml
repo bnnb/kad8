@@ -16,6 +16,31 @@
   </entry>
   
   <entry>
+    <title>Intel全线涨价！12/13/14代、酷睿Ultra无一例外</title>
+    <url>/post/datacenter/amd-processor-will-subvert-SSD-technology.html</url>
+    <categories><category>DataCenter</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>3D V-Cache</tag>
+      <tag>SSD</tag>
+      <tag>Intel</tag>
+      <tag>Optane</tag>
+    </tags>
+    <content type="html"><![CDATA[当你拥有 AMD 的 3D V-Cache 时，谁还需要英特尔的 Optane？
+谁会想到最好的 CPU可以与最好的 SSD相媲美？显然，可以在 AMD 的 Ryzen 3D V-Cache处理器上运行 RAM 磁盘，并实现连续读写速度，甚至可以击败最快的 PCIe   5.0 SSD  。
+这个谜团始于我们的冷却专家Albert Thomas分享的一个有趣的屏幕截图，其中 RAM 磁盘在 CrystalDiskMark 中的顺序读取和写入速度分别约为 178 GB/s 和 163 GB/s。值得注意的是，据报道，结果来自运行在 AMD Ryzen 7 7800X3D处理器上的 RAM 磁盘。
+起初，人们对这一说法持怀疑态度，因为您需要将 L3 公开为块存储设备才能运行 CrystalDiskMark 基准测试。假定的容量 (508MB) 大于 Ryzen 7 7800X3D 上的 3D V-Cache，后者具有 96MB 的 L3 缓存。然而，似乎有一种合法的方法可以将 3D V-Cache 用于 RAM 磁盘。
+Nemez是 X（以前称为 Twitter）上的用户，发现了该方法。这位热心人在二月份分享了让它发挥作用的步骤，但它并没有引起人们的注意。结果甚至比 Thomas 的结果更加引人注目，在上一代 Ryzen 7 5800X3D 上，RAM 磁盘的顺序读取和写入速度分别达到 182 GB/s 和 175 GB/s左右。
+该方法基于 OSFMount，这是一个免费软件，允许您创建 RAM 磁盘并挂载不同格式的映像文件。创建采用 FAT32 格式的 RAM 磁盘听起来很简单。
+但是，您需要在 CrystalDiskMark 上使用精确的设置才能使其正常工作。根据 Nemez 的说法，您必须将测试值配置为 SEQ 256KB、队列深度为 1、线程数为 16。您还必须将数据填充设置为零而不是随机。由于系统负载的性质，该方法可能在第一次尝试时不起作用，因此您可能需要运行基准测试几次。
+看到爱好者发现 AMD 3D V-Cache 的新用途真是令人着迷。虽然性能数据看起来非常出色，但它们仍远未发挥 3D V-Cache 的潜力。例如，第一代3D V-Cache的峰值吞吐量为2 TB/s。AMD 随后将第二代变体的带宽提高到 2.5 TB/s 。
+这个实验很酷，但在实际使用中并不实用，因为没有一致的方法来利用 3D V-Cache。该方法并非万无一失，有时需要反复试验。此外，消费者 Ryzen 芯片上的 3D V-Cache 太小，没有什么帮助。例如，旗舰Ryzen 9 7950X3D只有128MB的L3缓存。另一方面，AMD 的 EPYC 处理器（例如具有 1.3GB L3 缓存的Genoa-X）可能是一个有趣的用例。
+尽管如此，我们认为 3D V-Cache 和 RAM 磁盘还是有潜力的。这是将老派技术和新技术结合在一起的巧妙方法。SSD 已经让 RAM 磁盘过时了，但也许大量的 3D V-Cache 可以让它们复活。试想一下，如果 AMD 接受这个想法并推出故障安全实施方案，消费者可以通过翻转开关将 3D V-Cache 转变为 RAM 磁盘，那么这种可能性将会有多大。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>GPU市场分析：全球视野下的竞争格局与未来发展</title>
     <url>/post/datacenter/gpu-competitive-landscape-and-future-development-from-a-global-perspective.html</url>
     <categories><category>DataCenter</category>
@@ -941,7 +966,8 @@ PC电脑文字处理、图片编辑等日常办公用途，CPU单核性能更为
     </categories>
     <tags>
       <tag>Core</tag>
-      <tag>Alder Lake - Raptor Lake</tag>
+      <tag>Alder Lake</tag>
+      <tag>Raptor Lake</tag>
     </tags>
     <content type="html"><![CDATA[据报道，Intel即将对旗下处理器全线涨价，现有的和即将发布的，无一例外。
 权威德国硬件媒体PCGH从两个不同的德国供应商处获悉，他们都收到了Intel的通知信，包括在库、打折的处理器，都会涨价，这让他们感到非常意外。

@@ -6,7 +6,52 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Nov 2023 21:19:14 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 23:18:55 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D V-Cache</title>
+      <link>https://www.kad8.com/tags/3d-v-cache/</link>
+      <pubDate>Sun, 03 Dec 2023 23:18:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/3d-v-cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMD</title>
+      <link>https://www.kad8.com/tags/amd/</link>
+      <pubDate>Sun, 03 Dec 2023 23:18:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/amd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://www.kad8.com/tags/intel/</link>
+      <pubDate>Sun, 03 Dec 2023 23:18:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/intel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optane</title>
+      <link>https://www.kad8.com/tags/optane/</link>
+      <pubDate>Sun, 03 Dec 2023 23:18:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/optane/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSD</title>
+      <link>https://www.kad8.com/tags/ssd/</link>
+      <pubDate>Sun, 03 Dec 2023 23:18:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/ssd/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GPU</title>
       <link>https://www.kad8.com/tags/gpu/</link>
@@ -40,15 +85,6 @@
       <pubDate>Thu, 23 Nov 2023 19:43:47 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/enterprise-ssd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AMD</title>
-      <link>https://www.kad8.com/tags/amd/</link>
-      <pubDate>Sun, 19 Nov 2023 23:22:09 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/amd/</guid>
       <description></description>
     </item>
     
@@ -521,15 +557,6 @@
     </item>
     
     <item>
-      <title>Intel</title>
-      <link>https://www.kad8.com/tags/intel/</link>
-      <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/intel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ultra</title>
       <link>https://www.kad8.com/tags/ultra/</link>
       <pubDate>Mon, 07 Aug 2023 10:54:18 -0400</pubDate>
@@ -629,15 +656,6 @@
     </item>
     
     <item>
-      <title>SSD</title>
-      <link>https://www.kad8.com/tags/ssd/</link>
-      <pubDate>Sat, 29 Jul 2023 22:19:49 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/ssd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Storage</title>
       <link>https://www.kad8.com/tags/storage/</link>
       <pubDate>Sat, 29 Jul 2023 22:19:49 -0400</pubDate>
@@ -647,11 +665,20 @@
     </item>
     
     <item>
-      <title>Alder Lake - Raptor Lake</title>
-      <link>https://www.kad8.com/tags/alder-lake-raptor-lake/</link>
+      <title>Alder Lake</title>
+      <link>https://www.kad8.com/tags/alder-lake/</link>
       <pubDate>Thu, 27 Jul 2023 05:47:43 -0400</pubDate>
       
-      <guid>https://www.kad8.com/tags/alder-lake-raptor-lake/</guid>
+      <guid>https://www.kad8.com/tags/alder-lake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raptor Lake</title>
+      <link>https://www.kad8.com/tags/raptor-lake/</link>
+      <pubDate>Thu, 27 Jul 2023 05:47:43 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/tags/raptor-lake/</guid>
       <description></description>
     </item>
     
