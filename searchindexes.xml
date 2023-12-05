@@ -16,6 +16,22 @@
   </entry>
   
   <entry>
+    <title>NVIDIA 收到商务部长警告, 勿为中国重新设计芯片</title>
+    <url>/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>NVIDIA</tag>
+      <tag>GPU</tag>
+    </tags>
+    <content type="html"><![CDATA[虽然美国禁止了 NVIDIA 一些 AI   芯片出口中国，不过 NVIDIA 正试图看能否不放弃中国这块大饼，推出一些管制边缘能符合条件的卡，如 HGX H20 或将要推出的特规 RTX 4090D。
+不过最近美国商务部长 Gina Raimondo 对 NVIDIA 发出了警告，声明任何之前禁止的芯片产品即便重新设计仍受到限制，虽然没有表明涉及那些产品，但 NVIDIA RTX 系列都有 Tensor Core ，这对技术意义上而言，就是能为 AI 人工智能工作负载提供一定程度的加速。
+就早前2022年第一波制裁之后，NVIDIA 在中国被限制了 H100 / A100 HPC 加速器出口，不过随后 NVIDIA 推出了 H800 / A800 作为替代方案，但随后也受到了禁止，而今年则是禁止 HGX H20 、L20、L2 芯片，以及包括 RTX 4090 GPU。
+NVIDIA RTX 4090 虽然是游戏卡，但它仍是相当好的 AI 加速器，可以有 4800 TOPS 的运算能力，也因如此这张卡在中国是被禁止，而 NVIDIA 则想要推 RTX 4090D 来符合禁令规范，但目前并不确定规格如何。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>AMD PC全面出击，英特尔危险了</title>
     <url>/post/news/amd-pc-attacks-in-full-force.html</url>
     <categories><category>News</category>

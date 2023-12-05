@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 05 Dec 2023 21:05:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 22:18:21 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,19 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>NVIDIA 收到商务部长警告, 勿为中国重新设计芯片</title>
+      <link>https://www.kad8.com/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</link>
+      <pubDate>Tue, 05 Dec 2023 22:18:21 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</guid>
+      <description>&lt;p&gt;虽然美国禁止了 NVIDIA 一些 
+&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    AI
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt; 芯片出口中国，不过 NVIDIA 正试图看能否不放弃中国这块大饼，推出一些管制边缘能符合条件的卡，如 HGX H20 或将要推出的特规 RTX 4090D。&lt;/p&gt;</description>
     </item>
     
     <item>
