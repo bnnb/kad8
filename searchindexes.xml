@@ -16,6 +16,48 @@
   </entry>
   
   <entry>
+    <title>锐龙8040官宣！AMD首创的AI PC性能飙升60%</title>
+    <url>/post/news/ryzen-8040-official-announcement-AMD-first-AI-PC.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>Ryzen 8040</tag>
+      <tag>AI PC</tag>
+    </tags>
+    <content type="html"><![CDATA[ AMD   2023年初发布的锐龙7040系列处理器，不但为笔记本带来了迄今最先进的4nm制造工艺、Zen4 CPU架构、RDNA3 GPU架构，还第一次为x86处理器加入了独立的NPU AI  引擎硬件单元。
+这就是Ryzen AI，也创造了AI PC这一全新概念和应用。
+北京时间12月7日凌晨，美国加州圣何塞，AMD Advancing AI大会上，AMD一方面公布了AI PC的最新应用进展，另一方面公布了下一代锐龙8040系列、处理器，AI PC正在进化到新的高度。
+AMD Ryzen AI引擎基于全新设计的XDNA 架构，可以脱离网络和云端，在本地执行AI工作负载，进而降低延迟、保护隐私。
+当然，它也可以在端-云混合场景中运行，在云服务器和本地笔记本之间分配任务、协同加速。
+目前，基于锐龙7040系列处理器的笔记本产品已经有几十款，出货量数百万台，涵盖宏碁、华硕、戴尔、联想、惠普、雷蛇、小米等各大合作品牌。
+Ryzen AI的应用也不断拓展，合作伙伴包括Adobe、微软、Avid、Bori SFX、OBS Studio、Topaz Labs、Zoom、Cyberlink、XSplit VCam、Luminar、Audacity、Arkrunr、Blackmagic Design、Capcut，以及国内的字节跳动、爱奇艺，等等。
+Ryzen AI驱动的加速功能目前也已有100多个，尤其是在Adobe Photoshop、Premiere Pro、After Effect、Lightroom等创意设计软件中，大量的日常操作都可以从中获得极大的效率提升。
+以上这些，都是在轻薄笔记本上第一次实现，无论日常娱乐、办公还是内容创作，都可以获得成本的效率提升。
+如今，AMD又全新打造了Ryzen AI软件平台，支持TensorFlow、PyTorch、ONNX等眼下最为火热的AI模型。
+开发者可以藉此充分挖掘Ryzen AI引擎的性能，更轻松地部署生成式等AI应用和加速。
+为了鼓励开发者创新，AMD还发起了首届Pervasive AI开发者挑战赛，为数据中心、工作站、笔记本电脑、游戏、机器人等领域打造创新的AI应用。
+其中生成式AI竞赛基于Radeon Pro W7900专业显卡或者Instinct MI210加速器，机器人AI基于Kria KR620机器人套件，PC AI就是基于锐龙7040系列处理器，每个类别的最高奖金都有1万美元，总奖金达15.5万美元。
+面向未来，AMD今天正式宣布了下一代移动处理器锐龙8040系列，开发代号Hawk Point，在锐龙7040系列(开发代号Pheonix)的基础上继续进化。
+锐龙8040系列仍然基于Zen4 CPU架构、RDNA3 GPU架构、XDNA NPU架构，通过进一步挖掘潜力，尤其是提升各部分的频率和效率，带来更上一层的AI性能。
+其中，NPU AI性能算力从10TOPS提升到16TOPS，幅度达到了惊人的60％，也使得整体算力从33TOPS增加到39TOPS。
+比如Llama 2大语言模型，性能可提升最多40％，再比如视觉模型方面，性能也可提升最多40％。
+当然基础性能也有不小的进步，官方数据称多线程性能提升最多10％，游戏性能提升最多80％，内容创作性能提升最多40％。
+以上是锐龙8040系列的完整型号、规格表，和现有锐龙7040系列有对应关系但并非一一对应，而针对国内市场应该还有H系列。
+锐龙9 8945HS、锐龙7 8845HS、锐龙5 8645HS是新增加的序列，基础规格分别对应锐龙9 7940HS、锐龙7 7840HS、锐龙5 7640HS，CPU核心数量与加速频率、GPU单元数量、热设计功耗范围等都保持一致。
+官方宣称，顶级型号锐龙9 8945HS相比竞品酷睿i9-13900H，视频编辑性能领先最多64％、3D渲染性能领先最多37％，游戏性能领先最多77％。
+锐龙7 8840HS、锐龙5 8640HS分别对应现在的锐龙7 7840HS、锐龙5 7640HS，热设计功耗范围从35-54W收缩到20-30W。
+随着功耗范围的降低，核心频率自然不可避免地要更低一些，其中锐龙7 8840HS 3.3-5.1GHz，基础频率降低500MHz，锐龙5 8640HS 3.5-4.9GHz，分别降低800MHz、100MHz。
+这样一来，8045HS、8040HS系列就在性能上拉开了档次，方便用于不同档次和价位的笔记本产品。
+锐龙7 8840U、锐龙5 8640U、锐龙5 8540U、锐龙3 8440U分别对应现在的锐龙7 7840U、锐龙5 7640U、锐龙5 7540U、锐龙3 8440U，基础规格不变，但是热设计功耗从固定的28W扩展到了15-30W的范围，更加灵活。
+需要注意的是，锐龙5 8540U、锐龙3 8440U应该是继续采用小号核心，Zen4、Zen4c混合架构，并没有集成NPU单元。
+锐龙8040系列已经出货，相关笔记本产品将在2024年第一季度陆续上市，OEM品牌包括宏碁、华硕、戴尔、惠普、联想、雷蛇。
+更激动人心的则要等到再下一代的“Strix Point” ，2024年内登场，将会升级到XDNA 2架构的新一代NPU，号称生成式AI性能猛增超过3倍。
+此前有消息称，Strix Point还将升级Zen5 CPU架构、RDNA3.5 GPU架构，预计2024年中左右就会发布。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>NVIDIA 收到商务部长警告, 勿为中国重新设计芯片</title>
     <url>/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</url>
     <categories><category>News</category>
