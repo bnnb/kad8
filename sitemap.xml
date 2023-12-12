@@ -8,21 +8,51 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-12-10T11:00:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/news/</loc>
-    <lastmod>2023-12-10T11:00:39+08:00</lastmod>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-12-10T11:00:39+08:00</lastmod>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/ssd/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/storage/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/tiplus7100/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/yangtze/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/storage/Yangtze-Storage-TiPlus7100-4TB-Review.html</loc>
+    <lastmod>2023-12-12T15:31:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/news/</loc>
     <lastmod>2023-12-10T11:00:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,11 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/news/Vast-Data-founder-on-new-118M-us-dollar-funding.html</loc>
-    <lastmod>2023-12-10T11:00:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-12-10T11:00:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -118,11 +143,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/optane/</loc>
-    <lastmod>2023-12-03T23:18:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/ssd/</loc>
     <lastmod>2023-12-03T23:18:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -763,11 +783,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/nand/</loc>
-    <lastmod>2023-07-15T23:12:03-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/storage/</loc>
     <lastmod>2023-07-15T23:12:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
