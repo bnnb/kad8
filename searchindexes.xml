@@ -16,6 +16,34 @@
   </entry>
   
   <entry>
+    <title>AMD锐龙8040产品全球首发</title>
+    <url>/post/news/AMD-Ryzen-8040-product-launches-globally.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>Ryzen</tag>
+      <tag>8040</tag>
+    </tags>
+    <content type="html"><![CDATA[AMD日前官宣了代号Hawk Point的新一代锐龙8040系列移动处理器，是现有锐龙7040系列的升级版，工艺、架构不变，重点提升NPU AI性能，并调整了功耗设定。
+现在，华擎全球第一家发布了基于锐龙8040系列的产品，确切地说是低功耗的锐龙8040U系列，包括迷你机、迷你主板。
+迷你机有两款，型号分别为4X4 BOX-8840U、4X4 BOX-8640U，主板也有两款，与迷你机相对应，型号分别为4X4-8840U-1U、4X4-8640U-1U，搭载处理器分别为锐龙7 8840U、锐龙5 8640U。
+锐龙7 8840U 8核心16线程，最高频率5.1GHz，集成核显Radeon 780M。
+锐龙5 8640U 6核心12线程，最高频率4.9GHz，集成核显Radeon 760M。
+二者的热设计功耗范围都是15-30W，比现在的固定28W更有弹性。
+迷你机设计很朴素，尺寸为117.5x110.0×49毫米。
+核心规格方面，迷你机和主板具备两条DDR5-5600 SO-DIMM独立内存插槽(最大容量96GB)、一条M.2 2280和一条M.2 2242(均支持PCIe 4.0 x4)、Realtek RTL8125BG 2.5千兆和Realtek RTL8111H千兆网卡、Wi-Fi 6E无线网卡、Realtek ALC256声卡。
+接口有两个HDMI 1.4b和两个USB-C/DP 1.4(四屏4K)、一个USB-A 3.0、两个USB 2.0，供电为12-24V DC。
+另外，零刻新款迷你主机SEi12已上架开售，准系统售价为1985元。
+据悉，这款 SEi12迷你主机拥有“藏青蓝”、“千禧灰”两种配色，采用包布工艺，防水防溅，尺寸约为传统台式机的1/40倍。
+处理器采用的是英特尔酷睿i7-12650H，10核心16线程，睿频至高可达4.7GHz，内存最大支持双通道64GB DDR4 3200MHz标配双通道16GB(8*2)DDR或无DDR。
+存储支持M.22280 NVMe PCle4.0 SSD，至高可扩展至2TB，标配500GB/1TB/无SSD。
+此外，这款迷你主机支持Wi-F i6、蓝牙5.2技术，拥有双风扇散热（CPU冷却风扇 + 系统风扇）。
+接口包括一个RJ45接口、两个USB-A 3.2 Gen2接口、两个USB-A 2.0接口、一个 USB-C接口、一个HDMI 2.0接口、一个DP1.4接口。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>NVIDIA AI芯片可以卖给中国！只有一条件</title>
     <url>/post/news/NVIDIA-AI-chips-can-be-sold-to-China-with-one-condition.html</url>
     <categories><category>News</category>
