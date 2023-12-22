@@ -6,7 +6,16 @@
     <description>Recent content in DataCenter on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 09 Dec 2023 12:08:56 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Dec 2023 17:23:27 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/datacenter/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据中心液冷技术阐述</title>
+      <link>https://www.kad8.com/post/datacenter/data-center-liquid-cooling-technology-introduction.html</link>
+      <pubDate>Fri, 22 Dec 2023 17:23:27 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/data-center-liquid-cooling-technology-introduction.html</guid>
+      <description>&lt;p&gt;液冷技术的首要分支之一是间接接触型液冷技术，其中以冷板式液冷系统为代表。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>2024年数据管理和存储的四大预测</title>
       <link>https://www.kad8.com/post/datacenter/4-predictions-for-data-management-and-storage-in-2024.html</link>

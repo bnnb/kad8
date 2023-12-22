@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heatsink on 北南南北</title>
+    <link>https://www.kad8.com/tags/heatsink/</link>
+    <description>Recent content in Heatsink on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 22 Dec 2023 17:23:27 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/heatsink/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据中心液冷技术阐述</title>
+      <link>https://www.kad8.com/post/datacenter/data-center-liquid-cooling-technology-introduction.html</link>
+      <pubDate>Fri, 22 Dec 2023 17:23:27 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/data-center-liquid-cooling-technology-introduction.html</guid>
+      <description>&lt;p&gt;液冷技术的首要分支之一是间接接触型液冷技术，其中以冷板式液冷系统为代表。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
