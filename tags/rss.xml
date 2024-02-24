@@ -6,7 +6,16 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 22 Dec 2023 21:05:32 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 23:08:22 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I2C</title>
+      <link>https://www.kad8.com/tags/i2c/</link>
+      <pubDate>Sat, 24 Feb 2024 23:08:22 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>tr</title>
       <link>https://www.kad8.com/tags/tr/</link>
@@ -1048,15 +1057,6 @@
       <pubDate>Wed, 05 Apr 2023 07:28:59 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/dbm-vpp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>I2C</title>
-      <link>https://www.kad8.com/tags/i2c/</link>
-      <pubDate>Sun, 02 Apr 2023 00:00:24 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/i2c/</guid>
       <description></description>
     </item>
     

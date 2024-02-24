@@ -8,21 +8,41 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2023-12-22T21:05:32+08:00</lastmod>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/linux/</loc>
-    <lastmod>2023-12-22T21:05:32+08:00</lastmod>
+    <loc>https://www.kad8.com/categories/hardware/</loc>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/i2c/</loc>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html</loc>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2023-12-22T21:05:32+08:00</lastmod>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-02-24T23:08:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/linux/</loc>
     <lastmod>2023-12-22T21:05:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,11 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/linux/tr-a-useful-command-in-linux.html</loc>
-    <lastmod>2023-12-22T21:05:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2023-12-22T21:05:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -313,11 +328,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/constant-current/</loc>
-    <lastmod>2023-11-18T23:23:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/hardware/</loc>
     <lastmod>2023-11-18T23:23:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -969,11 +979,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/hardware/dBm-Vpp-convert.html</loc>
     <lastmod>2023-04-05T07:28:59-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/i2c/</loc>
-    <lastmod>2023-04-02T00:00:24-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
