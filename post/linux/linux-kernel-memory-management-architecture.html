@@ -177,8 +177,8 @@
     <li><a href="#内存管理硬件架构">内存管理硬件架构</a></li>
     <li><a href="#内存映射空间划分">内存映射空间划分</a></li>
     <li><a href="#内存管理软件架构">内存管理；软件架构</a></li>
-    <li><a href="#页管理层次结构由冷热缓存伙伴系统组成的两级结构负责内存页的缓存分配回收">页管理层次结构：由冷热缓存、伙伴系统组成的两级结构。负责内存页的缓存、分配、回收。</a></li>
-    <li><a href="#对象管理层次结构由per-cpu高速缓存slab缓存伙伴系统组成的三级结构负责对象的缓存分配回收这里的对象指小于一页大小的内存块">对象管理层次结构：由per-cpu高速缓存、slab缓存、伙伴系统组成的三级结构。负责对象的缓存、分配、回收。这里的对象指小于一页大小的内存块。</a></li>
+    <li><a href="#页管理层次结构">页管理层次结构：</a></li>
+    <li><a href="#对象管理层次结构">对象管理层次结构：</a></li>
   </ul>
 </nav></div>
       </div>
@@ -272,7 +272,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="18905"></div>
+      <div class="item-count" id="wordsCount" data-count="18907"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -358,7 +358,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>54</span>
+  <span class="post-meta-item-text">字数：</span><span>56</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -449,8 +449,10 @@
 <p>内核内存管理的核心工作就是内存的分配回收管理，其内部分为2个体系：页管理和对象管理。</p>
 <p>页管理体系是一个两级的层次结构，对象管理体系是一个三级的层次结构，分配成本和操作对CPU cache和TLB的负面影响，从上而下逐渐升高。</p>
 <p><img src="https://www.kad8.com/imgs/post/Linux-Kernel-MMU-8.png" alt="Linux Kernel MMU"></p>
-<h2 id="页管理层次结构由冷热缓存伙伴系统组成的两级结构负责内存页的缓存分配回收">页管理层次结构：由冷热缓存、伙伴系统组成的两级结构。负责内存页的缓存、分配、回收。</h2>
-<h2 id="对象管理层次结构由per-cpu高速缓存slab缓存伙伴系统组成的三级结构负责对象的缓存分配回收这里的对象指小于一页大小的内存块">对象管理层次结构：由per-cpu高速缓存、slab缓存、伙伴系统组成的三级结构。负责对象的缓存、分配、回收。这里的对象指小于一页大小的内存块。</h2>
+<h2 id="页管理层次结构">页管理层次结构：</h2>
+<p>由冷热缓存、伙伴系统组成的两级结构。负责内存页的缓存、分配、回收。</p>
+<h2 id="对象管理层次结构">对象管理层次结构：</h2>
+<p>由per-cpu高速缓存、slab缓存、伙伴系统组成的三级结构。负责对象的缓存、分配、回收。这里的对象指小于一页大小的内存块。</p>
 <p>除了内存分配，内存释放也是按照此层次结构操作。如释放对象，先释放到per-cpu缓存，再释放到slab缓存，最后再释放到伙伴系统。</p>
 <p><img src="https://www.kad8.com/imgs/post/Linux-Kernel-MMU-9.png" alt="Linux Kernel MMU"></p>
 <p>框图中有三个主要模块，即伙伴系统、slab分配器和per-cpu（冷热）缓存。他们的对比分析如下。</p>
