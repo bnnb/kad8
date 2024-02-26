@@ -8,7 +8,47 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-02-25T08:33:30+08:00</lastmod>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/kernel/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/linux/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/linux/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/linux/linux-kernel-memory-management-architecture.html</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/memory-management/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -32,21 +72,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-02-25T08:33:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2024-02-25T08:33:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
-    <lastmod>2024-02-25T08:33:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/i2c/</loc>
     <lastmod>2024-02-24T23:08:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -54,11 +79,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html</loc>
     <lastmod>2024-02-24T23:08:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/linux/</loc>
-    <lastmod>2023-12-22T21:05:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -473,11 +493,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/centos/</loc>
-    <lastmod>2023-09-30T11:53:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/linux/</loc>
     <lastmod>2023-09-30T11:53:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -934,11 +949,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/news/google-cloud-business-is-finally-profitable-for-the-first-time.html</loc>
     <lastmod>2023-05-01T00:01:05-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/kernel/</loc>
-    <lastmod>2023-04-30T09:15:30-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

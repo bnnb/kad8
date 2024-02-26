@@ -6,7 +6,34 @@
     <description>Recent content in Tags on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Feb 2024 08:33:30 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Feb 2024 20:05:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kernel</title>
+      <link>https://www.kad8.com/tags/kernel/</link>
+      <pubDate>Mon, 26 Feb 2024 20:05:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.kad8.com/tags/linux/</link>
+      <pubDate>Mon, 26 Feb 2024 20:05:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memory Management</title>
+      <link>https://www.kad8.com/tags/memory-management/</link>
+      <pubDate>Mon, 26 Feb 2024 20:05:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/memory-management/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GND</title>
       <link>https://www.kad8.com/tags/gnd/</link>
@@ -512,15 +539,6 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://www.kad8.com/tags/linux/</link>
-      <pubDate>Sat, 30 Sep 2023 11:53:41 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PHP5.4</title>
       <link>https://www.kad8.com/tags/php5.4/</link>
       <pubDate>Sat, 30 Sep 2023 11:53:41 +0800</pubDate>
@@ -1021,15 +1039,6 @@
       <pubDate>Mon, 01 May 2023 00:01:05 -0400</pubDate>
       
       <guid>https://www.kad8.com/tags/google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kernel</title>
-      <link>https://www.kad8.com/tags/kernel/</link>
-      <pubDate>Sun, 30 Apr 2023 09:15:30 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/tags/kernel/</guid>
       <description></description>
     </item>
     
