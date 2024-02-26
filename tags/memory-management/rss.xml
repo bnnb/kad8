@@ -13,7 +13,11 @@
       <pubDate>Mon, 26 Feb 2024 20:05:46 +0800</pubDate>
       
       <guid>https://www.kad8.com/post/linux/linux-kernel-memory-management-architecture.html</guid>
-      <description>&lt;p&gt;内存管理子系统可能是linux内核中最为复杂的一个子系统，其支持的功能需求众多，如页面映射、页面分配、页面回收、页面交换、冷热页面、紧急页面、页面碎片管理、页面缓存、页面统计等，而且对性能也有很高的要求。&lt;/p&gt;</description>
+      <description>&lt;p&gt;内存管理子系统可能是
+&lt;a href=&#34;https://www.gaitpu.com/category/os/linux&#34; title=&#34;linux&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    linux
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;内核中最为复杂的一个子系统，其支持的功能需求众多，如页面映射、页面分配、页面回收、页面交换、冷热页面、紧急页面、页面碎片管理、页面缓存、页面统计等，而且对性能也有很高的要求。&lt;/p&gt;</description>
     </item>
     
   </channel>
