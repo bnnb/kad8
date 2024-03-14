@@ -6,7 +6,16 @@
     <description>Recent content in RGB on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 28 Oct 2022 06:53:45 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/rgb/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Mar 2024 22:39:54 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/rgb/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RGB颜色对照表</title>
+      <link>https://www.kad8.com/post/linux/rgb-color-value-in-hex.html</link>
+      <pubDate>Thu, 14 Mar 2024 22:39:54 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/rgb-color-value-in-hex.html</guid>
+      <description>&lt;p&gt;RGB色彩模式是工业界的一种颜色标准，是通过对红(R)、绿(G)、蓝(B)三个颜色通道的变化以及它们相互之间的叠加来得到各式各样的颜色的，RGB即是代表红、绿、蓝三个通道的颜色，这个标准几乎包括了人类视力所能感知的所有颜色，是目前运用最广的颜色系统之一。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>详解嵌入式LCD的接口类型</title>
       <link>https://www.kad8.com/post/fpga/embedded-lcd-interface-model.html</link>

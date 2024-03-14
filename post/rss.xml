@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 26 Feb 2024 20:05:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Mar 2024 22:39:54 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>RGB颜色对照表</title>
+      <link>https://www.kad8.com/post/linux/rgb-color-value-in-hex.html</link>
+      <pubDate>Thu, 14 Mar 2024 22:39:54 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/rgb-color-value-in-hex.html</guid>
+      <description>&lt;p&gt;RGB色彩模式是工业界的一种颜色标准，是通过对红(R)、绿(G)、蓝(B)三个颜色通道的变化以及它们相互之间的叠加来得到各式各样的颜色的，RGB即是代表红、绿、蓝三个通道的颜色，这个标准几乎包括了人类视力所能感知的所有颜色，是目前运用最广的颜色系统之一。&lt;/p&gt;</description>
     </item>
     
     <item>
