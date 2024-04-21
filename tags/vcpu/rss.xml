@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCPU on 北南南北</title>
+    <link>https://www.kad8.com/tags/vcpu/</link>
+    <description>Recent content in VCPU on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 21 Apr 2024 14:08:47 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/vcpu/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>虚拟化技术：VCPU与物理CPU的关系</title>
+      <link>https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html</link>
+      <pubDate>Sun, 21 Apr 2024 14:08:47 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html</guid>
+      <description>&lt;p&gt;在数字化浪潮席卷的今天，虚拟化技术已成为数据中心、云计算以及IT领域不可或缺的一环。它以其出色的灵活性和资源利用率，为现代计算体系注入了新的活力。而在虚拟化技术中，vCPU（虚拟中央处理单元）则扮演着重要的角色。本篇文章将深入剖析vCPU与物理CPU的关系，帮助大家更好地了解虚拟化这一技术的核心。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

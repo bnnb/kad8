@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="虚拟化技术：VCPU与物理CPU的关系" />
+<meta itemprop="description" content="虚拟化技术：VCPU与物理CPU的关系" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
+<meta itemprop="keywords" content="VCPU,PCPU" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="虚拟化技术：VCPU与物理CPU的关系" />
+<meta property="og:description" content="虚拟化技术：VCPU与物理CPU的关系" />
+<meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html"/>
+<meta property="og:site_name" content="北南南北" />
+<meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="VxWorks OS" />
+<meta property="article:published_time" content="2024-04-21 14:08:47 &#43;0800 CST" />
+<meta property="article:modified_time" content="2024-04-21 14:08:47 &#43;0800 CST" />
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
+  <style type="text/css">
+    .post-footer, .flinks-list-footer hr:after {
+      content: "~ 我可是有底线的哟 ~";
+    }
+  </style>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"the-relationship-between-virtual-cpu-and-physical-cpu.html","permalink":"https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html","title":"虚拟化技术：VCPU与物理CPU的关系"}</script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    var script = document.createElement('script');
+      
+    script.charset = "UTF-8";
+    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+    script.async   = "true"
+
+    document.head.appendChild(script);
+  });
+</script>
+
+
+
+
+  <title>虚拟化技术：VCPU与物理CPU的关系 - 北南南北</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">北南南北</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">Embedded World</p>
+      <img class="custom-logo-image" src="/imgs/VxWorks_7_logo.png" alt="北南南北">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <li class="menu-item menu-item-home">
+      <a href="/" class="hvr-icon-pulse " rel="section"><i class="fa fa-home hvr-icon"></i>首页
+      </a>
+    </li>
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      </a>
+    </li>
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
+      </a>
+    </li>
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
+        <span class="badge">118</span>
+      </a>
+    </li>
+    <li class="menu-item menu-item-commonweal">
+      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
+      </a>
+    </li>
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+<aside class="sidebar">
+  
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目录
+      </li>
+      <li class="sidebar-nav-overview">
+        站点概览
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是vcpu">什么是vCPU</a></li>
+    <li><a href="#vcpu-vs-cpu">vCPU VS CPU</a></li>
+    <li><a href="#vcpu的计算">vCPU的计算</a></li>
+    <li><a href="#系统可用的vcpu总数计算">系统可用的VCPU总数计算</a></li>
+    <li><a href="#虚拟机vcpu的分配与调度">虚拟机VCPU的分配与调度</a></li>
+    <li><a href="#vcpu-的应用场景">vCPU 的应用场景</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
+      src="/imgs/hugo_next_avatar.png">
+  <p class="site-author-name" itemprop="name">VxWorks OS</p>
+  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">118</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">190</span>
+        <span class="site-state-item-name">标签</span>
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="links-of-social site-overview-item animated">
+
+
+  <span class="links-of-social-item">
+    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
+    </a>
+  </span>
+  <span class="links-of-social-item">
+    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
+      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
+    </a>
+  </span>
+</div>
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
+    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
+  </a>
+</div>
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    <i class="fa fa-globe fa-fw"></i>友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    <li class="links-of-blogroll-item">
+      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
+    </li>
+    <li class="links-of-blogroll-item">
+      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+   
+  </div>
+<div class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>网站资讯</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="2021-06-03T11:52:18&#43;08:00"></div>
+    </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-user"></i>总访客数：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_uv"></div>
+      </div>
+      <div class="siteinfo-item">
+        <div class="item-name">
+          <i class="fas fa fa-eye"></i>页面浏览：
+        </div>
+        <div class="item-count" id="busuanzi_value_site_pv"></div>
+      </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
+      <div class="item-count" id="wordsCount" data-count="19017"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
+      <div class="item-count" id="readTimes" data-times="169"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2024-04-21T14:08:47&#43;08:00"></div>
+    </div>
+  </div>
+</div>
+</aside>
+<div class="sidebar-dimmer"></div>
+
+    </header>
+    
+    <div class="tool-buttons" >
+  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
+    <i class="fas fa-comments"></i>
+  </a> 
+  <div id="switch-theme" class="button" title="深浅模式切换">
+    <i class="fas fa-adjust"></i>
+  </div> 
+  
+  <div class="back-to-top" role="button" title="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div> 
+</div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="VxWorks OS">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VxWorks OS">
+      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="虚拟化技术：VCPU与物理CPU的关系">
+      <meta itemprop="description" content="虚拟化技术：VCPU与物理CPU的关系">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">虚拟化技术：VCPU与物理CPU的关系 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2024-04-21 14:08:47 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-04-21 14:08:47 &#43;0800 CST">2024-04-21</time>
+</span>
+    
+    
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/hardware" itemprop="url" rel="index">
+      <span itemprop="name">Hardware</span>
+    </a>
+  </span>
+</span>
+  </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>78</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span id="busuanzi_value_page_pv" data-path="/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body  autonumber " itemprop="articleBody">
+      
+  <p>在数字化浪潮席卷的今天，虚拟化技术已成为数据中心、云计算以及IT领域不可或缺的一环。它以其出色的灵活性和资源利用率，为现代计算体系注入了新的活力。而在虚拟化技术中，vCPU（虚拟中央处理单元）则扮演着重要的角色。本篇文章将深入剖析vCPU与物理CPU的关系，帮助大家更好地了解虚拟化这一技术的核心。</p>
+<h2 id="什么是vcpu">什么是vCPU</h2>
+<p>vCPU，全称为虚拟中央处理器（Virtual Central Processing Unit），是虚拟化环境中分配给虚拟机实例的重要计算资源。它是物理CPU的虚拟化产物，能够在逻辑上被虚拟机独立使用。每个vCPU都具备执行指令和处理数据的能力，使得虚拟机能够在没有物理CPU核心的情况下运行多线程应用程序。</p>
+<p>vCPU的出现，极大地提高了物理CPU的利用率。通过将物理CPU分割成多个vCPU，我们可以在同一时间运行多个任务，从而实现资源的最大化利用。此外，vCPU还赋予了虚拟化环境更大的灵活性。我们可以根据虚拟机的实际需求，动态调整vCPU的数量，无需更换物理硬件即可满足不同的计算需求。
+然而，正如任何技术都有其两面性一样，vCPU也不例外。虚拟化技术会带来一定的性能开销，尽管这一开销在大多数情况下并不显著，但在某些对性能要求极高的场景中，它可能成为影响系统性能的关键因素。此外，过度分配vCPU也可能导致CPU资源的浪费，从而降低整体的资源利用率。</p>
+<h2 id="vcpu-vs-cpu">vCPU VS CPU</h2>
+<p>vCPU和CPU是两个在计算机体系结构中具有不同概念的术语：物理CPU，被称为处理器或中央处理器，它是计算机系统的核心组件，负责执行指令、进行运算和控制计算机的各个部分。而vCPU则是在虚拟化环境中对物理CPU的模拟和分配。它们之间的关系，可以说是共生共荣的伙伴关系。</p>
+<p>一台物理计算机可以有多个CPU，每个CPU可以包含多个核心，每个核心可以处理独立的任务。同时，每个核心可以支持多个线程，通过超线程或多核心技术，实现并行处理。在虚拟化环境中，一台物理计算机可以同时运行多个独立的虚拟机，每个虚拟机都可以拥有一个或多个vCPU。这些vCPU在逻辑上是相互独立的，它们通过虚拟化层的调度和资源管理，实现了与物理CPU之间的资源隔离。这种隔离性使得不同虚拟机之间的计算任务可以互不干扰地运行，提高了系统的稳定性和安全性。</p>
+<p>同时，vCPU与物理CPU之间的协作也至关重要。虚拟化层负责将虚拟机的指令转换为物理处理器可以执行的指令，从而实现了vCPU与物理CPU之间的无缝对接。当虚拟机需要执行计算任务时，它会将任务发送给vCPU，vCPU再将任务转化为物理CPU可以执行的指令。物理CPU则负责执行这些指令，完成计算任务。</p>
+<h2 id="vcpu的计算">vCPU的计算</h2>
+<p>在计算vCPU前需要了解一些术语：</p>
+<p>Socket：插槽是一个阵列的引脚，用于固定处理器并将主板连接到可用的处理能力，插槽的数量由主板的容量决定。</p>
+<p>Thread：线程是进程内的执行路径。一个进程可以包含一个或多个线程，线程与进程的主要区别在于，同一进程内的线程在共享内存空间中运行，而进程在独立的内存空间中运行。</p>
+<p>Physical Core：物理核心，也被称为处理单元，位于CPU内。一个物理核心可能对应一个或多个逻辑核心。</p>
+<p>Logical Core：逻辑核心使得单个物理核心能够同时执行两个或更多的操作。</p>
+<p><img src="https://www.kad8.com/imgs/post/VCPU-PCPU-1.webp" alt="VCPU vs PCPU"></p>
+<h2 id="系统可用的vcpu总数计算">系统可用的VCPU总数计算</h2>
+<p>在计算vCPU的数量时，通常需要考虑以下几个因素：</p>
+<p>物理 CPU 的数量：这是服务器上实际插槽中的CPU个数；</p>
+<p>每颗物理 CPU 的核心数：这是一块CPU上面能处理数据的芯片组的数量；</p>
+<p>每个核心的超线程数：如果物理CPU支持超线程技术，那么每个CPU核心可以支持两个vCPU。</p>
+<p>vCPU数量是通过芯片组为每个核心提供的处理线程数乘以占用的插槽数来计算的，即：</p>
+<p>vCPU 数量=（线程 x 核心）x 物理 CPU</p>
+<p><img src="https://www.kad8.com/imgs/post/VCPU-PCPU-2.webp" alt="VCPU vs PCPU"></p>
+<p>假设有一款物理CPU，该CPU具有8个核心和16个线程：（16线程x8核心x1物理CPU=128 vCPU），这意味着在这个物理CPU上，可以分配128个vCPU，这是通过将每个核心的线程数相乘，然后乘以物理CPU的数量得出的。</p>
+<p>具体的 vCPU 分配取决于工作负载和应用程序的需求。例如，在一个大型数据库服务器上，我们可以选择将更多的 vCPU 分配给每个虚拟机，以确保足够的计算资源。而在轻负载的情况下，可以分配较少的 vCPU。假设总共有128个vCPU，然后根据每个虚拟机所需的vCPU数量来计算虚拟机的数量：如果每个虚拟机需要4个vCPU，则虚拟机数量=128vCPU/4vCPU=32：如果每个虚拟机需要2个vCPU，则虚拟机数量=128vCPU/2vCPU=64：这个计算过程根据实际需求进行调整。</p>
+<h2 id="虚拟机vcpu的分配与调度">虚拟机VCPU的分配与调度</h2>
+<p>我们可以从下图中看到虚拟机系统的结构与功能划分，客户操作系统与虚拟机监视器共同构建了一个精巧的两级调度框架，这一框架在多核环境下尤为显著。客户操作系统负责第二级调度，主要是线程或进程在vCPU上的调度。虚拟机监视器负责第一级调度, 即vCPU在物理处理单元上的调度。</p>
+<p><img src="https://www.kad8.com/imgs/post/VCPU-PCPU-3.webp" alt="VCPU vs PCPU"></p>
+<p>值得注意的是，这两级调度的调度策略和机制是相互独立的，它们之间不存在依赖关系，这使得虚拟机系统能够根据不同的需求和应用场景进行优化。</p>
+<p>此外，vCPU的调度方式也十分灵活。它可以在一个或多个物理处理单元上执行，实现分时复用或空间复用物理处理单元的效果。同时，它也可以与物理处理单元建立一对一固定的映射关系，限制访问指定的物理处理单元。这种灵活的调度方式使得虚拟机系统能够更好地适应各种复杂的计算场景。</p>
+<p>当需要为云服务器的计算能力设置上限、下限以及云服务器占用资源的优先级时，可以选择启用  CPU QoS，即对CPU做QoS（Quality of Service）：</p>
+<p>CPU预留：分配给该VM的最少CPU资源，即云服务器获得的最低计算能力。配置值为vCPU在竞争物理CPU资源时，至少占有物理CPU主频的大小，单位为MHz。例如，该规格对应的vCPU个数为2，若预留值配置为2000，则云服务器获得的计算能力不低于4000MHz。</p>
+<p>CPU上限：分配虚拟机占用CPU资源的上限，即云服务器获得的最大计算能力。配置值为单个vCPU在竞争资源时最多占有单个物理CPU的比例。例如，配置为0.5时，表示该云服务器单个vCPU最多可占用单个物理CPU 50%的资源。</p>
+<p>CPU份额：多个虚拟机在竞争CPU资源时，根据比例分配资源，按优先级有低、中、高三种。CPU份额只在各虚拟机竞争计算资源时发挥作用，如果没有竞争，有需求的虚拟机可以独占主机的物理CPU资源。例如，云服务器A的优先级为“中”，云服务器B的优先级为“低”，则在资源竞争时，云服务器A竞争获得的CPU资源约为云服务器B的两倍。</p>
+<p>以一台24线程（24GHz）的单核物理机为例，按照vCPU数量计算公式，可分配的vCPU数量为1<em>1</em>24=24vCPU，如果我们负载三台虚拟机，在没有资源竞争的情况下，每台虚拟机使用的资源都是8Ghz（平均分配）；如果资源发生抢占，每台虚拟机都分配了24个VCPU（可以分配给单台VM所在的物理CPU虚拟出来的最大VCPU个数，这时真实的物理CPU资源则不是根据VCPU个数来确定对应的使用资源,而是根据份额来分配），即按份额分配获得CPU资源。</p>
+<p><img src="https://www.kad8.com/imgs/post/VCPU-PCPU-4.webp" alt="VCPU vs PCPU"></p>
+<p>总的来说，计算 vCPU 的关键在于了解底层硬件的规格，并根据工作负载和性能需求进行合理的分配。</p>
+<h2 id="vcpu-的应用场景">vCPU 的应用场景</h2>
+<p>vCPU在多个领域有广泛的应用场景。以下是一些主要的应用场景：</p>
+<p>虚拟化环境：虚拟化软件可以将物理CPU的计算能力划分为多个vCPU，并为每个虚拟机分配一个或多个vCPU，从而实现多个虚拟机同时运行的功能。在虚拟化环境下，通过使用vCPU，可以有效地管理和利用物理服务器的资源，提高服务器的利用率，降低了IT成本。</p>
+<p>多租户系统：在多租户系统中，vCPU 是计算资源的主要计量单位。用户可以根据自己的需求，选择具有不同 vCPU 数量的云服务器。每个用户都可以根据业务需求灵活调整计算资源，以满足其应用程序的灵活计算需求，同时保证资源的隔离性和安全性。</p>
+<p>弹性扩展：随着业务的发展，当应用负载增加时，可以动态调整vCPU的数量来保证应用的可用性和性能。这种弹性伸缩的能力使得vCPU能够根据实际需求合理分配计算资源。</p>
+<p>云计算和数据中心管理：vCPU在云计算和数据中心管理中发挥着关键作用。通过合理地分配vCPU资源，可以实现高效的资源利用和成本控制。</p>
+<p>此外，vCPU的应用还受到应用类型的影响。对于需要大量计算资源的应用，如科学计算、数据分析等，更高的vCPU数量可以提供更好的计算性能，将计算任务分配到多个vCPU 上，加快任务的执行速度。而对于对计算资源要求不高的应用，如网站托管、数据库等，较低的vCPU数量也能满足基本的需求。</p>
+<h2 id="总结">总结</h2>
+<p>本文介绍了vCPU的定义、计算方式与应用场景，其中虚拟CPU（vCPU）与物理CPU（pCPU）之间的关系是虚拟化技术的核心。vCPU作为虚拟机中的虚拟处理器，通过虚拟化层与物理服务器上的pCPU进行交互，实现了硬件资源的共享与高效利用。虚拟化技术不仅提高了服务器的利用率，还降低了运营成本，为云计算、大数据等现代信息技术的快速发展提供了有力支撑。随着技术的不断进步，虚拟化技术将在未来继续发挥重要作用，推动计算机领域不断创新与发展。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/vcpu">
+    VCPU
+  </a>
+    <a href="/tags/pcpu">
+    PCPU
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+<div class="reward-container">
+  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
+  <button>赞赏</button>
+  <div class="post-reward">
+    <div class="post-reward-item">
+      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
+      <span>支付宝</span>
+    </div>
+    <div class="post-reward-item">
+      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
+      <span>微信</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章标题：</strong>
+      虚拟化技术：VCPU与物理CPU的关系
+    </li>
+    <li class="post-copyright-author">
+      <strong>本文作者： </strong>
+      VxWorks OS
+    </li>
+    <li class="post-copyright-link"> 
+      <strong>本文链接：</strong>
+       <a id="post-cr-link" href="https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html" title="虚拟化技术：VCPU与物理CPU的关系">https://www.kad8.com/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</div>
+
+  <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="/post/linux/fedora-41-introduces-new-dnf5-package-management.html" rel="prev" title="Fedora 41引入了全新 DNF5 软件包管理">
+      Fedora 41引入了全新 DNF5 软件包管理
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div id="comments" class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    2010 - 2024
+  </span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
+</div>
+
+
+    </div>
+  </footer> 
+  
+  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
