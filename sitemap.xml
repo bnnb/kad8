@@ -8,31 +8,41 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/datacenter/</loc>
-    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/intel/</loc>
-    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <loc>https://www.kad8.com/tags/liquid-cooling/</loc>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/research-status-of-efficient-liquid-cooling-technology-in-data-centers.html</loc>
+    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/intel/</loc>
     <lastmod>2024-07-29T22:29:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -158,11 +168,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/heatsink/</loc>
-    <lastmod>2023-12-22T17:23:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/liquid-cooling/</loc>
     <lastmod>2023-12-22T17:23:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
