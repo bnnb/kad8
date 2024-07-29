@@ -8,7 +8,37 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-04-21T14:08:47+08:00</lastmod>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/datacenter/</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/intel/</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html</loc>
+    <lastmod>2024-07-29T22:29:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -22,22 +52,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-04-21T14:08:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2024-04-21T14:08:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/vcpu/</loc>
-    <lastmod>2024-04-21T14:08:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2024-04-21T14:08:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -139,11 +154,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/linux/ip-a-powerful-command-in-linux.html</loc>
     <lastmod>2023-12-22T20:57:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/datacenter/</loc>
-    <lastmod>2023-12-22T17:23:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -288,11 +298,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/news/amd-pc-attacks-in-full-force.html</loc>
-    <lastmod>2023-12-05T21:05:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/intel/</loc>
     <lastmod>2023-12-05T21:05:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="智能网卡（SmartNIC）才是未来" />
-<meta itemprop="description" content="智能网卡（SmartNIC）才是未来" />
+<meta itemprop="name" content="英特尔G-Flow可满足千瓦芯片的散热需求" />
+<meta itemprop="description" content="英特尔G-Flow可满足千瓦芯片的散热需求" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
-<meta itemprop="keywords" content="SmartNIC" />
+<meta itemprop="keywords" content="Intel" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="智能网卡（SmartNIC）才是未来" />
-<meta property="og:description" content="智能网卡（SmartNIC）才是未来" />
+<meta property="og:title" content="英特尔G-Flow可满足千瓦芯片的散热需求" />
+<meta property="og:description" content="英特尔G-Flow可满足千瓦芯片的散热需求" />
 <meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html"/>
+<meta property="og:url" content="https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2023-11-06 17:46:37 &#43;0800 CST" />
-<meta property="article:modified_time" content="2023-11-06 17:46:37 &#43;0800 CST" />
+<meta property="article:published_time" content="2024-07-29 22:29:38 &#43;0800 CST" />
+<meta property="article:modified_time" content="2024-07-29 22:29:38 &#43;0800 CST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"smart-nic-is-the-trend-for-future.html","permalink":"https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html","title":"智能网卡（SmartNIC）才是未来"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html","permalink":"https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html","title":"英特尔G-Flow可满足千瓦芯片的散热需求"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>智能网卡（SmartNIC）才是未来 - 北南南北</title>
+  <title>英特尔G-Flow可满足千瓦芯片的散热需求 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,40 +174,10 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#标准网卡nic传统的网络连接">标准网卡（NIC）：传统的网络连接</a>
-      <ul>
-        <li><a href="#标准网卡的功能">标准网卡的功能</a></li>
-        <li><a href="#传统硬件的限制">传统硬件的限制</a>
-          <ul>
-            <li><a href="#cpu负担过重">CPU负担过重</a></li>
-            <li><a href="#难以满足高性能需求">难以满足高性能需求</a></li>
-            <li><a href="#难以管理和维护">难以管理和维护</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#智能网卡smartnic超越传统网络">智能网卡（SmartNIC）：超越传统网络</a>
-      <ul>
-        <li><a href="#智能网卡的功能">智能网卡的功能</a></li>
-        <li><a href="#早期smartnic实现">早期SmartNIC实现</a></li>
-        <li><a href="#smartnic的多种部署方式">SmartNIC的多种部署方式</a></li>
-      </ul>
-    </li>
-    <li><a href="#标准网卡与智能网卡的区别">标准网卡与智能网卡的区别</a>
-      <ul>
-        <li><a href="#联网功能">联网功能</a></li>
-        <li><a href="#存储功能">存储功能</a></li>
-        <li><a href="#任务卸载到smartnic">任务卸载到SmartNIC</a></li>
-      </ul>
-    </li>
-    <li><a href="#如何选择标准网卡或智能网卡">如何选择标准网卡或智能网卡</a>
-      <ul>
-        <li><a href="#性能和速度">性能和速度</a></li>
-        <li><a href="#工作负载和用例">工作负载和用例</a></li>
-        <li><a href="#预算和成本">预算和成本</a></li>
-      </ul>
-    </li>
-    <li><a href="#结论">结论</a></li>
+    <li><a href="#从风冷转向液冷是大势所趋">从风冷转向液冷是大势所趋</a></li>
+    <li><a href="#常见的数据中心液冷技术方案">常见的数据中心液冷技术方案</a></li>
+    <li><a href="#提高单相浸没式液冷的散热表现">提高单相浸没式液冷的散热表现</a></li>
+    <li><a href="#与产业伙伴合作来推广新技术">与产业伙伴合作来推广新技术</a></li>
   </ul>
 </nav></div>
       </div>
@@ -341,7 +311,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -351,11 +321,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="智能网卡（SmartNIC）才是未来">
-      <meta itemprop="description" content="智能网卡（SmartNIC）才是未来">
+      <meta itemprop="name" content="英特尔G-Flow可满足千瓦芯片的散热需求">
+      <meta itemprop="description" content="英特尔G-Flow可满足千瓦芯片的散热需求">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">智能网卡（SmartNIC）才是未来 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">英特尔G-Flow可满足千瓦芯片的散热需求 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -365,7 +335,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2023-11-06 17:46:37 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-06 17:46:37 &#43;0800 CST">2023-11-06</time>
+  <time title="发表于：2024-07-29 22:29:38 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-07-29 22:29:38 &#43;0800 CST">2024-07-29</time>
 </span>
     
     
@@ -387,7 +357,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>57</span>
+  <span class="post-meta-item-text">字数：</span><span>44</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -406,7 +376,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/smart-nic-is-the-trend-for-future.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -417,61 +387,54 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>网络技术和硬件设备的不断发展已经改变了数据中心和云计算的格局。随着虚拟化、微服务架构的不断激增，以及移动设备和云服务的高度利用率，网络工作负载的增加速度已经远远超过了传统数据中心CPU的处理速度。这使得寻找更高性能、更灵活性以及更强大功能的网络解决方案变得迫切。</p>
-<p>当涉及到网络硬件的选择时，智能网卡（SmartNIC）和标准网卡（NIC）是两个备受关注的选项。本文将深入探讨这两种网卡的特性、差异以及如何在特定用例中选择合适的选项。</p>
-<h2 id="标准网卡nic传统的网络连接">标准网卡（NIC）：传统的网络连接</h2>
-<p>几十年来，标准网卡一直是网络连接的主要方式。它们是将计算机连接到网络的硬件组件，实现设备和互联网之间的通信。标准网卡主要用于数据传输和接收，通常因其可靠性和鲁棒性而在数据中心环境中得到广泛应用。</p>
-<h3 id="标准网卡的功能">标准网卡的功能</h3>
-<p>标准网卡具有以下基本功能：</p>
-<ul>
-<li>数据包传输和接收。</li>
-<li>数据包校验和校正。</li>
-<li>数据包分段和重组。</li>
-<li>MAC地址管理。</li>
-</ul>
-<p>这些功能足以支持常见的网络连接需求，但在面对数据密集型应用、虚拟化环境、云计算和高性能计算等要求更高性能和功能的情况下，标准网卡可能显得力不从心。</p>
-<h3 id="传统硬件的限制">传统硬件的限制</h3>
-<p>传统的数据中心硬件包括基于NIC的网络卡，这些硬件已经无法满足现代数据中心的需求。</p>
-<h4 id="cpu负担过重">CPU负担过重</h4>
-<p>传统基于NIC的架构将网络任务交给服务器的CPU来处理，这导致CPU负担过重，无法应对高强度网络工作负载。</p>
-<h4 id="难以满足高性能需求">难以满足高性能需求</h4>
-<p>计算密集型应用程序需要更高的性能和低延迟。传统硬件无法提供足够的性能，导致性能瓶颈。</p>
-<h4 id="难以管理和维护">难以管理和维护</h4>
-<p>随着数据中心规模的扩大，管理和维护传统硬件变得更加困难。虚拟化和微服务的增长也增加了管理的复杂性。</p>
-<h2 id="智能网卡smartnic超越传统网络">智能网卡（SmartNIC）：超越传统网络</h2>
-<p>智能网卡是一种新型网卡，它超越了传统的数据传输功能。它们配备了强大的处理器、内存和专用硬件，可以执行各种高级功能。这些功能包括网络增强、存储加速、安全功能等等。智能网卡的主要目标是从主机CPU上卸载和加速各种网络相关任务，提供专用处理能力和硬件功能，以增强网络性能、安全性和效率。</p>
-<h3 id="智能网卡的功能">智能网卡的功能</h3>
-<p>智能网卡提供了一系列高级功能，包括：</p>
-<ul>
-<li>数据包过滤和负载平衡。</li>
-<li>服务质量（QoS）实施。</li>
-<li>存储加速，包括远程直接内存访问（RDMA）、iSCSI和NVMe over Fabrics。</li>
-<li>安全功能，如防火墙处理和入侵检测系统（IDS）检查。</li>
-</ul>
-<p>这些功能使得智能网卡成为适用于各种高级用例的强大工具，从提高网络性能到加强安全性，再到存储加速。</p>
-<h3 id="早期smartnic实现">早期SmartNIC实现</h3>
-<p>早期的SmartNIC实现使用寄存器驱动的ASIC逻辑，这些设计在性能方面表现出色，具有极低的延迟、高数据包吞吐量和低功耗（通常在15瓦到35瓦之间）。然而，尽管在性能上具有优势，但它们通常缺乏必要的可编程性和灵活性。它们通常需要深奥的命令行工具来设置寄存器，缺乏以编程方式管理数据包和流的能力。</p>
-<h3 id="smartnic的多种部署方式">SmartNIC的多种部署方式</h3>
-<p>SmartNIC在多种不同的部署场景中发挥着关键作用，其中包括存储、安全和网络处理。SmartNIC可能承担的特定任务包括隧道协议（例如VxLAN）的处理以及复杂虚拟交换，如图1所示。它的最终目标是消耗更少的主机CPU处理器内核，同时以更低的成本提供更高的性能解决方案。</p>
-<h2 id="标准网卡与智能网卡的区别">标准网卡与智能网卡的区别</h2>
-<h3 id="联网功能">联网功能</h3>
-<p>标准网卡主要设计用于处理基本网络任务，例如数据包传输、分段和校验和校正。虽然智能网卡也执行这些任务，但它们在卡本身上实现了更复杂的网络功能，如数据包过滤、负载平衡和服务质量（QoS）实施，从而从主机CPU上卸载了这些任务。这降低了延迟、降低了CPU利用率，并提高了整体网络性能。</p>
-<h3 id="存储功能">存储功能</h3>
-<p>智能网卡在存储加速方面表现出色，特别适用于现代数据密集型应用。它们可以卸载远程直接内存访问（RDMA）、iSCSI和NVMe over Fabrics等存储功能，从而提高数据传输速度并减少CPU开销。相比之下，标准网卡缺乏这些存储密集型任务所需的硬件和处理能力。</p>
-<h3 id="任务卸载到smartnic">任务卸载到SmartNIC</h3>
-<p>智能网卡最显著的优势之一是能够将各种任务从主机CPU卸载到网卡上。这不仅包括网络和存储功能，还包括防火墙处理和入侵检测系统（IDS）检查等安全任务。通过将这些任务转移到智能网卡，主机CPU可以腾出时间来专注于应用程序特定的处理，从而提高应用程序性能并减少服务器蔓延。</p>
-<h2 id="如何选择标准网卡或智能网卡">如何选择标准网卡或智能网卡</h2>
-<p>在选择标准网卡或智能网卡时，需要评估特定网络需求和用例。以下是需要考虑的一些因素：</p>
-<h3 id="性能和速度">性能和速度</h3>
-<p>如果您的应用程序需要卓越的网络性能、更低的延迟以及负载平衡、存储加速等高级功能，那么智能网卡可能是更好的选择。它们可以卸载并加速各种任务，从而提高整体性能。</p>
-<h3 id="工作负载和用例">工作负载和用例</h3>
-<p>考虑工作负载和用例的性质。智能网卡在数据密集型场景、虚拟化环境、机器学习和云服务中尤其具有优势，因为在这些场景中，高级网络和存储功能至关重要。如果您的环境需要更多的功能和性能，那么智能网卡可能是更合适的选择。</p>
-<h3 id="预算和成本">预算和成本</h3>
-<p>在选择网卡时，还需要考虑您的预算限制。智能网卡通常比标准网卡更昂贵，因为它们提供了更多功能和性能。如果成本是一个关键因素，那么标准网卡可能是更经济的选择。</p>
-<h2 id="结论">结论</h2>
-<p>在网络连接领域，我们常常发现自己在标准网卡（NIC）和智能网卡（SmartNIC）之间做出选择。不同的用例和需求将决定您的最佳选择。一些基于Intel的以太网适配器，例如E810CAM2-2CP，具备许多高级功能，包括以太网、TCP/IP、UDP/IP等多种网络协议的支持，片上QoS、流量管理、iWARP/RDMA、RoCEv2/RDMA、智能卸载以及iSCSI和NFS的存储功能。这些适配器经过严格测试和认证，确保与各种操作系统和管理程序全面兼容，为那些寻求最佳网络性能和功能的用户提供了平衡且可靠的解决方案。</p>
-<p>除了这些特色的NIC解决方案外，还有Mellanox SmartNIC可供选择。与Mellanox Technologies合作，这些SmartNIC开启了网络增强、卸载和安全性的无限可能。无论您选择高级NIC还是SmartNIC，都可以根据您的网络需求，确保网络以最佳、安全和高效的方式运行。</p>
-<p>在不断演进的网络领域，选择合适的网卡是至关重要的，它将直接影响到您的网络性能、安全性和应用程序的运行。因此，深入了解标准网卡和智能网卡的优劣势以及如何根据特定需求进行选择，将有助于确保您的网络能够满足不断变化的需求。</p>
+  <p>由于受
+<a href="https://www.gaitpu.com" title="生成式AI" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    生成式AI
+    <i class="fa fa-external-link-alt"></i>
+</a>技术的影响，数据中心的算力需求呈现爆发式增长，随之而来的是功耗和散热的巨大挑战。</p>
+<p>为应对这一挑战，英特尔推出了G-Flow浸没式液冷技术，在几乎没有新增成本的情况下。</p>
+<p>G-Flow将散热能力最多提高两倍，满足千瓦级功耗芯片的散热需求，为数据中心的散热难题提供了一个突破性解决方案。</p>
+<h2 id="从风冷转向液冷是大势所趋">从风冷转向液冷是大势所趋</h2>
+<p>当前，数据中心散热从风冷向液冷转变是一个明显的行业趋势。这不仅仅是因为液冷在降低数据中心PUE（电源使用效率）方面更有效，还因为从服务器运行的角度来看，液冷相比风冷在高效散热方面更具优势。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-G-Flow-1.png" alt="Intel G-Flow Cooling"></p>
+<p>风冷可以提高风扇转速来提高散热效果，然而，这并非可持续发展。首先，提高转速带来的能耗增加是非线性的，而且，随着风速的提高，散热收益不断收窄。同时，风扇转速提高增加的噪音和震动，还会影响服务器的可靠性。</p>
+<p>相比之下，液冷散热通过直接接触散热片的液体带走热量，通常具备更好的散热效果，能够压制更大的散热功耗。同时，液冷的方案不仅省去了风扇的噪音和震动，还能让芯片稳定维持在较低的温度区间，避免了瞬时温度升高，从而降低故障率，延长设备的使用寿命。</p>
+<p>现阶段，第五代英特尔至强的TDP已经来到了350瓦，风扇需要在较高的转速区间才能满足这一级别处理器的散热需求。未来，随着更高TDP处理器的出现，而且考虑到还有包括GPU在内的各种AI加速器，单台服务器的功耗只会越来越高，由此可见数据中心急需由风冷向液冷的转化。</p>
+<p>同时，绿色云图CEO 胡世轩还提到了业内对液冷市场的预测报告，报告指出，2023年是液冷的技术验证阶段，而后新建数据中心会有较大比例会采用液冷技术。</p>
+<p>总之，在可见的未来，数据中心从风冷转向液冷是大势所趋。</p>
+<h2 id="常见的数据中心液冷技术方案">常见的数据中心液冷技术方案</h2>
+<p>简单了解一下液冷。数据中心液冷技术主要分为浸没式和冷板式，每种又包含单相和双相两种。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-G-Flow-2.png" alt="Intel G-Flow Cooling"></p>
+<p>先来看浸没式液冷。单相浸没式液冷可以使用合成油或氟碳化合物液体。其中，氟碳化合物散热效果更好，但易挥发的特性容易对环境造成影响，而双相浸没式液冷目前只能使用氟碳化合物。</p>
+<p>冷板式液冷方案中，单相方案以水为导热介质，散热效果好且环境友好，但存在液体泄漏的风险。双相冷板方案也用了氟碳化合物，虽然散热能力更出色，但技术更新颖、更复杂，产业链还有待完善。</p>
+<p>英特尔作为行业产业链纽带，素来与生态保持着密切沟通，如今也正以实际行动推动着液冷技术的落地和发展。在技术选型上，英特尔支持环境保护，希望减少或是禁止使用含氟化合物的方案。</p>
+<p>埃克森美孚不仅是一家石油和天然气公司，也能提供散热用的冷却液。埃克森美孚产品解决方案业务部门亚太区产品总监王欣指出，合成油冷却液在安全性、性能和成本效益方面有显著优势，而氟化液有不易降解的有害物质，一些地区已经限制甚至禁止使用氟化液，所以，合成油冷却液是更好的选择。</p>
+<p>考虑到环保需求，含有氟化液的双相散热方案，就远不如单相冷板和单相浸没式方案更具优势。如果同时又考虑到安全性，想要避免漏液风险，最好的选择就是采用合成油的单相浸没式液冷方案。</p>
+<p>绿色云图CEO 胡世轩介绍称，2023年6月，三大运营商发布的《电信运营商液冷技术白皮书》明确了液冷技术的范围，只纳入单相浸没和冷板技术，排除了喷淋和相变等其他液冷技术。</p>
+<p>事实上，单相浸没式液冷技术具备很多优势。最主要的是，它的技术相对简单，即将服务器完全浸没在冷却液中，服务器工作时产生的热量通过泵驱动冷却液循环，将热量带走，从而实现散热。</p>
+<h2 id="提高单相浸没式液冷的散热表现">提高单相浸没式液冷的散热表现</h2>
+<p>从实际部署来看，单相浸没式液冷技术因其简单、可靠和成本较低而受到广泛关注和欢迎。然而，这一方案最大的问题是散热能力上限不高，而且，如果单纯通过提高液体流量来增强散热，效果并不明显。</p>
+<p>英特尔资深技术专家表示研究后发现，即使提高液体流速，大部分的冷却液并不会流经散热器，无法带走更多热量，导致芯片温度只能降低1-2度。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-G-Flow-3.png" alt="Intel G-Flow Cooling"></p>
+<p>这也主要归因于流经散热器的液体较少，因此，为提高流经散热器的液体流量，英特尔推出G-Flow浸没式液冷技术。通过在散热器和机柜液体出口之间建立一个连通的管道，利用重力或泵的吸力来加速流体通过散热器。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-G-Flow-4.png" alt="Intel G-Flow Cooling"></p>
+<p>在这套方案中，冷却液从机柜底部泵入腔体，当冷却液超过散热器表面时，会沿着管道流下出口。这个过程主要依靠重力驱动，简单高效，流经散热片的液体也会增多。</p>
+<p>英特尔资深技术专家表示，在液面高度差为1米的情况下，理论上可以将液体流速加速至4.4米/秒。而传统自然对流趋动下，液体流速仅为几毫米/秒，这套方案将流速提高了几百倍。</p>
+<p>考虑到流体黏度和流动损失，即使达不到理论数值，也依然可以显著提高流速，提高流经散热器的液体流量，因为所有被泵入的液体都要经过散热器，最终大大提高了散热效率。</p>
+<p>为了让这一技术真正快速用起来，英特尔考虑了设计要保持简单，成本要较低，客户实施的风险要低，同时，还要通过模块化设计提高系统的灵活性和适应性。</p>
+<p>事实上，这套新的散热方案对服务器、对机柜的改动都非常小，可以在无需引入新技术的前提下完成。它与现有的冷板散热方案有些相似之处，但它只有出水管，没有进水管，也完全不用担心泄露导致短路。</p>
+<p><img src="https://www.kad8.com/imgs/post/Intel-G-Flow-4.png" alt="Intel G-Flow Cooling"></p>
+<p>对服务器而言，只需兼容新的散热器，底部支持新的转接板即可。机柜要做的就是增加固定转接板的构造。中间的转接板可根据服务器的具体形状和接口位置定制，确保在更换服务器时无需改动机柜结构。</p>
+<p>英特尔资深技术专家表示，未来如果这一技术得到广泛认可，会进一步简化改造过程。</p>
+<h2 id="与产业伙伴合作来推广新技术">与产业伙伴合作来推广新技术</h2>
+<p>任何新技术都离不开产业生态各方的支持，为了验证和推广这项新技术，英特尔联合服务器合作伙伴，液冷技术提供商以及液冷产品解决方案供应商做了很多验证工作。</p>
+<p>据了解，英特尔已经与新华三和中兴通讯两家服务器厂商合作，对服务器进行内部改造。秉承开放的态度，未来英特尔希望与更多服务器领域的合作伙伴展开合作。</p>
+<p>为了确保冷却液的兼容性，英特尔还与埃克森美孚合作开展了一系列实验。埃克森美孚和英特尔在浸没式液冷方面有长期的合作关系，英特尔对其产品的各方面表现都非常有信心，其研发实力可以帮助解决在可靠性、兼容性等方面的问题。</p>
+<p>从王欣的介绍中了解到，埃克森美孚有专门的团队负责液冷解决方案，埃克森美孚与包括英特尔在内的芯片厂商、液冷产业链厂商以及超大规模数据中心都有合作。针对浸没式液冷场景，埃克森美孚推出了EMDC系列产品来推动行业实现更高的散热表现。</p>
+<p>此外，英特尔还与液冷产品解决方案供应商绿色云图和立讯技术开展了合作，这部分合作伙伴负责设计机柜和冷却分配单元（CDU），期间英特尔也与合作伙伴携手解决了很多在实践中遇到的问题。</p>
+<p>在沟通过程中，绿色云图CEO 胡世轩表示看好液冷市场的未来发展，尽管现阶段冷板技术的应用比例略高，但浸没式液冷技术的需求增长速度也非常快。</p>
+<p>今年4月，英特尔与生态伙伴合作推出了首台样机。目前，这台样机在实验室里已经顺利运行了两个多月，而且测试结果符合此前预期。</p>
+<p>英特尔资深技术专家表示，这一方案可以把基于合成油的单相浸没式液冷的散热能力，其上限提高1倍甚至是2倍，可以满足千瓦级芯片散热需求。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -491,8 +454,8 @@
 
 <div class="post-tags">
   
-    <a href="/tags/smartnic">
-    SmartNIC
+    <a href="/tags/intel">
+    Intel
   </a>
 </div>
 
@@ -520,7 +483,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      智能网卡（SmartNIC）才是未来
+      英特尔G-Flow可满足千瓦芯片的散热需求
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -528,7 +491,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html" title="智能网卡（SmartNIC）才是未来">https://www.kad8.com/post/datacenter/smart-nic-is-the-trend-for-future.html</a>
+       <a id="post-cr-link" href="https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html" title="英特尔G-Flow可满足千瓦芯片的散热需求">https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -553,13 +516,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/datacenter/terminology-of-large-scale-language-models.html" rel="next" title="大型语言模型入门必知术语汇总">
-      <i class="fa fa-chevron-left"></i> 大型语言模型入门必知术语汇总
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/linux/why-linux-need-mmu.html" rel="prev" title="详细讲解MMU—为什么嵌入式linux没他不行">
-      详细讲解MMU—为什么嵌入式linux没他不行
+    <a href="/post/hardware/the-relationship-between-virtual-cpu-and-physical-cpu.html" rel="prev" title="虚拟化技术：VCPU与物理CPU的关系">
+      虚拟化技术：VCPU与物理CPU的关系
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>

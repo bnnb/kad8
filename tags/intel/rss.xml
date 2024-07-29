@@ -6,7 +6,22 @@
     <description>Recent content in Intel on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 05 Dec 2023 21:05:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/intel/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jul 2024 22:29:38 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/intel/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英特尔G-Flow可满足千瓦芯片的散热需求</title>
+      <link>https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html</link>
+      <pubDate>Mon, 29 Jul 2024 22:29:38 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/datacenter/intel-G-Flow-can-meet-the-cooling-needs-of-kilowatt-chips.html</guid>
+      <description>&lt;p&gt;由于受
+&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;生成式AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    生成式AI
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;技术的影响，数据中心的算力需求呈现爆发式增长，随之而来的是功耗和散热的巨大挑战。&lt;/p&gt;
+&lt;p&gt;为应对这一挑战，英特尔推出了G-Flow浸没式液冷技术，在几乎没有新增成本的情况下。&lt;/p&gt;
+&lt;p&gt;G-Flow将散热能力最多提高两倍，满足千瓦级功耗芯片的散热需求，为数据中心的散热难题提供了一个突破性解决方案。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>AMD PC全面出击，英特尔危险了</title>
       <link>https://www.kad8.com/post/news/amd-pc-attacks-in-full-force.html</link>
