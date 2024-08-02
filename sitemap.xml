@@ -8,7 +8,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/embedded/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/linux/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/linux/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/linux/embedded-linux-log-fast-positioning-method.html</loc>
+    <lastmod>2024-08-03T01:29:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,21 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/liquid-cooling/</loc>
-    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2024-07-29T22:46:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2024-07-29T22:46:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -87,11 +107,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/linux/</loc>
-    <lastmod>2024-03-29T17:30:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/rgb/</loc>
     <lastmod>2024-03-14T22:39:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,11 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/kernel/</loc>
-    <lastmod>2024-02-26T20:05:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/linux/</loc>
     <lastmod>2024-02-26T20:05:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
