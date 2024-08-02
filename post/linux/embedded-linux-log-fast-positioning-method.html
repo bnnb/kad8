@@ -269,7 +269,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="19903"></div>
+      <div class="item-count" id="wordsCount" data-count="19904"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -355,7 +355,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>786</span>
+  <span class="post-meta-item-text">字数：</span><span>787</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -385,7 +385,11 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>本文向大家介绍以下嵌入式Linux日志log快速定位的方法。</p>
+  <p>本文向大家介绍以下嵌入式
+<a href="https://www.gaitpu.com/category/os/linux" title="Linux" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Linux
+    <i class="fa fa-external-link-alt"></i>
+</a>日志log快速定位的方法。</p>
 <h2 id="针对大量log日志快速定位错误地方">针对大量log日志快速定位错误地方</h2>
 <p>动态查看日志</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">tail -f catalina.ou
@@ -399,14 +403,14 @@
         <span style="color:#f92672">[</span>root@vxworks<span style="color:#f92672">]</span><span style="color:#75715e"># head -n number catalina.out 查询日志文件中的前number行日志</span>
         <span style="color:#f92672">[</span>root@vxworks<span style="color:#f92672">]</span><span style="color:#75715e"># head -n -number catalina.out 查询日志文件除了最后number行的其他所有日志</span>
 </code></pre></div><p>第一种方式（根据关键字查找出行号）：</p>
-<p>用grep拿到的日志很少，我们需要查看附近的日志。我是这样做的，首先: cat -n test.log | grep “关键词” 得到关键日志的行号</p>
+<p>用grep拿到的日志很少，我们需要查看附近的日志。我是这样做的，首先: <code>cat -n test.log | grep</code>“关键词” 得到关键日志的行号</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@vxworks<span style="color:#f92672">]</span><span style="color:#75715e"># cat -n catalina.out |grep 717892466</span>
 <span style="color:#ae81ff">13230539</span>        <span style="color:#f92672">[</span>11:07 17:47:11<span style="color:#f92672">]</span> INFO nanjiang:Edit Old Article：717892466-2020-11-07 17:47:11
 <span style="color:#ae81ff">13230593</span>        <span style="color:#f92672">[</span>11:07 17:47:15<span style="color:#f92672">]</span> INFO nanjiangSave Article ID IS：717892466
 <span style="color:#ae81ff">13230595</span>        <span style="color:#ae81ff">717892466</span> article.getDisplayTime<span style="color:#f92672">()</span>1 <span style="color:#f92672">=</span> 2020-11-07 16:25:11
 <span style="color:#ae81ff">13230596</span>        <span style="color:#ae81ff">717892466</span> article.getDisplayTime<span style="color:#f92672">()</span>2 <span style="color:#f92672">=</span> 2020-11-07 16:25:11
 <span style="color:#ae81ff">13230601</span>        <span style="color:#f92672">[</span>11:07 17:47:15<span style="color:#f92672">]</span> INFO 南江 10.10.10.39  edit    article <span style="color:#ae81ff">717892466</span>       编辑文章
-</code></pre></div><p>「cat -n catalina.out|tail -n +13230539|head -n 10」</p>
+</code></pre></div><p><code>cat -n catalina.out|tail -n +13230539|head -n 10</code></p>
 <ul>
 <li>tail -n +13230539表示查询13230539行之后的日志</li>
 <li>head -n 10则表示在前面的查询结果里再查前10条记录</li>
