@@ -6,66 +6,18 @@
     <description>Recent content in Nvidia on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 13 Dec 2023 21:34:09 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Aug 2024 16:27:10 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NVIDIA AI芯片可以卖给中国！只有一条件</title>
-      <link>https://www.kad8.com/post/news/NVIDIA-AI-chips-can-be-sold-to-China-with-one-condition.html</link>
-      <pubDate>Wed, 13 Dec 2023 21:34:09 +0800</pubDate>
+      <title>什么可能终结一万亿美元的人工智能繁荣</title>
+      <link>https://www.kad8.com/post/what-could-kill-the-1trn-artificial-intelligence-boom.html</link>
+      <pubDate>Sun, 18 Aug 2024 16:27:10 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/news/NVIDIA-AI-chips-can-be-sold-to-China-with-one-condition.html</guid>
-      <description>&lt;p&gt;为了满足美国政府的出口管制条件，尽可能向中国销售高端
-&lt;a href=&#34;https://www.gaitpu.com/&#34; title=&#34;AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
-    AI
+      <guid>https://www.kad8.com/post/what-could-kill-the-1trn-artificial-intelligence-boom.html</guid>
+      <description>&lt;p&gt;本文讨论了
+&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;人工智能（AI）&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    人工智能（AI）
     &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
-&lt;/a&gt;芯片，
-&lt;a href=&#34;https://www.gaitpu.com/tag/nvidia&#34; title=&#34;NVIDIA&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
-    NVIDIA
-    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
-&lt;/a&gt;可以说操碎了心，不断研究各种特供版。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>NVIDIA 收到商务部长警告, 勿为中国重新设计芯片</title>
-      <link>https://www.kad8.com/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</link>
-      <pubDate>Tue, 05 Dec 2023 22:18:21 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/news/NVIDIA-receives-warning-from-Commerce-Secretary.html</guid>
-      <description>&lt;p&gt;虽然美国禁止了 NVIDIA 一些 
-&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
-    AI
-    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
-&lt;/a&gt; 芯片出口中国，不过 NVIDIA 正试图看能否不放弃中国这块大饼，推出一些管制边缘能符合条件的卡，如 HGX H20 或将要推出的特规 RTX 4090D。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>GH200，来自英伟达的AI超级计算机</title>
-      <link>https://www.kad8.com/post/news/gh200-from-nvidia.html</link>
-      <pubDate>Sun, 19 Nov 2023 10:47:43 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/news/gh200-from-nvidia.html</guid>
-      <description>&lt;p&gt;Nvidia的GH200 AI超级计算机是一款巨大的进步，相比于之前的H100，其在使用TB级数据训练和部署AI模型方面的性能提升了3-7倍。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>英伟达发布H200, 高性价比全面升级</title>
-      <link>https://www.kad8.com/post/news/nvidia-launch-h200-gpu.html</link>
-      <pubDate>Sun, 19 Nov 2023 09:40:58 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/news/nvidia-launch-h200-gpu.html</guid>
-      <description>&lt;p&gt;在11月13日的S23大会上，
-&lt;a href=&#34;https://www.gaitpu.com/tag/nvidia&#34; title=&#34;NVIDIA&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
-    NVIDIA
-    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
-&lt;/a&gt;宣布推出NVIDIA HGX H200，为生成式人工智能和高性能计算（HPC）工作负载提供强大支持。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>英伟达的芯片版图</title>
-      <link>https://www.kad8.com/post/datacenter/nvidia-chip-layout.html</link>
-      <pubDate>Tue, 25 Jul 2023 11:06:14 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/post/datacenter/nvidia-chip-layout.html</guid>
-      <description>&lt;p&gt;当英伟达市值站上万亿美元之巅时，全球最神秘资本大鳄罗斯柴尔德家族却传出减持英伟达股票的消息，股神巴菲特也作出了相同选择。&lt;/p&gt;</description>
+&lt;/a&gt;产业的巨大投资热潮及其潜在风险。尽管AI数据中心的投资金额巨大，科技巨头们仍然继续大规模投资，导致供应链中的相关公司也在迅速扩展。然而，文章指出了这种投资热潮中的多个风险，包括对Nvidia的高度依赖、电力供应瓶颈以及需求可能减弱的风险。这些因素可能会影响整个AI供应链的稳定性。读者可以了解到AI行业的现状和未来面临的挑战，激发对AI产业发展的兴趣。&lt;/p&gt;</description>
     </item>
     
   </channel>
