@@ -6,7 +6,21 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Sep 2024 23:22:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Sep 2024 23:37:55 +0800</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达Blackwell的技术细节</title>
+      <link>https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html</link>
+      <pubDate>Sat, 07 Sep 2024 23:37:55 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html</guid>
+      <description>&lt;p&gt;在2024年Hotchips大会上，NVIDIA详细介绍了其最新的Blackwell一代AI加速器及相关网络硬件的技术细节。&lt;/p&gt;
+&lt;p&gt;Blackwell的引入标志着NVIDIA在AI计算领域的又一次重大突破，尤其是在
+&lt;a href=&#34;https://www.gaitpu.com&#34; title=&#34;数据中心&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    数据中心
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;领域。Blackwell一代GPU和NVLink 5.0互连技术展示了NVIDIA在AI计算领域的深厚技术积累和市场领导力。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>HBM内存芯片: AI革命的无名英雄</title>
       <link>https://www.kad8.com/post/hbm-memory-chips-the-unsung-hero-of-the-ai-revolution.html</link>

@@ -2,6 +2,35 @@
 <search>
   
   <entry>
+    <title>英伟达Blackwell的技术细节</title>
+    <url>/post/technical-details-of-nvidia-blackwell.html</url>
+    <categories><category>Science & technology</category>
+    </categories>
+    <tags>
+      <tag>Nvidia</tag>
+      <tag>AI</tag>
+      <tag>Blackwell</tag>
+    </tags>
+    <content type="html"><![CDATA[在2024年Hotchips大会上，NVIDIA详细介绍了其最新的Blackwell一代AI加速器及相关网络硬件的技术细节。
+Blackwell的引入标志着NVIDIA在AI计算领域的又一次重大突破，尤其是在 数据中心  领域。Blackwell一代GPU和NVLink 5.0互连技术展示了NVIDIA在AI计算领域的深厚技术积累和市场领导力。
+随着2024年年底至2025年初新产品的全面上市， NVIDIA  将在数据中心AI计算领域占据更为重要的位置。这不仅有助于提升当前AI模型的计算效率，还为未来更复杂的AI应用奠定了基础。
+Blackwell GPU：性能与技术的飞跃 Blackwell GPU是NVIDIA在AI领域的最新力作，特别为数据中心设计。
+其晶体管数量达到1040亿个，占据了超过800平方毫米的芯片面积，这是目前芯片制造工艺的极限。这一庞大的晶体管数量使得Blackwell GPU在计算能力和效率上都达到了新的高度，能够支持更复杂的AI模型和更高的数据吞吐量。
+Blackwell GPU采用台积电的4NP工艺制造，这不仅提升了性能，还保证了在能效方面的出色表现。
+NVIDIA在其自有数据中心对Blackwell进行了测试，这意味着NVIDIA正积极为未来的AI应用奠定基础。在2024年底，第一批搭载Blackwell GPU的系统将问世，而到2025年初，这些系统将实现大规模部署。
+NVLink 5.0： 加速数据中心互联 在Blackwell系列中，NVIDIA还推出了第五代NVLink互连技术。NVLink 5.0实现了1.8 TB/s的双向数据吞吐量，这对于需要高带宽的AI应用至关重要。
+新推出的Blackwell NVLink交换芯片拥有72个端口，双向带宽达7.2 TB/s，这种强大的连接能力使得数据中心内部的通信效率大幅提升。
+NVLink交换芯片的面积也超过800平方毫米，但与Blackwell GPU相比，其晶体管数量减少至500亿个。这是因为交换芯片主要用于数据传输，其SerDes区域占用了大量的芯片空间，因此对计算单元的需求较少。
+NVIDIA已经规划了Blackwell之后的产品路线图。在Blackwell GPU之后，NVIDIA计划推出Blackwell Ultra，这一升级版将内存扩展至244 GB，并将继续采用HBM3e或HBM3e的升级版本。
+内存带宽保持不变，但这款GPU在处理更大规模AI任务时将表现更出色。
+NVIDIA已经在2026年推出Blackwell的继任者——Ruby。Ruby将引入HBM4内存技术，进一步提高带宽和存储容量，并将NVLink带宽翻倍至3.6 TB/s。
+这一系列技术创新将为AI计算带来更强大的能力，同时也标志着NVIDIA在AI硬件领域的持续领先地位。
+小结 NVIDIA未来的产品路线图表明已经为未来几年内的技术升级做好了充分准备。随着Ruby架构的推出和HBM4内存的应用，NVIDIA将在AI硬件市场中继续保持竞争优势。
+NVIDIA的创新将推动AI技术的进一步发展，并可能在全球数据中心市场中引发新一轮的技术革命。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>HBM内存芯片: AI革命的无名英雄</title>
     <url>/post/hbm-memory-chips-the-unsung-hero-of-the-ai-revolution.html</url>
     <categories><category>Science & technology</category>
