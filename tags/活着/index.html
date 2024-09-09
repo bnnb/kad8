@@ -10,26 +10,21 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="英伟达Blackwell的技术细节" />
-<meta itemprop="description" content="英伟达Blackwell的技术细节" />
-<meta itemprop="datePublished" ZgotmplZ />
-<meta itemprop="dateModified" ZgotmplZ />
+<meta itemprop="name" content="活着" />
+<meta itemprop="description" content="Where there is embedded, there is VxWorks." />
 <meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
-<meta itemprop="keywords" content="Nvidia,AI,Blackwell" />
+<meta itemprop="keywords" content="Embedded,VxWorks,Linux,Server,Real Time" />
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="英伟达Blackwell的技术细节" />
-<meta property="og:description" content="英伟达Blackwell的技术细节" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="活着" />
+<meta property="og:description" content="Where there is embedded, there is VxWorks." />
 <meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html"/>
+<meta property="og:url" content="https://www.kad8.com/tags/%E6%B4%BB%E7%9D%80/"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
-<meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2024-09-07 23:37:55 &#43;0800 CST" />
-<meta property="article:modified_time" content="2024-09-07 23:37:55 &#43;0800 CST" />
 
 
   
@@ -44,7 +39,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"technical-details-of-nvidia-blackwell.html","permalink":"https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html","title":"英伟达Blackwell的技术细节"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":false,"path":"%E6%B4%BB%E7%9D%80","permalink":"https://www.kad8.com/tags/%E6%B4%BB%E7%9D%80/","title":"活着"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +55,7 @@
 
 
 
-  <title>英伟达Blackwell的技术细节 - 北南南北</title>
+  <title>活着 - 标签 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -172,13 +167,7 @@
     <div class="sidebar-panel-container">
       
       <div class="post-toc-wrap sidebar-panel">
-        <div class="post-toc animated"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#blackwell-gpu性能与技术的飞跃">Blackwell GPU：性能与技术的飞跃</a></li>
-    <li><a href="#nvlink-50-加速数据中心互联">NVLink 5.0： 加速数据中心互联</a></li>
-    <li><a href="#小结">小结</a></li>
-  </ul>
-</nav></div>
+        <div class="post-toc animated"></div>
       </div>
       
       <div class="site-overview-wrap sidebar-panel">
@@ -306,247 +295,48 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-    <div class="main-inner post posts-expand">
+    <div class="main-inner tags posts-collapse">
       
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="英伟达Blackwell的技术细节">
-      <meta itemprop="description" content="英伟达Blackwell的技术细节">
-    </span>
-    <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">英伟达Blackwell的技术细节 </h1> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-07 23:37:55 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-07 23:37:55 &#43;0800 CST">2024-09-07</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/science-technology" itemprop="url" rel="index">
-      <span itemprop="name">Science &amp; technology</span>
-    </a>
-  </span>
-</span>
-  </div>
-  <div class="post-meta-items">
-    
-<span class="post-meta-item" title="字数">
-  <span class="post-meta-item-icon">
-    <i class="far fa-file-word"></i>
-  </span>
-  <span class="post-meta-item-text">字数：</span><span>40</span>
-</span>
-    
-<span class="post-meta-item" title="阅读">
-  <span class="post-meta-item-icon">
-    <i class="far fa-clock"></i>
-  </span>
-  <span class="post-meta-item-text">阅读：&asymp;</span>
-  <span>1分钟</span>
-</span>
+<div class="post-block">
+  <div class="post-content">
+    <div class="collection-title">
+      <span class="collection-header">
+        <h2>
+        活着
+        <small>标签</small>
+      </h2>
+      </span>
+    </div>
 
     
-<span class="post-meta-item" title="浏览">
-  <span class="post-meta-item-icon">
-    <i class="far fa-eye"></i>
-  </span>
-  <span class="post-meta-item-text">
-  浏览：
-  </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/technical-details-of-nvidia-blackwell.html"><i class="fa fa-sync fa-spin"></i></span>
-</span>
 
-  </div>
-  
+<div class="collection-year">
+  <span class="collection-header">2024</span>
 </div>
 
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
+<article itemscope itemtype="http://schema.org/Article">
+  <header class="post-header">
+    <div class="post-meta-container">
       
-  <p>在2024年Hotchips大会上，NVIDIA详细介绍了其最新的Blackwell一代AI加速器及相关网络硬件的技术细节。</p>
-<p>Blackwell的引入标志着NVIDIA在AI计算领域的又一次重大突破，尤其是在
-<a href="https://www.gaitpu.com" title="数据中心" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    数据中心
-    <i class="fa fa-external-link-alt"></i>
-</a>领域。Blackwell一代GPU和NVLink 5.0互连技术展示了NVIDIA在AI计算领域的深厚技术积累和市场领导力。</p>
-<p>随着2024年年底至2025年初新产品的全面上市，
-<a href="https://www.gaitpu.com/tag/nvidia" title="NVIDIA" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    NVIDIA
-    <i class="fa fa-external-link-alt"></i>
-</a>将在数据中心AI计算领域占据更为重要的位置。这不仅有助于提升当前AI模型的计算效率，还为未来更复杂的AI应用奠定了基础。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-1.png" alt="Nvidia Blackwell Platform"></p>
-<h2 id="blackwell-gpu性能与技术的飞跃">Blackwell GPU：性能与技术的飞跃</h2>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-2.png" alt="Nvidia Blackwell Platform"></p>
-<p>Blackwell GPU是NVIDIA在AI领域的最新力作，特别为数据中心设计。</p>
-<p>其晶体管数量达到1040亿个，占据了超过800平方毫米的芯片面积，这是目前芯片制造工艺的极限。这一庞大的晶体管数量使得Blackwell GPU在计算能力和效率上都达到了新的高度，能够支持更复杂的AI模型和更高的数据吞吐量。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-3.png" alt="Nvidia Blackwell Platform"></p>
-<p>Blackwell GPU采用台积电的4NP工艺制造，这不仅提升了性能，还保证了在能效方面的出色表现。</p>
-<p>NVIDIA在其自有数据中心对Blackwell进行了测试，这意味着NVIDIA正积极为未来的AI应用奠定基础。在2024年底，第一批搭载Blackwell GPU的系统将问世，而到2025年初，这些系统将实现大规模部署。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-4.png" alt="Nvidia Blackwell Platform"></p>
-<h2 id="nvlink-50-加速数据中心互联">NVLink 5.0： 加速数据中心互联</h2>
-<p>在Blackwell系列中，NVIDIA还推出了第五代NVLink互连技术。NVLink 5.0实现了1.8 TB/s的双向数据吞吐量，这对于需要高带宽的AI应用至关重要。</p>
-<p>新推出的Blackwell NVLink交换芯片拥有72个端口，双向带宽达7.2 TB/s，这种强大的连接能力使得数据中心内部的通信效率大幅提升。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-5.png" alt="Nvidia Blackwell Platform"></p>
-<p>NVLink交换芯片的面积也超过800平方毫米，但与Blackwell GPU相比，其晶体管数量减少至500亿个。这是因为交换芯片主要用于数据传输，其SerDes区域占用了大量的芯片空间，因此对计算单元的需求较少。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-6.png" alt="Nvidia Blackwell Platform"></p>
-<p>NVIDIA已经规划了Blackwell之后的产品路线图。在Blackwell GPU之后，NVIDIA计划推出Blackwell Ultra，这一升级版将内存扩展至244 GB，并将继续采用HBM3e或HBM3e的升级版本。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-7.png" alt="Nvidia Blackwell Platform"></p>
-<p>内存带宽保持不变，但这款GPU在处理更大规模AI任务时将表现更出色。</p>
-<p>NVIDIA已经在2026年推出Blackwell的继任者——Ruby。Ruby将引入HBM4内存技术，进一步提高带宽和存储容量，并将NVLink带宽翻倍至3.6 TB/s。</p>
-<p>这一系列技术创新将为AI计算带来更强大的能力，同时也标志着NVIDIA在AI硬件领域的持续领先地位。</p>
-<p><img src="https://www.kad8.com/imgs/post/Nvidia-blackwell-platform-8.png" alt="Nvidia Blackwell Platform"></p>
-<h2 id="小结">小结</h2>
-<p>NVIDIA未来的产品路线图表明已经为未来几年内的技术升级做好了充分准备。随着Ruby架构的推出和HBM4内存的应用，NVIDIA将在AI硬件市场中继续保持竞争优势。</p>
-<p>NVIDIA的创新将推动AI技术的进一步发展，并可能在全球数据中心市场中引发新一轮的技术革命。</p>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
-     crossorigin="anonymous"></script>
-
-<ins class="adsbygoogle"
-     style="display:inline-block;width:970px;height:90px"
-     data-ad-client="ca-pub-1543398821442998"
-     data-ad-slot="4140563281"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-
+      <time itemprop="dateCreated" datetime="2024-09-09T21:45:17&#43;08:00" content="09-09">
+        09-09
+      </time>
     </div>
-    <footer class="post-footer">
-      
-
-<div class="post-tags">
-  
-    <a href="/tags/nvidia">
-    Nvidia
-  </a>
-    <a href="/tags/ai">
-    AI
-  </a>
-    <a href="/tags/blackwell">
-    Blackwell
-  </a>
-</div>
-
-<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
-<hr/>
-
-<div class="reward-container">
-  <div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div>
-  <button>赞赏</button>
-  <div class="post-reward">
-    <div class="post-reward-item">
-      <img src="/imgs/ali-pay.png" alt="VxWorks OS - 支付宝">
-      <span>支付宝</span>
+    <div class="post-title">
+      <a class="post-title-link" href="/post/nothing-is-more-important-than-being-alive.html" itemprop="url">
+        <span itemprop="name">没什么，比活着更重要</span>
+      </a>
     </div>
-    <div class="post-reward-item">
-      <img src="/imgs/wechat-pay.png" alt="VxWorks OS - 微信">
-      <span>微信</span>
-    </div>
-  </div>
-</div>
+  </header>
+</article>
 
-
-<div class="post-copyright">
-  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" />
-  <ul>
-    <li class="post-copyright-title">
-      <strong>文章标题：</strong>
-      英伟达Blackwell的技术细节
-    </li>
-    <li class="post-copyright-author">
-      <strong>本文作者： </strong>
-      VxWorks OS
-    </li>
-    <li class="post-copyright-link"> 
-      <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html" title="英伟达Blackwell的技术细节">https://www.kad8.com/post/technical-details-of-nvidia-blackwell.html</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，均采用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-</div>
-
-  <div class="followme">
-  <span>欢迎关注我的其它发布渠道</span>
-  <div class="social-list">
+ 
     
-    <div class="social-item">
-        <a target="_blank" class="social-link" href="/imgs/wechat_channel.jpg">
-          <span class="icon">
-            <i class="fab fa-weixin"></i>
-          </span>
-          <span class="label">WeChat</span>
-        </a>
-      </div>
   </div>
 </div>
-<div class="post-nav">
-  <div class="post-nav-next post-nav-item">
-    <a href="/post/unveiling-the-meta-RoCE-network.html" rel="next" title="揭秘 Meta RoCE 网络">
-      <i class="fa fa-chevron-left"></i> 揭秘 Meta RoCE 网络
-    </a>
-  </div>
-  <div class="post-nav-prev post-nav-item">
-    <a href="/post/hbm-memory-chips-the-unsung-hero-of-the-ai-revolution.html" rel="prev" title="HBM内存芯片: AI革命的无名英雄">
-      HBM内存芯片: AI革命的无名英雄
-      <i class="fa fa-chevron-right"></i>
-    </a>
-  </div>
-</div>
-    </footer>
-  </article>
-</div>
-<div id="comments" class="post-comments">
-  <div class="comment-head">
-    <div class="comment-headline">
-      <i class="fas fa-comments fa-fw"></i>
-      <span>评论交流</span>
-    </div>
-    <div class="comment-switch">
-      <span class="first-comment">Giscus</span>
-      <span class="switch-btn "></span>
-      <span class="second-comment">Waline</span>
-    </div>
-  </div>
-  <div class="comment-wrap">
-  
-    <div><div class="comment-loading">
-  <i class="fa fa-sync fa-spin"></i>
-</div><div class="giscus-container"></div>
-    </div>
-    <div><div class="comment-loading">
-  <i class="fa fa-sync fa-spin"></i>
-</div><div class="waline-container"></div>
-    </div>
-  </div>
-</div>
-
+<nav class="pagination">
+        <span class="page-number current">1</span>
+</nav>
     </div>
   </main>
   <footer class="footer">

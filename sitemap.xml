@@ -3,17 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-09-08T12:04:04+08:00</lastmod>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-09-08T12:04:04+08:00</lastmod>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2024-09-08T12:04:04+08:00</lastmod>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/nothing-is-more-important-than-being-alive.html</loc>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/%E6%B4%BB%E7%9D%80/</loc>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E8%A8%80/</loc>
+    <lastmod>2024-09-09T21:45:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -23,16 +43,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/do-not-be-afraid.html</loc>
-    <lastmod>2024-09-08T12:04:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
-    <lastmod>2024-09-08T12:04:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E8%A8%80/</loc>
     <lastmod>2024-09-08T12:04:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
