@@ -3,21 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2024-09-24T23:32:26+08:00</lastmod>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/english/</loc>
-    <lastmod>2024-09-24T23:32:26+08:00</lastmod>
+    <loc>https://www.kad8.com/tags/ios-18.1/</loc>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/iOS-18-1-new-version-released-with-4-new-changes.html</loc>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2024-09-24T23:32:26+08:00</lastmod>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/science-technology/</loc>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-09-24T23:54:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/english/</loc>
     <lastmod>2024-09-24T23:32:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -28,11 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/cambridge-university-recommended-reading-in-english.html</loc>
-    <lastmod>2024-09-24T23:32:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2024-09-24T23:32:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -68,11 +83,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/detailed-explanation-of-CCAR-25-airworthiness-standards-for-transport-aircraft.html</loc>
-    <lastmod>2024-09-21T11:37:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/science-technology/</loc>
     <lastmod>2024-09-21T11:37:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

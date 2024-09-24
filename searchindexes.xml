@@ -2,6 +2,34 @@
 <search>
   
   <entry>
+    <title>iOS18.1 新版本发布，新增4个改动</title>
+    <url>/post/iOS-18-1-new-version-released-with-4-new-changes.html</url>
+    <categories><category>Science & technology</category>
+    </categories>
+    <tags>
+      <tag>iOS 18.1</tag>
+    </tags>
+    <content type="html"><![CDATA[今日凌晨，苹果推送了 iOS18.1   第5个测试版，也就是 iOS18.1 Beta 5
+版本号为22B5054e，更新包约 700MB 左右
+AI存储空间 在本次系统中，苹果提到了关于运行 Apple Intelligence 的必要条件，除了iOS18.1系统占据的空间外，运行 AI 还需要额外 4GB 的存储空间
+也就是说，想要使用 AI ，需要留出4GB的空余存储。
+除了这个必要条件以外，AI依然只支持 iPhone 15 Pro 及之后的机型
+控制中心 此前，WiFi按钮、无线共享、蓝牙等都被圈起来放一起。而现在已经可以把 WiFi 按钮单独拿出来放置
+进入系统设置-控制中心，新增了一个“还原控制中心”的功能
+如果你对控制中心进行了大量混乱的修改，可将控制中心恢复到iOS18的初始状态。使用该功能不会导致数据丢失
+拍照按钮 这是一个 iPhone16 专属功能，在拍照按钮专属的菜单栏中，新增了一个切换到前置相机的选项
+镜像传文件 此前，iOS18 的镜像功能可以将 iPhone 投屏到 Mac 上，并在 Mac 上操控iPhone，可以收到 iPhone 上所有的电话和通知，同时 iPhone 会保持锁定。
+在升级到 iOS18.1 Beta5 后 ，配合最新的 macOS 15.1 测试版，可以在屏幕上的 iPhone 和 Mac 桌面之间互相拖拽文件，对于办公人士来说，这个功能可以极大提高工作效率
+锁屏按钮 iOS18 的锁屏按钮可以自定义，现在新增了一个“快速备忘录”按钮
+AirPods Pro2 助听器支持 外媒 MacRumors 发现，在iOS18.1 Beta 5 代码中，已经有了关于 AirPods Pro2 助听器功能的相关代码，但是暂时被苹果隐藏了，还没有启用
+在此之前，苹果 AirPods Pro 2 助听器功能已获得美国 FDA 的批准，意味着这款耳机可随时变身“非处方助听器”。
+这是一种“临床级”助听器，用户可使用耳机进行一次听力测试，如果检测到听力损失，将为用户创建“个性化声音配置”文件，配置之后，耳机会根据用户需要进行动态声音调整，以帮助用户更好地听清外界的声音
+不少人都比较关注这个功能，需要注意的是，目前暂不清楚中国大陆地区是否支持 AirPods Pro 2 的“助听器”功能
+如果参考之前的手表ECG心电图，那么耳机“助听器”应该同样需要用一些特殊方法来开通，具体要等待该功能上线后实测
+修复和未修复的问题 已修复的问题  修复：部分应用的scheme链接无法正常打开的问题 修复：锁屏时下拉调用 Spotlight 不起作用的问题 修复：Spotlight 中的图标可能与主屏幕上的图标不匹配  未修复的问题  新的 Siri UI 无法在车载CarPlay中呈现 从 iOS18 Beta5 升级到 iOS18.1 可能导致所有邮件重新下载  ]]></content>
+  </entry>
+  
+  <entry>
     <title>剑桥大学推荐阅读的英文原著</title>
     <url>/post/cambridge-university-recommended-reading-in-english.html</url>
     <categories><category>English</category>
