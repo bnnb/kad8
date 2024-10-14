@@ -1,1004 +1,787 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
-<meta name="generator" content="Hugo 0.92.2" />
-<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
-<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="北南南北" />
-<meta itemprop="description" content="Where there is embedded, there is VxWorks." />
-<meta itemprop="image" content="https://www.kad8.com/imgs/VxWorks_7_logo.png" />
-<meta itemprop="keywords" content="Embedded,VxWorks,Linux,Server,Real Time" />
-
-<meta property="og:type" content="website" />
-<meta property="og:title" content="北南南北" />
-<meta property="og:description" content="Where there is embedded, there is VxWorks." />
-<meta property="og:image" content="/imgs/VxWorks_7_logo.png" />
-<meta property="og:image:width" content="312" />
-<meta property="og:image:height" content="312" />
-<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/"/>
-<meta property="og:site_name" content="北南南北" />
-<meta property="og:locale" content="zh-CN"/>
-
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head>
+	<meta name="generator" content="Hugo 0.135.0">
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>VxWorks</title>
+  <meta name="title" content="VxWorks" />
+  
+  <meta name="description" content="VxWorks The Leading RTOS" />
+  
+  
+  
+  <link rel="canonical" href="https://www.kad8.com/" />
+  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="VxWorks" />
+  
+  <link rel="alternate" type="application/json" href="/index.json" title="VxWorks" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.67eb0befb1fb57e6528684f3a2ff6e0606a82100504705b66488d54a9f3fda9c2605c9bf3b70163208427288637a7b4d1a168384c1115e417458eae6b44b329c.css"
+    integrity="sha512-Z&#43;sL77H7V&#43;ZShoTzov9uBgaoIQBQRwW2ZIjVSp8/2pwmBcm/O3AWMghCcohjentNGhaDhMERXkF0WOrmtEsynA==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.efbf3b6b987689fffaf2d7b73173d2690c0279a04d444b0537a77d7f4ff6e6d493445400cb0cf56bc0f0f123e19f15394e63cae34e67f069bd013dd5c73df56e.js"
+    integrity="sha512-7787a5h2if/68te3MXPSaQwCeaBNREsFN6d9f0/25tSTRFQAywz1a8Dw8SPhnxU5TmPK405n8Gm9AT3Vxz31bg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.kad8.com/">
+  <meta property="og:site_name" content="VxWorks">
+  <meta property="og:title" content="VxWorks Overview">
+  <meta property="og:description" content=" VxWorks The Leading RTOS The industry&#39;s most widely deployed RTOS. VxWorks has been used to ensure the security, safety, and reliability you need to design and build mission-critical embedded systems that simply must work.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
   
-  <link type="text/css" rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VxWorks Overview">
+  <meta name="twitter:description" content=" VxWorks The Leading RTOS The industry&#39;s most widely deployed RTOS. VxWorks has been used to ensure the security, safety, and reliability you need to design and build mission-critical embedded systems that simply must work.">
+
   
-  <link type="text/css" rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" />
-
-
-<link rel="stylesheet" href="/css/main.min.bed81cc6ee3f425fbd72b31d4280bf88a2dcdd7e7c58051a5337db01f0181f80.css">
-  <style type="text/css">
-    .post-footer, .flinks-list-footer hr:after {
-      content: "~ 我可是有底线的哟 ~";
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https:\/\/www.kad8.com\/",
+    "name": "VxWorks",
+    "description": "VxWorks The Leading RTOS",
+    "inLanguage": "en",
+    "url": "https:\/\/www.kad8.com\/",
+    
+    "publisher" : {
+      "@type": "Person",
+      "name": ""
     }
-  </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":true,"isPage":false,"path":"www.kad8.com","permalink":"https://www.kad8.com/","title":"北南南北"}</script>
-  <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', () => {
-    var script = document.createElement('script');
-      
-    script.charset = "UTF-8";
-    script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
-    script.async   = "true"
+  }
+  </script>
 
-    document.head.appendChild(script);
-  });
+
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+  crossorigin="anonymous"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP06TX4782"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BP06TX4782');
+  </script>
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">VxWorks</span>
+
+            
+            <img src="/img/VxWorks_logo.png" width="151" height="130"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="VxWorks" />
+            
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">VxWorks</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/training/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Training
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/bsp/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        BSP
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+<div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    <span class="mr-1">
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+    <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg>
+  </span>
+
+
+    </span>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="VxWorks Overview">EN</div>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="VxWorks Overview">
+            EN
+          </p>
+        </a>
+        
+        <a href="/zh-cn/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Blowfish">
+            简体中文
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+<div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    <span class="mr-1">
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+    <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg>
+  </span>
+
+
+    </span>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="VxWorks Overview">EN</div>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="VxWorks Overview">
+            EN
+          </p>
+        </a>
+        
+        <a href="/zh-cn/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Blowfish">
+            简体中文
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/training/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Training
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/bsp/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            BSP
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
 </script>
 
 
-
-
-  <title>北南南北</title>
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
-  <div class="headband"></div>
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-<div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">北南南北</h1>
-      <i class="logo-line"></i>
-    </a>
-    
-      <p class="site-subtitle" itemprop="description">Embedded World</p>
-      <img class="custom-logo-image" src="/imgs/VxWorks_7_logo.png" alt="北南南北">
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-      
-      <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
   </div>
 </div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
-<nav class="site-nav">
-  <ul class="main-menu menu">
-    <li class="menu-item menu-item-home">
-      <a href="/" class="hvr-icon-pulse  menu-item-active" rel="section"><i class="fa fa-home hvr-icon"></i>首页
-      </a>
-    </li>
-    <li class="menu-item menu-item-about">
-      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
-      </a>
-    </li>
-    <li class="menu-item menu-item-flinks">
-      <a href="/flinks.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-thumbs-up hvr-icon"></i>友情链接
-      </a>
-    </li>
-    <li class="menu-item menu-item-archives">
-      <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
-        <span class="badge">39</span>
-      </a>
-    </li>
-    <li class="menu-item menu-item-commonweal">
-      <a href="https://www.vxbus.com" class="hvr-icon-pulse " rel="section"><i class="fa fa-heartbeat hvr-icon"></i>赞助商
-      </a>
-    </li>
-    <li class="menu-item menu-item-search">
-      <a role="button" class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索
-      </a>
-    </li>
-  </ul>
-</nav>
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-    </div>
-  </div>
-      </div>
-      <div class="toggle sidebar-toggle" role="button">
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-</div>
-<aside class="sidebar">
   
-  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-toc">
-        文章目录
-      </li>
-      <li class="sidebar-nav-overview">
-        站点概览
-      </li>
-    </ul>
-    <div class="sidebar-panel-container">
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
       
-      <div class="post-toc-wrap sidebar-panel">
-        <div class="post-toc animated"></div>
-      </div>
-      
-      <div class="site-overview-wrap sidebar-panel">
-<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="VxWorks OS"
-      src="/imgs/hugo_next_avatar.png">
-  <p class="site-author-name" itemprop="name">VxWorks OS</p>
-  <div class="site-description" itemprop="description">Where there is embedded, there is VxWorks.</div>
-</div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-    <div class="site-state-item site-state-posts">
-      <a href="/archives/">
-        <span class="site-state-item-count">39</span>
-        <span class="site-state-item-name">日志</span>
-      </a>
-    </div>
-    <div class="site-state-item site-state-categories">
-      <a href="/categories/">
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">分类</span>
-      </a>
-    </div>
-    <div class="site-state-item site-state-tags">
-      <a href="/tags/">
-        <span class="site-state-item-count">49</span>
-        <span class="site-state-item-name">标签</span>
-      </a>
-    </div>
-  </nav>
-</div>
-<div class="links-of-social site-overview-item animated">
-
-
-  <span class="links-of-social-item">
-    <a href="https://github.com/" title="Github → https://github.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
-      <i class="fab fa-github fa-fw  hvr-icon "></i>Github
-    </a>
-  </span>
-  <span class="links-of-social-item">
-    <a href="https://www.zhihu.com/" title="知乎 → https://www.zhihu.com/" rel="noopener" class="hvr-icon-pulse" target="_blank">
-      <i class="fa fa-book fa-fw  hvr-icon "></i>知乎
-    </a>
-  </span>
-</div>
-<div class="cc-license animated" itemprop="license">
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知识">
-    <img src="/imgs/cc/big/by_nc_sa.svg" alt="共享知识">
-  </a>
-</div>
-<div class="links-of-blogroll site-overview-item animated">
-  <div class="links-of-blogroll-title">
-    <i class="fa fa-globe fa-fw"></i>友情链接
-  </div>
-  <ul class="links-of-blogroll-list">
-    <li class="links-of-blogroll-item">
-      <a href="https://www.gaitpu.com" title="https://www.gaitpu.com" target="_blank">Google AI TPU</a>
-    </li>
-    <li class="links-of-blogroll-item">
-      <a href="https://www.vxworks.net" title="https://www.vxworks.net" target="_blank">VxWorks俱乐部</a>
-    </li>
-  </ul>
-</div>
-      </div>
-    </div>
-   
-  </div>
-<div class="sidebar-card-widget">
-  <div class="item-headline">
-    <i class="fas fa-chart-line"></i>
-    <span>网站资讯</span>
-  </div>
-  <div class="siteinfo">
-    <div class="siteinfo-item">
-      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已运行：</div>
-      <div class="item-count" id="runTimes" data-publishdate="2024-08-17T23:46:31&#43;08:00"></div>
-    </div>
-      <div class="siteinfo-item">
-        <div class="item-name">
-          <i class="fas fa fa-user"></i>总访客数：
-        </div>
-        <div class="item-count" id="busuanzi_value_site_uv"></div>
-      </div>
-      <div class="siteinfo-item">
-        <div class="item-name">
-          <i class="fas fa fa-eye"></i>页面浏览：
-        </div>
-        <div class="item-count" id="busuanzi_value_site_pv"></div>
-      </div>
-    <div class="siteinfo-item">
-      <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="5990"></div>
-    </div>
-    <div class="siteinfo-item">
-      <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
-      <div class="item-count" id="readTimes" data-times="60"></div>
-    </div>
-    <div class="siteinfo-item">
-      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
-      <div class="item-count" id="last-push-date" data-lastpushdate="2024-09-24T23:54:42&#43;08:00"></div>
-    </div>
-  </div>
-</div>
-</aside>
-<div class="sidebar-dimmer"></div>
-
-    </header>
-    
-    <div class="tool-buttons" >
-  <a id="goto-comments" class="button goto-comments" href="#comments"  title="直达评论">
-    <i class="fas fa-comments"></i>
-  </a> 
-  <div id="switch-theme" class="button" title="深浅模式切换">
-    <i class="fas fa-adjust"></i>
-  </div> 
   
-  <div class="back-to-top" role="button" title="返回顶部">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div> 
-</div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-    <div class="main-inner index posts-expand">
-      
-
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/iOS-18-1-new-version-released-with-4-new-changes.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="iOS18.1 新版本发布，新增4个改动">
-      <meta itemprop="description" content="iOS18.1 新版本发布，新增4个改动">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/iOS-18-1-new-version-released-with-4-new-changes.html" itemprop="url" class="post-title-link">iOS18.1 新版本发布，新增4个改动</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-24 23:54:42 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-24 23:54:42 &#43;0800 CST">2024-09-24</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/science-technology" itemprop="url" rel="index">
-      <span itemprop="name">Science &amp; technology</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
+  
+    <article class="max-w-full prose dark:prose-invert">
+  
+    <header>
+      <h1>VxWorks Overview</h1>
     </header>
+  
+  <section><blockquote>
+VxWorks The Leading RTOS</br>
+The industry's most widely deployed RTOS.
+</blockquote>
+<p><a href="https://www.vxworks.net" target="_blank">VxWorks</a> has been used to ensure the security, safety, and reliability you need to design and build mission-critical embedded systems that simply must work.</p>
+<!-- ![Combat Aircraft](/img/Combat-Aircraft.png) -->
+
+
+<h2 class="relative group">Why VxWorks ? 
+    <div id="why-vxworks-" class="anchor"></div>
     
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>今日凌晨，苹果推送了 
-<a href="https://www.kad8.com/post/new-features-with-ios-18.html" title="iOS18.1" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    iOS18.1
-    <i class="fa fa-external-link-alt"></i>
-</a> 第5个测试版，也就是 iOS18.1 Beta 5</p>
-<p>版本号为22B5054e，更新包约 700MB 左右</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/iOS-18-1-new-version-released-with-4-new-changes.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/cambridge-university-recommended-reading-in-english.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="剑桥大学推荐阅读的英文原著">
-      <meta itemprop="description" content="剑桥大学推荐阅读的英文原著">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/cambridge-university-recommended-reading-in-english.html" itemprop="url" class="post-title-link">剑桥大学推荐阅读的英文原著</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-vxworks-" aria-label="Anchor">#</a>
+    </span>        
     
+</h2>
+<p>Real-time embedded systems need a robust real-time operating system (RTOS) that leverages the latest and greatest enhancements in processor and hardware technology.</p>
+<p>VxWorks RTOS is the industry leading real-time operating system (RTOS). For more than 35 years, the VxWorks® real-time operating system (RTOS) has been chosen by global industry leaders as the trusted foundation to power billions of safety-critical intelligent devices, machines, and systems. Its rich functionality helps customers deploy innovative products while lowering costs and shortening production cycles.</p>
 
 
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-24 23:32:26 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-24 23:32:26 &#43;0800 CST">2024-09-24</time>
-</span>
+<h2 class="relative group">Why is VxWorks the RTOS for your next project ? 
+    <div id="why-is-vxworks-the-rtos-for-your-next-project-" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-is-vxworks-the-rtos-for-your-next-project-" aria-label="Anchor">#</a>
+    </span>        
     
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/english" itemprop="url" rel="index">
-      <span itemprop="name">English</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
+</h2>
 
-    </header>
+
+<h3 class="relative group">Key characteristic of VxWorks 
+    <div id="key-characteristic-of-vxworks" class="anchor"></div>
     
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>剑桥大学推荐阅读的英文原著介绍!</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/cambridge-university-recommended-reading-in-english.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/10-must-learn-courses-for-computer-science-majors.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="计算机专业必学的10门课程">
-      <meta itemprop="description" content="计算机专业必学的10门课程">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/10-must-learn-courses-for-computer-science-majors.html" itemprop="url" class="post-title-link">计算机专业必学的10门课程</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#key-characteristic-of-vxworks" aria-label="Anchor">#</a>
+    </span>        
     
+</h3>
+<ul>
+<li>
+<p><code>Proven</code>: VxWorks is the RTOS that powers more than 1 billion real-time systems across the globe, from small consumer products to commercial airliners. When the consequences for failure are expensive or, worse, life threatening, the VxWorks RTOS is the only choice. After 30 years of RTOS leadership and consistently successful deployments, Wind River is the name you know you can trust.</p>
+</li>
+<li>
+<p><code>Optimised</code>: The VxWorks RTOS has been optimised for performance, determinism, and code footprint on each processor platform it runs on. The VxWorks RTOS is also optimised for specialised hardware support for such features as network acceleration and graphics. Why waste processing power on a non-optimised RTOS?</p>
+</li>
+<li>
+<p><code>Innovative</code>: The first RTOS with 32-bit and 64-bit processing, multi-core and multi-OS support, and diverse connectivity options, VxWorks provides our customers with the leading-edge RTOS functionality they require to stay competitive. Why go with an RTOS that doesn’t provide the solutions you need to take advantage of the latest technology?</p>
+</li>
+</ul>
 
 
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-21 19:46:17 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-21 19:46:17 &#43;0800 CST">2024-09-21</time>
-</span>
+<h3 class="relative group">Unparalleled Innovation 
+    <div id="unparalleled-innovation" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#unparalleled-innovation" aria-label="Anchor">#</a>
+    </span>        
     
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/education" itemprop="url" rel="index">
-      <span itemprop="name">Education</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
+</h3>
+<p>VxWorks drives RTOS innovation in key requirement areas for embedded systems. By their very nature, embedded systems are constrained by memory, performance, and power consumption. Application requirements continuously grow to satisfy new safety and security standards and customer value criteria such as rich user interfaces and connectivity. VxWorks meets these growing requirements with unparalleled RTOS innovation:</p>
+<ul>
+<li>
+<p><code>Multi-core/multi-OS</code>: VxWorks is designed for use in various multi-core configurations as a single operating system in symmetrical multiprocessing (SMP) and asymmetrical multiprocessing (AMP) modes or as a guest RTOS on top of Wind River Hypervisor.</p>
+</li>
+<li>
+<p><code>Scalability</code>: VxWorks offers robust and reliable RTOS performance on small memory- and CPU-constrained devices up to full 64-bit multi-core systems for high-end processing. Because of this scalability, VxWorks is the ideal RTOS for creating a common software platform for a product line of embedded devices.</p>
+</li>
+<li>
+<p><code>Security and safety</code>: Our leadership in safe and secure systems includes a certifiable RTOS for very stringent safety standards such as FAA/RTCA DO-178B/EUROCAE ED-12B Level A, IEC 61508, and ARINC 653. VxWorks also provides a multilevel secure (MLS), High Robustness RTOS for the demanding requirements of the Common Criteria and National Information Assurance Partnership (NIAP). VxWorks is the first RTOS to be certified under Wurldtech’s Achilles certification program, an internationally recognized standard for industrial cyber-security.</p>
+</li>
+<li>
+<p><code>Connectivity</code>: VxWorks provides industry-leading advanced networking solutions for every facet of embedded systems communications, from device to device via USB, and core to core in an AMP multi-core system with MIPC.</p>
+</li>
+<li>
+<p><code>Graphics</code>: VxWorks RTOS and Wind River Media Library form a robust platform for embedded graphics solutions. With Wind River Tilcon Graphics Suite, developers have a complete graphical user interface (GUI) development system for next-generation devices.</p>
+</li>
+</ul>
 
-    </header>
+
+<h3 class="relative group">Significant Strengths 
+    <div id="significant-strengths" class="anchor"></div>
     
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>作为一名计算机专业的学生，掌握扎实的基础知识和技能是进入职场的关键。本文将为你详细介绍计算机专业最需要学习的10门课程，帮助你在未来的职业生涯中脱颖而出。</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/10-must-learn-courses-for-computer-science-majors.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/detailed-explanation-of-CCAR-25-airworthiness-standards-for-transport-aircraft.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="CCAR-25《运输类飞机适航标准》详解">
-      <meta itemprop="description" content="CCAR-25《运输类飞机适航标准》详解">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/detailed-explanation-of-CCAR-25-airworthiness-standards-for-transport-aircraft.html" itemprop="url" class="post-title-link">CCAR-25《运输类飞机适航标准》详解</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#significant-strengths" aria-label="Anchor">#</a>
+    </span>        
     
+</h3>
+<p>At Wind River, we take pride in the innovations in VxWorks that have made it the No. 1 RTOS in the world, and we’re committed to continued innovation in each of our core strength areas:</p>
+<ul>
+<li>
+<p><code>Footprint</code>: VxWorks has a completely configurable and tunable small memory footprint for today’s memory-constrained systems. You control how much of the operating system you need.</p>
+</li>
+<li>
+<p><code>Real-time performance</code>: Capable of dealing with the most demanding time constraints, VxWorks is a high-performance RTOS tuned for both determinism and responsiveness.</p>
+</li>
+<li>
+<p><code>Reliability</code>: A high-reliability RTOS, VxWorks provides certification evidence required by strict security standards. Even for non-safety-critical systems, VxWorks is counted on to run forever, error free.</p>
+</li>
+<li>
+<p><code>Scalability</code>: An indispensable RTOS foundation for very small-scale devices, large-scale networking systems, and everything in between, VxWorks is the first RTOS to provide full 64-bit processing to support the ever growing data requirements for embedded real-time systems. VxWorks is scalable in terms of memory footprint and functionality; you will tune it to the exact needs of your project.</p>
+</li>
+</ul>
 
 
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-21 11:37:23 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-21 11:37:23 &#43;0800 CST">2024-09-21</time>
-</span>
+<h3 class="relative group">VxWorks Industry Specific Profiles 
+    <div id="vxworks-industry-specific-profiles" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vxworks-industry-specific-profiles" aria-label="Anchor">#</a>
+    </span>        
     
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/science-technology" itemprop="url" rel="index">
-      <span itemprop="name">Science &amp; technology</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>
-<a href="https://www.kad8.com/post/detailed-explanation-of-CCAR-25-airworthiness-standards-for-transport-aircraft.html" title="CCAR-25全称《运输类飞机适航标准》" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    CCAR-25全称《运输类飞机适航标准》
-    <i class="fa fa-external-link-alt"></i>
-</a>，是中国民用航空局（CAAC）制定的适航规章之一，其主要目的是规范运输类飞机的设计、制造、测试、运营和维护。它的形成可以追溯到全球航空业的发展历程，尤其是在空难发生率逐步下降的背景下，航空监管机构意识到运输类飞机必须具备更高的安全标准。</p>
+</h3>
+<p>VxWorks delivers a rich set of features out of the box, so customers can more quickly and efficiently build breakthrough devices for the Internet of Things (IoT). Optional industry and technology add-on profiles enhance VxWorks with a broad assortment of capabilities that help our customers meet technology and certification requirements specific to their industry.</p>
 
 
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/detailed-explanation-of-CCAR-25-airworthiness-standards-for-transport-aircraft.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/english-books-recommended-by-harvard-university.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="这三本神作拯救了我的低谷">
-      <meta itemprop="description" content="这三本神作拯救了我的低谷">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/english-books-recommended-by-harvard-university.html" itemprop="url" class="post-title-link">这三本神作拯救了我的低谷</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
+<h3 class="relative group">VxWorks Technology Specific Profiles 
+    <div id="vxworks-technology-specific-profiles" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vxworks-technology-specific-profiles" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>VxWorks add-on technology profiles facilitate rapid development of unique features and capabilities necessary for specialised applications.</p>
 
 
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-21 10:28:30 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-21 10:28:30 &#43;0800 CST">2024-09-21</time>
-</span>
+<h3 class="relative group">VxWorks Certified Platforms 
+    <div id="vxworks-certified-platforms" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vxworks-certified-platforms" aria-label="Anchor">#</a>
+    </span>        
     
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/english" itemprop="url" rel="index">
-      <span itemprop="name">English</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
+</h3>
+<p>VxWorks safe and secure platforms deliver the foundation companies need to address the security and safety aspects of critical applications, including certification evidence required for stringent certifications by standards bodies:</p>
+<ul>
+<li>
+<p>Wind River VxWorks 653 Platform delivers complete ARINC 653 Part 1, Supplement 2 conformance and expands the ARINC 653 XML configuration capabilities to enable a true multi-vendor platform that supports fully independent RTCA DO-297/EUROCAE ED-124 IMA supplier sourcing.</p>
+</li>
+<li>
+<p>Wind River VxWorks Cert Platform provides a proven safety critical software development environment for delivering applications that must be certified to the requirements of RTCA DO-178B or IEC 61508 (functional safety of electrical/electronic/programmable electronic safety-related systems [E/E/PES]) and related safety critical software standards. Complete certification evidence is provided for DO-178B and IEC 61508.</p>
+</li>
+<li>
+<p>Wind River VxWorks MILS Platform delivers the security foundation aerospace and defense companies need to meet the real-time operating system requirements for high robustness (EAL6+) multilevel secure systems.</p>
+</li>
+</ul>
 
-    </header>
+
+<h3 class="relative group">VxWorks – Architecture / Processor Family Support 
+    <div id="vxworks--architecture--processor-family-support" class="anchor"></div>
     
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>在人生的长河中，每个人都不免会遭遇低谷，那是心灵的寒冬，是自我怀疑与迷茫交织的时刻。</p>
-<p>当生活的重压让人喘不过气，当未来的道路似乎被迷雾笼罩，我们急需一束光，照亮前行的方向，给予我们重新站起来的勇气。</p>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vxworks--architecture--processor-family-support" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>
-<a href="https://www.kad8.com/post/english-books-recommended-by-harvard-university.html" title="《悉达多》、《论心灵之安宁》与《瓦尔登湖》这三部经典之作" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    《悉达多》、《论心灵之安宁》与《瓦尔登湖》这三部经典之作
-    <i class="fa fa-external-link-alt"></i>
-</a>，便是那三束温柔而坚定的光芒，它们以各自独特的方式，向我们展示了如何在低谷中寻找到内心的平静与力量。</p>
-
-
-    </div>
-    <footer class="post-footer">
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/img/VxWorks-diagram.jpg" alt="VxWorks Diagram" />
       
-<div class="post-button">
-  <a class="btn" href="/post/english-books-recommended-by-harvard-university.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/iOS-wechat-has-a-major-update-moments-now-supports-Live-Photos.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="iOS微信大更新！朋友圈支持实况照片">
-      <meta itemprop="description" content="iOS微信大更新！朋友圈支持实况照片">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/iOS-wechat-has-a-major-update-moments-now-supports-Live-Photos.html" itemprop="url" class="post-title-link">iOS微信大更新！朋友圈支持实况照片</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
+    </figure>
+</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Intel</th>
+          <th style="text-align: left">MIPS</th>
+          <th style="text-align: left">ARM</th>
+          <th style="text-align: left">PowerPC</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Pentium family</td>
+          <td style="text-align: left">MIPS 4Kx</td>
+          <td style="text-align: left">ARM7</td>
+          <td style="text-align: left">PowerPC 40x</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Xeon</td>
+          <td style="text-align: left">MIPS 5Kx</td>
+          <td style="text-align: left">ARM9</td>
+          <td style="text-align: left">PowerPC 44x</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Xeon LV</td>
+          <td style="text-align: left">MIPS 24Kx</td>
+          <td style="text-align: left">ARM11</td>
+          <td style="text-align: left">PowerPC 60x</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Core</td>
+          <td style="text-align: left">MIPS 34Kx</td>
+          <td style="text-align: left">ARM11 MPCore</td>
+          <td style="text-align: left">PowerPC 7xx</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Core 2 Duo</td>
+          <td style="text-align: left">MIPS 74Kx</td>
+          <td style="text-align: left">ARM Cortex A8</td>
+          <td style="text-align: left">PowerPC 74xx</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Atom</td>
+          <td style="text-align: left">Cavium OCTEON CN3XXX</td>
+          <td style="text-align: left">ARM Cortex A9 MPCore</td>
+          <td style="text-align: left">PowerPC 83xx</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Cavium OCTEON Plus CN5XXX</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">PowerPC 85xx, 8572</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Cavium OCTEON Plus CN63XX</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">PowerPC 86xx, 8641d</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Netlogic (formerly RMI) XLR, XLS</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">QorIQ P20xx</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Altera MP32</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">QorIQ P4080</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h3 class="relative group">Key Features 
+    <div id="key-features" class="anchor"></div>
     
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-20 21:11:11 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-20 21:11:11 &#43;0800 CST">2024-09-20</time>
-</span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#key-features" aria-label="Anchor">#</a>
+    </span>        
     
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/science-technology" itemprop="url" rel="index">
-      <span itemprop="name">Science &amp; technology</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>虽然 
-<a href="https://www.kad8.com/post/new-features-with-ios-18.html" title="iOS" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    iOS
-    <i class="fa fa-external-link-alt"></i>
-</a> 微信并没有更新版本，但官方通过热更新机制，新增了朋友圈“实况照片”功能</p>
-<p>已经获得该功能的用户，发表朋友圈时-从手机相册选择，可以看到实况照片会有对应的图标标识</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/iOS-wechat-has-a-major-update-moments-now-supports-Live-Photos.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/new-features-with-ios-18.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="iOS18 正式版终于发布！新增20个功能">
-      <meta itemprop="description" content="iOS18 正式版终于发布！新增20个功能">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/new-features-with-ios-18.html" itemprop="url" class="post-title-link">iOS18 正式版终于发布！新增20个功能</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-17 19:44:36 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-17 19:44:36 &#43;0800 CST">2024-09-17</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/science-technology" itemprop="url" rel="index">
-      <span itemprop="name">Science &amp; technology</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>今日凌晨， 苹果正式推送了 iOS18 和 iPadOS18 的首个正式版本，今天来做个功能汇总，看完再决定是否升级吧</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/new-features-with-ios-18.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/first-year-english-majors-still-do-not-know-how-to-learn-english.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="大一英专生还不知道如何学英语">
-      <meta itemprop="description" content="大一英专生还不知道如何学英语">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/first-year-english-majors-still-do-not-know-how-to-learn-english.html" itemprop="url" class="post-title-link">大一英专生还不知道如何学英语</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-17 16:13:32 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-17 16:13:32 &#43;0800 CST">2024-09-17</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/education" itemprop="url" rel="index">
-      <span itemprop="name">Education</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>进入大学，英语学习成为了很多新生的重点。那么，作为大一新生，我们应该如何高效地学习英语呢？以下是一些个人建议，希望能帮助大家。</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/first-year-english-majors-still-do-not-know-how-to-learn-english.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/english-books-recommended-by-harvard-university.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="哈佛大学推荐阅读的英文原版书">
-      <meta itemprop="description" content="哈佛大学推荐阅读的英文原版书">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/english-books-recommended-by-harvard-university.html" itemprop="url" class="post-title-link">哈佛大学推荐阅读的英文原版书</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-17 11:36:15 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-17 11:36:15 &#43;0800 CST">2024-09-17</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/english" itemprop="url" rel="index">
-      <span itemprop="name">English</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>哈佛大学，作为全球顶尖的学府，其推荐的阅读书目无疑具有深厚的学术底蕴和广泛的影响力。以下是我为您精心挑选的哈佛大学推荐的多本英文原版书，这些书籍涵盖了不同的年龄段和兴趣领域，无论是儿童文学、成人文学，还是科幻、现实主义，都应有尽有。</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/english-books-recommended-by-harvard-university.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/recommend-this-healing-english-book-to-english-majors.html">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
-      <meta itemprop="name" content="VxWorks OS">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VxWorks OS">
-      <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="推荐英专生读这本治愈系英文原著">
-      <meta itemprop="description" content="推荐英专生读这本治愈系英文原著">
-    </span>
-    <header class="post-header">
-       <h2 class="post-title" itemprop="name headline">
-  <a href="/post/recommend-this-healing-english-book-to-english-majors.html" itemprop="url" class="post-title-link">推荐英专生读这本治愈系英文原著</a> </h2> <div class="post-meta-container">
-  <div class="post-meta-items">
-    
-
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar"></i>
-  </span>
-  <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-17 11:30:49 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-17 11:30:49 &#43;0800 CST">2024-09-17</time>
-</span>
-    
-    
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-folder-open"></i>
-  </span>
-  <span class="post-meta-item-text">分类于：</span>
-  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/english" itemprop="url" rel="index">
-      <span itemprop="name">English</span>
-    </a>
-  </span>
-</span>
-  </div>
-</div>
-
-    </header>
-    
-    <div class="post-body  autonumber " itemprop="articleBody">
-      
-  <p>在某个悠长而温柔的午后，阳光如细丝般穿透林间，轻拂过一本书的每一页，仿佛能听见书中河流的低语，与风的轻吟交织成一首悠扬的治愈之曲。</p>
-
-
-    </div>
-    <footer class="post-footer">
-      
-<div class="post-button">
-  <a class="btn" href="/post/recommend-this-healing-english-book-to-english-majors.html#more" rel="contents">
-    阅读全文 &raquo;
-  </a>
-</div>
-<div class="post-eof"></div>
-    </footer>
-  </article>
-</div>
-<nav class="pagination">
-        <span class="page-number current">1</span>
-        <a class="page-number" href="/page/2/">2</a>
-        <a class="page-number" href="/page/3/">3</a>
-        <a class="page-number" href="/page/4/">4</a>
-  <a class="extend next" rel="next" href="/page/2/">
-    <i class="fa fa-angle-right"></i>
-  </a>
-</nav>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-
-<div class="copyright">
-  &copy;
-  <span itemprop="copyrightYear">
-    2010 - 2024
-  </span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">VxWorks OS</span>
-</div>
-
-
-    </div>
-  </footer> 
+</h3>
+<ul>
+<li>
+<p><code>Extensive multi-core and multiprocessing support</code>: Use hardware to its fullest potential. VxWorks supports 32-bit and 64-bit multi-core processors based on Intel®, Arm®, Power, and RISC-V architectures. Its comprehensive processor support allows OS configurations for asymmetric multiprocessing (AMP), symmetric multiprocessing (SMP) with CPU affinity to address bound multiprocessing (BMP) scenarios, and hardware-optimized multi-core acceleration.</p>
+</li>
+<li>
+<p><code>OCI containers</code>: Deploy applications at the speed of IT. Package and deploy all applications using IT-like tools and methods. Push your applications to standard container registries (such as Docker Hub, Amazon ECR, or Harbor) and pull them from your deployed VxWorks-based devices. Use Kubernetes for container orchestration.</p>
+</li>
+<li>
+<p><code>Security</code>: Start with a foundation that adapts the security response to the threat. VxWorks integrates an extensive and continuously evolving set of security capabilities that map to the CIA triad. From booting operations to power down, these capabilities allow architects to develop a level of security appropriate for the attack surface and threats unique to their applications and environments.</p>
+</li>
+<li>
+<p><code>Certifiable</code>: Meet regulatory requirements for your deployment. VxWorks has an extensive portfolio of safety certificationhistory, including 600+ programs with more than 360 individual customers. Its robust safety features provide advanced time and space partitioning capabilities to enable reliable consolidation of multiple applications with different levels of criticality on a single or multi-core platform. Additionally, conformance to standards such as POSIX® and the FACE™ Technical Standard have been leveraged in the certification of VxWorks to DO-178C, IEC 61508, IEC 62304, and ISO 26262 safety standards.</p>
+</li>
+<li>
+<p><code>Rich connectivity and communications</code>: Employ the broad range of communications necessary in a connected world. VxWorks supports IPv4 and IPv6 stacks, Routing Information Protocol (RIP), quality of service (QoS), and more. Additionally, VxWorks enables Time-Sensitive Networking (TSN), guaranteeing real-time communications and packet delivery within a bounded time or latency on a switched Ethernet network. VxWorks supports innovative industrial applications based on OPC Unified Architecture (OPC UA). It also supports SocketCAN, used in automotive applications, and provides host, target, and OTG USB support.</p>
+</li>
+<li>
+<p><code>Broad board support</code>: Speed time-to-market by beginning from a solid starting point. Working with our ecosystem of partners, we have optimized VxWorks for the latest advanced processors and SOCs. It also includes the most extensive list of board support packages in the embedded software industry, providing early prototyping, cost savings, and flexibility of choice.
+Customization and tuning: Enjoy immense flexibility in customizing your product. Tailor your design to your specific needs with access to full source code, and/or use all the various configuration options to include or exclude predefined components and/or parameters.</p>
+</li>
+<li>
+<p><code>Virtualization</code>: Choose from a number of flexible deployment options, from native to cloud. VxWorks is available as a guest operating system for a variety of virtualization environments, including but not limited to Wind River® Helix™ Virtualization Platform, QEMU, VMware, and KVM.
+Fault-tolerant file system: Take advantage of integrated fault tolerance. VxWorks comes with a fault-tolerant file system that can be certified.</p>
+</li>
+<li>
+<p><code>Multimedia</code>: Benefit from out-of-the-box UI support. VxWorks offers support for many standard graphic libraries, such as OpenGL, OpenGL ES, OpenCV, and Vulkan, as well as libraries that handle JPEG and PNG images.</p>
+</li>
+<li>
+<p><code>AI/ML</code>: Digital transformation and creation of added value/service are at your fingertips. Technologies such as pandas, Tensorflow Lite, and others are integrated to easily add AI/ML applications into the device.</p>
+</li>
+<li>
+<p><code>Python</code>: Your access is out of the box and fully enabled. VxWorks supports Python, an easy-to-learn programming language that is ideal for quick prototyping, testing, and integrating high-level programs.</p>
+</li>
+<li>
+<p><code>Feedback loop</code>: Enjoy digital transformation enablement. VxWorks comes with a variety of communication protocols allowing developers to collect device information and send it to the cloud for mining and analysis.</p>
+</li>
+</ul>
+</section>
+</article>
+<section>
   
-  <script type="text/javascript" src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" defer></script>
-
-<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":true,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"https://www.kad8.com","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"left","width":256},"vendor":{"plugins":"unpkg","router":"https://unpkg.com"},"version":"4.3.1","waline":{"cfg":{"emoji":false,"imguploader":false,"pageview":"#waline-pageview-count","placeholder":"请文明发言哟 ヾ(≧▽≦*)o","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"serverurl":null,"sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"waline","file":"dist/waline.css","name":"@waline/client","version":"2.11.3"},"js":{"alias":"waline","file":"dist/waline.js","name":"@waline/client","version":"2.11.3"}}}</script>
 
 
 
 
 
+<h2 class="mt-8 text-2xl font-extrabold mb-10">Recent</h2>
 
 
-<script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
+  
+
+
+<section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/bsp/booting-vxworks-with-altera-cyclone-v/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/bsp/booting-vxworks-with-altera-cyclone-v/featured-Cyclone-V-Board_hu7776902995034912169.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/bsp/booting-vxworks-with-altera-cyclone-v/">Boot VxWorks With Altera Cyclone V</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1010,6 +793,1178 @@
 
 
 
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-07T15:04:11&#43;08:00">7 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4995 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">24 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks-6.9/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks 6.9
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fpga/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    FPGA
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/altera/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Altera
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cyclone-v/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cyclone V
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/bsp/vxworks-5-4-device-driver-development/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/bsp/vxworks-5-4-device-driver-development/featured-Tornado-and-vxworks_hu17566910452743601506.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/bsp/vxworks-5-4-device-driver-development/">VxWorks 5.4 Device Driver Development</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T19:18:03&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>6501 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">31 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks-5.4/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks 5.4
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tornado/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Tornado
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/bsp/using-vxworks-bsp-with-zynq-7000-ap-soc/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/bsp/using-vxworks-bsp-with-zynq-7000-ap-soc/featured-VxWorks-on-Zynq-UltraScale-MPSoC_hu12834213363066354496.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/bsp/using-vxworks-bsp-with-zynq-7000-ap-soc/">Using VxWorks BSP With Zynq 7000 Ap Soc</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T16:44:42&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4167 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">20 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zynq-7000/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Zynq-7000
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/arm/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    ARM
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/kernel-shell-usage/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/kernel-shell-usage/featured-Kernel-Shell-Usage_hu14930298429651486782.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/kernel-shell-usage/">Kernel Shell Usage</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T15:53:47&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>845 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Shell
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/kernel-shell-configuration-and-commands/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/kernel-shell-configuration-and-commands/featured-Kernel-Shell-Configuration-and-Commands_hu16109129624057730151.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/kernel-shell-configuration-and-commands/">Kernel Shell Configuration and Commands</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T15:42:20&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>467 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Shell
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/command-line-editing-and-object-module-loader/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/command-line-editing-and-object-module-loader/featured-Command-line-Editing-and-Object-Module-Loader_hu3477283857712128094.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/command-line-editing-and-object-module-loader/">Command Line Editing and Object Module Loader</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T15:33:31&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>566 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Shell
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/introduction-to-the-kernel-shell/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/introduction-to-the-kernel-shell/featured-Introduction-to-the-Kernel-Shell_hu12305604727314520325.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/introduction-to-the-kernel-shell/">Introduction to the Kernel Shell</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T15:25:26&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>357 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Shell
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/configuring-and-building-a-project/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/configuring-and-building-a-project/featured-Configuring-and-Building-a-Project_hu4599132445399307457.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/configuring-and-building-a-project/">Configuring and Building a Project</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T09:43:58&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1396 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vsb/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VSB
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vip/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VIP
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/training/read-only-memory-file-system/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/training/read-only-memory-file-system/featured-overview-of-ROMFS_hu17309243442826054355.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/training/read-only-memory-file-system/">Read Only Memory File System</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-05T09:22:24&#43;08:00">5 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>412 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxworks/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VxWorks
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/romfs/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    ROMFS
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+</section>
+
+
+
+
+
+
+<div class="mt-10 flex justify-center">
+  <a href="/training/">
+    <button
+      class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
+      Show More
+    </button>
+  </a>
+</div>
+
+
+
+</section>
+
+  
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://www.vxworks.net/" target="_blank" rel="noopener noreferrer">VxWorks</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://www.gaitpu.com/" target="_blank" rel="noopener noreferrer">AI</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://www.kad8.com/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
 </body>
 
 </html>

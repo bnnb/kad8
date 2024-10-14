@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wind River on VxWorks</title>
+    <link>https://www.kad8.com/tags/wind-river/</link>
+    <description>Recent content in Wind River on VxWorks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Fri, 04 Oct 2024 18:31:05 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/wind-river/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Wind River Ecosystem</title>
+      <link>https://www.kad8.com/training/the-wind-river-ecosystem/</link>
+      <pubDate>Fri, 04 Oct 2024 18:31:05 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/training/the-wind-river-ecosystem/</guid>
+      <description>&lt;p&gt;Wind River is a leader in the integrated software industry, providing tested and reliable products that work together in tandem with industry standards.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/training/the-wind-river-ecosystem/featured-The-VxWorks-and-Workbench-Ecosystem.png" />
+    </item>
+    
+  </channel>
+</rss>
