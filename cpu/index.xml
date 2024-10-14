@@ -44,7 +44,12 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;台积电的N12FFC+工艺（12纳米FinFET Compact Plus，虽然归类于12纳米技术，但技术基础源自其成熟的16纳米FinFET生产线）生产的基础芯片，将用于在系统级芯片（SoCs）旁的硅中介层上安装HBM4内存堆栈。台积电相信，其12FFC+工艺非常适合实现HBM4的性能，使内存制造商能够构建12-Hi（48GB）和16-Hi（64GB）堆栈，每个堆栈的带宽超过2TB/秒。&lt;/p&gt;</description>
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./TSMC-Logic-for-HBM4-Base-Die.png&#34; alt=&#34;TSMC Logic for HBM4 Base Die&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/cpu/tsmc-readies-hbm4-base-dies-at-12nm-and-5nm/featured-hbm-schematics.jpg" />
     </item>
     
