@@ -3,18 +3,163 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.kad8.com/zh-cn/</loc>
+    <loc>https://www.kad8.com/cpu/</loc>
+    <lastmod>2024-10-13T15:04:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/cpu/tsmc-readies-hbm4-base-dies-at-12nm-and-5nm/</loc>
+    <lastmod>2024-10-13T15:04:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/bsp/booting-vxworks-with-altera-cyclone-v/</loc>
+    <lastmod>2024-10-07T15:04:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/bsp/vxworks-5-4-device-driver-development/</loc>
+    <lastmod>2024-10-05T19:18:03+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/bsp/using-vxworks-bsp-with-zynq-7000-ap-soc/</loc>
+    <lastmod>2024-10-05T16:44:42+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/kernel-shell-usage/</loc>
+    <lastmod>2024-10-05T15:53:47+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/kernel-shell-configuration-and-commands/</loc>
+    <lastmod>2024-10-05T15:42:20+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/command-line-editing-and-object-module-loader/</loc>
+    <lastmod>2024-10-05T15:33:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/introduction-to-the-kernel-shell/</loc>
+    <lastmod>2024-10-05T15:25:26+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/configuring-and-building-a-project/</loc>
+    <lastmod>2024-10-05T09:43:58+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/read-only-memory-file-system/</loc>
+    <lastmod>2024-10-05T09:22:24+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/the-vxprj-utility/</loc>
+    <lastmod>2024-10-05T08:57:29+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/vxworks-source-build-and-image-projects/</loc>
+    <lastmod>2024-10-05T08:32:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/vxworks-directory-structure-and-package-management/</loc>
+    <lastmod>2024-10-05T07:54:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/introduction-to-projects-and-workspaces/</loc>
+    <lastmod>2024-10-04T23:14:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/simulation-overview/</loc>
+    <lastmod>2024-10-04T23:02:15+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/workbench-tools-architecture/</loc>
+    <lastmod>2024-10-04T22:47:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/booting-a-hardware-target/</loc>
+    <lastmod>2024-10-04T22:30:02+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/hardware-target-configuration/</loc>
+    <lastmod>2024-10-04T22:14:38+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2024-10-04T21:23:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://www.kad8.com/"
+      href="https://www.kad8.com/en/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="https://www.kad8.com/zh-cn/"
+      href="https://www.kad8.com/"
     />
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/workbench-4-overview/</loc>
+    <lastmod>2024-10-04T21:09:56+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/bsp/</loc>
+    <lastmod>2024-10-04T21:03:21+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/</loc>
+    <lastmod>2024-10-04T21:03:21+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/vxworks-key-features/</loc>
+    <lastmod>2024-10-04T18:58:28+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/training/the-wind-river-ecosystem/</loc>
+    <lastmod>2024-10-04T18:31:05+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
