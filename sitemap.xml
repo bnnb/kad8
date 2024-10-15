@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-10-13T15:04:11+08:00</lastmod>
+    <lastmod>2024-10-15T23:11:15+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/intel-gaudi-3-ai-accelerator/</loc>
+    <lastmod>2024-10-15T23:11:15+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

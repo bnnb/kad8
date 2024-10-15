@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardwares on Kontronn Asia Design Center</title>
-    <link>https://www.kad8.com/hardware/</link>
-    <description>Recent content in Hardwares on Kontronn Asia Design Center</description>
+    <title>Hardware on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/series/hardware/</link>
+    <description>Recent content in Hardware on Kontronn Asia Design Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 15 Oct 2024 23:11:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2024 23:11:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/series/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intel Gaudi 3 Ai Accelerator</title>
       <link>https://www.kad8.com/hardware/intel-gaudi-3-ai-accelerator/</link>
