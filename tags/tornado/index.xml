@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tornado on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/tornado/</link>
+    <description>Recent content in Tornado on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sat, 05 Oct 2024 19:18:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/tornado/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VxWorks 5.4 Device Driver Development</title>
+      <link>https://www.kad8.com/bsp/vxworks-5-4-device-driver-development/</link>
+      <pubDate>Sat, 05 Oct 2024 19:18:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/bsp/vxworks-5-4-device-driver-development/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Preface 
+    &lt;div id=&#34;preface&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#preface&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;This guide is for device driver developers, who have general background in real time operating systems. This guide addresses device driver development using VxWorks 5.4/Tornado 2.0.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/bsp/vxworks-5-4-device-driver-development/featured-Tornado-and-vxworks.png" />
+    </item>
+    
+  </channel>
+</rss>
