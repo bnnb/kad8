@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HBM4 on Kontronn Asia Design Center</title>
-    <link>https://www.kad8.com/tags/hbm4/</link>
-    <description>Recent content in HBM4 on Kontronn Asia Design Center</description>
+    <title>Hardwares on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/hardware/</link>
+    <description>Recent content in Hardwares on Kontronn Asia Design Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 13 Oct 2024 15:04:11 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/hbm4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Oct 2024 15:04:11 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台积电要用5nm先进封装HBM4内存芯片</title>
       <link>https://www.kad8.com/hardware/tsmc-readies-hbm4-base-dies-at-12nm-and-5nm/</link>
