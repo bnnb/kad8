@@ -748,7 +748,7 @@
 </h2>
 <p>ClamAV 的病毒库是需要定期更新的，这样它才能识别最新的威胁。安装完 ClamAV 后，首先要更新病毒库。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo freshclam
-</span></span></code></pre></div><p>将下载最新的病毒定义数据库。在大多数系统中，freshclam 会自动更新病毒库，也可以将其添加到定时任务中确保持续更新。</p>
+</span></span></code></pre></div><p>将下载最新的病毒定义数据库。在大多数系统中，<code>freshclam</code> 会自动更新病毒库，也可以将其添加到定时任务中确保持续更新。</p>
 
 
 <h2 class="relative group">配置和启动 ClamAV 
@@ -785,7 +785,7 @@
 </span></span></code></pre></div><p>扫描指定目录：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo clamscan -r /path/to/directory
 </span></span></code></pre></div><blockquote>
--r 参数表示递归扫描文件夹，扫描会包含文件夹内的所有文件。如果希望 ClamAV 在检测到感染文件后自动删除它们，可以使用 --remove 参数：
+-r 参数表示递归扫描文件夹，扫描会包含文件夹内的所有文件。如果希望 ClamAV 在检测到感染文件后自动删除它们，可以使用 `--remove` 参数：
 </blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo clamscan -r --remove /path/to/directory
 </span></span></code></pre></div><p>扫描后的报告输出到文件：</p>
@@ -803,7 +803,7 @@
     </span>        
     
 </h2>
-<p>可以设置定时任务，让 ClamAV 每天自动扫描指定目录。使用 crontab 进行设置：</p>
+<p>可以设置定时任务，让 ClamAV 每天自动扫描指定目录。使用 <code>crontab</code> 进行设置：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo crontab -e
 </span></span></code></pre></div><p>在文件中添加以下内容，设置每天凌晨 2 点自动扫描 /home 目录：</p>
 <blockquote>
@@ -821,7 +821,7 @@
     </span>        
     
 </h2>
-<p>还可以结合使用 chkrootkit 或 rkhunter 来检测系统中潜在的 rootkit 威胁：</p>
+<p>还可以结合使用 <code>chkrootkit</code> 或 <code>rkhunter</code> 来检测系统中潜在的 <code>rootkit</code> 威胁：</p>
 
 
 <h3 class="relative group">安装 Chkrootkit： 
@@ -850,7 +850,7 @@
 </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install rkhunter
 </span></span><span class="line"><span class="cl">sudo rkhunter --check
-</span></span></code></pre></div><p>这些工具可以与 ClamAV 配合使用，提供更加全面的安全防护。</p>
+</span></span></code></pre></div><p>这些工具可以与 <code>ClamAV</code> 配合使用，提供更加全面的安全防护。</p>
 
 
 <h2 class="relative group">监控与日志 
@@ -863,7 +863,7 @@
     </span>        
     
 </h2>
-<p>ClamAV 会在 /var/log/clamav 中生成日志文件，可以通过以下命令查看最近的扫描日志：</p>
+<p>ClamAV 会在 <code>/var/log/clamav</code> 中生成日志文件，可以通过以下命令查看最近的扫描日志：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /var/log/clamav/clamav.log
 </span></span></code></pre></div><p>根据日志文件中的信息，可以进一步分析潜在的威胁。</p>
 <p>在 Linux 系统上安装杀毒软件，尤其是 ClamAV，是一个简单而有效的安全措施。虽然 Linux 本身相对安全，但额外的防护手段可以减少潜在的安全威胁，特别是在与其他系统共享文件时。通过定期更新病毒库、手动或自动扫描文件、并结合其他安全工具，用户可以确保其系统得到最全面的保护。</p>
