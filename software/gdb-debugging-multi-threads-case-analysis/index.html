@@ -110,7 +110,7 @@
     "keywords": ["GDB","Multi threads"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "775"
+    "wordCount": "787"
   }]
   </script>
 
@@ -745,13 +745,32 @@
 </ol>
 <p>在编译代码时，加上 <code>-g</code> 选项是非常重要的，这可以确保在可执行文件中包含调试信息，以便在使用 GDB 进行调试时能够获取更多的程序内部状态信息。例如，使用 <code>gcc -g main.c -o main.out</code> 这样的命令编译代码，生成的 <code>main.out</code> 可执行文件就可以被 GDB 有效地调试。</p>
 <p>启动调试代码有多种方式。可以直接使用 <code>gdb main.out</code> 来启动调试一个可执行文件，然后在 GDB 环境中使用 <code>run</code> 命令来运行程序。如果程序在启动时需要命令行参数，可以在进入 GDB 后使用 <code>run arg1 arg2...</code> 的方式来提供参数并启动调试。</p>
-<p>另外，还可以调试正在运行的程序。首先找到程序的进程号，可以使用 <code>ps aux | grep program_name</code> 或 <code>pidof program_name</code> 来获取进程号。然后使用 <code>gdb attach pid</code> 或者 <code>gdb -p pid</code> 命令将 GDB 附加到正在运行的程序上进行调试。</p>
+<p>另外，还可以调试正在运行的程序。</p>
+<ul>
+<li>首先找到程序的进程号，可以使用 <code>ps aux | grep program_name</code> 或 <code>pidof program_name</code> 来获取进程号。</li>
+<li>然后使用 <code>gdb attach pid</code> 或者 <code>gdb -p pid</code> 命令将 GDB 附加到正在运行的程序上进行调试。</li>
+</ul>
 <ol start="2">
 <li>调试命令</li>
 </ol>
-<p>GDB 有许多强大的调试命令。比如 <code>list</code> 命令可以显示源代码，list 会打印当前行后面的代码，<code>list -</code> 显示当前行前面的代码，<code>list lineNumber</code> 打印出行第 lineNumber 行前后的代码，<code>list FunctionName</code> 打印出行函数 FunctionName 前后的代码。</p>
-<p><code>break</code> 命令用于设置断点，可以在指定的行号或函数处设置断点，如 <code>break &lt;function&gt;</code> 在进入指定函数时停止运行，<code>break &lt;lineNumber&gt;</code> 在指定代码行打断点，<code>break filename:lineNumber</code> 在指定文件的特定行设置断点，<code>break filename:function</code> 在指定文件的函数入口处设置断点。还可以设置条件断点，如 <code>break... if &lt;condition&gt;</code>，当条件成立时程序停止运行。</p>
-<p><code>next</code> 命令执行下一条语句，如果该语句为函数调用，不会进入函数内部执行。<code>step</code> 命令执行下一条语句，如果该语句为函数调用，则进入函数执行其中的第一条语句。<code>continue</code> 命令继续程序的运行，直到遇到下一个断点。</p>
+<p>GDB 有许多强大的调试命令。比如 <code>list</code> 命令可以显示源代码：</p>
+<ul>
+<li><code>list</code> 会打印当前行后面的代码</li>
+<li><code>list -</code> 显示当前行前面的代码</li>
+<li><code>list lineNumber</code> 打印出行第 lineNumber 行前后的代码</li>
+<li><code>list FunctionName</code> 打印出行函数 FunctionName 前后的代码</li>
+</ul>
+<p><code>break</code> 命令用于设置断点，可以在指定的行号或函数处设置断点:</p>
+<ul>
+<li><code>break &lt;function&gt;</code> 在进入指定函数时停止运行</li>
+<li><code>break &lt;lineNumber&gt;</code> 在指定代码行打断点</li>
+<li><code>break filename:lineNumber</code> 在指定文件的特定行设置断点</li>
+<li><code>break filename:function</code> 在指定文件的函数入口处设置断点</li>
+</ul>
+<p>还可以设置条件断点，如 <code>break... if &lt;condition&gt;</code>，当条件成立时程序停止运行。</p>
+<p><code>next</code> 命令执行下一条语句，如果该语句为函数调用，不会进入函数内部执行。</p>
+<p><code>step</code> 命令执行下一条语句，如果该语句为函数调用，则进入函数执行其中的第一条语句。</p>
+<p><code>continue</code> 命令继续程序的运行，直到遇到下一个断点。</p>
 <p><code>print</code> 和 <code>display</code> 命令用于打印变量 / 表达式的值，print 只输出一次，display 跟踪查看某个变量，每次停下来都显示它的值。可以以不同格式打印变量，如 <code>p /f variable</code>，其中 <code>f</code> 可以是 x（十六进制格式）、d（十进制格式）、u（十六进制格式显示无符号整型）等。</p>
 <p><code>watch</code> 命令在程序运行过程中监视变量值的变化，如果有变化，马上停止程序运行，如 <code>watch variable</code> 当变量 variable 有变化时，停止程序运行，还有 rwatch 和 awatch 分别在变量被读取和被读或被写时停止程序运行。</p>
 <ol start="3">
