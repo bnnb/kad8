@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-10-20T09:18:28+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/download-m3u8-videos-efficiently-with-ffmpeg/</loc>
+    <lastmod>2024-10-20T09:18:28+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-10-20T00:06:38+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,12 +28,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/software/gdb-debugging-multi-threads-case-analysis/</loc>
-    <lastmod>2024-10-19T22:46:58+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-10-19T22:46:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
