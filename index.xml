@@ -9,6 +9,17 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>适合工作站使用的最佳SSD</title>
+      <link>https://www.kad8.com/hardware/the-best-ssds-for-workstation/</link>
+      <pubDate>Sun, 20 Oct 2024 19:40:25 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/the-best-ssds-for-workstation/</guid>
+      <description>&lt;p&gt;较旧、速度较慢的 SATA SSD 正在逐渐消失，取而代之的是 NVMe SSD，后者的速度快很多倍，而且不需要任何杂乱的布线，因为它们可以直接插入现代主板上的 M.2 插槽。市场上正开始出现基于更快的 PCIe 5.0 标准的驱动器，它们可以为用户提供超过 14 GB/s 的惊人连续读写速度。&lt;/p&gt;
+&lt;p&gt;这里测试了七款 NVMe SSD，包括四款最受欢迎的 PCIe 4.0 选项，以及三款全新的 PCIe 5.0 SSD，它们将存储性能推向了极限。这组 SSD 经过了 Gigabyte Aorus Elite X WiFi 7 主板的测试，该主板顶部有一个 PCIe 5.0 M.2 插槽。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/the-best-ssds-for-workstation/featured-Best-SSD-2024.webp" />
+    </item>
+    
+    <item>
       <title>用FFmpeg高效下载m3u8视频</title>
       <link>https://www.kad8.com/software/download-m3u8-videos-efficiently-with-ffmpeg/</link>
       <pubDate>Sun, 20 Oct 2024 09:18:28 +0800</pubDate>
