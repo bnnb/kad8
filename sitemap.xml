@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-10-21T00:39:40+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/intel-announces-apo-supports-26-games/</loc>
+    <lastmod>2024-10-21T00:39:40+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-10-21T00:21:19+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -23,12 +35,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/the-best-ssds-for-workstation/</loc>
     <lastmod>2024-10-20T19:40:25+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
-    <lastmod>2024-10-20T09:18:28+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
