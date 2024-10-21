@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ais on Kontronn Asia Design Center</title>
-    <link>https://www.kad8.com/ai/</link>
-    <description>Recent content in Ais on Kontronn Asia Design Center</description>
+    <title>GPU on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/gpu/</link>
+    <description>Recent content in GPU on Kontronn Asia Design Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Mon, 21 Oct 2024 23:01:17 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 23:01:17 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CPU与GPU的区别</title>
       <link>https://www.kad8.com/ai/difference-between-cpu-and-gpu/</link>
@@ -51,17 +51,6 @@
 &lt;li&gt;
 &lt;p&gt;CPU：通常拥有少量的处理核心，但每个核心的性能较高。其架构是基于冯·诺依曼体系结构的，包含控制单元、算术逻辑单元、缓存等部分。这种结构使得CPU适合于顺序计算和复杂的控制任务。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/difference-between-cpu-and-gpu/featured-cpu-vs-gpu.webp" />
-    </item>
-    
-    <item>
-      <title>英伟达投资光芯片公司，将互联带宽提高10倍</title>
-      <link>https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/</link>
-      <pubDate>Mon, 21 Oct 2024 00:21:19 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/</guid>
-      <description>&lt;p&gt;据传言，&lt;code&gt;Nvidia&lt;/code&gt; 预计要到 2027 年的“Rubin Ultra” GPU 计算引擎才会为其 GPU 内存绑定 &lt;code&gt;NVLink&lt;/code&gt; 协议提供光学互连。这意味着每个设计加速器的人——尤其是超大规模和云构建者内部设计的加速器——都希望通过在 Big Green 之前部署光学互连来在 AI 计算方面胜过 Nvidia，从而获得优势。&lt;/p&gt;
-&lt;p&gt;由于加速器到加速器和加速器到内存的带宽瓶颈巨大，因此对光互连的需求如此之高，以至于筹集风险投资资金不成问题。我们看到这方面的行动越来越多，今天我们将讨论 Xscape Photonics，这是一家从哥伦比亚大学的研究机构分离出来的光互连初创公司。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/featured-xscape-photonics-logo.jpg" />
     </item>
     
   </channel>
