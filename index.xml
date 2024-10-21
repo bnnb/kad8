@@ -9,6 +9,27 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AMD发布面向嵌入式系统的新一代EPYC处理器</title>
+      <link>https://www.kad8.com/hardware/amd-releases-new-generation-of-epyc-processors-for-embedded-systems/</link>
+      <pubDate>Mon, 21 Oct 2024 13:28:16 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/amd-releases-new-generation-of-epyc-processors-for-embedded-systems/</guid>
+      <description>&lt;p&gt;AMD正式发布了面向嵌入式系统的新一代EPYC处理器，即&lt;code&gt;EPYC Embedded 8004&lt;/code&gt;系列。该系列采用了AMD密度优化的&lt;code&gt;Zen 4c&lt;/code&gt;内核，核心数量从12个到64个不等。&lt;/p&gt;
+&lt;p&gt;EPYC Embedded 8004系列支持单路处理器配置，通过六个内存通道可支持高达1.152TB的DDR5内存，热设计功耗（TDP）范围在70W到225W之间。AMD表示，该系列的目的是在紧凑且功耗受限的环境中，为高需求的工作负载提供卓越的性能。其目标应用包括网络系统、路由器、安全设备和工业边缘应用等。&lt;/p&gt;
+&lt;p&gt;具体型号和规格如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;EPYC Embedded 8534P：基础频率2.3GHz，加速频率3.1GHz，64核心128线程，TDP为200W。&lt;/li&gt;
+&lt;li&gt;EPYC Embedded 8434P：基础频率2.5GHz，加速频率3.1GHz，48核心96线程，TDP为200W。&lt;/li&gt;
+&lt;li&gt;EPYC Embedded 8324P：基础频率2.65GHz，加速频率3.0GHz，32核心64线程，TDP为180W。&lt;/li&gt;
+&lt;li&gt;EPYC Embedded 8224P：基础频率2.55GHz，加速频率3.0GHz，24核心48线程，TDP为180W。&lt;/li&gt;
+&lt;li&gt;EPYC Embedded 8124P：基础频率2.45GHz，加速频率3.0GHz，16核心32线程，TDP为125W。&lt;/li&gt;
+&lt;li&gt;EPYC Embedded 8C24P：基础频率2.45GHz，加速频率3.0GHz，12核心24线程，TDP为100W。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;EPYC Embedded 8004系列是首款采用AMD Zen 4c内核的EPYC处理器。Zen 4c是一种密度优化且注重性能功耗比的架构，将Zen 4架构缩小到更紧凑的封装，并通过降低时钟频率来提高能效。这使得AMD能够在更小的芯片尺寸中集成更多的核心。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/amd-releases-new-generation-of-epyc-processors-for-embedded-systems/featured-EPYC-Embedded-8004.png" />
+    </item>
+    
+    <item>
       <title>英特尔宣布APO支持26款游戏</title>
       <link>https://www.kad8.com/software/intel-announces-apo-supports-26-games/</link>
       <pubDate>Mon, 21 Oct 2024 00:39:40 +0800</pubDate>
