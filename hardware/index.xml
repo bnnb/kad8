@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 22 Oct 2024 23:29:17 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Oct 2024 01:01:21 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arm将取消高通架构许可协议</title>
+      <link>https://www.kad8.com/hardware/arm-holdings-to-cancel-qualcomm-chip-design-license/</link>
+      <pubDate>Thu, 24 Oct 2024 01:01:21 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/arm-holdings-to-cancel-qualcomm-chip-design-license/</guid>
+      <description>&lt;p&gt;据彭博社报道，Arm已正式向高通发出通知，将取消双方之间的架构许可协议。这一决定正值两家公司之间的法律纠纷愈演愈烈之际，引发了业界的广泛关注。&lt;/p&gt;
+&lt;p&gt;报道称，Arm已向高通发出了60天的强制通知，取消允许高通基于Arm拥有的标准设计并制造自己的芯片的许可协议。&lt;/p&gt;
+&lt;p&gt;高通每年销售的处理器数量高达数亿片，其技术被广泛应用于大多数安卓智能手机中。一旦该终止生效，高通可能不得不停止销售占其总收入约390亿美元重要份额的产品，否则将面临巨额的赔偿风险。&lt;/p&gt;
+&lt;p&gt;双方关系的恶化可追溯到2021年高通宣布的14亿美元收购芯片设计公司Nuvia的交易。2022年8月，Arm在特拉华州提起诉讼，指控高通在未进行新许可谈判的情况下，利用从Nuvia收购的技术进行开发，这违反了双方的授权协议，并要求赔偿。&lt;/p&gt;
+&lt;p&gt;对于Arm的这一举措，高通发言人通过电子邮件声明表示：“这是Arm的一贯伎俩，其不断发出毫无根据的威胁，试图强迫长期合作伙伴，干扰我们性能领先的CPU，并提高专利费率，而不顾我们根据架构许可所享有的权利。随着12月审判的临近，Arm的行为似乎是在试图破坏法律程序。其终止诉讼的要求完全没有根据。我们相信，高通根据与Arm的协议所享有的权利将得到肯定。Arm的反竞争行为是不能容忍的。”&lt;/p&gt;
+&lt;p&gt;然而，Arm方面拒绝对此报道发表评论。&lt;/p&gt;
+&lt;p&gt;这场法律战定于12月在特拉华州联邦法院开庭。如果Arm在诉讼中胜诉，可能会迫使高通及其约20家合作伙伴（包括微软）停止出货新笔记本电脑。此外，这也将使高通近年来最大的战略收购之一——对Nuvia的收购功亏一篑。&lt;/p&gt;
+&lt;p&gt;尽管两家公司在公开场合争斗激烈，但一些投资者和分析师仍相信，他们有可能在审判前达成和解。毕竟，这两家公司相互依赖，且都面临着巨大的收入和利润压力。未来，这场法律战的结果将如何影响整个半导体行业，仍值得我们密切关注。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/arm-holdings-to-cancel-qualcomm-chip-design-license/featured-arm.jpg" />
+    </item>
+    
     <item>
       <title>AMD 锐龙7 9800X3D 核心参数泄露</title>
       <link>https://www.kad8.com/hardware/amd-ryzen-7-9800x3d-benchmark-leaked/</link>
