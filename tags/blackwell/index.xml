@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nvidia on Kontronn Asia Design Center</title>
-    <link>https://www.kad8.com/tags/nvidia/</link>
-    <description>Recent content in Nvidia on Kontronn Asia Design Center</description>
+    <title>Blackwell on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/blackwell/</link>
+    <description>Recent content in Blackwell on Kontronn Asia Design Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Thu, 24 Oct 2024 01:26:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Oct 2024 01:26:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/blackwell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nvidia Blackwell的几款机架服务器解决方案</title>
       <link>https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/</link>
@@ -29,17 +29,6 @@
 &lt;/h2&gt;
 &lt;p&gt;微软10月8日在社交网络X的账号表示：微软Azure成为首个运行Nvidia Blackwell系统的云平台，搭载了GB200驱动的AI服务器。通过在各层级进行优化，该平台能够支持世界上最先进的AI模型，特别是利用了Infiniband网络和创新的闭环液冷技术来提高性能和散热效果。有关更多信息将在Microsoft Ignite大会上公布。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/featured-nvidia-blackwell-datacenter.webp" />
-    </item>
-    
-    <item>
-      <title>英伟达投资光芯片公司，将互联带宽提高10倍</title>
-      <link>https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/</link>
-      <pubDate>Mon, 21 Oct 2024 00:21:19 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/</guid>
-      <description>&lt;p&gt;据传言，&lt;code&gt;Nvidia&lt;/code&gt; 预计要到 2027 年的“Rubin Ultra” GPU 计算引擎才会为其 GPU 内存绑定 &lt;code&gt;NVLink&lt;/code&gt; 协议提供光学互连。这意味着每个设计加速器的人——尤其是超大规模和云构建者内部设计的加速器——都希望通过在 Big Green 之前部署光学互连来在 AI 计算方面胜过 Nvidia，从而获得优势。&lt;/p&gt;
-&lt;p&gt;由于加速器到加速器和加速器到内存的带宽瓶颈巨大，因此对光互连的需求如此之高，以至于筹集风险投资资金不成问题。我们看到这方面的行动越来越多，今天我们将讨论 Xscape Photonics，这是一家从哥伦比亚大学的研究机构分离出来的光互连初创公司。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/one-laser-to-pump-up-ai-interconnect-bandwidth-by-10x/featured-xscape-photonics-logo.jpg" />
     </item>
     
   </channel>

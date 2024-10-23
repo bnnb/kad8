@@ -9,6 +9,29 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Nvidia Blackwell的几款机架服务器解决方案</title>
+      <link>https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/</link>
+      <pubDate>Thu, 24 Oct 2024 01:26:15 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/</guid>
+      <description>&lt;p&gt;最近几周，微软、谷歌以及Meta相继展示了基于Nvidia Blackwell平台的机架解决方案，我们来看一下这几款机架解决方案。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;微软 
+    &lt;div id=&#34;%E5%BE%AE%E8%BD%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%BE%AE%E8%BD%AF&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;微软10月8日在社交网络X的账号表示：微软Azure成为首个运行Nvidia Blackwell系统的云平台，搭载了GB200驱动的AI服务器。通过在各层级进行优化，该平台能够支持世界上最先进的AI模型，特别是利用了Infiniband网络和创新的闭环液冷技术来提高性能和散热效果。有关更多信息将在Microsoft Ignite大会上公布。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/featured-nvidia-blackwell-datacenter.webp" />
+    </item>
+    
+    <item>
       <title>Arm将取消高通架构许可协议</title>
       <link>https://www.kad8.com/hardware/arm-holdings-to-cancel-qualcomm-chip-design-license/</link>
       <pubDate>Thu, 24 Oct 2024 01:01:21 +0800</pubDate>
