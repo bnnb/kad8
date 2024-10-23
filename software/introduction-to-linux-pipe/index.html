@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>如何在 Linux 上实现 Router 功能 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="如何在 Linux 上实现 Router 功能 &middot; Kontronn Asia Design Center" />
+  <title>Linux 管道Pipe简介 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="Linux 管道Pipe简介 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="How to Implement Router Function on Linux" />
-  <meta name="keywords" content="Linux, Router, " />
+  <meta name="description" content="Introduction to Linux Pipe" />
+  <meta name="keywords" content="Linux, Pipe, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/how-to-implement-router-function-on-linux/" />
+  <link rel="canonical" href="https://www.kad8.com/software/introduction-to-linux-pipe/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/how-to-implement-router-function-on-linux/">
+  <meta property="og:url" content="https://www.kad8.com/software/introduction-to-linux-pipe/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="如何在 Linux 上实现 Router 功能">
-  <meta property="og:description" content="How to Implement Router Function on Linux">
+  <meta property="og:title" content="Linux 管道Pipe简介">
+  <meta property="og:description" content="Introduction to Linux Pipe">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-10-23T00:16:51+08:00">
-    <meta property="article:modified_time" content="2024-10-23T00:16:51+08:00">
+    <meta property="article:published_time" content="2024-10-23T13:27:46+08:00">
+    <meta property="article:modified_time" content="2024-10-23T13:27:46+08:00">
     <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Router">
-    <meta property="og:image" content="https://www.kad8.com/software/how-to-implement-router-function-on-linux/featured-linux-router.png">
+    <meta property="article:tag" content="Pipe">
+    <meta property="og:image" content="https://www.kad8.com/software/introduction-to-linux-pipe/featured-linux-pipe.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/how-to-implement-router-function-on-linux/featured-linux-router.png">
-  <meta name="twitter:title" content="如何在 Linux 上实现 Router 功能">
-  <meta name="twitter:description" content="How to Implement Router Function on Linux">
+  <meta name="twitter:image" content="https://www.kad8.com/software/introduction-to-linux-pipe/featured-linux-pipe.jpg">
+  <meta name="twitter:title" content="Linux 管道Pipe简介">
+  <meta name="twitter:description" content="Introduction to Linux Pipe">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "如何在 Linux 上实现 Router 功能",
-    "headline": "如何在 Linux 上实现 Router 功能",
-    "description": "How to Implement Router Function on Linux",
-    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003eRouter是什么 \n    \u003cdiv id=\u0022router%E6%98%AF%E4%BB%80%E4%B9%88\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#router%E6%98%AF%E4%BB%80%E4%B9%88\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e路由器（Router）是一个用于连接不同网络的设备，它的主要作用是连接不同网络。路由器通常工作在 OSI 模型的第三层（网络层），负责管理数据包的路径选择和转发。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e主要特性 \n    \u003cdiv id=\u0022%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003eIP 转发：Linux 内核支持 IP 包的转发功能，能够将数据包从一个网络接口转发到另一个接口。通过简单的配置可以实现基本的路由器功能。\u003c\/li\u003e\n\u003cli\u003e流量控制和管理：Linux 路由器可以使用 tc（Traffic Control）工具来管理网络带宽，限制流量，进行流量优先级排序，防止网络拥塞。\u003c\/li\u003e\n\u003cli\u003eVPN 支持：Linux 路由器可以通过 OpenVPN、IPsec 等协议实现虚拟专用网（VPN）功能，建立安全的网络隧道，保护数据在公网上传输。\u003c\/li\u003e\n\u003cli\u003eQoS（服务质量）：可以使用 tc 或类似的工具实现 QoS 功能，优先处理特定类型的网络流量，确保关键应用的带宽和延迟需求得到满足。\u003c\/li\u003e\n\u003cli\u003e动态路由协议：Linux 支持动态路由协议，如 OSPF（开放式最短路径优先协议）、BGP（边界网关协议）等。通过使用软件如 Quagga 或 FRRouting（FRR），可以实现复杂的大规模动态路由环境。\u003c\/li\u003e\n\u003cli\u003eDHCP 和 DNS 服务：Linux 路由器可以配置为 DHCP 服务器，自动为内部网络分配 IP 地址。同时，它也可以运行 DNS 服务（如 dnsmasq），提供 DNS 解析和缓存功能。\u003c\/li\u003e\n\u003c\/ol\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e工作机制 \n    \u003cdiv id=\u0022%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003eIP 包的转发：\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003eLinux 路由器的核心工作机制是 IP 包的转发功能。启用 IP 转发后，Linux 内核会在接收到数据包时根据路由表决定下一跳。\u003c\/li\u003e\n\u003cli\u003e内核查找路由表，确定数据包的目的地，并根据路由表中的信息将数据包从一个接口转发到下一个网络。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e路由表的管理：\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e路由器使用路由表来决定数据包的转发路径。Linux 系统通过 \u003ccode\u003eip route\u003c\/code\u003e 命令可以配置和查看路由表。路由表中包含目标网络、下一跳设备和出口接口等信息。\u003c\/li\u003e\n\u003cli\u003e路由表可以通过手动静态配置，也可以通过动态路由协议（如 OSPF 或 BGP）自动更新。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003e动态路由协议：\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e动态路由协议（如 OSPF、BGP）可在多台路由器之间动态交换路由信息。通过 FRRouting 等软件实现，Linux 可以参与动态路由网络，自动调整路由表，适应网络变化。\u003c\/li\u003e\n\u003c\/ul\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e常见应用场景 \n    \u003cdiv id=\u0022%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eLinux 路由器通常应用于网络虚拟化中。如：虚拟专用网络（VPN）网关、流量控制和负载均衡、动态路由器和核心路由器。\u003c\/p\u003e",
+    "name": "Linux 管道Pipe简介",
+    "headline": "Linux 管道Pipe简介",
+    "description": "Introduction to Linux Pipe",
+    "abstract": "\u003cp\u003e在Linux中，竖线（\u003ccode\u003e|\u003c\/code\u003e，也称为管道符）是一个非常强大的工具，尤其在命令行操作中。它允许将一个命令的输出传递给另一个命令作为输入，从而实现将多个命令组合成一个流式的操作。本文将通过一些例子，展示竖线的作用和实际应用，带你更好地理解如何利用它提升工作效率。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e管道的基本概念 \n    \u003cdiv id=\u0022%E7%AE%A1%E9%81%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E7%AE%A1%E9%81%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eLinux中的管道是一种将一个命令的标准输出（stdout）连接到另一个命令的标准输入（stdin）的方式。通俗点说，就是把第一个命令的“结果”直接交给第二个命令处理，而不是中途保存到文件。\u003c\/p\u003e\n\u003cp\u003e例如，使用管道可以将文件内容通过\u003ccode\u003ecat\u003c\/code\u003e命令输出，并通过\u003ccode\u003egrep\u003c\/code\u003e命令进行筛选：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-bash\u0022 data-lang=\u0022bash\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003ecat file.txt \u003cspan class=\u0022p\u0022\u003e|\u003c\/span\u003e grep \u003cspan class=\u0022s2\u0022\u003e\u0026#34;keyword\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e这里，\u003ccode\u003ecat file.txt\u003c\/code\u003e将文件内容显示出来，而竖线将内容交给\u003ccode\u003egrep\u003c\/code\u003e，它会搜索包含“keyword”的行。这种方式避免了多次存储临时文件，让命令更加简洁流畅。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/how-to-implement-router-function-on-linux\/",
+    "url" : "https:\/\/www.kad8.com\/software\/introduction-to-linux-pipe\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-23T00:16:51\u002b08:00",
-    "datePublished": "2024-10-23T00:16:51\u002b08:00",
+    "dateCreated": "2024-10-23T13:27:46\u002b08:00",
+    "datePublished": "2024-10-23T13:27:46\u002b08:00",
     
-    "dateModified": "2024-10-23T00:16:51\u002b08:00",
+    "dateModified": "2024-10-23T13:27:46\u002b08:00",
     
-    "keywords": ["Linux","Router"],
+    "keywords": ["Linux","Pipe"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "107"
+    "wordCount": "138"
   }]
   </script>
 
@@ -414,7 +414,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      如何在 Linux 上实现 Router 功能
+      Linux 管道Pipe简介
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -455,7 +455,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-23T00:16:51&#43;08:00">2024-10-23</time>
+  <time datetime="2024-10-23T13:27:46&#43;08:00">2024-10-23</time>
   
 
   
@@ -487,10 +487,10 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/router/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pipe/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Router
+    Pipe
   </span>
 </span>
   </span>
@@ -556,11 +556,14 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#router是什么">Router是什么</a></li>
-    <li><a href="#主要特性">主要特性</a></li>
-    <li><a href="#工作机制">工作机制</a></li>
-    <li><a href="#常见应用场景">常见应用场景</a></li>
-    <li><a href="#实现步骤">实现步骤</a></li>
+    <li><a href="#管道的基本概念">管道的基本概念</a>
+      <ul>
+        <li><a href="#统计特定日志出现的次数">统计特定日志出现的次数</a></li>
+        <li><a href="#显示当前目录中文件最多的前三个扩展名">显示当前目录中文件最多的前三个扩展名</a></li>
+        <li><a href="#查看端口占用情况并杀掉对应进程">查看端口占用情况并杀掉对应进程</a></li>
+        <li><a href="#将命令输出保存到文件并统计行数">将命令输出保存到文件并统计行数</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -574,11 +577,14 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#router是什么">Router是什么</a></li>
-    <li><a href="#主要特性">主要特性</a></li>
-    <li><a href="#工作机制">工作机制</a></li>
-    <li><a href="#常见应用场景">常见应用场景</a></li>
-    <li><a href="#实现步骤">实现步骤</a></li>
+    <li><a href="#管道的基本概念">管道的基本概念</a>
+      <ul>
+        <li><a href="#统计特定日志出现的次数">统计特定日志出现的次数</a></li>
+        <li><a href="#显示当前目录中文件最多的前三个扩展名">显示当前目录中文件最多的前三个扩展名</a></li>
+        <li><a href="#查看端口占用情况并杀掉对应进程">查看端口占用情况并杀掉对应进程</a></li>
+        <li><a href="#将命令输出保存到文件并统计行数">将命令输出保存到文件并统计行数</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -662,113 +668,112 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <p>在Linux中，竖线（<code>|</code>，也称为管道符）是一个非常强大的工具，尤其在命令行操作中。它允许将一个命令的输出传递给另一个命令作为输入，从而实现将多个命令组合成一个流式的操作。本文将通过一些例子，展示竖线的作用和实际应用，带你更好地理解如何利用它提升工作效率。</p>
 
-<h2 class="relative group">Router是什么 
-    <div id="router%E6%98%AF%E4%BB%80%E4%B9%88" class="anchor"></div>
+
+<h2 class="relative group">管道的基本概念 
+    <div id="%E7%AE%A1%E9%81%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#router%E6%98%AF%E4%BB%80%E4%B9%88" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E7%AE%A1%E9%81%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>路由器（Router）是一个用于连接不同网络的设备，它的主要作用是连接不同网络。路由器通常工作在 OSI 模型的第三层（网络层），负责管理数据包的路径选择和转发。</p>
+<p>Linux中的管道是一种将一个命令的标准输出（stdout）连接到另一个命令的标准输入（stdin）的方式。通俗点说，就是把第一个命令的“结果”直接交给第二个命令处理，而不是中途保存到文件。</p>
+<p>例如，使用管道可以将文件内容通过<code>cat</code>命令输出，并通过<code>grep</code>命令进行筛选：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat file.txt <span class="p">|</span> grep <span class="s2">&#34;keyword&#34;</span>
+</span></span></code></pre></div><p>这里，<code>cat file.txt</code>将文件内容显示出来，而竖线将内容交给<code>grep</code>，它会搜索包含“keyword”的行。这种方式避免了多次存储临时文件，让命令更加简洁流畅。</p>
 
 
-<h2 class="relative group">主要特性 
-    <div id="%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7" class="anchor"></div>
+<h3 class="relative group">统计特定日志出现的次数 
+    <div id="%E7%BB%9F%E8%AE%A1%E7%89%B9%E5%AE%9A%E6%97%A5%E5%BF%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E7%BB%9F%E8%AE%A1%E7%89%B9%E5%AE%9A%E6%97%A5%E5%BF%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<ol>
-<li>IP 转发：Linux 内核支持 IP 包的转发功能，能够将数据包从一个网络接口转发到另一个接口。通过简单的配置可以实现基本的路由器功能。</li>
-<li>流量控制和管理：Linux 路由器可以使用 tc（Traffic Control）工具来管理网络带宽，限制流量，进行流量优先级排序，防止网络拥塞。</li>
-<li>VPN 支持：Linux 路由器可以通过 OpenVPN、IPsec 等协议实现虚拟专用网（VPN）功能，建立安全的网络隧道，保护数据在公网上传输。</li>
-<li>QoS（服务质量）：可以使用 tc 或类似的工具实现 QoS 功能，优先处理特定类型的网络流量，确保关键应用的带宽和延迟需求得到满足。</li>
-<li>动态路由协议：Linux 支持动态路由协议，如 OSPF（开放式最短路径优先协议）、BGP（边界网关协议）等。通过使用软件如 Quagga 或 FRRouting（FRR），可以实现复杂的大规模动态路由环境。</li>
-<li>DHCP 和 DNS 服务：Linux 路由器可以配置为 DHCP 服务器，自动为内部网络分配 IP 地址。同时，它也可以运行 DNS 服务（如 dnsmasq），提供 DNS 解析和缓存功能。</li>
-</ol>
-
-
-<h2 class="relative group">工作机制 
-    <div id="%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ol>
-<li>IP 包的转发：</li>
-</ol>
-<ul>
-<li>Linux 路由器的核心工作机制是 IP 包的转发功能。启用 IP 转发后，Linux 内核会在接收到数据包时根据路由表决定下一跳。</li>
-<li>内核查找路由表，确定数据包的目的地，并根据路由表中的信息将数据包从一个接口转发到下一个网络。</li>
+</h3>
+<p>在服务器维护过程中，我们经常需要分析日志文件，看看某个错误信息出现了多少次。假设我们有一个日志文件<code>error.log</code>，我们想统计其中包含&quot;ERROR&quot;的行数。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat error.log <span class="p">|</span> grep <span class="s2">&#34;ERROR&#34;</span> <span class="p">|</span> wc -l
+</span></span></code></pre></div><ul>
+<li><code>cat error.log</code>：显示日志文件的内容。</li>
+<li><code>grep &quot;ERROR&quot;</code>：从日志中筛选出包含&quot;ERROR&quot;的行。</li>
+<li><code>wc -l</code>：统计行数，即&quot;ERROR&quot;出现的次数。</li>
 </ul>
-<ol start="2">
-<li>路由表的管理：</li>
-</ol>
-<ul>
-<li>路由器使用路由表来决定数据包的转发路径。Linux 系统通过 <code>ip route</code> 命令可以配置和查看路由表。路由表中包含目标网络、下一跳设备和出口接口等信息。</li>
-<li>路由表可以通过手动静态配置，也可以通过动态路由协议（如 OSPF 或 BGP）自动更新。</li>
-</ul>
-<ol start="3">
-<li>动态路由协议：</li>
-</ol>
-<ul>
-<li>动态路由协议（如 OSPF、BGP）可在多台路由器之间动态交换路由信息。通过 FRRouting 等软件实现，Linux 可以参与动态路由网络，自动调整路由表，适应网络变化。</li>
-</ul>
+<p>这个命令通过三步操作轻松实现了日志分析，非常实用。</p>
 
 
-<h2 class="relative group">常见应用场景 
-    <div id="%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" class="anchor"></div>
+<h3 class="relative group">显示当前目录中文件最多的前三个扩展名 
+    <div id="%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E4%B8%AD%E6%96%87%E4%BB%B6%E6%9C%80%E5%A4%9A%E7%9A%84%E5%89%8D%E4%B8%89%E4%B8%AA%E6%89%A9%E5%B1%95%E5%90%8D" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E4%B8%AD%E6%96%87%E4%BB%B6%E6%9C%80%E5%A4%9A%E7%9A%84%E5%89%8D%E4%B8%89%E4%B8%AA%E6%89%A9%E5%B1%95%E5%90%8D" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<p>Linux 路由器通常应用于网络虚拟化中。如：虚拟专用网络（VPN）网关、流量控制和负载均衡、动态路由器和核心路由器。</p>
+</h3>
+<p>在开发中，我们可能会遇到一个目录里有大量不同类型的文件，想要统计其中哪个文件类型最多。通过管道组合命令，我们可以快速得出结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls -l <span class="p">|</span> awk <span class="s1">&#39;{print $NF}&#39;</span> <span class="p">|</span> rev <span class="p">|</span> cut -d. -f1 <span class="p">|</span> rev <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -nr <span class="p">|</span> head -n <span class="m">3</span>
+</span></span></code></pre></div><ul>
+<li><code>ls -l</code>：列出当前目录的文件。</li>
+<li><code>awk '{print $NF}'</code>：提取文件名。</li>
+<li><code>rev | cut -d. -f1 | rev</code>：通过<code>cut</code>和<code>rev</code>组合，获取文件的扩展名。</li>
+<li><code>sort</code>：对扩展名排序。</li>
+<li><code>uniq -c</code>：统计每个扩展名出现的次数。</li>
+<li><code>sort -nr</code>：按出现次数排序，次数多的排在前面。</li>
+<li><code>head -n 3</code>：取前3个扩展名。</li>
+</ul>
+<p>通过管道的组合，一行命令完成了一个较为复杂的统计分析任务。</p>
 
 
-<h2 class="relative group">实现步骤 
-    <div id="%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4" class="anchor"></div>
+<h3 class="relative group">查看端口占用情况并杀掉对应进程 
+    <div id="%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5%E5%B9%B6%E6%9D%80%E6%8E%89%E5%AF%B9%E5%BA%94%E8%BF%9B%E7%A8%8B" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5%E5%B9%B6%E6%9D%80%E6%8E%89%E5%AF%B9%E5%BA%94%E8%BF%9B%E7%A8%8B" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<blockquote>
-<p>路由器的核心功能是转发数据包，因此需要在 Linux 上开启 IP 转发功能。</p>
-</blockquote>
-<ol>
-<li>临时启用 IP 转发（物理机重启后失效）</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="m">1</span> &gt; /proc/sys/net/ipv4/ip_forward
-</span></span></code></pre></div><ol start="2">
-<li>永久开启 IP 转发（物理机重启后仍然生效）</li>
-</ol>
-<p>修改系统配置</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vim /etc/sysctl.conf
-</span></span></code></pre></div><p>将以下内容取消注释或条件</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">net.ipv4.ip_forward <span class="o">=</span> <span class="m">1</span>
-</span></span></code></pre></div><p>使配置生效</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo sysctl -p
-</span></span></code></pre></div>
+</h3>
+<p>服务器上有时候需要检查某个端口是否被占用并结束对应的进程。例如，我们需要查看80端口的占用情况并终止相应的进程：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo netstat -tuln <span class="p">|</span> grep <span class="s1">&#39;:80&#39;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $7}&#39;</span> <span class="p">|</span> cut -d/ -f1 <span class="p">|</span> xargs sudo <span class="nb">kill</span> -9
+</span></span></code></pre></div><ul>
+<li><code>netstat -tuln</code>：显示所有监听的TCP/UDP端口。</li>
+<li><code>grep ':80'</code>：筛选出80端口的相关信息。</li>
+<li><code>awk '{print $7}'</code>：提取出对应的进程ID（PID）。</li>
+<li><code>cut -d/ -f1</code>：进一步提取出纯数字的PID。</li>
+<li><code>xargs sudo kill -9</code>：通过<code>xargs</code>将PID传递给<code>kill -9</code>命令，终止该进程。</li>
+</ul>
+<p>这个命令可以快速解决端口占用问题。</p>
+
+
+<h3 class="relative group">将命令输出保存到文件并统计行数 
+    <div id="%E5%B0%86%E5%91%BD%E4%BB%A4%E8%BE%93%E5%87%BA%E4%BF%9D%E5%AD%98%E5%88%B0%E6%96%87%E4%BB%B6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E8%A1%8C%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%B0%86%E5%91%BD%E4%BB%A4%E8%BE%93%E5%87%BA%E4%BF%9D%E5%AD%98%E5%88%B0%E6%96%87%E4%BB%B6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E8%A1%8C%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>有时，我们不仅想查看某个命令的输出，还想将其保存到文件中并进一步处理。比如，我们可以将一个<code>ps</code>命令的输出保存到文件，然后统计文件中的行数：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ps aux <span class="p">|</span> tee output.txt <span class="p">|</span> wc -l
+</span></span></code></pre></div><ul>
+<li><code>ps aux</code>：列出当前系统的所有进程。</li>
+<li><code>tee output.txt</code>：将输出同时保存到文件<code>output.txt</code>中，并继续传递给下一个命令。</li>
+<li><code>wc -l</code>：统计行数，显示当前运行的进程数。</li>
+</ul>
+<p><code>tee</code>命令在这里的作用是让输出同时保存到文件和传递给管道的下一个命令，实现了一石二鸟的效果。</p>
+<p>管道符<code>|</code>在Linux中极大地增强了命令行的灵活性，它使得多个命令可以串联在一起工作，避免了使用临时文件或重复操作。在实际开发、运维过程中，通过巧妙地使用管道，能极大提高工作效率。例如日志分析、数据统计、进程管理等常见任务，都可以通过组合简单的命令行工具快速完成。</p>
+<p>管道的魅力在于它的简单性与可组合性——每个命令只需专注于自己的输入和输出，管道则负责将这些命令连接起来，形成强大的操作链。每个人都可以根据自己的需求和场景，创建独特的管道组合，让Linux的命令行变成真正的“魔法棒”。</p>
+
           
           
           
@@ -785,7 +790,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;title=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;title=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -804,7 +809,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;text=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;text=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -822,7 +827,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd&#43;https://www.kad8.com/software/how-to-implement-router-function-on-linux/"
+      href="https://bsky.app/intent/compose?text=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b&#43;https://www.kad8.com/software/introduction-to-linux-pipe/"
       title=""
       aria-label=""
       >
@@ -840,7 +845,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd%20https://www.kad8.com/software/how-to-implement-router-function-on-linux/"
+      href="https://s2f.kytta.dev/?text=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b%20https://www.kad8.com/software/introduction-to-linux-pipe/"
       title=""
       aria-label=""
       >
@@ -859,7 +864,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;resubmit=true&amp;title=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -878,7 +883,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;description=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;description=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -897,7 +902,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;quote=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;quote=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -916,7 +921,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;subject=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="mailto:?body=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;subject=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -935,7 +940,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;resubmit=true&amp;title=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title=""
       aria-label=""
       >
@@ -954,7 +959,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/how-to-implement-router-function-on-linux/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e5%9c%a8%20Linux%20%e4%b8%8a%e5%ae%9e%e7%8e%b0%20Router%20%e5%8a%9f%e8%83%bd"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/introduction-to-linux-pipe/&amp;resubmit=true&amp;title=Linux%20%e7%ae%a1%e9%81%93Pipe%e7%ae%80%e4%bb%8b"
       title=""
       aria-label=""
       >
@@ -977,6 +982,118 @@
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/software/how-to-implement-router-function-on-linux/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-implement-router-function-on-linux/featured-linux-router_hu15189574888763587507.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/software/how-to-implement-router-function-on-linux/">如何在 Linux 上实现 Router 功能</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-23T00:16:51&#43;08:00">2024-10-23</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Linux
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/router/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Router
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
   
   
 
@@ -1210,118 +1327,6 @@
   </a>
 
   
-  
-
-  <a href="/hardware/amd-ryzen-7-9800x3d-benchmark-leaked/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-ryzen-7-9800x3d-benchmark-leaked/featured-amd-ryzen-7-9800x3d_hu15338157077558762163.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-ryzen-7-9800x3d-benchmark-leaked/">AMD 锐龙7 9800X3D 核心参数泄露</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-10-22T23:29:17&#43;08:00">2024-10-22</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/eyzen-7/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Eyzen 7
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/9800x3d/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    9800X3D
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -1335,8 +1340,8 @@
           
         
       <script>
-        var oid = "views_software\/how-to-implement-router-function-on-linux\/index.md"
-        var oid_likes = "likes_software\/how-to-implement-router-function-on-linux\/index.md"
+        var oid = "views_software\/introduction-to-linux-pipe\/index.md"
+        var oid_likes = "likes_software\/introduction-to-linux-pipe\/index.md"
       </script>
       
       
@@ -1356,7 +1361,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/how-to-configure-tftp-server-in-linux/">
+            <a class="flex group mr-3" href="/software/how-to-implement-router-function-on-linux/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1368,11 +1373,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux下如何配置tftp服务器</span
+                  >如何在 Linux 上实现 Router 功能</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-22T23:52:42&#43;08:00">2024-10-22</time>
+                    <time datetime="2024-10-23T00:16:51&#43;08:00">2024-10-23</time>
                   
                 </span>
               </span>
@@ -1380,28 +1385,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/introduction-to-linux-pipe/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux 管道Pipe简介</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-10-23T13:27:46&#43;08:00">2024-10-23</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
