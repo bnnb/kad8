@@ -9,6 +9,31 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HBM终极指南</title>
+      <link>https://www.kad8.com/hardware/high-bandwidth-memory-hbm-ultimate-guide/</link>
+      <pubDate>Thu, 24 Oct 2024 23:54:58 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/high-bandwidth-memory-hbm-ultimate-guide/</guid>
+      <description>&lt;p&gt;HBM是传统内存类型的重大飞跃。更高的内存带宽和容量、更低的功耗和快速的传输速率等关键特性使HBM区别于它的前辈。了解这些特征对于了解这项尖端技术至关重要。&lt;/p&gt;
+&lt;p&gt;通过这个终极指南，读者可以了解HBM的发展，它在各个行业中的重要应用，与传统DRAM相比提供的优势，以及计算世界中内存配置的未来。欢迎来到HBM知识之门。&lt;/p&gt;
+&lt;p&gt;HBM市场规模在2022年价值28亿美元。HBM市场行业预计将从2023年的35.3亿美元增长到2032年的225.73亿美元，在预测期内（2024 - 2032年）的复合年增长率（CAGR）为26.10%。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;HBM主要特性 
+    &lt;div id=&#34;hbm%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#hbm%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;HBM已经彻底改变了高性能计算系统管理数据流的方式。与传统内存解决方案相比，其最显著的特性之一是带宽显著增加。HBM通过使用TSV和微凸点连接的堆叠DRAM芯片来实现这一目标。这种创新的设计允许更短的数据路径，从而提高数据速度和能效。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/high-bandwidth-memory-hbm-ultimate-guide/featured-HBM-chip.jpg" />
+    </item>
+    
+    <item>
       <title>计算机算力单位简介</title>
       <link>https://www.kad8.com/ai/computer-computing-power-unit-introduction/</link>
       <pubDate>Thu, 24 Oct 2024 22:39:07 +0800</pubDate>
