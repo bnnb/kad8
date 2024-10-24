@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Thu, 24 Oct 2024 01:26:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Oct 2024 22:39:07 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机算力单位简介</title>
+      <link>https://www.kad8.com/ai/computer-computing-power-unit-introduction/</link>
+      <pubDate>Thu, 24 Oct 2024 22:39:07 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/computer-computing-power-unit-introduction/</guid>
+      <description>&lt;p&gt;算力也被称之为计算能力（Computing Power），算力既然是一种“能力”——即其执行计算任务的速度和效率，那么算力就会有大小的衡量指标，同时对于算力的衡量就需要依托于芯片的类别来进行，但是无论怎样算力是需要有一个基准的单位的，常见具体的请见下表：&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;算力的计算方式 
+    &lt;div id=&#34;%E7%AE%97%E5%8A%9B%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%AE%97%E5%8A%9B%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Computing-Power-1.png&#34; alt=&#34;Computer Computing Power&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/computer-computing-power-unit-introduction/featured-computing-power.webp" />
+    </item>
+    
     <item>
       <title>Nvidia Blackwell的几款机架服务器解决方案</title>
       <link>https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/</link>
