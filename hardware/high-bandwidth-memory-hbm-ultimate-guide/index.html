@@ -109,7 +109,7 @@
     "keywords": ["HBM"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "111"
+    "wordCount": "108"
   }]
   </script>
 
@@ -547,21 +547,29 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#hbm主要特性">HBM主要特性</a></li>
-    <li><a href="#内存带宽">内存带宽</a></li>
-    <li><a href="#功耗">功耗</a></li>
-    <li><a href="#内存容量">内存容量</a></li>
-    <li><a href="#传输速率">传输速率</a></li>
-    <li><a href="#hbm技术的发展">HBM技术的发展</a></li>
-    <li><a href="#传统内存解决方案">传统内存解决方案</a></li>
+    <li><a href="#hbm主要特性">HBM主要特性</a>
+      <ul>
+        <li><a href="#内存带宽">内存带宽</a></li>
+        <li><a href="#功耗">功耗</a></li>
+        <li><a href="#内存容量">内存容量</a></li>
+        <li><a href="#传输速率">传输速率</a></li>
+      </ul>
+    </li>
+    <li><a href="#hbm技术的发展">HBM技术的发展</a>
+      <ul>
+        <li><a href="#传统内存解决方案">传统内存解决方案</a></li>
+      </ul>
+    </li>
     <li><a href="#hbm介绍">HBM介绍</a></li>
     <li><a href="#hbm进展">HBM进展</a></li>
-    <li><a href="#下表总结了hbm的进化里程碑">下表总结了HBM的进化里程碑：</a></li>
-    <li><a href="#hbm应用">HBM应用</a></li>
-    <li><a href="#高性能计算">高性能计算</a></li>
-    <li><a href="#图形应用程序">图形应用程序</a></li>
-    <li><a href="#ai">AI</a></li>
-    <li><a href="#数据中心的应用程序">数据中心的应用程序</a></li>
+    <li><a href="#hbm应用">HBM应用</a>
+      <ul>
+        <li><a href="#高性能计算">高性能计算</a></li>
+        <li><a href="#图形应用程序">图形应用程序</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#数据中心的应用程序">数据中心的应用程序</a></li>
+      </ul>
+    </li>
     <li><a href="#hbm的优点">HBM的优点</a>
       <ul>
         <li><a href="#增加内存带宽">增加内存带宽</a></li>
@@ -569,15 +577,21 @@
         <li><a href="#更快的传输速率">更快的传输速率</a></li>
       </ul>
     </li>
-    <li><a href="#hbm配置">HBM配置</a></li>
-    <li><a href="#5d多模封装系统">5D多模封装系统</a></li>
-    <li><a href="#3d堆叠dram">3D堆叠DRAM</a></li>
-    <li><a href="#3d堆叠内存架构">3D堆叠内存架构</a></li>
-    <li><a href="#高带宽内存与传统dram解决方案">高带宽内存与传统DRAM解决方案</a></li>
-    <li><a href="#内存带宽比较">内存带宽比较</a></li>
-    <li><a href="#功耗对比">功耗对比</a></li>
-    <li><a href="#内存容量比较">内存容量比较</a></li>
-    <li><a href="#传输速率比较">传输速率比较</a></li>
+    <li><a href="#hbm配置">HBM配置</a>
+      <ul>
+        <li><a href="#5d多模封装系统">5D多模封装系统</a></li>
+        <li><a href="#3d堆叠dram">3D堆叠DRAM</a></li>
+        <li><a href="#3d堆叠内存架构">3D堆叠内存架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#高带宽内存与传统dram解决方案">高带宽内存与传统DRAM解决方案</a>
+      <ul>
+        <li><a href="#内存带宽比较">内存带宽比较</a></li>
+        <li><a href="#功耗对比">功耗对比</a></li>
+        <li><a href="#内存容量比较">内存容量比较</a></li>
+        <li><a href="#传输速率比较">传输速率比较</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -591,21 +605,29 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#hbm主要特性">HBM主要特性</a></li>
-    <li><a href="#内存带宽">内存带宽</a></li>
-    <li><a href="#功耗">功耗</a></li>
-    <li><a href="#内存容量">内存容量</a></li>
-    <li><a href="#传输速率">传输速率</a></li>
-    <li><a href="#hbm技术的发展">HBM技术的发展</a></li>
-    <li><a href="#传统内存解决方案">传统内存解决方案</a></li>
+    <li><a href="#hbm主要特性">HBM主要特性</a>
+      <ul>
+        <li><a href="#内存带宽">内存带宽</a></li>
+        <li><a href="#功耗">功耗</a></li>
+        <li><a href="#内存容量">内存容量</a></li>
+        <li><a href="#传输速率">传输速率</a></li>
+      </ul>
+    </li>
+    <li><a href="#hbm技术的发展">HBM技术的发展</a>
+      <ul>
+        <li><a href="#传统内存解决方案">传统内存解决方案</a></li>
+      </ul>
+    </li>
     <li><a href="#hbm介绍">HBM介绍</a></li>
     <li><a href="#hbm进展">HBM进展</a></li>
-    <li><a href="#下表总结了hbm的进化里程碑">下表总结了HBM的进化里程碑：</a></li>
-    <li><a href="#hbm应用">HBM应用</a></li>
-    <li><a href="#高性能计算">高性能计算</a></li>
-    <li><a href="#图形应用程序">图形应用程序</a></li>
-    <li><a href="#ai">AI</a></li>
-    <li><a href="#数据中心的应用程序">数据中心的应用程序</a></li>
+    <li><a href="#hbm应用">HBM应用</a>
+      <ul>
+        <li><a href="#高性能计算">高性能计算</a></li>
+        <li><a href="#图形应用程序">图形应用程序</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#数据中心的应用程序">数据中心的应用程序</a></li>
+      </ul>
+    </li>
     <li><a href="#hbm的优点">HBM的优点</a>
       <ul>
         <li><a href="#增加内存带宽">增加内存带宽</a></li>
@@ -613,15 +635,21 @@
         <li><a href="#更快的传输速率">更快的传输速率</a></li>
       </ul>
     </li>
-    <li><a href="#hbm配置">HBM配置</a></li>
-    <li><a href="#5d多模封装系统">5D多模封装系统</a></li>
-    <li><a href="#3d堆叠dram">3D堆叠DRAM</a></li>
-    <li><a href="#3d堆叠内存架构">3D堆叠内存架构</a></li>
-    <li><a href="#高带宽内存与传统dram解决方案">高带宽内存与传统DRAM解决方案</a></li>
-    <li><a href="#内存带宽比较">内存带宽比较</a></li>
-    <li><a href="#功耗对比">功耗对比</a></li>
-    <li><a href="#内存容量比较">内存容量比较</a></li>
-    <li><a href="#传输速率比较">传输速率比较</a></li>
+    <li><a href="#hbm配置">HBM配置</a>
+      <ul>
+        <li><a href="#5d多模封装系统">5D多模封装系统</a></li>
+        <li><a href="#3d堆叠dram">3D堆叠DRAM</a></li>
+        <li><a href="#3d堆叠内存架构">3D堆叠内存架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#高带宽内存与传统dram解决方案">高带宽内存与传统DRAM解决方案</a>
+      <ul>
+        <li><a href="#内存带宽比较">内存带宽比较</a></li>
+        <li><a href="#功耗对比">功耗对比</a></li>
+        <li><a href="#内存容量比较">内存容量比较</a></li>
+        <li><a href="#传输速率比较">传输速率比较</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -730,7 +758,7 @@
 <p>将多个存储芯片集成到一个封装中，不仅可以提高电源效率，还可以减少内存在PCB上的面积。通过利用宽接口架构，HBM有助于提高传输速率和降低功耗。与努力平衡性能和功率预算的传统内存系统不同，HBM提供了针对高性能计算、图形卡和机器学习应用程序的功率效率和性能需求量身定制的内存解决方案。</p>
 
 
-<h2 class="relative group">内存带宽 
+<h3 class="relative group">内存带宽 
     <div id="%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD" class="anchor"></div>
     
     <span
@@ -739,11 +767,11 @@
             style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>HBM技术的核心在于其一流的存储带宽。内存带宽指的是在内存和处理器之间快速移动大量数据的能力。HBM利用更宽的内存总线，通过独立通道同时访问数据，大大提高了每个周期传输的数据量。这种特性有利于需要高速数据处理的应用程序，如高级图形渲染或复杂的科学计算。</p>
 
 
-<h2 class="relative group">功耗 
+<h3 class="relative group">功耗 
     <div id="%E5%8A%9F%E8%80%97" class="anchor"></div>
     
     <span
@@ -752,11 +780,11 @@
             style="text-decoration-line: none !important;" href="#%E5%8A%9F%E8%80%97" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>HBM的高效架构使其在功耗方面脱颖而出。传统的DRAM需要更高的功率来长距离驱动信号，而HBM的垂直堆叠IC和更短的连接路径显著降低了传输每比特所需的能量。这意味着更高的功率效率，这对于控制功率预算至关重要，特别是在高性能计算环境和半导体工程中的先进节点中经常出现的密集封装中。</p>
 
 
-<h2 class="relative group">内存容量 
+<h3 class="relative group">内存容量 
     <div id="%E5%86%85%E5%AD%98%E5%AE%B9%E9%87%8F" class="anchor"></div>
     
     <span
@@ -765,11 +793,11 @@
             style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%AE%B9%E9%87%8F" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>HBM专注于垂直堆叠和硅中间体的使用，与传统的平面内存解决方案相比，HBM可以在单个封装中实现更大的内存容量。通过将多个DRAM芯片堆叠在一起，HBM不仅节省了空间，而且还提供了更多的空间可以根据需要扩展内存容量，同时不会受到PCB设计人员所面临的典型面积限制。HBM的这一特性使它成为在有限的功率和空间范围内需要大内存容量系统的一个有吸引力的存储设备。</p>
 
 
-<h2 class="relative group">传输速率 
+<h3 class="relative group">传输速率 
     <div id="%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87" class="anchor"></div>
     
     <span
@@ -778,7 +806,7 @@
             style="text-decoration-line: none !important;" href="#%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>HBM拥有惊人的传输速率，这是依赖数据快速传输系统的关键考虑因素。HBM的设计允许使用宽接口总线，这样可以使传输速率大大超过传统内存。利用HBM的传输速率，系统可以从更快的加载时间、更流畅的数据处理和整体性能提升中受益，使其适用于涉及高数据吞吐量的任务，例如视频处理和神经网络训练。</p>
 
 
@@ -795,7 +823,7 @@
 <p>内存技术的发展一直在不懈地追求多个方面的平衡：容量、速度、功率效率和面积。在这段旅程的每个关键时刻，创新都解决了前几代的局限性。这种演变推动了HBM的出现，HBM是一个技术飞跃，重塑了内存解决方案的性能格局。</p>
 
 
-<h2 class="relative group">传统内存解决方案 
+<h3 class="relative group">传统内存解决方案 
     <div id="%E4%BC%A0%E7%BB%9F%E5%86%85%E5%AD%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" class="anchor"></div>
     
     <span
@@ -804,7 +832,7 @@
             style="text-decoration-line: none !important;" href="#%E4%BC%A0%E7%BB%9F%E5%86%85%E5%AD%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>在传统内存解决领域，系统通常依赖于DDR SDRAM，其后续迭代(DDR2、DDR3、DDR4)在性能和功率效率方面提供了渐进式的进步。然而，这些传统存储器采用并行总线接口，随着带宽和容量需求的增加，面临着信号完整性和布线拥挤等挑战。此外，更宽的内存总线需要更多的物理空间和功耗，这反过来又影响了系统设计和热管理。</p>
 
 
@@ -832,19 +860,13 @@
     
 </h2>
 <p>随着HBM技术的进步，每次迭代都带来了令人敬畏的进步。例如，HBM2将每个引脚的带宽提高了一倍，并提高了密度。此后，HBM2E进一步扩展了容量和速度。这些进步使得HBM对于最新的图形密集型任务和AI及机器学习等新兴领域至关重要，这些领域需要快速和强大的存储能力。HBM无缝集成到硅中间体中，与半导体工程中的先进节点一起提高计算能力，同时坚守严格的功率预算。</p>
-
-
-<h2 class="relative group">下表总结了HBM的进化里程碑： 
-    <div id="%E4%B8%8B%E8%A1%A8%E6%80%BB%E7%BB%93%E4%BA%86hbm%E7%9A%84%E8%BF%9B%E5%8C%96%E9%87%8C%E7%A8%8B%E7%A2%91" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%8B%E8%A1%A8%E6%80%BB%E7%BB%93%E4%BA%86hbm%E7%9A%84%E8%BF%9B%E5%8C%96%E9%87%8C%E7%A8%8B%E7%A2%91" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>！<a href="./HBM-milestones.webp">HBM Milestones</a></p>
+<p>下表总结了HBM的进化里程碑：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./HBM-milestones.webp" alt="HBM Milestones" />
+      
+    </figure>
+</p>
 <p>随着不断的进步，HBM继续推动技术的发展，为下一代计算应用提供前所未有的性能。</p>
 
 
@@ -861,7 +883,7 @@
 <p>HBM已经成为一种变革性的存储器解决方案，在速度、效率和容量等关键节点交叉的一系列领域中找到了应用。它能够以令人印象深刻的速度处理大量数据，同时又节能，这使它成为各种计算范例的理想选择。我们将探讨它在高性能计算、图形、人工智能和数据中心应用程序中的重要作用，说明它的独特属性如何满足快速数据处理和传输的不断增长的需求。</p>
 
 
-<h2 class="relative group">高性能计算 
+<h3 class="relative group">高性能计算 
     <div id="%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97" class="anchor"></div>
     
     <span
@@ -870,7 +892,7 @@
             style="text-decoration-line: none !important;" href="#%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>高性能计算（HPC）涵盖了广泛的系统，这些系统提供了强大的计算能力，可以完成复杂的任务，如科学模拟、气候建模和先进材料研究。HPC系统需要能够与其强大的处理能力保持同步的内存，而HBM巧妙地满足了这一需求。</p>
 <ul>
 <li>性能驱动：HBM的堆叠配置提供并行工作的多个通道，最大限度地提高数据吞吐量。</li>
@@ -879,7 +901,7 @@
 </ul>
 
 
-<h2 class="relative group">图形应用程序 
+<h3 class="relative group">图形应用程序 
     <div id="%E5%9B%BE%E5%BD%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" class="anchor"></div>
     
     <span
@@ -888,7 +910,7 @@
             style="text-decoration-line: none !important;" href="#%E5%9B%BE%E5%BD%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>HBM和图形应用程序之间的相关性特别强，因为对内存带宽的需求随着图形分辨率和复杂性的提高而增强。</p>
 <ul>
 <li>高分辨率和帧率：具有HBM的GPU可以以更高的帧率渲染高分辨率图像和视频，这是现代游戏、虚拟现实和专业可视化所必需的。</li>
@@ -897,7 +919,7 @@
 </ul>
 
 
-<h2 class="relative group">AI 
+<h3 class="relative group">AI 
     <div id="ai" class="anchor"></div>
     
     <span
@@ -906,7 +928,7 @@
             style="text-decoration-line: none !important;" href="#ai" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>AI和ML模型通常需要较大的内存带宽才能有效地训练大型数据集。HBM提供了支持AI应用程序的密集工作负载所需的功能。</p>
 <ul>
 <li>快速数据访问：快速访问内存对于AI和ML算法的迭代过程至关重要，而HBM以其优越的传输速率保证了这一点。</li>
@@ -915,7 +937,7 @@
 </ul>
 
 
-<h2 class="relative group">数据中心的应用程序 
+<h3 class="relative group">数据中心的应用程序 
     <div id="%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" class="anchor"></div>
     
     <span
@@ -924,7 +946,7 @@
             style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>数据中心是数字经济的支柱，支持云计算、内容交付和企业服务。HBM可以在优化数据中心操作方面发挥不可或缺的作用。</p>
 <ul>
 <li>用于虚拟化的带宽：当运行多个虚拟机或容器时，数据中心可以从增加的带宽中受益，因为它允许并发处理更多数据而不会延迟。</li>
@@ -1000,7 +1022,7 @@
 <p>HBM以其高速、大容量和高能效而闻名，能够满足现代高性能计算环境的需求。HBM的独特配置使其能够提供数倍于传统存储器的带宽。HBM背后的独创性在于其创新的布局，它有各种配置，以最大限度地提高性能和最大限度地减少空间使用。这些HBM配置包括3D堆叠存储器设计和先进的5D多模封装系统。</p>
 
 
-<h2 class="relative group">5D多模封装系统 
+<h3 class="relative group">5D多模封装系统 
     <div id="5d%E5%A4%9A%E6%A8%A1%E5%B0%81%E8%A3%85%E7%B3%BB%E7%BB%9F" class="anchor"></div>
     
     <span
@@ -1009,11 +1031,11 @@
             style="text-decoration-line: none !important;" href="#5d%E5%A4%9A%E6%A8%A1%E5%B0%81%E8%A3%85%E7%B3%BB%E7%BB%9F" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>5D多模封装系统是封装技术的顶峰，旨在实现无与伦比的性能。作为3D堆叠的进化，这些系统增加了额外的集成维度，将多层3D堆叠芯片组合在一起，形成一个非常强大和高效的存储解决方案。“5D”指的是三个空间维度加上两个额外的集成维度，包括互连和封装级组装。这种方法精心协调每个芯片的操作，实现更快的传输速率和更低的功耗，同时保持在硬件板上的小面积。</p>
 
 
-<h2 class="relative group">3D堆叠DRAM 
+<h3 class="relative group">3D堆叠DRAM 
     <div id="3d%E5%A0%86%E5%8F%A0dram" class="anchor"></div>
     
     <span
@@ -1022,11 +1044,11 @@
             style="text-decoration-line: none !important;" href="#3d%E5%A0%86%E5%8F%A0dram" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>当谈到HBM时，3D堆叠DRAM是一项关键技术。它通过TSV连接将多层DRAM芯片堆叠在一起。这些TSV穿过硅片，使堆叠的不同层之间实现垂直电连接。这种3D堆叠不仅节省了空间，而且有助于闪电般的数据传输速率和增强的带宽，实现高性能计算场景中的实时数据处理。</p>
 
 
-<h2 class="relative group">3D堆叠内存架构 
+<h3 class="relative group">3D堆叠内存架构 
     <div id="3d%E5%A0%86%E5%8F%A0%E5%86%85%E5%AD%98%E6%9E%B6%E6%9E%84" class="anchor"></div>
     
     <span
@@ -1035,7 +1057,7 @@
             style="text-decoration-line: none !important;" href="#3d%E5%A0%86%E5%8F%A0%E5%86%85%E5%AD%98%E6%9E%B6%E6%9E%84" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>3D堆叠存储器架构代表了存储器设计的飞跃，将多层IC组合到单个封装中。通过堆叠内存芯片，HBM有效地减少了信号距离，并且与2D配置相比，在延迟和能效方面有了巨大的改进。这些架构采用微凸点和TSV来实现密集的芯片间连接，从而简化了存储单元之间的通信路径。这种紧凑的安排显著提高了每个芯片的可用带宽，使HBM成为带宽密集型应用程序的最佳内存解决方案。</p>
 
 
@@ -1052,7 +1074,7 @@
 <p>目前，HBM已经成为存储技术领域的领跑者，特别是与传统的DRAM解决方案相比。这种形式的存储技术在设计时考虑到了当代高性能计算、图形渲染和先进机器学习算法的强烈要求，这些要求不仅需要更高的速度，还需要更大的带宽和能源效率。HBM通过创新的设计配置（如3D堆叠和先进的封装技术）实现了这些目标，将其与传统DRAM的传统平面布局区分开来。</p>
 
 
-<h2 class="relative group">内存带宽比较 
+<h3 class="relative group">内存带宽比较 
     <div id="%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E6%AF%94%E8%BE%83" class="anchor"></div>
     
     <span
@@ -1061,11 +1083,11 @@
             style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E6%AF%94%E8%BE%83" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>与传统DRAM相比，HBM最突出的优点之一是它提供了大量的带宽。HBM具有宽接口存储器总线和并行工作的多个独立通道，极大地增强了数据传输能力。为了说明这一点，典型的HBM配置可以提供大约256 GB/s或更高的带宽，这是传统DRAM提供的带宽的几倍，传统DRAM可能在32 GB/s左右徘徊。这种明显的差异允许更快的数据处理，在带宽饥渴的场景中被证明是必不可少的。</p>
 
 
-<h2 class="relative group">功耗对比 
+<h3 class="relative group">功耗对比 
     <div id="%E5%8A%9F%E8%80%97%E5%AF%B9%E6%AF%94" class="anchor"></div>
     
     <span
@@ -1074,11 +1096,11 @@
             style="text-decoration-line: none !important;" href="#%E5%8A%9F%E8%80%97%E5%AF%B9%E6%AF%94" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>与传统DRAM相比，功耗效率是HBM的另一个亮点。HBM的分层设计意味着数据传输距离更短，内存工作电压更低，从而降低了总体功耗。虽然传统DRAM的功耗可能是一个限制因素，特别是在功率敏感型应用中，但HBM的架构可以在更低的功耗预算下保持高性能。具体的节能效果可能会有所不同，但是与传统方法相比，HBM通常可以显著降低每千兆字节的功耗。</p>
 
 
-<h2 class="relative group">内存容量比较 
+<h3 class="relative group">内存容量比较 
     <div id="%E5%86%85%E5%AD%98%E5%AE%B9%E9%87%8F%E6%AF%94%E8%BE%83" class="anchor"></div>
     
     <span
@@ -1087,11 +1109,11 @@
             style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%AE%B9%E9%87%8F%E6%AF%94%E8%BE%83" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>在内存容量方面，HBM通过其堆叠能力引入了一种范式转变，允许芯片的垂直集成，并在相同甚至更小的占地面积内实现更密集的内存配置。因此，HBM可以实现更高的密度，从而在单个堆栈内实现更高的内存容量，而无需增加内存设备的物理大小。</p>
 
 
-<h2 class="relative group">传输速率比较 
+<h3 class="relative group">传输速率比较 
     <div id="%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87%E6%AF%94%E8%BE%83" class="anchor"></div>
     
     <span
@@ -1100,7 +1122,7 @@
             style="text-decoration-line: none !important;" href="#%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87%E6%AF%94%E8%BE%83" aria-label="锚点">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>传输速率，或从内存中读取或写入数据的速度，对整个系统性能至关重要。HBM由于其3D堆叠架构和高速TSV的短数据路径提供了卓越的传输速率。传统DRAM的传输速率可能达到8到14 Gbps，而HBM的传输速率可以远远超过100 Gbps。这允许更有效地处理数据密集型任务，推动计算机图形学、科学计算和实时分析的进步。</p>
 
           
