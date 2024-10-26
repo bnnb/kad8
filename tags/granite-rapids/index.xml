@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Granite Rapids on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/granite-rapids/</link>
+    <description>Recent content in Granite Rapids on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sat, 26 Oct 2024 10:56:25 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/granite-rapids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英特尔和AMD封装CPU的不同做法</title>
+      <link>https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/</link>
+      <pubDate>Sat, 26 Oct 2024 10:56:25 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/</guid>
+      <description>&lt;p&gt;2017 年，AMD 推出代号为 Naples 的第一代 Epyc 处理器后不久，英特尔就打趣说，其竞争对手为了保持相关性，已经沦落到只能将一堆台式机芯片粘在一起的地步。&lt;/p&gt;
+&lt;p&gt;不幸的是，对于英特尔来说，这句评论已经过时了，短短几年后，这家 x86 巨头就开始自己寻找粘合剂了。&lt;/p&gt;
+&lt;p&gt;英特尔的Xeon 6处理器于今年开始分阶段推出，这是其第三代多芯片 Xeon 处理器，也是其首款采用与AMD自己的异构芯片架构类似的数据中心芯片。&lt;/p&gt;
+&lt;p&gt;虽然英特尔最终认识到了AMD小芯片战略的明智之处，但其方法却截然不同。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;突破标线限制 
+    &lt;div id=&#34;%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;快速回顾一下为什么这么多 CPU 设计正在远离单片架构，这主要归结为两个因素：掩模版限制和产量。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/mi300a_cover_image.jpg" />
+    </item>
+    
+  </channel>
+</rss>
