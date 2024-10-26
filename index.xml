@@ -938,5 +938,23 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/tsmc-readies-hbm4-base-dies-at-12nm-and-5nm/featured-hbm-schematics.jpg" />
     </item>
     
+    <item>
+      <title>AMD正式发布第五代EPYC处理器</title>
+      <link>https://www.kad8.com/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/</link>
+      <pubDate>Fri, 11 Oct 2024 20:25:52 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/</guid>
+      <description>&lt;p&gt;AMD正式发布了第五代EPYC处理器“Turin”，采用全新的&lt;code&gt;Zen 5&lt;/code&gt;核心架构，带来了全面的重大提升，再次巩固了其在数据中心领域的领先地位。新一代处理器被命名为“EPYC 9005”系列，目的是扩大服务器CPU的领先地位，推动高效现代化，并提供端到端的AI平台。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./AMD-Turin-1.webp&#34; alt=&#34;AMD EPYC Turin&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Turin&lt;/code&gt;处理器有两种版本。第一种是基于4nm工艺的标准版，搭载多达16个“Zen 5”CCD，提供最多128个核心和256个线程，被称为“Scale-Up”版本。第二种是“Scale-Out”版本，采用3nm“Zen 5C”核心，配备多达12个CCD，提供最多192个核心和384个线程。新一代处理器最多可容纳17个芯片，总计拥有1500亿个晶体管。CPU支持AVX-512，具有完整的512b数据路径，时钟频率高达5 GHz，可配置在单路或双路服务器中。&lt;/p&gt;
+&lt;p&gt;在性能方面，AMD表示Zen 5在企业和云平台上IPC提升高达17%，在高性能计算（HPC）和人工智能（AI）平台上提升高达37%。EPYC Zen 5C提供最多192个核心和384 MB的L3缓存，与Zen 4C相比，核心数和L3缓存增加了50%。EPYC Zen 5提供最多128个核心和512 MB的L3缓存，与Zen 4相比，核心数和L3缓存增加了33%。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/featured-AMD-Turin-6.webp" />
+    </item>
+    
   </channel>
 </rss>
