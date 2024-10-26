@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snapdragon X2 on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/snapdragon-x2/</link>
+    <description>Recent content in Snapdragon X2 on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sat, 26 Oct 2024 19:38:54 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/snapdragon-x2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高通着手测试下一代Snapdragon X2 CPU</title>
+      <link>https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/</link>
+      <pubDate>Sat, 26 Oct 2024 19:38:54 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/</guid>
+      <description>&lt;p&gt;高通公司近日开始测试其用于 PC 的下一代基于 ARM 架构的 Snapdragon X2 CPU，内部型号为 SC8480XP，代号为“Project Glymur”。据悉，这款芯片已在今年7月和8月进行了测试。&lt;/p&gt;
+&lt;p&gt;几个月前，高通推出了 &lt;code&gt;Snapdragon X&lt;/code&gt; 系列，宣称具备强大的 &lt;code&gt;CPU&lt;/code&gt; 和 &lt;code&gt;GPU&lt;/code&gt; 组合，可以为用户带来可靠的 &lt;code&gt;AI PC&lt;/code&gt; 体验，因此受到了业内广泛关注。但是尽管宣传力度很大，初期的评测和性能结果并不完全令人满意。单核性能、IPC 数据以及效率和电池寿命被视为亮点，但在多核和图形性能方面表现平平。本来很多人憧憬的ARM版本windows挑战苹果电脑的格局并不存在。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/featured-snapdragon.png" />
+    </item>
+    
+  </channel>
+</rss>

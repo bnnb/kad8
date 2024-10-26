@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>英特尔和AMD封装CPU的不同做法 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="英特尔和AMD封装CPU的不同做法 &middot; Kontronn Asia Design Center" />
+  <title>高通着手测试下一代Snapdragon X2 CPU &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="高通着手测试下一代Snapdragon X2 CPU &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Different Approach for Intel and AMD to Gluing Together CPUs" />
-  <meta name="keywords" content="Epyc, Turin, Granite Rapids, " />
+  <meta name="description" content="Qualcomm Begins Testing Next Generation Snapdragon X2 CPU" />
+  <meta name="keywords" content="Snapdragon X2, SC8480XPSC8480XP, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/" />
+  <link rel="canonical" href="https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/" />
   
   
   
@@ -66,25 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/">
+  <meta property="og:url" content="https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="英特尔和AMD封装CPU的不同做法">
-  <meta property="og:description" content="Different Approach for Intel and AMD to Gluing Together CPUs">
+  <meta property="og:title" content="高通着手测试下一代Snapdragon X2 CPU">
+  <meta property="og:description" content="Qualcomm Begins Testing Next Generation Snapdragon X2 CPU">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="hardware">
-    <meta property="article:published_time" content="2024-10-26T10:56:25+08:00">
-    <meta property="article:modified_time" content="2024-10-26T10:56:25+08:00">
-    <meta property="article:tag" content="Epyc">
-    <meta property="article:tag" content="Turin">
-    <meta property="article:tag" content="Granite Rapids">
-    <meta property="og:image" content="https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/featured-amd-intel-packaging.webp">
+    <meta property="article:published_time" content="2024-10-26T19:38:54+08:00">
+    <meta property="article:modified_time" content="2024-10-26T19:38:54+08:00">
+    <meta property="article:tag" content="Snapdragon X2">
+    <meta property="article:tag" content="SC8480XPSC8480XP">
+    <meta property="og:image" content="https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/featured-snapdragon.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/featured-amd-intel-packaging.webp">
-  <meta name="twitter:title" content="英特尔和AMD封装CPU的不同做法">
-  <meta name="twitter:description" content="Different Approach for Intel and AMD to Gluing Together CPUs">
+  <meta name="twitter:image" content="https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/featured-snapdragon.png">
+  <meta name="twitter:title" content="高通着手测试下一代Snapdragon X2 CPU">
+  <meta name="twitter:description" content="Qualcomm Begins Testing Next Generation Snapdragon X2 CPU">
 
   
   <script type="application/ld+json">
@@ -92,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Hardwares",
-    "name": "英特尔和AMD封装CPU的不同做法",
-    "headline": "英特尔和AMD封装CPU的不同做法",
-    "description": "Different Approach for Intel and AMD to Gluing Together CPUs",
-    "abstract": "\u003cp\u003e2017 年，AMD 推出代号为 Naples 的第一代 Epyc 处理器后不久，英特尔就打趣说，其竞争对手为了保持相关性，已经沦落到只能将一堆台式机芯片粘在一起的地步。\u003c\/p\u003e\n\u003cp\u003e不幸的是，对于英特尔来说，这句评论已经过时了，短短几年后，这家 x86 巨头就开始自己寻找粘合剂了。\u003c\/p\u003e\n\u003cp\u003e英特尔的Xeon 6处理器于今年开始分阶段推出，这是其第三代多芯片 Xeon 处理器，也是其首款采用与AMD自己的异构芯片架构类似的数据中心芯片。\u003c\/p\u003e\n\u003cp\u003e虽然英特尔最终认识到了AMD小芯片战略的明智之处，但其方法却截然不同。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e突破标线限制 \n    \u003cdiv id=\u0022%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e快速回顾一下为什么这么多 CPU 设计正在远离单片架构，这主要归结为两个因素：掩模版限制和产量。\u003c\/p\u003e",
+    "name": "高通着手测试下一代Snapdragon X2 CPU",
+    "headline": "高通着手测试下一代Snapdragon X2 CPU",
+    "description": "Qualcomm Begins Testing Next Generation Snapdragon X2 CPU",
+    "abstract": "\u003cp\u003e高通公司近日开始测试其用于 PC 的下一代基于 ARM 架构的 Snapdragon X2 CPU，内部型号为 SC8480XP，代号为“Project Glymur”。据悉，这款芯片已在今年7月和8月进行了测试。\u003c\/p\u003e\n\u003cp\u003e几个月前，高通推出了 \u003ccode\u003eSnapdragon X\u003c\/code\u003e 系列，宣称具备强大的 \u003ccode\u003eCPU\u003c\/code\u003e 和 \u003ccode\u003eGPU\u003c\/code\u003e 组合，可以为用户带来可靠的 \u003ccode\u003eAI PC\u003c\/code\u003e 体验，因此受到了业内广泛关注。但是尽管宣传力度很大，初期的评测和性能结果并不完全令人满意。单核性能、IPC 数据以及效率和电池寿命被视为亮点，但在多核和图形性能方面表现平平。本来很多人憧憬的ARM版本windows挑战苹果电脑的格局并不存在。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/hardware\/different-approach-for-intel-and-amd-to-gluing-together-cpus\/",
+    "url" : "https:\/\/www.kad8.com\/hardware\/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-26T10:56:25\u002b08:00",
-    "datePublished": "2024-10-26T10:56:25\u002b08:00",
+    "dateCreated": "2024-10-26T19:38:54\u002b08:00",
+    "datePublished": "2024-10-26T19:38:54\u002b08:00",
     
-    "dateModified": "2024-10-26T10:56:25\u002b08:00",
+    "dateModified": "2024-10-26T19:38:54\u002b08:00",
     
-    "keywords": ["Epyc","Turin","Granite Rapids"],
+    "keywords": ["Snapdragon X2","SC8480XPSC8480XP"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "332"
+    "wordCount": "83"
   }]
   </script>
 
@@ -415,7 +414,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      英特尔和AMD封装CPU的不同做法
+      高通着手测试下一代Snapdragon X2 CPU
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -456,7 +455,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T10:56:25&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-26T19:38:54&#43;08:00">2024-10-26</time>
   
 
   
@@ -480,26 +479,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/snapdragon-x2/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Epyc
+    Snapdragon X2
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sc8480xpsc8480xp/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Turin
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/granite-rapids/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Granite Rapids
+    SC8480XPSC8480XP
   </span>
 </span>
   </span>
@@ -551,117 +542,7 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-     <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
-
-         <details open id="TOCView"
-  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#突破标线限制">突破标线限制</a></li>
-    <li><a href="#amd的做法">AMD的做法</a></li>
-    <li><a href="#英特尔xeon的chiplet-之旅">英特尔Xeon的chiplet 之旅</a></li>
-    <li><a href="#我们接下来要去哪里">我们接下来要去哪里？</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#突破标线限制">突破标线限制</a></li>
-    <li><a href="#amd的做法">AMD的做法</a></li>
-    <li><a href="#英特尔xeon的chiplet-之旅">英特尔Xeon的chiplet 之旅</a></li>
-    <li><a href="#我们接下来要去哪里">我们接下来要去哪里？</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-<script>
-
-  var margin = 200;
-  var marginError = 50;
-
-  (function () {
-    var $window = $(window);
-    var $toc = $('#TOCView');
-    var tocHeight = $toc.height();
-
-    function onResize() {
-      var windowAndMarginHeight = $window.height() - margin;
-      if(tocHeight >= windowAndMarginHeight) {
-        $toc.css("overflow-y", "scroll")
-        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
-      } else {
-        $toc.css("overflow-y", "hidden")
-        $toc.css("max-height", "9999999px")
-      }
-    }
-
-    $window.on('resize', onResize);
-    $(document).ready(onResize);
-  })();
-
-
-
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = decodeURIComponent(e.attr('id'));
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-
-
-</script>
-   </div>
-      </div>
-      
+    
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -669,144 +550,19 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>2017 年，AMD 推出代号为 Naples 的第一代 Epyc 处理器后不久，英特尔就打趣说，其竞争对手为了保持相关性，已经沦落到只能将一堆台式机芯片粘在一起的地步。</p>
-<p>不幸的是，对于英特尔来说，这句评论已经过时了，短短几年后，这家 x86 巨头就开始自己寻找粘合剂了。</p>
-<p>英特尔的Xeon 6处理器于今年开始分阶段推出，这是其第三代多芯片 Xeon 处理器，也是其首款采用与AMD自己的异构芯片架构类似的数据中心芯片。</p>
-<p>虽然英特尔最终认识到了AMD小芯片战略的明智之处，但其方法却截然不同。</p>
-
-
-<h2 class="relative group">突破标线限制 
-    <div id="%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%AA%81%E7%A0%B4%E6%A0%87%E7%BA%BF%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>快速回顾一下为什么这么多 CPU 设计正在远离单片架构，这主要归结为两个因素：掩模版限制和产量。</p>
-<p>一般而言，在工艺技术没有重大改进的情况下，更多内核必然意味着更多硅片。然而，芯片实际尺寸存在实际限制 - 我们称之为光罩极限 - 大约为 800 平方毫米。一旦达到极限，继续扩展计算的唯一方法就是使用更多芯片。</p>
-<p>我们现在看到许多产品（不仅仅是 CPU）都采用了这种技术，它们将两个大型芯片塞进一个封装中。Gaudi 3、Nvidia的Blackwell和英特尔的Emerald Rapids Xeons 只是其中几个例子。</p>
-<p>多芯片的问题在于，它们之间的桥梁往往是带宽方面的瓶颈，并且有可能引入额外的延迟。这通常不像将工作负载分散到多个插槽那么糟糕，但这也是一些芯片设计师倾向于使用较少数量的较大芯片来扩展计算的原因之一。</p>
-<p>然而，制造更大的芯片确实成本高昂，因为芯片越大，缺陷率就越高。这使得使用大量较小的芯片成为一个有吸引力的提议，并解释了为什么AMD的设计使用了如此多的芯片——最新的Epycs芯片多达 17 个。</p>
-<p>了解了这些基础知识后，让我们深入探讨一下英特尔和AMD最新Xeons和Epyc处理器的不同设计理念。</p>
-
-
-<h2 class="relative group">AMD的做法 
-    <div id="amd%E7%9A%84%E5%81%9A%E6%B3%95" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#amd%E7%9A%84%E5%81%9A%E6%B3%95" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>我们将从AMD的第五代Epyc Turin处理器开始。具体来说，我们正在研究该芯片的 128 核 Zen 5 版本，它具有 16 个4nm核心复合芯片 (CCD)，这些芯片围绕着基于台积电 6nm 工艺技术制造的单个 I/O 芯片 (IOD)。</p>
+          <p>高通公司近日开始测试其用于 PC 的下一代基于 ARM 架构的 Snapdragon X2 CPU，内部型号为 SC8480XP，代号为“Project Glymur”。据悉，这款芯片已在今年7月和8月进行了测试。</p>
+<p>几个月前，高通推出了 <code>Snapdragon X</code> 系列，宣称具备强大的 <code>CPU</code> 和 <code>GPU</code> 组合，可以为用户带来可靠的 <code>AI PC</code> 体验，因此受到了业内广泛关注。但是尽管宣传力度很大，初期的评测和性能结果并不完全令人满意。单核性能、IPC 数据以及效率和电池寿命被视为亮点，但在多核和图形性能方面表现平平。本来很多人憧憬的ARM版本windows挑战苹果电脑的格局并不存在。</p>
+<p>当前一代的 Snapdragon X SoC 内部型号为“SC8380XP”，代号为“Hamoa”。如前所述，正在测试的下一代 SoC SC8480XP，代号为“Glymur”或“Project Glymur”。测试使用的开发板配备了各种 NAND 和内存组件，类似于早期评估平台（RVP 或 EVP），用于在最终规格确定前测试样品。这意味着高通仍处于新 SoC 测试的早期阶段。</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-zen5-chip.png" alt="AMD Zen 5 Chip" />
-      <figcaption>AMD 最新的Epycs配备多达 16 个计算芯片</figcaption>
-    </figure>
-</p>
-<p>如果这听起来很熟悉，那是因为 AMD 在其第二代 Epyc 处理器上使用了相同的基本公式。作为参考，第一代Epyc缺乏独特的 I/O 芯片。</p>
-<p>正如我们前面提到的，使用大量较小的计算芯片意味着 AMD 可以获得更高的产量，但这也意味着他们可以在 Ryzen 和 Epyc 处理器之间共享硅片。</p>
-<p>此外，使用八核或十六核 CCD（每个 CCD 具有 32 MB 的 L3 缓存），AMD 在按缓存和内存比例扩展核心数量时可以获得额外的灵活性。</p>
-<p>例如，如果您想要一个具有 16 个内核的 Epyc（由于许可限制，这是 HPC 工作负载的常见 SKU），最明显的实现方法是使用两个八核 CCD，两个 CCD 之间有 64 MB 的 L3 缓存。但是，您也可以使用 16 个 CCD，每个 CCD 只有一个内核处于活动状态，但板载缓存为 512 MB。这听起来可能很疯狂，但这两种芯片确实存在。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd_epyc5_breakdown.webp" alt="AMD EPYC breakdown" />
-      <figcaption>AMD 的第五代Epycs遵循熟悉的模式，即16个计算芯片围绕一个中央 I/O 芯片</figcaption>
-    </figure>
-</p>
-<p>另一方面，I/O 芯片负责除计算之外的几乎所有功能，包括内存、安全性、PCIe、CXL 和其他 I/O（如 SATA），并且还充当芯片 CCD 与其他插槽之间通信的骨干。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd_turin_io.webp" alt="AMD Epyc Turin I/O" />
+      <img class="my-0 rounded-md" loading="lazy" src="./dell-leak-xps-snapdragon-x-1.webp" alt="DELL XPS" />
       
     </figure>
 </p>
-<p>将内存控制器放置在I/O芯片上确实有一些优点和缺点。从好的方面来说，这意味着内存带宽在很大程度上独立于核心数量而扩展。缺点是某些工作负载的内存和缓存访问延迟可能会更高。我们强调“可能”，因为这种事情高度依赖于工作负载。</p>
-
-
-<h2 class="relative group">英特尔Xeon的chiplet 之旅 
-    <div id="%E8%8B%B1%E7%89%B9%E5%B0%94xeon%E7%9A%84chiplet-%E4%B9%8B%E6%97%85" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%8B%B1%E7%89%B9%E5%B0%94xeon%E7%9A%84chiplet-%E4%B9%8B%E6%97%85" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>谈到英特尔，这家芯片制造商对多芯片硅片的处理方式与 AMD 有很大不同。虽然现代 Xeon 处理器采用具有不同计算和 I/O 芯片的异构架构，但情况并非总是如此。</p>
-<p>英特尔首款多芯片 Xeon 处理器，代号为Sapphire Rapids，采用一块单片、中等核心数芯片或四块极端核心数芯片，每块芯片都有自己的内存控制器和板载 I/O。Emerald Rapids采用了类似的模式，但为芯片核心数较高的 SKU 选择了两块更大的芯片。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./intel-sapphire-to-emerald.webp" alt="Inttel Sapphire to Emerald" />
-      <figcaption>正如您在 Sapphire 和 Emerald Rapids 之间看到的，英特尔从四个中型芯片转换为一对近乎网状的有限芯片</figcaption>
-    </figure>
-</p>
-<p>所有这一切都随着 Xeon 6 的推出而发生了改变，英特尔将I /O、UPI 链接和加速器移至基于英特尔 7 工艺节点制造的一对芯片上，这对芯片位于基于英特尔 3 制造的中心的一到三个计算芯片之间。</p>
-<p>出于稍后会讲到的原因，我们将主要关注英特尔更主流的 Granite Rapids Xeon 6 处理器，而不是其多核 Sierra Forest 部件。</p>
-<p>看看英特尔的计算芯片，我们就能发现它与 AMD 的第一个重大区别。每个计算模块至少有 43 个板载核心，可根据 SKU 开启或关闭融合。这意味着英特尔实现 128 个核心所需的芯片数量比 AMD 少得多，但由于面积较大，因此成品率可能会更低。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./intel_granite_die.webp" alt="Intel Granite Die" />
-      <figcaption>根据 SKU，Granite Rapids 使用夹在一对 I/O 芯片之间的一到三个计算芯片</figcaption>
-    </figure>
-</p>
-<p>除了增加内核之外，英特尔还选择将这些芯片的内存控制器放在计算芯片上，每个芯片支持 4 个通道。理论上，这应该可以降低访问延迟，但这也意味着，如果你想要所有 12 个内存通道，就需要填充所有 3 个芯片。</p>
-<p>对于我们上个月看过的 6900P 系列部件，你不必担心这一点，因为每个 SKU 都配有三个计算芯片。然而，这意味着 72 核版本只利用了封装中一小部分硅片。同样，我们之前讨论过的 16 核 HPC 中心 Epyc 也是如此。</p>
-<p>另一方面，英特尔将于明年初推出的 6700P 系列部件将配备一个或两个计算芯片，具体取决于所需的内存带宽和核心数量，这意味着内存通道在高端将限制为 8 个，在板载单个计算芯片的配置中可能只有 4 个。我们目前还不清楚 HCC 和 LCC 芯片上的内存配置，因此英特尔有可能增强了这些部件上的内存控制器。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./xeon_6_dies.webp" alt="Intel Xeon 6 Dies" />
-      <figcaption>与 AMD 的 Epyc 一样，英特尔的 Xeon 现在采用带有计算和 I/O 芯片的异构芯片架构</figcaption>
-    </figure>
-</p>
-<p>英特尔的 I/O 芯片也相当薄，并包含 PCIe、CXL 和 UPI 链路组合，用于与存储、外围设备和其他插槽进行通信。除此之外，我们还发现了许多用于直接流 (DSA)、内存分析 (IAA)、加密/解密 (QAT) 和负载平衡的加速器。</p>
-<p>我们得知，在 I/O 芯片上放置加速器的部分原因是为了让它们更靠近进出芯片的数据。</p>
-
-
-<h2 class="relative group">我们接下来要去哪里？ 
-    <div id="%E6%88%91%E4%BB%AC%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%A6%81%E5%8E%BB%E5%93%AA%E9%87%8C" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%88%91%E4%BB%AC%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%A6%81%E5%8E%BB%E5%93%AA%E9%87%8C" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>从表面上看，英特尔的下一代多核处理器代号为 Clearwater Forest，预计将于明年上半年推出，其型号与 Granite Rapids 类似，具有两个 I/O 模块和三个计算模块。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./intel_clearwater_forest.jpg" alt="Clearwater Forest" />
-      <figcaption>它可能看起来像缩小版的 Granite Rapids，但显然那只是隐藏着更多芯片的结构硅</figcaption>
-    </figure>
-</p>
-<p>然而，外表是会骗人的。据我们了解，这三个计算芯片实际上只是隐藏着许多较小计算芯片的结构硅片，而这些较小的计算芯片本身位于有源硅片中介层之上。</p>
-<p>根据英特尔今年早些时候展示的效果图，Clearwater Forest 每个封装最多可使用 12 个计算芯片。使用硅中介层绝不是新鲜事，它提供了许多好处，包括芯片间带宽更高、延迟比有机基板中通常看到的更低。这与英特尔核心数最高的 Sierra Forest 部件上的一对 144 核计算芯片大不相同。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./clearwater_forest_render.webp" alt="Clearwater Forest Render" />
-      <figcaption>如果英特尔今年早些时候发布的渲染图有任何可参考之处，那么 Clearwater Forest 隐藏的芯片数量要比 Granite Rapids 多得多</figcaption>
-    </figure>
-</p>
-<p>当然，讨论 Clearwater 森林将使用的技术的效果图并不意味着明年到达时我们将会得到完全相同的技术。</p>
-<p>也许更大的问题是 AMD 下一步将把其小芯片架构带向何方。看看 AMD 的 128 核 <a href="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/" target="_blank">Turin</a> 处理器，封装上没有太多空间容纳更多硅片，但 House of Zen 仍有一些选择。</p>
-<p>首先，AMD 可以选择更大的封装，为额外的芯片腾出空间。或者，该芯片制造商也可以将更多内核封装到更小的芯片上。然而，我们怀疑 AMD 的第六代 Epycs 最终可能看起来更像其 Instinct MI300 系列加速器。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./mi300a_cover_image.jpg" alt="MI300A" />
-      <figcaption>MI300A 将 24 个 Zen 4 核心、6 个 CDNA 3 GPU 芯片和 128GB HBM3 内存整合到一个封装中，旨在满足 HPC 工作负载的需求</figcaption>
-    </figure>
-</p>
-<p>您可能还记得，与 MI300X GPU 一起推出的还有一款 APU，它将芯片的两个 CDNA3 模块换成了三个 CCD，中间有 24 个 Zen 4 核心。这些计算模块堆叠在四个 I/O 芯片上，并连接到一组八个 HBM3 模块。</p>
-<p>现在，这只是猜测，但不难想象 AMD 会做类似的事情，将所有内存和 GPU 芯片换成额外的 CCD。这样的设计可能也会受益于更高的带宽和更低的芯片间通信延迟。</p>
-<p>这是否真的会实现，只有时间才能证明。我们预计AMD的第6 代Epycs 将于 2026 年底上市。</p>
+<p>此前的戴尔 XPS 泄露信息显示，高通正在开发至少两个基于 Oryon CPU 架构的下一代变体，计划用于基于 Snapdragon X 的 AI PC。这包括计划于2025年中期推出的 Snapdragon X V2，以及预计于2027年第四季度推出的后续产品 <code>Snapdragon V3</code>。尽管这些时间表是初步的，但由于信息来源于高通的重要合作伙伴戴尔，可以推测这些计划具有较高的可信度。</p>
+<p>与此同时，科技媒体还报道称，高通正在准备一款新的 <code>Snapdragon X Plus</code> 系列入门级变体，标签为“X1P-24-100”。预计这款芯片将保留8核设计，但在时钟频率或 GPU 性能方面可能有所降低，以满足入门级市场的需求。</p>
+<p>在 x86 厂商如 AMD 和英特尔推出 Ryzen AI 300“Strix”和 Core Ultra 200V“Lunar Lake”等强大产品的背景下，这些产品具备改进的 NPU、强大的 CPU 核心和卓越的集成 GPU，提供了市场上领先的性能。高通显然意识到竞争的激烈，正在加紧完善其 Snapdragon X 系列产品线。</p>
+<p>高通想把自己在手机SoC的领先经验带入到PC领域，目前看并不容易，一方面x86领域的对手实力很强，迭代迅速，另一方面苹果阵营的软硬件生态也固若金汤。目前看初代的产品连搅局的能力都不具备，前期大量的宣传如同石头丢进河里，泛起一阵涟漪后就消失不见。当然，我们还是期待高通能够积极推进下一代 Snapdragon X2 CPU 的开发和测试，能够给市场带来更多样的格局。</p>
 
           
           
@@ -824,7 +580,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;title=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -843,7 +599,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;text=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;text=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -861,7 +617,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95&#43;https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/"
+      href="https://bsky.app/intent/compose?text=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU&#43;https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/"
       title=""
       aria-label=""
       >
@@ -879,7 +635,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95%20https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/"
+      href="https://s2f.kytta.dev/?text=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU%20https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/"
       title=""
       aria-label=""
       >
@@ -898,7 +654,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;resubmit=true&amp;title=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -917,7 +673,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;description=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;description=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -936,7 +692,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;quote=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;quote=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -955,7 +711,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;subject=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="mailto:?body=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;subject=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -974,7 +730,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;resubmit=true&amp;title=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title=""
       aria-label=""
       >
@@ -993,7 +749,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/&amp;resubmit=true&amp;title=%e8%8b%b1%e7%89%b9%e5%b0%94%e5%92%8cAMD%e5%b0%81%e8%a3%85CPU%e7%9a%84%e4%b8%8d%e5%90%8c%e5%81%9a%e6%b3%95"
+      href="https://t.me/share/url?url=https://www.kad8.com/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/&amp;resubmit=true&amp;title=%e9%ab%98%e9%80%9a%e7%9d%80%e6%89%8b%e6%b5%8b%e8%af%95%e4%b8%8b%e4%b8%80%e4%bb%a3Snapdragon%20X2%20CPU"
       title=""
       aria-label=""
       >
@@ -1019,11 +775,11 @@
   
   
 
-  <a href="/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/" class="min-w-full">
+  <a href="/software/how-to-get-disk-information-for-uefi/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/featured-5600T-5600TX_hu8198624011511085476.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-get-disk-information-for-uefi/featured-bios_hu7494109065891632723.jpg);"></div>
         
       
 
@@ -1031,7 +787,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/">AMD推出两款AM4 CPU：5600T和5600XT</div>
+          href="/software/how-to-get-disk-information-for-uefi/">UEFI 获取磁盘信息</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1070,7 +826,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T10:24:41&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-26T16:46:42&#43;08:00">2024-10-26</time>
   
 
   
@@ -1094,26 +850,34 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/am4/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/uefi/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AM4
+    UEFI
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/5600t/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sata/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    5600T
+    SATA
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/5600xt/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ide/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    5600XT
+    IDE
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/edk2/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    EDK2
   </span>
 </span>
   </span>
@@ -1139,11 +903,11 @@
   
   
 
-  <a href="/hardware/high-bandwidth-memory-hbm-ultimate-guide/" class="min-w-full">
+  <a href="/software/14-efficient-techniques-to-process-csv-files-by-python/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/high-bandwidth-memory-hbm-ultimate-guide/featured-HBM-chip_hu5636973406012628023.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/14-efficient-techniques-to-process-csv-files-by-python/featured-python-process-csv_hu6045510239430617499.jpg);"></div>
         
       
 
@@ -1151,7 +915,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/high-bandwidth-memory-hbm-ultimate-guide/">HBM终极指南</div>
+          href="/software/14-efficient-techniques-to-process-csv-files-by-python/">Python处理CSV文件的14个高效技巧</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1190,7 +954,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-24T23:54:58&#43;08:00">2024-10-24</time>
+  <time datetime="2024-10-26T14:31:24&#43;08:00">2024-10-26</time>
   
 
   
@@ -1214,10 +978,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hbm/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/python/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    HBM
+    Python
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/csv/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CSV
   </span>
 </span>
   </span>
@@ -1243,11 +1015,11 @@
   
   
 
-  <a href="/ai/computer-computing-power-unit-introduction/" class="min-w-full">
+  <a href="/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/computer-computing-power-unit-introduction/featured-computing-power_hu12420348815275521962.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/featured-GenAI-Tech-Stack_hu5418167687482095011.jpg);"></div>
         
       
 
@@ -1255,7 +1027,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/computer-computing-power-unit-introduction/">计算机算力单位简介</div>
+          href="/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/">生成式AI技术栈架构师指南</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1294,7 +1066,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
+  <time datetime="2024-10-26T12:46:02&#43;08:00">2024-10-26</time>
   
 
   
@@ -1318,26 +1090,10 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/computing-power/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/genai/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Computing Power
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/flops/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    FLOPS
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TOPS
+    GenAI
   </span>
 </span>
   </span>
@@ -1374,8 +1130,8 @@
           
         
       <script>
-        var oid = "views_hardware\/different-approach-for-intel-and-amd-to-gluing-together-CPUs\/index.md"
-        var oid_likes = "likes_hardware\/different-approach-for-intel-and-amd-to-gluing-together-CPUs\/index.md"
+        var oid = "views_hardware\/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu\/index.md"
+        var oid_likes = "likes_hardware\/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu\/index.md"
       </script>
       
       
@@ -1395,7 +1151,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/">
+            <a class="flex group mr-3" href="/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1407,11 +1163,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >AMD推出两款AM4 CPU：5600T和5600XT</span
+                  >英特尔和AMD封装CPU的不同做法</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-26T10:24:41&#43;08:00">2024-10-26</time>
+                    <time datetime="2024-10-26T10:56:25&#43;08:00">2024-10-26</time>
                   
                 </span>
               </span>
@@ -1419,28 +1175,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >高通着手测试下一代Snapdragon X2 CPU</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-10-26T19:38:54&#43;08:00">2024-10-26</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
