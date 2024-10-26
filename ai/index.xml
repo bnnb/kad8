@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 26 Oct 2024 12:05:24 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Oct 2024 12:34:43 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据中心GPU的寿命最多只有3年</title>
+      <link>https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/</link>
+      <pubDate>Sat, 26 Oct 2024 12:34:43 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/</guid>
+      <description>&lt;p&gt;据Alphabet（谷歌母公司）一位高级专家称，数据中心GPU的使用寿命可能仅为1到3年，具体则取决于其利用率。由于GPU几乎承担了AI训练和推理的所有负载，所以其性能下降的速度比其他任何组件更快。&lt;/p&gt;
+&lt;p&gt;云巨头们运营的数据中心中，GPU在AI工作负载中的利用率在60%到70%之间。据Tech Fund援引Alphabet一位首席GenAI架构师的观点称，在这种程度的利用率下，GPU的寿命通常只有一到两年，最多只有三年。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Google-Engineer-GenAI-GPU.webp&#34; alt=&#34;Google GenAI&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;这位架构师将这一言论发表在美国社交媒体X上，引发一系列讨论。尽管GPU仅1-3年的寿命看似有些夸张，但却有其合理性，因为用于AI和HPC应用的数据中心GPU的TDP达到甚至超过了700W，这对于硅芯片是实实在在的压力。&lt;/p&gt;
+&lt;p&gt;并且，这位GenAI架构师还表示，延长GPU使用寿命的方法之一就是降低其利用率，这能让GPU性能下降的速度变慢，但投资回报率的周期也会拉长，并不能满足业务对快速敏捷的要求，因此云巨头们通常选择了让GPU保持更高的利用率。&lt;/p&gt;
+&lt;p&gt;无独有偶，此前Mete也发布了一项研究(《AI训练54天，每3小时就故障一次，GPU故障率是CPU的120倍！》)，详细描述了其在16384个Nvidia H100 80GB GPU组成的AI集群上训练Llama 3 405B模型的故障率情况。据数据显示，该AI集群训练模型时的利用率约为38%（基于BF16精度训练），在419次突发故障导致的训练停顿中，148次（30.1%）是由于各种GPU故障（包括NVLink故障）导致的，72次（17.2%）是由HBM3高带宽内存故障引发的。HBM3通常也是GPU上的必备核心组件之一，如果两者相加的话，那么在利用率为30%左右时，GPU的故障率约为47.3%。&lt;/p&gt;
+&lt;p&gt;如果以Meta的数据来看，H100的质量似乎还不错，其年化故障率大约在9%左右，三年内的年化故障率为27%，尽管GPU的故障率会随着使用时间的延长而不断增加。
+而另外需要注意的是，Meta训练集群中的利用率为30%，如果按照Alphabet公司GenAI架构师的观点，GPU以60%-70%利用率（2倍于Meta）运行，那么GPU的故障率也会成倍增加。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/featured-lifespan-data-center-gpu.webp" />
+    </item>
+    
     <item>
       <title>Meta的AI大模型基础设施</title>
       <link>https://www.kad8.com/ai/building-metas-genai-infrastructure/</link>

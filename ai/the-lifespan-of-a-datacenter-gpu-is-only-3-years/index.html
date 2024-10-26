@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Meta的AI大模型基础设施 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="Meta的AI大模型基础设施 &middot; Kontronn Asia Design Center" />
+  <title>数据中心GPU的寿命最多只有3年 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="数据中心GPU的寿命最多只有3年 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Building Meta GenAI Infrastructure" />
-  <meta name="keywords" content="Meta, GenAI, " />
+  <meta name="description" content="The Lifespan of a datacenter GPU is Only 3 Years" />
+  <meta name="keywords" content="Google, GPU, H100, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/ai/building-metas-genai-infrastructure/" />
+  <link rel="canonical" href="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/" />
   
   
   
@@ -66,24 +66,25 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/ai/building-metas-genai-infrastructure/">
+  <meta property="og:url" content="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="Meta的AI大模型基础设施">
-  <meta property="og:description" content="Building Meta GenAI Infrastructure">
+  <meta property="og:title" content="数据中心GPU的寿命最多只有3年">
+  <meta property="og:description" content="The Lifespan of a datacenter GPU is Only 3 Years">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="ai">
-    <meta property="article:published_time" content="2024-10-26T12:05:24+08:00">
-    <meta property="article:modified_time" content="2024-10-26T12:05:24+08:00">
-    <meta property="article:tag" content="Meta">
-    <meta property="article:tag" content="GenAI">
-    <meta property="og:image" content="https://www.kad8.com/ai/building-metas-genai-infrastructure/featured-meta-generative-ai.png">
+    <meta property="article:published_time" content="2024-10-26T12:34:43+08:00">
+    <meta property="article:modified_time" content="2024-10-26T12:34:43+08:00">
+    <meta property="article:tag" content="Google">
+    <meta property="article:tag" content="GPU">
+    <meta property="article:tag" content="H100">
+    <meta property="og:image" content="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/featured-lifespan-data-center-gpu.webp">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/ai/building-metas-genai-infrastructure/featured-meta-generative-ai.png">
-  <meta name="twitter:title" content="Meta的AI大模型基础设施">
-  <meta name="twitter:description" content="Building Meta GenAI Infrastructure">
+  <meta name="twitter:image" content="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/featured-lifespan-data-center-gpu.webp">
+  <meta name="twitter:title" content="数据中心GPU的寿命最多只有3年">
+  <meta name="twitter:description" content="The Lifespan of a datacenter GPU is Only 3 Years">
 
   
   <script type="application/ld+json">
@@ -91,26 +92,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Ais",
-    "name": "Meta的AI大模型基础设施",
-    "headline": "Meta的AI大模型基础设施",
-    "description": "Building Meta GenAI Infrastructure",
-    "abstract": "\u003cp\u003e作为Meta对未来AI的重大投资，我们宣布了两个2.4万卡GPU集群。我们正在分享有关硬件、网络、存储、设计、性能和软件的详细信息，以帮助各种AI工作负载提取高吞吐量和可靠性。这种集群设计被用于Llama3的训练。\u003c\/p\u003e\n\u003cp\u003e我们坚定地致力于开放计算和开源。在Grand Teton、OpenRack和PyTorch的基础上构建了这些集群，并继续推动整个行业的开放式创新。\u003c\/p\u003e\n\u003cp\u003e这一宣布是我们基础设施路线图的一步。到2024年底，我们的目标是继续扩大基础设施建设，将包括作为产品组合部分的350,000个NVIDIA H100 GPU，具有相当于近600,000个H100的计算能力。\u003c\/p\u003e\n\u003cp\u003e引领AI发展意味着引领硬件基础设施的投资。硬件基础设施在AI未来扮演着重要的角色。今天，我们在Meta上分享两个版本的24,576 GPU数据中心规模集群的细节。这些集群支持我们当前和下一代AI模型，包括Llama 3， Llama 2的继承者，公开发布的LLM，以及GenAI和其他领域的AI研究和开发。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eMeta的大规模AI集群 \n    \u003cdiv id=\u0022meta%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1ai%E9%9B%86%E7%BE%A4\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#meta%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1ai%E9%9B%86%E7%BE%A4\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eMeta的长期愿景是建立开放和负责任的AGI（general intelligence），以便每个人都可以广泛使用，并从中受益。在我们努力实现AGI的同时，我们也在努力扩展集群，以实现这一目标。我们在AGI方面取得的进展创造了新产品，为我们的应用程序家族创造了新的AI功能，以及新的以AI为中心的计算设备。\u003c\/p\u003e",
+    "name": "数据中心GPU的寿命最多只有3年",
+    "headline": "数据中心GPU的寿命最多只有3年",
+    "description": "The Lifespan of a datacenter GPU is Only 3 Years",
+    "abstract": "\u003cp\u003e据Alphabet（谷歌母公司）一位高级专家称，数据中心GPU的使用寿命可能仅为1到3年，具体则取决于其利用率。由于GPU几乎承担了AI训练和推理的所有负载，所以其性能下降的速度比其他任何组件更快。\u003c\/p\u003e\n\u003cp\u003e云巨头们运营的数据中心中，GPU在AI工作负载中的利用率在60%到70%之间。据Tech Fund援引Alphabet一位首席GenAI架构师的观点称，在这种程度的利用率下，GPU的寿命通常只有一到两年，最多只有三年。\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/Google-Engineer-GenAI-GPU.webp\u0022 alt=\u0022Google GenAI\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e\n\u003cp\u003e这位架构师将这一言论发表在美国社交媒体X上，引发一系列讨论。尽管GPU仅1-3年的寿命看似有些夸张，但却有其合理性，因为用于AI和HPC应用的数据中心GPU的TDP达到甚至超过了700W，这对于硅芯片是实实在在的压力。\u003c\/p\u003e\n\u003cp\u003e并且，这位GenAI架构师还表示，延长GPU使用寿命的方法之一就是降低其利用率，这能让GPU性能下降的速度变慢，但投资回报率的周期也会拉长，并不能满足业务对快速敏捷的要求，因此云巨头们通常选择了让GPU保持更高的利用率。\u003c\/p\u003e\n\u003cp\u003e无独有偶，此前Mete也发布了一项研究(《AI训练54天，每3小时就故障一次，GPU故障率是CPU的120倍！》)，详细描述了其在16384个Nvidia H100 80GB GPU组成的AI集群上训练Llama 3 405B模型的故障率情况。据数据显示，该AI集群训练模型时的利用率约为38%（基于BF16精度训练），在419次突发故障导致的训练停顿中，148次（30.1%）是由于各种GPU故障（包括NVLink故障）导致的，72次（17.2%）是由HBM3高带宽内存故障引发的。HBM3通常也是GPU上的必备核心组件之一，如果两者相加的话，那么在利用率为30%左右时，GPU的故障率约为47.3%。\u003c\/p\u003e\n\u003cp\u003e如果以Meta的数据来看，H100的质量似乎还不错，其年化故障率大约在9%左右，三年内的年化故障率为27%，尽管GPU的故障率会随着使用时间的延长而不断增加。\n而另外需要注意的是，Meta训练集群中的利用率为30%，如果按照Alphabet公司GenAI架构师的观点，GPU以60%-70%利用率（2倍于Meta）运行，那么GPU的故障率也会成倍增加。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/ai\/building-metas-genai-infrastructure\/",
+    "url" : "https:\/\/www.kad8.com\/ai\/the-lifespan-of-a-datacenter-gpu-is-only-3-years\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-26T12:05:24\u002b08:00",
-    "datePublished": "2024-10-26T12:05:24\u002b08:00",
+    "dateCreated": "2024-10-26T12:34:43\u002b08:00",
+    "datePublished": "2024-10-26T12:34:43\u002b08:00",
     
-    "dateModified": "2024-10-26T12:05:24\u002b08:00",
+    "dateModified": "2024-10-26T12:34:43\u002b08:00",
     
-    "keywords": ["Meta","GenAI"],
+    "keywords": ["Google","GPU","H100"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "84"
+    "wordCount": "13"
   }]
   </script>
 
@@ -414,7 +415,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Meta的AI大模型基础设施
+      数据中心GPU的寿命最多只有3年
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -455,7 +456,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T12:05:24&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-26T12:34:43&#43;08:00">2024-10-26</time>
   
 
   
@@ -479,18 +480,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/meta/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Meta
+    Google
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/genai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GenAI
+    GPU
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    H100
   </span>
 </span>
   </span>
@@ -542,131 +551,7 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-     <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
-
-         <details open id="TOCView"
-  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#meta的大规模ai集群">Meta的大规模AI集群</a>
-      <ul>
-        <li><a href="#揭开面纱">揭开面纱</a></li>
-        <li><a href="#网络">网络</a></li>
-        <li><a href="#计算">计算</a></li>
-        <li><a href="#存储">存储</a></li>
-        <li><a href="#性能">性能</a></li>
-      </ul>
-    </li>
-    <li><a href="#致力于开放ai创新">致力于开放AI创新</a></li>
-    <li><a href="#meta-ai基础设施的未来">Meta AI基础设施的未来</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#meta的大规模ai集群">Meta的大规模AI集群</a>
-      <ul>
-        <li><a href="#揭开面纱">揭开面纱</a></li>
-        <li><a href="#网络">网络</a></li>
-        <li><a href="#计算">计算</a></li>
-        <li><a href="#存储">存储</a></li>
-        <li><a href="#性能">性能</a></li>
-      </ul>
-    </li>
-    <li><a href="#致力于开放ai创新">致力于开放AI创新</a></li>
-    <li><a href="#meta-ai基础设施的未来">Meta AI基础设施的未来</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-<script>
-
-  var margin = 200;
-  var marginError = 50;
-
-  (function () {
-    var $window = $(window);
-    var $toc = $('#TOCView');
-    var tocHeight = $toc.height();
-
-    function onResize() {
-      var windowAndMarginHeight = $window.height() - margin;
-      if(tocHeight >= windowAndMarginHeight) {
-        $toc.css("overflow-y", "scroll")
-        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
-      } else {
-        $toc.css("overflow-y", "hidden")
-        $toc.css("max-height", "9999999px")
-      }
-    }
-
-    $window.on('resize', onResize);
-    $(document).ready(onResize);
-  })();
-
-
-
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = decodeURIComponent(e.attr('id'));
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-
-
-</script>
-   </div>
-      </div>
-      
+    
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -674,140 +559,19 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>作为Meta对未来AI的重大投资，我们宣布了两个2.4万卡GPU集群。我们正在分享有关硬件、网络、存储、设计、性能和软件的详细信息，以帮助各种AI工作负载提取高吞吐量和可靠性。这种集群设计被用于Llama3的训练。</p>
-<p>我们坚定地致力于开放计算和开源。在Grand Teton、OpenRack和PyTorch的基础上构建了这些集群，并继续推动整个行业的开放式创新。</p>
-<p>这一宣布是我们基础设施路线图的一步。到2024年底，我们的目标是继续扩大基础设施建设，将包括作为产品组合部分的350,000个NVIDIA H100 GPU，具有相当于近600,000个H100的计算能力。</p>
-<p>引领AI发展意味着引领硬件基础设施的投资。硬件基础设施在AI未来扮演着重要的角色。今天，我们在Meta上分享两个版本的24,576 GPU数据中心规模集群的细节。这些集群支持我们当前和下一代AI模型，包括Llama 3， Llama 2的继承者，公开发布的LLM，以及GenAI和其他领域的AI研究和开发。</p>
-
-
-<h2 class="relative group">Meta的大规模AI集群 
-    <div id="meta%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1ai%E9%9B%86%E7%BE%A4" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#meta%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1ai%E9%9B%86%E7%BE%A4" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>Meta的长期愿景是建立开放和负责任的AGI（general intelligence），以便每个人都可以广泛使用，并从中受益。在我们努力实现AGI的同时，我们也在努力扩展集群，以实现这一目标。我们在AGI方面取得的进展创造了新产品，为我们的应用程序家族创造了新的AI功能，以及新的以AI为中心的计算设备。</p>
-<p>虽然我们在构建AI基础设施方面有着悠久的历史，但我们在2022年首次分享了我们的AI研究超级集群（ AI Research SuperCluster，简称RSC）的细节，该集群拥有16,000个NVIDIA A100 GPU。RSC通过帮助我们建立第一代先进的AI模型，加速了开放AI研究。它在Llama和Llama 2的开发中发挥了重要作用，并将继续发挥重要作用，以及用于计算机视觉、自然语言处理、语音识别、图像生成甚至编码等应用的先进AI模型。</p>
+          <p>据Alphabet（谷歌母公司）一位高级专家称，数据中心GPU的使用寿命可能仅为1到3年，具体则取决于其利用率。由于GPU几乎承担了AI训练和推理的所有负载，所以其性能下降的速度比其他任何组件更快。</p>
+<p>云巨头们运营的数据中心中，GPU在AI工作负载中的利用率在60%到70%之间。据Tech Fund援引Alphabet一位首席GenAI架构师的观点称，在这种程度的利用率下，GPU的寿命通常只有一到两年，最多只有三年。</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./meta-GenAI-1.webp" alt="Meta AI" />
+      <img class="my-0 rounded-md" loading="lazy" src="./Google-Engineer-GenAI-GPU.webp" alt="Google GenAI" />
       
     </figure>
 </p>
-
-
-<h3 class="relative group">揭开面纱 
-    <div id="%E6%8F%AD%E5%BC%80%E9%9D%A2%E7%BA%B1" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%8F%AD%E5%BC%80%E9%9D%A2%E7%BA%B1" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>我们新的AI集群建立在RSC的成功和经验教训之上。我们专注于构建端到端的人工智能系统，主要强调研究人员和开发人员的经验和生产力。这些集群中的高性能网络结构的效率，一些关键的存储决策，结合每个集群中的24,576个NVIDIA Tensor Core H100 GPU，允许两个集群版本支持比RSC支持更大更复杂的模型，并为GenAI产品开发和AI研究的进步铺平道路。</p>
-
-
-<h3 class="relative group">网络 
-    <div id="%E7%BD%91%E7%BB%9C" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BD%91%E7%BB%9C" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>在Meta，我们每天处理数以万亿计的AI模型。大规模交付这些服务需要高度先进和灵活的基础设施。定制设计我们自己的硬件、软件和网络结构，使我们能够优化AI研究人员的端到端体验，同时确保我们的数据中心高效运行。</p>
-<p>考虑到这一点，我们基于带有Wedge400和Minipack2 OCP机架交换机的Arista 7800构建了一个基于融合以太网（RoCE）网络结构解决方案的远程直接内存访问（RDMA）集群。另一个集群采用NVIDIA Quantum2 InfiniBand结构。这两种解决方案都将400 Gbps的端点互连起来。有了这两个，我们能够评估这些不同类型的互连在大规模训练中的适用性和可扩展性，为我们提供更多的见解，这将有助于我们在未来如何设计和构建规模更大的集群。通过仔细设计网络、软件和模型架构，我们已经成功地将RoCE和InfiniBand集群用于大型GenAI工作负载（包括在RoCE集群上正在进行的Llama 3培训），没有任何网络瓶颈。</p>
-
-
-<h3 class="relative group">计算 
-    <div id="%E8%AE%A1%E7%AE%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%AE%A1%E7%AE%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>这两个集群都是使用Grand Teton构建的，这是我们内部设计的开放GPU硬件平台，我们已经为开放计算项目（OCP）做出了贡献。Grand Teton基于多代AI系统，将电源、控制、计算和结构接口集成到单个机箱中，以获得更好的整体性能、信号完整性和热性能。它以简化的设计提供了快速的可扩展性和灵活性，使其能够快速部署到数据中心中，并且易于维护和扩展。结合其他内部创新，如我们的 Open Rack电源和Rack架构，Grand Teton允许我们以一种专门为Meta当前和未来应用程序构建的方式构建新的集群。</p>
-<p>从2015年的Big Sur平台开始，我们已经公开设计了我们的GPU硬件平台。</p>
-
-
-<h3 class="relative group">存储 
-    <div id="%E5%AD%98%E5%82%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%AD%98%E5%82%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>存储在AI训练中扮演着重要的角色，但却是最少被提及的方面之一。随着时间的推移，GenAI训练工作变得越来越多，需要大量的图像、视频和文本数据，因此对数据存储的需求迅速增长。然而，将所有数据存储放入高性能且节能的需求并没有消失，这使得问题变得更加有趣。</p>
-<p>我们的存储部署通过本地的Linux Filesystem in Userspace (FUSE) API解决了AI集群的数据和检查点需求，该API由Meta的“构造”分布式存储解决方案版本支持，该解决方案针对Flash进行了优化。该解决方案使数千个GPU能够以同步方式保存和加载检查点（对任何存储解决方案来说都是一个挑战），同时还提供数据加载所需的灵活且高吞吐量的exabyte级存储。</p>
-<p>我们还与Hammerspace合作，共同开发并行网络文件系统（NFS）部署，以满足该AI集群的开发人员经验要求。Hammerspace的优点之一是，工程师可以使用数千个GPU对作业进行交互式调试，因为环境中的所有节点都可以立即访问代码更改。当组合在一起时，我们的构造分布式存储解决方案和Hammerspace的组合可以在不影响规模的情况下实现快速迭代速度。</p>
-<p>GenAI集群中的存储部署，包括构造和hammerspace支持，都基于YV3 Sierra Point服务器平台，并升级了最新的高容量E1.S SSD。除了更高的SSD容量之外，还定制了每个机架的服务器，以实现每个服务器的吞吐量、机架数量和功耗之间的适当平衡。利用OCP服务器作为乐高积木，我们的存储层能够灵活地扩展到该集群以及未来更大的AI集群需求，同时对日常基础设施维护操作具有容错能力。</p>
-
-
-<h3 class="relative group">性能 
-    <div id="%E6%80%A7%E8%83%BD" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%80%A7%E8%83%BD" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>我们在构建大规模AI集群时的原则之一是最大化性能和易用性，而不牺牲其中一个。这是创建一流AI模型的重要原则。</p>
-<p>当我们不断挑战AI系统的极限时，我们测试自己扩展设计能力的最佳方式就是简单地构建一个系统，对其进行优化，并进行实际测试（虽然模拟器可以提供帮助，但它们也只能做到这一点）。在这个设计过程中，我们比较了小型集群和大型集群的性能，以了解瓶颈在哪里。下面图表显示了AllGather的总体性能（按0-100的标准带宽表示）。</p>
-<p>与优化后的小集群性能相比，我们在大型集群上的开箱性能最初很差，而且不一致。为了解决这个问题，我们对内部作业调度器在网络拓扑感知的情况下调度作业的方式进行了一些更改——这带来了延迟方面的好处，并最大限度地减少了流向网络上层的流量。我们还结合NVIDIA集体通信库（NCCL）的变化优化了网络路由策略，以实现最佳的网络利用率。这有助于推动大型集群实现与小型集群一样的出色性能。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./meta-GenAI-2.webp" alt="Meta AI" />
-      
-    </figure>
-</p>
-<p>除了针对内部基础设施的软件变更之外，我们还与编写训练框架和模型的团队密切合作，以适应不断发展的基础设施。例如，NVIDIA H100 GPU开启了利用8位浮点（FP8）等新数据类型进行训练的可能性。充分利用更大的集群需要在额外的并行化技术和新的存储解决方案上进行投资，从而提供在数千个队列中高度优化检查点以在数百毫秒内运行的机会。</p>
-<p>我们也认识到可调试性是大规模训练中的主要挑战之一。在大规模的情况下，识别一个阻碍整个训练工作的GPU变得非常困难。我们正在构建诸如设计调试或分布式集体记录器之类的工具，以公开分布式训练的细节，用更快更容易的方式识别出问题。</p>
-<p>最后，我们将继续发展PyTorch，这是为AI工作负载提供动力的基础AI框架，使其为数万甚至数百，数千个GPU训练做好准备。我们已经确定了进程组初始化的多个瓶颈，并将启动时间从有时几小时减少到几分钟。</p>
-
-
-<h2 class="relative group">致力于开放AI创新 
-    <div id="%E8%87%B4%E5%8A%9B%E4%BA%8E%E5%BC%80%E6%94%BEai%E5%88%9B%E6%96%B0" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%87%B4%E5%8A%9B%E4%BA%8E%E5%BC%80%E6%94%BEai%E5%88%9B%E6%96%B0" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>Meta将继续致力于AI软硬件的开放式创新。我们相信，开源硬件和软件将永远是帮助行业大规模解决问题的宝贵工具。</p>
-<p>今天，我们作为OCP的创始成员继续支持开放硬件创新，在那里我们为OCP社区提供Grand Teton和开放机架等设计。我们还将继续成为PyTorch的最大和主要贡献者，PyTorch是推动行业发展的AI软件框架。</p>
-<p>我们还将继续致力于AI研究领域的开放式创新。我们已经启动了开放创新AI研究社区，这是一个学术研究人员的合作项目，旨在加深我们对如何负责任地开发和分享AI技术的理解——特别是LLM。</p>
-<p>对Meta来说，开放的AI方法并不新鲜。我们还启动了AI联盟，这是一个由AI行业的领先组织组成的团体，致力于在一个开放的社区内加速AI领域的创新。我们的AI工作建立在开放科学和交叉合作的理念之上。一个开放的生态系统为AI的发展带来了透明度、审查和信任，并让每个人都能从中受益。</p>
-
-
-<h2 class="relative group">Meta AI基础设施的未来 
-    <div id="meta-ai%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E6%9C%AA%E6%9D%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#meta-ai%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E6%9C%AA%E6%9D%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>当我们展望未来时，我们认识到昨天或今天行之有效的方法可能不足以满足明天的需要。这就是为什么我们不断评估和改进基础设施的各个方面，从物理和虚拟层到软件层等等。我们的目标是创建灵活可靠的系统，以支持快速发展的新模型和研究。</p>
+<p>这位架构师将这一言论发表在美国社交媒体X上，引发一系列讨论。尽管GPU仅1-3年的寿命看似有些夸张，但却有其合理性，因为用于AI和HPC应用的数据中心GPU的TDP达到甚至超过了700W，这对于硅芯片是实实在在的压力。</p>
+<p>并且，这位GenAI架构师还表示，延长GPU使用寿命的方法之一就是降低其利用率，这能让GPU性能下降的速度变慢，但投资回报率的周期也会拉长，并不能满足业务对快速敏捷的要求，因此云巨头们通常选择了让GPU保持更高的利用率。</p>
+<p>无独有偶，此前Mete也发布了一项研究(《AI训练54天，每3小时就故障一次，GPU故障率是CPU的120倍！》)，详细描述了其在16384个Nvidia H100 80GB GPU组成的AI集群上训练Llama 3 405B模型的故障率情况。据数据显示，该AI集群训练模型时的利用率约为38%（基于BF16精度训练），在419次突发故障导致的训练停顿中，148次（30.1%）是由于各种GPU故障（包括NVLink故障）导致的，72次（17.2%）是由HBM3高带宽内存故障引发的。HBM3通常也是GPU上的必备核心组件之一，如果两者相加的话，那么在利用率为30%左右时，GPU的故障率约为47.3%。</p>
+<p>如果以Meta的数据来看，H100的质量似乎还不错，其年化故障率大约在9%左右，三年内的年化故障率为27%，尽管GPU的故障率会随着使用时间的延长而不断增加。
+而另外需要注意的是，Meta训练集群中的利用率为30%，如果按照Alphabet公司GenAI架构师的观点，GPU以60%-70%利用率（2倍于Meta）运行，那么GPU的故障率也会成倍增加。</p>
 
           
           
@@ -825,7 +589,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;title=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;title=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -844,7 +608,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;text=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;text=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -862,7 +626,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd&#43;https://www.kad8.com/ai/building-metas-genai-infrastructure/"
+      href="https://bsky.app/intent/compose?text=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4&#43;https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/"
       title=""
       aria-label=""
       >
@@ -880,7 +644,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%20https://www.kad8.com/ai/building-metas-genai-infrastructure/"
+      href="https://s2f.kytta.dev/?text=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4%20https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/"
       title=""
       aria-label=""
       >
@@ -899,7 +663,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;resubmit=true&amp;title=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;resubmit=true&amp;title=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -918,7 +682,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;description=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;description=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -937,7 +701,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;quote=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;quote=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -956,7 +720,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;subject=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="mailto:?body=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;subject=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -975,7 +739,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;resubmit=true&amp;title=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;resubmit=true&amp;title=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title=""
       aria-label=""
       >
@@ -994,7 +758,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/ai/building-metas-genai-infrastructure/&amp;resubmit=true&amp;title=Meta%e7%9a%84AI%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
+      href="https://t.me/share/url?url=https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/&amp;resubmit=true&amp;title=%e6%95%b0%e6%8d%ae%e4%b8%ad%e5%bf%83GPU%e7%9a%84%e5%af%bf%e5%91%bd%e6%9c%80%e5%a4%9a%e5%8f%aa%e6%9c%893%e5%b9%b4"
       title=""
       aria-label=""
       >
@@ -1020,11 +784,11 @@
   
   
 
-  <a href="/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/" class="min-w-full">
+  <a href="/ai/difference-between-cpu-and-gpu/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/featured-amd-intel-packaging_hu12298955134969159585.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/difference-between-cpu-and-gpu/featured-cpu-vs-gpu_hu6941947086386186526.webp);"></div>
         
       
 
@@ -1032,7 +796,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/">英特尔和AMD封装CPU的不同做法</div>
+          href="/ai/difference-between-cpu-and-gpu/">CPU与GPU的区别</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1071,7 +835,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T10:56:25&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-21T23:01:17&#43;08:00">2024-10-21</time>
   
 
   
@@ -1095,26 +859,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Epyc
+    CPU
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Turin
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/granite-rapids/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Granite Rapids
+    GPU
   </span>
 </span>
   </span>
@@ -1140,11 +896,11 @@
   
   
 
-  <a href="/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/" class="min-w-full">
+  <a href="/hardware/difference-between-gddr-memory-vs-hbm-memory/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/featured-5600T-5600TX_hu8198624011511085476.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/difference-between-gddr-memory-vs-hbm-memory/featured-GDDR-vs-HBM-Memory_hu10314152411819662385.png);"></div>
         
       
 
@@ -1152,7 +908,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-launch-2-am4-cpu-5600t-and-5600xt/">AMD推出两款AM4 CPU：5600T和5600XT</div>
+          href="/hardware/difference-between-gddr-memory-vs-hbm-memory/">GDDR 与 HBM 内存之间的区别</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1191,7 +947,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T10:24:41&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-17T23:58:16&#43;08:00">2024-10-17</time>
   
 
   
@@ -1215,130 +971,138 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/am4/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gddr/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AM4
+    GDDR
   </span>
 </span>
   </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/5600t/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    5600T
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/5600xt/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    5600XT
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/hardware/high-bandwidth-memory-hbm-ultimate-guide/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/high-bandwidth-memory-hbm-ultimate-guide/featured-HBM-chip_hu5636973406012628023.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/high-bandwidth-memory-hbm-ultimate-guide/">HBM终极指南</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-10-24T23:54:58&#43;08:00">2024-10-24</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hbm/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     HBM
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    H100
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/hardware/intel-gaudi-3-ai-accelerator/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/intel-gaudi-3-ai-accelerator/featured-Intel-Gaudi-3-AI-Accelerator-1_hu16323820120417839740.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/hardware/intel-gaudi-3-ai-accelerator/">Intel正式发布Gaudi 3 AI加速器</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-15T23:11:15&#43;08:00">2024-10-15</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gaudi-3/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Gaudi 3
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    H100
   </span>
 </span>
   </span>
@@ -1375,8 +1139,8 @@
           
         
       <script>
-        var oid = "views_ai\/building-metas-genai-infrastructure\/index.md"
-        var oid_likes = "likes_ai\/building-metas-genai-infrastructure\/index.md"
+        var oid = "views_ai\/the-lifespan-of-a-datacenter-GPU-is-only-3-years\/index.md"
+        var oid_likes = "likes_ai\/the-lifespan-of-a-datacenter-GPU-is-only-3-years\/index.md"
       </script>
       
       
@@ -1396,7 +1160,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/ai/computer-computing-power-unit-introduction/">
+            <a class="flex group mr-3" href="/ai/building-metas-genai-infrastructure/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1408,11 +1172,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >计算机算力单位简介</span
+                  >Meta的AI大模型基础设施</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
+                    <time datetime="2024-10-26T12:05:24&#43;08:00">2024-10-26</time>
                   
                 </span>
               </span>
@@ -1420,28 +1184,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >数据中心GPU的寿命最多只有3年</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-10-26T12:34:43&#43;08:00">2024-10-26</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

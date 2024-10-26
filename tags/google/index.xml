@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GPU on Kontronn Asia Design Center</title>
-    <link>https://www.kad8.com/tags/gpu/</link>
-    <description>Recent content in GPU on Kontronn Asia Design Center</description>
+    <title>Google on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/google/</link>
+    <description>Recent content in Google on Kontronn Asia Design Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 26 Oct 2024 12:34:43 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Oct 2024 12:34:43 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据中心GPU的寿命最多只有3年</title>
       <link>https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/</link>
@@ -28,37 +28,6 @@
 &lt;p&gt;如果以Meta的数据来看，H100的质量似乎还不错，其年化故障率大约在9%左右，三年内的年化故障率为27%，尽管GPU的故障率会随着使用时间的延长而不断增加。
 而另外需要注意的是，Meta训练集群中的利用率为30%，如果按照Alphabet公司GenAI架构师的观点，GPU以60%-70%利用率（2倍于Meta）运行，那么GPU的故障率也会成倍增加。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/featured-lifespan-data-center-gpu.webp" />
-    </item>
-    
-    <item>
-      <title>CPU与GPU的区别</title>
-      <link>https://www.kad8.com/ai/difference-between-cpu-and-gpu/</link>
-      <pubDate>Mon, 21 Oct 2024 23:01:17 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/ai/difference-between-cpu-and-gpu/</guid>
-      <description>&lt;p&gt;GPU（图形处理器）和CPU（中央处理器）是计算机硬件中的两大核心组件，它们在计算机系统中发挥着不同的作用，并具有显著的区别。&lt;/p&gt;
-&lt;p&gt;
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./cpu-vs-gpu.webp&#34; alt=&#34;CPU vs GPU&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;设计目的与功能 
-    &lt;div id=&#34;%E8%AE%BE%E8%AE%A1%E7%9B%AE%E7%9A%84%E4%B8%8E%E5%8A%9F%E8%83%BD&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E7%9A%84%E4%B8%8E%E5%8A%9F%E8%83%BD&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;CPU：设计目的是为了高效地处理各种不同的任务，是计算机系统的中枢。它擅长顺序处理和分支预测，能够与各种设备和内存进行交互，并负责操作系统、应用程序、网络通信等的运行。CPU的作用偏向于调度、协调和管理，同时也具备一定的计算能力。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/difference-between-cpu-and-gpu/featured-cpu-vs-gpu.webp" />
     </item>
     
   </channel>
