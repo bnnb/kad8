@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>生成式AI技术栈架构师指南 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="生成式AI技术栈架构师指南 &middot; Kontronn Asia Design Center" />
+  <title>如何构建高效可靠的AI基础设施 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="如何构建高效可靠的AI基础设施 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="The Architects Guide to the Genai Tech Stack 10 Tools" />
-  <meta name="keywords" content="GenAI, " />
+  <meta name="description" content="Setting Direction for Enterprise AI Infrastructure" />
+  <meta name="keywords" content="AI, Infrastructure, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/" />
+  <link rel="canonical" href="https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/" />
   
   
   
@@ -66,23 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/">
+  <meta property="og:url" content="https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="生成式AI技术栈架构师指南">
-  <meta property="og:description" content="The Architects Guide to the Genai Tech Stack 10 Tools">
+  <meta property="og:title" content="如何构建高效可靠的AI基础设施">
+  <meta property="og:description" content="Setting Direction for Enterprise AI Infrastructure">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="ai">
-    <meta property="article:published_time" content="2024-10-26T12:46:02+08:00">
-    <meta property="article:modified_time" content="2024-10-26T12:46:02+08:00">
-    <meta property="article:tag" content="GenAI">
-    <meta property="og:image" content="https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/featured-GenAI-Tech-Stack.jpg">
+    <meta property="article:published_time" content="2024-10-26T19:56:51+08:00">
+    <meta property="article:modified_time" content="2024-10-26T19:56:51+08:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Infrastructure">
+    <meta property="og:image" content="https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/featured-enterprise-infrastructure-of-ai.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/featured-GenAI-Tech-Stack.jpg">
-  <meta name="twitter:title" content="生成式AI技术栈架构师指南">
-  <meta name="twitter:description" content="The Architects Guide to the Genai Tech Stack 10 Tools">
+  <meta name="twitter:image" content="https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/featured-enterprise-infrastructure-of-ai.png">
+  <meta name="twitter:title" content="如何构建高效可靠的AI基础设施">
+  <meta name="twitter:description" content="Setting Direction for Enterprise AI Infrastructure">
 
   
   <script type="application/ld+json">
@@ -90,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Ais",
-    "name": "生成式AI技术栈架构师指南",
-    "headline": "生成式AI技术栈架构师指南",
-    "description": "The Architects Guide to the Genai Tech Stack 10 Tools",
-    "abstract": "\u003cp\u003e现代数据湖，有时也被称为数据湖仓（data lakehouse），是数据湖与基于开放表格式规范（OTF，Open Table Format）的数据仓库各占一半的结合体。两者均建立在现代对象存储之上。\u003c\/p\u003e\n\u003cp\u003e如何构建全面支持AI\/ML需求的AI数据基础设施，不仅要包含存储训练集、验证集和测试集的原始数据，还应涵盖训练大型语言模型所需的计算资源、MLOps工具链以及分布式训练等功能。\u003c\/p\u003e\n\u003cp\u003e本文探讨如何利用现代数据湖参考架构来满足AI\/ML需求。下图展示了现代数据湖参考架构，并重点标出了支持生成式AI所需的能力。\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/GenAI-Tech-Stack.jpg\u0022 alt=\u0022GenAI\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e数据湖 \n    \u003cdiv id=\u0022%E6%95%B0%E6%8D%AE%E6%B9%96\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%95%B0%E6%8D%AE%E6%B9%96\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e企业级数据湖以对象存储为基础。这里所指的并非传统的、以设备为基础的对象存储（主要用于大规模低成本归档），而是现代的、高性能的、软件定义的、Kubernetes原生的对象存储，它是现代生成式AI技术栈的基石。这类存储可作为服务提供（如AWS、Google Cloud Platform（GCP）、Microsoft Azure），也可在本地部署或采用混合模式，例如MinIO。\u003c\/p\u003e",
+    "name": "如何构建高效可靠的AI基础设施",
+    "headline": "如何构建高效可靠的AI基础设施",
+    "description": "Setting Direction for Enterprise AI Infrastructure",
+    "abstract": "\u003cblockquote\u003e\n\u003cp\u003eAI的快速发展对数据存储提出了前所未有的挑战，要求海量数据和高性能存储。企业需构建高效、可靠的存储基础设施，如全闪存存储、数据湖等，以满足AI的需求。同时，还需应对数据安全、隐私保护和成本控制等问题。IT团队在有限资源下必须平衡性能、扩展性、安全性和简便性。选择适合业务特点的存储解决方案对加速AI项目落地和提高数据管理效率至关重要，这也是企业应对AI时代的核心任务之一。\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e概述 \n    \u003cdiv id=\u0022%E6%A6%82%E8%BF%B0\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%A6%82%E8%BF%B0\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eAI正以前所未有的速度渗透各行各业，其潜力已毋庸置疑。众多组织将其视为提升竞争力的关键，纷纷加大对AI的投入。\u003c\/p\u003e\n\u003cp\u003e然而，AI的价值实现并非一蹴而就。组织需要仔细评估资源需求，尤其是如何有效管理信息资产。随着AI应用的深入，企业面临着将宝贵数据高效引入AI模型的挑战。如何平衡数据访问与安全，如何满足AI环境的独特需求，成为组织IT团队亟待解决的问题。\u003c\/p\u003e\n\u003cp\u003e云端AI开发的便捷性与企业对数据主权的重视形成了鲜明对比。企业IT部门必须为AI团队提供本地开发环境，这无疑增加了IT部门的工作复杂性。如何在有限的资源下，为AI团队构建高效、可靠的基础设施，成为IT部门面临的新课题。\u003c\/p\u003e\n\u003cp\u003e要满足不断增长的AI需求，选择合适的技术至关重要。除了强大的计算资源和AI工具，高效、可扩展的存储解决方案更是重中之重。这不仅能加速模型训练，降低成本，还能显著提升数据科学家的工作效率。IT部门作为AI基础设施的提供者，必须深入理解AI团队的需求，并提供最优解决方案。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/ai\/the-architects-guide-to-the-genai-tech-stack-10-tools\/",
+    "url" : "https:\/\/www.kad8.com\/ai\/setting-direction-for-enterprise-ai-infrastructure\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-26T12:46:02\u002b08:00",
-    "datePublished": "2024-10-26T12:46:02\u002b08:00",
+    "dateCreated": "2024-10-26T19:56:51\u002b08:00",
+    "datePublished": "2024-10-26T19:56:51\u002b08:00",
     
-    "dateModified": "2024-10-26T12:46:02\u002b08:00",
+    "dateModified": "2024-10-26T19:56:51\u002b08:00",
     
-    "keywords": ["GenAI"],
+    "keywords": ["AI","Infrastructure"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "204"
+    "wordCount": "44"
   }]
   </script>
 
@@ -413,7 +414,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      生成式AI技术栈架构师指南
+      如何构建高效可靠的AI基础设施
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -454,7 +455,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T12:46:02&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-26T19:56:51&#43;08:00">2024-10-26</time>
   
 
   
@@ -478,10 +479,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/genai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GenAI
+    AI
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infrastructure/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Infrastructure
   </span>
 </span>
   </span>
@@ -547,17 +556,10 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#数据湖">数据湖</a></li>
-    <li><a href="#基于otf的数据仓库">基于OTF的数据仓库</a></li>
-    <li><a href="#机器学习运维mlops">机器学习运维（MLOps）</a></li>
-    <li><a href="#机器学习框架">机器学习框架</a></li>
-    <li><a href="#分布式训练">分布式训练</a></li>
-    <li><a href="#模型中心">模型中心</a></li>
-    <li><a href="#应用框架">应用框架</a></li>
-    <li><a href="#文档处理">文档处理</a></li>
-    <li><a href="#向量数据库">向量数据库</a></li>
-    <li><a href="#数据探索与可视化">数据探索与可视化</a></li>
-    <li><a href="#结论">结论</a></li>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#ai对基础设施的新要求">AI对基础设施的新要求</a></li>
+    <li><a href="#ai本地化存储的特性">AI本地化存储的特性</a></li>
+    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>
@@ -571,17 +573,10 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#数据湖">数据湖</a></li>
-    <li><a href="#基于otf的数据仓库">基于OTF的数据仓库</a></li>
-    <li><a href="#机器学习运维mlops">机器学习运维（MLOps）</a></li>
-    <li><a href="#机器学习框架">机器学习框架</a></li>
-    <li><a href="#分布式训练">分布式训练</a></li>
-    <li><a href="#模型中心">模型中心</a></li>
-    <li><a href="#应用框架">应用框架</a></li>
-    <li><a href="#文档处理">文档处理</a></li>
-    <li><a href="#向量数据库">向量数据库</a></li>
-    <li><a href="#数据探索与可视化">数据探索与可视化</a></li>
-    <li><a href="#结论">结论</a></li>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#ai对基础设施的新要求">AI对基础设施的新要求</a></li>
+    <li><a href="#ai本地化存储的特性">AI本地化存储的特性</a></li>
+    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>
@@ -665,303 +660,107 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>现代数据湖，有时也被称为数据湖仓（data lakehouse），是数据湖与基于开放表格式规范（OTF，Open Table Format）的数据仓库各占一半的结合体。两者均建立在现代对象存储之上。</p>
-<p>如何构建全面支持AI/ML需求的AI数据基础设施，不仅要包含存储训练集、验证集和测试集的原始数据，还应涵盖训练大型语言模型所需的计算资源、MLOps工具链以及分布式训练等功能。</p>
-<p>本文探讨如何利用现代数据湖参考架构来满足AI/ML需求。下图展示了现代数据湖参考架构，并重点标出了支持生成式AI所需的能力。</p>
+          <blockquote>
+<p>AI的快速发展对数据存储提出了前所未有的挑战，要求海量数据和高性能存储。企业需构建高效、可靠的存储基础设施，如全闪存存储、数据湖等，以满足AI的需求。同时，还需应对数据安全、隐私保护和成本控制等问题。IT团队在有限资源下必须平衡性能、扩展性、安全性和简便性。选择适合业务特点的存储解决方案对加速AI项目落地和提高数据管理效率至关重要，这也是企业应对AI时代的核心任务之一。</p>
+</blockquote>
+
+
+<h2 class="relative group">概述 
+    <div id="%E6%A6%82%E8%BF%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%A6%82%E8%BF%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>AI正以前所未有的速度渗透各行各业，其潜力已毋庸置疑。众多组织将其视为提升竞争力的关键，纷纷加大对AI的投入。</p>
+<p>然而，AI的价值实现并非一蹴而就。组织需要仔细评估资源需求，尤其是如何有效管理信息资产。随着AI应用的深入，企业面临着将宝贵数据高效引入AI模型的挑战。如何平衡数据访问与安全，如何满足AI环境的独特需求，成为组织IT团队亟待解决的问题。</p>
+<p>云端AI开发的便捷性与企业对数据主权的重视形成了鲜明对比。企业IT部门必须为AI团队提供本地开发环境，这无疑增加了IT部门的工作复杂性。如何在有限的资源下，为AI团队构建高效、可靠的基础设施，成为IT部门面临的新课题。</p>
+<p>要满足不断增长的AI需求，选择合适的技术至关重要。除了强大的计算资源和AI工具，高效、可扩展的存储解决方案更是重中之重。这不仅能加速模型训练，降低成本，还能显著提升数据科学家的工作效率。IT部门作为AI基础设施的提供者，必须深入理解AI团队的需求，并提供最优解决方案。</p>
+
+
+<h2 class="relative group">AI对基础设施的新要求 
+    <div id="ai%E5%AF%B9%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E6%96%B0%E8%A6%81%E6%B1%82" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ai%E5%AF%B9%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E6%96%B0%E8%A6%81%E6%B1%82" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>AI基础设施对于传统IT团队而言是一片全新的疆域。团队可能在GPU等加速硬件、异构系统架构方面经验不足。尽管团队在数据存储和管理上有深厚积累，但对AI的工作原理和应用场景却可能知之甚少。AI环境通常处理来自多个异构数据源的信息，这些数据需要经过数据工程师的精心整理，才能用于模型训练。这些数据可能来自关系型数据库、文件系统、甚至外部数据源，且格式不统一、存储位置分散。数据的规模庞大，进一步增加了处理的复杂性。</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./GenAI-Tech-Stack.jpg" alt="GenAI" />
-      
+      <img class="my-0 rounded-md" loading="lazy" src="./Typical-Data-Flow-for-AI.png" alt="AI Data Flow" />
+      <figcaption>图1. AI典型数据流</figcaption>
     </figure>
 </p>
+<p>数据科学团队负责数据的质量和可用性，但IT部门需要提供坚实的技术基础。数据科学团队要求数据能够即时获取，这对存储系统的性能提出了极高的要求。IT团队在选择存储系统时，需要充分考虑数据访问的I/O特性，并优化与GPU或加速器的互联。此外，数据复制、保护和数据库访问等数据服务也是IT基础设施需要提供的关键功能。</p>
+<p>目前，AI开发主要集中在公有云平台上。企业通常会选择已有的基础模型，并利用私有数据进行微调，以创建定制化的AI模型。生成式AI中的检索增强生成（RAG）就是一个典型的例子。RAG通过引入新的、定制化的数据，提升了大型语言模型的准确性、时效性和相关性。</p>
+<p>由于公有云在AI开发中占据主导地位，数据科学团队对云端存储系统的性能、可用性和保护机制的重视程度往往不够。因此，IT部门需要深入了解业务需求，评估各种存储解决方案，并向数据科学团队清晰地传达本地部署的优势。在私有环境中，IT部门需要考虑数据的存储位置、访问方式、以及数据保护和安全合规性等方面的问题。</p>
+<p>随着AI应用的不断深入，企业开始将AI工作负载从公有云迁移到本地数据中心，或者采用混合云部署模式。一方面，公有云的高昂成本在规模化部署时会成为企业的负担；另一方面，数据安全、隐私保护以及对资源的掌控需求也在推动企业向本地化迁移。此外，新型的基础设施和存储即服务（SaaS）解决方案的出现，</p>
 
 
-<h2 class="relative group">数据湖 
-    <div id="%E6%95%B0%E6%8D%AE%E6%B9%96" class="anchor"></div>
+<h2 class="relative group">AI本地化存储的特性 
+    <div id="ai%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%AD%98%E5%82%A8%E7%9A%84%E7%89%B9%E6%80%A7" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E6%B9%96" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#ai%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%AD%98%E5%82%A8%E7%9A%84%E7%89%B9%E6%80%A7" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>企业级数据湖以对象存储为基础。这里所指的并非传统的、以设备为基础的对象存储（主要用于大规模低成本归档），而是现代的、高性能的、软件定义的、Kubernetes原生的对象存储，它是现代生成式AI技术栈的基石。这类存储可作为服务提供（如AWS、Google Cloud Platform（GCP）、Microsoft Azure），也可在本地部署或采用混合模式，例如MinIO。</p>
-<p>这些数据湖必须支持流处理工作负载，具备高效的加密和纠删码能力，能够将元数据与对象原子性地存储，并支持Lambda计算等技术。由于这些现代对象存储是云原生的，它们能与其他云原生技术栈（从防火墙到可观测性再到用户和访问管理）无缝集成。</p>
-
-
-<h2 class="relative group">基于OTF的数据仓库 
-    <div id="%E5%9F%BA%E4%BA%8Eotf%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%9F%BA%E4%BA%8Eotf%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>对象存储同样是基于OTF的数据仓库的底层存储方案。虽然用对象存储构建数据仓库听起来有些反常，但这种方式代表了新一代数据仓库。Netflix、Uber和Databricks制定的OTF规范使得在数据仓库中使用对象存储变得简单可行。</p>
-<p>这些OTF包括Apache Iceberg、Apache Hudi和Delta Lake，是因为市场上缺乏能够满足创建者数据需求的产品而开发的。它们的核心功能（尽管实现方式不同）是定义一个可以构建在对象存储之上的数据仓库。对象存储提供了其他存储方案无法比拟的可扩展容量和高性能的结合。</p>
-<p>作为现代规范，它们具备传统数据仓库所不具备的高级功能，如分区演进、模式演进和零拷贝分支。</p>
-<p>能够在MinIO之上运行基于OTF的数据仓库的是Dremio和Starburst。</p>
+<p>用于训练AI模型的数据来源广泛，包括结构化和非结构化数据。这些数据通常存储在数据湖或数据湖仓中，以满足AI/ML项目对大规模、高性能存储的需求。数据工程师创建的训练数据集是AI模型训练的基石。数据科学团队对存储系统的性能要求极高，包括大容量、高带宽和低延迟。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./Data-Platform.png" alt="AI Data Platform" />
+      <figcaption>图2. AI/ML和BI数据平台</figcaption>
+    </figure>
+</p>
+<p>随着AI的发展，对存储系统的需求也日益多样化。全闪存存储凭借其性能一致性，成为AI存储的首选。AI环境在不同发展阶段对存储系统的需求也不同：</p>
 <ul>
-<li>Dremio Sonar（数据仓库处理引擎）</li>
-<li>Dremio Arctic（数据仓库目录）</li>
-<li>开放数据湖仓 | Starburst（目录和处理引擎）</li>
+<li><code>初始/成熟阶段</code>：需要兼具高性能文件存储和对象存储。</li>
+<li><code>生产级</code>：需要大规模容量的文件和对象存储，同时保持高性能。</li>
+</ul>
+<p>IT基础设施团队和AI平台架构师对存储系统都有各自的关注点。对于存储系统，除了传统的性能、可靠性、安全性和可扩展性之外，还应考虑以下特性：</p>
+<ul>
+<li><code>性能</code>：AI工作负载对性能的可预测性和一致性要求极高。全闪存存储能提供低延迟和高带宽，是理想选择。</li>
+<li><code>可靠性与数据保护</code>：存储系统应具备容错能力，防止数据丢失。</li>
+<li><code>安全性</code>：采用最佳实践保护数据安全。</li>
+<li><code>K8s原生支持</code>：考虑到Kubernetes在AI/ML领域的广泛应用，存储系统应与K8s无缝集成。</li>
+<li><code>加速MLOps</code>：数据科学家应能自助访问存储、向量数据库和ML服务，加速模型开发。</li>
+<li><code>可扩展性</code>：存储系统应能线性扩展，以满足不断增长的数据需求。</li>
+<li><code>简单性</code>：易于配置和管理，减少运维负担。</li>
+<li><code>成本效益</code>：存储成本应与容量成正比，且不影响性能。</li>
+<li><code>能效</code>：存储系统应节能，以降低总体拥有成本。</li>
 </ul>
 
 
-<h2 class="relative group">机器学习运维（MLOps） 
-    <div id="%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%BF%90%E7%BB%B4mlops" class="anchor"></div>
+<h2 class="relative group">总结 
+    <div id="%E6%80%BB%E7%BB%93" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%BF%90%E7%BB%B4mlops" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>MLOps之于机器学习，犹如DevOps之于传统软件开发。两者都是一套旨在提升工程团队（开发或机器学习团队）与IT运维团队之间协作的实践和原则。其目标是通过自动化来简化开发生命周期，涵盖从规划、开发到部署和运维的各个阶段。其中一个主要优势是实现持续改进。</p>
-<p>MLOps的技术和功能在不断演进。选择一个有大厂支持的工具至关重要，以确保工具能持续开发和改进，并提供长期支持。这些工具底层都使用MinIO来存储模型生命周期中的各种工件。</p>
+<p>AI的迅猛发展给传统的IT基础设施带来了前所未有的挑战，尤其是数据存储与管理方面。这些挑战不仅新颖，而且与以往的IT问题存在显著差异。例如，AI平台架构师可能对IT环境中的操作流程和关键数据存储的特性并不熟悉，他们的经验往往集中在公共云环境。鉴于此，组织在部署和发展AI环境时，必须做出关键的IT决策。</p>
+<p>其中，选择合适的存储类型是至关重要的。一个理想的数据存储平台应具备以下特点：</p>
 <ul>
-<li>MLRun（Iguazio，现已被麦肯锡公司收购）</li>
-<li>MLflow（Databricks）</li>
-<li>Kubeflow（Google）</li>
+<li><code>加速AI落地</code>：从早期部署到成熟的AI生产环境，该平台能够显著缩短AI项目的交付周期。</li>
+<li><code>全方位性能</code>：在性能、效率、可靠性、数据保护、扩展性和易用性等方面提供均衡且一致的解决方案，满足不同使用场景和成本要求。</li>
+<li><code>高级功能</code>：支持快速部署、简化操作、无需复杂培训、最大化效率，并提供多维性能和多协议访问等高级特性。</li>
+<li><code>容器化友好</code>：与主流容器编排框架（如Kubernetes）无缝集成，简化有状态应用程序的管理。</li>
+<li><code>显著缩短模型开发周期</code>：能够帮助企业快速搭建一个能够训练和部署私有数据的AI环境，从而加速AI项目的落地。</li>
+<li><code>高置信度</code>：系统的稳定性和可靠性能够最大程度地减少存储基础设施部署的时间，降低项目风险。</li>
 </ul>
 
-
-<h2 class="relative group">机器学习框架 
-    <div id="%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>机器学习框架是用于创建模型和编写训练代码的库（通常是Python库）。这些库功能丰富，提供多种损失函数、优化器、数据转换工具和神经网络的预构建层。其中最重要的功能之一是张量（Tensor）。张量是可以被移至GPU上的多维数组，在模型训练过程中具有自动微分功能。</p>
-<p>当前最流行的两个机器学习框架是PyTorch（来自Meta）和TensorFlow（来自Google）。</p>
-<ul>
-<li>PyTorch</li>
-<li>TensorFlow</li>
-</ul>
-
-
-<h2 class="relative group">分布式训练 
-    <div id="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%AD%E7%BB%83" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%AD%E7%BB%83" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>分布式模型训练是指在多个计算设备或节点上同时训练机器学习模型的过程。这种方法能够加速训练过程，尤其在使用大型数据集训练复杂模型时效果显著。</p>
-<p>在分布式模型训练中，数据集被分割为更小的子集，每个子集由不同的节点并行处理。这些节点可以是集群中的独立机器、独立进程或Kubernetes集群中的独立Pod，并可能具备GPU访问权限。每个节点独立处理其子集数据，并相应地更新模型参数。以下五个库屏蔽了分布式训练的大部分复杂性。虽然可以在本地运行这些库，但要显著减少训练时间，仍需要一个集群。</p>
-<ul>
-<li>DeepSpeed（来自Microsoft）</li>
-<li>Horovod（来自Uber）</li>
-<li>Ray（来自Anyscale）</li>
-<li>Spark PyTorch Distributor（来自Databricks）</li>
-<li>Spark TensorFlow Distributor（来自Databricks）</li>
-</ul>
-
-
-<h2 class="relative group">模型中心 
-    <div id="%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%BF%83" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A8%A1%E5%9E%8B%E4%B8%AD%E5%BF%83" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>虽然模型中心并非严格属于现代数据湖参考架构的一部分，但由于其对快速启动生成式AI至关重要，仍将其纳入其中。Hugging Face已成为大型语言模型的首选平台。它托管了一个模型中心，工程师可以在此下载预训练模型并分享自己创建的模型。Hugging Face还开发了Transformers和Datasets库，这些库与大型语言模型（LLM）以及用于训练和微调它们的数据协同工作。</p>
-<p>当然，还有其他模型中心。所有主要的云供应商都提供了上传和分享模型的途径，但Hugging Face凭借其丰富的模型和库，已成为该领域的领导者。</p>
-<ul>
-<li>Hugging Face</li>
-</ul>
-
-
-<h2 class="relative group">应用框架 
-    <div id="%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>应用框架帮助将LLM集成到应用程序中。使用LLM与使用标准API有所不同，需要进行大量工作将用户请求转换为LLM可以理解和处理的内容。例如，如果你构建一个聊天应用程序，并希望使用检索增强生成（RAG），你需要将请求标记化，将标记转换为向量，集成向量数据库（如下所述），创建提示，然后调用你的LLM。生成式AI的应用框架允许你将这些操作串联在一起。</p>
-<p>当前最广泛使用的应用框架是LangChain。它可以与其他技术集成，如Hugging Face的Transformer库和Unstructured的文档处理库。它功能丰富，使用起来可能有些复杂，因此对于那些需求不复杂并希望使用比LangChain更简单工具的用户，下面列出了一些替代方案。</p>
-<ul>
-<li>LangChain</li>
-<li>AgentGPT</li>
-<li>Auto-GPT</li>
-<li>BabyAGI</li>
-<li>Flowise</li>
-<li>GradientJ</li>
-<li>LlamaIndex</li>
-<li>Langdock</li>
-<li>TensorFlow（Keras API）</li>
-</ul>
-
-
-<h2 class="relative group">文档处理 
-    <div id="%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>大多数组织并没有一个统一的、包含清晰准确文档的存储中心，而是将文档散落在各个团队的门户中，且格式多样。在为生成式AI准备数据时，首要任务是建立一条管道，筛选出已获批用于生成式AI的文档，并将它们导入向量数据库。对于大型跨国企业而言，这通常是最具挑战性的环节。</p>
-<p>文档管道应将文档转化为文本，将长文本分割成更小的片段，并利用嵌入模型对这些片段进行处理，从而获得它们的向量表示，以便存储在向量数据库中。一些开源库可以处理多种常见的文档格式，并能与LangChain无缝结合，构建完整的文档处理流程。</p>
-<ul>
-<li>Unstructured</li>
-<li>Open-Parse</li>
-</ul>
-
-
-<h2 class="relative group">向量数据库 
-    <div id="%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>向量数据库支持语义搜索。理解其工作原理需要大量的数学背景，较为复杂。然而，语义搜索在概念上很容易理解。假设你想找到所有讨论“artificial intelligence”相关内容的文档。要在传统数据库中实现这一点，你需要搜索“artificial intelligence”的每一个可能的缩写、同义词和相关术语。你的查询可能会像这样：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">SELECT snippet
-</span></span><span class="line"><span class="cl">FROM MyCorpusTable
-</span></span><span class="line"><span class="cl">WHERE <span class="o">(</span>text like <span class="s1">&#39;%artificial intelligence%&#39;</span> OR
-</span></span><span class="line"><span class="cl">  text like <span class="s1">&#39;%ai%&#39;</span> OR
-</span></span><span class="line"><span class="cl">  text like <span class="s1">&#39;%machine learning%&#39;</span> OR
-</span></span><span class="line"><span class="cl">  text like <span class="s1">&#39;%ml%&#39;</span> OR
-</span></span><span class="line"><span class="cl">   ... and on and on ...
-</span></span></code></pre></div><p>这种手动的相似性搜索既繁琐又容易出错，而且搜索本身也非常缓慢。向量数据库可以接收类似下面的请求，运行查询更快且更准确。如果你希望使用检索增强生成，快速而准确地运行语义查询至关重要。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span>
-</span></span><span class="line"><span class="cl">Get <span class="o">{</span>
-</span></span><span class="line"><span class="cl">  MyCorpusTable<span class="o">(</span>nearText: <span class="o">{</span>concepts: <span class="o">[</span><span class="s2">&#34;artificial intelligence&#34;</span><span class="o">]})</span> 
-</span></span><span class="line"><span class="cl">      <span class="o">{</span>snippet<span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>以下列出了四个流行的向量数据库。</p>
-<ul>
-<li>Milvus</li>
-<li>Pgvector</li>
-<li>Pinecone</li>
-<li>Weaviate</li>
-</ul>
-
-
-<h2 class="relative group">数据探索与可视化 
-    <div id="%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>拥有能够处理数据并以不同方式可视化的工具始终是明智之选。以下列出的Python库，正是提供了这样的能力。它们不仅适用于传统的AI，在生成式AI中同样大有用武之地。比如，在情感分析中，通过可视化工具，我们可以直观地检查数据集的分布，确保各个情感类别的样本均衡。</p>
-<ul>
-<li>Pandas</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>Streamlit</li>
-</ul>
-
-
-<h2 class="relative group">结论 
-    <div id="%E7%BB%93%E8%AE%BA" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BB%93%E8%AE%BA" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>以上是现代数据湖参考架构中的十项关键能力，以及对应的具体供应商产品和库。</p>
-<p>以下是这些工具的汇总表。</p>
-<ol>
-<li>数据湖：
-<ul>
-<li>MinIO、AWS、GCP、Azure</li>
-</ul></li>
-<li>基于OTF的数据仓库：
-<ul>
-<li>Dremio</li>
-<li>Dremio Sonar</li>
-<li>Dremio Arctic</li>
-<li>Starburst</li>
-<li>Open Data Lakehouse | Starburst</li>
-</ul></li>
-<li>机器学习框架：
-<ul>
-<li>PyTorch</li>
-<li>TensorFlow</li>
-</ul></li>
-<li>机器学习运维（MLOps）：
-<ul>
-<li>MLRun（麦肯锡公司）</li>
-<li>MLflow（Databricks）</li>
-<li>Kubeflow（Google）</li>
-</ul></li>
-<li>分布式训练：
-<ul>
-<li>DeepSpeed（Microsoft）</li>
-<li>Horovod（Uber）</li>
-<li>Ray（Anyscale）</li>
-<li>Spark PyTorch Distributor（Databricks）</li>
-<li>Spark TensorFlow Distributor（Databricks）</li>
-</ul></li>
-<li>模型中心：
-<ul>
-<li>Hugging Face</li>
-</ul></li>
-<li>应用框架：
-<ul>
-<li>LangChain</li>
-<li>AgentGPT</li>
-<li>Auto-GPT</li>
-<li>BabyAGI</li>
-<li>Flowise</li>
-<li>GradientJ</li>
-<li>LlamaIndex</li>
-<li>Langdock</li>
-<li>TensorFlow（Keras API）</li>
-</ul></li>
-<li>文档处理：
-<ul>
-<li>Unstructured</li>
-<li>Open-Parse</li>
-</ul></li>
-<li>向量数据库：
-<ul>
-<li>Milvus</li>
-<li>Pgvector</li>
-<li>Pinecone</li>
-<li>Weaviate</li>
-</ul></li>
-<li>数据探索与可视化：
-<ul>
-<li>Pandas</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>Streamlit</li>
-</ul></li>
-</ol>
           
           
           
@@ -978,7 +777,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;title=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;title=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -997,7 +796,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;text=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;text=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1015,7 +814,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97&#43;https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/"
+      href="https://bsky.app/intent/compose?text=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd&#43;https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/"
       title=""
       aria-label=""
       >
@@ -1033,7 +832,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97%20https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/"
+      href="https://s2f.kytta.dev/?text=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%20https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/"
       title=""
       aria-label=""
       >
@@ -1052,7 +851,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;resubmit=true&amp;title=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1071,7 +870,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;description=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;description=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1090,7 +889,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;quote=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;quote=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1109,7 +908,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;subject=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="mailto:?body=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;subject=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1128,7 +927,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;resubmit=true&amp;title=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title=""
       aria-label=""
       >
@@ -1147,7 +946,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&amp;resubmit=true&amp;title=%e7%94%9f%e6%88%90%e5%bc%8fAI%e6%8a%80%e6%9c%af%e6%a0%88%e6%9e%b6%e6%9e%84%e5%b8%88%e6%8c%87%e5%8d%97"
+      href="https://t.me/share/url?url=https://www.kad8.com/ai/setting-direction-for-enterprise-ai-infrastructure/&amp;resubmit=true&amp;title=%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba%e9%ab%98%e6%95%88%e5%8f%af%e9%9d%a0%e7%9a%84AI%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd"
       title=""
       aria-label=""
       >
@@ -1173,11 +972,11 @@
   
   
 
-  <a href="/ai/building-metas-genai-infrastructure/" class="min-w-full">
+  <a href="/ai/computer-computing-power-unit-introduction/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/building-metas-genai-infrastructure/featured-meta-generative-ai_hu7424213292562585970.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/computer-computing-power-unit-introduction/featured-computing-power_hu12420348815275521962.webp);"></div>
         
       
 
@@ -1185,7 +984,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/building-metas-genai-infrastructure/">Meta的AI大模型基础设施</div>
+          href="/ai/computer-computing-power-unit-introduction/">计算机算力单位简介</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1224,7 +1023,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T12:05:24&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
   
 
   
@@ -1248,18 +1047,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/meta/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/computing-power/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Meta
+    Computing Power
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/genai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/flops/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GenAI
+    FLOPS
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    TOPS
   </span>
 </span>
   </span>
@@ -1285,11 +1092,11 @@
   
   
 
-  <a href="/hardware/difference-between-gddr-memory-vs-hbm-memory/" class="min-w-full">
+  <a href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/difference-between-gddr-memory-vs-hbm-memory/featured-GDDR-vs-HBM-Memory_hu10314152411819662385.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/featured-AMD-Instinct-MI300X_hu18049096376422806741.png);"></div>
         
       
 
@@ -1297,7 +1104,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/difference-between-gddr-memory-vs-hbm-memory/">GDDR 与 HBM 内存之间的区别</div>
+          href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/">AMD Instinct MI300X 架构亮相 Hot Chips 2024</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1336,7 +1143,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-17T23:58:16&#43;08:00">2024-10-17</time>
+  <time datetime="2024-10-17T00:00:36&#43;08:00">2024-10-17</time>
   
 
   
@@ -1360,26 +1167,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gddr/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/instinct/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GDDR
+    Instinct
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hbm/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mi300x/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    HBM
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    H100
+    Mi300X
   </span>
 </span>
   </span>
@@ -1405,11 +1204,11 @@
   
   
 
-  <a href="/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/" class="min-w-full">
+  <a href="/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/featured-lifespan-data-center-gpu_hu11347717021869032896.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/featured-snapdragon_hu17009873290950205321.png);"></div>
         
       
 
@@ -1417,7 +1216,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/">数据中心GPU的寿命最多只有3年</div>
+          href="/hardware/qualcomm-begins-testing-next-generation-snapdragon-x2-cpu/">高通着手测试下一代Snapdragon X2 CPU</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1456,7 +1255,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T12:34:43&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-26T19:38:54&#43;08:00">2024-10-26</time>
   
 
   
@@ -1480,26 +1279,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/snapdragon-x2/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Google
+    Snapdragon X2
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sc8480xpsc8480xp/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GPU
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    H100
+    SC8480XPSC8480XP
   </span>
 </span>
   </span>
@@ -1536,8 +1327,8 @@
           
         
       <script>
-        var oid = "views_ai\/the-architects-guide-to-the-genai-tech-stack-10-tools\/index.md"
-        var oid_likes = "likes_ai\/the-architects-guide-to-the-genai-tech-stack-10-tools\/index.md"
+        var oid = "views_ai\/setting-direction-for-enterprise-ai-infrastructure\/index.md"
+        var oid_likes = "likes_ai\/setting-direction-for-enterprise-ai-infrastructure\/index.md"
       </script>
       
       
@@ -1557,7 +1348,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/ai/the-lifespan-of-a-datacenter-gpu-is-only-3-years/">
+            <a class="flex group mr-3" href="/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1569,11 +1360,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >数据中心GPU的寿命最多只有3年</span
+                  >生成式AI技术栈架构师指南</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-26T12:34:43&#43;08:00">2024-10-26</time>
+                    <time datetime="2024-10-26T12:46:02&#43;08:00">2024-10-26</time>
                   
                 </span>
               </span>
@@ -1581,28 +1372,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/ai/setting-direction-for-enterprise-ai-infrastructure/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >如何构建高效可靠的AI基础设施</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-10-26T19:56:51&#43;08:00">2024-10-26</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
