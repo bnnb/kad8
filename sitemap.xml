@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-10-26T12:05:24+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/building-metas-genai-infrastructure/</loc>
+    <lastmod>2024-10-26T12:05:24+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-10-26T10:56:25+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -23,12 +35,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/high-bandwidth-memory-hbm-ultimate-guide/</loc>
     <lastmod>2024-10-24T23:54:58+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-10-24T22:39:07+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
