@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 26 Oct 2024 12:05:24 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/genai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Oct 2024 12:46:02 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/genai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生成式AI技术栈架构师指南</title>
+      <link>https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/</link>
+      <pubDate>Sat, 26 Oct 2024 12:46:02 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/</guid>
+      <description>&lt;p&gt;现代数据湖，有时也被称为数据湖仓（data lakehouse），是数据湖与基于开放表格式规范（OTF，Open Table Format）的数据仓库各占一半的结合体。两者均建立在现代对象存储之上。&lt;/p&gt;
+&lt;p&gt;如何构建全面支持AI/ML需求的AI数据基础设施，不仅要包含存储训练集、验证集和测试集的原始数据，还应涵盖训练大型语言模型所需的计算资源、MLOps工具链以及分布式训练等功能。&lt;/p&gt;
+&lt;p&gt;本文探讨如何利用现代数据湖参考架构来满足AI/ML需求。下图展示了现代数据湖参考架构，并重点标出了支持生成式AI所需的能力。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./GenAI-Tech-Stack.jpg&#34; alt=&#34;GenAI&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;数据湖 
+    &lt;div id=&#34;%E6%95%B0%E6%8D%AE%E6%B9%96&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%95%B0%E6%8D%AE%E6%B9%96&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;企业级数据湖以对象存储为基础。这里所指的并非传统的、以设备为基础的对象存储（主要用于大规模低成本归档），而是现代的、高性能的、软件定义的、Kubernetes原生的对象存储，它是现代生成式AI技术栈的基石。这类存储可作为服务提供（如AWS、Google Cloud Platform（GCP）、Microsoft Azure），也可在本地部署或采用混合模式，例如MinIO。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/featured-GenAI-Tech-Stack.jpg" />
+    </item>
+    
     <item>
       <title>Meta的AI大模型基础设施</title>
       <link>https://www.kad8.com/ai/building-metas-genai-infrastructure/</link>
