@@ -28,7 +28,7 @@
     
 &lt;/h2&gt;
 &lt;p&gt;在CPU中，通常每个CPU核心都有一个数字温度传感器。在PC平台下，处理器可以通过&lt;code&gt;MSR&lt;/code&gt;(Mode specific registers)获得处理器自身的温度、调节风扇转速度，从而实现温度控制。在&lt;code&gt;服务器&lt;/code&gt;平台下，温度控制通常是由&lt;code&gt;BMC&lt;/code&gt;来做的，业务CPU本身没有办法控制服务器里的风扇转速。BMC直接或间接通过PECI总线获取到CPU的核心温度，再根据所读到的温度值来调整风扇的转速。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/introduction-to-peci-interface-in-server/featured-intel-peci.gif" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/introduction-to-peci-interface-in-server/featured-OpenBMC.png" />
     </item>
     
   </channel>
