@@ -7,7 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Fri, 01 Nov 2024 13:38:51 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Nov 2024 17:39:30 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intel Chiplet Gpu Design Patents</title>
+      <link>https://www.kad8.com/ai/intel-chiplet-gpu-design-patents/</link>
+      <pubDate>Fri, 01 Nov 2024 17:39:30 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/intel-chiplet-gpu-design-patents/</guid>
+      <description>&lt;p&gt;Intel首款采用Chiplets（芯粒）设计的桌面处理器Arrow Lake——酷睿Ultra 200S全球首发之后，其第一份“分解式”GPU设计专利也随之曝光。&lt;/p&gt;
+&lt;p&gt;本月早些时候，Intel申请了一份分解式GPU架构的专利，这可能是第一个具有逻辑小芯片的商业GPU架构。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Intel-patents-chiplet-gpu-design-1.webp&#34; alt=&#34;Intel Patents Chiplet GPU design&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;据了解，分解式GPU架构将GPU的单芯片设计，改为多个小型专用小芯片，然后使用相关技术互连。&lt;/p&gt;
+&lt;p&gt;通过将GPU划分为小芯片，制造商可以针对特定使用场景（例如计算、图形或AI）微调每个小芯片，从而发挥出最大效能。&lt;/p&gt;
+&lt;p&gt;此外，分解式GPU架构的另一个巨大优势是节能。因为单个小芯片允许电源门控，这意味着当它们不使用时，可以关闭电源以节省能源。&lt;/p&gt;
+&lt;p&gt;这种设计技术还带来了其他一些好处，例如工作负载定制、模块化和灵活性。在GPU设计领域，这种技术被视为未来的基准。&lt;/p&gt;
+&lt;p&gt;其实，AMD早在2022年就在RDNA3 GPU架构第一次引入了chiplet小芯片设计，包括一个GCD图形核心、最多六个MCD显存与缓存核心，但总体思路还是“一个大核心多个小核心”的思路。&lt;/p&gt;
+&lt;p&gt;而Intel这份GPU架构里面的逻辑小芯片，显然每个各自独立，且都有配套显存模块，可以看作是真正意义上的芯粒GPU。&lt;/p&gt;
+&lt;p&gt;事实上，随着摩尔定律逼近极限，5nm以下制程突破面临重重阻碍，Chiplet（芯粒）先进封装技术正是在这样的背景下横空出世。&lt;/p&gt;
+&lt;p&gt;在Chiplet思路下， 芯片被分割成较小的功能块或核心，然后将这些“chiplet芯片粒”以先进封装技术集成在一起以构建性能更强、更复杂化的芯片系统。&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>九大巨头，正式成立UALink联盟</title>
       <link>https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/</link>
