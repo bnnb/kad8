@@ -720,7 +720,7 @@
 </ol>
 <p>值得一提的是，Nvidia 没有加入超级以太网联盟，因为他们在 2019 年 3 月收购 Mellanox 后，基本上独占了高性能 InfiniBand 互连市场。超级以太网联盟旨在成为其他所有人的“InfiniBand”。此外，英特尔也曾经高举 InfiniBand 大旗。</p>
 <ol start="3">
-<li>GPU 到 GPU 互连：认识到快速且可扩展的 GPU 连接的需求，Nvidia 创建了 NVLink，这是一种 GPU 到 GPU 的连接，目前可在 GPU 之间以每秒 1.8 TB 的速度传输数据。此外，还有一个 NVLink 机架级交换机，能够在无阻塞计算结构中支持多达 576 个完全连接的 GPU。通过 NVLink 连接的 GPU 称为“pod”，表示它们有自己的数据和计算域。</li>
+<li>GPU 到 GPU 互连：认识到快速且可扩展的 GPU 连接的需求，Nvidia 创建了 <a href="https://www.gaitpu.com/data-center/server/difference-between-nvlink-version-and-pcie-version-for-nvidia-ai-server" target="_blank">NVLink</a>，这是一种 GPU 到 GPU 的连接，目前可在 GPU 之间以每秒 1.8 TB 的速度传输数据。此外，还有一个 NVLink 机架级交换机，能够在无阻塞计算结构中支持多达 576 个完全连接的 GPU。通过 NVLink 连接的 GPU 称为“pod”，表示它们有自己的数据和计算域。</li>
 </ol>
 <p>对于其他人来说，除了用于连接 MI300A APU 的 AMD Infinity Fabric 之外，没有其他选择。与 InfiniBand/以太网的情况类似，需要某种“超级”竞争对手联盟来填补非 Nvidia 的“pod 空缺”。而这正是发生的事情。</p>
 <p>于是，UALink横空出世。</p>
