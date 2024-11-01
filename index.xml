@@ -9,7 +9,25 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Macbook Air Now Starts With 16GB Ram</title>
+      <title>九大巨头，正式成立UALink联盟</title>
+      <link>https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/</link>
+      <pubDate>Fri, 01 Nov 2024 13:38:51 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/</guid>
+      <description>&lt;p&gt;今天，AMD、亚马逊网络服务 (AWS)、Astera Labs、思科、谷歌、惠普企业 (HPE)、英特尔、Meta 和微软等九大董事会成员联合宣布，由其领导的超级加速器链接 (&lt;code&gt;UALink&lt;/code&gt; ) 联盟正式成立，并向社区发出成员邀请。&lt;/p&gt;
+&lt;p&gt;资料显示，&lt;code&gt;Ultra Accelerator Link(UALink)&lt;/code&gt; 是一种用于加速器到加速器通信的开放行业标准化互连。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./UALink-1.webp&#34; alt=&#34;UALink&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;UALink 联盟则是一个开放的行业标准组织，旨在制定互连技术规范，以促进 &lt;a href=&#34;https://www.gaitpu.com&#34; target=&#34;_blank&#34;&gt;AI 加速器&lt;/a&gt;（即 GPU）之间的直接加载、存储和原子（atomic）操作。他们的重点是为一个 pod 中的数百个加速器实现低延迟/高带宽结构，并实现具有软件一致性的简单加载和存储语义。UALink 1.0 规范将利用开发和部署了各种加速器和交换机的推广者成员的经验。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/featured-NVLink-vs-UALink.png" />
+    </item>
+    
+    <item>
+      <title>苹果新款MacBook标配16GB</title>
       <link>https://www.kad8.com/hardware/macbook-air-now-starts-with-16gb-ram/</link>
       <pubDate>Fri, 01 Nov 2024 13:27:50 +0800</pubDate>
       
