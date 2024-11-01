@@ -30,7 +30,7 @@
 &lt;p&gt;而Intel这份GPU架构里面的逻辑小芯片，显然每个各自独立，且都有配套显存模块，可以看作是真正意义上的芯粒GPU。&lt;/p&gt;
 &lt;p&gt;事实上，随着摩尔定律逼近极限，5nm以下制程突破面临重重阻碍，Chiplet（芯粒）先进封装技术正是在这样的背景下横空出世。&lt;/p&gt;
 &lt;p&gt;在Chiplet思路下， 芯片被分割成较小的功能块或核心，然后将这些“chiplet芯片粒”以先进封装技术集成在一起以构建性能更强、更复杂化的芯片系统。&lt;/p&gt;</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/intel-chiplet-gpu-design-patents/featured-Intel_Chiplet.jpg" />
     </item>
     
     <item>
