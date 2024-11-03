@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenBMC on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/openbmc/</link>
+    <description>Recent content in OpenBMC on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sun, 03 Nov 2024 22:16:21 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/openbmc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英特尔：持续推动OpenBMC技术创新的先行者</title>
+      <link>https://www.kad8.com/software/intel-promot-openbmc-technology-innovation/</link>
+      <pubDate>Sun, 03 Nov 2024 22:16:21 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/software/intel-promot-openbmc-technology-innovation/</guid>
+      <description>&lt;p&gt;10年前，四位当时还名不见经传的程序员在一次黑客松上敲出了OpenBMC的第一行代码，由此也改写了整个固件领域的发展史……&lt;/p&gt;
+&lt;p&gt;几年后，2018年3月，OpenBMC正式成为Linux Foundation项目，其创始成员包括Meta（原Facebook）、谷歌、IBM、英特尔、微软等几家行业内的科技巨头。时至今日，OpenBMC已经成为业界广受欢迎的开源项目之一，不少互联网、金融、通信、服务器、芯片等科技企业也纷纷加入OpenBMC大家庭，推出相关的固件解决方案，并进一步加速应用落地。&lt;/p&gt;
+&lt;p&gt;日前，我们也有幸采访到了英特尔技术经理汤超燕，听听她对OpenBMC发展的判断和展望。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;殊途同归，让固件应用更简单、更高效 
+    &lt;div id=&#34;%E6%AE%8A%E9%80%94%E5%90%8C%E5%BD%92%E8%AE%A9%E5%9B%BA%E4%BB%B6%E5%BA%94%E7%94%A8%E6%9B%B4%E7%AE%80%E5%8D%95%E6%9B%B4%E9%AB%98%E6%95%88&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%AE%8A%E9%80%94%E5%90%8C%E5%BD%92%E8%AE%A9%E5%9B%BA%E4%BB%B6%E5%BA%94%E7%94%A8%E6%9B%B4%E7%AE%80%E5%8D%95%E6%9B%B4%E9%AB%98%E6%95%88&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;其实说到OpenBMC的发展，我们看看这个组织的早起发起者，包括硬件巨头、软件巨头和互联网大厂，可以说是妥妥的应用驱动。在汤超燕看，OpenBMC发起的初衷就是改变传统BMC应用的窘态，具体说来就是随着互联网应用的逐步展开，传统BMC无论在功能还是在技术上的发展都显得滞后，由此也让巨头们不得不身体力行的进行调整和优化。在这个过程中，包括英特尔、微软、IBM、谷歌、Meta都意识到固件创新的重要性，因此大家才携手打造了OpenBMC组织，也是希望群策群力，实现新应用、开创新业务。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/intel-promot-openbmc-technology-innovation/featured-intel-bmc.webp" />
+    </item>
+    
+  </channel>
+</rss>
