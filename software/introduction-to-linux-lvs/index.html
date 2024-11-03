@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>使用docker-compose限制内存和cpu &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="使用docker-compose限制内存和cpu &middot; Kontronn Asia Design Center" />
+  <title>Linux LVS简介 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="Linux LVS简介 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Limit Memory and CPU by using docker-compose" />
-  <meta name="keywords" content="Docker-compose, " />
+  <meta name="description" content="Introduction to Linux LVS" />
+  <meta name="keywords" content="Linux, Pipe, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/" />
+  <link rel="canonical" href="https://www.kad8.com/software/introduction-to-linux-lvs/" />
   
   
   
@@ -66,23 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/">
+  <meta property="og:url" content="https://www.kad8.com/software/introduction-to-linux-lvs/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="使用docker-compose限制内存和cpu">
-  <meta property="og:description" content="Limit Memory and CPU by using docker-compose">
+  <meta property="og:title" content="Linux LVS简介">
+  <meta property="og:description" content="Introduction to Linux LVS">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-10-28T00:30:51+08:00">
-    <meta property="article:modified_time" content="2024-10-28T00:30:51+08:00">
-    <meta property="article:tag" content="Docker-Compose">
-    <meta property="og:image" content="https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/featured-docker-compose.jpeg">
+    <meta property="article:published_time" content="2024-11-03T11:42:55+08:00">
+    <meta property="article:modified_time" content="2024-11-03T11:42:55+08:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Pipe">
+    <meta property="og:image" content="https://www.kad8.com/software/introduction-to-linux-lvs/featured-linux-lvs.webp">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/featured-docker-compose.jpeg">
-  <meta name="twitter:title" content="使用docker-compose限制内存和cpu">
-  <meta name="twitter:description" content="Limit Memory and CPU by using docker-compose">
+  <meta name="twitter:image" content="https://www.kad8.com/software/introduction-to-linux-lvs/featured-linux-lvs.webp">
+  <meta name="twitter:title" content="Linux LVS简介">
+  <meta name="twitter:description" content="Introduction to Linux LVS">
 
   
   <script type="application/ld+json">
@@ -90,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "使用docker-compose限制内存和cpu",
-    "headline": "使用docker-compose限制内存和cpu",
-    "description": "Limit Memory and CPU by using docker-compose",
-    "abstract": "\u003cp\u003e最近在使用docker的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e内存和CPU限制 \n    \u003cdiv id=\u0022%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eyml文件添加 service.deploy内容如下：\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode class=\u0022language-mark\u0022 data-lang=\u0022mark\u0022\u003edeploy:\n      resources:\n         limits:\n            cpus: \u0026#34;2.00\u0026#34;\n            memory: 5G\n         reservations:\n            memory: 200M\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003e注意：reservations中不支持cpus，仅支持内存。\u003c\/p\u003e",
+    "name": "Linux LVS简介",
+    "headline": "Linux LVS简介",
+    "description": "Introduction to Linux LVS",
+    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003eLVS概念 \n    \u003cdiv id=\u0022lvs%E6%A6%82%E5%BF%B5\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#lvs%E6%A6%82%E5%BF%B5\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e\u003ccode\u003eLVS\u003c\/code\u003e（Linux Virtual Server）是一个基于\u003ca href=\u0022https:\/\/www.gaitpu.com\/category\/os\/linux\u0022 target=\u0022_blank\u0022\u003eLinux操作系统\u003c\/a\u003e的虚拟服务器技术，用于实现负载均衡和高可用性。LVS通过将客户端的请求分发到多台后端服务器上，从而提高整体服务的处理能力和可靠性。LVS主要有两个组件：IPVS（IP Virtual Server）和LVS-NAT、LVS-DR、LVS-TUN三种工作模式。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/limit-memory-and-cpu-using-docker-compose\/",
+    "url" : "https:\/\/www.kad8.com\/software\/introduction-to-linux-lvs\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-28T00:30:51\u002b08:00",
-    "datePublished": "2024-10-28T00:30:51\u002b08:00",
+    "dateCreated": "2024-11-03T11:42:55\u002b08:00",
+    "datePublished": "2024-11-03T11:42:55\u002b08:00",
     
-    "dateModified": "2024-10-28T00:30:51\u002b08:00",
+    "dateModified": "2024-11-03T11:42:55\u002b08:00",
     
-    "keywords": ["Docker-compose"],
+    "keywords": ["Linux","Pipe"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "76"
+    "wordCount": "184"
   }]
   </script>
 
@@ -413,7 +414,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      使用docker-compose限制内存和cpu
+      Linux LVS简介
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -454,7 +455,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-28T00:30:51&#43;08:00">2024-10-28</time>
+  <time datetime="2024-11-03T11:42:55&#43;08:00">2024-11-03</time>
   
 
   
@@ -478,10 +479,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker-compose/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker-Compose
+    Linux
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pipe/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Pipe
   </span>
 </span>
   </span>
@@ -547,10 +556,20 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#内存和cpu限制">内存和CPU限制</a></li>
-    <li><a href="#启动容器">启动容器</a></li>
-    <li><a href="#验证">验证</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#lvs概念">LVS概念</a></li>
+    <li><a href="#lvs的优势">LVS的优势</a></li>
+    <li><a href="#lvs架构">LVS架构</a></li>
+    <li><a href="#lvs的工作模式">LVS的工作模式</a></li>
+    <li><a href="#lvs实战案例">LVS实战案例</a>
+      <ul>
+        <li><a href="#环境准备">环境准备：</a></li>
+        <li><a href="#配置-lvs-负载均衡器">配置 LVS 负载均衡器：</a></li>
+        <li><a href="#设置-lvs-负载均衡规则">设置 LVS 负载均衡规则：</a></li>
+        <li><a href="#配置真实服务器">配置真实服务器：</a></li>
+        <li><a href="#测试">测试：</a></li>
+        <li><a href="#查看-lvs-状态">查看 LVS 状态：</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -564,10 +583,20 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#内存和cpu限制">内存和CPU限制</a></li>
-    <li><a href="#启动容器">启动容器</a></li>
-    <li><a href="#验证">验证</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#lvs概念">LVS概念</a></li>
+    <li><a href="#lvs的优势">LVS的优势</a></li>
+    <li><a href="#lvs架构">LVS架构</a></li>
+    <li><a href="#lvs的工作模式">LVS的工作模式</a></li>
+    <li><a href="#lvs实战案例">LVS实战案例</a>
+      <ul>
+        <li><a href="#环境准备">环境准备：</a></li>
+        <li><a href="#配置-lvs-负载均衡器">配置 LVS 负载均衡器：</a></li>
+        <li><a href="#设置-lvs-负载均衡规则">设置 LVS 负载均衡规则：</a></li>
+        <li><a href="#配置真实服务器">配置真实服务器：</a></li>
+        <li><a href="#测试">测试：</a></li>
+        <li><a href="#查看-lvs-状态">查看 LVS 状态：</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -651,99 +680,185 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>最近在使用docker的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。</p>
+          
 
-
-<h2 class="relative group">内存和CPU限制 
-    <div id="%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6" class="anchor"></div>
+<h2 class="relative group">LVS概念 
+    <div id="lvs%E6%A6%82%E5%BF%B5" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#lvs%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>yml文件添加 service.deploy内容如下：</p>
-<pre tabindex="0"><code class="language-mark" data-lang="mark">deploy:
-      resources:
-         limits:
-            cpus: &#34;2.00&#34;
-            memory: 5G
-         reservations:
-            memory: 200M
-</code></pre><p>注意：reservations中不支持cpus，仅支持内存。</p>
-<p>以ldap为例：</p>
-<pre tabindex="0"><code class="language-mark" data-lang="mark">version: &#39;3.7&#39;
-services:
-  openldap:
-    image: 10.10.239.54/public/openldap:1.3.0
-    container_name: openldap
-    environment:
-      - N9E_NID=22
-    ports:
-      - &#34;389:389&#34;
-      - &#34;636:636&#34;
-    deploy:
-      resources:
-         limits:
-            cpus: &#34;2.00&#34;
-            memory: 5G
-         reservations:
-            memory: 200M
-    volumes:
-      - ./ldap:/var/lib/ldap
-      - ./slapd.d:/etc/ldap/slapd.d
-    restart: always
-</code></pre>
+<p><code>LVS</code>（Linux Virtual Server）是一个基于<a href="https://www.gaitpu.com/category/os/linux" target="_blank">Linux操作系统</a>的虚拟服务器技术，用于实现负载均衡和高可用性。LVS通过将客户端的请求分发到多台后端服务器上，从而提高整体服务的处理能力和可靠性。LVS主要有两个组件：IPVS（IP Virtual Server）和LVS-NAT、LVS-DR、LVS-TUN三种工作模式。</p>
 
-<h2 class="relative group">启动容器 
-    <div id="%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8" class="anchor"></div>
+
+<h2 class="relative group">LVS的优势 
+    <div id="lvs%E7%9A%84%E4%BC%98%E5%8A%BF" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>限制指令为<code>deploy.resources.limits</code>这部分，注意节点位置，上面这部分限制的含义是：openldap服务的CPU使用被限制在最多200%的CPU能力，内存使用被限制在最多5GB。同时，这个服务至少需要200MB的内存。</p>
-<p>我们启动的时候命令需要发生一些变化，否则不会生效：</p>
-<pre tabindex="0"><code class="language-mark" data-lang="mark">#原本的启动命令为
-docker-compse up -d
-# 需要添加一个参数--compatibility表示以兼容模式来运行
-docker-compose --compatibility up -d
-</code></pre><p>这里的关键在于添加&ndash;compatibility参数以兼容模式来运行，否则限制不会生效。</p>
-
-
-<h2 class="relative group">验证 
-    <div id="%E9%AA%8C%E8%AF%81" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E9%AA%8C%E8%AF%81" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>通过上述方法限制容器CPU和内存后，可以使用命令：docker stats查看容器资源使用情况.</p>
-
-
-<h2 class="relative group">总结 
-    <div id="%E6%80%BB%E7%BB%93" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#lvs%E7%9A%84%E4%BC%98%E5%8A%BF" aria-label="锚点">#</a>
     </span>        
     
 </h2>
 <ul>
-<li>docker-compose.yml限制内存需要添加deploy.resources.limits节点</li>
-<li>docker-compose命令启动的时候需要添加&ndash;compatibility参数以兼容模式来运行，否则限制不会生效</li>
+<li>高性能：LVS工作在内核层，性能高效，能够处理大量并发请求。</li>
+<li>高可用性：通过配置Keepalived等工具，LVS可以实现高可用性，确保服务的持续运行。</li>
+<li>灵活性强：支持多种负载均衡算法和工作模式，适应不同的应用场景。</li>
 </ul>
-<p>以上就是Docker Compose中限制容器的CPU和内存使用的全部内容。</p>
+
+
+<h2 class="relative group">LVS架构 
+    <div id="lvs%E6%9E%B6%E6%9E%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lvs%E6%9E%B6%E6%9E%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>LVS的整体架构主要包括负载均衡器（Load Balancer）、后端服务器（Real Server）和客户端三部分。客户端的请求首先到达负载均衡器，然后由负载均衡器根据一定的调度算法将请求转发到后端服务器进行处理，处理结果再返回给客户端。</p>
+
+
+<h2 class="relative group">LVS的工作模式 
+    <div id="lvs%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lvs%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>LVS支持三种主要的工作模式：</p>
+<ul>
+<li>LVS-NAT模式：通过修改请求报文的目标IP地址实现负载均衡。</li>
+<li>LVS-DR模式：通过操纵封装新的MAC地址实现负载均衡。</li>
+<li>LVS-TUN模式：在原请求IP报文之外新加一个IP首部实现负载均衡。</li>
+</ul>
+
+
+<h2 class="relative group">LVS实战案例 
+    <div id="lvs%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lvs%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>LVS-DR模式实战案例</p>
+
+
+<h3 class="relative group">环境准备： 
+    <div id="%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>负载均衡器（Director）：CentOS 7</li>
+<li>真实服务器（Real Server）：两台 CentOS 7</li>
+<li>VIP：192.168.1.100</li>
+</ul>
+
+
+<h3 class="relative group">配置 LVS 负载均衡器： 
+    <div id="%E9%85%8D%E7%BD%AE-lvs-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%85%8D%E7%BD%AE-lvs-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>首先，确保 LVS 和 ipvsadm 已安装：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum install ipvsadm -y
+</span></span><span class="line"><span class="cl">modprobe ip_vs
+</span></span></code></pre></div>
+
+<h3 class="relative group">设置 LVS 负载均衡规则： 
+    <div id="%E8%AE%BE%E7%BD%AE-lvs-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E8%A7%84%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%AE%BE%E7%BD%AE-lvs-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E8%A7%84%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ipvsadm -A -t 192.168.1.100:80 -s rr
+</span></span><span class="line"><span class="cl">ipvsadm -a -t 192.168.1.100:80 -r 192.168.1.101:80 -g
+</span></span><span class="line"><span class="cl">ipvsadm -a -t 192.168.1.100:80 -r 192.168.1.102:80 -g
+</span></span></code></pre></div><p>解释：</p>
+<pre tabindex="0"><code class="language-mark" data-lang="mark">-A -t 192.168.1.100:80：添加一个 VIP 地址监听 80 端口的服务。
+-s rr：使用轮询调度算法。
+-a -r 192.168.1.101:80 -g：将真实服务器 192.168.1.101 加入到 VIP 服务中，并使用 DR 模式（ -g 表示 DR 模式）。
+-a -r 192.168.1.102:80 -g：同样将 192.168.1.102 加入服务。
+</code></pre>
+
+<h3 class="relative group">配置真实服务器： 
+    <div id="%E9%85%8D%E7%BD%AE%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%85%8D%E7%BD%AE%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>为了使 LVS DR 模式生效，我们需要在真实服务器上进行一些特殊的配置。</p>
+<p>配置 lo 接口的 VIP，但不要让它对外 ARP 应答：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ifconfig lo:0 192.168.1.100 netmask 255.255.255.255 up
+</span></span><span class="line"><span class="cl">route add -host 192.168.1.100 dev lo:0
+</span></span></code></pre></div><p>禁止真实服务器对 VIP 发送 ARP 响应：编辑 <code>/etc/sysctl.conf</code> 文件，添加以下内容：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">net.ipv4.conf.lo.arp_ignore <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">net.ipv4.conf.lo.arp_announce <span class="o">=</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl">net.ipv4.conf.all.arp_ignore <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">net.ipv4.conf.all.arp_announce <span class="o">=</span> <span class="m">2</span>
+</span></span></code></pre></div><p>然后执行 <code>sysctl -p</code> 使配置生效。</p>
+<p>启动 web 服务（如 Nginx 或 Apache）监听所有 IP：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum install nginx -y
+</span></span><span class="line"><span class="cl">systemctl start nginx
+</span></span></code></pre></div>
+
+<h3 class="relative group">测试： 
+    <div id="%E6%B5%8B%E8%AF%95" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B5%8B%E8%AF%95" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在客户端访问 <code>http://192.168.1.100</code>，请求会被 LVS 分发到后端的真实服务器上。通过多次刷新页面，您可以看到请求在两台真实服务器之间轮流分发。</p>
+
+
+<h3 class="relative group">查看 LVS 状态： 
+    <div id="%E6%9F%A5%E7%9C%8B-lvs-%E7%8A%B6%E6%80%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B-lvs-%E7%8A%B6%E6%80%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>可以使用以下命令查看 LVS 的负载均衡状态：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ipvsadm -L -n
+</span></span></code></pre></div><p>输出将显示 <code>LVS</code> 的规则以及每台真实服务器的连接数。</p>
 
           
           
@@ -761,7 +876,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;title=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;title=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -780,7 +895,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;text=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;text=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -798,7 +913,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu&#43;https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/"
+      href="https://bsky.app/intent/compose?text=Linux%20LVS%e7%ae%80%e4%bb%8b&#43;https://www.kad8.com/software/introduction-to-linux-lvs/"
       title=""
       aria-label=""
       >
@@ -816,7 +931,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu%20https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/"
+      href="https://s2f.kytta.dev/?text=Linux%20LVS%e7%ae%80%e4%bb%8b%20https://www.kad8.com/software/introduction-to-linux-lvs/"
       title=""
       aria-label=""
       >
@@ -835,7 +950,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;resubmit=true&amp;title=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -854,7 +969,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;description=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;description=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -873,7 +988,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;quote=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;quote=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -892,7 +1007,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;subject=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="mailto:?body=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;subject=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -911,7 +1026,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;resubmit=true&amp;title=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title=""
       aria-label=""
       >
@@ -930,7 +1045,7 @@ docker-compose --compatibility up -d
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8docker-compose%e9%99%90%e5%88%b6%e5%86%85%e5%ad%98%e5%92%8ccpu"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/introduction-to-linux-lvs/&amp;resubmit=true&amp;title=Linux%20LVS%e7%ae%80%e4%bb%8b"
       title=""
       aria-label=""
       >
@@ -956,11 +1071,11 @@ docker-compose --compatibility up -d
   
   
 
-  <a href="/ai/setting-direction-for-enterprise-ai-infrastructure/" class="min-w-full">
+  <a href="/software/introduction-to-linux-pipe/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/setting-direction-for-enterprise-ai-infrastructure/featured-enterprise-infrastructure-of-ai_hu11374852213717621947.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/introduction-to-linux-pipe/featured-linux-pipe_hu16528638391246457519.jpg);"></div>
         
       
 
@@ -968,7 +1083,7 @@ docker-compose --compatibility up -d
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/setting-direction-for-enterprise-ai-infrastructure/">如何构建高效可靠的AI基础设施</div>
+          href="/software/introduction-to-linux-pipe/">Linux 管道Pipe简介</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1007,7 +1122,7 @@ docker-compose --compatibility up -d
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T19:56:51&#43;08:00">2024-10-26</time>
+  <time datetime="2024-10-23T13:27:46&#43;08:00">2024-10-23</time>
   
 
   
@@ -1031,18 +1146,18 @@ docker-compose --compatibility up -d
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AI
+    Linux
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infrastructure/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pipe/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Infrastructure
+    Pipe
   </span>
 </span>
   </span>
@@ -1068,11 +1183,11 @@ docker-compose --compatibility up -d
   
   
 
-  <a href="/ai/computer-computing-power-unit-introduction/" class="min-w-full">
+  <a href="/software/how-to-implement-router-function-on-linux/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/computer-computing-power-unit-introduction/featured-computing-power_hu12420348815275521962.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-implement-router-function-on-linux/featured-linux-router_hu15189574888763587507.png);"></div>
         
       
 
@@ -1080,7 +1195,7 @@ docker-compose --compatibility up -d
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/computer-computing-power-unit-introduction/">计算机算力单位简介</div>
+          href="/software/how-to-implement-router-function-on-linux/">如何在 Linux 上实现 Router 功能</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1119,7 +1234,7 @@ docker-compose --compatibility up -d
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
+  <time datetime="2024-10-23T00:16:51&#43;08:00">2024-10-23</time>
   
 
   
@@ -1143,26 +1258,18 @@ docker-compose --compatibility up -d
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/computing-power/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Computing Power
+    Linux
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/flops/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/router/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    FLOPS
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TOPS
+    Router
   </span>
 </span>
   </span>
@@ -1188,11 +1295,11 @@ docker-compose --compatibility up -d
   
   
 
-  <a href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/" class="min-w-full">
+  <a href="/software/how-to-configure-tftp-server-in-linux/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/featured-AMD-Instinct-MI300X_hu18049096376422806741.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-configure-tftp-server-in-linux/featured-How-to-Install-TFTP-Server-on-Ubuntu_hu9798322574238298724.png);"></div>
         
       
 
@@ -1200,7 +1307,7 @@ docker-compose --compatibility up -d
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/">AMD Instinct MI300X 架构亮相 Hot Chips 2024</div>
+          href="/software/how-to-configure-tftp-server-in-linux/">Linux下如何配置tftp服务器</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1239,7 +1346,7 @@ docker-compose --compatibility up -d
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-17T00:00:36&#43;08:00">2024-10-17</time>
+  <time datetime="2024-10-22T23:52:42&#43;08:00">2024-10-22</time>
   
 
   
@@ -1263,18 +1370,18 @@ docker-compose --compatibility up -d
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/instinct/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Instinct
+    Linux
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mi300x/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tftp/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Mi300X
+    Tftp
   </span>
 </span>
   </span>
@@ -1311,8 +1418,8 @@ docker-compose --compatibility up -d
           
         
       <script>
-        var oid = "views_software\/limit-memory-and-cpu-using-docker-compose\/index.md"
-        var oid_likes = "likes_software\/limit-memory-and-cpu-using-docker-compose\/index.md"
+        var oid = "views_software\/introduction-to-linux-lvs\/index.md"
+        var oid_likes = "likes_software\/introduction-to-linux-lvs\/index.md"
       </script>
       
       
@@ -1332,7 +1439,7 @@ docker-compose --compatibility up -d
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/introduction-to-peci-interface-in-server/">
+            <a class="flex group mr-3" href="/software/limit-memory-and-cpu-using-docker-compose/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1344,11 +1451,11 @@ docker-compose --compatibility up -d
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >服务器下的PECI接口简介</span
+                  >使用docker-compose限制内存和cpu</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-27T18:43:18&#43;08:00">2024-10-27</time>
+                    <time datetime="2024-10-28T00:30:51&#43;08:00">2024-10-28</time>
                   
                 </span>
               </span>
@@ -1356,28 +1463,6 @@ docker-compose --compatibility up -d
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/introduction-to-linux-lvs/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux LVS简介</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-03T11:42:55&#43;08:00">2024-11-03</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
