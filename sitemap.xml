@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-11-03T21:23:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/inside-100000-nvidia-gpu-xai-colossus-cluster/</loc>
+    <lastmod>2024-11-03T21:23:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/the-most-commonly-used-git-commands/</loc>
     <lastmod>2024-11-03T21:01:44+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,12 +23,6 @@
   <url>
     <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-11-03T21:01:44+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-03T15:19:18+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
