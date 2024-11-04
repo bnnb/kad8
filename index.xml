@@ -9,6 +9,17 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>为什么 CUDA 对深度学习至关重要</title>
+      <link>https://www.kad8.com/ai/why-cuda-is-crucial-for-deep-learning/</link>
+      <pubDate>Mon, 04 Nov 2024 23:23:51 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/why-cuda-is-crucial-for-deep-learning/</guid>
+      <description>&lt;p&gt;本文介绍了人工智能生态相关技术 - 用于加速构建 AI 核心算力的 GPU 硬件技术。&lt;/p&gt;
+&lt;p&gt;毫无疑问，你可能已经听说过 CUDA，并且知道它与 NVIDIA GPU 有关。但你可能对 CUDA 的确切含义和用途还不甚了解。究竟，CUDA 是什么呢？它只是一个与 GPU 进行对话的库吗？如果是，它是一个 C++ 库，还是可以通过 Python 等高级语言进行调用？或者，CUDA 是为 GPU 编写代码的编译器？它是否是让操作系统与 GPU 进行通信的驱动程序？&amp;hellip;&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/why-cuda-is-crucial-for-deep-learning/featured-nvidia-cuda-ai-dl.webp" />
+    </item>
+    
+    <item>
       <title>微信Linux4.0发布，功能与Windows，Mac同步</title>
       <link>https://www.kad8.com/software/wechat-linux-4.0-public-beta-version-launched/</link>
       <pubDate>Mon, 04 Nov 2024 22:17:55 +0800</pubDate>

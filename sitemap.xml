@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-11-04T23:23:51+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/why-cuda-is-crucial-for-deep-learning/</loc>
+    <lastmod>2024-11-04T23:23:51+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-11-04T22:17:55+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -17,12 +29,6 @@
   <url>
     <loc>https://www.kad8.com/software/intel-promot-openbmc-technology-innovation/</loc>
     <lastmod>2024-11-03T22:16:21+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-03T21:23:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
