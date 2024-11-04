@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 03 Nov 2024 22:16:21 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/intel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Nov 2024 00:16:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/intel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>美国政府考虑Intel设计部门与AMD合并</title>
+      <link>https://www.kad8.com/hardware/us-government-considers-merger-of-intel-design-unit-with-amd/</link>
+      <pubDate>Tue, 05 Nov 2024 00:16:45 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/us-government-considers-merger-of-intel-design-unit-with-amd/</guid>
+      <description>&lt;p&gt;Intel深陷危机，着急的不光有自己，还有将其视之为掌上明珠的美国政府，已经在悄悄研究各种援助方案，有些看起来相当的异想天开。&lt;/p&gt;
+&lt;p&gt;据悉，《芯片与科学法案》(CHIPS Act)的主要倡导者，美国参议员马克·华纳(Mark Warner)等国会议员，以及负责监督法案补贴落实的美国商务部高级官员，都已经坐在一起讨论Intel的出路，而这还不包括根据《芯片法案》将要提供给Intel的多达85亿美元。&lt;/p&gt;
+&lt;p&gt;其中一种选择，就是让Intel的芯片设计业务与AMD或者Mavell等竞争对手合并，并接受美国政府的监督与支持。&lt;/p&gt;
+&lt;p&gt;但是即便Intel愿意，正在劲头上的AMD也未必，而且就算双方都愿意，欧盟、中国的反垄断审查也不可能过去。&lt;/p&gt;
+&lt;p&gt;关于高通收购Intel的话题，近期炒得非常热，但是并无实质性进展。&lt;/p&gt;
+&lt;p&gt;最初曝料是9月下旬，有媒体称高通已经向Intel发出了收购要约，并进行了接洽，但被高通否认。&lt;/p&gt;
+&lt;p&gt;10月中旬，知情人士称高通可能会等到11月中旬美国大选之后，再决定是否接洽Intel。&lt;/p&gt;
+&lt;p&gt;甚至还有说法称三星、苹果都对Intel感兴趣，不能更离谱……&lt;/p&gt;
+&lt;p&gt;另外，Intel晶圆厂拆分独立也是一种方向，但这是Intel最大的资本之一，不会轻易放弃，而且就算拆分也很难找到愿意接手的资本。&lt;/p&gt;
+&lt;p&gt;不过，美国政府的这些讨论只是非常初步的，也可以算作是一个备用计划。&lt;/p&gt;
+&lt;p&gt;毕竟，Intel虽然最近亏损严重，但也在积极自救，并乐观地预计财务状况到第四季度会有很大改善。&lt;/p&gt;
+&lt;p&gt;尽管如此，这足以彰显Intel对于美国的重要性，绝对是美国高科技的标杆。&lt;/p&gt;
+&lt;p&gt;尽管AMD、NVIDIA也都是美国高科技的代表，而且一片欣欣向荣，但是他们都没有半导体制造业，Intel则是唯一既能设计，还能制造的。&lt;/p&gt;
+&lt;p&gt;Intel发言人自己都说：“Intel是唯一能够同时设计、制造尖端芯片的美国企业，在保证美国半导体全球竞争优势中扮演着关键角色。”&lt;/p&gt;
+&lt;p&gt;万一Intel倒下了，美国芯片制造就只能完全依赖台积电、三星，但他们在美国看来都是非常危险的。&lt;/p&gt;
+&lt;p&gt;虽然三星一直在美国有工厂，台积电也积极赴美建厂，但规模都太小了。&lt;/p&gt;
+&lt;p&gt;另外，Intel还是美国的顶级出口商，2023年出口额超过400亿美元，难以替代。&lt;/p&gt;
+&lt;p&gt;无论如何，对于大型企业而言，起起伏伏是正常的，AMD推土机时代也差点破产，希望Intel能早日东山再起，至少，更好的竞争对消费者更有利。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/us-government-considers-merger-of-intel-design-unit-with-amd/featured-intel.webp" />
+    </item>
+    
     <item>
       <title>英特尔：持续推动OpenBMC技术创新的先行者</title>
       <link>https://www.kad8.com/software/intel-promot-openbmc-technology-innovation/</link>
