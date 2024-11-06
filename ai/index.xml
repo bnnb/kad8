@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Mon, 04 Nov 2024 23:23:51 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Nov 2024 00:41:58 +0800</lastBuildDate><atom:link href="https://www.kad8.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openai Reportedly Is Making Its First Ai Chip</title>
+      <link>https://www.kad8.com/ai/openai-reportedly-is-making-its-first-ai-chip/</link>
+      <pubDate>Thu, 07 Nov 2024 00:41:58 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/openai-reportedly-is-making-its-first-ai-chip/</guid>
+      <description>&lt;p&gt;据路透社引用知情人士的消息透露，OpenAI首颗自研芯片即将亮相。据介绍，这颗芯片由博通研发，并使用台积电加以代工。并将于2026年首次亮相。&lt;/p&gt;
+&lt;p&gt;报道指出，该公司已考虑过多种方式来使其芯片供应多样化并降低成本，包括为芯片制造工厂网络筹集资金。但据路透社报道，OpenAI 并没有放弃建立代工厂的计划（目前该计划已被放弃），而是专注于内部设计自己的芯片。&lt;/p&gt;
+&lt;p&gt;如报道所说，OpenAI 与博通合作开发首款用于 AI推理的自有芯片已持续数月，尽管目前对 AI 训练芯片的需求较高，但分析师预计 AI 推理最终将占据主导地位。推理是在训练之后进行的，是经过训练的 AI 模型根据新数据进行预测的过程。&lt;/p&gt;
+&lt;p&gt;两位知情人士告诉路透社，OpenAI 仍在决定是为其 AI 芯片开发还是收购其他功能，并可能寻找更多芯片制造合作伙伴。据路透社报道，OpenAI 已通过与博通的合作与台积电建立了制造能力。据报道，这家台湾芯片制造商可能在 2026 年之前推出 OpenAI 的第一款定制芯片，但目前还不确定。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/openai-reportedly-is-making-its-first-ai-chip/featured-openai-broadcom.png" />
+    </item>
+    
     <item>
       <title>为什么 CUDA 对深度学习至关重要</title>
       <link>https://www.kad8.com/ai/why-cuda-is-crucial-for-deep-learning/</link>
