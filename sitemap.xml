@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-11-16T12:18:33+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/introduction-to-nvidia-cuda/</loc>
+    <lastmod>2024-11-16T12:18:33+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-11-16T10:20:09+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,12 +23,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/</loc>
     <lastmod>2024-11-16T10:20:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-07T00:41:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
