@@ -213,7 +213,7 @@
       <pubDate>Mon, 28 Oct 2024 00:30:51 +0800</pubDate>
       
       <guid>https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/</guid>
-      <description>&lt;p&gt;最近在使用docker的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。&lt;/p&gt;
+      <description>&lt;p&gt;最近在使用&lt;a href=&#34;https://www.kad8.com/software/linux-docker-port-mapping/&#34; target=&#34;_blank&#34;&gt;docker&lt;/a&gt;的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。&lt;/p&gt;
 
 
 &lt;h2 class=&#34;relative group&#34;&gt;内存和CPU限制 

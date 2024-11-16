@@ -93,7 +93,7 @@
     "name": "使用docker-compose限制内存和cpu",
     "headline": "使用docker-compose限制内存和cpu",
     "description": "Limit Memory and CPU by using docker-compose",
-    "abstract": "\u003cp\u003e最近在使用docker的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e内存和CPU限制 \n    \u003cdiv id=\u0022%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eyml文件添加 service.deploy内容如下：\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode class=\u0022language-mark\u0022 data-lang=\u0022mark\u0022\u003edeploy:\n      resources:\n         limits:\n            cpus: \u0026#34;2.00\u0026#34;\n            memory: 5G\n         reservations:\n            memory: 200M\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003e注意：reservations中不支持cpus，仅支持内存。\u003c\/p\u003e",
+    "abstract": "\u003cp\u003e最近在使用\u003ca href=\u0022https:\/\/www.kad8.com\/software\/linux-docker-port-mapping\/\u0022 target=\u0022_blank\u0022\u003edocker\u003c\/a\u003e的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e内存和CPU限制 \n    \u003cdiv id=\u0022%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%86%85%E5%AD%98%E5%92%8Ccpu%E9%99%90%E5%88%B6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eyml文件添加 service.deploy内容如下：\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode class=\u0022language-mark\u0022 data-lang=\u0022mark\u0022\u003edeploy:\n      resources:\n         limits:\n            cpus: \u0026#34;2.00\u0026#34;\n            memory: 5G\n         reservations:\n            memory: 200M\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003e注意：reservations中不支持cpus，仅支持内存。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/www.kad8.com\/software\/limit-memory-and-cpu-using-docker-compose\/",
     "author" : {
@@ -651,7 +651,7 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>最近在使用docker的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。</p>
+          <p>最近在使用<a href="https://www.kad8.com/software/linux-docker-port-mapping/" target="_blank">docker</a>的过程中，发现CPU和内存经常占满，导致其它服务都不能正常使用。下面本文就探讨一下如何使用docker-compose限制内存和cpu。本文以docker-compose.yml中version 3.x为例。</p>
 
 
 <h2 class="relative group">内存和CPU限制 
