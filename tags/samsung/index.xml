@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 16 Nov 2024 10:20:09 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/samsung/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Nov 2024 23:05:57 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/samsung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三星对中国断供7nm及以下芯片</title>
+      <link>https://www.kad8.com/ai/samsung-cuts-off-supply-of-7nm-and-below-chips-to-china/</link>
+      <pubDate>Sat, 16 Nov 2024 23:05:57 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/samsung-cuts-off-supply-of-7nm-and-below-chips-to-china/</guid>
+      <description>&lt;p&gt;美国商务部已经给台积电发函，要求暂停中国大陆&lt;a href=&#34;https://www.gaitpu.com&#34; target=&#34;_blank&#34;&gt;AI&lt;/a&gt;芯片企业的7nm及以下先进制程芯片的代工服务，重新审核认证客户身份（KYC）流程，扩大代工产品审查范围。&lt;/p&gt;
+&lt;p&gt;按照消息人士的说法，并非所有大陆IC设计公司从此以后都无法获得台积电的先进制程工艺支持，目前最新的管控仅限于AI/GPU相关，手机、汽车等芯片不在管辖范围内。&lt;/p&gt;
+&lt;p&gt;至于具体哪些AI/GPU相关芯片，则需要等到台积电与美国商务部协商出台具体管控细则，符合条件的芯片依旧有望通过申请许可的方式在台积电继续流片生产。&lt;/p&gt;
+&lt;p&gt;现在，三星似乎也采取了类似的行动，也已经向大陆客户发出了类似的通知。&lt;/p&gt;
+&lt;p&gt;对此，三星官方回应称：“我们无法评论与客户相关的事宜。”&lt;/p&gt;
+&lt;p&gt;另据一名算力芯片企业的股东人士称，三星与台积电近日向他所投资的企业发送邮件，要求客户配合核查投片资质。&lt;/p&gt;
+&lt;p&gt;其实，在本月初就有报道称，三星已关闭平泽2号线（P2）、3号线（P3）超过30％的产能，而到年底将扩大至50％，涉及4nm、5nm、7nm工艺，以降低成本，防止进一步扩大亏损。&lt;/p&gt;
+&lt;p&gt;但是，三星极有可能已经提前听闻了台积电“违规”为中国大陆客户代工的风声，而眼瞅着台积电断供，于是决定提前关闭部分自己的相关产线，以降低风险。&lt;/p&gt;
+&lt;p&gt;不排除三星也已经收到了美国的通知，即便没有三星也有可能会主动采取措施，避免被美国喝令停止——毕竟韩国在美国面前是没有话语权的。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./samsung-cut-off-chip-supply-to-china-1.png&#34; alt=&#34;Samsung Cut Off Supply of Chip to China&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;虽然大家一说起代工，会第一时间想起台积电，但是三星的4/5/7nm代工业务有很大一部分都来自中国芯片设计企业。&lt;/p&gt;
+&lt;p&gt;尤为值得一提的是，三星第一代3nm工艺迄今唯一的大客户，就是中国某加密货币厂商的ASIC芯片。&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>三星公司的CXL内存模块解决方案</title>
       <link>https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/</link>
