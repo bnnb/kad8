@@ -14,7 +14,7 @@
       <pubDate>Sat, 16 Nov 2024 22:21:26 +0800</pubDate>
       
       <guid>https://www.kad8.com/network/introduction-to-vxlan/</guid>
-      <description>&lt;p&gt;传统的网络分段技术，如VLAN（虚拟局域网），已经使用了几十年，但随着数据中心规模的扩大和多租户需求的增加，这些技术的局限性逐渐显现出来。为了应对这些挑战，VXLAN（虚拟扩展局域网）技术应运而生。&lt;/p&gt;
+      <description>&lt;p&gt;传统的网络分段技术，如VLAN（虚拟局域网），已经使用了几十年，但随着数据中心规模的扩大和多租户需求的增加，这些技术的局限性逐渐显现出来。为了应对这些挑战，&lt;a href=&#34;https://www.kad8.com/network/introduction-to-vxlan/&#34; target=&#34;_blank&#34;&gt;VXLAN（虚拟扩展局域网）&lt;/a&gt;技术应运而生。&lt;/p&gt;
 
 
 &lt;h2 class=&#34;relative group&#34;&gt;什么是VXLAN 
