@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/linux-practical-tips/</loc>
+    <lastmod>2024-11-16T13:20:57+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-11-16T13:20:57+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-11-16T12:18:33+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -35,12 +47,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/three-companies-bid-for-altera/</loc>
     <lastmod>2024-11-07T00:26:31+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
-    <lastmod>2024-11-05T00:26:40+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
