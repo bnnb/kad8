@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Linux实用小技巧 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="Linux实用小技巧 &middot; Kontronn Asia Design Center" />
+  <title>Linux下的docker端口映射 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="Linux下的docker端口映射 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Linux Practical Tips" />
-  <meta name="keywords" content="Linux, " />
+  <meta name="description" content="Linux Docker Port Mapping" />
+  <meta name="keywords" content="Docker, Linux, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/linux-practical-tips/" />
+  <link rel="canonical" href="https://www.kad8.com/software/linux-docker-port-mapping/" />
   
   
   
@@ -66,23 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/linux-practical-tips/">
+  <meta property="og:url" content="https://www.kad8.com/software/linux-docker-port-mapping/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="Linux实用小技巧">
-  <meta property="og:description" content="Linux Practical Tips">
+  <meta property="og:title" content="Linux下的docker端口映射">
+  <meta property="og:description" content="Linux Docker Port Mapping">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-11-16T13:20:57+08:00">
-    <meta property="article:modified_time" content="2024-11-16T13:20:57+08:00">
+    <meta property="article:published_time" content="2024-11-16T21:33:44+08:00">
+    <meta property="article:modified_time" content="2024-11-16T21:33:44+08:00">
+    <meta property="article:tag" content="Docker">
     <meta property="article:tag" content="Linux">
-    <meta property="og:image" content="https://www.kad8.com/software/linux-practical-tips/featured-linux-practical-tips.png">
+    <meta property="og:image" content="https://www.kad8.com/software/linux-docker-port-mapping/featured-Docker-port-mapping.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/linux-practical-tips/featured-linux-practical-tips.png">
-  <meta name="twitter:title" content="Linux实用小技巧">
-  <meta name="twitter:description" content="Linux Practical Tips">
+  <meta name="twitter:image" content="https://www.kad8.com/software/linux-docker-port-mapping/featured-Docker-port-mapping.png">
+  <meta name="twitter:title" content="Linux下的docker端口映射">
+  <meta name="twitter:description" content="Linux Docker Port Mapping">
 
   
   <script type="application/ld+json">
@@ -90,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "Linux实用小技巧",
-    "headline": "Linux实用小技巧",
-    "description": "Linux Practical Tips",
-    "abstract": "\u003cp\u003e\u003ca href=\u0022https:\/\/www.vxworks.net\/linux\/1231-compile-linux-kernel\u0022 target=\u0022_blank\u0022\u003eLinux\u003c\/a\u003e 是一个强大的操作系统，有许多实用的命令和技巧可以帮助你更高效地使用它。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e查看文件校验值 \n    \u003cdiv id=\u0022%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C%E5%80%BC\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C%E5%80%BC\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e在文件进行拷贝或者进行传输的时候，可能有损坏或者被修改的可能，这时候可以查看校验值来确认一下。\u003c\/p\u003e\n\u003cp\u003e比如我们平时工作需要用到其它组给我们提供的一些对接的程序，每次程序运行不符合他们的预期的时候，我们都会对一下两边的md5校验值。\u003c\/p\u003e\n\u003cp\u003e生成文件的校验值的方法有很多种，常用的有md5sum校验、crc校验、sum校验等。\u003c\/p\u003e",
+    "name": "Linux下的docker端口映射",
+    "headline": "Linux下的docker端口映射",
+    "description": "Linux Docker Port Mapping",
+    "abstract": "\u003cp\u003e在Linux环境中使用\u003ca href=\u0022https:\/\/www.kad8.com\/software\/limit-memory-and-cpu-using-docker-compose\/\u0022 target=\u0022_blank\u0022\u003eDocker\u003c\/a\u003e时，端口映射是一个常见的需求，它允许你将容器内部的端口映射到宿主机上，从而实现外部访问容器内运行的服务。以下是端口映射的详细解释和实战案例。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e端口映射的概念 \n    \u003cdiv id=\u0022%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E7%9A%84%E6%A6%82%E5%BF%B5\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E7%9A%84%E6%A6%82%E5%BF%B5\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e端口映射是指将容器内部的端口映射到宿主机的端口上，这样外部可以通过宿主机的IP地址和指定的端口访问容器内的服务。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e实现端口映射 \n    \u003cdiv id=\u0022%E5%AE%9E%E7%8E%B0%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%AE%9E%E7%8E%B0%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eDocker提供了两种方式来实现端口映射：\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/linux-practical-tips\/",
+    "url" : "https:\/\/www.kad8.com\/software\/linux-docker-port-mapping\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-16T13:20:57\u002b08:00",
-    "datePublished": "2024-11-16T13:20:57\u002b08:00",
+    "dateCreated": "2024-11-16T21:33:44\u002b08:00",
+    "datePublished": "2024-11-16T21:33:44\u002b08:00",
     
-    "dateModified": "2024-11-16T13:20:57\u002b08:00",
+    "dateModified": "2024-11-16T21:33:44\u002b08:00",
     
-    "keywords": ["Linux"],
+    "keywords": ["Docker","Linux"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "173"
+    "wordCount": "142"
   }]
   </script>
 
@@ -413,7 +414,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Linux实用小技巧
+      Linux下的docker端口映射
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -454,7 +455,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T13:20:57&#43;08:00">2024-11-16</time>
+  <time datetime="2024-11-16T21:33:44&#43;08:00">2024-11-16</time>
   
 
   
@@ -477,6 +478,14 @@
   
   
   
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Docker
+  </span>
+</span>
+  </span>
   
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
@@ -547,14 +556,22 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#查看文件校验值">查看文件校验值</a></li>
-    <li><a href="#查找文件位置">查找文件位置</a>
+    <li><a href="#端口映射的概念">端口映射的概念</a></li>
+    <li><a href="#实现端口映射">实现端口映射</a></li>
+    <li><a href="#实战案例">实战案例</a>
       <ul>
-        <li><a href="#locate">locate</a></li>
-        <li><a href="#find">find</a></li>
-        <li><a href="#命令行编辑技巧">命令行编辑技巧</a></li>
-        <li><a href="#查看某个进程的pid">查看某个进程的pid</a></li>
-        <li><a href="#查看某些进程的一些运行情况">查看某些进程的一些运行情况</a></li>
+        <li><a href="#随机映射端口">随机映射端口</a></li>
+        <li><a href="#指定端口映射">指定端口映射</a></li>
+        <li><a href="#映射到特定地址的指定端口">映射到特定地址的指定端口</a></li>
+        <li><a href="#映射到特定地址的任意端口">映射到特定地址的任意端口</a></li>
+        <li><a href="#查看映射端口配置">查看映射端口配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#注意事项">注意事项</a></li>
+    <li><a href="#常见问题">常见问题</a>
+      <ul>
+        <li><a href="#访问映射端口出现404">访问映射端口出现404</a></li>
+        <li><a href="#如何给运行中的容器设置端口映射">如何给运行中的容器设置端口映射</a></li>
       </ul>
     </li>
   </ul>
@@ -570,14 +587,22 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#查看文件校验值">查看文件校验值</a></li>
-    <li><a href="#查找文件位置">查找文件位置</a>
+    <li><a href="#端口映射的概念">端口映射的概念</a></li>
+    <li><a href="#实现端口映射">实现端口映射</a></li>
+    <li><a href="#实战案例">实战案例</a>
       <ul>
-        <li><a href="#locate">locate</a></li>
-        <li><a href="#find">find</a></li>
-        <li><a href="#命令行编辑技巧">命令行编辑技巧</a></li>
-        <li><a href="#查看某个进程的pid">查看某个进程的pid</a></li>
-        <li><a href="#查看某些进程的一些运行情况">查看某些进程的一些运行情况</a></li>
+        <li><a href="#随机映射端口">随机映射端口</a></li>
+        <li><a href="#指定端口映射">指定端口映射</a></li>
+        <li><a href="#映射到特定地址的指定端口">映射到特定地址的指定端口</a></li>
+        <li><a href="#映射到特定地址的任意端口">映射到特定地址的任意端口</a></li>
+        <li><a href="#查看映射端口配置">查看映射端口配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#注意事项">注意事项</a></li>
+    <li><a href="#常见问题">常见问题</a>
+      <ul>
+        <li><a href="#访问映射端口出现404">访问映射端口出现404</a></li>
+        <li><a href="#如何给运行中的容器设置端口映射">如何给运行中的容器设置端口映射</a></li>
       </ul>
     </li>
   </ul>
@@ -663,164 +688,189 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p><a href="https://www.vxworks.net/linux/1231-compile-linux-kernel" target="_blank">Linux</a> 是一个强大的操作系统，有许多实用的命令和技巧可以帮助你更高效地使用它。</p>
+          <p>在Linux环境中使用<a href="https://www.kad8.com/software/limit-memory-and-cpu-using-docker-compose/" target="_blank">Docker</a>时，端口映射是一个常见的需求，它允许你将容器内部的端口映射到宿主机上，从而实现外部访问容器内运行的服务。以下是端口映射的详细解释和实战案例。</p>
 
 
-<h2 class="relative group">查看文件校验值 
-    <div id="%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C%E5%80%BC" class="anchor"></div>
+<h2 class="relative group">端口映射的概念 
+    <div id="%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E7%9A%84%E6%A6%82%E5%BF%B5" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C%E5%80%BC" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E7%9A%84%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>在文件进行拷贝或者进行传输的时候，可能有损坏或者被修改的可能，这时候可以查看校验值来确认一下。</p>
-<p>比如我们平时工作需要用到其它组给我们提供的一些对接的程序，每次程序运行不符合他们的预期的时候，我们都会对一下两边的md5校验值。</p>
-<p>生成文件的校验值的方法有很多种，常用的有md5sum校验、crc校验、sum校验等。</p>
-<p>命令分别为：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">md5sum file_name
-</span></span><span class="line"><span class="cl">cksum file_name
-</span></span><span class="line"><span class="cl">sum 算法参数 file_name
-</span></span></code></pre></div><p>例如：</p>
-<p>我们以一个test.txt文件为例：</p>
-<ul>
-<li>md5sum校验</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">md5sum test.txt
-</span></span></code></pre></div><ul>
-<li>crc校验</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cksum test.txt
-</span></span></code></pre></div><ul>
-<li>sum校验</li>
-</ul>
-<p>sum校验有两种算法，我们可以通过参数进行配置：</p>
-<pre tabindex="0"><code class="language-mark" data-lang="mark">-r：表示使用system v算法。
--s：表示使用BSD算法。
-</code></pre><p>我们不进行配置时，默认用的是system v算法。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sum -r test.txt
-</span></span><span class="line"><span class="cl">sum -s test.txt
-</span></span></code></pre></div>
+<p>端口映射是指将容器内部的端口映射到宿主机的端口上，这样外部可以通过宿主机的IP地址和指定的端口访问容器内的服务。</p>
 
-<h2 class="relative group">查找文件位置 
-    <div id="%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE" class="anchor"></div>
+
+<h2 class="relative group">实现端口映射 
+    <div id="%E5%AE%9E%E7%8E%B0%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%AE%9E%E7%8E%B0%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>Docker提供了两种方式来实现端口映射：</p>
+<ul>
+<li>
+<p>随机映射：使用 -P 参数，Docker会随机映射一个端口到容器开放的网络端口。可以通过 <code>docker ps</code> 查看映射的端口</p>
+</li>
+<li>
+<p>指定端口映射：使用 -p 参数，可以指定要映射的端口。格式支持 <code>IP:hostPort:containerPort | IP::containerPort | hostPort:containerPort</code></p>
+</li>
+</ul>
+
+
+<h2 class="relative group">实战案例 
+    <div id="%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B" aria-label="锚点">#</a>
     </span>        
     
 </h2>
 
 
-<h3 class="relative group">locate 
-    <div id="locate" class="anchor"></div>
+<h3 class="relative group">随机映射端口 
+    <div id="%E9%9A%8F%E6%9C%BA%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#locate" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E9%9A%8F%E6%9C%BA%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3" aria-label="锚点">#</a>
     </span>        
     
 </h3>
-<p>查找文件大家一般都习惯用find吧，但我觉得有时候locate更快一些，所以我一般都会先使用locate。</p>
-<p>locate 与 find 不同: find 是去硬盘找，locate 只在 <code>/var/lib/slocate</code> 资料库中找。locate 的速度比 find 快，它并不是真的查找，而是查数据库。</p>
-<p>有些系统可能不带有locate，需要自己安装。比如，Ubuntu可以输入如下命令进行安装：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get update
-</span></span><span class="line"><span class="cl">apt-get install mlocate
-</span></span></code></pre></div><p>locate查找文件的命令很简单：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lcoate file_name
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -P training/webapp python app.py
+</span></span></code></pre></div><p>运行上述命令后，Docker会随机映射一个端口，并可以通过 docker ps 查看映射详情。</p>
 
-<h3 class="relative group">find 
-    <div id="find" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#find" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>find命令可以用名字、类型、所属人、大小等来进行搜索。</p>
-<p>搜索文件基本语法：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find path -option file_name
-</span></span></code></pre></div><p>如使用名字来搜索stdio.h文件：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find / -name stdio.h
-</span></span></code></pre></div>
 
-<h3 class="relative group">命令行编辑技巧 
-    <div id="%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96%E8%BE%91%E6%8A%80%E5%B7%A7" class="anchor"></div>
+<h3 class="relative group">指定端口映射 
+    <div id="%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96%E8%BE%91%E6%8A%80%E5%B7%A7" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" aria-label="锚点">#</a>
     </span>        
     
 </h3>
-<p>我们在终端里误输入了一些比较长的内容：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">it@vxworks:~$ dsfdsfdddddddddddddddddddddddddddddddddddfsgadgdsgasdgsdhfdkshfkjdshflksdhfkldshfkj
-</span></span></code></pre></div><p>怎么比较快的删除掉呢？疯狂地按退格键当然可以达到目的。但是有更快速的方法：</p>
-<p>输入快捷键 <code>ctrl+u</code> 即可把光标前面的内容全删掉。除此之外，还有如下几个实用且常用的快捷键：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -p 5000:5000 training/webapp python app.py
+</span></span></code></pre></div><p>这个命令将宿主机的5000端口映射到容器的5000端口。</p>
+
+
+<h3 class="relative group">映射到特定地址的指定端口 
+    <div id="%E6%98%A0%E5%B0%84%E5%88%B0%E7%89%B9%E5%AE%9A%E5%9C%B0%E5%9D%80%E7%9A%84%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%98%A0%E5%B0%84%E5%88%B0%E7%89%B9%E5%AE%9A%E5%9C%B0%E5%9D%80%E7%9A%84%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
+</span></span></code></pre></div><p>这个命令将localhost的5000端口映射到容器的5000端口。</p>
+
+
+<h3 class="relative group">映射到特定地址的任意端口 
+    <div id="%E6%98%A0%E5%B0%84%E5%88%B0%E7%89%B9%E5%AE%9A%E5%9C%B0%E5%9D%80%E7%9A%84%E4%BB%BB%E6%84%8F%E7%AB%AF%E5%8F%A3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%98%A0%E5%B0%84%E5%88%B0%E7%89%B9%E5%AE%9A%E5%9C%B0%E5%9D%80%E7%9A%84%E4%BB%BB%E6%84%8F%E7%AB%AF%E5%8F%A3" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -p 127.0.0.1::5000 training/webapp python app.py
+</span></span></code></pre></div><p>这个命令将localhost的任意端口映射到容器的5000端口。</p>
+
+
+<h3 class="relative group">查看映射端口配置 
+    <div id="%E6%9F%A5%E7%9C%8B%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker port nostalgic_morse <span class="m">5000</span>
+</span></span><span class="line"><span class="cl">127.0.0.1:49155
+</span></span></code></pre></div><p>通过 docker port 命令可以查看端口映射配置。</p>
+
+
+<h2 class="relative group">注意事项 
+    <div id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
 <ul>
-<li>ctrl+k：把光标后面的内容全删掉</li>
-<li>ctrl+a：光标移到开头处</li>
-<li>ctrl+e：光标移动到末尾处</li>
+<li>一个指定的端口上只能绑定一个容器</li>
+<li>可以使用 docker inspect 命令获取容器的详细信息，包括内部网络和IP地址</li>
+<li>如果需要映射UDP端口，可以在 -p 后面添加 /udp 标记</li>
 </ul>
-<p>除此之外，命令行还有很多实用常用、实用不常用的快捷方式，感兴趣的小伙伴可以自己去学习。</p>
 
 
-<h3 class="relative group">查看某个进程的pid 
-    <div id="%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E8%BF%9B%E7%A8%8B%E7%9A%84pid" class="anchor"></div>
+<h2 class="relative group">常见问题 
+    <div id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E8%BF%9B%E7%A8%8B%E7%9A%84pid" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
     </span>        
     
-</h3>
-<p>命令：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pidof process_name
-</span></span></code></pre></div>
+</h2>
 
-<h3 class="relative group">查看某些进程的一些运行情况 
-    <div id="%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%BA%9B%E8%BF%9B%E7%A8%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5" class="anchor"></div>
+
+<h3 class="relative group">访问映射端口出现404 
+    <div id="%E8%AE%BF%E9%97%AE%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3%E5%87%BA%E7%8E%B0404" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%BA%9B%E8%BF%9B%E7%A8%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%AE%BF%E9%97%AE%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3%E5%87%BA%E7%8E%B0404" aria-label="锚点">#</a>
     </span>        
     
 </h3>
-<p>top命令可以查看进程的一些信息，但是系统运行的进程过多，不利于我们查看某些进程的运行情况</p>
-<p>这时候我们可以通过如下命令查看指定进程的运行情况，例如：</p>
-<p>查看kcalc进程的情况，命令：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">top -p <span class="sb">`</span>pidof kcalc<span class="sb">`</span>
-</span></span></code></pre></div><p>这就简洁多了。</p>
-<p>注意：</p>
-<p>这里的&quot;`号&quot;并不是单引号！</p>
-<p>这个符号在键盘上感叹号<code>!</code>键的左边。</p>
-<p>查看多个进程，如：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">top -p <span class="sb">`</span>pidof kcalc<span class="sb">`</span> -p <span class="sb">`</span>pidof test_x86<span class="sb">`</span>
-</span></span></code></pre></div><p>除了上述的一些小技巧，还有诸如下面的实用技巧，这里先简单列出来，后面再做详细介绍。</p>
+<p>如果访问映射端口时出现404错误，可能是因为容器内部的服务没有正确启动，或者访问的路径不正确。可以通过 docker logs [容器ID] 查看容器日志来诊断问题。</p>
+
+
+<h3 class="relative group">如何给运行中的容器设置端口映射 
+    <div id="%E5%A6%82%E4%BD%95%E7%BB%99%E8%BF%90%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%A6%82%E4%BD%95%E7%BB%99%E8%BF%90%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>可以通过以下两种方法给运行中的容器设置端口映射：</p>
+<p><b>使用iptables</b></p>
+<p>获取容器IP：<code>docker inspect [容器名称] | grep IPAddress</code></p>
+<p>iptables转发端口：例如将容器的8000端口映射到宿主机的8001端口：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">iptables -t nat -A DOCKER -p tcp --dport <span class="m">8001</span> -j DNAT --to-destination <span class="o">[</span>容器IP<span class="o">]</span>:8000
+</span></span></code></pre></div><p><b>提交容器为镜像并重新运行</b></p>
 <ul>
-<li>查看命令历史：你可以使用 history 命令查看近期使用过的命令，还可以通过管道和 grep 命令过滤以某字符串开头的命令</li>
-<li>文件同步：使用 rsync 命令可以在本地和远程之间同步文件，它比 cp 或 scp 命令更强大、更灵活</li>
-<li>查看文件内容：使用 less 或 tail 命令可以查看文件的内容，less 可以向前翻页，而 tail 可以查看文件的最后几行</li>
-<li>查看进程：使用 ps 命令可以查看当前运行的进程，你可以使用 grep 命令过滤出以某字符串开头的进程</li>
-<li>端口转发：使用 ssh 命令可以做端口转发，将远程主机的某个端口映射到本地的一个端口</li>
-<li>数据备份：可以使用 tar 命令将目录或文件打包成 tar 包，然后使用 cpio 或 dd 命令将 tar 包备份到另一个位置</li>
-<li>系统监控：使用 top 或 htop 命令可以实时查看系统的 CPU、内存、网络等的使用情况</li>
-<li>网络测试：使用 ping 和 traceroute 命令可以测试网络连通性和路由路径</li>
-<li>文本处理：使用 awk、sed、grep 等命令可以处理文本数据，进行数据筛选、替换、排序等操作</li>
+<li>提交容器为镜像：<code>docker commit [容器ID] [新镜像名称]:[标签]</code></li>
+<li>运行新镜像并添加端口映射：<code>docker run -d -p [外部端口]:[内部端口] [新镜像名称]:[标签]</code></li>
 </ul>
-<p>以上只是一些 Linux 实用小技巧的一些例子，实际上 Linux 有很多功能强大的命令和工具，希望本文能够对你有所帮助。</p>
+<p>通过这些步骤，你可以灵活地配置Docker容器的端口映射，实现外部对容器内服务的访问。</p>
 
           
           
@@ -838,7 +888,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/linux-practical-tips/&amp;title=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/linux-docker-port-mapping/&amp;title=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -857,7 +907,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/linux-practical-tips/&amp;text=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/linux-docker-port-mapping/&amp;text=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -875,7 +925,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7&#43;https://www.kad8.com/software/linux-practical-tips/"
+      href="https://bsky.app/intent/compose?text=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84&#43;https://www.kad8.com/software/linux-docker-port-mapping/"
       title=""
       aria-label=""
       >
@@ -893,7 +943,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7%20https://www.kad8.com/software/linux-practical-tips/"
+      href="https://s2f.kytta.dev/?text=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84%20https://www.kad8.com/software/linux-docker-port-mapping/"
       title=""
       aria-label=""
       >
@@ -912,7 +962,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/linux-practical-tips/&amp;resubmit=true&amp;title=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/linux-docker-port-mapping/&amp;resubmit=true&amp;title=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -931,7 +981,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/linux-practical-tips/&amp;description=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/linux-docker-port-mapping/&amp;description=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -950,7 +1000,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/linux-practical-tips/&amp;quote=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/linux-docker-port-mapping/&amp;quote=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -969,7 +1019,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/linux-practical-tips/&amp;subject=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="mailto:?body=https://www.kad8.com/software/linux-docker-port-mapping/&amp;subject=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -988,7 +1038,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/linux-practical-tips/&amp;resubmit=true&amp;title=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/linux-docker-port-mapping/&amp;resubmit=true&amp;title=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title=""
       aria-label=""
       >
@@ -1007,7 +1057,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/linux-practical-tips/&amp;resubmit=true&amp;title=Linux%e5%ae%9e%e7%94%a8%e5%b0%8f%e6%8a%80%e5%b7%a7"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/linux-docker-port-mapping/&amp;resubmit=true&amp;title=Linux%e4%b8%8b%e7%9a%84docker%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84"
       title=""
       aria-label=""
       >
@@ -1030,6 +1080,222 @@
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/software/how-to-configure-tftp-server-in-linux/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-configure-tftp-server-in-linux/featured-How-to-Install-TFTP-Server-on-Ubuntu_hu9798322574238298724.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/software/how-to-configure-tftp-server-in-linux/">Linux下如何配置tftp服务器</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-22T23:52:42&#43;08:00">2024-10-22</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Linux
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tftp/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Tftp
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/software/linux-practical-tips/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-practical-tips/featured-linux-practical-tips_hu5385194185029379338.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/software/linux-practical-tips/">Linux实用小技巧</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-16T13:20:57&#43;08:00">2024-11-16</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Linux
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
   
   
 
@@ -1143,230 +1409,6 @@
   </a>
 
   
-  
-
-  <a href="/software/introduction-to-linux-lvs/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/introduction-to-linux-lvs/featured-linux-lvs_hu12737118403372192882.webp);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/introduction-to-linux-lvs/">Linux LVS简介</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-03T11:42:55&#43;08:00">2024-11-03</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pipe/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pipe
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/software/introduction-to-linux-pipe/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/introduction-to-linux-pipe/featured-linux-pipe_hu16528638391246457519.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/introduction-to-linux-pipe/">Linux 管道Pipe简介</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-10-23T13:27:46&#43;08:00">2024-10-23</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pipe/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pipe
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -1380,8 +1422,8 @@
           
         
       <script>
-        var oid = "views_software\/linux-practical-tips\/index.md"
-        var oid_likes = "likes_software\/linux-practical-tips\/index.md"
+        var oid = "views_software\/linux-docker-port-mapping\/index.md"
+        var oid_likes = "likes_software\/linux-docker-port-mapping\/index.md"
       </script>
       
       
@@ -1401,7 +1443,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/commands-to-easily-view-linux-log-files/">
+            <a class="flex group mr-3" href="/software/linux-practical-tips/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1413,11 +1455,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >轻松查看Linux日志文件的命令</span
+                  >Linux实用小技巧</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-05T00:26:40&#43;08:00">2024-11-05</time>
+                    <time datetime="2024-11-16T13:20:57&#43;08:00">2024-11-16</time>
                   
                 </span>
               </span>
@@ -1425,28 +1467,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/linux-docker-port-mapping/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux下的docker端口映射</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-16T21:33:44&#43;08:00">2024-11-16</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
