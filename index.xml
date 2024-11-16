@@ -9,6 +9,36 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>三星公司的CXL内存模块解决方案</title>
+      <link>https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/</link>
+      <pubDate>Sat, 16 Nov 2024 10:20:09 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/</guid>
+      <description>&lt;p&gt;三星提供的内存选项已经变得更容易、更高效。三星电子开发出了在存储机架中占用专有槽位的CMM-B（CXL Memory Module-Box）。CMM-B集成到超微即插即用机架规模解决方案中，可以在降低TCO的同时更快地提高生产率。&lt;/p&gt;
+&lt;p&gt;机架级可组合内存池解决方案是业界首个机架级内存解决方案，用于高度可扩展和可组合的分解内存基础设施。它通过利用CMM-B和内存池来无缝扩展内存容量和带宽，从而提供灵活的内存资源分配。使用这种可组合的内存架构，可以避免内存搁浅，并启用按需内存容量和带宽扩展。该解决方案由机架级内存库（CMM-B）、多个应用程序主机和三星Cognos管理控制台以及ToR交换机组成。机架规模解决方案加快了CMM-B集成机架规模解决方案的运行时间。该解决方案是通过三星和超微的大力合作共同开发的。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Samsung-CMM-B.png&#34; alt=&#34;Samsung CXL Memory Module-Box&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;什么是CMM-B 
+    &lt;div id=&#34;%E4%BB%80%E4%B9%88%E6%98%AFcmm-b&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BB%80%E4%B9%88%E6%98%AFcmm-b&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;它是用于机架计算的内存池设备，利用&lt;a href=&#34;https://www.gaitpu.com/data-center/server/cxl-protocol-evolution&#34; target=&#34;_blank&#34;&gt;Compute Express Link&lt;/a&gt; (简称CXL)。CMM-B通过支持最多24个E3的连接来实现灵活的内存资源分配。S CXL内存模块- DRAM (CMM-D)连接在机架设备中。该技术创建了一个内存架构，提供以下功能：&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/featured-CMM-D.png" />
+    </item>
+    
+    <item>
       <title>OpenAI要自研芯片了</title>
       <link>https://www.kad8.com/ai/openai-reportedly-is-making-its-first-ai-chip/</link>
       <pubDate>Thu, 07 Nov 2024 00:41:58 +0800</pubDate>
