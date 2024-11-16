@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.kad8.com/software/linux-docker-port-mapping/</loc>
-    <lastmod>2024-11-16T21:33:44+08:00</lastmod>
+    <loc>https://www.kad8.com/software/introduction-to-google-logging-library/</loc>
+    <lastmod>2024-11-16T22:08:24+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-11-16T22:08:24+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/linux-docker-port-mapping/</loc>
     <lastmod>2024-11-16T21:33:44+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
