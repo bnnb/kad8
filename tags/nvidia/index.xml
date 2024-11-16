@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 16 Nov 2024 12:18:33 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Nov 2024 23:21:32 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达和谷歌拥抱RISC-V</title>
+      <link>https://www.kad8.com/ai/nvidia-google-to-speak-about-risc-v-use-at-annual-summit/</link>
+      <pubDate>Sat, 16 Nov 2024 23:21:32 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/nvidia-google-to-speak-about-risc-v-use-at-annual-summit/</guid>
+      <description>&lt;p&gt;Nvidia 在 10 月 22 日至 24 日举行的 RISC-V 峰会上讨论了如何使用 RISC-V 架构。这家 GPU 制造商已在使用 RISC-V CPU 架构九年之久。Nvidia 副总裁 Frans Sijstermans 于 10 月 22 日发表了 20 分钟的主题演讲，并透露更多细节。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/nvidia-google-to-speak-about-risc-v-use-at-annual-summit/featured-nvidia-google.jpg" />
+    </item>
+    
     <item>
       <title>NVIDIA CUDA简介</title>
       <link>https://www.kad8.com/ai/introduction-to-nvidia-cuda/</link>

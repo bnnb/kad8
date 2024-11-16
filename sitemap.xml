@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-16T23:05:57+08:00</lastmod>
+    <lastmod>2024-11-16T23:21:32+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/nvidia-google-to-speak-about-risc-v-use-at-annual-summit/</loc>
+    <lastmod>2024-11-16T23:21:32+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
