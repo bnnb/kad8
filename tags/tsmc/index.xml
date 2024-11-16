@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Thu, 07 Nov 2024 00:41:58 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/tsmc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Nov 2024 23:58:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/tsmc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>曝台积电7nm芯片将停供中国大陆</title>
+      <link>https://www.kad8.com/ai/tsmc-reportedly-to-halt-7nm-and-below-chip-shipments-to-china/</link>
+      <pubDate>Fri, 08 Nov 2024 23:58:15 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/tsmc-reportedly-to-halt-7nm-and-below-chip-shipments-to-china/</guid>
+      <description>&lt;p&gt;援引多个消息源报道，台积电已向所有中国大陆AI芯片客户发送正式电子邮件，宣布自下周11月11日起，将暂停向中国大陆AI/GPU客户供应所有7nm及更先进工艺的芯片。&lt;/p&gt;
+&lt;p&gt;分析称，在芯片大战愈演愈烈之际，台积电此举凸显了这家代工巨头在全球半导体供应链中的微妙地位。在新任总统特朗普声称台积电应该缴纳“保护费”的情况下，该公司的最新举动似乎是在努力与美国商务部保持一致。报道称，双方共同建立了一个严格的审查制度，以完全阻止中国获得先进制程技术。&lt;/p&gt;
+&lt;p&gt;另一家媒体SEMICONVoice报道称，美国商务部已指示台积电采取这一行动，因为生产只能在经过美国商务部工业和安全局（BIS）审查和批准并获得许可证后才能进行。这将收紧中国所有AI芯片、GPU和自动驾驶ADAS系统获取先进7nm及以下制程的能力。&lt;/p&gt;
+&lt;p&gt;据彭博社和路透社最新报道，台积电已几乎敲定了数十亿美元的资助和贷款协议，以支持其在美国的工厂，这可能使其很快能从美国政府获得资金。台积电4月宣布的援助计划包括66亿美元的资助和最高50亿美元的贷款，以援助亚利桑那州三座半导体工厂的建设。&lt;/p&gt;
+&lt;p&gt;如果消息属实，对于中国大陆的&lt;a href=&#34;https://www.gaitpu.com&#34; target=&#34;_blank&#34;&gt;AI&lt;/a&gt;和GPU公司来说，这将是沉重的打击，他们将无法再使用台积电的先进工艺，这可能导致更高的成本和更长的上市时间，并严重影响其产品性能和市场竞争力。报道称，供应链重组可能随之而来，大陆的芯片设计公司可能需要寻求其他代工厂。&lt;/p&gt;
+&lt;p&gt;据TrendForce数据，截至2024年第二季度，中芯国际保持5.7%的稳固市场份额，位居第三，台积电（62.3%）和三星（11.5%）分列前两位。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/tsmc-reportedly-to-halt-7nm-and-below-chip-shipments-to-china/featured-TSMC-halt-7nm.jpg" />
+    </item>
+    
     <item>
       <title>OpenAI要自研芯片了</title>
       <link>https://www.kad8.com/ai/openai-reportedly-is-making-its-first-ai-chip/</link>
