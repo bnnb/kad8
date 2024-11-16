@@ -14,7 +14,7 @@
       <pubDate>Sat, 16 Nov 2024 22:08:24 +0800</pubDate>
       
       <guid>https://www.kad8.com/software/introduction-to-google-logging-library/</guid>
-      <description>&lt;p&gt;今天给大家介绍一下 Google 的 glog，真的是一个非常棒的日志库，目前已经有 7000+ star。&lt;/p&gt;
+      <description>&lt;p&gt;今天给大家介绍一下 &lt;a href=&#34;https://www.kad8.com/software/introduction-to-google-logging-library/&#34; target=&#34;_blank&#34;&gt;Google 的 glog&lt;/a&gt;，真的是一个非常棒的日志库，目前已经有 7000+ star。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
       &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./google-logging-library.webp&#34; alt=&#34;Google Logging Library&#34; /&gt;
@@ -26,7 +26,8 @@
 &lt;p&gt;该库多个日志级别，可以根据需求选择适当的级别记录日志信息，方便调试和排查问题。&lt;/p&gt;
 &lt;p&gt;另外 glog 被设计为多线程安全的，可以在多线程环境下安全地使用，避免日志输出竞争条件。&lt;/p&gt;
 &lt;p&gt;该库支持根据文件大小或时间等条件自动切换日志文件，避免单个日志文件过大。可以自定义日志的格式，包括时间戳、日志级别、文件名、行号等信息，满足不同需求。&lt;/p&gt;
-&lt;p&gt;glog 可以记录发生日志记录的位置的栈跟踪信息，有助于定位问题。&lt;/p&gt;</description>
+&lt;p&gt;glog 可以记录发生日志记录的位置的栈跟踪信息，有助于定位问题。&lt;/p&gt;
+&lt;p&gt;另外该库还是跨平台的可以在多个操作系统上运行，包括 Linux、Windows、Mac 等。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/introduction-to-google-logging-library/featured-glog.png" />
     </item>
     
