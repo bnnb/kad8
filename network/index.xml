@@ -30,7 +30,7 @@
 &lt;p&gt;传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./vxlan-evpn-6.jpeg&#34; alt=&#34;Why VXLAN need EVPN&#34; /&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./vxlan-evpn-1.jpeg&#34; alt=&#34;Why VXLAN need EVPN&#34; /&gt;
       &lt;figcaption&gt;图 1 - 传统三层网络&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/p&gt;</description>
