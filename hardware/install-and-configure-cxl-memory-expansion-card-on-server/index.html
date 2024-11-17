@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>RS485设计指南 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="RS485设计指南 &middot; Kontronn Asia Design Center" />
+  <title>CXL内存扩展卡在服务器上如何安装和配置 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="CXL内存扩展卡在服务器上如何安装和配置 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="RS485 Design Guide" />
-  <meta name="keywords" content="RS485, UART, " />
+  <meta name="description" content="Install and Configure Cxl Memory Expansion Card on Server" />
+  <meta name="keywords" content="CXL, Memory Expansion, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/hardware/rs485-design-guide/" />
+  <link rel="canonical" href="https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/hardware/rs485-design-guide/">
+  <meta property="og:url" content="https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="RS485设计指南">
-  <meta property="og:description" content="RS485 Design Guide">
+  <meta property="og:title" content="CXL内存扩展卡在服务器上如何安装和配置">
+  <meta property="og:description" content="Install and Configure Cxl Memory Expansion Card on Server">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="hardware">
-    <meta property="article:published_time" content="2024-11-16T20:53:56+08:00">
-    <meta property="article:modified_time" content="2024-11-16T20:53:56+08:00">
-    <meta property="article:tag" content="RS485">
-    <meta property="article:tag" content="UART">
-    <meta property="og:image" content="https://www.kad8.com/hardware/rs485-design-guide/featured-RS485.png">
+    <meta property="article:published_time" content="2024-11-17T19:19:11+08:00">
+    <meta property="article:modified_time" content="2024-11-17T19:19:11+08:00">
+    <meta property="article:tag" content="CXL">
+    <meta property="article:tag" content="Memory Expansion">
+    <meta property="og:image" content="https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/featured-SK-Hynix_CXL.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/hardware/rs485-design-guide/featured-RS485.png">
-  <meta name="twitter:title" content="RS485设计指南">
-  <meta name="twitter:description" content="RS485 Design Guide">
+  <meta name="twitter:image" content="https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/featured-SK-Hynix_CXL.png">
+  <meta name="twitter:title" content="CXL内存扩展卡在服务器上如何安装和配置">
+  <meta name="twitter:description" content="Install and Configure Cxl Memory Expansion Card on Server">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Hardwares",
-    "name": "RS485设计指南",
-    "headline": "RS485设计指南",
-    "description": "RS485 Design Guide",
-    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003e引言 \n    \u003cdiv id=\u0022%E5%BC%95%E8%A8%80\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%BC%95%E8%A8%80\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e1983 年，电子工业协会 (EIA) 批准了一个新的平衡传输标准，称之为 \u003ca href=\u0022https:\/\/www.vxworks.net\/bsp\/349-design-and-implementation-of-rs485-mvb-gateway-based-on-vxworks\u0022 target=\u0022_blank\u0022\u003eRS-485\u003c\/a\u003e。调查发现，RS-485 备受赞誉并被广泛应用到工业、医疗和消费类产品，成为了工业接口的主力规范。\u003c\/p\u003e",
+    "name": "CXL内存扩展卡在服务器上如何安装和配置",
+    "headline": "CXL内存扩展卡在服务器上如何安装和配置",
+    "description": "Install and Configure Cxl Memory Expansion Card on Server",
+    "abstract": "\u003cp\u003e本文介绍一下在服务器中安装，配置，调试\u003ca href=\u0022https:\/\/www.kad8.com\/hardware\/cxl-memory-module-box-cmm-b\/\u0022 target=\u0022_blank\u0022\u003eCXL Memory Expansion Card\u003c\/a\u003e的详细的过程，步骤和流程，注意事项，以及可能碰到的各种问题和解决方法，以及匹配的服务器所必需的前提条件。\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/CXL-Memory-1.png\u0022 alt=\u0022CXL Memory Expansion\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/CXL-Memory-2.png\u0022 alt=\u0022CXL Memory Expansion\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e\n\u003cp\u003e安装、配置和调试CXL（Compute Express Link）内存扩展卡是一个复杂的过程，需要对硬件和软件环境进行精确配置，以确保性能和稳定性。以下是详细的步骤、注意事项以及可能遇到的问题和解决方法。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e预先准备 \n    \u003cdiv id=\u0022%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e在安装CXL内存扩展卡之前，确保以下条件和设备到位：\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/hardware\/rs485-design-guide\/",
+    "url" : "https:\/\/www.kad8.com\/hardware\/install-and-configure-cxl-memory-expansion-card-on-server\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-16T20:53:56\u002b08:00",
-    "datePublished": "2024-11-16T20:53:56\u002b08:00",
+    "dateCreated": "2024-11-17T19:19:11\u002b08:00",
+    "datePublished": "2024-11-17T19:19:11\u002b08:00",
     
-    "dateModified": "2024-11-16T20:53:56\u002b08:00",
+    "dateModified": "2024-11-17T19:19:11\u002b08:00",
     
-    "keywords": ["RS485","UART"],
+    "keywords": ["CXL","Memory Expansion"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "243"
+    "wordCount": "82"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      RS485设计指南
+      CXL内存扩展卡在服务器上如何安装和配置
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T20:53:56&#43;08:00">2024-11-16</time>
+  <time datetime="2024-11-17T19:19:11&#43;08:00">2024-11-17</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rs485/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RS485
+    CXL
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/uart/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/memory-expansion/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    UART
+    Memory Expansion
   </span>
 </span>
   </span>
@@ -582,16 +582,20 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#引言">引言</a></li>
-    <li><a href="#标准和特性">标准和特性</a></li>
-    <li><a href="#网络拓扑">网络拓扑</a></li>
-    <li><a href="#信号电平">信号电平</a></li>
-    <li><a href="#电缆类型">电缆类型</a></li>
-    <li><a href="#总线终端和存根长度">总线终端和存根长度</a></li>
-    <li><a href="#失效保护">失效保护</a></li>
-    <li><a href="#总线负载">总线负载</a></li>
-    <li><a href="#最小节点间距">最小节点间距</a></li>
-    <li><a href="#接地和隔离">接地和隔离</a></li>
+    <li><a href="#预先准备">预先准备</a></li>
+    <li><a href="#安装cxl内存扩展卡">安装CXL内存扩展卡</a></li>
+    <li><a href="#配置bios设置">配置BIOS设置</a></li>
+    <li><a href="#操作系统配置">操作系统配置</a></li>
+    <li><a href="#调试和优化">调试和优化</a></li>
+    <li><a href="#注意事项">注意事项</a></li>
+    <li><a href="#常见问题及解决方法">常见问题及解决方法</a>
+      <ul>
+        <li><a href="#cxl卡无法识别">CXL卡无法识别：</a></li>
+        <li><a href="#性能不佳或系统不稳定">性能不佳或系统不稳定：</a></li>
+        <li><a href="#设备无法加载驱动">设备无法加载驱动：</a></li>
+        <li><a href="#温度过高">温度过高：</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -605,16 +609,20 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#引言">引言</a></li>
-    <li><a href="#标准和特性">标准和特性</a></li>
-    <li><a href="#网络拓扑">网络拓扑</a></li>
-    <li><a href="#信号电平">信号电平</a></li>
-    <li><a href="#电缆类型">电缆类型</a></li>
-    <li><a href="#总线终端和存根长度">总线终端和存根长度</a></li>
-    <li><a href="#失效保护">失效保护</a></li>
-    <li><a href="#总线负载">总线负载</a></li>
-    <li><a href="#最小节点间距">最小节点间距</a></li>
-    <li><a href="#接地和隔离">接地和隔离</a></li>
+    <li><a href="#预先准备">预先准备</a></li>
+    <li><a href="#安装cxl内存扩展卡">安装CXL内存扩展卡</a></li>
+    <li><a href="#配置bios设置">配置BIOS设置</a></li>
+    <li><a href="#操作系统配置">操作系统配置</a></li>
+    <li><a href="#调试和优化">调试和优化</a></li>
+    <li><a href="#注意事项">注意事项</a></li>
+    <li><a href="#常见问题及解决方法">常见问题及解决方法</a>
+      <ul>
+        <li><a href="#cxl卡无法识别">CXL卡无法识别：</a></li>
+        <li><a href="#性能不佳或系统不稳定">性能不佳或系统不稳定：</a></li>
+        <li><a href="#设备无法加载驱动">设备无法加载驱动：</a></li>
+        <li><a href="#温度过高">温度过高：</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -698,278 +706,210 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <p>本文介绍一下在服务器中安装，配置，调试<a href="https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/" target="_blank">CXL Memory Expansion Card</a>的详细的过程，步骤和流程，注意事项，以及可能碰到的各种问题和解决方法，以及匹配的服务器所必需的前提条件。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./CXL-Memory-1.png" alt="CXL Memory Expansion" />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./CXL-Memory-2.png" alt="CXL Memory Expansion" />
+      
+    </figure>
+</p>
+<p>安装、配置和调试CXL（Compute Express Link）内存扩展卡是一个复杂的过程，需要对硬件和软件环境进行精确配置，以确保性能和稳定性。以下是详细的步骤、注意事项以及可能遇到的问题和解决方法。</p>
 
-<h2 class="relative group">引言 
-    <div id="%E5%BC%95%E8%A8%80" class="anchor"></div>
+
+<h2 class="relative group">预先准备 
+    <div id="%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%BC%95%E8%A8%80" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>1983 年，电子工业协会 (EIA) 批准了一个新的平衡传输标准，称之为 <a href="https://www.vxworks.net/bsp/349-design-and-implementation-of-rs485-mvb-gateway-based-on-vxworks" target="_blank">RS-485</a>。调查发现，RS-485 备受赞誉并被广泛应用到工业、医疗和消费类产品，成为了工业接口的主力规范。</p>
-<p>本应用报告为那些对RS-485标准不熟的工程师提供设计指南，帮助他们在最短的时间内完成稳健而可靠的数据传输设计。</p>
-<p>本应用报告为那些对 RS-485 标准不熟的工程师提供设计指南，帮助他们在最短的时间内完成稳健而可靠的数据传输设计。</p>
+<p>在安装CXL内存扩展卡之前，确保以下条件和设备到位：</p>
+<p>兼容的服务器：您的服务器必须支持<code>CXL 1.1</code>或<code>2.0</code>规范，这需要在主板和CPU架构上支持CXL协议，例如最新的英特尔<code>Xeon</code>或<code>AMD EPYC</code>处理器。</p>
+<p>固件和BIOS更新：将服务器的BIOS和固件升级到最新版本，以确保兼容性和功能支持。CXL支持通常在最新固件中提供。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./CXL-Memory-3.png" alt="CXL Memory Expansion" />
+      
+    </figure>
+</p>
+<p>操作系统支持：确保操作系统（如<a href="https://www.kad8.com/software/linux-practical-tips/" target="_blank">Linux</a>内核版本）支持CXL协议。某些分布版本如RHEL、Ubuntu、SUSE等可能已经具备对CXL设备的支持。
+所需工具：螺丝刀、电防静电腕带、操作手册。</p>
 
 
-<h2 class="relative group">标准和特性 
-    <div id="%E6%A0%87%E5%87%86%E5%92%8C%E7%89%B9%E6%80%A7" class="anchor"></div>
+<h2 class="relative group">安装CXL内存扩展卡 
+    <div id="%E5%AE%89%E8%A3%85cxl%E5%86%85%E5%AD%98%E6%89%A9%E5%B1%95%E5%8D%A1" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%87%E5%87%86%E5%92%8C%E7%89%B9%E6%80%A7" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85cxl%E5%86%85%E5%AD%98%E6%89%A9%E5%B1%95%E5%8D%A1" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>RS-485 仅是一个电气标准。与定义功能、机械和电气规格的完整接口标准相比，RS-485 仅定义了使用平衡多点传输线的驱动器和接收器的电气特性。</p>
-<p>但是，很多更高级别的标准将 RS-485 规定为引用标准，例如中国的电能表通讯协议标准 DL/T645 就明确指定以RS-485 作为物理层标准。</p>
-<p>RS-485 的主要特性：</p>
+<p>步骤</p>
 <ul>
-<li>平衡接口</li>
-<li>多点采用单一 5V 电源</li>
-<li>–7V 至 +12V 总线共模范围</li>
-<li>多达 32 个单位负载</li>
-<li>10Mbps 最大数据速率（距离为 40 英尺）</li>
-<li>4000 英尺的最大电缆长度（速率为 100kbps）</li>
+<li>关机并断电：在安装硬件之前，关闭服务器并断开所有电源连接，佩戴防静电腕带以避免静电损坏</li>
+<li>打开机箱：使用螺丝刀小心地拆开服务器机箱，找到合适的PCIe插槽</li>
+<li>插入CXL内存扩展卡：将CXL卡插入合适的PCIe插槽（通常为PCIe Gen5插槽，确保它们与主板兼容），用螺丝固定扩展卡</li>
+</ul>
+<blockquote>
+<p>像上述Samsung这类使用EDSFF接口的CXL内存扩展卡，需要使用SerialCables公司的Gen5 E3/AIC转接卡转接后才能插入标准 PCIe Gen5插槽。感兴趣可以下载参考《PCIe5&amp;6.0, CXL, NVMeNVMoF, SSD, NAND, DDR5, 800GE测试技术和工具白皮书_ver11.11》参考chapter 5.4.1.3和chapter 11.1.5。参见下图：</p>
+</blockquote>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./CXL-Memory-4.png" alt="CXL Memory Expansion" />
+      
+    </figure>
+</p>
+<ul>
+<li>连接辅助电源（如有需要）：某些CXL内存扩展卡可能需要额外的电源连接，确保按照手册说明进行连接</li>
 </ul>
 
 
-<h2 class="relative group">网络拓扑 
-    <div id="%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91" class="anchor"></div>
+<h2 class="relative group">配置BIOS设置 
+    <div id="%E9%85%8D%E7%BD%AEbios%E8%AE%BE%E7%BD%AE" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E9%85%8D%E7%BD%AEbios%E8%AE%BE%E7%BD%AE" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>RS-485 标准建议使用菊花链连接其节点，也称为合用线或总线拓扑（请参阅图 3-1）。在这种拓扑结构中，所使用的驱动器、接收器和收发器通过短网存根接入主干线。接口总线可被设计用于全双工或半双工传输（请参阅图3-2）。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-1.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>全双工实现需要两个信号对（四根电线），以及全双工收发器，其具有用于发送器和接收器的单独总线访问线路。全双工模式允许节点在一个对上发送数据，同时在另一个对上接收数据。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-2.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>在半双工模式下，仅使用一对信号，并要求在不同的时间驱动和接收数据。两种实现方式都需要通过方向控制信号（例如驱动器/接收器使能信号）对所有节点进行控制，确保在任何时候总线上只有一个驱动器处于工作状态。多个驱动器同时访问总线会导致总线争用，这在任何时候都必须通过软件控制来加以避免。</p>
+<ul>
+<li>启动服务器并进入BIOS设置：在开机过程中，按下指定的键（如F2或Del）进入BIOS界面</li>
+<li>启用CXL支持：在BIOS设置中，找到“PCIe配置”或“CXL配置”选项，确保CXL功能被启用。如果支持内存映射，需要根据具体需求进行配置</li>
+<li>调整内存配置：根据CXL内存的特性，可以配置内存的用途，如用于内存扩展、缓存等</li>
+<li>保存并退出：保存BIOS设置并重启服务器</li>
+</ul>
 
 
-<h2 class="relative group">信号电平 
-    <div id="%E4%BF%A1%E5%8F%B7%E7%94%B5%E5%B9%B3" class="anchor"></div>
+<h2 class="relative group">操作系统配置 
+    <div id="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BF%A1%E5%8F%B7%E7%94%B5%E5%B9%B3" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>符合 RS-485 标准的驱动器可在 54Ω 负载上提供不小于 1.5V 的差分输出，而符合该标准的接收器可检测到低至200mV 的差分输入。即使在电缆和连接器的信号严重衰减的情况下，这两个值仍能为高可靠性的数据传输提供了充足的余量。这种稳健性是 RS-485 非常适合在嘈杂环境中进行长距离联网的主要原因。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-3.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
+<ul>
+<li>安装必要的驱动程序：某些CXL设备可能需要特定的驱动程序。使用服务器厂商或CXL卡厂商提供的软件安装包，完成驱动程序安装。</li>
+<li>确认内存识别：使用lspci或dmesg等命令检查CXL设备是否被正确识别。例如：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lspci <span class="p">|</span> grep CXL
+</span></span><span class="line"><span class="cl">dmesg <span class="p">|</span> grep CXL
+</span></span></code></pre></div><p>调整内存管理：配置系统内存管理，使操作系统能够正确识别和利用CXL内存扩展卡。例如，调整内存分区、虚拟内存映射等。</p>
 
 
-<h2 class="relative group">电缆类型 
-    <div id="%E7%94%B5%E7%BC%86%E7%B1%BB%E5%9E%8B" class="anchor"></div>
+<h2 class="relative group">调试和优化 
+    <div id="%E8%B0%83%E8%AF%95%E5%92%8C%E4%BC%98%E5%8C%96" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%94%B5%E7%BC%86%E7%B1%BB%E5%9E%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%B0%83%E8%AF%95%E5%92%8C%E4%BC%98%E5%8C%96" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>在双绞线上传输差分信号对 RS-485 应用是有利的，因为外部干扰源会以共模方式均等的耦合到两根信号线上，这些噪声会被差分接收器过滤掉。</p>
-<p>工业 RS-485 电缆分为有保护套、无保护套、双绞线、非屏蔽双绞线，符合 22-24AWG 线规的电缆特性阻抗为120Ω。图 5-1 所示为四线对电缆的横截面，这种非屏蔽双绞线通常用于 2 个全双工网络。两对和单对版本的类似电缆可用于低成本的半双工系统设计。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-4.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>除网络布线外，RS-485 标准强制设备的印制电路板布局和连接器要与网络的电器特性保持一致，可以通过使印制电路板上的两根信号线尽可能靠近并等长来实现。</p>
+<ul>
+<li>监控内存性能：使用内存监控工具（如free -m、top或专用的内存监控软件）检查CXL内存的使用情况，观察是否有性能瓶颈或异常情况。</li>
+<li>测试负载：运行高内存占用的负载测试，观察系统稳定性和性能表现。如果发现问题，可以调整BIOS设置或内存管理配置。</li>
+</ul>
 
 
-<h2 class="relative group">总线终端和存根长度 
-    <div id="%E6%80%BB%E7%BA%BF%E7%BB%88%E7%AB%AF%E5%92%8C%E5%AD%98%E6%A0%B9%E9%95%BF%E5%BA%A6" class="anchor"></div>
+<h2 class="relative group">注意事项 
+    <div id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BA%BF%E7%BB%88%E7%AB%AF%E5%92%8C%E5%AD%98%E6%A0%B9%E9%95%BF%E5%BA%A6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>为避免信号反射，数据传输线应始终端接，并且存根应尽可能的短。正确的端接需要终端电阻 RT 和传输电缆的特性阻抗 Z0 匹配。RS-485 标准建议采用 Z0 = 120W 的电缆，因此电缆干线通常与 120 电阻端接，线缆的末尾处各一个（请参阅图 6-1 左半部分）。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-5.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>在噪声环境下的应用通常将 120Ω 电阻替换为两个 60Ω 电阻，组成一个低通滤波器，用于提供额外的共模噪声滤除能力（请参阅图 6-1 右半部分）。请务必匹配电阻值（宜使用精度为 1% 的电阻），确保两个滤波器的频率降幅相等。较大的电阻容限（即 20%）会导致滤波器转折频率不同，并且共模噪声会转换为差分噪声，从而使接收器的抗扰性降低。</p>
-<p>存根的电气长度（收发器与电缆干线之间的距离）应小于驱动器输出上升时间的 1/10，并通过以下公式得出：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-6.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>表 6-1 列出了图 5-1 中（78% 速率）与各个驱动器上升时间对应的最大存根长度。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-7.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
+<ul>
+<li>CXL版本兼容性：确保所有组件支持相同的CXL版本，否则可能无法正常通信</li>
+<li>散热问题：高性能内存扩展卡可能会产生大量热量，必须提供足够的散热措施，如增加风扇或调整气流设计</li>
+<li>电源要求：一些高功率CXL卡可能会增加系统功耗，确保电源单元（PSU）足够强大</li>
+</ul>
 
 
-<h2 class="relative group">失效保护 
-    <div id="%E5%A4%B1%E6%95%88%E4%BF%9D%E6%8A%A4" class="anchor"></div>
+<h2 class="relative group">常见问题及解决方法 
+    <div id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%A4%B1%E6%95%88%E4%BF%9D%E6%8A%A4" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>失效保护使得接收器在缺少输入信号时有能力输出一个确定的状态。</p>
-<p>有三种可能的原因会导致信号丢失 (LOS):</p>
-<ol>
-<li>开路：线缆中断或者收发器从总线断开</li>
-<li>短路：差分对的导线因绝缘层失效而接触在一起</li>
-<li>总线空闲：所有总线驱动器均未处于活动状态时，会发生这种情况</li>
-</ol>
-<p>上述条件下，当输入信号为零时，会使传统的接收器输出随机状态，现在的收发器内部都包含一个偏置电路，可以对开路、短路和总线空闲进行保护，即使信号丢失时，接收器也能强制输出一个确定的状态。</p>
-<p>这些失效保护设计的缺点是最坏情况下的噪声容限仅为 10mV，因此在干扰环境中，要增加外部失效保护电路以增加噪声容限。</p>
-<p>外部失效保护电路由一个电阻分压器组成，可以产生足够的总线差分电压，以驱动接收器产生一个确定的输出状态。为了确保有足够的噪声容限，除了 200mV 的接收器输入阈值外，VAB 还必须包括测得的最大差分噪声，VAB= 200mV + V 噪声。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-8.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>最小总线电压为 4.75V、(5V – 5%)、VAB = 0.25V 和 Z0 = 120W 时，RB 为 528W。向 RT 插入两个 523W 串联电阻器会建立如图 7-1 所示的失效保护电路。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-9.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
 
 
-<h2 class="relative group">总线负载 
-    <div id="%E6%80%BB%E7%BA%BF%E8%B4%9F%E8%BD%BD" class="anchor"></div>
+<h3 class="relative group">CXL卡无法识别： 
+    <div id="cxl%E5%8D%A1%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BA%BF%E8%B4%9F%E8%BD%BD" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#cxl%E5%8D%A1%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<p>驱动器的输出取决于其必须提供给负载的电流，因此在总线上增加收发器和失效防护电路会增加所需的总负载电流。为了估算可能的最大总线负载数，RS-485 指定了一个单位负载 (UL) 的假设项，它表示大约 12kW 的负载阻抗。符合标准的驱动器必须能够驱动这些单位负载中的 32 个。现如今使用的收发器通常可以减少单位负载，例如1/8 UL，从而在总线上连接多达 256 个收发器。</p>
-<p>失效防护偏置可贡献多达 20 个单位的总线负载，因此收发器的最大数量 N 减少为：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-10.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>因此，当使用 1/8-UL 收发器时，最多可将 96 个器件连接到总线。</p>
-<p>9 数据速率与总线长度</p>
-<p>在给定数据速率下，最大总线长度受到传输线损耗和信号抖动的限制。当波特周期的抖动为 10% 或以上时，数据可靠性会急剧下降，图 9-1 则显示了传统 RS-485 电缆在 10% 信号抖动下的电缆长度与数据速率的关系曲线。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-11.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
+</h3>
+<p>检查BIOS中CXL功能是否启用，更新BIOS和固件。
+确认PCIe插槽是否工作正常，尝试换一个插槽安装。</p>
 
 
-<h2 class="relative group">最小节点间距 
-    <div id="%E6%9C%80%E5%B0%8F%E8%8A%82%E7%82%B9%E9%97%B4%E8%B7%9D" class="anchor"></div>
+<h3 class="relative group">性能不佳或系统不稳定： 
+    <div id="%E6%80%A7%E8%83%BD%E4%B8%8D%E4%BD%B3%E6%88%96%E7%B3%BB%E7%BB%9F%E4%B8%8D%E7%A8%B3%E5%AE%9A" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9C%80%E5%B0%8F%E8%8A%82%E7%82%B9%E9%97%B4%E8%B7%9D" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%80%A7%E8%83%BD%E4%B8%8D%E4%BD%B3%E6%88%96%E7%B3%BB%E7%BB%9F%E4%B8%8D%E7%A8%B3%E5%AE%9A" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<p>RS-485 总线是一种分布式参数电路，其电气特性主要由沿物理介质（包括互连电缆和印刷电路板轨线）分布的电感和电容决定。</p>
-<p>以器件及其互连的形式向总线添加电容会降低总线阻抗，并导致总线的介质和负载部分阻抗不匹配。当输入信号到达这些位置时，会有部分反射回信号源，造成驱动器输出信号失真。</p>
-<p>要确保从驱动器输出的第一个信号传输到接收器输入端时电压电平仍有效，需要总线上任何一处的最小负载阻抗Z&rsquo;&gt; 0.4 x Z0 ，这可以通过在总线节点之间保持最小距离 d 来实现：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-12.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>其中 CL 是集总负载电容，C 是每单位长度的介质电容（电缆或 PCB 轨线）。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-13.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>方程式 4 显示了最小器件间距与分布式介质和集总负载电容的函数关系；图 10-1 以图形方式展示了这种关系。</p>
-<p>负载电容来自线路电路总线引脚、连接器触点、印刷电路板轨线、保护器件以及与干线的任何其他物理连接。因此，总线到收发器（存根区域）的电气距离要尽可能短。
-下面介绍了各个电容的容值：</p>
-<p>5V 收发器的电容通常为 7pF，而 3V 收发器的电容约为 16pF 的两倍。电路板轨线视其结构而定，每厘米大约增加 0.5~0.8pF 电容。连接器和抑制器件的电容可能范围会很大。介质分布式电容范围是 40pF/m（低电容非屏蔽双绞线电缆）至 70pF/m（背板）。</p>
+</h3>
+<p>调整BIOS设置，优化内存时序或禁用不必要的选项。
+检查是否有冲突的驱动程序，重新安装或更新。</p>
 
 
-<h2 class="relative group">接地和隔离 
-    <div id="%E6%8E%A5%E5%9C%B0%E5%92%8C%E9%9A%94%E7%A6%BB" class="anchor"></div>
+<h3 class="relative group">设备无法加载驱动： 
+    <div id="%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E9%A9%B1%E5%8A%A8" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%8E%A5%E5%9C%B0%E5%92%8C%E9%9A%94%E7%A6%BB" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E9%A9%B1%E5%8A%A8" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<p>设计远程数据链路时，设计人员必须假定存在很大的接地电势差 (GPD)。这些电压 Vn 会以共模干扰的形式叠加到传输线上。即使总叠加信号在接收器输入共模范围内，依靠本地接地作为可靠地电流回路也是很危险的（请参阅图 11-1a）。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-14.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>由于远程节点可能会从电气装置的不同部分汲取功率，当对这类装置进行修改（即在维护工作期间）时，会使接地电势差超出接收器的输入共模范围。因此，今天可正常工作的数据链路可能会在将来的某个时候停止运行。</p>
-<p>建议也不要通过接地线直接连接远端地（请参阅图 11-1b），这是因为大的环路地电流会以共模噪声的形式驾到信号线上。</p>
-<p>为了直接连接远端地，RS485 标准建议通过插入电阻器将器件地与本地系统地隔离开（见图 11-1c）。尽管这个方法减小了环路电流，但是大环路地的存在仍使数据链路对环路沿线某处产生的噪声敏感。因此，到现在为止，尚未建立一个强健的数据链路。</p>
-<p>一个可以容忍数千伏接地电势差并且强健的可长距离传输的 RS-485 数据链路方法是信号及供电电源隔离（请参阅图 11-2）。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-15.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
-<p>在这种情况下，电源隔离器（例如隔离的直流/直流转换器）和信号隔离器（例如数字电容隔离器）可防止电流在远程系统地之间流动，并避免产生环路电流。</p>
-<p>而图 11-2 仅显示了两个收发器节点的详细连接，图 11-3 给出了多个隔离收发器的示例。除一个收发器外，所有收发器均通过隔离接入总线。左侧的非隔离收发器为整个总线提供了单接地基准。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./RS485-Design-Guide-16.png" alt="RS485 Design Guide" />
-      
-    </figure>
-</p>
+</h3>
+<p>查看内核日志（使用dmesg）以获取详细错误信息，更新操作系统或使用不同内核版本。</p>
+
+
+<h3 class="relative group">温度过高： 
+    <div id="%E6%B8%A9%E5%BA%A6%E8%BF%87%E9%AB%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B8%A9%E5%BA%A6%E8%BF%87%E9%AB%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>增加额外的散热措施，定期清理灰尘以保持良好气流。</p>
+<p>通过这些步骤，您可以成功安装和调试CXL内存扩展卡，并将其用于内存密集型工作负载，以提高服务器的性能和内存容量。</p>
 
           
           
@@ -987,7 +927,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/rs485-design-guide/&amp;title=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;title=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -1006,7 +946,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/rs485-design-guide/&amp;text=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;text=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1024,7 +964,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97&#43;https://www.kad8.com/hardware/rs485-design-guide/"
+      href="https://bsky.app/intent/compose?text=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae&#43;https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/"
       title=""
       aria-label=""
       >
@@ -1042,7 +982,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97%20https://www.kad8.com/hardware/rs485-design-guide/"
+      href="https://s2f.kytta.dev/?text=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae%20https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/"
       title=""
       aria-label=""
       >
@@ -1061,7 +1001,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/rs485-design-guide/&amp;resubmit=true&amp;title=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;resubmit=true&amp;title=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1080,7 +1020,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/rs485-design-guide/&amp;description=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;description=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1099,7 +1039,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/rs485-design-guide/&amp;quote=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;quote=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1118,7 +1058,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/hardware/rs485-design-guide/&amp;subject=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="mailto:?body=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;subject=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1137,7 +1077,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/rs485-design-guide/&amp;resubmit=true&amp;title=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;resubmit=true&amp;title=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title=""
       aria-label=""
       >
@@ -1156,7 +1096,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/hardware/rs485-design-guide/&amp;resubmit=true&amp;title=RS485%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97"
+      href="https://t.me/share/url?url=https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/&amp;resubmit=true&amp;title=CXL%e5%86%85%e5%ad%98%e6%89%a9%e5%b1%95%e5%8d%a1%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae"
       title=""
       aria-label=""
       >
@@ -1179,222 +1119,6 @@
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-  
-  
-
-  <a href="/software/linux-practical-tips/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-practical-tips/featured-linux-practical-tips_hu5385194185029379338.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/linux-practical-tips/">Linux实用小技巧</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-16T13:20:57&#43;08:00">2024-11-16</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/ai/introduction-to-nvidia-cuda/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/introduction-to-nvidia-cuda/featured-nvidia-cuda_hu6632424285868752940.webp);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/introduction-to-nvidia-cuda/">NVIDIA CUDA简介</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-16T12:18:33&#43;08:00">2024-11-16</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cuda/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    CUDA
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvidia/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nvidia
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
   
   
 
@@ -1516,6 +1240,230 @@
   </a>
 
   
+  
+
+  <a href="/software/linux-docker-port-mapping/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-docker-port-mapping/featured-Docker-port-mapping_hu126512846599064583.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/software/linux-docker-port-mapping/">Linux下的docker端口映射</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-16T21:33:44&#43;08:00">2024-11-16</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Docker
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Linux
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/software/how-to-configure-tftp-server-in-linux/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/how-to-configure-tftp-server-in-linux/featured-How-to-Install-TFTP-Server-on-Ubuntu_hu9798322574238298724.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/software/how-to-configure-tftp-server-in-linux/">Linux下如何配置tftp服务器</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-22T23:52:42&#43;08:00">2024-10-22</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Linux
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tftp/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Tftp
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
 </section>
 
   
@@ -1529,8 +1477,8 @@
           
         
       <script>
-        var oid = "views_hardware\/rs485-design-guide\/index.md"
-        var oid_likes = "likes_hardware\/rs485-design-guide\/index.md"
+        var oid = "views_hardware\/install-and-configure-cxl-memory-expansion-card-on-server\/index.md"
+        var oid_likes = "likes_hardware\/install-and-configure-cxl-memory-expansion-card-on-server\/index.md"
       </script>
       
       
@@ -1550,7 +1498,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/hardware/cxl-memory-module-box-cmm-b/">
+            <a class="flex group mr-3" href="/hardware/rs485-design-guide/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1562,11 +1510,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >三星公司的CXL内存模块解决方案</span
+                  >RS485设计指南</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-16T10:20:09&#43;08:00">2024-11-16</time>
+                    <time datetime="2024-11-16T20:53:56&#43;08:00">2024-11-16</time>
                   
                 </span>
               </span>
@@ -1574,28 +1522,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/hardware/install-and-configure-cxl-memory-expansion-card-on-server/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >CXL内存扩展卡在服务器上如何安装和配置</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-17T19:19:11&#43;08:00">2024-11-17</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
