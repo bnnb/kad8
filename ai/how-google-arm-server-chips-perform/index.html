@@ -111,7 +111,7 @@
     "keywords": ["Google Cloud","ARM","Server"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "427"
+    "wordCount": "420"
   }]
   </script>
 
@@ -601,7 +601,12 @@
 </p>
 <p>在这五个不同的训练基准测试中，当前 TPU 与倒数第二个 TPU 之间的平均性能提升为 3.85 倍，Google 在其演示文稿中将其四舍五入为 4 倍。我们添加了每个基准测试在基准测试中获得的峰值性能份额，相对于芯片固有的 4.7 倍。</p>
 <p>对于推理，谷歌仅展示了 Trillium 与 TPU v5e 在 Stability AI 的 Stable Diffusion XL 文本转图像模型上的性能，该模型于 7 月底刚刚发布，是最先进的：</p>
-<p>！<a href="./google-cloud-trillium-tpu-v5e-inference-compare.jpg">Google Cloud Trillium TPU v5e inference compare</a></p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./google-cloud-trillium-tpu-v5e-inference-compare.jpg" alt="Google Cloud Trillium TPU v5e inference compare" />
+      
+    </figure>
+</p>
 <p>该代码的新颖性可能是为什么 TPU v5e 和 TPU v6 之间的性能差异不到峰值性能 4.7 倍差异的三分之二的原因。</p>
 <p>如果能看到一些不同的推理基准测试就更好了。例如，谷歌自己的 JetStream 推理引擎的基准测试结果在哪里？此外，TPU v5p 与 Trillium 芯片的比较测试在哪里？</p>
 <p>在其描述基准测试的博客中，谷歌确实说过：“我们设计 TPU 是为了优化性价比，Trillium 也不例外，与 v5e 相比，其性价比提高了近 1.8 倍，与 v5p 相比，其性价比提高了约 2 倍。这使得 Trillium 成为我们迄今为止性价比最高的 TPU。”</p>
