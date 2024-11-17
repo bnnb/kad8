@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 05 Nov 2024 00:16:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Nov 2024 16:01:07 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMD 计划推出全新 Ryzen 200 系列APU</title>
+      <link>https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/</link>
+      <pubDate>Sun, 17 Nov 2024 16:01:07 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/</guid>
+      <description>&lt;p&gt;AMD计划推出基于Hawk Point系列的全新Ryzen 200系列APU，准备进军入门级笔记本电脑市场，对抗英特尔即将更新的Core 200系列处理器。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./AMD-ryzen-200-apu.png&#34; alt=&#34;AMD APU&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;据悉，AMD一直热衷于对现有的CPU产品线进行更新，以提供更具吸引力的SKU，填补预算领域的性能空白。最近，AMD的Phoenix系列（被认为是最受欢迎的产品之一）已经更新为Ryzen 8000系列的“Hawk Point”APU。此次更新中，最引人注目的是升级了&lt;code&gt;NPU&lt;/code&gt;，性能可达16 &lt;code&gt;TOPS&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;根据升级包的泄露信息，AMD计划基于相同的&lt;code&gt;Zen 4&lt;/code&gt;架构，推出采用Ryzen 200命名方案的Hawk Point刷新APU阵容，预计变化不大。泄露的信息虽然未透露太多关于功能或性能的细节，但提到该系列中的一款型号为“Ryzen 7 255H”，这可能是现有的“Hawk Point”Ryzen 7 8745HS APU的升级版。该SKU于数月前发布，但未配备NPU。消息称，传闻中的Ryzen 7 255H将直接与英特尔的Core Ultra 7 255H竞争，AMD可能会在命名方案上与英特尔保持一致，以减少市场混淆。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/featured-amd-ryzen-200-apu.jpeg" />
+    </item>
+    
     <item>
       <title>美国政府考虑Intel设计部门与AMD合并</title>
       <link>https://www.kad8.com/hardware/us-government-considers-merger-of-intel-design-unit-with-amd/</link>

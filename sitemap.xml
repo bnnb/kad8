@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-11-17T16:01:07+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/</loc>
+    <lastmod>2024-11-17T16:01:07+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/network/</loc>
     <lastmod>2024-11-17T15:48:46+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,12 +23,6 @@
   <url>
     <loc>https://www.kad8.com/network/why-vxlan-needs-evpn/</loc>
     <lastmod>2024-11-17T15:48:46+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-17T12:09:02+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
