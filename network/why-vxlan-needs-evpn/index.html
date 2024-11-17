@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>VXLAN 简介 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="VXLAN 简介 &middot; Kontronn Asia Design Center" />
+  <title>VXLAN为什么需要EVPN &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="VXLAN为什么需要EVPN &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Introduction to vxlan" />
-  <meta name="keywords" content="VLAN, VXLAN, " />
+  <meta name="description" content="Why VXLAN Needs EVPN" />
+  <meta name="keywords" content="VXLAN, EVPN, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/network/introduction-to-vxlan/" />
+  <link rel="canonical" href="https://www.kad8.com/network/why-vxlan-needs-evpn/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/network/introduction-to-vxlan/">
+  <meta property="og:url" content="https://www.kad8.com/network/why-vxlan-needs-evpn/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="VXLAN 简介">
-  <meta property="og:description" content="Introduction to vxlan">
+  <meta property="og:title" content="VXLAN为什么需要EVPN">
+  <meta property="og:description" content="Why VXLAN Needs EVPN">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="network">
-    <meta property="article:published_time" content="2024-11-16T22:21:26+08:00">
-    <meta property="article:modified_time" content="2024-11-16T22:21:26+08:00">
-    <meta property="article:tag" content="VLAN">
+    <meta property="article:published_time" content="2024-11-17T15:48:46+08:00">
+    <meta property="article:modified_time" content="2024-11-17T15:48:46+08:00">
     <meta property="article:tag" content="VXLAN">
-    <meta property="og:image" content="https://www.kad8.com/network/introduction-to-vxlan/featured-VLAN-vs-VXLAN.jpg">
+    <meta property="article:tag" content="EVPN">
+    <meta property="og:image" content="https://www.kad8.com/network/why-vxlan-needs-evpn/featured-vxlan-evpn.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/network/introduction-to-vxlan/featured-VLAN-vs-VXLAN.jpg">
-  <meta name="twitter:title" content="VXLAN 简介">
-  <meta name="twitter:description" content="Introduction to vxlan">
+  <meta name="twitter:image" content="https://www.kad8.com/network/why-vxlan-needs-evpn/featured-vxlan-evpn.jpg">
+  <meta name="twitter:title" content="VXLAN为什么需要EVPN">
+  <meta name="twitter:description" content="Why VXLAN Needs EVPN">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Networks",
-    "name": "VXLAN 简介",
-    "headline": "VXLAN 简介",
-    "description": "Introduction to vxlan",
-    "abstract": "\u003cp\u003e传统的网络分段技术，如VLAN（虚拟局域网），已经使用了几十年，但随着数据中心规模的扩大和多租户需求的增加，这些技术的局限性逐渐显现出来。为了应对这些挑战，\u003ca href=\u0022https:\/\/www.kad8.com\/network\/introduction-to-vxlan\/\u0022 target=\u0022_blank\u0022\u003eVXLAN（虚拟扩展局域网）\u003c\/a\u003e技术应运而生。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e什么是VXLAN \n    \u003cdiv id=\u0022%E4%BB%80%E4%B9%88%E6%98%AFvxlan\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E4%BB%80%E4%B9%88%E6%98%AFvxlan\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eVXLAN（Virtual Extensible LAN）是一种网络虚拟化技术，它通过在三层网络之上创建二层网络覆盖，实现了比传统VLAN更大的灵活性和可扩展性。VXLAN的主要设计目标是解决传统VLAN在规模和跨数据中心等方面的局限性。\u003c\/p\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eVLAN的局限性 \n    \u003cdiv id=\u0022vlan%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#vlan%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003e传统VLAN采用12位标识符，最多支持4096个VLAN ID。这一限制对于小型网络可能足够，但对于大型数据中心来说就显得不足。此外，VLAN的广播域范围通常仅限于同一物理交换机或设备，这使得跨数据中心或广域网络的二层网络连接变得非常复杂和不现实。\u003c\/p\u003e",
+    "name": "VXLAN为什么需要EVPN",
+    "headline": "VXLAN为什么需要EVPN",
+    "description": "Why VXLAN Needs EVPN",
+    "abstract": "\u003cp\u003e随着云计算和虚拟化技术的迅猛发展，传统网络架构逐渐暴露出难以满足大规模、高灵活性云数据中心需求的短板。为了应对这一挑战，Overlay网络的概念应运而生，其核心理念在于通过网络虚拟化技术构建一层逻辑网络，以更灵活、高效地管理网络资源。在众多Overlay网络技术中，\u003ca href=\u0022https:\/\/www.kad8.com\/network\/introduction-to-vxlan\/\u0022 target=\u0022_blank\u0022\u003eVXLAN\u003c\/a\u003e因其出色的扩展性和隔离能力脱颖而出。与此同时，EVPN也开始在数据中心和企业园区网络中展现出非凡的潜力。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e传统企业园区设计 \n    \u003cdiv id=\u0022%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/vxlan-evpn-6.jpeg,\u0022 alt=\u0022Why VXLAN need EVPN\u0022 \/\u003e\n      \u003cfigcaption\u003e图 1 - 传统三层网络\u003c\/figcaption\u003e\n    \u003c\/figure\u003e\n\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/network\/introduction-to-vxlan\/",
+    "url" : "https:\/\/www.kad8.com\/network\/why-vxlan-needs-evpn\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-16T22:21:26\u002b08:00",
-    "datePublished": "2024-11-16T22:21:26\u002b08:00",
+    "dateCreated": "2024-11-17T15:48:46\u002b08:00",
+    "datePublished": "2024-11-17T15:48:46\u002b08:00",
     
-    "dateModified": "2024-11-16T22:21:26\u002b08:00",
+    "dateModified": "2024-11-17T15:48:46\u002b08:00",
     
-    "keywords": ["VLAN","VXLAN"],
+    "keywords": ["VXLAN","EVPN"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "94"
+    "wordCount": "218"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      VXLAN 简介
+      VXLAN为什么需要EVPN
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
+  <time datetime="2024-11-17T15:48:46&#43;08:00">2024-11-17</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vlan/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VLAN
-  </span>
-</span>
-  </span>
-  
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxlan/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     VXLAN
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/evpn/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    EVPN
   </span>
 </span>
   </span>
@@ -582,41 +582,9 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#什么是vxlan">什么是VXLAN</a>
-      <ul>
-        <li><a href="#vlan的局限性">VLAN的局限性</a></li>
-        <li><a href="#vxlan的引入">VXLAN的引入</a></li>
-      </ul>
-    </li>
-    <li><a href="#vxlan的工作原理">VXLAN的工作原理</a>
-      <ul>
-        <li><a href="#vxlan封装过程">VXLAN封装过程</a></li>
-        <li><a href="#数据包的传输与解封">数据包的传输与解封</a></li>
-        <li><a href="#vxlan控制平面">VXLAN控制平面</a></li>
-      </ul>
-    </li>
-    <li><a href="#vlan与vxlan的对比">VLAN与VXLAN的对比</a>
-      <ul>
-        <li><a href="#标识空间">标识空间</a></li>
-        <li><a href="#工作原理与封装方式">工作原理与封装方式</a></li>
-        <li><a href="#网络规模与隔离">网络规模与隔离</a></li>
-        <li><a href="#带宽效率与网络时延">带宽效率与网络时延</a></li>
-        <li><a href="#应用场景">应用场景</a></li>
-      </ul>
-    </li>
-    <li><a href="#vxlan如何解决传统vlan的问题">VXLAN如何解决传统VLAN的问题</a>
-      <ul>
-        <li><a href="#扩展能力">扩展能力</a></li>
-        <li><a href="#配置与管理复杂性">配置与管理复杂性</a></li>
-        <li><a href="#多租户环境">多租户环境</a></li>
-        <li><a href="#网络拓扑限制">网络拓扑限制</a></li>
-        <li><a href="#虚拟机迁移问题">虚拟机迁移问题</a></li>
-        <li><a href="#冗余与负载均衡复杂性">冗余与负载均衡复杂性</a></li>
-        <li><a href="#广播域扩展问题">广播域扩展问题</a></li>
-        <li><a href="#管理与监控难度">管理与监控难度</a></li>
-      </ul>
-    </li>
-    <li><a href="#记忆小技巧">记忆小技巧</a></li>
+    <li><a href="#传统企业园区设计">传统企业园区设计</a></li>
+    <li><a href="#vxlan-的兴起">VXLAN 的兴起</a></li>
+    <li><a href="#evpn的引入">EVPN的引入</a></li>
   </ul>
 </nav>
   </div>
@@ -630,41 +598,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#什么是vxlan">什么是VXLAN</a>
-      <ul>
-        <li><a href="#vlan的局限性">VLAN的局限性</a></li>
-        <li><a href="#vxlan的引入">VXLAN的引入</a></li>
-      </ul>
-    </li>
-    <li><a href="#vxlan的工作原理">VXLAN的工作原理</a>
-      <ul>
-        <li><a href="#vxlan封装过程">VXLAN封装过程</a></li>
-        <li><a href="#数据包的传输与解封">数据包的传输与解封</a></li>
-        <li><a href="#vxlan控制平面">VXLAN控制平面</a></li>
-      </ul>
-    </li>
-    <li><a href="#vlan与vxlan的对比">VLAN与VXLAN的对比</a>
-      <ul>
-        <li><a href="#标识空间">标识空间</a></li>
-        <li><a href="#工作原理与封装方式">工作原理与封装方式</a></li>
-        <li><a href="#网络规模与隔离">网络规模与隔离</a></li>
-        <li><a href="#带宽效率与网络时延">带宽效率与网络时延</a></li>
-        <li><a href="#应用场景">应用场景</a></li>
-      </ul>
-    </li>
-    <li><a href="#vxlan如何解决传统vlan的问题">VXLAN如何解决传统VLAN的问题</a>
-      <ul>
-        <li><a href="#扩展能力">扩展能力</a></li>
-        <li><a href="#配置与管理复杂性">配置与管理复杂性</a></li>
-        <li><a href="#多租户环境">多租户环境</a></li>
-        <li><a href="#网络拓扑限制">网络拓扑限制</a></li>
-        <li><a href="#虚拟机迁移问题">虚拟机迁移问题</a></li>
-        <li><a href="#冗余与负载均衡复杂性">冗余与负载均衡复杂性</a></li>
-        <li><a href="#广播域扩展问题">广播域扩展问题</a></li>
-        <li><a href="#管理与监控难度">管理与监控难度</a></li>
-      </ul>
-    </li>
-    <li><a href="#记忆小技巧">记忆小技巧</a></li>
+    <li><a href="#传统企业园区设计">传统企业园区设计</a></li>
+    <li><a href="#vxlan-的兴起">VXLAN 的兴起</a></li>
+    <li><a href="#evpn的引入">EVPN的引入</a></li>
   </ul>
 </nav>
   </div>
@@ -748,341 +684,130 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>传统的网络分段技术，如VLAN（虚拟局域网），已经使用了几十年，但随着数据中心规模的扩大和多租户需求的增加，这些技术的局限性逐渐显现出来。为了应对这些挑战，<a href="https://www.kad8.com/network/introduction-to-vxlan/" target="_blank">VXLAN（虚拟扩展局域网）</a>技术应运而生。</p>
+          <p>随着云计算和虚拟化技术的迅猛发展，传统网络架构逐渐暴露出难以满足大规模、高灵活性云数据中心需求的短板。为了应对这一挑战，Overlay网络的概念应运而生，其核心理念在于通过网络虚拟化技术构建一层逻辑网络，以更灵活、高效地管理网络资源。在众多Overlay网络技术中，<a href="https://www.kad8.com/network/introduction-to-vxlan/" target="_blank">VXLAN</a>因其出色的扩展性和隔离能力脱颖而出。与此同时，EVPN也开始在数据中心和企业园区网络中展现出非凡的潜力。</p>
 
 
-<h2 class="relative group">什么是VXLAN 
-    <div id="%E4%BB%80%E4%B9%88%E6%98%AFvxlan" class="anchor"></div>
+<h2 class="relative group">传统企业园区设计 
+    <div id="%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BB%80%E4%B9%88%E6%98%AFvxlan" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>VXLAN（Virtual Extensible LAN）是一种网络虚拟化技术，它通过在三层网络之上创建二层网络覆盖，实现了比传统VLAN更大的灵活性和可扩展性。VXLAN的主要设计目标是解决传统VLAN在规模和跨数据中心等方面的局限性。</p>
-
-
-<h3 class="relative group">VLAN的局限性 
-    <div id="vlan%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vlan%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>传统VLAN采用12位标识符，最多支持4096个VLAN ID。这一限制对于小型网络可能足够，但对于大型数据中心来说就显得不足。此外，VLAN的广播域范围通常仅限于同一物理交换机或设备，这使得跨数据中心或广域网络的二层网络连接变得非常复杂和不现实。</p>
+<p>传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-1.png" alt="introduction to vxlan" />
-      
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-6.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 1 - 传统三层网络</figcaption>
     </figure>
 </p>
-
-
-<h3 class="relative group">VXLAN的引入 
-    <div id="vxlan%E7%9A%84%E5%BC%95%E5%85%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan%E7%9A%84%E5%BC%95%E5%85%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN使用24位的VXLAN网络标识符（VNI），能够支持多达1600万个虚拟网络。这极大地扩展了网络的可扩展性，尤其适用于需要大量虚拟网络隔离的大型数据中心和云计算环境。此外，VXLAN通过在三层网络上封装二层以太网帧，允许二层网络跨越不同的三层网络，这增强了网络的灵活性。</p>
-
-
-<h2 class="relative group">VXLAN的工作原理 
-    <div id="vxlan%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>VXLAN的核心是VXLAN隧道终端（VTEP，VXLAN Tunnel Endpoint），VTEP负责VXLAN数据包的封装和解封。VTEP设备将VXLAN VNI映射到物理网络接口，允许不同网络之间的通信。</p>
-
-
-<h3 class="relative group">VXLAN封装过程 
-    <div id="vxlan%E5%B0%81%E8%A3%85%E8%BF%87%E7%A8%8B" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan%E5%B0%81%E8%A3%85%E8%BF%87%E7%A8%8B" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>在VXLAN中，源设备发送的以太网帧首先到达VTEP，VTEP将该帧封装为VXLAN数据包。VXLAN数据包由以下部分组成：</p>
+<p>请注意，有些链接是 L2（红色），而其他的则是 L3（绿色）。在这种设计中，我们通常会遇到哪些问题？</p>
 <ul>
-<li>原始以太网帧：需要传输的数据。</li>
-<li>VXLAN头：包含24位的VNI，用于标识不同的VXLAN段。</li>
-<li>UDP头：VXLAN使用UDP作为传输协议。</li>
-<li>IP头：包含源和目的VTEP的IP地址。</li>
-<li>外部以太网头：用于在物理网络上传输封装的数据包。</li>
+<li>并非所有链路都在转发。</li>
+<li>缺少等价多路径 (ECMP) 路径。</li>
+<li>接入层到汇聚层易受桥接环路影响。</li>
+<li>使用生成树协议（STP）及其保护特性（如BPDU Guard、Root Guard、PortFast等）设计复杂。</li>
+<li>收敛速度可能较慢。</li>
+<li>与 VLAN 数量和 STP 实例相关的可扩展性问题。</li>
+<li>需要第一跳路由协议 (FHRP)，如热备份路由协议（HSRP）来提供汇聚层的冗余。</li>
+<li>故障排除困难。</li>
 </ul>
+<p>如果设计得当，这种类型的网络架构可以很好地工作，但也存在许多潜在的陷阱。相信大家在职业生涯中的某个时刻，都尝试过查找桥接环路的来源。正如前文所提到的，接入层缺乏 ECMP，因为并非所有链路都可以利用。下图移除了通常会因 STP 而被阻塞的链路：</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-2.png" alt="introduction to vxlan" />
-      
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-2.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 2 – 具有阻塞链路的传统三层网络</figcaption>
     </figure>
 </p>
+<p>在这个拓扑结构中，DS01 是根桥，这就是通向 DS02 的链路被阻塞的原因。这不仅意味着没有 ECMP，还意味着如果通向 DS01 的链路出现问题，只能依赖 STP 进行收敛。使用 802.1D STP 构建网络的话，可能需要 30-50 秒，而使用 802.1w STP，可以实现亚秒级的收敛。</p>
+<p>VXLAN 和 EVPN 可以帮助解决其中一些问题。接下来，我们一步一步来分析。</p>
 
 
-<h3 class="relative group">数据包的传输与解封 
-    <div id="%E6%95%B0%E6%8D%AE%E5%8C%85%E7%9A%84%E4%BC%A0%E8%BE%93%E4%B8%8E%E8%A7%A3%E5%B0%81" class="anchor"></div>
+<h2 class="relative group">VXLAN 的兴起 
+    <div id="vxlan-%E7%9A%84%E5%85%B4%E8%B5%B7" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E5%8C%85%E7%9A%84%E4%BC%A0%E8%BE%93%E4%B8%8E%E8%A7%A3%E5%B0%81" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>封装后的VXLAN数据包通过三层网络（即IP网络）传输。由于VXLAN数据包被封装在UDP中，因此它们可以在任何支持IP的网络基础设施上传输。当数据包到达目的VTEP时，VTEP对数据包进行解封，提取出原始以太网帧，并将其转发到目的设备，实现二层网络在三层网络中的扩展。</p>
-
-
-<h3 class="relative group">VXLAN控制平面 
-    <div id="vxlan%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>尽管最初的VXLAN标准并没有指定控制平面，但现代的VXLAN实现通常使用如BGP EVPN（边界网关协议以太网虚拟私有网络）这样的协议来分发MAC地址和IP信息。这种方法提高了网络的效率和可扩展性，减少了网络中的泛洪流量。</p>
-
-
-<h2 class="relative group">VLAN与VXLAN的对比 
-    <div id="vlan%E4%B8%8Evxlan%E7%9A%84%E5%AF%B9%E6%AF%94" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vlan%E4%B8%8Evxlan%E7%9A%84%E5%AF%B9%E6%AF%94" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#vxlan-%E7%9A%84%E5%85%B4%E8%B5%B7" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>VLAN和VXLAN都是网络虚拟化技术，旨在提高网络资源的利用率和管理效率，但它们在技术实现、应用场景和扩展能力上存在显著差异。</p>
-
-
-<h3 class="relative group">标识空间 
-    <div id="%E6%A0%87%E8%AF%86%E7%A9%BA%E9%97%B4" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%87%E8%AF%86%E7%A9%BA%E9%97%B4" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VLAN使用12位VLAN ID，最多支持4096个VLAN。对于小型和中型网络，这种规模通常是足够的。</p>
-<p>相比之下，VXLAN使用24位的VNI，能够支持多达1600万个虚拟网络。这使得VXLAN非常适合大规模的云计算和数据中心环境。</p>
-
-
-<h3 class="relative group">工作原理与封装方式 
-    <div id="%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E4%B8%8E%E5%B0%81%E8%A3%85%E6%96%B9%E5%BC%8F" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E4%B8%8E%E5%B0%81%E8%A3%85%E6%96%B9%E5%BC%8F" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VLAN通过在以太网帧中插入802.1Q标签，在数据链路层（第二层）实现网络的逻辑隔离。而VXLAN通过将原始以太网帧封装在UDP数据包中，并通过三层网络传输，这允许VXLAN跨越不同的网络段，从而提供了更广泛的网络虚拟化能力。</p>
-
-
-<h3 class="relative group">网络规模与隔离 
-    <div id="%E7%BD%91%E7%BB%9C%E8%A7%84%E6%A8%A1%E4%B8%8E%E9%9A%94%E7%A6%BB" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BD%91%E7%BB%9C%E8%A7%84%E6%A8%A1%E4%B8%8E%E9%9A%94%E7%A6%BB" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VLAN的隔离通常基于物理交换机的端口配置，限制在一个广播域内。相比之下，VXLAN通过隧道技术在多个物理交换机之间创建二层网络，允许更加灵活的逻辑隔离和跨子网通信。</p>
-
-
-<h3 class="relative group">带宽效率与网络时延 
-    <div id="%E5%B8%A6%E5%AE%BD%E6%95%88%E7%8E%87%E4%B8%8E%E7%BD%91%E7%BB%9C%E6%97%B6%E5%BB%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B8%A6%E5%AE%BD%E6%95%88%E7%8E%87%E4%B8%8E%E7%BD%91%E7%BB%9C%E6%97%B6%E5%BB%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VLAN在传统网络中可能受到生成树协议（STP）的限制，导致某些网络路径被阻塞，从而影响带宽的利用率。而VXLAN可以绕过生成树协议的限制，充分利用所有的网络路径，尽管封装过程会引入一定的时延，但在现代高速网络中这一影响通常是可以接受的。</p>
-
-
-<h3 class="relative group">应用场景 
-    <div id="%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VLAN适用于较小规模的网络分段，例如企业内部的部门隔离。而VXLAN更适合云服务提供商和大型数据中心，特别是在需要大量租户隔离和跨数据中心的虚拟网络扩展时。</p>
+<p>我们经常将 VXLAN 和 EVPN 放在一起讨论，就好像它们是同一种技术一样。然而，EVPN 最初主要用于服务提供商网络，以向客户提供更好的 L2 服务，而 VXLAN 主要用于数据中心。VXLAN是根据2014年发布的RFC 7348定义的，它原本是一项独立的技术，并没有与EVPN配对。它是一种数据平面封装技术，旨在克服传统L2网络的挑战：</p>
+<ul>
+<li>可扩展性问题：IEEE 802.1Q中定义的VLAN ID只有12个比特，这意味着最多有 4096 个 VLAN。此外，通常还会预留一些VLAN，使得实际可用的数量更少。这对于大规模网络（如数据中心和一些大型园区环境）来说是不够的。</li>
+<li>缺乏 ECMP：前文提到 STP 会阻塞链路，这意味着网络中昂贵的链路没有得到有效地使用。有些工作负载需要大量带宽。在数据中心使用三层架构可能会造成hotspot，导致某些链路/节点过载。</li>
+<li>缺乏多租户：使用传统设计很难构建多租户网络，主要与无法扩展有关。</li>
+</ul>
+<p>那么 VXLAN 是如何解决这些问题的？</p>
+<p>VXLAN 在报头中有一个 24 位字段，称为虚拟网络标识符 (VNI)，提供了 16777216 个潜在虚拟网络。与 4096这个数字相比，是一个相当大的进步！</p>
+<p>VXLAN 能够同时执行桥接和路由。它是一种在物理网络之上运行的协议，我们通常称之为Overlay。可以把它想象成一个隧道，其中隧道的两端点被称为VXLAN隧道端点（VTEP）。由于 VXLAN 是一种隧道形式，尽管它是无状态的，但只要有 L3 连接，它就可以在任何拓扑和底层协议之上运行。这意味着可以构建所谓Underlay网络，它是一个完全路由的设计。这就消除了与 L2 相关的几乎所有挑战，并提供了 ECMP、快速收敛等功能。</p>
+<p>由于 VXLAN 的扩展性更好，这也提供了多租户支持的能力。</p>
+<p>下面是一个叶脊拓扑的示例：</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-3.png" alt="introduction to vxlan" />
-      
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-3.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 3 - 采用 VXLAN 的叶脊拓扑</figcaption>
     </figure>
 </p>
+<p>此拓扑中的所有链路都是 L3，并且它们将执行转发操作。通常，Underlay会使用如OSPF或IS-IS这样的内部网关协议（IGP）来提供VTEP之间的L3连接。</p>
+<p>当然，提供这些强大功能是需要付出代价的。这里说的代价不是金钱成本，而是封装和开销。VXLAN 是一种 MAC-over-IP/UDP 协议，它会将以太网帧进行封装，并添加一个VXLAN头部、UDP头部以及外部IP和MAC头部。这会增加50字节或54字节的开销，具体取决于是否保留完整的802.1Q头部。如下所示：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-4.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 4 - VXLAN 封装</figcaption>
+    </figure>
+</p>
+<ul>
+<li>VXLAN头部主要提供VNI，以便在数据平面中将数据包转发到正确的虚拟网络。</li>
+<li>当帧被 VTEP 封装时，最常见的做法是移除802.1Q头部。</li>
+<li>当原始帧被修改时，会计算一个新的 CRC（循环冗余校验），并丢弃旧的 CRC。由于旧的 CRC 被丢弃，所以新的 CRC 不会增加任何额外的开销。</li>
+<li>添加一个 UDP 报头，其中目标端口通常为 4789，而源端口则根据内部报头中的字段生成。UDP 报头增加了熵，以便底层可以更好地利用 ECMP 路径。</li>
+<li>外部 IP 报头包含源和目标 VTEP 的源 IP 和目标 IP。</li>
+<li>外部以太网报头用于通过以太网链路逐跳转发帧。</li>
+</ul>
+<p>需要注意的是，没有 EVPN 支持的 VXLAN 会利用泛洪和学习行为，这与传统交换机的行为类似。如果它不知道目标 MAC，它会泛洪该帧，并在收到响应时学习 MAC，这被称为未知单播。没有 EVPN 的 VTEP 行为类似。如果它尚未学习 MAC，它将使用底层网络的多播或入口复制将其泛洪到所有其他相关 VTEP。</p>
+<p>泛洪和学习机制显然不是最优选择，那么如何解决这一问题呢？这就需要用到EVPN了。</p>
 
 
-<h2 class="relative group">VXLAN如何解决传统VLAN的问题 
-    <div id="vxlan%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%BC%A0%E7%BB%9Fvlan%E7%9A%84%E9%97%AE%E9%A2%98" class="anchor"></div>
+<h2 class="relative group">EVPN的引入 
+    <div id="evpn%E7%9A%84%E5%BC%95%E5%85%A5" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E4%BC%A0%E7%BB%9Fvlan%E7%9A%84%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#evpn%E7%9A%84%E5%BC%95%E5%85%A5" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>VXLAN通过提供更灵活和可扩展的网络虚拟化解决方案，解决了传统VLAN在大规模网络中的许多问题。以下是VXLAN在各方面的改进：</p>
-
-
-<h3 class="relative group">扩展能力 
-    <div id="%E6%89%A9%E5%B1%95%E8%83%BD%E5%8A%9B" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%89%A9%E5%B1%95%E8%83%BD%E5%8A%9B" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN使用24位的VNI，支持多达1600万个唯一的标识符，远远超过了传统VLAN的4096个ID限制。这使得VXLAN能够满足大规模数据中心和云环境中网络分段的需求。</p>
-
-
-<h3 class="relative group">配置与管理复杂性 
-    <div id="%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%AE%A1%E7%90%86%E5%A4%8D%E6%9D%82%E6%80%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%AE%A1%E7%90%86%E5%A4%8D%E6%9D%82%E6%80%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN可以与BGP EVPN等控制平面协议配合使用，自动化地分发MAC地址和IP地址，简化网络的配置与管理。这减少了手动配置错误的可能性，同时降低了管理的复杂性。</p>
-
-
-<h3 class="relative group">多租户环境 
-    <div id="%E5%A4%9A%E7%A7%9F%E6%88%B7%E7%8E%AF%E5%A2%83" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%A4%9A%E7%A7%9F%E6%88%B7%E7%8E%AF%E5%A2%83" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN提供了高达1600万个VNI，可以为每个租户创建独立的虚拟网络，确保不同租户之间的流量隔离，增强了安全性。在多租户环境中，VXLAN更容易实施网络管理和安全策略。</p>
-
-
-<h3 class="relative group">网络拓扑限制 
-    <div id="%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E9%99%90%E5%88%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN通过封装二层以太网帧在三层IP包中，使得二层网络能够跨越三层网络基础设施。这意味着网络可以扩展到不同的数据中心和地理位置，而不再受到物理网络拓扑的限制。</p>
-
-
-<h3 class="relative group">虚拟机迁移问题 
-    <div id="%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%81%E7%A7%BB%E9%97%AE%E9%A2%98" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%81%E7%A7%BB%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>由于VXLAN能够在跨数据中心的二层网络中工作，虚拟机可以在不同的物理主机之间无缝迁移，而无需更改IP地址和网络配置。这大大简化了虚拟机迁移的过程，减少了网络中断的风险。</p>
-
-
-<h3 class="relative group">冗余与负载均衡复杂性 
-    <div id="%E5%86%97%E4%BD%99%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%A4%8D%E6%9D%82%E6%80%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%86%97%E4%BD%99%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%A4%8D%E6%9D%82%E6%80%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN利用IP网络的负载均衡和冗余功能，减少了对生成树协议（STP）的依赖，从而简化了网络配置，提高了网络的弹性和性能。</p>
-
-
-<h3 class="relative group">广播域扩展问题 
-    <div id="%E5%B9%BF%E6%92%AD%E5%9F%9F%E6%89%A9%E5%B1%95%E9%97%AE%E9%A2%98" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B9%BF%E6%92%AD%E5%9F%9F%E6%89%A9%E5%B1%95%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN可以通过控制平面协议（如BGP EVPN）优化对广播、未知单播和多播流量的处理，减少泛洪流量，从而提高了网络性能和稳定性。</p>
-
-
-<h3 class="relative group">管理与监控难度 
-    <div id="%E7%AE%A1%E7%90%86%E4%B8%8E%E7%9B%91%E6%8E%A7%E9%9A%BE%E5%BA%A6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%AE%A1%E7%90%86%E4%B8%8E%E7%9B%91%E6%8E%A7%E9%9A%BE%E5%BA%A6" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>VXLAN支持更高级的网络管理和监控工具，提供了更好的网络可见性和故障排除能力。通过使用控制平面协议，可以集中管理MAC地址和IP地址信息，简化了故障排查过程。</p>
+<p>EVPN是一种用于二层网络互联的VPN技术，采用类似于BGP/MPLS IP VPN的机制，在BGP协议的基础上定义了一种新的NLRI（网络层可达信息）即EVPN NLRI，EVPN NLRI定义了几种新的BGP EVPN路由类型，用于处在二层网络的不同站点之间的MAC地址学习和发布。</p>
+<p>前文提到，原有的VXLAN实现方案没有控制平面，是通过数据平面的流量泛洪进行VTEP发现和主机信息（包括IP地址、MAC地址、VNI、网关VTEP IP地址）学习的，这种方式导致数据中心网络存在很多泛洪流量。为了解决这一问题，VXLAN引入了EVPN作为控制平面，通过在VTEP之间交换BGP EVPN路由实现VTEP的自动发现、主机信息相互通告等特性，从而避免了不必要的数据流量泛洪。</p>
+<p>与独立 VXLAN 相比，EVPN 提供了以下优势：</p>
+<ul>
+<li>通过 BGP 消息发现 VTEP，而不是基于接收 VXLAN 封装的帧。这比盲目接受所有 VXLAN 封装的帧更安全。</li>
+<li>广播 MAC 和 MAC/主机 IP 路由、入口复制 VTEP、IP 前缀和以太网段。</li>
+<li>减少泛洪量。</li>
+<li>像ARP抑制这样的特性依赖于通过EVPN学习到的路由。</li>
+</ul>
+<p>EVPN 具备很多优势，那么如何启用它呢？需要配置BGP并启用EVPN。通常情况下，叶子节点（Leaf）被配置为路由反射器客户端，而骨干节点（Spine）充当路由反射器。如下所示：</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-4.png" alt="introduction to vxlan" />
-      
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-5.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 5 - BGP EVPN 拓扑</figcaption>
     </figure>
 </p>
-
-
-<h2 class="relative group">记忆小技巧 
-    <div id="%E8%AE%B0%E5%BF%86%E5%B0%8F%E6%8A%80%E5%B7%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%AE%B0%E5%BF%86%E5%B0%8F%E6%8A%80%E5%B7%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>VXLAN（Virtual eXtensible Local Area Network，虚拟扩展局域网）是一种网络虚拟化技术，旨在解决传统VLAN在大规模数据中心中的扩展性问题。</p>
-<p>VXLAN通过在L3网络上建立L2隧道，将以太网帧封装在UDP报文中进行传输。这种封装方式被称为MAC-in-UDP。</p>
-<p>VXLAN隧道的起点和终点设备，负责封装和解封VXLAN报文。</p>
-<p>类似于VLAN ID的网络标识符，由24比特组成，理论上可支持多达16M的VXLAN段。</p>
+<p>对于了解MPLS 的人来说，EVPN路由中有很多熟悉的部分，例如路由目标 (RT)、路由区分符 (RD)、MPLS 标签等。下面列出了一些最常见的 EVPN 路由类型及其提供的内容：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-6.jpeg," alt="Why VXLAN need EVPN" />
+      <figcaption>图 6 - EVPN 路由类型</figcaption>
+    </figure>
+</p>
+<p>通过EVPN通告VTEP所知的MAC和IP地址，就无需依赖泛洪和学习行为。</p>
+<p>总而言之，在构建能够扩展且快速收敛的健壮网络方面，传统的三层网络设计面临诸多挑战。通过利用VXLAN和EVPN构建叶脊拓扑，不仅可以显著提高网络的灵活性和可靠性，还能有效解决扩展性、多租户支持等问题，同时实现快速收敛和等价多路径传输。</p>
 
           
           
@@ -1100,7 +825,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/network/introduction-to-vxlan/&amp;title=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -1119,7 +844,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/network/introduction-to-vxlan/&amp;text=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1137,7 +862,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=VXLAN%20%e7%ae%80%e4%bb%8b&#43;https://www.kad8.com/network/introduction-to-vxlan/"
+      href="https://bsky.app/intent/compose?text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN&#43;https://www.kad8.com/network/why-vxlan-needs-evpn/"
       title=""
       aria-label=""
       >
@@ -1155,7 +880,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=VXLAN%20%e7%ae%80%e4%bb%8b%20https://www.kad8.com/network/introduction-to-vxlan/"
+      href="https://s2f.kytta.dev/?text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN%20https://www.kad8.com/network/why-vxlan-needs-evpn/"
       title=""
       aria-label=""
       >
@@ -1174,7 +899,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/network/introduction-to-vxlan/&amp;resubmit=true&amp;title=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1193,7 +918,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/network/introduction-to-vxlan/&amp;description=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;description=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1212,7 +937,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/network/introduction-to-vxlan/&amp;quote=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;quote=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1231,7 +956,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/network/introduction-to-vxlan/&amp;subject=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="mailto:?body=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;subject=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1250,7 +975,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/network/introduction-to-vxlan/&amp;resubmit=true&amp;title=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title=""
       aria-label=""
       >
@@ -1269,7 +994,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/network/introduction-to-vxlan/&amp;resubmit=true&amp;title=VXLAN%20%e7%ae%80%e4%bb%8b"
+      href="https://t.me/share/url?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
       title=""
       aria-label=""
       >
@@ -1295,11 +1020,11 @@
   
   
 
-  <a href="/software/introduction-to-google-logging-library/" class="min-w-full">
+  <a href="/network/introduction-to-vxlan/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/introduction-to-google-logging-library/featured-glog_hu12892425748921220375.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/network/introduction-to-vxlan/featured-VLAN-vs-VXLAN_hu13478985816254467324.jpg);"></div>
         
       
 
@@ -1307,7 +1032,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/introduction-to-google-logging-library/">C++日志库glog简介</div>
+          href="/network/introduction-to-vxlan/">VXLAN 简介</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1346,7 +1071,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T22:08:24&#43;08:00">2024-11-16</time>
+  <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
   
 
   
@@ -1370,13 +1095,237 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/glog/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vlan/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Glog
+    VLAN
   </span>
 </span>
   </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxlan/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VXLAN
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/ai/how-google-arm-server-chips-perform/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/how-google-arm-server-chips-perform/featured-google-cloud-trillium-racks-node-logo_hu14667114278760147866.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/ai/how-google-arm-server-chips-perform/">谷歌ARM服务器芯片表现如何</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-17T12:09:02&#43;08:00">2024-11-17</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google-cloud/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Google Cloud
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/arm/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    ARM
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/server/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Server
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/ai/google-is-developing-two-chips/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/google-is-developing-two-chips/featured-google-watch_hu14491376243851776054.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/ai/google-is-developing-two-chips/">谷歌正在开发的两颗芯片</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-17T11:50:24&#43;08:00">2024-11-17</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
@@ -1386,226 +1335,18 @@
 </span>
   </span>
   
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/software/linux-docker-port-mapping/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-docker-port-mapping/featured-Docker-port-mapping_hu126512846599064583.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/linux-docker-port-mapping/">Linux下的docker端口映射</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-16T21:33:44&#43;08:00">2024-11-16</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pixel-watch/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
+    Pixel Watch
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tensor/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/hardware/rs485-design-guide/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/rs485-design-guide/featured-RS485_hu10938496809833883448.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/rs485-design-guide/">RS485设计指南</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-16T20:53:56&#43;08:00">2024-11-16</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rs485/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RS485
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/uart/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    UART
+    Tensor
   </span>
 </span>
   </span>
@@ -1642,8 +1383,8 @@
           
         
       <script>
-        var oid = "views_network\/introduction-to-vxlan\/index.md"
-        var oid_likes = "likes_network\/introduction-to-vxlan\/index.md"
+        var oid = "views_network\/why-VXLAN-needs-EVPN\/index.md"
+        var oid_likes = "likes_network\/why-VXLAN-needs-EVPN\/index.md"
       </script>
       
       
@@ -1663,30 +1404,30 @@
       <div class="flex justify-between pt-3">
         <span>
           
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/network/why-vxlan-needs-evpn/">
+            <a class="flex group mr-3" href="/network/introduction-to-vxlan/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >VXLAN为什么需要EVPN</span
+                  >VXLAN 简介</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-17T15:48:46&#43;08:00">2024-11-17</time>
+                    <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
                   
                 </span>
               </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>

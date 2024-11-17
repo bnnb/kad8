@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EVPN on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/evpn/</link>
+    <description>Recent content in EVPN on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sun, 17 Nov 2024 15:48:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/evpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VXLAN为什么需要EVPN</title>
+      <link>https://www.kad8.com/network/why-vxlan-needs-evpn/</link>
+      <pubDate>Sun, 17 Nov 2024 15:48:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/network/why-vxlan-needs-evpn/</guid>
+      <description>&lt;p&gt;随着云计算和虚拟化技术的迅猛发展，传统网络架构逐渐暴露出难以满足大规模、高灵活性云数据中心需求的短板。为了应对这一挑战，Overlay网络的概念应运而生，其核心理念在于通过网络虚拟化技术构建一层逻辑网络，以更灵活、高效地管理网络资源。在众多Overlay网络技术中，&lt;a href=&#34;https://www.kad8.com/network/introduction-to-vxlan/&#34; target=&#34;_blank&#34;&gt;VXLAN&lt;/a&gt;因其出色的扩展性和隔离能力脱颖而出。与此同时，EVPN也开始在数据中心和企业园区网络中展现出非凡的潜力。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;传统企业园区设计 
+    &lt;div id=&#34;%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./vxlan-evpn-6.jpeg,&#34; alt=&#34;Why VXLAN need EVPN&#34; /&gt;
+      &lt;figcaption&gt;图 1 - 传统三层网络&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/why-vxlan-needs-evpn/featured-vxlan-evpn.jpg" />
+    </item>
+    
+  </channel>
+</rss>

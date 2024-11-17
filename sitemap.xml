@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/network/</loc>
+    <lastmod>2024-11-17T15:48:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/network/why-vxlan-needs-evpn/</loc>
+    <lastmod>2024-11-17T15:48:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-11-17T12:09:02+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -29,12 +41,6 @@
   <url>
     <loc>https://www.kad8.com/ai/samsung-cuts-off-supply-of-7nm-and-below-chips-to-china/</loc>
     <lastmod>2024-11-16T23:05:57+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/network/</loc>
-    <lastmod>2024-11-16T22:21:26+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

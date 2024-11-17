@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 17 Nov 2024 12:09:02 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Nov 2024 15:48:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EVPN</title>
+      <link>https://www.kad8.com/tags/evpn/</link>
+      <pubDate>Sun, 17 Nov 2024 15:48:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/evpn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>VXLAN</title>
+      <link>https://www.kad8.com/tags/vxlan/</link>
+      <pubDate>Sun, 17 Nov 2024 15:48:46 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/vxlan/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>ARM</title>
       <link>https://www.kad8.com/tags/arm/</link>
@@ -114,16 +134,6 @@
       <pubDate>Sat, 16 Nov 2024 22:21:26 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/vlan/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>VXLAN</title>
-      <link>https://www.kad8.com/tags/vxlan/</link>
-      <pubDate>Sat, 16 Nov 2024 22:21:26 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/vxlan/</guid>
       <description></description>
       
     </item>
