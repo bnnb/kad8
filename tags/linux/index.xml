@@ -20,7 +20,7 @@
       
     &lt;/figure&gt;
 
-在Linux世界中，Shell脚本是一种强大的工具，它可以帮助我们自动化任务、处理数据和执行复杂的命令序列。以下是一些Shell脚本的小技巧，这些技巧不仅可以提高你的工作效率，还能让你的脚本更加强大和灵活。&lt;/p&gt;
+在Linux世界中，&lt;a href=&#34;https://www.vxworks.net/linux/442-linux-sheel-simplified-user-guide&#34; target=&#34;_blank&#34;&gt;Shell脚本&lt;/a&gt;是一种强大的工具，它可以帮助我们自动化任务、处理数据和执行复杂的命令序列。以下是一些Shell脚本的小技巧，这些技巧不仅可以提高你的工作效率，还能让你的脚本更加强大和灵活。&lt;/p&gt;
 
 
 &lt;h2 class=&#34;relative group&#34;&gt;条件判断 

@@ -20,7 +20,7 @@
       
     &lt;/figure&gt;
 
-在Linux世界中，Shell脚本是一种强大的工具，它可以帮助我们自动化任务、处理数据和执行复杂的命令序列。以下是一些Shell脚本的小技巧，这些技巧不仅可以提高你的工作效率，还能让你的脚本更加强大和灵活。&lt;/p&gt;
+在Linux世界中，&lt;a href=&#34;https://www.vxworks.net/linux/442-linux-sheel-simplified-user-guide&#34; target=&#34;_blank&#34;&gt;Shell脚本&lt;/a&gt;是一种强大的工具，它可以帮助我们自动化任务、处理数据和执行复杂的命令序列。以下是一些Shell脚本的小技巧，这些技巧不仅可以提高你的工作效率，还能让你的脚本更加强大和灵活。&lt;/p&gt;
 
 
 &lt;h2 class=&#34;relative group&#34;&gt;条件判断 
@@ -43,7 +43,7 @@
       <pubDate>Mon, 18 Nov 2024 19:50:01 +0800</pubDate>
       
       <guid>https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/</guid>
-      <description>&lt;p&gt;在旧版本操作系统中（如Cenos7.4），部分网卡不能被识别出来，需要手动安装驱动。&lt;/p&gt;
+      <description>&lt;p&gt;在旧版本的&lt;a href=&#34;https://www.vxworks.net/linux/1219-top-10-things-to-do-after-installing-kali-linux&#34; target=&#34;_blank&#34;&gt;Linux&lt;/a&gt;操作系统中（如Cenos7.4），部分网卡不能被识别出来，需要手动安装驱动。&lt;/p&gt;
 
 
 &lt;h2 class=&#34;relative group&#34;&gt;查看网卡 
