@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/10-tips-of-linux-shell-script/</loc>
+    <lastmod>2024-11-18T20:26:41+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-11-18T20:26:41+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/network/</loc>
     <lastmod>2024-11-18T19:50:01+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -76,12 +88,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/software/introduction-to-google-logging-library/</loc>
-    <lastmod>2024-11-16T22:08:24+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-11-16T22:08:24+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
