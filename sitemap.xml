@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/network/</loc>
+    <lastmod>2024-11-18T19:50:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/</loc>
+    <lastmod>2024-11-18T19:50:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/</loc>
     <lastmod>2024-11-17T19:19:11+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -23,12 +35,6 @@
   <url>
     <loc>https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/</loc>
     <lastmod>2024-11-17T16:01:07+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/network/</loc>
-    <lastmod>2024-11-17T15:48:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

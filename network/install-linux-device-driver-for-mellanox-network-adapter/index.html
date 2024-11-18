@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>VXLAN为什么需要EVPN &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="VXLAN为什么需要EVPN &middot; Kontronn Asia Design Center" />
+  <title>在Linux系统下安装Mellanox网卡驱动 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="在Linux系统下安装Mellanox网卡驱动 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Why VXLAN Needs EVPN" />
-  <meta name="keywords" content="VXLAN, EVPN, " />
+  <meta name="description" content="Install Linux Device Driver for Mellanox Network Adapter" />
+  <meta name="keywords" content="Mellanox, Linux Device Driver, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/network/why-vxlan-needs-evpn/" />
+  <link rel="canonical" href="https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/network/why-vxlan-needs-evpn/">
+  <meta property="og:url" content="https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="VXLAN为什么需要EVPN">
-  <meta property="og:description" content="Why VXLAN Needs EVPN">
+  <meta property="og:title" content="在Linux系统下安装Mellanox网卡驱动">
+  <meta property="og:description" content="Install Linux Device Driver for Mellanox Network Adapter">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="network">
-    <meta property="article:published_time" content="2024-11-17T15:48:46+08:00">
-    <meta property="article:modified_time" content="2024-11-17T15:48:46+08:00">
-    <meta property="article:tag" content="VXLAN">
-    <meta property="article:tag" content="EVPN">
-    <meta property="og:image" content="https://www.kad8.com/network/why-vxlan-needs-evpn/featured-vxlan-evpn.jpg">
+    <meta property="article:published_time" content="2024-11-18T19:50:01+08:00">
+    <meta property="article:modified_time" content="2024-11-18T19:50:01+08:00">
+    <meta property="article:tag" content="Mellanox">
+    <meta property="article:tag" content="Linux Device Driver">
+    <meta property="og:image" content="https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/featured-nvidia-mellanox-connectx-6.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/network/why-vxlan-needs-evpn/featured-vxlan-evpn.jpg">
-  <meta name="twitter:title" content="VXLAN为什么需要EVPN">
-  <meta name="twitter:description" content="Why VXLAN Needs EVPN">
+  <meta name="twitter:image" content="https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/featured-nvidia-mellanox-connectx-6.jpg">
+  <meta name="twitter:title" content="在Linux系统下安装Mellanox网卡驱动">
+  <meta name="twitter:description" content="Install Linux Device Driver for Mellanox Network Adapter">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Networks",
-    "name": "VXLAN为什么需要EVPN",
-    "headline": "VXLAN为什么需要EVPN",
-    "description": "Why VXLAN Needs EVPN",
-    "abstract": "\u003cp\u003e随着云计算和虚拟化技术的迅猛发展，传统网络架构逐渐暴露出难以满足大规模、高灵活性云数据中心需求的短板。为了应对这一挑战，Overlay网络的概念应运而生，其核心理念在于通过网络虚拟化技术构建一层逻辑网络，以更灵活、高效地管理网络资源。在众多Overlay网络技术中，\u003ca href=\u0022https:\/\/www.kad8.com\/network\/introduction-to-vxlan\/\u0022 target=\u0022_blank\u0022\u003eVXLAN\u003c\/a\u003e因其出色的扩展性和隔离能力脱颖而出。与此同时，EVPN也开始在数据中心和企业园区网络中展现出非凡的潜力。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e传统企业园区设计 \n    \u003cdiv id=\u0022%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/vxlan-evpn-1.jpeg\u0022 alt=\u0022Why VXLAN need EVPN\u0022 \/\u003e\n      \u003cfigcaption\u003e图 1 - 传统三层网络\u003c\/figcaption\u003e\n    \u003c\/figure\u003e\n\u003c\/p\u003e",
+    "name": "在Linux系统下安装Mellanox网卡驱动",
+    "headline": "在Linux系统下安装Mellanox网卡驱动",
+    "description": "Install Linux Device Driver for Mellanox Network Adapter",
+    "abstract": "\u003cp\u003e在旧版本操作系统中（如Cenos7.4），部分网卡不能被识别出来，需要手动安装驱动。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e查看网卡 \n    \u003cdiv id=\u0022%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eBMC界面查看安装了7张网卡，共13个网口，如下图\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/mellanox-linux-device-driver-1.png\u0022 alt=\u0022Mellanox Network List\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/network\/why-vxlan-needs-evpn\/",
+    "url" : "https:\/\/www.kad8.com\/network\/install-linux-device-driver-for-mellanox-network-adapter\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-17T15:48:46\u002b08:00",
-    "datePublished": "2024-11-17T15:48:46\u002b08:00",
+    "dateCreated": "2024-11-18T19:50:01\u002b08:00",
+    "datePublished": "2024-11-18T19:50:01\u002b08:00",
     
-    "dateModified": "2024-11-17T15:48:46\u002b08:00",
+    "dateModified": "2024-11-18T19:50:01\u002b08:00",
     
-    "keywords": ["VXLAN","EVPN"],
+    "keywords": ["Mellanox","Linux Device Driver"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "218"
+    "wordCount": "647"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      VXLAN为什么需要EVPN
+      在Linux系统下安装Mellanox网卡驱动
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-17T15:48:46&#43;08:00">2024-11-17</time>
+  <time datetime="2024-11-18T19:50:01&#43;08:00">2024-11-18</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxlan/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mellanox/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VXLAN
+    Mellanox
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/evpn/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux-device-driver/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    EVPN
+    Linux Device Driver
   </span>
 </span>
   </span>
@@ -582,9 +582,22 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#传统企业园区设计">传统企业园区设计</a></li>
-    <li><a href="#vxlan-的兴起">VXLAN 的兴起</a></li>
-    <li><a href="#evpn的引入">EVPN的引入</a></li>
+    <li><a href="#查看网卡">查看网卡</a></li>
+    <li><a href="#安装驱动">安装驱动</a>
+      <ul>
+        <li><a href="#下载驱动">下载驱动</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装驱动-en">安装驱动-EN</a>
+      <ul>
+        <li><a href="#解压安装包">解压安装包</a></li>
+        <li><a href="#安装程序">安装程序</a></li>
+        <li><a href="#重新加载新驱动">重新加载新驱动</a></li>
+        <li><a href="#查看网卡信息">查看网卡信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装驱动-ofed">安装驱动-OFED</a></li>
+    <li><a href="#后记">后记</a></li>
   </ul>
 </nav>
   </div>
@@ -598,9 +611,22 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#传统企业园区设计">传统企业园区设计</a></li>
-    <li><a href="#vxlan-的兴起">VXLAN 的兴起</a></li>
-    <li><a href="#evpn的引入">EVPN的引入</a></li>
+    <li><a href="#查看网卡">查看网卡</a></li>
+    <li><a href="#安装驱动">安装驱动</a>
+      <ul>
+        <li><a href="#下载驱动">下载驱动</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装驱动-en">安装驱动-EN</a>
+      <ul>
+        <li><a href="#解压安装包">解压安装包</a></li>
+        <li><a href="#安装程序">安装程序</a></li>
+        <li><a href="#重新加载新驱动">重新加载新驱动</a></li>
+        <li><a href="#查看网卡信息">查看网卡信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装驱动-ofed">安装驱动-OFED</a></li>
+    <li><a href="#后记">后记</a></li>
   </ul>
 </nav>
   </div>
@@ -684,130 +710,255 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>随着云计算和虚拟化技术的迅猛发展，传统网络架构逐渐暴露出难以满足大规模、高灵活性云数据中心需求的短板。为了应对这一挑战，Overlay网络的概念应运而生，其核心理念在于通过网络虚拟化技术构建一层逻辑网络，以更灵活、高效地管理网络资源。在众多Overlay网络技术中，<a href="https://www.kad8.com/network/introduction-to-vxlan/" target="_blank">VXLAN</a>因其出色的扩展性和隔离能力脱颖而出。与此同时，EVPN也开始在数据中心和企业园区网络中展现出非凡的潜力。</p>
+          <p>在旧版本操作系统中（如Cenos7.4），部分网卡不能被识别出来，需要手动安装驱动。</p>
 
 
-<h2 class="relative group">传统企业园区设计 
-    <div id="%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1" class="anchor"></div>
+<h2 class="relative group">查看网卡 
+    <div id="%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BC%A0%E7%BB%9F%E4%BC%81%E4%B8%9A%E5%9B%AD%E5%8C%BA%E8%AE%BE%E8%AE%A1" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>传统上，许多企业园区网络都是采用三层架构设计的，包括接入层、汇聚层和核心层。规模较小的地点会采用扁平化核心模型，即两层架构，将核心层和汇聚层合并为一层。对于大型地点来说，典型的网络设计如下所示：</p>
+<p>BMC界面查看安装了7张网卡，共13个网口，如下图</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-1.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 1 - 传统三层网络</figcaption>
+      <img class="my-0 rounded-md" loading="lazy" src="./mellanox-linux-device-driver-1.png" alt="Mellanox Network List" />
+      
     </figure>
 </p>
-<p>请注意，有些链接是 L2（红色），而其他的则是 L3（绿色）。在这种设计中，我们通常会遇到哪些问题？</p>
-<ul>
-<li>并非所有链路都在转发。</li>
-<li>缺少等价多路径 (ECMP) 路径。</li>
-<li>接入层到汇聚层易受桥接环路影响。</li>
-<li>使用生成树协议（STP）及其保护特性（如BPDU Guard、Root Guard、PortFast等）设计复杂。</li>
-<li>收敛速度可能较慢。</li>
-<li>与 VLAN 数量和 STP 实例相关的可扩展性问题。</li>
-<li>需要第一跳路由协议 (FHRP)，如热备份路由协议（HSRP）来提供汇聚层的冗余。</li>
-<li>故障排除困难。</li>
-</ul>
-<p>如果设计得当，这种类型的网络架构可以很好地工作，但也存在许多潜在的陷阱。相信大家在职业生涯中的某个时刻，都尝试过查找桥接环路的来源。正如前文所提到的，接入层缺乏 ECMP，因为并非所有链路都可以利用。下图移除了通常会因 STP 而被阻塞的链路：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-2.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 2 – 具有阻塞链路的传统三层网络</figcaption>
-    </figure>
-</p>
-<p>在这个拓扑结构中，DS01 是根桥，这就是通向 DS02 的链路被阻塞的原因。这不仅意味着没有 ECMP，还意味着如果通向 DS01 的链路出现问题，只能依赖 STP 进行收敛。使用 802.1D STP 构建网络的话，可能需要 30-50 秒，而使用 802.1w STP，可以实现亚秒级的收敛。</p>
-<p>VXLAN 和 EVPN 可以帮助解决其中一些问题。接下来，我们一步一步来分析。</p>
+<p>在系统中使用lspci也可以看到13个网口</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># lspci | grep Mellanox</span>
+</span></span><span class="line"><span class="cl">04:00.0 Ethernet controller: Mellanox Technologies MT27800 Family <span class="o">[</span>ConnectX-5<span class="o">]</span>
+</span></span><span class="line"><span class="cl">04:00.1 Ethernet controller: Mellanox Technologies MT27800 Family <span class="o">[</span>ConnectX-5<span class="o">]</span>
+</span></span><span class="line"><span class="cl">08:00.0 Ethernet controller: Mellanox Technologies MT27710 Family <span class="o">[</span>ConnectX-4 Lx<span class="o">]</span>
+</span></span><span class="line"><span class="cl">08:00.1 Ethernet controller: Mellanox Technologies MT27710 Family <span class="o">[</span>ConnectX-4 Lx<span class="o">]</span>
+</span></span><span class="line"><span class="cl">2d:00.0 Ethernet controller: Mellanox Technologies MT27800 Family <span class="o">[</span>ConnectX-5<span class="o">]</span>
+</span></span><span class="line"><span class="cl">5b:00.0 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">5b:00.1 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">5c:00.0 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">5c:00.1 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">96:00.0 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">96:00.1 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">97:00.0 Ethernet controller: Mellanox Technologies MT28841
+</span></span><span class="line"><span class="cl">97:00.1 Ethernet controller: Mellanox Technologies MT28841
+</span></span></code></pre></div><p>但是使用命令查看网口，只可以看到5个ens网口，有8个没有，需要手动安装驱动</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># ip add</span>
+</span></span><span class="line"><span class="cl">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN qlen <span class="m">1</span>
+</span></span><span class="line"><span class="cl">2: ens19f0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">3: ens19f1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">4: ens21f0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">5: ens21f1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">6: ens12: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">7: virbr0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc noqueue state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">8: virbr0-nic: &lt;BROADCAST,MULTICAST&gt; mtu <span class="m">1500</span> qdisc pfifo_fast master virbr0 state DOWN qlen 
+</span></span></code></pre></div>
 
-
-<h2 class="relative group">VXLAN 的兴起 
-    <div id="vxlan-%E7%9A%84%E5%85%B4%E8%B5%B7" class="anchor"></div>
+<h2 class="relative group">安装驱动 
+    <div id="%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vxlan-%E7%9A%84%E5%85%B4%E8%B5%B7" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>我们经常将 VXLAN 和 EVPN 放在一起讨论，就好像它们是同一种技术一样。然而，EVPN 最初主要用于服务提供商网络，以向客户提供更好的 L2 服务，而 VXLAN 主要用于数据中心。VXLAN是根据2014年发布的RFC 7348定义的，它原本是一项独立的技术，并没有与EVPN配对。它是一种数据平面封装技术，旨在克服传统L2网络的挑战：</p>
-<ul>
-<li>可扩展性问题：IEEE 802.1Q中定义的VLAN ID只有12个比特，这意味着最多有 4096 个 VLAN。此外，通常还会预留一些VLAN，使得实际可用的数量更少。这对于大规模网络（如数据中心和一些大型园区环境）来说是不够的。</li>
-<li>缺乏 ECMP：前文提到 STP 会阻塞链路，这意味着网络中昂贵的链路没有得到有效地使用。有些工作负载需要大量带宽。在数据中心使用三层架构可能会造成hotspot，导致某些链路/节点过载。</li>
-<li>缺乏多租户：使用传统设计很难构建多租户网络，主要与无法扩展有关。</li>
-</ul>
-<p>那么 VXLAN 是如何解决这些问题的？</p>
-<p>VXLAN 在报头中有一个 24 位字段，称为虚拟网络标识符 (VNI)，提供了 16777216 个潜在虚拟网络。与 4096这个数字相比，是一个相当大的进步！</p>
-<p>VXLAN 能够同时执行桥接和路由。它是一种在物理网络之上运行的协议，我们通常称之为Overlay。可以把它想象成一个隧道，其中隧道的两端点被称为VXLAN隧道端点（VTEP）。由于 VXLAN 是一种隧道形式，尽管它是无状态的，但只要有 L3 连接，它就可以在任何拓扑和底层协议之上运行。这意味着可以构建所谓Underlay网络，它是一个完全路由的设计。这就消除了与 L2 相关的几乎所有挑战，并提供了 ECMP、快速收敛等功能。</p>
-<p>由于 VXLAN 的扩展性更好，这也提供了多租户支持的能力。</p>
-<p>下面是一个叶脊拓扑的示例：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-3.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 3 - 采用 VXLAN 的叶脊拓扑</figcaption>
-    </figure>
-</p>
-<p>此拓扑中的所有链路都是 L3，并且它们将执行转发操作。通常，Underlay会使用如OSPF或IS-IS这样的内部网关协议（IGP）来提供VTEP之间的L3连接。</p>
-<p>当然，提供这些强大功能是需要付出代价的。这里说的代价不是金钱成本，而是封装和开销。VXLAN 是一种 MAC-over-IP/UDP 协议，它会将以太网帧进行封装，并添加一个VXLAN头部、UDP头部以及外部IP和MAC头部。这会增加50字节或54字节的开销，具体取决于是否保留完整的802.1Q头部。如下所示：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-4.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 4 - VXLAN 封装</figcaption>
-    </figure>
-</p>
-<ul>
-<li>VXLAN头部主要提供VNI，以便在数据平面中将数据包转发到正确的虚拟网络。</li>
-<li>当帧被 VTEP 封装时，最常见的做法是移除802.1Q头部。</li>
-<li>当原始帧被修改时，会计算一个新的 CRC（循环冗余校验），并丢弃旧的 CRC。由于旧的 CRC 被丢弃，所以新的 CRC 不会增加任何额外的开销。</li>
-<li>添加一个 UDP 报头，其中目标端口通常为 4789，而源端口则根据内部报头中的字段生成。UDP 报头增加了熵，以便底层可以更好地利用 ECMP 路径。</li>
-<li>外部 IP 报头包含源和目标 VTEP 的源 IP 和目标 IP。</li>
-<li>外部以太网报头用于通过以太网链路逐跳转发帧。</li>
-</ul>
-<p>需要注意的是，没有 EVPN 支持的 VXLAN 会利用泛洪和学习行为，这与传统交换机的行为类似。如果它不知道目标 MAC，它会泛洪该帧，并在收到响应时学习 MAC，这被称为未知单播。没有 EVPN 的 VTEP 行为类似。如果它尚未学习 MAC，它将使用底层网络的多播或入口复制将其泛洪到所有其他相关 VTEP。</p>
-<p>泛洪和学习机制显然不是最优选择，那么如何解决这一问题呢？这就需要用到EVPN了。</p>
 
 
-<h2 class="relative group">EVPN的引入 
-    <div id="evpn%E7%9A%84%E5%BC%95%E5%85%A5" class="anchor"></div>
+<h3 class="relative group">下载驱动 
+    <div id="%E4%B8%8B%E8%BD%BD%E9%A9%B1%E5%8A%A8" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#evpn%E7%9A%84%E5%BC%95%E5%85%A5" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%8B%E8%BD%BD%E9%A9%B1%E5%8A%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>驱动下载地址：</p>
+<blockquote>
+<p><a href="https://developer.nvidia.com/networking/ethernet-software" target="_blank">https://developer.nvidia.com/networking/ethernet-software</a></p>
+</blockquote>
+<p>EN版本只包含网卡驱动，OFED版本既有驱动还有部分配套软件，建议下载OFED版本。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./mellanox-linux-device-driver-2.png" alt="Mellanox Network List" />
+      
+    </figure>
+</p>
+<p>然后选择对应的系统和架构，下载安装包</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./mellanox-linux-device-driver-3.png" alt="Mellanox Network List" />
+      
+    </figure>
+</p>
+<p>查看操作系统版本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># cat /etc/redhat-release </span>
+</span></span><span class="line"><span class="cl">CentOS Linux release 7.4.1708 <span class="o">(</span>Core<span class="o">)</span> 
+</span></span></code></pre></div>
+
+<h2 class="relative group">安装驱动-EN 
+    <div id="%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8-en" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8-en" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>EVPN是一种用于二层网络互联的VPN技术，采用类似于BGP/MPLS IP VPN的机制，在BGP协议的基础上定义了一种新的NLRI（网络层可达信息）即EVPN NLRI，EVPN NLRI定义了几种新的BGP EVPN路由类型，用于处在二层网络的不同站点之间的MAC地址学习和发布。</p>
-<p>前文提到，原有的VXLAN实现方案没有控制平面，是通过数据平面的流量泛洪进行VTEP发现和主机信息（包括IP地址、MAC地址、VNI、网关VTEP IP地址）学习的，这种方式导致数据中心网络存在很多泛洪流量。为了解决这一问题，VXLAN引入了EVPN作为控制平面，通过在VTEP之间交换BGP EVPN路由实现VTEP的自动发现、主机信息相互通告等特性，从而避免了不必要的数据流量泛洪。</p>
-<p>与独立 VXLAN 相比，EVPN 提供了以下优势：</p>
-<ul>
-<li>通过 BGP 消息发现 VTEP，而不是基于接收 VXLAN 封装的帧。这比盲目接受所有 VXLAN 封装的帧更安全。</li>
-<li>广播 MAC 和 MAC/主机 IP 路由、入口复制 VTEP、IP 前缀和以太网段。</li>
-<li>减少泛洪量。</li>
-<li>像ARP抑制这样的特性依赖于通过EVPN学习到的路由。</li>
-</ul>
-<p>EVPN 具备很多优势，那么如何启用它呢？需要配置BGP并启用EVPN。通常情况下，叶子节点（Leaf）被配置为路由反射器客户端，而骨干节点（Spine）充当路由反射器。如下所示：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-5.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 5 - BGP EVPN 拓扑</figcaption>
-    </figure>
-</p>
-<p>对于了解MPLS 的人来说，EVPN路由中有很多熟悉的部分，例如路由目标 (RT)、路由区分符 (RD)、MPLS 标签等。下面列出了一些最常见的 EVPN 路由类型及其提供的内容：</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./vxlan-evpn-6.jpeg" alt="Why VXLAN need EVPN" />
-      <figcaption>图 6 - EVPN 路由类型</figcaption>
-    </figure>
-</p>
-<p>通过EVPN通告VTEP所知的MAC和IP地址，就无需依赖泛洪和学习行为。</p>
-<p>总而言之，在构建能够扩展且快速收敛的健壮网络方面，传统的三层网络设计面临诸多挑战。通过利用VXLAN和EVPN构建叶脊拓扑，不仅可以显著提高网络的灵活性和可靠性，还能有效解决扩展性、多租户支持等问题，同时实现快速收敛和等价多路径传输。</p>
+
+
+<h3 class="relative group">解压安装包 
+    <div id="%E8%A7%A3%E5%8E%8B%E5%AE%89%E8%A3%85%E5%8C%85" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%A7%A3%E5%8E%8B%E5%AE%89%E8%A3%85%E5%8C%85" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost Downloads<span class="o">]</span><span class="c1"># ls</span>
+</span></span><span class="line"><span class="cl">mlnx-en-23.10-3.2.2.0-rhel7.4-x86_64.tgz
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost Downloads<span class="o">]</span><span class="c1"># tar -vxf mlnx-en-23.10-3.2.2.0-rhel7.4-x86_64.tgz </span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">安装程序 
+    <div id="%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>进入目录，执行安装程序</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost Downloads<span class="o">]</span><span class="c1"># cd mlnx-en-23.10-3.2.2.0-rhel7.4-x86_64/</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost mlnx-en-23.10-3.2.2.0-rhel7.4-x86_64<span class="o">]</span><span class="c1"># ls</span>
+</span></span><span class="line"><span class="cl">common_installers.pl  common.pl  create_mlnx_ofed_installers.pl  distro  install  is_kmp_compat.sh  LICENSE  mlnx_add_kernel_support.sh  RPM-GPG-KEY-Mellanox  RPMS  RPMS_ETH  src  uninstall.sh
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost mlnx-en-23.10-3.2.2.0-rhel7.4-x86_64<span class="o">]</span><span class="c1"># ./install </span>
+</span></span><span class="line"><span class="cl">Logs dir: /tmp/mlnx-en.55110.logs
+</span></span><span class="line"><span class="cl">General log file: /tmp/mlnx-en.55110.logs/general.log
+</span></span><span class="line"><span class="cl">Verifying KMP rpms compatibility with target kernel...
+</span></span><span class="line"><span class="cl">This program will install the mlnx-en package on your machine.
+</span></span><span class="line"><span class="cl">Note that all other Mellanox, OEM, OFED, RDMA or Distribution IB packages will be removed.
+</span></span><span class="line"><span class="cl">Those packages are removed due to conflicts with mlnx-en, <span class="k">do</span> not reinstall them.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 这里输入y即可</span>
+</span></span><span class="line"><span class="cl">Do you want to <span class="k">continue</span>?<span class="o">[</span>y/N<span class="o">]</span>:y
+</span></span></code></pre></div>
+
+<h3 class="relative group">重新加载新驱动 
+    <div id="%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%A9%B1%E5%8A%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%A9%B1%E5%8A%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>等安装完，需要执行提示命令，重新加载新驱动</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/etc/init.d/mlnx-en.d restart
+</span></span></code></pre></div><p>注意，重新加载驱动后，网卡名会变化，对应的网卡配置文件也要修改才行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 如，ens19f0变为ens19f0np0</span>
+</span></span><span class="line"><span class="cl">9: ens19f0np0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">查看网卡信息 
+    <div id="%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>重新查看网卡数量，可以看到变为13个，恢复正常。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">9: ens19f0np0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">10: ens19f1np1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">11: ens21f0np0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">12: ens21f1np1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">13: ens12np0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc mq state UP qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">14: ens13f0np0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">15: ens13f1np1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">16: ens14f0np0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">17: ens14f1np1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">18: ens15f0np0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">19: ens15f1np1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">20: ens16f0np0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">21: ens16f1np1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu <span class="m">1500</span> qdisc mq state DOWN qlen <span class="m">1000</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">安装驱动-OFED 
+    <div id="%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8-ofed" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8-ofed" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>解压后执行安装程序</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># tar -vxf MLNX_OFED_LINUX-23.10-3.2.2.0-rhel7.4-x86_64</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># cd MLNX_OFED_LINUX-23.10-3.2.2.0-rhel7.4-x86_64/ </span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost MLNX_OFED_LINUX-23.10-3.2.2.0-rhel7.4-x86_64<span class="o">]</span><span class="c1"># ./mlnxofedinstall</span>
+</span></span></code></pre></div><p>如果缺少依赖，按提示安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">General log file: /tmp/MLNX_OFED_LINUX.74618.logs/general.log
+</span></span><span class="line"><span class="cl">Error: One or more required packages <span class="k">for</span> installing MLNX_OFED_LINUX are missing.
+</span></span><span class="line"><span class="cl">Please install the missing packages using your Linux distribution Package Management tool.
+</span></span><span class="line"><span class="cl">Run:
+</span></span><span class="line"><span class="cl">yum install tcl tk
+</span></span></code></pre></div><p>然后继续安装，输入y即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost MLNX_OFED_LINUX-23.10-3.2.2.0-rhel7.4-x86_64<span class="o">]</span><span class="c1"># ./mlnxofedinstall </span>
+</span></span><span class="line"><span class="cl">Logs dir: /tmp/MLNX_OFED_LINUX.75823.logs
+</span></span><span class="line"><span class="cl">General log file: /tmp/MLNX_OFED_LINUX.75823.logs/general.log
+</span></span><span class="line"><span class="cl">Verifying KMP rpms compatibility with target kernel...
+</span></span><span class="line"><span class="cl">This program will install the MLNX_OFED_LINUX package on your machine.
+</span></span><span class="line"><span class="cl">Note that all other Mellanox, OEM, OFED, RDMA or Distribution IB packages will be removed.
+</span></span><span class="line"><span class="cl">Those packages are removed due to conflicts with MLNX_OFED_LINUX, <span class="k">do</span> not reinstall them.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Do you want to <span class="k">continue</span>?<span class="o">[</span>y/N<span class="o">]</span>:y
+</span></span></code></pre></div><p>安装完也一样重新加载驱动</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Log File: /tmp/Fpnr9q8X6m
+</span></span><span class="line"><span class="cl">Real log file: /tmp/MLNX_OFED_LINUX.75823.logs/fw_update.log
+</span></span><span class="line"><span class="cl">Failed to update Firmware.
+</span></span><span class="line"><span class="cl">See /tmp/MLNX_OFED_LINUX.75823.logs/fw_update.log
+</span></span><span class="line"><span class="cl">To load the new driver, run:
+</span></span><span class="line"><span class="cl">/etc/init.d/openibd restart
+</span></span></code></pre></div>
+
+<h2 class="relative group">后记 
+    <div id="%E5%90%8E%E8%AE%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%90%8E%E8%AE%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>Mellanox网卡在系统下执行<code>ip link set down</code>命令后link灯依然点亮，而intel的网卡是熄灭的。经过测试排查，总结记录一下处理过程如下：</p>
+<p>需要将网卡的KEEP_ETH_LINK_UP配置项关闭</p>
+<p>mellanox的MFT工具需要提前安装下载并安装,可以从以下网址下载(<a href="https://www.mellanox.com/products/adapter-software/firmware-tools" target="_blank">https://www.mellanox.com/products/adapter-software/firmware-tools</a>）</p>
+<p>以下是具体处理过程：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1">#mst start</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1">#mst status</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1">#mlxconfig –d /dev/mst/**** s KEEP_ETH_LINK_UP_P1=0 (其中***部分为上一步命令的输出。)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1">#mlxconfig –d /dev/mst/**** s KEEP_ETH_LINK_UP_P2=0</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1">#reboot</span>
+</span></span></code></pre></div><p>原因是Mellanox的网卡在 执行<code>ip link set down</code>命令之后，网口link灯依然是亮的，是由于网卡的<code>KEEP_ETH_LINK_UP</code>配置项是默认开启的。</p>
+<p>该配置项可以保证网卡的PHY在部分在没有物理断连的情况下一只保持的link状态。</p>
+<p>在后期的实验室中实测，将KEEP_ETH_LINK_UP配置关闭，执行<code>ip link set down</code>命令之后，link灯可以熄灭。</p>
 
           
           
@@ -825,7 +976,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;title=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -844,7 +995,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;text=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -862,7 +1013,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN&#43;https://www.kad8.com/network/why-vxlan-needs-evpn/"
+      href="https://bsky.app/intent/compose?text=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8&#43;https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/"
       title=""
       aria-label=""
       >
@@ -880,7 +1031,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN%20https://www.kad8.com/network/why-vxlan-needs-evpn/"
+      href="https://s2f.kytta.dev/?text=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8%20https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/"
       title=""
       aria-label=""
       >
@@ -899,7 +1050,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;resubmit=true&amp;title=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -918,7 +1069,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;description=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;description=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -937,7 +1088,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;quote=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;quote=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -956,7 +1107,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;subject=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="mailto:?body=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;subject=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -975,7 +1126,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;resubmit=true&amp;title=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title=""
       aria-label=""
       >
@@ -994,7 +1145,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/network/why-vxlan-needs-evpn/&amp;resubmit=true&amp;title=VXLAN%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81EVPN"
+      href="https://t.me/share/url?url=https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/&amp;resubmit=true&amp;title=%e5%9c%a8Linux%e7%b3%bb%e7%bb%9f%e4%b8%8b%e5%ae%89%e8%a3%85Mellanox%e7%bd%91%e5%8d%a1%e9%a9%b1%e5%8a%a8"
       title=""
       aria-label=""
       >
@@ -1020,11 +1171,11 @@
   
   
 
-  <a href="/network/introduction-to-vxlan/" class="min-w-full">
+  <a href="/hardware/install-and-configure-cxl-memory-expansion-card-on-server/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/network/introduction-to-vxlan/featured-VLAN-vs-VXLAN_hu13478985816254467324.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/install-and-configure-cxl-memory-expansion-card-on-server/featured-SK-Hynix_CXL_hu3076611709572833555.png);"></div>
         
       
 
@@ -1032,7 +1183,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/network/introduction-to-vxlan/">VXLAN 简介</div>
+          href="/hardware/install-and-configure-cxl-memory-expansion-card-on-server/">CXL内存扩展卡在服务器上如何安装和配置</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1071,7 +1222,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
+  <time datetime="2024-11-17T19:19:11&#43;08:00">2024-11-17</time>
   
 
   
@@ -1095,13 +1246,229 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vlan/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VLAN
+    CXL
   </span>
 </span>
   </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/memory-expansion/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Memory Expansion
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/ai/amd-plans-to-launch-new-ryzen-200-series-apus/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/amd-plans-to-launch-new-ryzen-200-series-apus/featured-amd-ryzen-200-apu_hu12800488994214661545.jpeg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/ai/amd-plans-to-launch-new-ryzen-200-series-apus/">AMD 计划推出全新 Ryzen 200 系列APU</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-17T16:01:07&#43;08:00">2024-11-17</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/amd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    AMD
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/apu/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    APU
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/network/why-vxlan-needs-evpn/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/network/why-vxlan-needs-evpn/featured-vxlan-evpn_hu7148655555150939754.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/network/why-vxlan-needs-evpn/">VXLAN为什么需要EVPN</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-17T15:48:46&#43;08:00">2024-11-17</time>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxlan/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
@@ -1111,242 +1478,10 @@
 </span>
   </span>
   
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/ai/how-google-arm-server-chips-perform/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/how-google-arm-server-chips-perform/featured-google-cloud-trillium-racks-node-logo_hu14667114278760147866.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/how-google-arm-server-chips-perform/">谷歌ARM服务器芯片表现如何</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-17T12:09:02&#43;08:00">2024-11-17</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google-cloud/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/evpn/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Google Cloud
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/arm/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ARM
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/server/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Server
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/ai/google-is-developing-two-chips/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/google-is-developing-two-chips/featured-google-watch_hu14491376243851776054.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/google-is-developing-two-chips/">谷歌正在开发的两颗芯片</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-11-17T11:50:24&#43;08:00">2024-11-17</time>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/google/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Google
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pixel-watch/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pixel Watch
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tensor/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Tensor
+    EVPN
   </span>
 </span>
   </span>
@@ -1383,8 +1518,8 @@
           
         
       <script>
-        var oid = "views_network\/why-VXLAN-needs-EVPN\/index.md"
-        var oid_likes = "likes_network\/why-VXLAN-needs-EVPN\/index.md"
+        var oid = "views_network\/install-linux-device-driver-for-mellanox-network-adapter\/index.md"
+        var oid_likes = "likes_network\/install-linux-device-driver-for-mellanox-network-adapter\/index.md"
       </script>
       
       
@@ -1404,7 +1539,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/network/introduction-to-vxlan/">
+            <a class="flex group mr-3" href="/network/why-vxlan-needs-evpn/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1416,11 +1551,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >VXLAN 简介</span
+                  >VXLAN为什么需要EVPN</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
+                    <time datetime="2024-11-17T15:48:46&#43;08:00">2024-11-17</time>
                   
                 </span>
               </span>
@@ -1428,28 +1563,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/network/install-linux-device-driver-for-mellanox-network-adapter/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >在Linux系统下安装Mellanox网卡驱动</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-18T19:50:01&#43;08:00">2024-11-18</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

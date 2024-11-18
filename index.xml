@@ -9,6 +9,35 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>在Linux系统下安装Mellanox网卡驱动</title>
+      <link>https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/</link>
+      <pubDate>Mon, 18 Nov 2024 19:50:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/</guid>
+      <description>&lt;p&gt;在旧版本操作系统中（如Cenos7.4），部分网卡不能被识别出来，需要手动安装驱动。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;查看网卡 
+    &lt;div id=&#34;%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;BMC界面查看安装了7张网卡，共13个网口，如下图&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./mellanox-linux-device-driver-1.png&#34; alt=&#34;Mellanox Network List&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/install-linux-device-driver-for-mellanox-network-adapter/featured-nvidia-mellanox-connectx-6.jpg" />
+    </item>
+    
+    <item>
       <title>CXL内存扩展卡在服务器上如何安装和配置</title>
       <link>https://www.kad8.com/hardware/install-and-configure-cxl-memory-expansion-card-on-server/</link>
       <pubDate>Sun, 17 Nov 2024 19:19:11 +0800</pubDate>
