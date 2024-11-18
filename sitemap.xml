@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-11-18T21:36:06+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/comparison-between-tensorflow-and-pytorch/</loc>
+    <lastmod>2024-11-18T21:36:06+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/10-tips-of-linux-shell-script/</loc>
     <lastmod>2024-11-18T20:26:41+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -35,12 +47,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-11-17T19:19:11+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-17T16:01:07+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
