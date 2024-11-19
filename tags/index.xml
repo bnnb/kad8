@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Mon, 18 Nov 2024 21:36:06 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Nov 2024 19:23:18 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVLink</title>
+      <link>https://www.kad8.com/tags/nvlink/</link>
+      <pubDate>Tue, 19 Nov 2024 19:23:18 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/nvlink/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>UALink</title>
+      <link>https://www.kad8.com/tags/ualink/</link>
+      <pubDate>Tue, 19 Nov 2024 19:23:18 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/ualink/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Pytorch</title>
       <link>https://www.kad8.com/tags/pytorch/</link>
@@ -554,26 +574,6 @@
       <pubDate>Fri, 01 Nov 2024 17:20:29 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/cudimm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>NVLink</title>
-      <link>https://www.kad8.com/tags/nvlink/</link>
-      <pubDate>Fri, 01 Nov 2024 13:38:51 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/nvlink/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>UALink</title>
-      <link>https://www.kad8.com/tags/ualink/</link>
-      <pubDate>Fri, 01 Nov 2024 13:38:51 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/ualink/</guid>
       <description></description>
       
     </item>

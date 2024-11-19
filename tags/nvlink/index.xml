@@ -7,7 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Fri, 01 Nov 2024 13:38:51 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvlink/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Nov 2024 19:23:18 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvlink/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvidia Chip Server Overheats</title>
+      <link>https://www.kad8.com/ai/nvidia-chip-server-overheats/</link>
+      <pubDate>Tue, 19 Nov 2024 19:23:18 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/nvidia-chip-server-overheats/</guid>
+      <description>&lt;p&gt;11月17日，The Information突然报道，英伟达新一代Blackwell芯片可能再次面临延期，重提4个月前所谓的配套服务器过热的技术难题，这使得一些客户担心他们没有足够时间来部署新的数据中心。&lt;/p&gt;
+&lt;p&gt;报道援引知情人士称，当Blackwell GPU被连接在设计容纳多达72个芯片的服务器机架中时会出现过热现象。据参与该项目的英伟达员工以及了解情况的客户和供应商透露，芯片制造商已多次要求供应商更改机架设计以解决过热问题。对此，英伟达发言人在向路透社表示：&amp;ldquo;英伟达正在与主要云服务提供商密切合作，将其作为我们工程团队和流程的重要组成部分，工程迭代是正常且预期的。”&lt;/p&gt;
+&lt;p&gt;两位订购了新芯片的大型云服务提供商高管向The Information表示，他们担心这些问题可能推迟明年GPU集群的部署时间。多位客户和供应商表示，尽管设计变更出现在生产后期，但英伟达可能仍能按原计划在明年上半年末交付机架，目前尚未通知客户有任何延迟。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./nvidia-chip-server.png&#34; alt=&#34;Nvidia Blackwell Chip Server&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;以下为数字开物汇总的此前英伟达芯片服务器过热的相关信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;满载情况下，这款72-GPU机架重达1.5吨、高度超过普通家用冰箱，英伟达将其宣传为实现芯片之间最快性能连接的最佳方案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多位知情人士称，这款机架及其密集排列数十个 GPU 的设计是英伟达有史以来最为复杂的设计，在公开推出机架几个月后，英伟达工程师在测试中发现，机架无法正常工作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;据两位参与服务器生产的人士透露，过多高性能芯片的连接会导致过热，影响服务器的可靠性和性能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;两位了解内情的英伟达员工还表示，配套36芯片的小型服务器机架同样面临过热困扰，目前尚不清楚该公司是否已解决这一问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;据悉，由于处理器设计缺陷导致良率问题，Nvidia 不得不推迟 Blackwell 的量产计划。Nvidia 的 Blackwell B100 和 B200 GPU 采用 TSMC 的 CoWoS-L 封装技术来连接其两个芯片组 (chiplet)。这种设计包括一个配备本地硅互连桥的 RDL 互联层，可支持高达 10 TB/s 的数据传输速度。这些 LSI 桥的精确定位对于该技术的正常运行至关重要。然而，GPU 芯片组、LSI 桥、RDL 互联层和主板基板 (substrate) 的热膨胀特性不匹配，导致了变形和系统故障。为了解决这个问题，据报道 Nvidia 对 GPU 硅片的顶层金属结构和微凸点进行了改良，以提高生产可靠性。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/nvidia-chip-server-overheats/featured-blackwell-chip.png" />
+    </item>
+    
     <item>
       <title>九大巨头，正式成立UALink联盟</title>
       <link>https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/</link>
