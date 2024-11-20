@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-20T22:57:02+08:00</lastmod>
+    <lastmod>2024-11-20T23:55:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/kioxia-nand-flash-memory-based-on-cxl-interface/</loc>
+    <lastmod>2024-11-20T23:55:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
