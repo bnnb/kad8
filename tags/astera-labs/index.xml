@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 19 Nov 2024 20:15:36 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/astera-labs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Nov 2024 13:16:08 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/astera-labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>联想推出配备 128 个 128GB DDR5 DIMM 的 CXL Memory 解决方案</title>
+      <link>https://www.kad8.com/hardware/lenovo-has-a-cxl-memory-monster-based-on-astera-labs-leo/</link>
+      <pubDate>Wed, 20 Nov 2024 13:16:08 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/lenovo-has-a-cxl-memory-monster-based-on-astera-labs-leo/</guid>
+      <description>&lt;p&gt;在 2024 年 OCP 峰会上，我们看到了另一款 CXL 怪兽——联想 ThinkSystem SR860 V3。联想网站上列出的该系统具有“64x 插槽中高达 16TB 的 TruDDR5 内存”。在 2024 年 OCP 峰会上，我们看到了这款怪兽，以及联想如何在 CXL 和 Astera Labs Leo 的帮助下做到这一点。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/lenovo-has-a-cxl-memory-monster-based-on-astera-labs-leo/featured-astera-labs-leo.jpg" />
+    </item>
+    
     <item>
       <title>PCIe Over Optics的样机展示</title>
       <link>https://www.kad8.com/ai/pcie-over-optics-demo/</link>
