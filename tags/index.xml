@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Wed, 20 Nov 2024 23:55:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Nov 2024 00:07:01 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMD</title>
+      <link>https://www.kad8.com/tags/amd/</link>
+      <pubDate>Thu, 21 Nov 2024 00:07:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/amd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://www.kad8.com/tags/intel/</link>
+      <pubDate>Thu, 21 Nov 2024 00:07:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/intel/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Server Chip</title>
+      <link>https://www.kad8.com/tags/server-chip/</link>
+      <pubDate>Thu, 21 Nov 2024 00:07:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/server-chip/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>CXL</title>
       <link>https://www.kad8.com/tags/cxl/</link>
@@ -224,16 +254,6 @@
       <pubDate>Sun, 17 Nov 2024 19:19:11 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/memory-expansion/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>AMD</title>
-      <link>https://www.kad8.com/tags/amd/</link>
-      <pubDate>Sun, 17 Nov 2024 16:01:07 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/amd/</guid>
       <description></description>
       
     </item>
@@ -504,16 +524,6 @@
       <pubDate>Tue, 05 Nov 2024 00:26:40 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/log/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Intel</title>
-      <link>https://www.kad8.com/tags/intel/</link>
-      <pubDate>Tue, 05 Nov 2024 00:16:45 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/intel/</guid>
       <description></description>
       
     </item>

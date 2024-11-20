@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 17 Nov 2024 16:01:07 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Nov 2024 00:07:01 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>服务器芯片，AMD首超英特尔</title>
+      <link>https://www.kad8.com/hardware/for-the-first-time-ever-amd-outsells-intel-in-the-datacenter/</link>
+      <pubDate>Thu, 21 Nov 2024 00:07:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/for-the-first-time-ever-amd-outsells-intel-in-the-datacenter/</guid>
+      <description>&lt;p&gt;二十多年来，英特尔一直是&lt;a href=&#34;https://www.gaitpu.com&#34; target=&#34;_blank&#34;&gt;数据中心 CPU&lt;/a&gt; 市场无可争议的领导者。英特尔的 Xeon 处理器为绝大多数服务器提供动力，而 AMD 的处理器在七八年前仅占据个位数的市场份额。然而，情况发生了巨大变化。虽然英特尔的 Xeon CPU 仍然为大多数服务器提供动力，但现在最昂贵的机器使用的是 AMD 的 EPYC 处理器。这就是 AMD 数据中心业务部门现在的销量超过英特尔数据中心和 AI 业务部门的原因，正如 SemiAnalysis观察到的那样。&lt;/p&gt;
+&lt;p&gt;事实上，AMD 数据中心部门的收入  在第三季度达到了35.49 亿美元，而英特尔数据中心和 AI 部门的收入在 2024 年第三季度为33 亿美元 。就在两年前，英特尔的 DCAI 部门每季度的收入为 50 亿至 60 亿美元。但随着 AMD 的 EPYC 处理器相对于英特尔的 Xeon CPU 获得了竞争优势，英特尔不得不以大幅折扣出售其服务器芯片，这降低了公司的收入和利润率。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/for-the-first-time-ever-amd-outsells-intel-in-the-datacenter/featured-amd-server.png" />
+    </item>
+    
     <item>
       <title>AMD 计划推出全新 Ryzen 200 系列APU</title>
       <link>https://www.kad8.com/ai/amd-plans-to-launch-new-ryzen-200-series-apus/</link>

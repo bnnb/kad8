@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-20T23:55:46+08:00</lastmod>
+    <lastmod>2024-11-21T00:07:01+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/for-the-first-time-ever-amd-outsells-intel-in-the-datacenter/</loc>
+    <lastmod>2024-11-21T00:07:01+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
