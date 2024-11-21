@@ -9,7 +9,7 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Wed, 20 Nov 2024 23:55:46 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/kioxia/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kioxia Nand Flash Memory Based on CXL Interface</title>
+      <title>基于CXL接口的NAND闪存</title>
       <link>https://www.kad8.com/hardware/kioxia-nand-flash-memory-based-on-cxl-interface/</link>
       <pubDate>Wed, 20 Nov 2024 23:55:46 +0800</pubDate>
       
@@ -27,7 +27,7 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-&lt;p&gt;最近，一种基于PCIe的互连技术CXL（Compute Express Link）已经标准化，并在服务器和数据中心应用中获得了发展。CXL技术旨在为CPU、GPU、加速器和其他设备之间的高效内存共享提供低延迟、高带宽的连接。&lt;/p&gt;
+&lt;p&gt;最近，一种基于PCIe的互连技术&lt;a href=&#34;https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/&#34; target=&#34;_blank&#34;&gt;CXL（Compute Express Link）&lt;/a&gt;已经标准化，并在服务器和数据中心应用中获得了发展。CXL技术旨在为CPU、GPU、加速器和其他设备之间的高效内存共享提供低延迟、高带宽的连接。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
       &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./nand-flash-cxl-1.png&#34; alt=&#34;Nand Flash based on CXL&#34; /&gt;
