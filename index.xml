@@ -9,6 +9,32 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Rust正在秘密接管芯片开发</title>
+      <link>https://www.kad8.com/software/rust-is-secretly-taking-over-chip-development/</link>
+      <pubDate>Sat, 23 Nov 2024 22:22:00 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/software/rust-is-secretly-taking-over-chip-development/</guid>
+      <description>&lt;p&gt;这篇文章主要介绍了&lt;a href=&#34;https://www.gaitpu.com/os/vxworks/using-rust-in-vxworks7&#34; target=&#34;_blank&#34;&gt;Rust&lt;/a&gt;是如何进入计算机芯片的，以及为什么像英伟达、AMD、谷歌和微软这样的公司都在投资由Rust固件驱动的安全硬件。&lt;/p&gt;
+&lt;p&gt;英伟达、AMD、谷歌和微软一直在悄悄开展一个名为calyptra的项目，这是一项安全计划，通过提供基于rust的关键信任根组件的实现，来强化计算机芯片以抵御黑客攻击。&lt;/p&gt;
+&lt;p&gt;下面介绍什么是信任根，信任根（简称Ro）是一个独立的硬件安全组件，以及运行它的固件。它负责验证底层引导代码是真实的，没有被篡改。类似于你如何验证下载文件的校验和，以确保它们没有被篡改。&lt;/p&gt;
+&lt;p&gt;如果没有 Ro， 你的计算机系统基本上就像一个前门没有锁的房子，黑客可以很容易地修改启动过程，这将允许他们绕过安全检查，安装恶意软件和病毒。即使你擦除硬盘驱动器并将计算机重置为出厂设置，黑客仍然可以对你的计算机系统进行控制。&lt;/p&gt;
+&lt;p&gt;那么，为什么像英伟达和AMD这样的计算机芯片公司要合作开发一种新的基于Rust的信任根呢？&lt;/p&gt;
+&lt;p&gt;当前的信任根实现存在三个主要问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;首先是碎片化问题，不同的硬件平台有不同的Ro实现，这会导致安全功能不一致，并且很难在不同设备之间实现统一的安全性。&lt;/li&gt;
+&lt;li&gt;其次是透明度的问题，传统的Ro实现都是黑盒子，你可以看到输入和输出，但是你看不到里面是什么。这使得审计和验证其安全性变得困难。&lt;/li&gt;
+&lt;li&gt;第三，数据中心需要一个信任的根源解决方案，不仅安全，而且在分布式环境中具有高度可扩展性和可管理性，这一点尤其重要，因为人工智能推动了对更多基础设施的需求。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;而这三个挑战正是calyptra想要解决的，那么Rust是如何融入这一切的呢？calyptra提供了两件事：首先是RO硬件设计的知识产权，包括cpu、gpu、dpu等，其次是calyptra提供开源固件来管理硬件。&lt;/p&gt;
+&lt;p&gt;如果我们看一下固件仓库，我们可以看到代码是用Rust编写的，这一点也不奇怪，微软已经在另一个专有的Ro实现中使用了Rust，叫做pluton， Azure的CTO也非常直言不讳地说要在云基础设施中使用Rust而不是C++，谷歌已经使用Rust开发底层的Android软件。&lt;/p&gt;
+&lt;p&gt;通过使用Rust，calyptra 显著减少了内存安全漏洞，旨在创建一个更健壮、更安全、可维护的信任根实现，该项目与增强现代计算机环境安全性的目标非常吻合。&lt;/p&gt;
+&lt;p&gt;据报道，谷歌和微软计划最快在2024年在他们自己的芯片上实现calyptra。AMD的目标是在2026年实现产品集成，这意味着我们可以在未来几年内在AMD的服务器和消费芯片上看到基于calyptra的安全功能。&lt;/p&gt;
+&lt;p&gt;现在，当calyptra在计算机芯片安全领域掀起波浪时，rust也获得了关注。在嵌入式系统的其他领域，特别是汽车行业，梅赛德斯-奔驰、宝马、丰田、福特、博世和大众都在使用rust。&lt;/p&gt;
+&lt;p&gt;在最近一篇关于沃尔沃使用rust的文章中，沃尔沃汽车的一位首席工程师说，他们使用rust来实现ECU芯片的固件。这些芯片是管理汽车电气系统各个方面的关键部件，这不仅仅是一些概念上的证明，这些使用rust开发的芯片的动力汽车已经上路了，沃尔沃的ex90和pstar 3车型就是这些例子。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/rust-is-secretly-taking-over-chip-development/featured-rust-chip-development.png" />
+    </item>
+    
+    <item>
       <title>RAID5和RAID6的对比</title>
       <link>https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/</link>
       <pubDate>Sat, 23 Nov 2024 21:58:56 +0800</pubDate>
