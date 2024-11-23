@@ -28,7 +28,7 @@
     
 &lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;社区驱动: 由 AlmaLinux OS 基金会维护，确保其开发和决策的开放透明&lt;/li&gt;
+&lt;li&gt;社区驱动: 由 &lt;a href=&#34;https://www.kad8.com/software/almalinux-9-5-released/&#34; target=&#34;_blank&#34;&gt;AlmaLinux&lt;/a&gt; OS 基金会维护，确保其开发和决策的开放透明&lt;/li&gt;
 &lt;li&gt;与 RHEL 的兼容性: 提供 1:1 的二进制兼容性，这意味着用户可以在不修改现有 RHEL 应用程序的情况下迁移到 AlmaLinux&lt;/li&gt;
 &lt;li&gt;多架构支持: 支持 x86_64、ARM64、IBM PowerPC 和 IBM Z 等主流硬件架构&lt;/li&gt;
 &lt;li&gt;企业级特性:&lt;/li&gt;
