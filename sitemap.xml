@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-11-23T21:52:03+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/lattice-semiconductor-considers-acquiring-altera/</loc>
+    <lastmod>2024-11-23T21:52:03+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/almalinux-9-5-released/</loc>
     <lastmod>2024-11-23T21:19:08+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -40,12 +52,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/hardware/amd-patent-filing-reveals-unique-chip-stacking-method/</loc>
-    <lastmod>2024-11-23T16:11:15+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-11-23T16:11:15+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
