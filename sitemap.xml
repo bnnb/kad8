@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/almalinux-9-5-released/</loc>
+    <lastmod>2024-11-23T21:19:08+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-11-23T21:19:08+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-11-23T20:46:18+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -71,12 +83,6 @@
   <url>
     <loc>https://www.kad8.com/ai/pcie-over-optics-demo/</loc>
     <lastmod>2024-11-19T20:15:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
-    <lastmod>2024-11-19T19:30:53+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

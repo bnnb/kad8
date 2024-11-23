@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>使用命令行备份MySQL数据库 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="使用命令行备份MySQL数据库 &middot; Kontronn Asia Design Center" />
+  <title>AlmaLinux 9.5 重磅发布 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="AlmaLinux 9.5 重磅发布 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Backing Up a Mysql Database Using Command Line" />
-  <meta name="keywords" content="Mysql, Database, " />
+  <meta name="description" content="AlmaLinux 9.5 Released" />
+  <meta name="keywords" content="AlmaLinux 9.5, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/" />
+  <link rel="canonical" href="https://www.kad8.com/software/almalinux-9-5-released/" />
   
   
   
@@ -66,24 +66,23 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/">
+  <meta property="og:url" content="https://www.kad8.com/software/almalinux-9-5-released/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="使用命令行备份MySQL数据库">
-  <meta property="og:description" content="Backing Up a Mysql Database Using Command Line">
+  <meta property="og:title" content="AlmaLinux 9.5 重磅发布">
+  <meta property="og:description" content="AlmaLinux 9.5 Released">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-11-19T19:30:53+08:00">
-    <meta property="article:modified_time" content="2024-11-19T19:30:53+08:00">
-    <meta property="article:tag" content="Mysql">
-    <meta property="article:tag" content="Database">
-    <meta property="og:image" content="https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/featured-backup-MySQL.jpg">
+    <meta property="article:published_time" content="2024-11-23T21:19:08+08:00">
+    <meta property="article:modified_time" content="2024-11-23T21:19:08+08:00">
+    <meta property="article:tag" content="AlmaLinux 9.5">
+    <meta property="og:image" content="https://www.kad8.com/software/almalinux-9-5-released/featured-almalinux95.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/featured-backup-MySQL.jpg">
-  <meta name="twitter:title" content="使用命令行备份MySQL数据库">
-  <meta name="twitter:description" content="Backing Up a Mysql Database Using Command Line">
+  <meta name="twitter:image" content="https://www.kad8.com/software/almalinux-9-5-released/featured-almalinux95.png">
+  <meta name="twitter:title" content="AlmaLinux 9.5 重磅发布">
+  <meta name="twitter:description" content="AlmaLinux 9.5 Released">
 
   
   <script type="application/ld+json">
@@ -91,26 +90,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "使用命令行备份MySQL数据库",
-    "headline": "使用命令行备份MySQL数据库",
-    "description": "Backing Up a Mysql Database Using Command Line",
-    "abstract": "\u003cp\u003eMySQL是一个广泛使用的开源关系数据库管理系统，它常用于各种规模的应用，从个人博客到大型企业级系统。在使用MySQL的过程中，数据备份是一项至关重要的任务，它能够确保在发生数据丢失或系统故障时，我们可以恢复和重新部署数据库。在本文中，我们将介绍如何使用mysql命令行工具备份数据库，并包含几个具体的示例。\u003c\/p\u003e\n\u003cp\u003eImage\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003emysql命令行工具和备份数据库的重要性 \n    \u003cdiv id=\u0022mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eMySQL命令行工具是一个强大的工具，它允许用户执行各种数据库管理任务，包括创建、修改、删除表，插入、更新、删除数据等。除此之外，它还可以用来备份和恢复数据库。备份数据库可以确保在意外发生时，我们能够恢复数据并继续正常的业务操作。此外，备份也是验证和验证数据库完整性的重要手段。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e备份数据库的基本步骤 \n    \u003cdiv id=\u0022%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e打开终端或命令提示符\u003c\/p\u003e",
+    "name": "AlmaLinux 9.5 重磅发布",
+    "headline": "AlmaLinux 9.5 重磅发布",
+    "description": "AlmaLinux 9.5 Released",
+    "abstract": "\u003cp\u003eAlmaLinux 是一个免费的开源企业级 Linux 发行版，由社区主导，旨在提供 Red Hat Enterprise Linux (RHEL) 的完全兼容替代品。它的特点包括稳定性、高性能和对企业环境的支持，同时提供与 RHEL 一致的功能和体验。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eAlmaLinux 的核心特点： \n    \u003cdiv id=\u0022almalinux-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#almalinux-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e社区驱动: 由 AlmaLinux OS 基金会维护，确保其开发和决策的开放透明\u003c\/li\u003e\n\u003cli\u003e与 RHEL 的兼容性: 提供 1:1 的二进制兼容性，这意味着用户可以在不修改现有 RHEL 应用程序的情况下迁移到 AlmaLinux\u003c\/li\u003e\n\u003cli\u003e多架构支持: 支持 x86_64、ARM64、IBM PowerPC 和 IBM Z 等主流硬件架构\u003c\/li\u003e\n\u003cli\u003e企业级特性:\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cul\u003e\n\u003cli\u003e稳定的更新周期和长期支持\u003c\/li\u003e\n\u003cli\u003e丰富的开发工具和安全增强功能\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003col start=\u00225\u0022\u003e\n\u003cli\u003e适用场景：从服务器、云计算到容器化应用，覆盖多种使用场景\u003c\/li\u003e\n\u003c\/ol\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e历史背景 \n    \u003cdiv id=\u0022%E5%8E%86%E5%8F%B2%E8%83%8C%E6%99%AF\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%8E%86%E5%8F%B2%E8%83%8C%E6%99%AF\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003eAlmaLinux 起源于 \u003ca href=\u0022https:\/\/www.vxworks.net\/news\/1035-the-centos-project-claims-to-be-open-to-all\u0022 target=\u0022_blank\u0022\u003eCentOS\u003c\/a\u003e 项目方向调整后，为满足用户对稳定性和开源的需求而创建。2021 年初首次发布，逐渐成为许多企业迁移 CentOS 后的首选。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/backing-up-a-mysql-database-using-command-line\/",
+    "url" : "https:\/\/www.kad8.com\/software\/almalinux-9-5-released\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-19T19:30:53\u002b08:00",
-    "datePublished": "2024-11-19T19:30:53\u002b08:00",
+    "dateCreated": "2024-11-23T21:19:08\u002b08:00",
+    "datePublished": "2024-11-23T21:19:08\u002b08:00",
     
-    "dateModified": "2024-11-19T19:30:53\u002b08:00",
+    "dateModified": "2024-11-23T21:19:08\u002b08:00",
     
-    "keywords": ["Mysql","Database"],
+    "keywords": ["AlmaLinux 9.5"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "63"
+    "wordCount": "136"
   }]
   </script>
 
@@ -440,7 +439,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      使用命令行备份MySQL数据库
+      AlmaLinux 9.5 重磅发布
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +480,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-19T19:30:53&#43;08:00">2024-11-19</time>
+  <time datetime="2024-11-23T21:19:08&#43;08:00">2024-11-23</time>
   
 
   
@@ -505,18 +504,10 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mysql/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/almalinux-9.5/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Mysql
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/database/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Database
+    AlmaLinux 9.5
   </span>
 </span>
   </span>
@@ -582,10 +573,10 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#mysql命令行工具和备份数据库的重要性">mysql命令行工具和备份数据库的重要性</a></li>
-    <li><a href="#备份数据库的基本步骤">备份数据库的基本步骤</a></li>
-    <li><a href="#示例">示例</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#almalinux-的核心特点">AlmaLinux 的核心特点：</a></li>
+    <li><a href="#历史背景">历史背景</a></li>
+    <li><a href="#almalinux-95">AlmaLinux 9.5</a></li>
+    <li><a href="#关键功能">关键功能：</a></li>
   </ul>
 </nav>
   </div>
@@ -599,10 +590,10 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#mysql命令行工具和备份数据库的重要性">mysql命令行工具和备份数据库的重要性</a></li>
-    <li><a href="#备份数据库的基本步骤">备份数据库的基本步骤</a></li>
-    <li><a href="#示例">示例</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#almalinux-的核心特点">AlmaLinux 的核心特点：</a></li>
+    <li><a href="#历史背景">历史背景</a></li>
+    <li><a href="#almalinux-95">AlmaLinux 9.5</a></li>
+    <li><a href="#关键功能">关键功能：</a></li>
   </ul>
 </nav>
   </div>
@@ -686,86 +677,118 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>MySQL是一个广泛使用的开源关系数据库管理系统，它常用于各种规模的应用，从个人博客到大型企业级系统。在使用MySQL的过程中，数据备份是一项至关重要的任务，它能够确保在发生数据丢失或系统故障时，我们可以恢复和重新部署数据库。在本文中，我们将介绍如何使用mysql命令行工具备份数据库，并包含几个具体的示例。</p>
-<p>Image</p>
+          <p>AlmaLinux 是一个免费的开源企业级 Linux 发行版，由社区主导，旨在提供 Red Hat Enterprise Linux (RHEL) 的完全兼容替代品。它的特点包括稳定性、高性能和对企业环境的支持，同时提供与 RHEL 一致的功能和体验。</p>
 
 
-<h2 class="relative group">mysql命令行工具和备份数据库的重要性 
-    <div id="mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7" class="anchor"></div>
+<h2 class="relative group">AlmaLinux 的核心特点： 
+    <div id="almalinux-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>MySQL命令行工具是一个强大的工具，它允许用户执行各种数据库管理任务，包括创建、修改、删除表，插入、更新、删除数据等。除此之外，它还可以用来备份和恢复数据库。备份数据库可以确保在意外发生时，我们能够恢复数据并继续正常的业务操作。此外，备份也是验证和验证数据库完整性的重要手段。</p>
-
-
-<h2 class="relative group">备份数据库的基本步骤 
-    <div id="%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>打开终端或命令提示符</p>
-<p>使用mysql命令登录到MySQL服务器</p>
-<p>执行备份命令</p>
-<p>输入密码（如果需要的话）</p>
-<p>等待备份完成</p>
-
-
-<h2 class="relative group">示例 
-    <div id="%E7%A4%BA%E4%BE%8B" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%A4%BA%E4%BE%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#almalinux-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9" aria-label="锚点">#</a>
     </span>        
     
 </h2>
 <ol>
-<li>使用mysql命令行工具备份数据库到指定目录</li>
+<li>社区驱动: 由 AlmaLinux OS 基金会维护，确保其开发和决策的开放透明</li>
+<li>与 RHEL 的兼容性: 提供 1:1 的二进制兼容性，这意味着用户可以在不修改现有 RHEL 应用程序的情况下迁移到 AlmaLinux</li>
+<li>多架构支持: 支持 x86_64、ARM64、IBM PowerPC 和 IBM Z 等主流硬件架构</li>
+<li>企业级特性:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mysqldump -u username -p database_name &gt; /path/to/backup/directory/backup.sql
-</span></span></code></pre></div><p>在这个命令中，<code>username</code>是你的MySQL用户名，<code>database_name</code>是要备份的数据库名。<code>/path/to/backup/directory/</code>是你要保存备份文件的目录。执行这个命令后，会要求你输入密码。输入密码后，等待备份完成。</p>
-<ol start="2">
-<li>使用mysql命令行工具备份数据库为指定格式</li>
+<ul>
+<li>稳定的更新周期和长期支持</li>
+<li>丰富的开发工具和安全增强功能</li>
+</ul>
+<ol start="5">
+<li>适用场景：从服务器、云计算到容器化应用，覆盖多种使用场景</li>
 </ol>
-<p>除了直接输出到SQL文件，<code>mysqldump</code>也支持将数据库备份为其他格式，如CSV。以下是一个示例：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mysqldump --skip-extended-insert --skip-opt --compact --no-create-info your_database your_table.csv
-</span></span></code></pre></div><p>这个命令将数据库your_database中的表your_table备份为CSV格式，并直接输出到终端。你可以根据需要修改表名和数据库名。</p>
-<ol start="3">
-<li>使用mysql命令行工具备份数据库并添加元数据信息</li>
-</ol>
-<p>有时，我们可能希望在备份中包含关于备份本身的元数据，例如备份的时间、使用的MySQL版本等。我们可以使用&ndash;comments选项来实现这个需求：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mysqldump --comments --user<span class="o">=</span>username --password<span class="o">=</span>password dbname &gt; dbname_dump_include_metadata.sql
-</span></span></code></pre></div><p>这个命令将在备份文件中添加注释，包括备份的时间、MySQL版本等信息。</p>
-<ol start="4">
-<li>使用mysql命令行工具备份数据库并实现自动备份</li>
-</ol>
-<p>对于需要定期备份的数据库，我们可以使用cron等工具来实现自动备份。以下是一个简单的crontab示例，它将每天凌晨3点自动备份数据库：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0</span> <span class="m">3</span> * * * /usr/bin/mysqldump -u username -p password database_name &gt; /path/to/backup/directory/backup_<span class="k">$(</span>date +%Y%m%d%H%M%S<span class="k">)</span>.sql
-</span></span></code></pre></div><p>这个命令将在每天的凌晨3点执行，并将数据库备份到指定的目录。每次备份的文件名将包含备份的时间，以方便我们识别和管理。</p>
 
 
-<h2 class="relative group">总结 
-    <div id="%E6%80%BB%E7%BB%93" class="anchor"></div>
+<h2 class="relative group">历史背景 
+    <div id="%E5%8E%86%E5%8F%B2%E8%83%8C%E6%99%AF" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%8E%86%E5%8F%B2%E8%83%8C%E6%99%AF" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>通过以上示例，我们可以看到mysql命令行工具在备份数据库时的灵活性和便利性。使用mysqldump工具，我们可以轻松地将数据库导出到各种格式的文件中，包括SQL、CSV等，而且还可以实现定期自动备份。此外，它还允许我们在备份文件中添加元数据，以方便我们跟踪和管理备份。总的来说，mysql命令行工具是一个强大的工具，它可以帮助我们有效地管理和备份数据库。</p>
+<p>AlmaLinux 起源于 <a href="https://www.vxworks.net/news/1035-the-centos-project-claims-to-be-open-to-all" target="_blank">CentOS</a> 项目方向调整后，为满足用户对稳定性和开源的需求而创建。2021 年初首次发布，逐渐成为许多企业迁移 CentOS 后的首选。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./almalinux-roadmap.png" alt="AlmaLinux History" />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">AlmaLinux 9.5 
+    <div id="almalinux-95" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#almalinux-95" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./almalinux-9.5.png" alt="AlmaLinux 9.5" />
+      
+    </figure>
+</p>
+<p>AlmaLinux 9.5（代号<code>Teal Serval</code>）最近发布，为开发者和企业用户带来了显著的更新和增强。该版本基于 Red Hat Enterprise Linux (RHEL) 9.5，包含以下主要特点：</p>
+
+
+<h2 class="relative group">关键功能： 
+    <div id="%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ol>
+<li>更新的内核和架构支持</li>
+</ol>
+<ul>
+<li>使用 Linux Kernel 5.14</li>
+<li>支持多种架构，包括 x86_64、ARM64、IBM PowerPC (ppc64le) 和 IBM Z (s390x)</li>
+</ul>
+<ol start="2">
+<li>增强的开发工具</li>
+</ol>
+<ul>
+<li>更新了编译器工具集：GCC Toolset 14、LLVM Toolset 18.1、Rust Toolset 1.79 和 Go Toolset 1.22</li>
+<li>性能调试工具更新：包括 GDB 14.2、Valgrind 3.23.0 和 SystemTap 5.1</li>
+</ul>
+<ol start="3">
+<li>应用流刷新</li>
+</ol>
+<ul>
+<li>包括 Apache HTTP Server 2.4.62 和 Node.js 22 的新版本</li>
+<li>引入了 .NET 9.0 和 BIND 9.18（DNS 服务）</li>
+</ul>
+<ol start="4">
+<li>安全性改进</li>
+</ol>
+<ul>
+<li>OpenSSL 升级至 3.2.2，支持证书压缩和新的加密算法</li>
+<li>SELinux 政策更新，增强了 QEMU 客户代理的安全配置</li>
+</ul>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./almalinux95-desktop.png" alt="AlmaLinux 9.5 Desktop" />
+      
+    </figure>
+</p>
+<p>这些更新进一步巩固了 AlmaLinux 作为企业级环境中强大、开源替代品的地位，同时保持了与 RHEL 的 1:1 二进制兼容性。</p>
+<p>用户可通过运行命令 sudo dnf upgrade -y 将 9.x 系列升级到最新版本。更多详情请参阅官方发布说明或社区讨论。</p>
 
           
           
@@ -783,7 +806,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;title=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/almalinux-9-5-released/&amp;title=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -802,7 +825,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;text=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/almalinux-9-5-released/&amp;text=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -820,7 +843,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93&#43;https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/"
+      href="https://bsky.app/intent/compose?text=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83&#43;https://www.kad8.com/software/almalinux-9-5-released/"
       title=""
       aria-label=""
       >
@@ -838,7 +861,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93%20https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/"
+      href="https://s2f.kytta.dev/?text=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83%20https://www.kad8.com/software/almalinux-9-5-released/"
       title=""
       aria-label=""
       >
@@ -857,7 +880,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/almalinux-9-5-released/&amp;resubmit=true&amp;title=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -876,7 +899,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;description=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/almalinux-9-5-released/&amp;description=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -895,7 +918,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;quote=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/almalinux-9-5-released/&amp;quote=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -914,7 +937,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;subject=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="mailto:?body=https://www.kad8.com/software/almalinux-9-5-released/&amp;subject=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -933,7 +956,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/almalinux-9-5-released/&amp;resubmit=true&amp;title=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title=""
       aria-label=""
       >
@@ -952,7 +975,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/backing-up-a-mysql-database-using-command-line/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%a4%87%e4%bb%bdMySQL%e6%95%b0%e6%8d%ae%e5%ba%93"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/almalinux-9-5-released/&amp;resubmit=true&amp;title=AlmaLinux%209.5%20%e9%87%8d%e7%a3%85%e5%8f%91%e5%b8%83"
       title=""
       aria-label=""
       >
@@ -978,11 +1001,11 @@
   
   
 
-  <a href="/software/limit-memory-and-cpu-using-docker-compose/" class="min-w-full">
+  <a href="/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/limit-memory-and-cpu-using-docker-compose/featured-docker-compose_hu18049204220259157055.jpeg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/featured-nvidia-gb200-nvl4-1_hu13812241160136504764.png);"></div>
         
       
 
@@ -990,7 +1013,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/limit-memory-and-cpu-using-docker-compose/">使用docker-compose限制内存和cpu</div>
+          href="/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/">NVIDIA 发布四核 Blackwell GB200的NVL4</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1029,7 +1052,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-28T00:30:51&#43;08:00">2024-10-28</time>
+  <time datetime="2024-11-23T20:46:18&#43;08:00">2024-11-23</time>
   
 
   
@@ -1053,10 +1076,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker-compose/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvidia/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker-Compose
+    Nvidia
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gb200/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    GB200
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvl4/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    NVL4
   </span>
 </span>
   </span>
@@ -1082,11 +1121,11 @@
   
   
 
-  <a href="/ai/setting-direction-for-enterprise-ai-infrastructure/" class="min-w-full">
+  <a href="/network/marvell-and-meta-launch-meta-fbnic-4x-100g-network-adapter/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/setting-direction-for-enterprise-ai-infrastructure/featured-enterprise-infrastructure-of-ai_hu11374852213717621947.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/network/marvell-and-meta-launch-meta-fbnic-4x-100g-network-adapter/featured-Meta-FBNIC-at-OCP-Summit_hu9091210041297467940.jpg);"></div>
         
       
 
@@ -1094,7 +1133,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/setting-direction-for-enterprise-ai-infrastructure/">如何构建高效可靠的AI基础设施</div>
+          href="/network/marvell-and-meta-launch-meta-fbnic-4x-100g-network-adapter/">Marvell与Meta联手推出Meta FBNIC 4x 100G网卡</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1133,7 +1172,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-26T19:56:51&#43;08:00">2024-10-26</time>
+  <time datetime="2024-11-23T16:19:36&#43;08:00">2024-11-23</time>
   
 
   
@@ -1157,18 +1196,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/meta/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AI
+    Meta
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infrastructure/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fbnic/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Infrastructure
+    FBNIC
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ocp/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    OCP
   </span>
 </span>
   </span>
@@ -1194,11 +1241,11 @@
   
   
 
-  <a href="/ai/computer-computing-power-unit-introduction/" class="min-w-full">
+  <a href="/hardware/amd-patent-filing-reveals-unique-chip-stacking-method/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/computer-computing-power-unit-introduction/featured-computing-power_hu12420348815275521962.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-patent-filing-reveals-unique-chip-stacking-method/featured-AMD-Ryzen-Chiplet-CPU_hu5148972365154949724.png);"></div>
         
       
 
@@ -1206,7 +1253,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/computer-computing-power-unit-introduction/">计算机算力单位简介</div>
+          href="/hardware/amd-patent-filing-reveals-unique-chip-stacking-method/">AMD 多芯片堆叠专利曝光</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1245,7 +1292,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
+  <time datetime="2024-11-23T16:11:15&#43;08:00">2024-11-23</time>
   
 
   
@@ -1269,26 +1316,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/computing-power/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/amd/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Computing Power
+    AMD
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/flops/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/patent/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    FLOPS
+    Patent
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/chip-stack/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TOPS
+    Chip Stack
   </span>
 </span>
   </span>
@@ -1325,8 +1372,8 @@
           
         
       <script>
-        var oid = "views_software\/backing-up-a-mysql-database-using-command-line\/index.md"
-        var oid_likes = "likes_software\/backing-up-a-mysql-database-using-command-line\/index.md"
+        var oid = "views_software\/almalinux-9-5-released\/index.md"
+        var oid_likes = "likes_software\/almalinux-9-5-released\/index.md"
       </script>
       
       
@@ -1346,7 +1393,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/10-tips-of-linux-shell-script/">
+            <a class="flex group mr-3" href="/software/backing-up-a-mysql-database-using-command-line/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1358,11 +1405,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >10个必知的Linux Shell脚本小技巧</span
+                  >使用命令行备份MySQL数据库</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-18T20:26:41&#43;08:00">2024-11-18</time>
+                    <time datetime="2024-11-19T19:30:53&#43;08:00">2024-11-19</time>
                   
                 </span>
               </span>
@@ -1370,28 +1417,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/almalinux-9-5-released/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >AlmaLinux 9.5 重磅发布</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-23T21:19:08&#43;08:00">2024-11-23</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
