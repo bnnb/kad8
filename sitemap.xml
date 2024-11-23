@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/network/marvell-and-meta-launch-meta-fbnic-4x-100g-network-adapter/</loc>
+    <lastmod>2024-11-23T16:19:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/network/</loc>
+    <lastmod>2024-11-23T16:19:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/amd-patent-filing-reveals-unique-chip-stacking-method/</loc>
     <lastmod>2024-11-23T16:11:15+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -83,12 +95,6 @@
   <url>
     <loc>https://www.kad8.com/software/10-tips-of-linux-shell-script/</loc>
     <lastmod>2024-11-18T20:26:41+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/network/</loc>
-    <lastmod>2024-11-18T19:50:01+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
