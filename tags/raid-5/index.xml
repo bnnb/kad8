@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raid 5 on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/raid-5/</link>
+    <description>Recent content in Raid 5 on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sat, 23 Nov 2024 21:58:56 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/raid-5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAID5和RAID6的对比</title>
+      <link>https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/</link>
+      <pubDate>Sat, 23 Nov 2024 21:58:56 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/</guid>
+      <description>&lt;p&gt;RAID5 和 RAID6 是两种最常见的 &lt;a href=&#34;https://www.gaitpu.com/data-center/storage/how-to-replace-disks-for-raid&#34; target=&#34;_blank&#34;&gt;RAID 配置&lt;/a&gt;，它们通过冗余数据的方式提供容错能力。然而，两者在数据安全性方面存在显著的差异。本文将详细分析 RAID5 和 RAID6 的数据安全性，并为选择哪种技术提供参考依据。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;RAID5 和 RAID6 的基本原理 
+    &lt;div id=&#34;raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;RAID5 原理 
+    &lt;div id=&#34;raid5-%E5%8E%9F%E7%90%86&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#raid5-%E5%8E%9F%E7%90%86&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;RAID5 是一种基于块级条带化（striping）的磁盘阵列，它将数据和奇偶校验数据分散存储在多个硬盘上。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/featured-raid-5-vs-raid-6.png" />
+    </item>
+    
+  </channel>
+</rss>
