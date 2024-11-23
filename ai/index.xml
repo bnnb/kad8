@@ -75,7 +75,7 @@
       <pubDate>Tue, 19 Nov 2024 19:23:18 +0800</pubDate>
       
       <guid>https://www.kad8.com/ai/nvidia-chip-server-overheats/</guid>
-      <description>&lt;p&gt;11月17日，The Information突然报道，英伟达新一代Blackwell芯片可能再次面临延期，重提4个月前所谓的配套服务器过热的技术难题，这使得一些客户担心他们没有足够时间来部署新的数据中心。&lt;/p&gt;
+      <description>&lt;p&gt;11月17日，The Information突然报道，英伟达新一代&lt;a href=&#34;https://www.kad8.com/ai/several-rack-solutions-for-nvidia-blackwell-platform/&#34; target=&#34;_blank&#34;&gt;Blackwell芯片&lt;/a&gt;可能再次面临延期，重提4个月前所谓的配套服务器过热的技术难题，这使得一些客户担心他们没有足够时间来部署新的数据中心。&lt;/p&gt;
 &lt;p&gt;报道援引知情人士称，当Blackwell GPU被连接在设计容纳多达72个芯片的服务器机架中时会出现过热现象。据参与该项目的英伟达员工以及了解情况的客户和供应商透露，芯片制造商已多次要求供应商更改机架设计以解决过热问题。对此，英伟达发言人在向路透社表示：&amp;ldquo;英伟达正在与主要云服务提供商密切合作，将其作为我们工程团队和流程的重要组成部分，工程迭代是正常且预期的。”&lt;/p&gt;
 &lt;p&gt;两位订购了新芯片的大型云服务提供商高管向The Information表示，他们担心这些问题可能推迟明年GPU集群的部署时间。多位客户和供应商表示，尽管设计变更出现在生产后期，但英伟达可能仍能按原计划在明年上半年末交付机架，目前尚未通知客户有任何延迟。&lt;/p&gt;
 &lt;p&gt;
