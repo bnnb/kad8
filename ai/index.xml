@@ -45,7 +45,7 @@
 &lt;li&gt;因为云计算供应商面临着巨大的财务压力，需要为大规模的资本支出提供可观的投资回报率，所以要求部署AI基础设施的利用率达到最大化&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;要满足现代AI模型的计算需求，只能将数千个GPU或AI加速器与专门为AI工作负载构建的专用网络/结构互连在一起。该网络通常称为“后端”网络，由“向上扩展”的加速器集群结构和“向外扩展”的网络结构组成。“向上扩展”结构通常是一种任意对任意的网状互连，针对最大吞吐量和紧密耦合加速器的能力进行了优化，以快速交换AI模型训练/推理数据。“向外扩展”的例子包括NVLink、Infinity Fabric、PCI Express®（PCIe®）、以太网等。这些技术用于连接多达数百个加速器。&lt;/p&gt;
-&lt;p&gt;PCIe接口在AI加速器和GPU上是原生可用的，一些AI平台还利用PCIe或基于PCIe的协议来扩展结构。随着AI集群的规模从1-2个机架、数十个GPU扩展到跨越多个机架、数百个GPU的大型pod，互连长度迅速成为限制。在PCIe 5.0数据速率下，跨度达7米的有源电缆足以连接几个机架。然而，在更高的数据速率，如PCIe 6.x和PCIe 7.x，对于跨多个机架的GPU集群，需要光解决方案。&lt;/p&gt;
+&lt;p&gt;PCIe接口在AI加速器和GPU上是原生可用的，一些AI平台还利用PCIe或基于PCIe的协议来扩展结构。随着AI集群的规模从1-2个机架、数十个GPU扩展到跨越多个机架、数百个GPU的大型pod，互连长度迅速成为限制。在PCIe 5.0数据速率下，跨度达7米的有源电缆足以连接几个机架。然而，在更高的数据速率，如&lt;a href=&#34;https://www.vxworks.net/bus-protocol/1131-pci-sig-confirms-pcie-5-0-and-6-0-will-use-new-cable-design&#34; target=&#34;_blank&#34;&gt;PCIe 6.x&lt;/a&gt;和PCIe 7.x，对于跨多个机架的GPU集群，需要光解决方案。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
       &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./pcie-over-optics-1.png&#34; alt=&#34;PCIe over optics&#34; /&gt;
