@@ -9,6 +9,37 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Open Future Networking Hardware Ai Ocp 2024 Meta</title>
+      <link>https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/</link>
+      <pubDate>Sun, 24 Nov 2024 11:18:17 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/</guid>
+      <description>&lt;p&gt;在Meta，我们相信开放的硬件会推动创新。在当今世界，越来越多的数据中心基础设施致力于支持新兴的AI技术，开放硬件在协助分解方面发挥着重要作用。通过将传统数据中心技术分解为其核心组件，我们可以构建更加灵活、可扩展和高效的新系统。&lt;/p&gt;
+&lt;p&gt;自2011年帮助创建OCP以来，我们分享了数据中心和组件设计，并开源了网络编排软件，以激发自己的数据中心和整个行业的新想法。这些想法使Meta的数据中心成为世界上最具可持续性和效率的数据中心之一。现在，通过OCP，我们正在为数据中心和更广泛的行业带来新的开放的先进网络技术，用于先进的AI应用。&lt;/p&gt;
+&lt;p&gt;我们宣布了数据中心的两个新的里程碑：下一代AI网络结构，以及与多家供应商密切合作开发的新网络硬件组合。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./OCP-2024-Meta-1.png&#34; alt=&#34;Disaggregated network fabrics&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;DSF：已分解并开放的结构 
+    &lt;div id=&#34;dsf%E5%B7%B2%E5%88%86%E8%A7%A3%E5%B9%B6%E5%BC%80%E6%94%BE%E7%9A%84%E7%BB%93%E6%9E%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#dsf%E5%B7%B2%E5%88%86%E8%A7%A3%E5%B9%B6%E5%BC%80%E6%94%BE%E7%9A%84%E7%BB%93%E6%9E%84&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;网络性能和可用性在从AI训练集群中提取最佳性能方面起着重要作用。正是出于这个原因，我们一直在为AI集群推动后端网络结构的分解。在过去的一年里，我们为下一代AI集群开发了一个分解的计划结构（DSF），以帮助我们开发开放的、与供应商无关的系统，这些系统具有来自整个行业供应商的可互换的构建块。基于DSF允许我们构建大型、无阻塞的结构，以支持高带宽AI集群。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/featured-Meta-DSF.png" />
+    </item>
+    
+    <item>
       <title>Amd Is About to Release the New Ryzen 9 9950x3d and 9900x3d</title>
       <link>https://www.kad8.com/hardware/amd-is-about-to-release-the-new-ryzen-9-9950x3d-and-9900x3d/</link>
       <pubDate>Sun, 24 Nov 2024 11:09:43 +0800</pubDate>
