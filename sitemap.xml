@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/introduction-to-linux-netstat/</loc>
+    <lastmod>2024-11-24T10:55:58+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-11-24T10:55:58+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-11-23T22:41:28+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,12 +28,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/software/rust-is-secretly-taking-over-chip-development/</loc>
-    <lastmod>2024-11-23T22:22:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-11-23T22:22:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
