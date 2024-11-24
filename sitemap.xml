@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/amd-is-about-to-release-the-new-ryzen-9-9950x3d-and-9900x3d/</loc>
+    <lastmod>2024-11-24T11:09:43+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-11-24T11:09:43+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/introduction-to-linux-netstat/</loc>
     <lastmod>2024-11-24T10:55:58+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -29,12 +41,6 @@
   <url>
     <loc>https://www.kad8.com/software/rust-is-secretly-taking-over-chip-development/</loc>
     <lastmod>2024-11-23T22:22:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-23T21:58:56+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
