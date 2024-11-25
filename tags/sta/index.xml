@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>STA on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/sta/</link>
+    <description>Recent content in STA on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Mon, 25 Nov 2024 19:50:05 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/sta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是静态时序分析（STA）中的slack</title>
+      <link>https://www.kad8.com/hardware/introduction-to-slack-in-static-timing-analysis/</link>
+      <pubDate>Mon, 25 Nov 2024 19:50:05 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/introduction-to-slack-in-static-timing-analysis/</guid>
+      <description>&lt;p&gt;在熟练的VLSI物理实现工程师的手中，完美的timing不仅仅是一种可能性；它是被保证的。是的，每一次！&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./slack-static-timing-analysisi-1.png&#34; alt=&#34;Slack in Static Timing Analysis&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Slack 
+    &lt;div id=&#34;slack&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#slack&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;SLACK是信号在电路节点上实际到达时间actual arrival time (AAT)和要求到达时间required arrival time (RAT)之间的差额。要求到达时间（RAT）是信号在不违反时间约束的情况下到达节点的最晚时间。相比之下，实际到达时间（AAT）是根据设计延迟，计算信号到达节点的实际时间。Slack可以是正的、负的或零。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/introduction-to-slack-in-static-timing-analysis/featured-slack.png" />
+    </item>
+    
+  </channel>
+</rss>
