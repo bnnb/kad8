@@ -9,6 +9,32 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>使用CXL打破内存墙</title>
+      <link>https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/</link>
+      <pubDate>Mon, 25 Nov 2024 19:21:30 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/</guid>
+      <description>&lt;p&gt;数据处理的增加、虚拟化的广泛使用以及内存中计算的增加，使得服务器对CPU附加内存的需求呈指数级增长。人工智能、机器学习、大数据和分析等现代工作负载加剧了数据中心管理人员面临的内存挑战。训练大型语言模型（LLM），如GPT-4、Llama 2和PaLM 2需要大的内存容量和计算能力。&lt;/p&gt;
+&lt;p&gt;随着处理器核数的不断增加，实现更快、更复杂的计算，就需要更多的内存。CXL内存可以提供所需的扩展内存容量。最新的Intel Xeon处理器支持最新一代DDR和&lt;a href=&#34;https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/&#34; target=&#34;_blank&#34;&gt;CXL内存&lt;/a&gt;，为客户提供优化配置所需的灵活性，以最好地满足其工作负载需求。&lt;/p&gt;
+&lt;p&gt;此外，以每千兆美元（$/Gbit）计算的DRAM成本并没有像人们预期的那样随着下一代存储节点的增加而降低。由于内存占服务器成本的50%以上，因此有很大的机会优化成本并有效地使用内存资源。&lt;/p&gt;
+&lt;p&gt;作为技术创新者，英特尔在开发新的I/O、内存和存储标准方面有着成功的历史。2019年，英特尔宣布为处理器、内存扩展和加速器开发一种新的缓存/内存相干互连协议，称为CXL。CXL联盟于同年成立，成员包括阿里巴巴、思科、戴尔、Meta、谷歌、惠普、华为和微软。今天，该联盟拥有250多家成员公司，并且还在继续增长。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;CXL概述 
+    &lt;div id=&#34;cxl%E6%A6%82%E8%BF%B0&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#cxl%E6%A6%82%E8%BF%B0&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;与PCIe类似，CXL是一种将设备连接到CPU或任何其他计算元素（如GPU）的协议。CXL也运行在与PCIe相同的物理层链路上，称为“PHY链路”。但是，CXL与PCIe的不同之处在于，它支持与附加设备共享一致内存。CXL的一个用例是附加连贯内存加速器设备；另一个流行的用例是简单地向服务器添加更多内存。显然，CXL在增强内存带宽和容量方面非常重要。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/featured-cxl-bridges-the-gap-data-memory-capacity.png" />
+    </item>
+    
+    <item>
       <title>Meta AI数据中心网络用了哪家的芯片</title>
       <link>https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/</link>
       <pubDate>Sun, 24 Nov 2024 11:18:17 +0800</pubDate>
@@ -218,7 +244,7 @@
     </item>
     
     <item>
-      <title>NVIDIA 发布四核 Blackwell GB200的NVL4</title>
+      <title>Nvidia 发布四核 Blackwell GB200的NVL4</title>
       <link>https://www.kad8.com/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/</link>
       <pubDate>Sat, 23 Nov 2024 20:46:18 +0800</pubDate>
       
@@ -444,7 +470,7 @@
     </item>
     
     <item>
-      <title>Nvidia Chip Server Overheats</title>
+      <title>Nvidia芯片服务器过热</title>
       <link>https://www.kad8.com/ai/nvidia-chip-server-overheats/</link>
       <pubDate>Tue, 19 Nov 2024 19:23:18 +0800</pubDate>
       

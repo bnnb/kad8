@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>RAID5和RAID6的对比 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="RAID5和RAID6的对比 &middot; Kontronn Asia Design Center" />
+  <title>使用CXL打破内存墙 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="使用CXL打破内存墙 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Comparison Between Raid 5 and Raid 6" />
-  <meta name="keywords" content="Raid 5, Raid 6, " />
+  <meta name="description" content="Breaking the Memory Wall With Compute Express Link CXL" />
+  <meta name="keywords" content="CXL, Memory Wall, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/" />
+  <link rel="canonical" href="https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/">
+  <meta property="og:url" content="https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="RAID5和RAID6的对比">
-  <meta property="og:description" content="Comparison Between Raid 5 and Raid 6">
+  <meta property="og:title" content="使用CXL打破内存墙">
+  <meta property="og:description" content="Breaking the Memory Wall With Compute Express Link CXL">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="hardware">
-    <meta property="article:published_time" content="2024-11-23T21:58:56+08:00">
-    <meta property="article:modified_time" content="2024-11-23T21:58:56+08:00">
-    <meta property="article:tag" content="Raid 5">
-    <meta property="article:tag" content="Raid 6">
-    <meta property="og:image" content="https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/featured-raid-5-vs-raid-6.png">
+    <meta property="article:published_time" content="2024-11-25T19:21:30+08:00">
+    <meta property="article:modified_time" content="2024-11-25T19:21:30+08:00">
+    <meta property="article:tag" content="CXL">
+    <meta property="article:tag" content="Memory Wall">
+    <meta property="og:image" content="https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/featured-cxl-bridges-the-gap-data-memory-capacity.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/featured-raid-5-vs-raid-6.png">
-  <meta name="twitter:title" content="RAID5和RAID6的对比">
-  <meta name="twitter:description" content="Comparison Between Raid 5 and Raid 6">
+  <meta name="twitter:image" content="https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/featured-cxl-bridges-the-gap-data-memory-capacity.png">
+  <meta name="twitter:title" content="使用CXL打破内存墙">
+  <meta name="twitter:description" content="Breaking the Memory Wall With Compute Express Link CXL">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Hardwares",
-    "name": "RAID5和RAID6的对比",
-    "headline": "RAID5和RAID6的对比",
-    "description": "Comparison Between Raid 5 and Raid 6",
-    "abstract": "\u003cp\u003eRAID5 和 RAID6 是两种最常见的 \u003ca href=\u0022https:\/\/www.gaitpu.com\/data-center\/storage\/how-to-replace-disks-for-raid\u0022 target=\u0022_blank\u0022\u003eRAID 配置\u003c\/a\u003e，它们通过冗余数据的方式提供容错能力。然而，两者在数据安全性方面存在显著的差异。本文将详细分析 RAID5 和 RAID6 的数据安全性，并为选择哪种技术提供参考依据。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eRAID5 和 RAID6 的基本原理 \n    \u003cdiv id=\u0022raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eRAID5 原理 \n    \u003cdiv id=\u0022raid5-%E5%8E%9F%E7%90%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#raid5-%E5%8E%9F%E7%90%86\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eRAID5 是一种基于块级条带化（striping）的磁盘阵列，它将数据和奇偶校验数据分散存储在多个硬盘上。\u003c\/p\u003e",
+    "name": "使用CXL打破内存墙",
+    "headline": "使用CXL打破内存墙",
+    "description": "Breaking the Memory Wall With Compute Express Link CXL",
+    "abstract": "\u003cp\u003e数据处理的增加、虚拟化的广泛使用以及内存中计算的增加，使得服务器对CPU附加内存的需求呈指数级增长。人工智能、机器学习、大数据和分析等现代工作负载加剧了数据中心管理人员面临的内存挑战。训练大型语言模型（LLM），如GPT-4、Llama 2和PaLM 2需要大的内存容量和计算能力。\u003c\/p\u003e\n\u003cp\u003e随着处理器核数的不断增加，实现更快、更复杂的计算，就需要更多的内存。CXL内存可以提供所需的扩展内存容量。最新的Intel Xeon处理器支持最新一代DDR和\u003ca href=\u0022https:\/\/www.kad8.com\/hardware\/cxl-memory-module-box-cmm-b\/\u0022 target=\u0022_blank\u0022\u003eCXL内存\u003c\/a\u003e，为客户提供优化配置所需的灵活性，以最好地满足其工作负载需求。\u003c\/p\u003e\n\u003cp\u003e此外，以每千兆美元（$\/Gbit）计算的DRAM成本并没有像人们预期的那样随着下一代存储节点的增加而降低。由于内存占服务器成本的50%以上，因此有很大的机会优化成本并有效地使用内存资源。\u003c\/p\u003e\n\u003cp\u003e作为技术创新者，英特尔在开发新的I\/O、内存和存储标准方面有着成功的历史。2019年，英特尔宣布为处理器、内存扩展和加速器开发一种新的缓存\/内存相干互连协议，称为CXL。CXL联盟于同年成立，成员包括阿里巴巴、思科、戴尔、Meta、谷歌、惠普、华为和微软。今天，该联盟拥有250多家成员公司，并且还在继续增长。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eCXL概述 \n    \u003cdiv id=\u0022cxl%E6%A6%82%E8%BF%B0\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#cxl%E6%A6%82%E8%BF%B0\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e与PCIe类似，CXL是一种将设备连接到CPU或任何其他计算元素（如GPU）的协议。CXL也运行在与PCIe相同的物理层链路上，称为“PHY链路”。但是，CXL与PCIe的不同之处在于，它支持与附加设备共享一致内存。CXL的一个用例是附加连贯内存加速器设备；另一个流行的用例是简单地向服务器添加更多内存。显然，CXL在增强内存带宽和容量方面非常重要。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/hardware\/comparison-between-raid-5-and-raid-6\/",
+    "url" : "https:\/\/www.kad8.com\/hardware\/breaking-the-memory-wall-with-compute-express-link-cxl\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-23T21:58:56\u002b08:00",
-    "datePublished": "2024-11-23T21:58:56\u002b08:00",
+    "dateCreated": "2024-11-25T19:21:30\u002b08:00",
+    "datePublished": "2024-11-25T19:21:30\u002b08:00",
     
-    "dateModified": "2024-11-23T21:58:56\u002b08:00",
+    "dateModified": "2024-11-25T19:21:30\u002b08:00",
     
-    "keywords": ["Raid 5","Raid 6"],
+    "keywords": ["CXL","Memory Wall"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "289"
+    "wordCount": "40"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      RAID5和RAID6的对比
+      使用CXL打破内存墙
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-23T21:58:56&#43;08:00">2024-11-23</time>
+  <time datetime="2024-11-25T19:21:30&#43;08:00">2024-11-25</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/raid-5/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Raid 5
+    CXL
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/raid-6/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/memory-wall/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Raid 6
+    Memory Wall
   </span>
 </span>
   </span>
@@ -582,34 +582,12 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#raid5-和-raid6-的基本原理">RAID5 和 RAID6 的基本原理</a>
-      <ul>
-        <li><a href="#raid5-原理">RAID5 原理</a></li>
-        <li><a href="#raid6-原理">RAID6 原理</a></li>
-      </ul>
-    </li>
-    <li><a href="#数据安全性对比raid5-和-raid6">数据安全性对比：RAID5 和 RAID6</a>
-      <ul>
-        <li><a href="#数据冗余与容错能力">数据冗余与容错能力</a></li>
-        <li><a href="#重建过程中面临的风险">重建过程中面临的风险</a></li>
-        <li><a href="#ure不可恢复读取错误">URE（不可恢复读取错误）</a></li>
-        <li><a href="#磁盘容量与数据安全性">磁盘容量与数据安全性</a></li>
-      </ul>
-    </li>
-    <li><a href="#raid5-和-raid6-性能对比">RAID5 和 RAID6 性能对比</a>
-      <ul>
-        <li><a href="#读写性能">读写性能</a></li>
-        <li><a href="#raid-控制器复杂度">RAID 控制器复杂度</a></li>
-        <li><a href="#硬盘利用率">硬盘利用率</a></li>
-      </ul>
-    </li>
-    <li><a href="#成本与复杂性对比">成本与复杂性对比</a>
-      <ul>
-        <li><a href="#硬件成本">硬件成本</a></li>
-        <li><a href="#维护成本">维护成本</a></li>
-      </ul>
-    </li>
-    <li><a href="#raid5-和-raid6-哪个更安全">RAID5 和 RAID6 哪个更安全</a></li>
+    <li><a href="#cxl概述">CXL概述</a></li>
+    <li><a href="#内存扩展">内存扩展</a></li>
+    <li><a href="#节省内存tco">节省内存TCO</a></li>
+    <li><a href="#内存带宽扩展">内存带宽扩展</a></li>
+    <li><a href="#内存池">内存池</a></li>
+    <li><a href="#cxl的好处">CXL的好处</a></li>
   </ul>
 </nav>
   </div>
@@ -623,34 +601,12 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#raid5-和-raid6-的基本原理">RAID5 和 RAID6 的基本原理</a>
-      <ul>
-        <li><a href="#raid5-原理">RAID5 原理</a></li>
-        <li><a href="#raid6-原理">RAID6 原理</a></li>
-      </ul>
-    </li>
-    <li><a href="#数据安全性对比raid5-和-raid6">数据安全性对比：RAID5 和 RAID6</a>
-      <ul>
-        <li><a href="#数据冗余与容错能力">数据冗余与容错能力</a></li>
-        <li><a href="#重建过程中面临的风险">重建过程中面临的风险</a></li>
-        <li><a href="#ure不可恢复读取错误">URE（不可恢复读取错误）</a></li>
-        <li><a href="#磁盘容量与数据安全性">磁盘容量与数据安全性</a></li>
-      </ul>
-    </li>
-    <li><a href="#raid5-和-raid6-性能对比">RAID5 和 RAID6 性能对比</a>
-      <ul>
-        <li><a href="#读写性能">读写性能</a></li>
-        <li><a href="#raid-控制器复杂度">RAID 控制器复杂度</a></li>
-        <li><a href="#硬盘利用率">硬盘利用率</a></li>
-      </ul>
-    </li>
-    <li><a href="#成本与复杂性对比">成本与复杂性对比</a>
-      <ul>
-        <li><a href="#硬件成本">硬件成本</a></li>
-        <li><a href="#维护成本">维护成本</a></li>
-      </ul>
-    </li>
-    <li><a href="#raid5-和-raid6-哪个更安全">RAID5 和 RAID6 哪个更安全</a></li>
+    <li><a href="#cxl概述">CXL概述</a></li>
+    <li><a href="#内存扩展">内存扩展</a></li>
+    <li><a href="#节省内存tco">节省内存TCO</a></li>
+    <li><a href="#内存带宽扩展">内存带宽扩展</a></li>
+    <li><a href="#内存池">内存池</a></li>
+    <li><a href="#cxl的好处">CXL的好处</a></li>
   </ul>
 </nav>
   </div>
@@ -734,294 +690,93 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>RAID5 和 RAID6 是两种最常见的 <a href="https://www.gaitpu.com/data-center/storage/how-to-replace-disks-for-raid" target="_blank">RAID 配置</a>，它们通过冗余数据的方式提供容错能力。然而，两者在数据安全性方面存在显著的差异。本文将详细分析 RAID5 和 RAID6 的数据安全性，并为选择哪种技术提供参考依据。</p>
+          <p>数据处理的增加、虚拟化的广泛使用以及内存中计算的增加，使得服务器对CPU附加内存的需求呈指数级增长。人工智能、机器学习、大数据和分析等现代工作负载加剧了数据中心管理人员面临的内存挑战。训练大型语言模型（LLM），如GPT-4、Llama 2和PaLM 2需要大的内存容量和计算能力。</p>
+<p>随着处理器核数的不断增加，实现更快、更复杂的计算，就需要更多的内存。CXL内存可以提供所需的扩展内存容量。最新的Intel Xeon处理器支持最新一代DDR和<a href="https://www.kad8.com/hardware/cxl-memory-module-box-cmm-b/" target="_blank">CXL内存</a>，为客户提供优化配置所需的灵活性，以最好地满足其工作负载需求。</p>
+<p>此外，以每千兆美元（$/Gbit）计算的DRAM成本并没有像人们预期的那样随着下一代存储节点的增加而降低。由于内存占服务器成本的50%以上，因此有很大的机会优化成本并有效地使用内存资源。</p>
+<p>作为技术创新者，英特尔在开发新的I/O、内存和存储标准方面有着成功的历史。2019年，英特尔宣布为处理器、内存扩展和加速器开发一种新的缓存/内存相干互连协议，称为CXL。CXL联盟于同年成立，成员包括阿里巴巴、思科、戴尔、Meta、谷歌、惠普、华为和微软。今天，该联盟拥有250多家成员公司，并且还在继续增长。</p>
 
 
-<h2 class="relative group">RAID5 和 RAID6 的基本原理 
-    <div id="raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="anchor"></div>
+<h2 class="relative group">CXL概述 
+    <div id="cxl%E6%A6%82%E8%BF%B0" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid5-%E5%92%8C-raid6-%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#cxl%E6%A6%82%E8%BF%B0" aria-label="锚点">#</a>
     </span>        
     
 </h2>
+<p>与PCIe类似，CXL是一种将设备连接到CPU或任何其他计算元素（如GPU）的协议。CXL也运行在与PCIe相同的物理层链路上，称为“PHY链路”。但是，CXL与PCIe的不同之处在于，它支持与附加设备共享一致内存。CXL的一个用例是附加连贯内存加速器设备；另一个流行的用例是简单地向服务器添加更多内存。显然，CXL在增强内存带宽和容量方面非常重要。</p>
+<p>CXL利用<a href="https://www.vxworks.net/bus-protocol/1086-introduction-of-pcie-protocol" target="_blank">PCIe</a>的高速通信能力，显著提高CPU与连接设备（包括内存扩展模块）之间的数据传输速率。第一代CXL链路的运行速度与PCIe Gen5相同，在16通道链路上，每个方向最高可达64GB/s。</p>
 
 
-<h3 class="relative group">RAID5 原理 
-    <div id="raid5-%E5%8E%9F%E7%90%86" class="anchor"></div>
+<h2 class="relative group">内存扩展 
+    <div id="%E5%86%85%E5%AD%98%E6%89%A9%E5%B1%95" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid5-%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID5 是一种基于块级条带化（striping）的磁盘阵列，它将数据和奇偶校验数据分散存储在多个硬盘上。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./raid-5-vs-raid-6-1.png" alt="Raid 5 versus Raid 6" />
-      
-    </figure>
-</p>
-<p>RAID5 至少需要 3 块磁盘，具有以下特点：</p>
-<ul>
-<li>数据和校验分散存储：RAID5 不像 RAID1 那样直接复制整个数据，而是将每个数据块和相应的校验数据分散到所有磁盘中。每个条带的奇偶校验信息存储在一个磁盘上，但这一块磁盘会轮流变化。</li>
-<li>奇偶校验（Parity）：RAID5 通过奇偶校验技术保护数据。在任意一个磁盘损坏的情况下，剩下的磁盘可以通过校验数据恢复丢失的数据。</li>
-</ul>
-<p>RAID5 的最大优势在于它提供了较高的存储利用率，同时能容忍单一磁盘故障。然而，RAID5 只能在一个磁盘损坏时进行数据恢复，第二个磁盘损坏将导致数据丢失。</p>
-
-
-<h3 class="relative group">RAID6 原理 
-    <div id="raid6-%E5%8E%9F%E7%90%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid6-%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID6 是 RAID5 的扩展版本，与 RAID5 类似，它也使用块级条带化和奇偶校验，但增加了第二个校验块，因此可以同时应对两块磁盘的故障。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./raid-5-vs-raid-6-2.png" alt="Raid 5 versus Raid 6" />
-      
-    </figure>
-</p>
-<p>RAID6 至少需要 4 块磁盘。其特点包括：</p>
-<ul>
-<li>双奇偶校验：RAID6 使用两种独立的校验算法生成两组校验数据（P 和 Q），这两组校验数据存储在不同的磁盘上。通过双重校验，RAID6 能在两块磁盘同时故障时恢复数据。</li>
-<li>提高容错能力：与 RAID5 相比，RAID6 的容错能力显著提升，能够防止第二个磁盘在修复第一个磁盘时出现故障导致的数据丢失。</li>
-</ul>
-<p>RAID6 提供更高的安全性，但代价是写入性能的下降和较高的计算复杂性。</p>
-
-
-<h2 class="relative group">数据安全性对比：RAID5 和 RAID6 
-    <div id="%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%AF%B9%E6%AF%94raid5-%E5%92%8C-raid6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%AF%B9%E6%AF%94raid5-%E5%92%8C-raid6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E6%89%A9%E5%B1%95" aria-label="锚点">#</a>
     </span>        
     
 </h2>
+<p>CXL提供了一种使用CXL内存扩展器增加服务器内存容量的新方法。ASIC或CXL控制器管理CXL内存扩展器内附加的DRAM。它将传入的CXL命令转换为相应的DRAM读/写命令。</p>
+<p>所有主要的内存供应商都是扩展CXL生态系统的一部分，并制定了路线图，提供具有高达512 GB DDR5 DRAM内存。CXL内存扩展器数据中心管理人员可以使用CXL Memory expander将其服务器内存容量扩展到数十TB，同时实现每秒数TB的内存带宽。</p>
+<p>操作系统通常将添加的CXL内存视为第二层；本机DRAM是“近”内存，而CXL内存是“远”内存。Linux操作系统在过去几年中不断发展，以隐藏两层之间的延迟差异。这是通过使用“热/冷”页迁移技术来实现的，该技术将CXL内存中频繁访问的数据（“热页”）提升到近内存，同时将“冷”页从近内存迁移到CXL内存。在使用CXL内存扩展器时，不需要修改用户应用程序。</p>
 
 
-<h3 class="relative group">数据冗余与容错能力 
-    <div id="%E6%95%B0%E6%8D%AE%E5%86%97%E4%BD%99%E4%B8%8E%E5%AE%B9%E9%94%99%E8%83%BD%E5%8A%9B" class="anchor"></div>
+<h2 class="relative group">节省内存TCO 
+    <div id="%E8%8A%82%E7%9C%81%E5%86%85%E5%AD%98tco" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%95%B0%E6%8D%AE%E5%86%97%E4%BD%99%E4%B8%8E%E5%AE%B9%E9%94%99%E8%83%BD%E5%8A%9B" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID 的核心功能之一是数据冗余，通过存储校验信息，在磁盘故障时恢复数据。对于 RAID5 和 RAID6，两者的容错机制有所不同：</p>
-<ul>
-<li>RAID5：通过奇偶校验保护数据，能够容忍单个磁盘故障。在一个磁盘故障后，RAID5 会通过校验信息重新生成丢失的数据块。然而，如果第二块磁盘在修复过程中损坏，则会导致整个阵列的数据丢失。</li>
-<li>RAID6：增加了第二个校验块，能够同时容忍两块磁盘故障。在 RAID6 中，即使在修复一个故障磁盘时，另一块磁盘也损坏，系统仍然可以通过剩余的校验数据恢复数据。这使得 RAID6 在应对多块磁盘故障时显著优于 RAID5。</li>
-</ul>
-<p>在数据冗余和容错能力方面，RAID6 明显更具优势。它提供了双重数据校验，可以应对双磁盘故障，这是 RAID5 无法实现的。因此，RAID6 在面对大容量磁盘和多磁盘系统时，能够提供更高的数据安全性。</p>
-
-
-<h3 class="relative group">重建过程中面临的风险 
-    <div id="%E9%87%8D%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%9D%A2%E4%B8%B4%E7%9A%84%E9%A3%8E%E9%99%A9" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E9%87%8D%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%9D%A2%E4%B8%B4%E7%9A%84%E9%A3%8E%E9%99%A9" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID 阵列的一个关键问题是磁盘重建过程中的数据安全性。在磁盘故障后，系统需要通过校验数据重建丢失的数据块。然而，这一过程可能耗费较长时间，尤其是在使用大容量磁盘时，重建时间可能达到数小时甚至数天。在此期间，阵列的容错能力大大下降，系统处于高风险状态。</p>
-<ul>
-<li>RAID5：在重建过程中，如果另一块磁盘故障，整个 RAID 阵列将崩溃，导致数据不可恢复。因此，在重建期间，RAID5 面临着较大的数据丢失风险。</li>
-<li>RAID6：由于其可以同时容忍两块磁盘故障，即使在重建过程中出现第二块磁盘故障，RAID6 仍能保证数据的完整性。重建过程中的安全性显著提升。</li>
-</ul>
-<p>因此，随着磁盘容量的增加，RAID5 在重建过程中的风险显著增加，而 RAID6 则能够更好地应对这一挑战，确保数据安全。</p>
-
-
-<h3 class="relative group">URE（不可恢复读取错误） 
-    <div id="ure%E4%B8%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%E8%AF%BB%E5%8F%96%E9%94%99%E8%AF%AF" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ure%E4%B8%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%E8%AF%BB%E5%8F%96%E9%94%99%E8%AF%AF" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>随着磁盘容量的不断增加，URE（不可恢复读取错误，Unrecoverable Read Error）成为 RAID 数据安全中的一个关键问题。URE 指的是在磁盘读取过程中发生无法纠正的错误，通常以每读取10的14次方或16次方位的读取操作来描述。</p>
-<ul>
-<li>RAID5：如果在数据重建时遇到 URE 错误，重建过程将会失败，导致数据无法恢复。因此，RAID5 尤其容易受到 URE 影响，特别是在大容量磁盘和高密度数据存储环境中。</li>
-<li>RAID6：由于 RAID6 提供双校验，遇到 URE 错误时仍有足够的信息进行数据恢复，因此对 URE 的容忍度更高。</li>
-</ul>
-<p>随着磁盘技术的发展和容量的增加，URE 错误的概率逐渐上升，这使得 RAID6 在抵御 URE 错误时更为可靠。</p>
-
-
-<h3 class="relative group">磁盘容量与数据安全性 
-    <div id="%E7%A3%81%E7%9B%98%E5%AE%B9%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%80%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%A3%81%E7%9B%98%E5%AE%B9%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%80%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>磁盘容量的增长直接影响到 RAID 系统的重建时间、故障风险以及 URE 错误的概率。近年来，企业级存储逐渐转向大容量磁盘（例如 10TB、20TB 或更高），这对 RAID5 的数据安全性提出了严峻的挑战。</p>
-<ul>
-<li>RAID5：在大容量磁盘中，RAID5 的数据重建时间会显著增加，且重建过程中的数据丢失风险增加。随着磁盘容量的增长，RAID5 在数据安全性方面的劣势更加明显。</li>
-<li>RAID6：尽管 RAID6 在磁盘重建过程中也面临重建时间长的问题，但其双校验机制使其在面对大容量磁盘时更加安全。</li>
-</ul>
-<p>因此，对于大容量磁盘，RAID6 提供了更可靠的解决方案，能够有效减少因磁盘容量增加带来的故障风险。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./raid-5-vs-raid-6-3.png" alt="Raid 5 versus Raid 6" />
-      
-    </figure>
-</p>
-
-
-<h2 class="relative group">RAID5 和 RAID6 性能对比 
-    <div id="raid5-%E5%92%8C-raid6-%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid5-%E5%92%8C-raid6-%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%8A%82%E7%9C%81%E5%86%85%E5%AD%98tco" aria-label="锚点">#</a>
     </span>        
     
 </h2>
+<p>使用CXL添加内存的另一个好处是可以在CXL内存缓冲区后面使用更便宜的内存。美光提供128GB的CXL模块，使用的是老一代DDR芯片DDR4内存。从英特尔Xeon6处理器开始，英特尔计划提供一种独特的硬件控制内存分层功能，称为英特尔Flat memory模式，它可以在两个内存层之间迁移数据，而不依赖于操作系统。</p>
+<p>此外，CXL v2.0及更高版本提供了对持久内存的支持。这一点很重要，因为基于CXL的持久内存预计会比DRAM便宜。这种内存在选择内存供应商的路线图上。</p>
 
 
-<h3 class="relative group">读写性能 
-    <div id="%E8%AF%BB%E5%86%99%E6%80%A7%E8%83%BD" class="anchor"></div>
+<h2 class="relative group">内存带宽扩展 
+    <div id="%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E6%89%A9%E5%B1%95" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%AF%BB%E5%86%99%E6%80%A7%E8%83%BD" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID5 和 RAID6 在读写性能上有显著差异，特别是在写入操作时，RAID6 因为多了一个校验块，写入速度较 RAID5 更慢。</p>
-<ul>
-<li>RAID5：RAID5 的读取性能较好，因为数据块可以分布在多个磁盘上并行读取。写入操作时，由于需要计算奇偶校验信息并将其写入磁盘，因此写入速度相对较慢，但整体性能仍然优于 RAID6。</li>
-<li>RAID6：由于 RAID6 需要同时生成两个校验块（P 和 Q），写入操作的计算复杂度增加，因此写入性能较 RAID5 更低。尤其在处理大量小数据块的随机写入时，RAID6 的写入速度会显著下降。</li>
-</ul>
-<p>在对性能要求较高的环境中，如果以读取为主，RAID5 和 RAID6 的差别不大，但在频繁写入操作的场景中，RAID6 的写入性能可能成为瓶颈。</p>
-
-
-<h3 class="relative group">RAID 控制器复杂度 
-    <div id="raid-%E6%8E%A7%E5%88%B6%E5%99%A8%E5%A4%8D%E6%9D%82%E5%BA%A6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid-%E6%8E%A7%E5%88%B6%E5%99%A8%E5%A4%8D%E6%9D%82%E5%BA%A6" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID6 的双校验计算要求 RAID 控制器具备更高的处理能力。因此，与 RAID5 相比，RAID6 对 RAID 控制器的要求更高，成本也相对较高。在某些情况下，较复杂的 RAID 控制器可能会增加系统的成本和维护难度。</p>
-
-
-<h3 class="relative group">硬盘利用率 
-    <div id="%E7%A1%AC%E7%9B%98%E5%88%A9%E7%94%A8%E7%8E%87" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%A1%AC%E7%9B%98%E5%88%A9%E7%94%A8%E7%8E%87" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>硬盘利用率是指可用于存储实际数据的磁盘空间占总磁盘空间的比例。</p>
-<ul>
-<li>RAID5：硬盘利用率为 (n-1)/n，其中 n 为总磁盘数量。即在使用 8 块磁盘的情况下，RAID5 的硬盘利用率为 (n-1)/n，即 87.5% 的存储空间用于数据存储，其余部分用于存储奇偶校验数据。在磁盘数量较少时，RAID5 的硬盘利用率较高。</li>
-<li>RAID6：硬盘利用率为 (n-2)/n，即两块磁盘空间用于存储校验数据。例如，使用 8 块磁盘时，RAID6 的硬盘利用率为 75%。因此，RAID6 的硬盘利用率相对 RAID5 较低，因为它需要额外的一个校验磁盘空间来存储第二组校验信息。</li>
-</ul>
-<p>从硬盘利用率的角度来看，RAID5 优于 RAID6，特别是在磁盘数量较少时。但随着磁盘数量的增加，RAID6 的利用率损失相对较小，而其提供的额外容错能力能够有效弥补这一劣势。</p>
-
-
-<h2 class="relative group">成本与复杂性对比 
-    <div id="%E6%88%90%E6%9C%AC%E4%B8%8E%E5%A4%8D%E6%9D%82%E6%80%A7%E5%AF%B9%E6%AF%94" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%88%90%E6%9C%AC%E4%B8%8E%E5%A4%8D%E6%9D%82%E6%80%A7%E5%AF%B9%E6%AF%94" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E6%89%A9%E5%B1%95" aria-label="锚点">#</a>
     </span>        
     
 </h2>
+<p>添加CXL内存扩展了系统总内存带宽，因为它为访问数据创建了更多通道。平均而言，x16 CXL链路的带宽是DDR5内存通道的2倍。系统的内存带宽可以使用“内存交错”进一步增加。这对于像HPC和AI/ML领域带宽饥渴的工作负载来说是一个巨大的福音。</p>
+<p>预计Linux操作系统将从v6.9版本开始提供此功能。第五代Intel Xeon处理器提供异位交错，这是一种独特的硬件控制内存交错功能。硬件控制的内存交错对于云服务提供商和OEM来说非常方便，因为他们的系统不依赖于操作系统进行内存交错。</p>
 
 
-<h3 class="relative group">硬件成本 
-    <div id="%E7%A1%AC%E4%BB%B6%E6%88%90%E6%9C%AC" class="anchor"></div>
+<h2 class="relative group">内存池 
+    <div id="%E5%86%85%E5%AD%98%E6%B1%A0" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%A1%AC%E4%BB%B6%E6%88%90%E6%9C%AC" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID6 在硬件成本上通常高于 RAID5，主要体现在以下几个方面：</p>
-<ul>
-<li>磁盘需求：RAID6 需要至少 4 块磁盘，而 RAID5 仅需要 3 块磁盘。同时，随着磁盘数量增加，RAID6 的校验磁盘占用更多的存储空间，这意味着在相同存储容量下，RAID6 需要更多的磁盘。</li>
-<li>RAID 控制器成本：RAID6 的双校验计算需要更高性能的 RAID 控制器，因此 RAID6 配置的系统成本往往高于 RAID5。</li>
-</ul>
-
-
-<h3 class="relative group">维护成本 
-    <div id="%E7%BB%B4%E6%8A%A4%E6%88%90%E6%9C%AC" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BB%B4%E6%8A%A4%E6%88%90%E6%9C%AC" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>RAID5 和 RAID6 在维护上的主要差异体现在重建过程的复杂性和时间成本上：</p>
-<ul>
-<li>RAID5：由于其只能容忍单磁盘故障，一旦某块磁盘出现故障，必须尽快进行重建。如果重建期间再次发生磁盘故障，整个 RAID5 阵列将崩溃。因此，RAID5 在维护过程中要求更快的响应速度，以减少多磁盘故障的风险。</li>
-<li>RAID6：能够容忍两块磁盘故障，维护人员在发现单块磁盘故障后，拥有更多时间进行修复，降低了紧急维护的压力。</li>
-</ul>
-<p>因此，RAID6 在维护上相对更为简单和安全，但由于更复杂的控制器和较高的磁盘需求，维护成本也会更高。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./raid-5-vs-raid-6-4.png" alt="Raid 5 versus Raid 6" />
-      
-    </figure>
-</p>
-
-
-<h2 class="relative group">RAID5 和 RAID6 哪个更安全 
-    <div id="raid5-%E5%92%8C-raid6-%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%AE%89%E5%85%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#raid5-%E5%92%8C-raid6-%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%AE%89%E5%85%A8" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AD%98%E6%B1%A0" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>在数据安全性方面，RAID6 明显优于 RAID5。主要体现在以下几点：</p>
-<ol>
-<li>容错能力：RAID6 由于双校验的设计，能够同时容忍两块磁盘故障，而 RAID5 只能容忍一块磁盘故障。因此，在面对多磁盘故障时，RAID6 提供了更高的数据安全性。</li>
-<li>重建过程中风险：RAID5 在重建过程中，如果发生第二块磁盘故障，整个阵列会崩溃。而 RAID6 能够在重建期间继续容忍第二块磁盘故障，显著降低了数据丢失的风险。</li>
-<li>URE 错误：随着磁盘容量的增加，URE 错误的风险增大。RAID6 对 URE 错误的容忍度更高，因此更适合大容量存储系统。</li>
-<li>应用场景：RAID6 更适合大容量、高密度存储系统，特别是在需要长时间重建或关键数据保护的场景下。而 RAID5 则更适合中小型企业和以读取为主的应用。</li>
-</ol>
-<p>然而，RAID6 的安全性优势是以牺牲部分性能和存储利用率为代价的。在选择 RAID5 还是 RAID6 时，用户需要根据具体的应用场景、数据安全性要求、系统性能以及成本预算做出权衡。如果系统需要更高的容错能力和更好的数据保护，RAID6 是更安全的选择；而如果预算有限且对容错要求相对较低，RAID5 也可以提供不错的性能和数据冗余。</p>
-<p>总之，RAID5 和 RAID6 各有优劣，在数据安全性和成本之间取得平衡是选择它们的关键。</p>
+<p>内存池允许在计算系统内的多个设备之间共享内存资源。它使不同的加速器（如GPU、FPGA和其他专用处理器）能够像访问本地内存一样访问和利用公共内存资源池（通常是DRAM）。尽管仍处于概念验证阶段，但CXL内存池将提高资源效率、节省成本、增强可扩展性和性能，并简化编程。</p>
+
+
+<h2 class="relative group">CXL的好处 
+    <div id="cxl%E7%9A%84%E5%A5%BD%E5%A4%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cxl%E7%9A%84%E5%A5%BD%E5%A4%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p><a href="https://www.gaitpu.com" target="_blank">人工智能</a>、虚拟桌面基础设施和内存数据库等内存密集型工作负载主导着当今的计算领域，但通过添加CPU附加的DRAM来增加内存容量是非常昂贵的。CXL协议在现有的PCIe链路上运行，允许以较低的成本增加系统内存，并得到了技术公司和行业领导者联盟的广泛支持。</p>
 
           
           
@@ -1039,7 +794,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;title=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;title=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -1058,7 +813,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;text=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;text=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1076,7 +831,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94&#43;https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/"
+      href="https://bsky.app/intent/compose?text=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99&#43;https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/"
       title=""
       aria-label=""
       >
@@ -1094,7 +849,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94%20https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/"
+      href="https://s2f.kytta.dev/?text=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99%20https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/"
       title=""
       aria-label=""
       >
@@ -1113,7 +868,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;resubmit=true&amp;title=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1132,7 +887,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;description=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;description=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1151,7 +906,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;quote=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;quote=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1170,7 +925,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;subject=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="mailto:?body=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;subject=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1189,7 +944,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;resubmit=true&amp;title=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title=""
       aria-label=""
       >
@@ -1208,7 +963,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/hardware/comparison-between-raid-5-and-raid-6/&amp;resubmit=true&amp;title=RAID5%e5%92%8cRAID6%e7%9a%84%e5%af%b9%e6%af%94"
+      href="https://t.me/share/url?url=https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8CXL%e6%89%93%e7%a0%b4%e5%86%85%e5%ad%98%e5%a2%99"
       title=""
       aria-label=""
       >
@@ -1234,11 +989,11 @@
   
   
 
-  <a href="/hardware/lattice-semiconductor-considers-acquiring-altera/" class="min-w-full">
+  <a href="/hardware/kioxia-nand-flash-memory-based-on-cxl-interface/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/lattice-semiconductor-considers-acquiring-altera/featured-fpga_hu7754987034195323119.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/kioxia-nand-flash-memory-based-on-cxl-interface/featured-kioxia-nand-flash-cxl_hu621965907401586858.png);"></div>
         
       
 
@@ -1246,7 +1001,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/lattice-semiconductor-considers-acquiring-altera/">重磅，Lattice考虑收购Altera</div>
+          href="/hardware/kioxia-nand-flash-memory-based-on-cxl-interface/">基于CXL接口的NAND闪存</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1285,7 +1040,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-23T21:52:03&#43;08:00">2024-11-23</time>
+  <time datetime="2024-11-20T23:55:46&#43;08:00">2024-11-20</time>
   
 
   
@@ -1309,18 +1064,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/lattice/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kioxia/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Lattice
+    Kioxia
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/altera/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nand/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Altera
+    Nand
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CXL
   </span>
 </span>
   </span>
@@ -1346,11 +1109,11 @@
   
   
 
-  <a href="/software/almalinux-9-5-released/" class="min-w-full">
+  <a href="/hardware/install-and-configure-cxl-memory-expansion-card-on-server/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/almalinux-9-5-released/featured-almalinux95_hu3903876562865512004.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/install-and-configure-cxl-memory-expansion-card-on-server/featured-SK-Hynix_CXL_hu3076611709572833555.png);"></div>
         
       
 
@@ -1358,7 +1121,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/almalinux-9-5-released/">AlmaLinux 9.5 重磅发布</div>
+          href="/hardware/install-and-configure-cxl-memory-expansion-card-on-server/">CXL内存扩展卡在服务器上如何安装和配置</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1397,7 +1160,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-23T21:19:08&#43;08:00">2024-11-23</time>
+  <time datetime="2024-11-17T19:19:11&#43;08:00">2024-11-17</time>
   
 
   
@@ -1421,10 +1184,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/almalinux-9.5/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AlmaLinux 9.5
+    CXL
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/memory-expansion/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Memory Expansion
   </span>
 </span>
   </span>
@@ -1450,11 +1221,11 @@
   
   
 
-  <a href="/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/" class="min-w-full">
+  <a href="/hardware/cxl-memory-module-box-cmm-b/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/featured-nvidia-gb200-nvl4-1_hu13812241160136504764.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/cxl-memory-module-box-cmm-b/featured-CMM-D_hu12812209289340783323.png);"></div>
         
       
 
@@ -1462,7 +1233,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/nvidia-unveils-quad-blackwell-dual-grace-gb200-nvl4/">Nvidia 发布四核 Blackwell GB200的NVL4</div>
+          href="/hardware/cxl-memory-module-box-cmm-b/">三星公司的CXL内存模块解决方案</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1501,7 +1272,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-23T20:46:18&#43;08:00">2024-11-23</time>
+  <time datetime="2024-11-16T10:20:09&#43;08:00">2024-11-16</time>
   
 
   
@@ -1525,26 +1296,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvidia/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cxl/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nvidia
+    CXL
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gb200/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cmm-b/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GB200
+    CMM-B
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvl4/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/samsung/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    NVL4
+    Samsung
   </span>
 </span>
   </span>
@@ -1581,8 +1352,8 @@
           
         
       <script>
-        var oid = "views_hardware\/comparison-between-raid-5-and-raid-6\/index.md"
-        var oid_likes = "likes_hardware\/comparison-between-raid-5-and-raid-6\/index.md"
+        var oid = "views_hardware\/breaking-the-memory-wall-with-compute-express-link-cxl\/index.md"
+        var oid_likes = "likes_hardware\/breaking-the-memory-wall-with-compute-express-link-cxl\/index.md"
       </script>
       
       
@@ -1602,7 +1373,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/hardware/lattice-semiconductor-considers-acquiring-altera/">
+            <a class="flex group mr-3" href="/hardware/amd-is-about-to-release-the-new-ryzen-9-9950x3d-and-9900x3d/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1614,23 +1385,6 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >重磅，Lattice考虑收购Altera</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-23T21:52:03&#43;08:00">2024-11-23</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/hardware/amd-is-about-to-release-the-new-ryzen-9-9950x3d-and-9900x3d/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >AMD 即将发布全新 Ryzen 9 9950X3D 和 9900X3D</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -1639,15 +1393,10 @@
                   
                 </span>
               </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>

@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-11-25T19:21:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/breaking-the-memory-wall-with-compute-express-link-cxl/</loc>
+    <lastmod>2024-11-25T19:21:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/</loc>
     <lastmod>2024-11-24T11:18:17+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,12 +28,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/hardware/amd-is-about-to-release-the-new-ryzen-9-9950x3d-and-9900x3d/</loc>
-    <lastmod>2024-11-24T11:09:43+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-11-24T11:09:43+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
