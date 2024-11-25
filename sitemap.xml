@@ -3,8 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/amd-threadripper-shimada-peak-96-16-core-cpus-zen-5-architecture/</loc>
+    <lastmod>2024-11-25T19:29:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-25T19:21:30+08:00</lastmod>
+    <lastmod>2024-11-25T19:29:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
