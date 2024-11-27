@@ -14,7 +14,7 @@
       <pubDate>Wed, 27 Nov 2024 23:30:51 +0800</pubDate>
       
       <guid>https://www.kad8.com/network/comparison-between-tcp-and-udp/</guid>
-      <description>&lt;p&gt;TCP（传输控制协议）和UDP（用户数据报协议）是互联网协议套件中的两个核心传输层协议。它们各自具有不同的特性和用途，适用于不同类型的应用场景。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.vxworks.net/linux/1024-tcp-and-udp-protocol-detailed-explanation&#34; target=&#34;_blank&#34;&gt;TCP（传输控制协议）和UDP（用户数据报协议）&lt;/a&gt;是互联网协议套件中的两个核心传输层协议。它们各自具有不同的特性和用途，适用于不同类型的应用场景。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
       &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./tcp-vs-udp-1.jpg&#34; alt=&#34;TCP versus UDP&#34; /&gt;
@@ -45,7 +45,7 @@
     &lt;/span&gt;        
     
 &lt;/h3&gt;
-&lt;p&gt;TCP是一种面向连接的协议，数据传输前必须建立一个可靠的连接（三次握手过程）。&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://www.vxworks.net/app/943-vxworks-network-socket-programming-tcp-code&#34; target=&#34;_blank&#34;&gt;TCP&lt;/a&gt;是一种面向连接的协议，数据传输前必须建立一个可靠的连接（三次握手过程）。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/comparison-between-tcp-and-udp/featured-tcp-vs-udp.png" />
     </item>
     
