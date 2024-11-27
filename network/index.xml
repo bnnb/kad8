@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 24 Nov 2024 11:18:17 +0800</lastBuildDate><atom:link href="https://www.kad8.com/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Nov 2024 22:28:52 +0800</lastBuildDate><atom:link href="https://www.kad8.com/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达下一代 800Gbps SuperNIC ConnectX-8亮相</title>
+      <link>https://www.kad8.com/network/the-next-gen-nvidia-connectx-8-supernic-for-800gbps-networking/</link>
+      <pubDate>Wed, 27 Nov 2024 22:28:52 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/network/the-next-gen-nvidia-connectx-8-supernic-for-800gbps-networking/</guid>
+      <description>&lt;p&gt;在 SC24 上，我们看到了这款网卡的最终形态，而我们之前一直看到它的原型样品。显然，新款 NVIDIA ConnectX-8 看起来更像 GPU，而不像几年前的简单网卡。&lt;/p&gt;
+&lt;p&gt;在 SC24 上我们在 NVIDIA Quantum-X（InfiniBand）展示中看到了 NVIDIA ConnectX-8 SuperNIC。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./NVIDIA-ConnectX-8-SuperNIC-at-SC24-1.jpg&#34; alt=&#34;NVIDIA ConnextX-8 SuperNIC at SC24&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Meta AI数据中心网络用了哪家的芯片</title>
       <link>https://www.kad8.com/network/open-future-networking-hardware-ai-ocp-2024-meta/</link>
