@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://www.kad8.com/network/</loc>
-    <lastmod>2024-11-27T23:30:51+08:00</lastmod>
+    <lastmod>2024-11-28T20:11:42+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/network/should-uec-and-ual-merged/</loc>
+    <lastmod>2024-11-28T20:11:42+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
