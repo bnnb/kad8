@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Linux netstat 命令详解 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="Linux netstat 命令详解 &middot; Kontronn Asia Design Center" />
+  <title>嵌入式BSP开发 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="嵌入式BSP开发 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Introduction to Linux Netstat" />
-  <meta name="keywords" content="Linux, netstat, " />
+  <meta name="description" content="Embedded BSP Development" />
+  <meta name="keywords" content="Embedded, BSP, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/introduction-to-linux-netstat/" />
+  <link rel="canonical" href="https://www.kad8.com/software/embedded-bsp-development/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/introduction-to-linux-netstat/">
+  <meta property="og:url" content="https://www.kad8.com/software/embedded-bsp-development/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="Linux netstat 命令详解">
-  <meta property="og:description" content="Introduction to Linux Netstat">
+  <meta property="og:title" content="嵌入式BSP开发">
+  <meta property="og:description" content="Embedded BSP Development">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-11-24T10:55:58+08:00">
-    <meta property="article:modified_time" content="2024-11-24T10:55:58+08:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Netstat">
-    <meta property="og:image" content="https://www.kad8.com/software/introduction-to-linux-netstat/featured-linux-cmd.png">
+    <meta property="article:published_time" content="2024-11-28T20:26:36+08:00">
+    <meta property="article:modified_time" content="2024-11-28T20:26:36+08:00">
+    <meta property="article:tag" content="Embedded">
+    <meta property="article:tag" content="BSP">
+    <meta property="og:image" content="https://www.kad8.com/software/embedded-bsp-development/featured-bsp-software-services.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/introduction-to-linux-netstat/featured-linux-cmd.png">
-  <meta name="twitter:title" content="Linux netstat 命令详解">
-  <meta name="twitter:description" content="Introduction to Linux Netstat">
+  <meta name="twitter:image" content="https://www.kad8.com/software/embedded-bsp-development/featured-bsp-software-services.png">
+  <meta name="twitter:title" content="嵌入式BSP开发">
+  <meta name="twitter:description" content="Embedded BSP Development">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "Linux netstat 命令详解",
-    "headline": "Linux netstat 命令详解",
-    "description": "Introduction to Linux Netstat",
-    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003e简介 \n    \u003cdiv id=\u0022%E7%AE%80%E4%BB%8B\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E7%AE%80%E4%BB%8B\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003enetstat 全称是：network statistics，是一个用于监控、排除网络连接故障、路由表的命令行工具，它提供关于网络统计和 socket 连接的详细信息。\u003c\/p\u003e",
+    "name": "嵌入式BSP开发",
+    "headline": "嵌入式BSP开发",
+    "description": "Embedded BSP Development",
+    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003eBSP开发是啥 \n    \u003cdiv id=\u0022bsp%E5%BC%80%E5%8F%91%E6%98%AF%E5%95%A5\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#bsp%E5%BC%80%E5%8F%91%E6%98%AF%E5%95%A5\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e在\u003ca href=\u0022https:\/\/www.gaitpu.com\/embedded\/embedded-system-knowledge-and-peripheral-interface\u0022 target=\u0022_blank\u0022\u003e嵌入式开发\u003c\/a\u003e中，BSP 到底是什么？BSP 英文全称 Board support package ，中文意思是：板级支持包。那么在嵌入式领域中，它承载是在特定硬件平台上运行，它起着连接操作系统和硬件之间的桥梁作用。BSP负责硬件初始化、驱动程序支持、操作系统内核的适配等工作。因此，BSP的开发对嵌入式系统的稳定性和功能性至关重要。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/introduction-to-linux-netstat\/",
+    "url" : "https:\/\/www.kad8.com\/software\/embedded-bsp-development\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-24T10:55:58\u002b08:00",
-    "datePublished": "2024-11-24T10:55:58\u002b08:00",
+    "dateCreated": "2024-11-28T20:26:36\u002b08:00",
+    "datePublished": "2024-11-28T20:26:36\u002b08:00",
     
-    "dateModified": "2024-11-24T10:55:58\u002b08:00",
+    "dateModified": "2024-11-28T20:26:36\u002b08:00",
     
-    "keywords": ["Linux","netstat"],
+    "keywords": ["Embedded","BSP"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "104"
+    "wordCount": "55"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Linux netstat 命令详解
+      嵌入式BSP开发
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-24T10:55:58&#43;08:00">2024-11-24</time>
+  <time datetime="2024-11-28T20:26:36&#43;08:00">2024-11-28</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/embedded/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    Embedded
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/netstat/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/bsp/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Netstat
+    BSP
   </span>
 </span>
   </span>
@@ -582,22 +582,11 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#简介">简介</a></li>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#常用选项示例">常用选项示例</a>
-      <ul>
-        <li><a href="#查看所有连接">查看所有连接</a></li>
-        <li><a href="#仅显示监听的端口">仅显示监听的端口</a></li>
-        <li><a href="#仅显示-tcp-连接">仅显示 TCP 连接</a></li>
-        <li><a href="#仅显示-udp-连接">仅显示 UDP 连接</a></li>
-        <li><a href="#显示带有数字地址的连接">显示带有数字地址的连接</a></li>
-        <li><a href="#显示连接时包括进程名和pid">显示连接时包括进程名和PID</a></li>
-        <li><a href="#显示路由表">显示路由表</a></li>
-        <li><a href="#查看网络接口统计信息">查看网络接口统计信息</a></li>
-        <li><a href="#持续监控连接">持续监控连接</a></li>
-        <li><a href="#合并多个选项">合并多个选项</a></li>
-      </ul>
-    </li>
+    <li><a href="#bsp开发是啥">BSP开发是啥</a></li>
+    <li><a href="#bsp的主要工作内容">BSP的主要工作内容</a></li>
+    <li><a href="#bsp开发中的常见问题">BSP开发中的常见问题</a></li>
+    <li><a href="#应对bsp开发挑战的策略">应对BSP开发挑战的策略</a></li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav>
   </div>
@@ -611,22 +600,11 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#简介">简介</a></li>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#常用选项示例">常用选项示例</a>
-      <ul>
-        <li><a href="#查看所有连接">查看所有连接</a></li>
-        <li><a href="#仅显示监听的端口">仅显示监听的端口</a></li>
-        <li><a href="#仅显示-tcp-连接">仅显示 TCP 连接</a></li>
-        <li><a href="#仅显示-udp-连接">仅显示 UDP 连接</a></li>
-        <li><a href="#显示带有数字地址的连接">显示带有数字地址的连接</a></li>
-        <li><a href="#显示连接时包括进程名和pid">显示连接时包括进程名和PID</a></li>
-        <li><a href="#显示路由表">显示路由表</a></li>
-        <li><a href="#查看网络接口统计信息">查看网络接口统计信息</a></li>
-        <li><a href="#持续监控连接">持续监控连接</a></li>
-        <li><a href="#合并多个选项">合并多个选项</a></li>
-      </ul>
-    </li>
+    <li><a href="#bsp开发是啥">BSP开发是啥</a></li>
+    <li><a href="#bsp的主要工作内容">BSP的主要工作内容</a></li>
+    <li><a href="#bsp开发中的常见问题">BSP开发中的常见问题</a></li>
+    <li><a href="#应对bsp开发挑战的策略">应对BSP开发挑战的策略</a></li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav>
   </div>
@@ -712,189 +690,117 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">简介 
-    <div id="%E7%AE%80%E4%BB%8B" class="anchor"></div>
+<h2 class="relative group">BSP开发是啥 
+    <div id="bsp%E5%BC%80%E5%8F%91%E6%98%AF%E5%95%A5" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%AE%80%E4%BB%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#bsp%E5%BC%80%E5%8F%91%E6%98%AF%E5%95%A5" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>netstat 全称是：network statistics，是一个用于监控、排除网络连接故障、路由表的命令行工具，它提供关于网络统计和 socket 连接的详细信息。</p>
+<p>在<a href="https://www.gaitpu.com/embedded/embedded-system-knowledge-and-peripheral-interface" target="_blank">嵌入式开发</a>中，BSP 到底是什么？BSP 英文全称 Board support package ，中文意思是：板级支持包。那么在嵌入式领域中，它承载是在特定硬件平台上运行，它起着连接操作系统和硬件之间的桥梁作用。BSP负责硬件初始化、驱动程序支持、操作系统内核的适配等工作。因此，BSP的开发对嵌入式系统的稳定性和功能性至关重要。</p>
+<p>不过，BSP开发并不是一件轻松的事情。它涉及的内容广泛、复杂，尤其是在面对不同硬件平台时，开发者常常会遇到各种挑战。接下来主要说说工作内容，挑战和应对策略三部分。</p>
 
 
-<h2 class="relative group">安装 
-    <div id="%E5%AE%89%E8%A3%85" class="anchor"></div>
+<h2 class="relative group">BSP的主要工作内容 
+    <div id="bsp%E7%9A%84%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E5%86%85%E5%AE%B9" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#bsp%E7%9A%84%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E5%86%85%E5%AE%B9" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install net-tools  <span class="c1"># For Debian/Ubuntu</span>
-</span></span><span class="line"><span class="cl">sudo yum install net-tools  <span class="c1"># For CentOS/RHEL</span>
-</span></span></code></pre></div>
-
-<h2 class="relative group">常用选项示例 
-    <div id="%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9%E7%A4%BA%E4%BE%8B" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9%E7%A4%BA%E4%BE%8B" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">查看所有连接 
-    <div id="%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E8%BF%9E%E6%8E%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E8%BF%9E%E6%8E%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -a  <span class="c1"># 显示所有活动的连接和监听的端口</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">仅显示监听的端口 
-    <div id="%E4%BB%85%E6%98%BE%E7%A4%BA%E7%9B%91%E5%90%AC%E7%9A%84%E7%AB%AF%E5%8F%A3" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BB%85%E6%98%BE%E7%A4%BA%E7%9B%91%E5%90%AC%E7%9A%84%E7%AB%AF%E5%8F%A3" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -l
-</span></span></code></pre></div>
-
-<h3 class="relative group">仅显示 TCP 连接 
-    <div id="%E4%BB%85%E6%98%BE%E7%A4%BA-tcp-%E8%BF%9E%E6%8E%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BB%85%E6%98%BE%E7%A4%BA-tcp-%E8%BF%9E%E6%8E%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -t
-</span></span></code></pre></div>
-
-<h3 class="relative group">仅显示 UDP 连接 
-    <div id="%E4%BB%85%E6%98%BE%E7%A4%BA-udp-%E8%BF%9E%E6%8E%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BB%85%E6%98%BE%E7%A4%BA-udp-%E8%BF%9E%E6%8E%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -u
-</span></span></code></pre></div>
-
-<h3 class="relative group">显示带有数字地址的连接 
-    <div id="%E6%98%BE%E7%A4%BA%E5%B8%A6%E6%9C%89%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9D%80%E7%9A%84%E8%BF%9E%E6%8E%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%98%BE%E7%A4%BA%E5%B8%A6%E6%9C%89%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9D%80%E7%9A%84%E8%BF%9E%E6%8E%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -an <span class="c1"># 跳过主机名解析以实现更快的输出</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">显示连接时包括进程名和PID 
-    <div id="%E6%98%BE%E7%A4%BA%E8%BF%9E%E6%8E%A5%E6%97%B6%E5%8C%85%E6%8B%AC%E8%BF%9B%E7%A8%8B%E5%90%8D%E5%92%8Cpid" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%98%BE%E7%A4%BA%E8%BF%9E%E6%8E%A5%E6%97%B6%E5%8C%85%E6%8B%AC%E8%BF%9B%E7%A8%8B%E5%90%8D%E5%92%8Cpid" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -p
-</span></span></code></pre></div>
-
-<h3 class="relative group">显示路由表 
-    <div id="%E6%98%BE%E7%A4%BA%E8%B7%AF%E7%94%B1%E8%A1%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%98%BE%E7%A4%BA%E8%B7%AF%E7%94%B1%E8%A1%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -r  <span class="c1"># 输出内核路由表，与route 命令相似</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">查看网络接口统计信息 
-    <div id="%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -i  <span class="c1"># 提供有关发送/接收的数据包和接口错误的详细信息</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">持续监控连接 
-    <div id="%E6%8C%81%E7%BB%AD%E7%9B%91%E6%8E%A7%E8%BF%9E%E6%8E%A5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%8C%81%E7%BB%AD%E7%9B%91%E6%8E%A7%E8%BF%9E%E6%8E%A5" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -c  <span class="c1"># 每秒刷新一次输出</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">合并多个选项 
-    <div id="%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AA%E9%80%89%E9%A1%B9" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AA%E9%80%89%E9%A1%B9" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -tunlp
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># -t：TCP</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># -u：UDP</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># -n：数字地址</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># -l：监听的端口</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># -p：PID和进程名称</span>
-</span></span></code></pre></div><p><b>关键输出字段解释</b></p>
+<p><a href="https://www.vxworks.net/bsp/1225-siemens-ipc-vxworks-support-package-user-manual" target="_blank">BSP</a>的核心任务是让操作系统能够顺利地在目标硬件平台上运行。这项工作主要包括以下几个方面：</p>
 <ul>
-<li>Proto：协议类型：TCP 或 UDP</li>
-<li>Recv-Q：接收队列大小（等待读取的数据）</li>
-<li>Send-Q：发送队列大小（等待发送的数据）</li>
-<li>Local Address：连接本地的地址和端口。</li>
-<li>Foreign Address：连接远程的地址和端口</li>
-<li>State：连接的状态，LISTEN、ESTABLISHED 等</li>
-<li>PID/Program name：进程ID和进程名称</li>
+<li>
+<p>硬件初始化 在嵌入式系统启动时，BSP首先会完成硬件的初始化工作。这包括CPU初始化、内存管理配置、时钟设置、外设初始化等。没有这些初始化操作，硬件就无法正常工作，操作系统也无法顺利启动。这个部分在有操作系统的情况下类似uboot负责工作。</p>
+</li>
+<li>
+<p>驱动程序支持 BSP需要为目标硬件平台上的各类外设编写或移植驱动程序。无论是基本的串口、I2C、SPI，还是更复杂的图形显示、网络接口、存储控制器等，都需要对应的驱动程序来实现硬件控制。驱动程序是BSP的重要组成部分，直接决定了系统的外设是否能够正常工作。</p>
+</li>
+<li>
+<p>操作系统适配 在不同的硬件平台上，操作系统（如Linux、FreeRTOS、Android、QNX, <a href="https://www.vxworks.net" target="_blank">VxWorks</a>等）需要做一定的适配工作。这通常涉及到内核的配置、外设驱动的移植、硬件抽象层（HAL）的实现等。操作系统适配，比如在不同版本操作系统的差异，都可能影响到其他功能的稳定运行。</p>
+</li>
+<li>
+<p>引导加载程序（Bootloader） BSP还需要实现一个引导加载程序，用于在设备上电时加载操作系统内核。引导程序负责硬件的初始化、引导操作系统的启动，并且还可能涉及到系统升级、分区管理等功能。</p>
+</li>
 </ul>
+<p>总结内容下来：引导程序, 驱动支持，操作系统的定制，期间应该还有一些优化工作。最终的目标是，让新做的board 运行定制化系统，包含所有外设和资源正常稳定运行。</p>
+
+
+<h2 class="relative group">BSP开发中的常见问题 
+    <div id="bsp%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#bsp%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>从BSP开发的工作内容来说，在开发过程中，开发者常常会遇到哪些问题：</p>
+<ul>
+<li>
+<p>硬件差异大，移植难度高 不同的硬件平台可能会有不同的架构、外设和硬件接口。这意味着同一个操作系统在不同平台上的移植工作量差异很大。平台间的差异，如CPU架构（ARM、x86、RISC-V等）、外设连接方式、内存管理方式等，都会影响BSP的开发。</p>
+</li>
+<li>
+<p>设备驱动的编写和移植 对于新平台，编写和移植设备驱动是BSP开发中的关键部分。每种外设都有不同的硬件接口，驱动程序需要根据硬件规格编写，可能还需要深入理解硬件寄存器、时钟配置、DMA（直接内存访问）等内容。即使是常见的外设，也可能在不同平台上的实现存在差异。</p>
+</li>
+<li>
+<p>操作系统和硬件的兼容性问题 在开发过程中，操作系统可能并不完全支持所有硬件特性，特别是在新平台上。比如操作系统可能无法识别特定的硬件外设或缺少对硬件加速功能的支持，这时需要对操作系统进行修改和适配。</p>
+</li>
+<li>
+<p>调试难度大 嵌入式开发中的调试并不像桌面开发那样方便。硬件和操作系统的调试需要专门的工具，如JTAG、串口调试输出等。在很多情况下，硬件问题可能会导致系统无法启动或出现不稳定，而这些问题往往需要通过深入的硬件检查和调试工具来排查。</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">应对BSP开发挑战的策略 
+    <div id="%E5%BA%94%E5%AF%B9bsp%E5%BC%80%E5%8F%91%E6%8C%91%E6%88%98%E7%9A%84%E7%AD%96%E7%95%A5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%BA%94%E5%AF%B9bsp%E5%BC%80%E5%8F%91%E6%8C%91%E6%88%98%E7%9A%84%E7%AD%96%E7%95%A5" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>在BSP开发过程中往往会遇到一些问题，在开发过程中遇到棘手问题拖太久，往往出现卡太久影响到整个项目进度。面对这问题，开发者可以采取以下策略来提高BSP开发的效率和质量。</p>
+<ul>
+<li>
+<p>充分了解硬件平台 在开发BSP之前，开发者需要深入了解目标硬件平台的架构、外设和设计。通过阅读硬件手册、查看硬件原理图和参考设计，能够帮助开发者提前识别潜在的难点，避免在开发过程中重复调试。</p>
+</li>
+<li>
+<p>模块化设计和硬件抽象层（HAL） 为了提高BSP的可移植性，可以使用模块化设计，将硬件相关的部分与操作系统、驱动等功能隔离开。硬件抽象层（HAL）可以提供一个统一的接口，让上层软件不用关心底层硬件的具体实现，从而提高代码的复用性和移植性。</p>
+</li>
+<li>
+<p>使用成熟的工具和框架 在BSP开发中，使用一些成熟的工具和框架可以显著减少开发难度。例如，U-Boot是一个常用的开源引导加载程序，DeviceTree可以帮助硬件平台与操作系统解耦，这些工具和框架能够大大简化开发工作。</p>
+</li>
+<li>
+<p>利用调试工具进行系统调试 在BSP开发过程中，调试工具的选择非常重要。可以利用串口调试、JTAG、GDB远程调试等工具，帮助开发者排查硬件和软件的问题。在调试时，除了要检查硬件的电路和连接，还需要通过日志和调试信息查看系统的运行状态。</p>
+</li>
+<li>
+<p>进行性能优化 嵌入式系统通常资源有限，因此性能优化至关重要。开发者可以通过减少内存占用、优化中断处理、精简驱动代码等方式来提高系统的运行效率。借助性能分析工具（如perf、ftrace等），可以帮助找出性能瓶颈，并进行针对性的优化。</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">结语 
+    <div id="%E7%BB%93%E8%AF%AD" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BB%93%E8%AF%AD" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>对于目前硬件技术的不断发展，BSP的开发工作也在不断变化。新的硬件平台不断涌现，操作系统和工具链的不断升级，也为BSP开发提供了更多的支持。BSP 的工作内容其实并不少，大多数初期从开发板入手，通过需求定制，新增或者修改一些外设，根据实际情况进行对支持包的修改。另外一方面对于系统稳定性，性能优化算是挑战，BSP 岗位内容不会像应用有那么多编码的工作，更多的工作是在调试优化，但它需要的是一个全面的认识，有问题能够快速去找到精准位置解决。</p>
+<p>总的来说，BSP开发既是嵌入式系统开发中最基础也是最关键的部分，只有打下坚实的BSP基础，才能确保后续应用开发的顺利进行。最后提一句，在开发过程中与原厂保持良好沟通也是一种快速解决途径。</p>
 
           
           
@@ -912,7 +818,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;title=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/embedded-bsp-development/&amp;title=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -931,7 +837,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;text=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/embedded-bsp-development/&amp;text=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -949,7 +855,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3&#43;https://www.kad8.com/software/introduction-to-linux-netstat/"
+      href="https://bsky.app/intent/compose?text=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91&#43;https://www.kad8.com/software/embedded-bsp-development/"
       title=""
       aria-label=""
       >
@@ -967,7 +873,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3%20https://www.kad8.com/software/introduction-to-linux-netstat/"
+      href="https://s2f.kytta.dev/?text=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91%20https://www.kad8.com/software/embedded-bsp-development/"
       title=""
       aria-label=""
       >
@@ -986,7 +892,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;resubmit=true&amp;title=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/embedded-bsp-development/&amp;resubmit=true&amp;title=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1005,7 +911,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;description=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/embedded-bsp-development/&amp;description=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1024,7 +930,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;quote=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/embedded-bsp-development/&amp;quote=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1043,7 +949,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;subject=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="mailto:?body=https://www.kad8.com/software/embedded-bsp-development/&amp;subject=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1062,7 +968,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;resubmit=true&amp;title=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/embedded-bsp-development/&amp;resubmit=true&amp;title=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title=""
       aria-label=""
       >
@@ -1081,7 +987,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/introduction-to-linux-netstat/&amp;resubmit=true&amp;title=Linux%20netstat%20%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/embedded-bsp-development/&amp;resubmit=true&amp;title=%e5%b5%8c%e5%85%a5%e5%bc%8fBSP%e5%bc%80%e5%8f%91"
       title=""
       aria-label=""
       >
@@ -1107,11 +1013,11 @@
   
   
 
-  <a href="/software/10-tips-of-linux-shell-script/" class="min-w-full">
+  <a href="/software/14-efficient-techniques-to-process-csv-files-by-python/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/10-tips-of-linux-shell-script/featured-linux-bash-shell_hu8909414476559168283.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/14-efficient-techniques-to-process-csv-files-by-python/featured-python-process-csv_hu6045510239430617499.jpg);"></div>
         
       
 
@@ -1119,7 +1025,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/10-tips-of-linux-shell-script/">10个必知的Linux Shell脚本小技巧</div>
+          href="/software/14-efficient-techniques-to-process-csv-files-by-python/">Python处理CSV文件的14个高效技巧</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1158,7 +1064,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-18T20:26:41&#43;08:00">2024-11-18</time>
+  <time datetime="2024-10-26T14:31:24&#43;08:00">2024-10-26</time>
   
 
   
@@ -1182,18 +1088,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/python/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    Python
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/csv/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Shell
+    CSV
   </span>
 </span>
   </span>
@@ -1219,11 +1125,11 @@
   
   
 
-  <a href="/software/linux-docker-port-mapping/" class="min-w-full">
+  <a href="/ai/difference-between-cpu-and-gpu/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-docker-port-mapping/featured-Docker-port-mapping_hu126512846599064583.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/difference-between-cpu-and-gpu/featured-cpu-vs-gpu_hu6941947086386186526.webp);"></div>
         
       
 
@@ -1231,7 +1137,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/linux-docker-port-mapping/">Linux下的docker端口映射</div>
+          href="/ai/difference-between-cpu-and-gpu/">CPU与GPU的区别</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1270,7 +1176,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T21:33:44&#43;08:00">2024-11-16</time>
+  <time datetime="2024-10-21T23:01:17&#43;08:00">2024-10-21</time>
   
 
   
@@ -1294,18 +1200,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
+    CPU
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    GPU
   </span>
 </span>
   </span>
@@ -1331,11 +1237,11 @@
   
   
 
-  <a href="/software/linux-practical-tips/" class="min-w-full">
+  <a href="/software/download-m3u8-videos-efficiently-with-ffmpeg/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/linux-practical-tips/featured-linux-practical-tips_hu5385194185029379338.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/download-m3u8-videos-efficiently-with-ffmpeg/featured-FFmpeg-m3u8_hu2713319793027727212.jpg);"></div>
         
       
 
@@ -1343,7 +1249,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/linux-practical-tips/">Linux实用小技巧</div>
+          href="/software/download-m3u8-videos-efficiently-with-ffmpeg/">用FFmpeg高效下载m3u8视频</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1382,7 +1288,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T13:20:57&#43;08:00">2024-11-16</time>
+  <time datetime="2024-10-20T09:18:28&#43;08:00">2024-10-20</time>
   
 
   
@@ -1406,10 +1312,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ffmpeg/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    FFmpeg
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/m3u8/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    M3u8
   </span>
 </span>
   </span>
@@ -1446,8 +1360,8 @@
           
         
       <script>
-        var oid = "views_software\/introduction-to-linux-netstat\/index.md"
-        var oid_likes = "likes_software\/introduction-to-linux-netstat\/index.md"
+        var oid = "views_software\/embedded-bsp-development\/index.md"
+        var oid_likes = "likes_software\/embedded-bsp-development\/index.md"
       </script>
       
       
@@ -1467,7 +1381,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/rust-is-secretly-taking-over-chip-development/">
+            <a class="flex group mr-3" href="/software/introduction-to-linux-netstat/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1479,11 +1393,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Rust正在秘密接管芯片开发</span
+                  >Linux netstat 命令详解</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-23T22:22:00&#43;08:00">2024-11-23</time>
+                    <time datetime="2024-11-24T10:55:58&#43;08:00">2024-11-24</time>
                   
                 </span>
               </span>
@@ -1491,28 +1405,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/embedded-bsp-development/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >嵌入式BSP开发</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-11-28T20:26:36&#43;08:00">2024-11-28</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
