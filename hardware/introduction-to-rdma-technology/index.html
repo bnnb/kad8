@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>AMD五代EPYC对决Intel六代至强 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="AMD五代EPYC对决Intel六代至强 &middot; Kontronn Asia Design Center" />
+  <title>Introduction to Rdma Technology &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="Introduction to Rdma Technology &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Amd Fifth Gen Epyc vs Intel Sixth Gen Xeon" />
-  <meta name="keywords" content="EPYC 9005, Zen 5, Xeon 6, " />
+  <meta name="description" content="Introduction to Rdma Technology" />
+  <meta name="keywords" content="RDMA, InfiniBand, RoCE, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/" />
+  <link rel="canonical" href="https://www.kad8.com/hardware/introduction-to-rdma-technology/" />
   
   
   
@@ -66,31 +66,31 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/">
+  <meta property="og:url" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="AMD五代EPYC对决Intel六代至强">
-  <meta property="og:description" content="Amd Fifth Gen Epyc vs Intel Sixth Gen Xeon">
+  <meta property="og:title" content="Introduction to Rdma Technology">
+  <meta property="og:description" content="Introduction to Rdma Technology">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="hardware">
-    <meta property="article:published_time" content="2024-10-16T21:45:29+08:00">
-    <meta property="article:modified_time" content="2024-10-16T21:45:29+08:00">
-    <meta property="article:tag" content="EPYC 9005">
-    <meta property="article:tag" content="Zen 5">
-    <meta property="article:tag" content="Xeon 6">
-    <meta property="og:image" content="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/featured-epyc-vs-xeon.jpg">
-      <meta property="og:see_also" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/">
+    <meta property="article:published_time" content="2024-11-29T23:18:55+08:00">
+    <meta property="article:modified_time" content="2024-11-29T23:18:55+08:00">
+    <meta property="article:tag" content="RDMA">
+    <meta property="article:tag" content="InfiniBand">
+    <meta property="article:tag" content="RoCE">
+    <meta property="og:image" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/featured-rdma.png">
       <meta property="og:see_also" content="https://www.kad8.com/hardware/apple-reveals-the-secrets-behind-the-success-of-its-self-developed-chips/">
       <meta property="og:see_also" content="https://www.kad8.com/hardware/difference-between-gddr-memory-vs-hbm-memory/">
       <meta property="og:see_also" content="https://www.kad8.com/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/">
+      <meta property="og:see_also" content="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/">
       <meta property="og:see_also" content="https://www.kad8.com/hardware/intel-and-amd-launch-x86-ecosystem-advisory-group/">
       <meta property="og:see_also" content="https://www.kad8.com/hardware/amd-zen5-epyc-first-test-result-review/">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/featured-epyc-vs-xeon.jpg">
-  <meta name="twitter:title" content="AMD五代EPYC对决Intel六代至强">
-  <meta name="twitter:description" content="Amd Fifth Gen Epyc vs Intel Sixth Gen Xeon">
+  <meta name="twitter:image" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/featured-rdma.png">
+  <meta name="twitter:title" content="Introduction to Rdma Technology">
+  <meta name="twitter:description" content="Introduction to Rdma Technology">
 
   
   <script type="application/ld+json">
@@ -98,26 +98,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Hardwares",
-    "name": "AMD五代EPYC对决Intel六代至强",
-    "headline": "AMD五代EPYC对决Intel六代至强",
-    "description": "Amd Fifth Gen Epyc vs Intel Sixth Gen Xeon",
-    "abstract": "\u003cp\u003eAMD、Intel之间的服务器与数据中心处理器大战硝烟再起，战况空前！\u003c\/p\u003e\n\u003cp\u003eIntel正在陆续发布全新设计的第六代至强6系列，AMD则祭出了同样全新的第五代EPYC 9005系列，可谓针尖对麦芒。\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/amd-epyc-vs-intel-xeon-1.png\u0022 alt=\u0022AMD fifth Gen epyc vs Intel Sixth Gen Xeon\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e\n\u003cp\u003e\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/amd-epyc-vs-intel-xeon-2.png\u0022 alt=\u0022AMD fifth Gen epyc vs Intel Sixth Gen Xeon\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/p\u003e",
+    "name": "Introduction to Rdma Technology",
+    "headline": "Introduction to Rdma Technology",
+    "description": "Introduction to Rdma Technology",
+    "abstract": "\u003cp\u003eRDMA（Remote Direct Memory Access，远程直接数据存取）是一种允许网络中的计算机直接从内存中读写数据的技术，而无需本地系统的CPU参与。这种机制可以显著减少网络传输的延迟和提高数据吞吐量，同时降低了CPU的使用率，使得高性能计算、大规模数据处理和云计算等场景下的网络通信更加高效。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e技术原理 \n    \u003cdiv id=\u0022%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e直接内存访问：在传统的网络通信中，数据传输需要经过发送方的操作系统内核空间，然后通过网络发送到接收方，接收方同样需要将数据从内核空间复制到用户空间的应用程序。这个过程中涉及到多次内存复制和上下文切换，会消耗大量的CPU资源。而\u003ca href=\u0022https:\/\/www.gaitpu.com\/ai\/detailed-explanation-of-the-rdma-working-process\u0022 target=\u0022_blank\u0022\u003eRDMA技术\u003c\/a\u003e可以让网络接口卡（NIC）直接访问远程机器的内存，绕过了操作系统内核，减少了内存复制次数和上下文切换，从而提高了效率。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/hardware\/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon\/",
+    "url" : "https:\/\/www.kad8.com\/hardware\/introduction-to-rdma-technology\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-16T21:45:29\u002b08:00",
-    "datePublished": "2024-10-16T21:45:29\u002b08:00",
+    "dateCreated": "2024-11-29T23:18:55\u002b08:00",
+    "datePublished": "2024-11-29T23:18:55\u002b08:00",
     
-    "dateModified": "2024-10-16T21:45:29\u002b08:00",
+    "dateModified": "2024-11-29T23:18:55\u002b08:00",
     
-    "keywords": ["EPYC 9005","Zen 5","Xeon 6"],
+    "keywords": ["RDMA","InfiniBand","RoCE"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "186"
+    "wordCount": "37"
   }]
   </script>
 
@@ -447,7 +447,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      AMD五代EPYC对决Intel六代至强
+      Introduction to Rdma Technology
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -488,7 +488,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-16T21:45:29&#43;08:00">2024-10-16</time>
+  <time datetime="2024-11-29T23:18:55&#43;08:00">2024-11-29</time>
   
 
   
@@ -512,26 +512,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc-9005/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rdma/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    EPYC 9005
+    RDMA
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-5/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infiniband/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Zen 5
+    InfiniBand
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/xeon-6/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/roce/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Xeon 6
+    RoCE
   </span>
 </span>
   </span>
@@ -597,21 +597,11 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#架构设计都是大小核-但又截然不同">架构设计：都是“大小核” 但又截然不同</a></li>
-    <li><a href="#产品布局128核心大战128核心384线程大战288线程">产品布局：128核心大战128核心、384线程大战288线程</a></li>
-    <li><a href="#规格性能amd气势如虹-全面碾压">规格性能：AMD气势如虹 全面碾压</a>
-      <ul>
-        <li><a href="#核心数">核心数：</a></li>
-        <li><a href="#频率">频率：</a></li>
-        <li><a href="#三级缓存">三级缓存：</a></li>
-        <li><a href="#ddr5内存">DDR5内存：</a></li>
-        <li><a href="#pcie-50通道">PCIe 5.0通道：</a></li>
-        <li><a href="#热设计功耗">热设计功耗：</a></li>
-        <li><a href="#平台">平台：</a></li>
-        <li><a href="#其他">其他：</a></li>
-      </ul>
-    </li>
-    <li><a href="#展望未来只是刚刚开始-都还有杀手锏">展望未来：只是刚刚开始 都还有杀手锏</a></li>
+    <li><a href="#技术原理">技术原理</a></li>
+    <li><a href="#操作类型">操作类型</a></li>
+    <li><a href="#应用场景">应用场景</a></li>
+    <li><a href="#挑战与限制">挑战与限制</a></li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav>
   </div>
@@ -625,21 +615,11 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#架构设计都是大小核-但又截然不同">架构设计：都是“大小核” 但又截然不同</a></li>
-    <li><a href="#产品布局128核心大战128核心384线程大战288线程">产品布局：128核心大战128核心、384线程大战288线程</a></li>
-    <li><a href="#规格性能amd气势如虹-全面碾压">规格性能：AMD气势如虹 全面碾压</a>
-      <ul>
-        <li><a href="#核心数">核心数：</a></li>
-        <li><a href="#频率">频率：</a></li>
-        <li><a href="#三级缓存">三级缓存：</a></li>
-        <li><a href="#ddr5内存">DDR5内存：</a></li>
-        <li><a href="#pcie-50通道">PCIe 5.0通道：</a></li>
-        <li><a href="#热设计功耗">热设计功耗：</a></li>
-        <li><a href="#平台">平台：</a></li>
-        <li><a href="#其他">其他：</a></li>
-      </ul>
-    </li>
-    <li><a href="#展望未来只是刚刚开始-都还有杀手锏">展望未来：只是刚刚开始 都还有杀手锏</a></li>
+    <li><a href="#技术原理">技术原理</a></li>
+    <li><a href="#操作类型">操作类型</a></li>
+    <li><a href="#应用场景">应用场景</a></li>
+    <li><a href="#挑战与限制">挑战与限制</a></li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav>
   </div>
@@ -740,9 +720,7 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://www.kad8.com/hardware/introduction-to-rdma-technology/">
-            § 2: Introduction to Rdma Technology
-        </a>
+        § 2: 本文
     </div>
     
     
@@ -776,7 +754,9 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        § 5: 本文
+        <a href="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/">
+            § 5: AMD五代EPYC对决Intel六代至强
+        </a>
     </div>
     
     
@@ -814,345 +794,136 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>AMD、Intel之间的服务器与数据中心处理器大战硝烟再起，战况空前！</p>
-<p>Intel正在陆续发布全新设计的第六代至强6系列，AMD则祭出了同样全新的第五代EPYC 9005系列，可谓针尖对麦芒。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-1.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-2.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>曾经，AMD在服务器与数据中心市场上几近消失；曾经，Intel几乎完全垄断了整个行业。</p>
-<p>七年来，双方进行了一次又一次激烈交锋，AMD无疑气势更盛，无论产品发布节奏还是规格性能提升，都步步为营，一点一点改变了行业格局，第三方机构统计显示市场份额已经达到34％，合作生态也日渐繁荣。</p>
-<p>Intel在对手的强势挑战之下，也是一路马不停蹄，一度因产品延期导致的混乱也终于过去，正在重新起航。</p>
-<p>这一次，双方都是有备而来，都是气势如虹，究竟谁更胜一筹呢？</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-3.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
+          <p>RDMA（Remote Direct Memory Access，远程直接数据存取）是一种允许网络中的计算机直接从内存中读写数据的技术，而无需本地系统的CPU参与。这种机制可以显著减少网络传输的延迟和提高数据吞吐量，同时降低了CPU的使用率，使得高性能计算、大规模数据处理和云计算等场景下的网络通信更加高效。</p>
 
 
-<h2 class="relative group">架构设计：都是“大小核” 但又截然不同 
-    <div id="%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E9%83%BD%E6%98%AF%E5%A4%A7%E5%B0%8F%E6%A0%B8-%E4%BD%86%E5%8F%88%E6%88%AA%E7%84%B6%E4%B8%8D%E5%90%8C" class="anchor"></div>
+<h2 class="relative group">技术原理 
+    <div id="%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E9%83%BD%E6%98%AF%E5%A4%A7%E5%B0%8F%E6%A0%B8-%E4%BD%86%E5%8F%88%E6%88%AA%E7%84%B6%E4%B8%8D%E5%90%8C" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>有趣的是，AMD、Intel都将所谓的“大小核”架构设计引入到了数据中心，但具体做法是完全不同的，这也直接导致双方产品的实际表现迥异。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-4.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>AMD的做法是“同构大小核”，之前的第四代EPYC率先吃螃蟹，首次划分出了Zen 4、Zen 4c两个版本，分别对应Genoa EPYC 9004系列、Bergamo EPYC 97x4系列两条产品线。</p>
-<p>Zen 4、Zen 4c都基于完全相同的底层微架构，拥有完全相同的IPC性能、ISA指令集、技术特性，唯一的不同就是后者三级缓存更少一些，主频更低一些，同样的5nm工艺下核心面积缩小了大约35％之多。</p>
-<p>对于操作系统和应用软件来说，不需要考虑二者的不同，也不需要专门的适配与优化，可一视同仁，只是将它们用在不同的负载和场景而已，其中Zen 4是常规的通用计算，Zen 4c则主攻高密度云计算。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-5.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-6.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>第五代EPYC延续了这一理念，并进行了全面升级。</p>
-<p>其中，Zen 5部分升级为4nm工艺，CCD模块从12个增至16个，整体从96核心192线程增至128核心256线程(每CCD还是8个)，三级缓存也从384MB增至512MB(每核心还是4MB)。</p>
-<p>Zen 5c部分更是升级为3nm工艺，使得核心面积进一步缩小，可以容纳更多核心，CCD模块从8个增至12个，整体从128核心256线程增至192核心384线程(每CCD还是16个)，三级缓存则从256MB增至384MB(每核心还是2MB)。</p>
-<p>AMD暂未公布Zen 5、Zen 5c的具体核心面积，但相信会和上代类似，至少也得差个1/3。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-7.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-8.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>Intel走的则是“异构大小核”，在至强历史上首次兵分两路，为此放弃了延续五代的“至强可扩展”的名号，改为更简单直接的“至强6”。</p>
-<p>至强6 6000E系列代号Sierra Forest，首次将E核(能效核)引入数据中心，而且只有E核，专门针对高密度运算、可扩展负载。</p>
-<p>至强6 6000P系列代号Granite Rapids，只使用传统的P核(性能核)，主打高性能计算、AI负载场景。</p>
-<p>它们都延续了以往的分离式模块化架构，其中核心计算模块升级为Intel 3制造工艺(可以粗略地认为大致等于3nm)。</p>
-<p>至强6 E系列首发只有一种计算模块，144核心144线程——是的不支持超线程。</p>
-<p>至强6 P系列则有四种计算模块配置：单个小模块16核心32线程、单个大模块48核心96线程、两个大模块96核心192线程、三个大模块128核心256线程(理论上应该是屏蔽了4个核心以保证良品率)。</p>
-<p>至强6两条线的架构设计截然不同，规格、性能自然差异极大，不过还好，二者共享统一的软件开发平台，从而便于部署。</p>
-<p>有趣的是，这是AMD EPYC诞生七年来，Intel第一次在核心数量上追平了AMD，当然只是说完整大核版本，都是128核心。</p>
-<p>在“小核”方面，AMD仍然多出48个，还是高性能架构，还有超线程，还有更多……</p>
+<ul>
+<li>
+<p>直接内存访问：在传统的网络通信中，数据传输需要经过发送方的操作系统内核空间，然后通过网络发送到接收方，接收方同样需要将数据从内核空间复制到用户空间的应用程序。这个过程中涉及到多次内存复制和上下文切换，会消耗大量的CPU资源。而<a href="https://www.gaitpu.com/ai/detailed-explanation-of-the-rdma-working-process" target="_blank">RDMA技术</a>可以让网络接口卡（NIC）直接访问远程机器的内存，绕过了操作系统内核，减少了内存复制次数和上下文切换，从而提高了效率。</p>
+</li>
+<li>
+<p>低延迟：由于减少了CPU的介入和内存复制的次数，RDMA能够实现非常低的延迟，这对于需要快速响应的实时应用来说非常重要。</p>
+</li>
+<li>
+<p>高带宽：除了低延迟外，RDMA还支持高带宽的数据传输，这使得大量数据可以在短时间内完成传输，非常适合大数据处理和高性能计算环境。</p>
+</li>
+</ul>
 
 
-<h2 class="relative group">产品布局：128核心大战128核心、384线程大战288线程 
-    <div id="%E4%BA%A7%E5%93%81%E5%B8%83%E5%B1%80128%E6%A0%B8%E5%BF%83%E5%A4%A7%E6%88%98128%E6%A0%B8%E5%BF%83384%E7%BA%BF%E7%A8%8B%E5%A4%A7%E6%88%98288%E7%BA%BF%E7%A8%8B" class="anchor"></div>
+<h2 class="relative group">操作类型 
+    <div id="%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BA%A7%E5%93%81%E5%B8%83%E5%B1%80128%E6%A0%B8%E5%BF%83%E5%A4%A7%E6%88%98128%E6%A0%B8%E5%BF%83384%E7%BA%BF%E7%A8%8B%E5%A4%A7%E6%88%98288%E7%BA%BF%E7%A8%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>接下来，我们看看双方第一批新品的产品线布局，也是很有趣，同样走了截然不同的路线。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-9.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>上一代EPYC将Zen 4、Zen 4c分成两条不同的子产品线，各有各的代号，命名规则都不一样，客户可以一眼看出区别。</p>
-<p>这一次，EPYC 9005系列将Zen 5、Zen 5c纳入了统一管理，甚至共用一个代号Turin，就在型号命名上都完全混合在一起。</p>
-<p>事实上这一代两种核心对应的内存、PCIe规格都完全一致，不像上代Zen 4c的精简了不少，自然没必要再区分开。</p>
-<p>AMD也希望通过此举消弭Zen 5、Zen 5c之间的鸿沟，简化客户的选择，毕竟它们是同样的架构、性能、指令、功能，不需要差异对待。</p>
-<p>客户根本不用考虑一款产品到底用了Zen 5还是Zen 5c，只需要根据自己的应用需求，选择不同的核心、频率、缓存、功耗等指标组合，即可找到最适合自己的型号。</p>
-<p>非要区分的话，Zen 5的有22款，Zen 5c的有5款。</p>
-<p>8-72个核心的只有Zen 5，144-192核心的只有Zen 5c，96-128核心的两种都有，其中9x55编号的为Zen 5，9x45编号的为Zen 5c。</p>
-<p>另外值得一提的是，AMD首次将最高频率提升到了惊人的5GHz，对比上代的最高值一下子提升了足足600MHz。</p>
-<p>这对于多核心的数据中心处理器来说是非常难得的，而且一次就有两款做到了，分别是16核心的EPYC 9175F、64核心的EPYC 9575F，非常适合对频率非常敏感的应用。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-10.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-12.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>Intel则是分成了完全不同的两部分，分别冠以P、E的后缀，一眼就能看出谁是大核、谁是小核。</p>
-<p>至强6900P系列都是大核，最高做到了128核心256线程，最少也有72核心144线程。</p>
-<p>至强6700E系列最多144核心144线程，最少则是64核心64线程。</p>
+<p>RDMA支持三种基本的操作类型：</p>
+<ul>
+<li>
+<p>写操作：允许一个节点将数据直接写入另一个节点的内存。</p>
+</li>
+<li>
+<p>读操作：允许一个节点直接读取另一个节点的内存中的数据。</p>
+</li>
+<li>
+<p>原子操作：一种特殊的操作，可以在远程节点上执行一些原子性的操作，如比较并交换（CAS）等。</p>
+</li>
+</ul>
 
 
-<h2 class="relative group">规格性能：AMD气势如虹 全面碾压 
-    <div id="%E8%A7%84%E6%A0%BC%E6%80%A7%E8%83%BDamd%E6%B0%94%E5%8A%BF%E5%A6%82%E8%99%B9-%E5%85%A8%E9%9D%A2%E7%A2%BE%E5%8E%8B" class="anchor"></div>
+<h2 class="relative group">应用场景 
+    <div id="%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%A7%84%E6%A0%BC%E6%80%A7%E8%83%BDamd%E6%B0%94%E5%8A%BF%E5%A6%82%E8%99%B9-%E5%85%A8%E9%9D%A2%E7%A2%BE%E5%8E%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>对比来看，五代EPYC 9005在纸面规格参数上就远胜于六代至强6，下边逐一对比下：</p>
+<p>RDMA技术的应用场景非常广泛，包括但不限于：</p>
+<ul>
+<li>
+<p>数据中心：服务器之间需要频繁地进行大量数据的传输和交换，RDMA的高性能与低延迟特性使得它非常适合于数据中心中的网络通信。</p>
+</li>
+<li>
+<p>高性能计算（HPC）：需要处理大量数据并进行复杂的计算，RDMA的直接内存访问和零拷贝技术可以减少数据传输的开销，提高计算效率。</p>
+</li>
+<li>
+<p>分布式存储系统：节点之间需要频繁地进行数据读写操作，RDMA的高效数据传输和直接内存访问特性可以提高节点之间的数据读写效率。</p>
+</li>
+<li>
+<p>云计算：虚拟机（VM）之间的通信和数据传输是常见的需求，RDMA可以用于实现VM之间的高效通信。</p>
+</li>
+<li>
+<p>技术分类</p>
+</li>
+</ul>
+<p>RDMA技术有多种实现方式，包括InfiniBand、RoCE和iWARP等。它们各有优缺点，适用于不同的应用场景：</p>
+<ul>
+<li>
+<p>InfiniBand：具有最低的延迟和较高的带宽，但需要专用的硬件和网络设备。</p>
+</li>
+<li>
+<p>RoCE：利用现有的以太网基础设施进行扩展，具有较低的延迟和CPU占用率，且成本较低。</p>
+</li>
+<li>
+<p>iWARP：使用软件卸载来实现RDMA，CPU占用率较高，但具有良好的互操作性和兼容性。</p>
+</li>
+</ul>
 
 
-<h3 class="relative group">核心数： 
-    <div id="%E6%A0%B8%E5%BF%83%E6%95%B0" class="anchor"></div>
+<h2 class="relative group">挑战与限制 
+    <div id="%E6%8C%91%E6%88%98%E4%B8%8E%E9%99%90%E5%88%B6" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%B8%E5%BF%83%E6%95%B0" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005 Zen 5最多128核心256线程，与至强6900P持平。</p>
-<p>Zen 5c的最多更是192核心384线程，遥遥领先至强6700E 144核心144线程。</p>
-<p>另外，双方都支持最多双路并行，Intel这次也没有四路、八路。</p>
-
-
-<h3 class="relative group">频率： 
-    <div id="%E9%A2%91%E7%8E%87" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E9%A2%91%E7%8E%87" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005最高达到了空前的5.0GHz，Zen 5c最高也有3.7GHz。</p>
-<p>至强6就差多了，甚至都没迈过4GHz的门槛，6900P最高统一都是3.9GHz，6700E系列更是只有3.2GHz。</p>
-
-
-<h3 class="relative group">三级缓存： 
-    <div id="%E4%B8%89%E7%BA%A7%E7%BC%93%E5%AD%98" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%89%E7%BA%A7%E7%BC%93%E5%AD%98" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005 Zen 5、Zen 5c最多分别做到了512MB、384MB，平均每个核心分别4MB、2MB。</p>
-<p>至强6900P最多504MB，只输了一点点；至强6700E则是最多108MB，还不到对手的三分之一，平均每个核心还不到1MB。</p>
-
-
-<h3 class="relative group">DDR5内存： 
-    <div id="ddr5%E5%86%85%E5%AD%98" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ddr5%E5%86%85%E5%AD%98" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005系列全部统一支持12通道DDR5-6000，最低端也没有阉割。</p>
-<p>至强6900P系列也是12通道，频率更高一些DDR5-6400，还支持新型MRDIMM内存，频率高达8800MHz——这几乎是至强6唯一的优势了。</p>
-<p>至强6700E系列只有8个内存通道，而且只有部分型号保留DDR5-6400的频率，还有一部分降级为DDR5-5600。</p>
-
-
-<h3 class="relative group">PCIe 5.0通道： 
-    <div id="pcie-50%E9%80%9A%E9%81%93" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#pcie-50%E9%80%9A%E9%81%93" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005系列都是128条PCIe 5.0通道，和上代相同。</p>
-<p>至强6900P系列只有96条，至强6700E系列进一步减少到88条。</p>
-
-
-<h3 class="relative group">热设计功耗： 
-    <div id="%E7%83%AD%E8%AE%BE%E8%AE%A1%E5%8A%9F%E8%80%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%83%AD%E8%AE%BE%E8%AE%A1%E5%8A%9F%E8%80%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>双方最高都达到了500W，尤其是完整核心都是在128核心的情况下做到的，彼此彼此。</p>
-<p>不过，Zen 5c 192核心时也有500W，至强6700E 144核心时则是330W，平均到每个核心后者更低一些为2.3W，前者是2.6W。</p>
-
-
-<h3 class="relative group">平台： 
-    <div id="%E5%B9%B3%E5%8F%B0" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B9%B3%E5%8F%B0" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005系列延续了上代的SP5封装接口，客户可以无缝升级，而且按照AMD的做法，这一接口还会延续下去，可能要等到支持DDR6内存的时候才会改变。</p>
-<p>至强6系列不但用了新接口，还分为两种，至强6900P系列是LGA7529，至强6700E系列是LGA4710，不仅上代无法升级，大小核之间也无法通用。</p>
-
-
-<h3 class="relative group">其他： 
-    <div id="%E5%85%B6%E4%BB%96" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%85%B6%E4%BB%96" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<p>EPYC 9005系列全部支持AVX-512指令集，这本来是Intel的独门绝技，但异构大小核的设计让它消失了，至强6也没有。</p>
-<p>EPYC 9005系列全部支持多线程，至强6900P也有，至强6700E就没了。</p>
-<p>至强6内置了一系列的AI加速器，可以让某些特定负载大大加速，EPYC 9005系列则没有，不过AMD有更强大的Instinct加速卡，强调二者搭档发挥各自的优势，Intel GPU加速卡则没能做起来。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-13.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>当然，纸面得来终觉浅，最终还要看跑分。</p>
-<p><a href="https://www.kad8.com/hardware/amd-zen5-epyc-first-test-result-review/" target="_blank">Phoronix网站进行了多型号的全方位测试</a>，Ubuntu系统下跑了多达140个数据中心测试项目，总结如上。</p>
-<p>可以看出，EPYC 9005系列对比至强6呈现一边倒的压倒性优势，可以说是全程吊打。</p>
-<p>旗舰之争中，EPYC 9755面对MRDIMM-8000高频内存加持的至强6980P，双路、单路优势分别高达40.0％、18.4％，如果将后者换成普通的DDR5-6400，领先幅度更是能进一步提升到41.7％、19.3％。</p>
-<p>夸张的是，只需要一颗EPYC 9755，就能干掉两颗搭配DDR5-6400内存的至强6980P！</p>
-<p>同时，192核心的EPYC 9965、5GHz频率的EPYC 9575F，也都超越了至强6980P，后者领先超过20％。</p>
-<p>有趣的是，EPYC的双路并行效率要高得多。</p>
-<p>遗憾的是没有加入至强6700E系列的测试，但不难想象，即便加上也是被欺负的命。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-14.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>功耗方面，五代EPYC也有着绝对优势，远远低于至强6。</p>
-<p>无论是192核心的EPYC 9965，还是5GHz频率的EPYC 9575F，实际功耗都没有超过400W的热设计功耗指标。</p>
-<p>即便是128核心旗舰的EPYC 9755，功耗也只有450W左右，远低于500W的热设计功耗。</p>
-<p>至强6980P则正好达到了500W，这就是官方标称的热设计功耗。</p>
-
-
-<h2 class="relative group">展望未来：只是刚刚开始 都还有杀手锏 
-    <div id="%E5%B1%95%E6%9C%9B%E6%9C%AA%E6%9D%A5%E5%8F%AA%E6%98%AF%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B-%E9%83%BD%E8%BF%98%E6%9C%89%E6%9D%80%E6%89%8B%E9%94%8F" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B1%95%E6%9C%9B%E6%9C%AA%E6%9D%A5%E5%8F%AA%E6%98%AF%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B-%E9%83%BD%E8%BF%98%E6%9C%89%E6%9D%80%E6%89%8B%E9%94%8F" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%8C%91%E6%88%98%E4%B8%8E%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>通过前述种种对比可是看出，EPYC 9005系列在至强6系列面前相当霸道，无论是规格参数、技术，还是实际性能、能效，又或者平台便利性，都实现了全方位的碾压，甚至可以说是吊打，Intel依然毫无还手之力。</p>
-<p>而且，这只是双方新一代平台的开端，各自都还有杀手锏级的后招。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-15.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>AMD没有透露具体情况，但显然会有适合极高性能计算的第三代3D缓存版本。</p>
-<p>上一代就做到了768MB 3D缓存，加上原生的384MB合计达1152MB，也是史上第一次超过1GB。</p>
-<p>这一代随着CCD模块数量的增加，3D缓存有望增至1024MB，加上原生的512MB，合计可达1536MB，也就是整整1.5GB！</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-16.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-17.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>Intel方面，明年一季度会发布至强 6900E系列，两个计算模块，最高达288核心288线程，在核心数量上创造新纪录。</p>
-<p>但是因为不支持多线程技术，它的线程数还是稍逊一筹，再考虑到AMD多线程技术的效率，192核心384线程超过它问题不大。</p>
-<p>另外还有至强6700P、6500P、6300P系列，显然核心数不会超过128个。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-18.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-19.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>按照AMD的说法，EPYC平台已经拥有超过350个OEM平台、超过950个云实例，无论是大规模云厂商还是大型科技/行业企业，都有大量的深度合作伙伴，是实至名归的“超大规模数据中心第一处理器”。</p>
-<p>Intel方面没有明确数据，但凭借长期以来雄厚的积累，以及依然把持住2/3的市场，合作案例肯定更多、更深入。</p>
-<p>仅仅七年，AMD EPYC就吃下了超过1/3的市场，对于一向看重产品和平台品质、看重长期稳定性的服务器与数据中心客户来说，能做到这种程度只能说是一个奇迹。</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./amd-epyc-vs-intel-xeon-20.png" alt="AMD fifth Gen epyc vs Intel Sixth Gen Xeon" />
-      
-    </figure>
-</p>
-<p>更可怕的是，AMD EPYC在产品力上几乎找不到缺点和短板，几乎每一个点都让对手望尘莫及，相信还会拿到更多的市场。</p>
-<p>七年五代产品，AMD将核心数量提升了6倍，性能更是提升了几乎11倍，一路狂奔根本停不下来的架势。</p>
+<p>尽管RDMA技术具有诸多优点，但也面临一些挑战和限制：</p>
+<ul>
+<li>
+<p>硬件依赖：RDMA需要特定的网卡硬件支持，这些网卡通常比传统的以太网网卡更昂贵。</p>
+</li>
+<li>
+<p>安全性问题：由于RDMA允许远程节点直接访问本地内存，可能会带来一些安全性问题。</p>
+</li>
+<li>
+<p>编程复杂性：RDMA的编程模型与传统的网络编程模型有所不同，需要开发人员具有一定的专业知识和经验。</p>
+</li>
+<li>
+<p>网络规模限制：在大规模网络中，由于网络拓扑的复杂性和不可预测性，RDMA的性能可能会受到影响。</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">结语 
+    <div id="%E7%BB%93%E8%AF%AD" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BB%93%E8%AF%AD" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>综上所述，RDMA技术是一种高效、低延迟的网络通信技术，特别适用于需要处理大量数据和高性能网络通信的场景。然而，在应用RDMA技术时，也需要充分考虑其硬件依赖、安全性问题、编程复杂性和网络规模限制等因素。</p>
 
           
           
@@ -1182,9 +953,7 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://www.kad8.com/hardware/introduction-to-rdma-technology/">
-            § 2: Introduction to Rdma Technology
-        </a>
+        § 2: 本文
     </div>
     
     
@@ -1218,7 +987,9 @@
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        § 5: 本文
+        <a href="https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/">
+            § 5: AMD五代EPYC对决Intel六代至强
+        </a>
     </div>
     
     
@@ -1261,7 +1032,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;title=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;title=Introduction%20to%20Rdma%20Technology"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -1280,7 +1051,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;text=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;text=Introduction%20to%20Rdma%20Technology"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1298,7 +1069,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba&#43;https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/"
+      href="https://bsky.app/intent/compose?text=Introduction%20to%20Rdma%20Technology&#43;https://www.kad8.com/hardware/introduction-to-rdma-technology/"
       title=""
       aria-label=""
       >
@@ -1316,7 +1087,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba%20https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/"
+      href="https://s2f.kytta.dev/?text=Introduction%20to%20Rdma%20Technology%20https://www.kad8.com/hardware/introduction-to-rdma-technology/"
       title=""
       aria-label=""
       >
@@ -1335,7 +1106,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;resubmit=true&amp;title=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=Introduction%20to%20Rdma%20Technology"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -1354,7 +1125,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;description=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;description=Introduction%20to%20Rdma%20Technology"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -1373,7 +1144,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;quote=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;quote=Introduction%20to%20Rdma%20Technology"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1392,7 +1163,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;subject=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="mailto:?body=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;subject=Introduction%20to%20Rdma%20Technology"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1411,7 +1182,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;resubmit=true&amp;title=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=Introduction%20to%20Rdma%20Technology"
       title=""
       aria-label=""
       >
@@ -1430,7 +1201,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/hardware/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon/&amp;resubmit=true&amp;title=AMD%e4%ba%94%e4%bb%a3EPYC%e5%af%b9%e5%86%b3Intel%e5%85%ad%e4%bb%a3%e8%87%b3%e5%bc%ba"
+      href="https://t.me/share/url?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=Introduction%20to%20Rdma%20Technology"
       title=""
       aria-label=""
       >
@@ -1456,11 +1227,11 @@
   
   
 
-  <a href="/hardware/amd-zen5-epyc-first-test-result-review/" class="min-w-full">
+  <a href="/hardware/apple-reveals-the-secrets-behind-the-success-of-its-self-developed-chips/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-zen5-epyc-first-test-result-review/featured-AMD-EPYC-9005-SKU-0_hu5333469218201774977.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/apple-reveals-the-secrets-behind-the-success-of-its-self-developed-chips/featured-apple-m4-ultra_hu2527566285273911196.png);"></div>
         
       
 
@@ -1468,7 +1239,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-zen5-epyc-first-test-result-review/">AMD Zen5 EPYC首测</div>
+          href="/hardware/apple-reveals-the-secrets-behind-the-success-of-its-self-developed-chips/">苹果揭秘自研芯片成功原因</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1507,7 +1278,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-15T23:51:58&#43;08:00">2024-10-15</time>
+  <time datetime="2024-11-20T22:57:02&#43;08:00">2024-11-20</time>
   
 
   
@@ -1531,26 +1302,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-5/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/m4-ultra/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Zen 5
+    M4 Ultra
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/eypc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/apple/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    EYPC
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mrdimm/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    MRDIMM
+    Apple
   </span>
 </span>
   </span>
@@ -1576,11 +1339,11 @@
   
   
 
-  <a href="/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/" class="min-w-full">
+  <a href="/hardware/difference-between-gddr-memory-vs-hbm-memory/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/featured-AMD-Turin-6_hu2736256878043637703.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/difference-between-gddr-memory-vs-hbm-memory/featured-GDDR-vs-HBM-Memory_hu10314152411819662385.png);"></div>
         
       
 
@@ -1588,7 +1351,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/">AMD正式发布第五代EPYC处理器</div>
+          href="/hardware/difference-between-gddr-memory-vs-hbm-memory/">GDDR 与 HBM 内存之间的区别</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1627,7 +1390,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-11T20:25:52&#43;08:00">2024-10-11</time>
+  <time datetime="2024-10-17T23:58:16&#43;08:00">2024-10-17</time>
   
 
   
@@ -1651,26 +1414,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gddr/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Epyc
+    GDDR
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hbm/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Turin
+    HBM
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-5/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/h100/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Zen 5
+    H100
   </span>
 </span>
   </span>
@@ -1696,11 +1459,11 @@
   
   
 
-  <a href="/hardware/intel-and-amd-launch-x86-ecosystem-advisory-group/" class="min-w-full">
+  <a href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/intel-and-amd-launch-x86-ecosystem-advisory-group/featured-x86-ecosystem-advisory-group_hu17152812441875039267.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/featured-AMD-Instinct-MI300X_hu18049096376422806741.png);"></div>
         
       
 
@@ -1708,7 +1471,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/intel-and-amd-launch-x86-ecosystem-advisory-group/">英特尔 和 AMD 宣布合作，共同成立生态小组</div>
+          href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/">AMD Instinct MI300X 架构亮相 Hot Chips 2024</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1747,7 +1510,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-16T20:58:40&#43;08:00">2024-10-16</time>
+  <time datetime="2024-10-17T00:00:36&#43;08:00">2024-10-17</time>
   
 
   
@@ -1771,26 +1534,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/intel/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/instinct/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Intel
+    Instinct
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/amd/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mi300x/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AMD
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ecosystem/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ecosystem
+    Mi300X
   </span>
 </span>
   </span>
@@ -1827,8 +1582,8 @@
           
         
       <script>
-        var oid = "views_hardware\/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon\/index.md"
-        var oid_likes = "likes_hardware\/amd-fifth-gen-epyc-vs-intel-sixth-gen-xeon\/index.md"
+        var oid = "views_hardware\/introduction-to-rdma-technology\/index.md"
+        var oid_likes = "likes_hardware\/introduction-to-rdma-technology\/index.md"
       </script>
       
       
@@ -1848,7 +1603,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/hardware/intel-and-amd-launch-x86-ecosystem-advisory-group/">
+            <a class="flex group mr-3" href="/hardware/russia-has-developed-a-48-core-self-developed-cpu/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1860,11 +1615,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >英特尔 和 AMD 宣布合作，共同成立生态小组</span
+                  >俄罗斯造出48核自研CPU</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-10-16T20:58:40&#43;08:00">2024-10-16</time>
+                    <time datetime="2024-11-29T23:02:29&#43;08:00">2024-11-29</time>
                   
                 </span>
               </span>
@@ -1872,28 +1627,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/hardware/amd-instinct-mi300x-architecture-at-hot-chips-2024/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >AMD Instinct MI300X 架构亮相 Hot Chips 2024</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-10-17T00:00:36&#43;08:00">2024-10-17</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
