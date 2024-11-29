@@ -14,7 +14,7 @@
       <pubDate>Fri, 29 Nov 2024 23:02:29 +0800</pubDate>
       
       <guid>https://www.kad8.com/hardware/russia-has-developed-a-48-core-self-developed-cpu/</guid>
-      <description>&lt;p&gt;据俄罗斯联邦工业和贸易部副部长瓦西里·施帕克(Vasily Shpak)，俄罗斯已经拿到了第一批48核心的自研处理器Baikal-S，数量为1000颗。&lt;/p&gt;
+      <description>&lt;p&gt;据俄罗斯联邦工业和贸易部副部长瓦西里·施帕克(Vasily Shpak)，俄罗斯已经拿到了第一批48核心的&lt;a href=&#34;https://www.kad8.com/hardware/russia-has-developed-a-48-core-self-developed-cpu/&#34; target=&#34;_blank&#34;&gt;自研处理器Baikal-S&lt;/a&gt;，数量为1000颗。&lt;/p&gt;
 &lt;p&gt;他表示，这些处理器将分发给开发者、服务器厂商，用于设计相关产品。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
@@ -27,13 +27,17 @@
 &lt;p&gt;不过，瓦西里·施帕克没有透露这些处理器是从哪里获得的，但看得出来还会有更多陆续交付。&lt;/p&gt;
 &lt;p&gt;
     &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Baikal-S-ARM-A75-3.png&#34; alt=&#34;Russia Baikal-S ARM A75&#34; /&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Baikal-S-ARM-A75-2.png&#34; alt=&#34;Russia Baikal-S ARM A75&#34; /&gt;
       
     &lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;值得一提的是，今年4月份的时候，俄罗斯国家技术集团旗下的Roselectronics还开发出了全新的高性能计算与云服务平台“Basis”，拥有完整的软硬件解决方案，其中核心就是最多128核心的高性能处理器。&lt;/p&gt;
-&lt;p&gt;据悉，该方案是Roselectronics的电子计算科研中心(SRCEC)开发的，完全使用俄罗斯国内自主技术，可用于数据处理、存储中心、虚拟办公室、图形应用服务器等。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/russia-has-developed-a-48-core-self-developed-cpu/featured-Baikal-S-ARM-A75-2.png" />
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Baikal-S-ARM-A75-3.png&#34; alt=&#34;Russia Baikal-S ARM A75&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/russia-has-developed-a-48-core-self-developed-cpu/featured-Baikal-S-ARM-A75-4.png" />
     </item>
     
   </channel>
