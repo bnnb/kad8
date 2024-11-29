@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-11-29T23:02:29+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/russia-has-developed-a-48-core-self-developed-cpu/</loc>
+    <lastmod>2024-11-29T23:02:29+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-11-28T20:26:36+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -29,12 +41,6 @@
   <url>
     <loc>https://www.kad8.com/network/comparison-between-tcp-and-udp/</loc>
     <lastmod>2024-11-27T23:30:51+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-27T22:55:12+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
