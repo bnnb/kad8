@@ -9,6 +9,30 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>动态 DNS简介</title>
+      <link>https://www.kad8.com/network/introduction-to-dynamic-domain-name-system/</link>
+      <pubDate>Sat, 30 Nov 2024 22:18:50 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/network/introduction-to-dynamic-domain-name-system/</guid>
+      <description>&lt;p&gt;在互联网的世界中，域名和 IP 地址是我们访问网站和服务的重要桥梁。动态 DNS（Dynamic Domain Name System）是一种技术，它解决了动态 IP 地址带来的域名解析问题。通过动态 DNS，用户可以在动态 IP 地址频繁变化的情况下，仍然保持域名与设备的正常关联，从而方便访问和管理网络资源。&lt;/p&gt;
+&lt;p&gt;本文将深入探讨动态 DNS 的概念、工作原理及其应用场景，并详细介绍一些免费的动态 DNS 提供商，帮助读者更好地理解这一技术及其优势。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;什么是动态 DNS 
+    &lt;div id=&#34;%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81-dns&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81-dns&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;动态 DNS（Dynamic Domain Name System）是一种自动化的域名解析技术，用于解决动态 IP 地址带来的域名解析问题。它的主要作用是在设备的 IP 地址频繁变化时，动态更新域名与 IP 地址之间的映射关系，使得域名始终能够正确解析到设备，无需手动干预。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/introduction-to-dynamic-domain-name-system/featured-dynamic-domain-name-system.png" />
+    </item>
+    
+    <item>
       <title>Google Adsense用户关于《中国税收居民身份证明》的开具材料及流程</title>
       <link>https://www.kad8.com/network/google-adsense-certificate-of-chinese-fiscal-resident/</link>
       <pubDate>Sat, 30 Nov 2024 17:06:36 +0800</pubDate>
