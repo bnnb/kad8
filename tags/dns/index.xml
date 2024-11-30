@@ -28,8 +28,13 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-&lt;p&gt;动态 DNS（Dynamic Domain Name System）是一种自动化的域名解析技术，用于解决动态 IP 地址带来的域名解析问题。它的主要作用是在设备的 IP 地址频繁变化时，动态更新域名与 IP 地址之间的映射关系，使得域名始终能够正确解析到设备，无需手动干预。&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/introduction-to-dynamic-domain-name-system/featured-dynamic-domain-name-system.png" />
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./dynamic-domain-name-system-0.png&#34; alt=&#34;Dynamic Domain Name System&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/network/introduction-to-dynamic-domain-name-system/featured-ddns.png" />
     </item>
     
   </channel>
