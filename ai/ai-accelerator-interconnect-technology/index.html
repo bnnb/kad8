@@ -111,7 +111,7 @@
     "keywords": ["AI","Accelerator","Interconnect"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "495"
+    "wordCount": "496"
   }]
   </script>
 
@@ -729,7 +729,7 @@
 <p>Infinity Fabric: AMD的Infinity Fabric是一种片上和芯片间互连技术，用于连接CPU、GPU和其他加速器。在AMD Instinct MI300X平台上，Infinity Fabric链路被用来集成多个GPU模块，提高整体系统的数据交换效率。</p>
 </li>
 <li>
-<p>UAIlink: <a href="https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/" target="_blank">超级加速器链（Ultra Accelerator Link，UALink）</a>同样是一种可提高新一代AI/ML集群性能的高速加速器互连技术。八家发起厂商（和超级以太网联盟一样，我们也没有在UAlink联盟中看到英伟达的身影）也成立了一个开放行业标准机构来制定相关技术规范，以促进新使用模式所需的突破性性能，同时支持数据中心加速器用开放生态系统的发展。包括AMD、博通(Broadcom)、思科(Cisco)、Google、惠普(Hewlett Packard Enterprise，HPE)、英特尔(Intel)、Meta和微软(Microsoft)在内的八家公司宣告，他们已经为人工智能数据中心的网络制定了新的互联技术<a href="https://www.kad8.com/network/should-uec-and-ual-merged/" target="_blank">UALink</a>（Ultra Accelerator Link）。通过为人工智能加速器之间的通信建立一个开放标准，以打破市场领导者 Nvidia的垄断。</p>
+<p>UAIlink: 超级加速器链( Ultra Accelerator Link，UALink)同样是一种可提高新一代AI/ML集群性能的高速加速器互连技术。八家发起厂商（和超级以太网联盟一样，我们也没有在UAlink联盟中看到英伟达的身影）也成立了一个开放行业标准机构来制定相关技术规范，以促进新使用模式所需的突破性性能，同时支持数据中心加速器用开放生态系统的发展。包括AMD、博通(Broadcom)、思科(Cisco)、Google、惠普(Hewlett Packard Enterprise，HPE)、英特尔(Intel)、Meta和微软(Microsoft)在内的八家公司宣告，他们已经为人工智能数据中心的网络制定了新的互联技术<a href="https://www.kad8.com/network/should-uec-and-ual-merged/" target="_blank">UALink</a>（Ultra Accelerator Link）。通过为人工智能加速器之间的通信建立一个开放标准，以打破市场领导者 Nvidia的垄断。</p>
 </li>
 </ol>
 <p>这些互连技术的发展，特别是针对AI应用的优化，对于克服数据传输瓶颈、提升计算效率和促进异构计算架构的融合至关重要。随着AI模型和工作负载的复杂度持续增长，高效、低延迟的互连解决方案将变得更加重要。</p>
@@ -745,7 +745,7 @@
     </span>        
     
 </h2>
-<p><a href="https://www.vxworks.net/bus-protocol/939-an-easy-to-understand-explanation-of-pcie" target="_blank">PCIe（Peripheral Component Interconnect Express）</a>，即外围部件互连 express，是一种高速串行计算机扩展总线标准，用于连接计算机主板上的硬件设备，如显卡（包括AI加速卡和GPU）、固态硬盘、网卡等。PCIe标准自2003年推出以来，已经历了多次迭代，目前主流的版本包括PCIe 3.0、PCIe 4.0，而PCIe 5.0也开始逐渐普及。以下是PCIe技术的一些关键特征：</p>
+<p><a href="https://www.vxworks.net/bus-protocol/939-an-easy-to-understand-explanation-of-pcie" target="_blank">PCIe</a>（Peripheral Component Interconnect Express），即外围部件互连 express，是一种高速串行计算机扩展总线标准，用于连接计算机主板上的硬件设备，如显卡（包括AI加速卡和GPU）、固态硬盘、网卡等。PCIe标准自2003年推出以来，已经历了多次迭代，目前主流的版本包括PCIe 3.0、PCIe 4.0，而PCIe 5.0也开始逐渐普及。以下是PCIe技术的一些关键特征：</p>
 <ol>
 <li>
 <p>高速传输：每一代PCIe标准都提供了比前一代更高的数据传输速率。PCIe 3.0的每个通道（lane）提供约8GT/s（Gigatransfers per second）的数据速率，而PCIe 4.0翻倍至16GT/s，PCIe 5.0则再次翻倍至32GT/s。一个PCIe插槽可由1到16条通道组成，因此理论带宽会根据通道数成比例增加。</p>
@@ -825,7 +825,7 @@
 <p>能效比: NVLink在提供高带宽的同时，还注重能效，每传输1字节数据仅消耗1.3皮焦能量，能效比PCIe 5.0高出5倍，有助于降低大规模数据中心的运营成本。</p>
 </li>
 </ol>
-<p>NVLink技术主要应用于NVIDIA的高性能计算产品线，比如Tesla系列GPU，以及面向数据中心和专业计算任务的系统中，对于提升计算密集型应用的性能有着重要作用。</p>
+<p><a href="https://www.gaitpu.com/ai/gpu-interconnect-technology" target="_blank">NVLink</a>技术主要应用于NVIDIA的高性能计算产品线，比如Tesla系列GPU，以及面向数据中心和专业计算任务的系统中，对于提升计算密集型应用的性能有着重要作用。</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./AI-Accelerator-interconnect-3.gif" alt="AI Accelerator Interconnect" />
@@ -883,7 +883,7 @@
     </figure>
 </p>
 <p>从相关资料可以看到，Ultra Accelerator Link 联盟的核心于去年 12 月就已经建立，当时 CPU 和 GPU 制造商 AMD 和 PCI-Express 交换机制造商博通表示，博通未来的 PCI-Express 交换机将支持 xGMI 和 Infinity Fabric 协议，用于将其 Instinct GPU 内存相互连接，以及使用 CPU NUMA 链接的加载/存储内存语义将其内存连接到 CPU 主机的内存。相关消息显示，这将是未来的“Atlas 4”交换机，它将遵循 PCI-Express 7.0 规范，并于 2025 年上市。博通数据中心解决方案集团副总裁兼总经理 Jas Tremblay 证实，这项工作仍在进行中，但不要妄下结论。换而言之，我们不要以为 PCI-Express 是唯一的 UALink 传输，也不要以为 xGMI 是唯一的协议。</p>
-<p>AMD 为 UALink 项目贡献了范围更广的 Infinity Fabric 共享内存协议以及功能更有限且特定于 GPU 的 xGMI，而所有其他参与者都同意使用 Infinity Fabric 作为加速器互连的标准协议。英特尔高级副总裁兼网络和边缘事业部总经理 Sachin Katti 表示，由 AMD、博通、思科系统、谷歌、惠普企业、英特尔、Meta Platforms 和微软组成的 Ultra Accelerator Link“推动者小组”正在考虑使用以太网第 1 层传输层，并在其上采用 Infinity Fabric，以便将 GPU 内存粘合到类似于 CPU 上的 NUMA 的巨大共享空间中。</p>
+<p>AMD 为 <a href="https://www.kad8.com/ai/nine-giants-established-the-ualink-alliance/" target="_blank">UALink</a> 项目贡献了范围更广的 Infinity Fabric 共享内存协议以及功能更有限且特定于 GPU 的 xGMI，而所有其他参与者都同意使用 Infinity Fabric 作为加速器互连的标准协议。英特尔高级副总裁兼网络和边缘事业部总经理 Sachin Katti 表示，由 AMD、博通、思科系统、谷歌、惠普企业、英特尔、Meta Platforms 和微软组成的 Ultra Accelerator Link“推动者小组”正在考虑使用以太网第 1 层传输层，并在其上采用 Infinity Fabric，以便将 GPU 内存粘合到类似于 CPU 上的 NUMA 的巨大共享空间中。</p>
 <p>如下图所示，我们分享了如何使用以太网将 Pod 链接到更大的集群：</p>
 <p>
     <figure>
