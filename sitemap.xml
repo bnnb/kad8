@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/ai/</loc>
+    <lastmod>2024-12-01T09:56:44+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/ai/ai-accelerator-interconnect-technology/</loc>
+    <lastmod>2024-12-01T09:56:44+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/network/</loc>
     <lastmod>2024-11-30T22:18:50+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -119,12 +131,6 @@
   <url>
     <loc>https://www.kad8.com/software/introduction-to-linux-netstat/</loc>
     <lastmod>2024-11-24T10:55:58+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/ai/</loc>
-    <lastmod>2024-11-23T22:41:28+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
