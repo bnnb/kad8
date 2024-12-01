@@ -28,7 +28,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;PCIe (Peripheral Component Interconnect Express): PCIe是最常见的高速接口标准，用于连接计算机中的外设，包括AI加速卡。最新一代如PCIe 4.0和PCIe 5.0提供了更高的带宽（分别为16 GT/s和32 GT/s），支持AI加速器的高速数据传输需求。PCIe的通用性和广泛支持使其成为加速器连接的首选技术之一。&lt;/p&gt;</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/ai-accelerator-interconnect-technology/featured-AI-Accelerator-Interconnect.jpg" />
     </item>
     
   </channel>
