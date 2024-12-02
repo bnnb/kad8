@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Thu, 28 Nov 2024 20:26:36 +0800</lastBuildDate><atom:link href="https://www.kad8.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 22:14:15 +0800</lastBuildDate><atom:link href="https://www.kad8.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux系统下如何挂载硬盘</title>
+      <link>https://www.kad8.com/software/how-to-mount-hard-drive-in-linux-system/</link>
+      <pubDate>Mon, 02 Dec 2024 22:14:15 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/software/how-to-mount-hard-drive-in-linux-system/</guid>
+      <description>&lt;p&gt;挂载是指由操作系统使一个存储设备（如硬盘、CD-ROM或共享资源）上的计算机文件和目录可供用户通过计算机的文件系统访问的一个过程。这个过程通常在计算机启动时完成，存储设备会通过挂载被添加到系统的文件目录中。当存储设备被挂载后，用户就可以在操作系统中访问该设备中的文件和目录，就像访问本地文件一样。&lt;/p&gt;
+&lt;p&gt;在&lt;a href=&#34;https://www.vxworks.net/linux/1095-the-commonly-used-network-configuration-methods-in-linux&#34; target=&#34;_blank&#34;&gt;Linux&lt;/a&gt;系统中，硬盘的挂载方式有两种：&lt;code&gt;自动挂载&lt;/code&gt;和&lt;code&gt;手动挂载&lt;/code&gt;。下面将详细介绍这两种挂载方式的操作步骤。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;自动挂载 
+    &lt;div id=&#34;%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;首先，需要确保硬盘已经正确连接到Linux系统，并且系统已经识别并分配了设备名称，如/dev/sdb1。然后，创建一个用于挂载的目录，例如/mnt/mydisk。&lt;/p&gt;
+&lt;p&gt;打开终端，使用root或具有管理员权限的用户登录，并编辑&lt;code&gt;/etc/fstab&lt;/code&gt;文件。在该文件中添加一行，指定要挂载的设备、挂载点、文件系统类型以及其他选项。例如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/dev/sdb1 /mnt/mydisk ext4 defaults &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这行表示将/dev/sdb1设备挂载到/mnt/mydisk目录，文件系统类型为ext4，并使用默认的挂载选项。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/how-to-mount-hard-drive-in-linux-system/featured-mount-hdd-in-linux.jpg" />
+    </item>
+    
     <item>
       <title>嵌入式BSP开发</title>
       <link>https://www.kad8.com/software/embedded-bsp-development/</link>
