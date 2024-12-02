@@ -9,6 +9,16 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AMD Zen 6 架构进展</title>
+      <link>https://www.kad8.com/hardware/amd-zen6-architecture-progress/</link>
+      <pubDate>Mon, 02 Dec 2024 21:57:18 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/amd-zen6-architecture-progress/</guid>
+      <description>&lt;p&gt;根据最新的传闻，AMD 将在未来推出基于 Zen 6 和 Zen 6c 架构的处理器，涵盖 Ryzen 9000 系列（包括 Granite Ridge、Strix Point 和 Strix Halo）以及 Epyc 系列（特别是Turin和Venice版本）。虽然 Zen 5 和 Zen 5c 今年刚刚进入市场，但 Zen 6 的信息引起了更广泛的关注。根据 YouTube 频道《摩尔定律已死》（MLID）和知名行业账号 Kepler_L2 的爆料，Zen 6 可能会带来许多重要的改变和升级。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/amd-zen6-architecture-progress/featured-amd-zen6.png" />
+    </item>
+    
+    <item>
       <title>AI加速器互连技术</title>
       <link>https://www.kad8.com/ai/ai-accelerator-interconnect-technology/</link>
       <pubDate>Sun, 01 Dec 2024 09:56:44 +0800</pubDate>

@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>RDMA 技术简介 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="RDMA 技术简介 &middot; Kontronn Asia Design Center" />
+  <title>AMD Zen 6 架构进展 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="AMD Zen 6 架构进展 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Introduction to Rdma Technology" />
-  <meta name="keywords" content="RDMA, InfiniBand, RoCE, " />
+  <meta name="description" content="AMD Zen6 Architecture Progress" />
+  <meta name="keywords" content="Zen 6, EYPC, Turin, Venice, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/hardware/introduction-to-rdma-technology/" />
+  <link rel="canonical" href="https://www.kad8.com/hardware/amd-zen6-architecture-progress/" />
   
   
   
@@ -66,25 +66,26 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/">
+  <meta property="og:url" content="https://www.kad8.com/hardware/amd-zen6-architecture-progress/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="RDMA 技术简介">
-  <meta property="og:description" content="Introduction to Rdma Technology">
+  <meta property="og:title" content="AMD Zen 6 架构进展">
+  <meta property="og:description" content="AMD Zen6 Architecture Progress">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="hardware">
-    <meta property="article:published_time" content="2024-11-29T23:18:55+08:00">
-    <meta property="article:modified_time" content="2024-11-29T23:18:55+08:00">
-    <meta property="article:tag" content="RDMA">
-    <meta property="article:tag" content="InfiniBand">
-    <meta property="article:tag" content="RoCE">
-    <meta property="og:image" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/featured-rdma.png">
+    <meta property="article:published_time" content="2024-12-02T21:57:18+08:00">
+    <meta property="article:modified_time" content="2024-12-02T21:57:18+08:00">
+    <meta property="article:tag" content="Zen 6">
+    <meta property="article:tag" content="EYPC">
+    <meta property="article:tag" content="Turin">
+    <meta property="article:tag" content="Venice">
+    <meta property="og:image" content="https://www.kad8.com/hardware/amd-zen6-architecture-progress/featured-amd-zen6.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/hardware/introduction-to-rdma-technology/featured-rdma.png">
-  <meta name="twitter:title" content="RDMA 技术简介">
-  <meta name="twitter:description" content="Introduction to Rdma Technology">
+  <meta name="twitter:image" content="https://www.kad8.com/hardware/amd-zen6-architecture-progress/featured-amd-zen6.png">
+  <meta name="twitter:title" content="AMD Zen 6 架构进展">
+  <meta name="twitter:description" content="AMD Zen6 Architecture Progress">
 
   
   <script type="application/ld+json">
@@ -92,26 +93,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Hardwares",
-    "name": "RDMA 技术简介",
-    "headline": "RDMA 技术简介",
-    "description": "Introduction to Rdma Technology",
-    "abstract": "\u003cp\u003eRDMA（Remote Direct Memory Access，远程直接数据存取）是一种允许网络中的计算机直接从内存中读写数据的技术，而无需本地系统的CPU参与。这种机制可以显著减少网络传输的延迟和提高数据吞吐量，同时降低了CPU的使用率，使得高性能计算、大规模数据处理和云计算等场景下的网络通信更加高效。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e技术原理 \n    \u003cdiv id=\u0022%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e直接内存访问：在传统的网络通信中，数据传输需要经过发送方的操作系统内核空间，然后通过网络发送到接收方，接收方同样需要将数据从内核空间复制到用户空间的应用程序。这个过程中涉及到多次内存复制和上下文切换，会消耗大量的CPU资源。而\u003ca href=\u0022https:\/\/www.gaitpu.com\/ai\/detailed-explanation-of-the-rdma-working-process\u0022 target=\u0022_blank\u0022\u003eRDMA技术\u003c\/a\u003e可以让网络接口卡（NIC）直接访问远程机器的内存，绕过了操作系统内核，减少了内存复制次数和上下文切换，从而提高了效率。\u003c\/p\u003e",
+    "name": "AMD Zen 6 架构进展",
+    "headline": "AMD Zen 6 架构进展",
+    "description": "AMD Zen6 Architecture Progress",
+    "abstract": "\u003cp\u003e根据最新的传闻，AMD 将在未来推出基于 Zen 6 和 Zen 6c 架构的处理器，涵盖 Ryzen 9000 系列（包括 Granite Ridge、Strix Point 和 Strix Halo）以及 Epyc 系列（特别是Turin和Venice版本）。虽然 Zen 5 和 Zen 5c 今年刚刚进入市场，但 Zen 6 的信息引起了更广泛的关注。根据 YouTube 频道《摩尔定律已死》（MLID）和知名行业账号 Kepler_L2 的爆料，Zen 6 可能会带来许多重要的改变和升级。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/hardware\/introduction-to-rdma-technology\/",
+    "url" : "https:\/\/www.kad8.com\/hardware\/amd-zen6-architecture-progress\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-29T23:18:55\u002b08:00",
-    "datePublished": "2024-11-29T23:18:55\u002b08:00",
+    "dateCreated": "2024-12-02T21:57:18\u002b08:00",
+    "datePublished": "2024-12-02T21:57:18\u002b08:00",
     
-    "dateModified": "2024-11-29T23:18:55\u002b08:00",
+    "dateModified": "2024-12-02T21:57:18\u002b08:00",
     
-    "keywords": ["RDMA","InfiniBand","RoCE"],
+    "keywords": ["Zen 6","EYPC","Turin","Venice"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "37"
+    "wordCount": "131"
   }]
   </script>
 
@@ -441,7 +442,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      RDMA 技术简介
+      AMD Zen 6 架构进展
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -482,7 +483,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-29T23:18:55&#43;08:00">2024-11-29</time>
+  <time datetime="2024-12-02T21:57:18&#43;08:00">2024-12-02</time>
   
 
   
@@ -506,26 +507,34 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rdma/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-6/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RDMA
+    Zen 6
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infiniband/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/eypc/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    InfiniBand
+    EYPC
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/roce/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RoCE
+    Turin
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/venice/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Venice
   </span>
 </span>
   </span>
@@ -577,119 +586,7 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-     <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
-
-         <details open id="TOCView"
-  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#技术原理">技术原理</a></li>
-    <li><a href="#操作类型">操作类型</a></li>
-    <li><a href="#应用场景">应用场景</a></li>
-    <li><a href="#挑战与限制">挑战与限制</a></li>
-    <li><a href="#结语">结语</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#技术原理">技术原理</a></li>
-    <li><a href="#操作类型">操作类型</a></li>
-    <li><a href="#应用场景">应用场景</a></li>
-    <li><a href="#挑战与限制">挑战与限制</a></li>
-    <li><a href="#结语">结语</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-<script>
-
-  var margin = 200;
-  var marginError = 50;
-
-  (function () {
-    var $window = $(window);
-    var $toc = $('#TOCView');
-    var tocHeight = $toc.height();
-
-    function onResize() {
-      var windowAndMarginHeight = $window.height() - margin;
-      if(tocHeight >= windowAndMarginHeight) {
-        $toc.css("overflow-y", "scroll")
-        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
-      } else {
-        $toc.css("overflow-y", "hidden")
-        $toc.css("max-height", "9999999px")
-      }
-    }
-
-    $window.on('resize', onResize);
-    $(document).ready(onResize);
-  })();
-
-
-
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = decodeURIComponent(e.attr('id'));
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-
-
-</script>
-   </div>
-      </div>
-      
+    
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -697,136 +594,23 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>RDMA（Remote Direct Memory Access，远程直接数据存取）是一种允许网络中的计算机直接从内存中读写数据的技术，而无需本地系统的CPU参与。这种机制可以显著减少网络传输的延迟和提高数据吞吐量，同时降低了CPU的使用率，使得高性能计算、大规模数据处理和云计算等场景下的网络通信更加高效。</p>
-
-
-<h2 class="relative group">技术原理 
-    <div id="%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>
-<p>直接内存访问：在传统的网络通信中，数据传输需要经过发送方的操作系统内核空间，然后通过网络发送到接收方，接收方同样需要将数据从内核空间复制到用户空间的应用程序。这个过程中涉及到多次内存复制和上下文切换，会消耗大量的CPU资源。而<a href="https://www.gaitpu.com/ai/detailed-explanation-of-the-rdma-working-process" target="_blank">RDMA技术</a>可以让网络接口卡（NIC）直接访问远程机器的内存，绕过了操作系统内核，减少了内存复制次数和上下文切换，从而提高了效率。</p>
-</li>
-<li>
-<p>低延迟：由于减少了CPU的介入和内存复制的次数，RDMA能够实现非常低的延迟，这对于需要快速响应的实时应用来说非常重要。</p>
-</li>
-<li>
-<p>高带宽：除了低延迟外，RDMA还支持高带宽的数据传输，这使得大量数据可以在短时间内完成传输，非常适合大数据处理和高性能计算环境。</p>
-</li>
-</ul>
-
-
-<h2 class="relative group">操作类型 
-    <div id="%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>RDMA支持三种基本的操作类型：</p>
-<ul>
-<li>
-<p>写操作：允许一个节点将数据直接写入另一个节点的内存。</p>
-</li>
-<li>
-<p>读操作：允许一个节点直接读取另一个节点的内存中的数据。</p>
-</li>
-<li>
-<p>原子操作：一种特殊的操作，可以在远程节点上执行一些原子性的操作，如比较并交换（CAS）等。</p>
-</li>
-</ul>
-
-
-<h2 class="relative group">应用场景 
-    <div id="%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>RDMA技术的应用场景非常广泛，包括但不限于：</p>
-<ul>
-<li>
-<p>数据中心：服务器之间需要频繁地进行大量数据的传输和交换，RDMA的高性能与低延迟特性使得它非常适合于数据中心中的网络通信。</p>
-</li>
-<li>
-<p>高性能计算（HPC）：需要处理大量数据并进行复杂的计算，RDMA的直接内存访问和零拷贝技术可以减少数据传输的开销，提高计算效率。</p>
-</li>
-<li>
-<p>分布式存储系统：节点之间需要频繁地进行数据读写操作，RDMA的高效数据传输和直接内存访问特性可以提高节点之间的数据读写效率。</p>
-</li>
-<li>
-<p>云计算：虚拟机（VM）之间的通信和数据传输是常见的需求，RDMA可以用于实现VM之间的高效通信。</p>
-</li>
-<li>
-<p>技术分类</p>
-</li>
-</ul>
-<p>RDMA技术有多种实现方式，包括InfiniBand、RoCE和iWARP等。它们各有优缺点，适用于不同的应用场景：</p>
-<ul>
-<li>
-<p>InfiniBand：具有最低的延迟和较高的带宽，但需要专用的硬件和网络设备。</p>
-</li>
-<li>
-<p>RoCE：利用现有的以太网基础设施进行扩展，具有较低的延迟和CPU占用率，且成本较低。</p>
-</li>
-<li>
-<p>iWARP：使用软件卸载来实现RDMA，CPU占用率较高，但具有良好的互操作性和兼容性。</p>
-</li>
-</ul>
-
-
-<h2 class="relative group">挑战与限制 
-    <div id="%E6%8C%91%E6%88%98%E4%B8%8E%E9%99%90%E5%88%B6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%8C%91%E6%88%98%E4%B8%8E%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>尽管RDMA技术具有诸多优点，但也面临一些挑战和限制：</p>
-<ul>
-<li>
-<p>硬件依赖：RDMA需要特定的网卡硬件支持，这些网卡通常比传统的以太网网卡更昂贵。</p>
-</li>
-<li>
-<p>安全性问题：由于RDMA允许远程节点直接访问本地内存，可能会带来一些安全性问题。</p>
-</li>
-<li>
-<p>编程复杂性：RDMA的编程模型与传统的网络编程模型有所不同，需要开发人员具有一定的专业知识和经验。</p>
-</li>
-<li>
-<p>网络规模限制：在大规模网络中，由于网络拓扑的复杂性和不可预测性，RDMA的性能可能会受到影响。</p>
-</li>
-</ul>
-
-
-<h2 class="relative group">结语 
-    <div id="%E7%BB%93%E8%AF%AD" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BB%93%E8%AF%AD" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>综上所述，RDMA技术是一种高效、低延迟的网络通信技术，特别适用于需要处理大量数据和高性能网络通信的场景。然而，在应用RDMA技术时，也需要充分考虑其硬件依赖、安全性问题、编程复杂性和网络规模限制等因素。</p>
+          <p>根据最新的传闻，AMD 将在未来推出基于 Zen 6 和 Zen 6c 架构的处理器，涵盖 Ryzen 9000 系列（包括 Granite Ridge、Strix Point 和 Strix Halo）以及 Epyc 系列（特别是Turin和Venice版本）。虽然 Zen 5 和 Zen 5c 今年刚刚进入市场，但 Zen 6 的信息引起了更广泛的关注。根据 YouTube 频道《摩尔定律已死》（MLID）和知名行业账号 Kepler_L2 的爆料，Zen 6 可能会带来许多重要的改变和升级。</p>
+<p>首先，Zen 6 处理器将采用 3nm 制程，并引入一些新的设计理念。根据最新的传闻，Ryzen 系列的 Medusa Ridge（台式机）和 Medusa Point（搭载小型 iGPU 的笔记本 APU）将采用 12 核的小芯片，这一变化与之前的预期有所不同。此前的传言称，Zen 6 核心数可达到 8、16 和 32 个，而最新的爆料则表示，AMD 将不再使用单一芯片的设计，而是采用多芯片的方式，类似于 Strix Point 系列中的设计。未来，CPU 核心和 I/O 芯片将通过新的“低延迟基础层”进行高效通信，这一架构有望提高处理器的性能和扩展性。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./AMD-Zen6-architecture-1.png" alt="AMD Zen 6 Architecture" />
+      
+    </figure>
+</p>
+<p>值得注意的是，这一变化不仅仅限于 Ryzen 系列，Epyc 系列的 Venice（威尼斯）版本也将迎来重大更新。根据 MLID 的爆料，Epyc 9006 版本可能支持最多 256 个核心，采用 2nm 制程。这意味着 AMD 将首次在 Epyc 系列中使用更多的小芯片设计，突破了当前都灵（Epyc 9005）版本的核心数限制。都灵系列目前支持最多 128 个 Zen 5 核心（搭配 16 个 8 核 CCD）或最多 192 个 Zen 5c 核心（搭配 12 个 16 核 CCD）。Venice 版本的处理器将进一步缩减 CCD 数量，并使用更宽的 4 核 CCD，以便容纳更多的核心。</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./AMD-Zen6-architecture-2.png" alt="AMD Zen 6 Architecture" />
+      
+    </figure>
+</p>
+<p>虽然这些信息仍然处于传闻阶段，但来自多个知名渠道的爆料显示，AMD 对其 Zen 6 架构的重视程度不言而喻。Zen 6 系列将可能在多个产品线中使用，从台式机到笔记本，甚至服务器领域，都能看到其身影。随着生产制程的不断进步，Zen 6 和 Zen 6c 系列处理器的核心数和性能提升无疑将成为市场上新的竞争力标杆。</p>
+<p>目前，AMD 对 Zen 6 系列的具体细节尚未正式发布，但从目前的传闻来看，Zen 6 架构将大幅提升 AMD 处理器的多核性能，尤其是在高性能计算和服务器领域，Zen 6 的推出无疑会引发新一轮的技术竞争。随着时间的推移，更多的官方信息和产品细节将陆续揭晓，届时将为消费者提供更多选择，也让市场对 AMD 未来几年的发展充满期待。</p>
 
           
           
@@ -844,7 +628,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;title=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;title=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -863,7 +647,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;text=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;text=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -881,7 +665,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b&#43;https://www.kad8.com/hardware/introduction-to-rdma-technology/"
+      href="https://bsky.app/intent/compose?text=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95&#43;https://www.kad8.com/hardware/amd-zen6-architecture-progress/"
       title=""
       aria-label=""
       >
@@ -899,7 +683,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b%20https://www.kad8.com/hardware/introduction-to-rdma-technology/"
+      href="https://s2f.kytta.dev/?text=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95%20https://www.kad8.com/hardware/amd-zen6-architecture-progress/"
       title=""
       aria-label=""
       >
@@ -918,7 +702,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;resubmit=true&amp;title=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -937,7 +721,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;description=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;description=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -956,7 +740,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;quote=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;quote=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -975,7 +759,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;subject=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="mailto:?body=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;subject=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -994,7 +778,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;resubmit=true&amp;title=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title=""
       aria-label=""
       >
@@ -1013,7 +797,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/hardware/introduction-to-rdma-technology/&amp;resubmit=true&amp;title=RDMA%20%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b"
+      href="https://t.me/share/url?url=https://www.kad8.com/hardware/amd-zen6-architecture-progress/&amp;resubmit=true&amp;title=AMD%20Zen%206%20%e6%9e%b6%e6%9e%84%e8%bf%9b%e5%b1%95"
       title=""
       aria-label=""
       >
@@ -1039,11 +823,11 @@
   
   
 
-  <a href="/software/embedded-bsp-development/" class="min-w-full">
+  <a href="/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/embedded-bsp-development/featured-bsp-software-services_hu13016020938105498109.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/featured-amd-intel-packaging_hu12298955134969159585.webp);"></div>
         
       
 
@@ -1051,7 +835,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/embedded-bsp-development/">嵌入式BSP开发</div>
+          href="/hardware/different-approach-for-intel-and-amd-to-gluing-together-cpus/">英特尔和AMD封装CPU的不同做法</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1090,7 +874,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-28T20:26:36&#43;08:00">2024-11-28</time>
+  <time datetime="2024-10-26T10:56:25&#43;08:00">2024-10-26</time>
   
 
   
@@ -1114,18 +898,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/embedded/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Embedded
+    Epyc
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/bsp/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    BSP
+    Turin
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/granite-rapids/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Granite Rapids
   </span>
 </span>
   </span>
@@ -1151,11 +943,11 @@
   
   
 
-  <a href="/ai/comparison-between-tensorflow-and-pytorch/" class="min-w-full">
+  <a href="/hardware/amd-zen5-epyc-first-test-result-review/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/comparison-between-tensorflow-and-pytorch/featured-tensorflow-and-pytorch_hu12963893276601140949.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-zen5-epyc-first-test-result-review/featured-AMD-EPYC-9005-SKU-0_hu5333469218201774977.png);"></div>
         
       
 
@@ -1163,7 +955,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/comparison-between-tensorflow-and-pytorch/">TensorFlow与PyTorch究竟谁更胜一筹</div>
+          href="/hardware/amd-zen5-epyc-first-test-result-review/">AMD Zen5 EPYC首测</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1202,7 +994,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-18T21:36:06&#43;08:00">2024-11-18</time>
+  <time datetime="2024-10-15T23:51:58&#43;08:00">2024-10-15</time>
   
 
   
@@ -1226,18 +1018,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tensorflow/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-5/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Tensorflow
+    Zen 5
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pytorch/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/eypc/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pytorch
+    EYPC
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mrdimm/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    MRDIMM
   </span>
 </span>
   </span>
@@ -1263,11 +1063,11 @@
   
   
 
-  <a href="/network/introduction-to-vxlan/" class="min-w-full">
+  <a href="/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/network/introduction-to-vxlan/featured-VLAN-vs-VXLAN_hu13478985816254467324.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/featured-AMD-Turin-6_hu2736256878043637703.webp);"></div>
         
       
 
@@ -1275,7 +1075,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/network/introduction-to-vxlan/">VXLAN 简介</div>
+          href="/hardware/amd-officially-releases-the-fifth-generation-epyc-processor/">AMD正式发布第五代EPYC处理器</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1314,7 +1114,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T22:21:26&#43;08:00">2024-11-16</time>
+  <time datetime="2024-10-11T20:25:52&#43;08:00">2024-10-11</time>
   
 
   
@@ -1338,18 +1138,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vlan/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/epyc/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VLAN
+    Epyc
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vxlan/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/turin/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VXLAN
+    Turin
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zen-5/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Zen 5
   </span>
 </span>
   </span>
@@ -1386,8 +1194,8 @@
           
         
       <script>
-        var oid = "views_hardware\/introduction-to-rdma-technology\/index.md"
-        var oid_likes = "likes_hardware\/introduction-to-rdma-technology\/index.md"
+        var oid = "views_hardware\/amd-zen6-architecture-progress\/index.md"
+        var oid_likes = "likes_hardware\/amd-zen6-architecture-progress\/index.md"
       </script>
       
       
@@ -1407,7 +1215,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/hardware/russia-has-developed-a-48-core-self-developed-cpu/">
+            <a class="flex group mr-3" href="/hardware/introduction-to-rdma-technology/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1419,11 +1227,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >俄罗斯造出48核自研CPU</span
+                  >RDMA 技术简介</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-29T23:02:29&#43;08:00">2024-11-29</time>
+                    <time datetime="2024-11-29T23:18:55&#43;08:00">2024-11-29</time>
                   
                 </span>
               </span>
@@ -1431,28 +1239,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/hardware/amd-zen6-architecture-progress/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >AMD Zen 6 架构进展</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-12-02T21:57:18&#43;08:00">2024-12-02</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

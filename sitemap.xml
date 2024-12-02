@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/amd-zen6-architecture-progress/</loc>
+    <lastmod>2024-12-02T21:57:18+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-12-02T21:57:18+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-12-01T09:56:44+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -29,12 +41,6 @@
   <url>
     <loc>https://www.kad8.com/network/google-adsense-certificate-of-chinese-fiscal-resident/</loc>
     <lastmod>2024-11-30T17:06:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-11-29T23:18:55+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
