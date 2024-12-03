@@ -9,6 +9,32 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Life and Chip Works of Marvell Co Founder Sehat</title>
+      <link>https://www.kad8.com/hardware/the-life-and-chip-works-of-marvell-co-founder-sehat/</link>
+      <pubDate>Tue, 03 Dec 2024 23:17:43 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/the-life-and-chip-works-of-marvell-co-founder-sehat/</guid>
+      <description>&lt;p&gt;关于晶体管缩放的摩尔定律已经被打破的讨论越来越多，Marvell联合创始人兼CEO Sehat Sutardja在2015年的ISSCC上提出了模块化芯片（MoChi）的想法。这最终形成了现在广为人知的chiplet。&lt;/p&gt;
+&lt;p&gt;后来，他和AMD的CEO Mark Papermaster讨论了这种多芯片( daisy-chain multiple chips)的想法，后者认为这个名字太复杂了，于是把它们叫做chiplet。Sehat对将不同硅片组装成单个封装的热情和奉献精神最终使他在2021年参与创立了第一家chiplet代工厂silicon Box。&lt;/p&gt;
+&lt;p&gt;Sehat Sutardja， Marvell和Silicon Box的联合创始人，多家半导体初创公司的投资者和支持者，于2024年9月18日去世。他被认为是现代半导体产业的先驱之一。在2010年10月发表于IEEE Spectrum的一篇文章《Sehat Sutardja：An Engineering Marvell》中，引用了他的一句话：“我有点心胸狭窄,只看到在电子产品方面的事情。”&lt;/p&gt;
+&lt;p&gt;1961年，他出生在印度尼西亚雅加达的一个中国家庭，小时候就被电子产品的神奇所吸引。六年级时，他去看望了和祖父母住在新加坡的弟弟Pantas。在此期间，他得到了Pantas的爱好者DIY书籍和杂志，并对建造范德格拉夫发电机的想法着迷。兄弟俩最终研制出了一个粗糙但功能正常的装置。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;从范德格拉夫发电机到存储芯片 
+    &lt;div id=&#34;%E4%BB%8E%E8%8C%83%E5%BE%B7%E6%A0%BC%E6%8B%89%E5%A4%AB%E5%8F%91%E7%94%B5%E6%9C%BA%E5%88%B0%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BB%8E%E8%8C%83%E5%BE%B7%E6%A0%BC%E6%8B%89%E5%A4%AB%E5%8F%91%E7%94%B5%E6%9C%BA%E5%88%B0%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;回到雅加达后，Sehat开始建造一个微缩版的范德格拉夫发电机。在一家书店做了一些研究后，他发现改进后的装置需要用晶体管代替机械开关。于是他去了附近的一家收音机店，大约一年之后，他获得了收音机修理执照。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Linux系统下如何挂载硬盘</title>
       <link>https://www.kad8.com/software/how-to-mount-hard-drive-in-linux-system/</link>
       <pubDate>Mon, 02 Dec 2024 22:14:15 +0800</pubDate>
