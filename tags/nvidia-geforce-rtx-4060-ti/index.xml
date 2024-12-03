@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NVIDIA GeForce RTX 4060 Ti on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/nvidia-geforce-rtx-4060-ti/</link>
+    <description>Recent content in NVIDIA GeForce RTX 4060 Ti on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Tue, 03 Dec 2024 23:27:59 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/nvidia-geforce-rtx-4060-ti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英特尔Arc Battlemage B580性能超过RTX 4060Ti</title>
+      <link>https://www.kad8.com/hardware/intel-arc-battlemage-b580-outperforms-rtx-4060ti/</link>
+      <pubDate>Tue, 03 Dec 2024 23:27:59 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/intel-arc-battlemage-b580-outperforms-rtx-4060ti/</guid>
+      <description>&lt;p&gt;近日，有消息称英特尔即将推出的下一代Arc Battlemage B580和B570 GPU在性能测试中超越了NVIDIA GeForce RTX 4060 Ti，这表明英特尔和AMD正在通过强化中端产品布局，重新定义显卡市场的竞争格局。&lt;/p&gt;
+&lt;p&gt;英特尔和AMD近年来逐渐将发展重心从高端GPU市场转向中端市场。高端市场一直是NVIDIA的强项，但两家公司显然选择通过提供高性价比的产品来争夺中端用户群体。根据硬件大神@金猪升级包在微博评论区泄露，英特尔的Arc Battlemage B580和B570 GPU在综合基准测试中表现优于GeForce RTX 4060 Ti，这一成绩显然让中端市场的竞争更为激烈。&lt;/p&gt;
+&lt;p&gt;此外，AMD即将推出的Navi 44 GPU也被认为可以与RTX 4060 Ti竞争。这些产品的性能虽然因代际差异不便直接比较，但其表现足以表明AMD和英特尔正致力于通过价格与性能的优化来吸引预算有限的消费者。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/intel-arc-battlemage-b580-outperforms-rtx-4060ti/featured-intel-arc-battlemage.png" />
+    </item>
+    
+  </channel>
+</rss>
