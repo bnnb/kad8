@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 03 Dec 2024 23:35:57 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Dec 2024 23:10:01 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPU</title>
+      <link>https://www.kad8.com/tags/gpu/</link>
+      <pubDate>Fri, 06 Dec 2024 23:10:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/gpu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LPU</title>
+      <link>https://www.kad8.com/tags/lpu/</link>
+      <pubDate>Fri, 06 Dec 2024 23:10:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/lpu/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Network</title>
       <link>https://www.kad8.com/tags/network/</link>
@@ -1254,16 +1274,6 @@
       <pubDate>Sat, 02 Nov 2024 00:34:21 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/3d-cache/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>GPU</title>
-      <link>https://www.kad8.com/tags/gpu/</link>
-      <pubDate>Fri, 01 Nov 2024 17:39:30 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/gpu/</guid>
       <description></description>
       
     </item>

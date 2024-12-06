@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LPU on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/lpu/</link>
+    <description>Recent content in LPU on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Fri, 06 Dec 2024 23:10:01 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/lpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPU 与 LPU：哪个更适合 AI 工作负载</title>
+      <link>https://www.kad8.com/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/</link>
+      <pubDate>Fri, 06 Dec 2024 23:10:01 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/</guid>
+      <description>&lt;p&gt;当前，&lt;a href=&#34;https://www.kad8.com/ai/the-architects-guide-to-the-genai-tech-stack-10-tools/&#34; target=&#34;_blank&#34;&gt;生成式AI&lt;/a&gt;模型的参数规模已跃升至数十亿乃至数万亿之巨，远远超出了传统CPU的处理范畴。在此背景下，GPU凭借其出色的并行处理能力，已成为人工智能加速领域的中流砥柱。然而，就在GPU备受关注之时，一个新的竞争力量——LPU（Language Processing Unit，语言处理单元）已悄然登场，LPU专注于解决自然语言处理（NLP）任务中的顺序性问题，是构建AI应用不可或缺的一环。&lt;/p&gt;
+&lt;p&gt;本文旨在探讨深度学习工作负载中GPU与LPU的主要差异，并深入分析它们的架构、优势及性能表现。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;GPU 架构 
+    &lt;div id=&#34;gpu-%E6%9E%B6%E6%9E%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#gpu-%E6%9E%B6%E6%9E%84&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;GPU 的核心是计算单元（也称为执行单元），其中包含多个处理单元（在 NVIDIA GPU中称为流处理器或 CUDA 核心），以及共享内存和控制逻辑。在某些架构中，尤其是为图形渲染而设计的架构中，还可能存在其他组件，例如光栅引擎和纹理处理集群 (TPC)。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/featured-GPU-vs-LPU.png" />
+    </item>
+    
+  </channel>
+</rss>
