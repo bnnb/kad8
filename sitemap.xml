@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/hardware/</loc>
+    <lastmod>2024-12-06T23:57:22+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/</loc>
+    <lastmod>2024-12-06T23:57:22+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-12-06T23:10:01+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -23,12 +35,6 @@
   <url>
     <loc>https://www.kad8.com/network/introduction-to-8-network-security-tools/</loc>
     <lastmod>2024-12-03T23:35:57+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/hardware/</loc>
-    <lastmod>2024-12-03T23:27:59+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

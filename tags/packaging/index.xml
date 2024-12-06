@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packaging on Kontronn Asia Design Center</title>
+    <link>https://www.kad8.com/tags/packaging/</link>
+    <description>Recent content in Packaging on Kontronn Asia Design Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Fri, 06 Dec 2024 23:57:22 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/packaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三星将为英伟达GPU提供先进封装</title>
+      <link>https://www.kad8.com/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/</link>
+      <pubDate>Fri, 06 Dec 2024 23:57:22 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/</guid>
+      <description>&lt;p&gt;三星电子为英伟达的AI芯片和HBM芯片一起进行先进封装的消息，凸显了下一代封装解决方案的战略重要性。据韩国媒体《The Elec》报道，三星的先进封装团队将为英伟达的AI处理器提供中间层和2.5D封装技术。&lt;/p&gt;
+&lt;p&gt;值得注意的是，这些AI处理器中的GPU和HBM构建模块是由其他公司提供的——最有可能的是，英伟达的GPU是在TSMC的工艺节点上生产的，而HBM芯片是由三星的主要竞争对手SK海力士设计和生产的。&lt;/p&gt;
+&lt;p&gt;更重要的是，行业观察人士如何将这种发展与TSMC“片上基板”（chip-on-wafer-on-substrate, 简称CoWoS）技术的产能不足联系起来。CoWoS技术是将芯片堆叠并封装在基板上。这与最近台湾地震有关的供应短缺并没有多大关系，更有可能与供需问题有关。&lt;/p&gt;
+&lt;p&gt;三星将其2.5D封装技术称为iCube；它将一个或多个逻辑芯片，如CPU、GPU以及几个HBM芯片放在硅中间层上，使多个die在一个封装中作为单个芯片运行。它部署垂直和水平芯片放置，以提高性能，并对抗热量积聚。&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./Samsung-advanced-packaging-1.png&#34; alt=&#34;Samsung advanced packaging&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;三星的先进封装支点 
+    &lt;div id=&#34;%E4%B8%89%E6%98%9F%E7%9A%84%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E6%94%AF%E7%82%B9&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%B8%89%E6%98%9F%E7%9A%84%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E6%94%AF%E7%82%B9&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;媒体一直在热议三星通过雇佣更多工程师和开发自己的中间体技术来加强其先进封装部门的报道。据悉，该公司从日本半导体设备供应商Shinkawa公司采购了大量的2.5D封装设备。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/featured-Samsung-advanced-packaging-0.png" />
+    </item>
+    
+  </channel>
+</rss>
