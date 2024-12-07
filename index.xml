@@ -9,6 +9,24 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Linux之父怒怼x86微架构级别：完全崩溃的垃圾</title>
+      <link>https://www.kad8.com/software/linus-torvalds-says-amd-intel-x86-levels-are-completely-broken-garbage/</link>
+      <pubDate>Sat, 07 Dec 2024 16:33:30 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/software/linus-torvalds-says-amd-intel-x86-levels-are-completely-broken-garbage/</guid>
+      <description>&lt;p&gt;Linux之父Linus Torvalds又一次公开吐槽x86微架构级别，认为这是“垃圾”。&lt;/p&gt;
+&lt;p&gt;在讨论新的Linux KConfig（内核配置）构建的更改和添加时，Torvalds表达了他对AMD64或x86_64架构功能级别的恼怒和不赞成。&lt;/p&gt;
+&lt;p&gt;“我们还是不要进入x86-64微体系结构级别了。这是个愚蠢的地方。整个&amp;quot;v2&amp;quot;、&amp;ldquo;v3&amp;rdquo;、&amp;ldquo;v4&amp;quot;等命名似乎都是一些疯狂的glibc人工制品，非常愚蠢，应该消亡。我不知道是谁想出了&amp;quot;微架构级别&amp;quot;这个垃圾，但就我所知，这完全是非官方的，而且是一个完全错误的模型。”&lt;/p&gt;
+&lt;p&gt;x86-64微体系结构级别最早由Red Hat的Florian Weimer在2020年提出了，最初提出的是&amp;quot;A、B和C级&amp;rdquo;，后来又增加了&amp;quot;D级&amp;quot;。&lt;/p&gt;
+&lt;p&gt;Linus Torvalds 认为这些架构级别不是简化了问题，反而使事情变得更加复杂，因为将硬件指令和功能的发展线性化并不是一种现实的方法。&lt;/p&gt;
+&lt;p&gt;Torvalds 说得很有道理，因为我们经常会发现，某些CPU指令，比如AVX，可能会出现在某些处理器系列中，但后来又消失了。&lt;/p&gt;
+&lt;p&gt;最近的一个例子是，英特尔在第11代 Rocket Lake 中引入了 AVX-512，随后又在后几代处理器中取消了该指令。&lt;/p&gt;
+&lt;p&gt;对于眼下的Intel来说，技术问题已经是次要的，首先得赶紧寻找新的CEO。&lt;/p&gt;
+&lt;p&gt;Intel临时联席CEO大卫·津斯纳（David Zinsner）在瑞银全球技术大会上表示：“董事会非常清楚，核心战略保持不变。”&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/linus-torvalds-says-amd-intel-x86-levels-are-completely-broken-garbage/featured-intel-x86.png" />
+    </item>
+    
+    <item>
       <title>使用Shell数组轻松管理数据集合</title>
       <link>https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/</link>
       <pubDate>Sat, 07 Dec 2024 15:32:22 +0800</pubDate>
