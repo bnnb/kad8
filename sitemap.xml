@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-12-07T10:00:19+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/</loc>
+    <lastmod>2024-12-07T10:00:19+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/ai/</loc>
     <lastmod>2024-12-07T00:10:10+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -58,12 +70,6 @@
   </url>
   <url>
     <loc>https://www.kad8.com/software/how-to-mount-hard-drive-in-linux-system/</loc>
-    <lastmod>2024-12-02T22:14:15+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
     <lastmod>2024-12-02T22:14:15+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
