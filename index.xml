@@ -9,6 +9,21 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 04 Oct 2024 21:23:23 +0800</lastBuildDate><atom:link href="https://www.kad8.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>铭瑄准备推出带双SSD插槽的显卡</title>
+      <link>https://www.kad8.com/hardware/maxsun-makes-a-gpu-with-two-built-in-m-2-ssd-ports/</link>
+      <pubDate>Sat, 07 Dec 2024 10:09:25 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/maxsun-makes-a-gpu-with-two-built-in-m-2-ssd-ports/</guid>
+      <description>&lt;p&gt;铭瑄（Maxsun）近日推出了两款全新的Intel Arc B580显卡，并透露正在开发一款搭载双&lt;a href=&#34;https://www.kad8.com/hardware/the-best-ssds-for-workstation/&#34; target=&#34;_blank&#34;&gt;M.2 SSD&lt;/a&gt;插槽的特殊型号。这一设计思路不仅让显卡实现了GPU与存储功能的整合，还为用户提供了更高效的硬件利用方案。&lt;/p&gt;
+&lt;p&gt;Image&lt;/p&gt;
+&lt;p&gt;铭瑄发布的两款显卡分别是三风扇的iCraft B580 12G和双风扇的Milestone B580 12G，前者定价259美元，后者售价为249美元。同系列的B570显卡也已上市，配备10GB VRAM，售价为219美元。&lt;/p&gt;
+&lt;p&gt;此次备受关注的创新设计在于铭瑄计划在显卡PCB板尾部增加两个M.2 2280 SSD插槽。这一思路充分利用了B580显卡仅使用PCIe 4.0 x8通道的特点，将剩余的8条通道转用于存储扩展。这些M.2插槽不仅能够充分利用带宽，而且通过独立的散热片有效降低了SSD在高负载游戏或其他应用场景中的温度。更重要的是，铭瑄设计的可拆卸套筒使用户无需拆解显卡便可轻松更换或升级SSD，同时显卡本身直接为SSD供电，简化了硬件操作流程。&lt;/p&gt;
+&lt;p&gt;Image&lt;/p&gt;
+&lt;p&gt;类似的设计此前已有先例，例如AMD Radeon Pro SSG显卡在工作站领域率先集成了两个M.2 PCIe 3.0插槽，而华硕推出的Dual RTX 4060 Ti SSD显卡则通过背部金属挡板为M.2 SSD降温。铭瑄此次选择将双M.2插槽集成到显卡PCB的正面位置，进一步优化了硬件布局，并通过显卡的散热器为SSD提供额外散热能力。这种设计更加高效且紧凑，尤其适合需要节省空间或打造紧凑型DIY媒体服务器的用户。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/maxsun-makes-a-gpu-with-two-built-in-m-2-ssd-ports/featured-maxsun-gpu.jpg" />
+    </item>
+    
+    <item>
       <title>使用 find 命令高效查找文件</title>
       <link>https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/</link>
       <pubDate>Sat, 07 Dec 2024 10:00:19 +0800</pubDate>
