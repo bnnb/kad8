@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.kad8.com/software/</loc>
+    <lastmod>2024-12-07T15:32:22+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/</loc>
+    <lastmod>2024-12-07T15:32:22+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kad8.com/hardware/</loc>
     <lastmod>2024-12-07T10:09:25+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,12 +23,6 @@
   <url>
     <loc>https://www.kad8.com/hardware/maxsun-makes-a-gpu-with-two-built-in-m-2-ssd-ports/</loc>
     <lastmod>2024-12-07T10:09:25+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kad8.com/software/</loc>
-    <lastmod>2024-12-07T10:00:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

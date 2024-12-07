@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>使用 find 命令高效查找文件 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="使用 find 命令高效查找文件 &middot; Kontronn Asia Design Center" />
+  <title>使用Shell数组轻松管理数据集合 &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="使用Shell数组轻松管理数据集合 &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Use the Find Command to Efficiently Find Files" />
-  <meta name="keywords" content="linux, find, " />
+  <meta name="description" content="Use Shell Arrays to Easily Manage Data Collections" />
+  <meta name="keywords" content="shell, arrays, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/" />
+  <link rel="canonical" href="https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/" />
   
   
   
@@ -66,24 +66,24 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/">
+  <meta property="og:url" content="https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="使用 find 命令高效查找文件">
-  <meta property="og:description" content="Use the Find Command to Efficiently Find Files">
+  <meta property="og:title" content="使用Shell数组轻松管理数据集合">
+  <meta property="og:description" content="Use Shell Arrays to Easily Manage Data Collections">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="software">
-    <meta property="article:published_time" content="2024-12-07T10:00:19+08:00">
-    <meta property="article:modified_time" content="2024-12-07T10:00:19+08:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Find">
-    <meta property="og:image" content="https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/featured-linux-find.jpg">
+    <meta property="article:published_time" content="2024-12-07T15:32:22+08:00">
+    <meta property="article:modified_time" content="2024-12-07T15:32:22+08:00">
+    <meta property="article:tag" content="Shell">
+    <meta property="article:tag" content="Arrays">
+    <meta property="og:image" content="https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/featured-linux-shell.jpeg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/featured-linux-find.jpg">
-  <meta name="twitter:title" content="使用 find 命令高效查找文件">
-  <meta name="twitter:description" content="Use the Find Command to Efficiently Find Files">
+  <meta name="twitter:image" content="https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/featured-linux-shell.jpeg">
+  <meta name="twitter:title" content="使用Shell数组轻松管理数据集合">
+  <meta name="twitter:description" content="Use Shell Arrays to Easily Manage Data Collections">
 
   
   <script type="application/ld+json">
@@ -91,26 +91,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Softwares",
-    "name": "使用 find 命令高效查找文件",
-    "headline": "使用 find 命令高效查找文件",
-    "description": "Use the Find Command to Efficiently Find Files",
-    "abstract": "\u003cp\u003e在 Linux 和类 Unix 操作系统中，find是一个常用的命令行工具，用于在文件系统中搜索文件和目录。它不仅能够根据文件名查找文件，还可以结合多种条件进行复杂查询。本文将详细介绍 find命令的基本用法，并通过实际例子展示如何灵活运用 find来提高工作效率。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003efind命令基本语法 \n    \u003cdiv id=\u0022find%E5%91%BD%E4%BB%A4%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#find%E5%91%BD%E4%BB%A4%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e通用语法\u003c\/p\u003e",
+    "name": "使用Shell数组轻松管理数据集合",
+    "headline": "使用Shell数组轻松管理数据集合",
+    "description": "Use Shell Arrays to Easily Manage Data Collections",
+    "abstract": "\u003cp\u003e在Shell脚本的世界里，数组就像是一个装满东西的盒子，你可以把很多相关的数据放进去，然后方便地拿出来使用。无论你是初学者还是有一定经验的Shell脚本编写者，掌握数组的使用都会让你的脚本更加灵活和强大。下面，我们就来详细了解一下Shell数组的基础知识和实用技巧。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eShell数组的基础知识 \n    \u003cdiv id=\u0022shell%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#shell%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e数组是什么？\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e数组是存储一系列值（类型可以不同）的数据结构。在Shell中，数组可以包含文本（字符串）或数字，而且每个元素都有自己的位置编号，称为索引。索引通常从0开始。\u003c\/p\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e索引数组 vs 关联数组\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e索引数组：这是最传统的数组形式，每个元素按照顺序排列，并且通过数字索引来访问。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/software\/use-the-find-command-to-efficiently-find-files\/",
+    "url" : "https:\/\/www.kad8.com\/software\/use-shell-arrays-to-easily-manage-data-collections\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-12-07T10:00:19\u002b08:00",
-    "datePublished": "2024-12-07T10:00:19\u002b08:00",
+    "dateCreated": "2024-12-07T15:32:22\u002b08:00",
+    "datePublished": "2024-12-07T15:32:22\u002b08:00",
     
-    "dateModified": "2024-12-07T10:00:19\u002b08:00",
+    "dateModified": "2024-12-07T15:32:22\u002b08:00",
     
-    "keywords": ["linux","find"],
+    "keywords": ["shell","arrays"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "157"
+    "wordCount": "304"
   }]
   </script>
 
@@ -440,7 +440,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      使用 find 命令高效查找文件
+      使用Shell数组轻松管理数据集合
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +481,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-07T10:00:19&#43;08:00">2024-12-07</time>
+  <time datetime="2024-12-07T15:32:22&#43;08:00">2024-12-07</time>
   
 
   
@@ -505,18 +505,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    Shell
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/find/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/arrays/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Find
+    Arrays
   </span>
 </span>
   </span>
@@ -582,13 +582,14 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#find命令基本语法">find命令基本语法</a></li>
-    <li><a href="#查找特定名称的文件">查找特定名称的文件</a></li>
-    <li><a href="#限制查找深度">限制查找深度</a></li>
-    <li><a href="#根据修改时间查找文件">根据修改时间查找文件</a></li>
-    <li><a href="#根据文件类型查找">根据文件类型查找</a></li>
-    <li><a href="#在根目录下查找需要超级用户权限">在根目录下查找（需要超级用户权限）</a></li>
-    <li><a href="#执行操作">执行操作</a></li>
+    <li><a href="#shell数组的基础知识">Shell数组的基础知识</a></li>
+    <li><a href="#创建和初始化数组">创建和初始化数组</a></li>
+    <li><a href="#访问数组元素">访问数组元素</a></li>
+    <li><a href="#修改数组">修改数组</a></li>
+    <li><a href="#数组操作高级特性">数组操作高级特性</a></li>
+    <li><a href="#实用示例">实用示例</a></li>
+    <li><a href="#常见问题和注意事项">常见问题和注意事项</a></li>
+    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>
@@ -602,13 +603,14 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#find命令基本语法">find命令基本语法</a></li>
-    <li><a href="#查找特定名称的文件">查找特定名称的文件</a></li>
-    <li><a href="#限制查找深度">限制查找深度</a></li>
-    <li><a href="#根据修改时间查找文件">根据修改时间查找文件</a></li>
-    <li><a href="#根据文件类型查找">根据文件类型查找</a></li>
-    <li><a href="#在根目录下查找需要超级用户权限">在根目录下查找（需要超级用户权限）</a></li>
-    <li><a href="#执行操作">执行操作</a></li>
+    <li><a href="#shell数组的基础知识">Shell数组的基础知识</a></li>
+    <li><a href="#创建和初始化数组">创建和初始化数组</a></li>
+    <li><a href="#访问数组元素">访问数组元素</a></li>
+    <li><a href="#修改数组">修改数组</a></li>
+    <li><a href="#数组操作高级特性">数组操作高级特性</a></li>
+    <li><a href="#实用示例">实用示例</a></li>
+    <li><a href="#常见问题和注意事项">常见问题和注意事项</a></li>
+    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>
@@ -692,123 +694,272 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>在 Linux 和类 Unix 操作系统中，find是一个常用的命令行工具，用于在文件系统中搜索文件和目录。它不仅能够根据文件名查找文件，还可以结合多种条件进行复杂查询。本文将详细介绍 find命令的基本用法，并通过实际例子展示如何灵活运用 find来提高工作效率。</p>
+          <p>在Shell脚本的世界里，数组就像是一个装满东西的盒子，你可以把很多相关的数据放进去，然后方便地拿出来使用。无论你是初学者还是有一定经验的Shell脚本编写者，掌握数组的使用都会让你的脚本更加灵活和强大。下面，我们就来详细了解一下Shell数组的基础知识和实用技巧。</p>
 
 
-<h2 class="relative group">find命令基本语法 
-    <div id="find%E5%91%BD%E4%BB%A4%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95" class="anchor"></div>
+<h2 class="relative group">Shell数组的基础知识 
+    <div id="shell%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#find%E5%91%BD%E4%BB%A4%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#shell%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>通用语法</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find <span class="o">[</span>路径<span class="o">]</span> <span class="o">[</span>表达式<span class="o">]</span>
-</span></span></code></pre></div><ul>
-<li>路径：指定 find 从哪个目录开始查找。可以是相对路径（如 <code>.</code> 表示当前目录）或绝对路径（如 <code>/home/user</code>）。如果不提供路径，则默认为当前目录。</li>
-<li>表达式：定义了查找条件，包括测试（tests）、操作（actions）和选项（options）。多个表达式可以通过逻辑运算符 <code>-and</code>、<code>-or</code> 和 <code>-not</code> 组合起来。</li>
-</ul>
+<ol>
+<li>数组是什么？</li>
+</ol>
+<p>数组是存储一系列值（类型可以不同）的数据结构。在Shell中，数组可以包含文本（字符串）或数字，而且每个元素都有自己的位置编号，称为索引。索引通常从0开始。</p>
+<ol start="2">
+<li>索引数组 vs 关联数组</li>
+</ol>
+<p>索引数组：这是最传统的数组形式，每个元素按照顺序排列，并且通过数字索引来访问。</p>
+<p>关联数组：也称为字典或哈希表，这种类型的数组允许使用非数字的键（如字符串）来标识元素，提供了更灵活的方式存储和检索信息。</p>
 
 
-<h2 class="relative group">查找特定名称的文件 
-    <div id="%E6%9F%A5%E6%89%BE%E7%89%B9%E5%AE%9A%E5%90%8D%E7%A7%B0%E7%9A%84%E6%96%87%E4%BB%B6" class="anchor"></div>
+<h2 class="relative group">创建和初始化数组 
+    <div id="%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E7%BB%84" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9F%A5%E6%89%BE%E7%89%B9%E5%AE%9A%E5%90%8D%E7%A7%B0%E7%9A%84%E6%96%87%E4%BB%B6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E7%BB%84" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>要查找名为 <code>abc.zip</code> 的文件，可以使用 <code>-name</code> 测试。例如，要在当前目录及其子目录中查找 <code>abc.zip</code> 文件，可以执行以下命令：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;abc.zip&#34;</span>
-</span></span></code></pre></div><p>如果不确定文件名的大小写，可以使用 <code>-iname</code> 选项来忽略大小写：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -iname <span class="s2">&#34;abc.zip&#34;</span>
+<ol>
+<li>直接赋值创建数组</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建一个简单的索引数组</span>
+</span></span><span class="line"><span class="cl"><span class="nv">fruits</span><span class="o">=(</span><span class="s2">&#34;apple&#34;</span> <span class="s2">&#34;banana&#34;</span> <span class="s2">&#34;orange&#34;</span><span class="o">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建一个有1-5共5个数字的索引数组</span>
+</span></span><span class="line"><span class="cl"><span class="nv">numbers</span><span class="o">=(</span><span class="k">$(</span>seq 5<span class="k">)</span><span class="o">)</span>
+</span></span></code></pre></div><ol start="2">
+<li>使用declare声明数组</li>
+</ol>
+<p>可以使用<code>declare -a</code>命令创建一个索引数组，这也是直接赋值创建数组的默认行为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">declare</span> -a <span class="nv">colors</span><span class="o">=(</span><span class="s2">&#34;red&#34;</span> <span class="s2">&#34;green&#34;</span> <span class="s2">&#34;blue&#34;</span><span class="o">)</span>
+</span></span></code></pre></div><p>关联数组让我们能够以更加直观的方式组织数据，使用<code>declare -A</code>创建关联数组。例如，我们可以把学生的姓名作为键，成绩作为值：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">declare</span> -A grades
+</span></span><span class="line"><span class="cl"><span class="nv">grades</span><span class="o">=([</span><span class="s2">&#34;Zhang San&#34;</span><span class="o">]=</span><span class="m">90</span> <span class="o">[</span><span class="s2">&#34;Li Si&#34;</span><span class="o">]=</span><span class="m">85</span> <span class="o">[</span><span class="s2">&#34;Wang Wu&#34;</span><span class="o">]=</span>92<span class="o">)</span>
 </span></span></code></pre></div>
 
-<h2 class="relative group">限制查找深度 
-    <div id="%E9%99%90%E5%88%B6%E6%9F%A5%E6%89%BE%E6%B7%B1%E5%BA%A6" class="anchor"></div>
+<h2 class="relative group">访问数组元素 
+    <div id="%E8%AE%BF%E9%97%AE%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E9%99%90%E5%88%B6%E6%9F%A5%E6%89%BE%E6%B7%B1%E5%BA%A6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%AE%BF%E9%97%AE%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p>有时候可能只希望在当前目录下查找，而不深入子目录。这时可以使用 <code>-maxdepth</code> 选项来限制查找深度。例如，只在当前目录查找 <code>abc.zip</code> 文件，不包括任何子目录：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -maxdepth <span class="m">1</span> -name <span class="s2">&#34;abc.zip&#34;</span>
+<ol>
+<li>访问单个元素</li>
+</ol>
+<p>要查看索引数组中的某一项，只需要知道它的索引即可：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="si">${</span><span class="nv">fruits</span><span class="p">[0]</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出: apple</span>
+</span></span></code></pre></div><p>使用键可以访问关联数组中的项，键区分大小写：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="si">${</span><span class="nv">grades</span><span class="p">[</span><span class="s2">&#34;Zhang San&#34;</span><span class="p">]</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出：90</span>
+</span></span></code></pre></div><ol start="2">
+<li>获取数组长度</li>
+</ol>
+<p>想知道数组中有多少项？可以使用<code>${#array[@]}</code>语法。例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="si">${#</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出: 3</span>
+</span></span></code></pre></div><p>这里的<code>${#fruits[@]}</code>会给出数组中元素的数量。此方法也可以获取到关联数组的元素数量。</p>
+<ol start="3">
+<li>遍历数组</li>
+</ol>
+<p>如果想依次处理索引数组中每个元素，可以使用循环：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> fruit in <span class="s2">&#34;</span><span class="si">${</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$fruit</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 每行输出一个元素</span>
+</span></span></code></pre></div><p>这段代码会遍历fruits数组，并打印出每种水果的名字。</p>
+<p>对于关联数组，Bash提供了一种特殊的方式来迭代关联数组的键，即使用<code>${!array[@]}</code>语法。查看关联数组所有的键：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="p">!grades[@]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出：Zhang San Li Si Wang Wu</span>
+</span></span></code></pre></div><p>使用<code>for key in &quot;${!array[@]}&quot;</code>语法可以遍历每一个键，再通过键获取值，就可以遍历关联数组。</p>
+
+
+<h2 class="relative group">修改数组 
+    <div id="%E4%BF%AE%E6%94%B9%E6%95%B0%E7%BB%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BF%AE%E6%94%B9%E6%95%B0%E7%BB%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ol>
+<li>添加新元素</li>
+</ol>
+<p>向索引数组追加新成员非常简单：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">fruits</span><span class="o">+=(</span><span class="s2">&#34;grape&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 在最后添加一个新元素</span>
+</span></span></code></pre></div><p>向关联数组添加新成员也非常简单：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">grades</span><span class="o">+=([</span><span class="s2">&#34;Zhao Liu&#34;</span><span class="o">]=</span>90<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 添加的位置不确定，取决于键的哈希值</span>
+</span></span></code></pre></div><ol start="2">
+<li>更新现有元素</li>
+</ol>
+<p>也可以更改已有元素的值：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">fruits<span class="o">[</span>1<span class="o">]=</span><span class="s2">&#34;peach&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 将第二个元素改为peach</span>
+</span></span></code></pre></div><p>同样，使用键可以定位并修改元素值：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grades<span class="o">[</span><span class="s2">&#34;Zhao Liu&#34;</span><span class="o">]=</span><span class="m">91</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 将Zhao Liu的成绩改为91</span>
+</span></span></code></pre></div><p>你可以试试使用<code>grades[&quot;Zhao Liu&quot;]+=1</code>是否符合预期？如果希望将成绩加1应该怎样做？</p>
+<ol start="3">
+<li>删除元素</li>
+</ol>
+<p>若要移除某个特定元素：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">unset</span> fruits<span class="o">[</span>2<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除第三个元素</span>
+</span></span></code></pre></div><p>删除元素后，数组后面的元素不会前移，<code>${fruits[2]}</code>为空。对于整个数组的清理，只需<code>unset fruits</code>即可。</p>
+<p>unset命令同样适用于关联数组。</p>
+
+
+<h2 class="relative group">数组操作高级特性 
+    <div id="%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ol>
+<li>对数组进行排序</li>
+</ol>
+<p>虽然Shell本身没有内置的数组排序功能，但我们可以通过其他命令实现：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">sorted_fruits</span><span class="o">=(</span><span class="k">$(</span><span class="nb">printf</span> <span class="s2">&#34;%s\n&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span> <span class="p">|</span> sort<span class="k">)</span><span class="o">)</span>
+</span></span></code></pre></div><p>printf会将数组中的元素按行输出，sort命令可以对这些行进行排序。如果是数值数组，使用<code>sort -n</code>可以按数值进行排序，或使用<code>sort -nr</code>按数值倒序排序。</p>
+<ol start="2">
+<li>搜索特定元素</li>
+</ol>
+<p>查找数组中是否存在某项：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34; </span><span class="si">${</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span><span class="s2"> &#34;</span> <span class="o">=</span>~ <span class="s2">&#34; apple &#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;apple在数组中&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></div><p><code>=~</code>是一个用于正则表达式匹配的操作符，用来测试字符串是否与给定的正则表达式模式相匹配。</p>
+<p>在使用正则表达式匹配时，需要注意字符串和正则表达式两端的空格，以确保进行完整的匹配。如果数组元素本身包含空格，则直接使用正则表达式可能会导致部分匹配的问题，从而产生不准确的结果。为了避免这种情况，建议采用遍历数组的方式逐个检查元素，以确保匹配的准确性。</p>
+<ol start="3">
+<li>字符串转数组</li>
+</ol>
+<p>对于一串由分隔符分开的文字，可以用这个方法转换成数组：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">string</span><span class="o">=</span><span class="s2">&#34;apple,banana,orange&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">IFS</span><span class="o">=</span><span class="s1">&#39;,&#39;</span> <span class="nb">read</span> -r -a array <span class="o">&lt;&lt;&lt;</span> <span class="s2">&#34;</span><span class="nv">$string</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>这里IFS变量定义了分隔符，read命令将字符串分割并存入数组array中。</p>
+<ol start="4">
+<li>数组切片</li>
+</ol>
+<p>有时候，你可能只想处理数组中的一部分元素。这时，可以使用数组切片的功能。例如，要获取fruits数组中的前两个元素，可以这样做：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="si">${</span><span class="nv">fruits</span><span class="p">[@]:</span><span class="nv">0</span><span class="p">:</span><span class="nv">2</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出：apple banana</span>
+</span></span></code></pre></div><p>这里的<code>0:2</code>表示从索引0开始，获取2个元素。</p>
+<ol start="5">
+<li>数组连接与合并</li>
+</ol>
+<p>可以轻松地将两个或多个数组连接起来。例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">vegetables</span><span class="o">=(</span><span class="s2">&#34;carrot&#34;</span> <span class="s2">&#34;potato&#34;</span> <span class="s2">&#34;beetroot&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">all_foods</span><span class="o">=(</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">vegetables</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span><span class="o">)</span>
+</span></span></code></pre></div><p>现在，all_foods数组包含了fruits和vegetables两个数组的所有元素。</p>
+
+
+<h2 class="relative group">实用示例 
+    <div id="%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>示例1：统计文件夹内不同扩展名文件的数量</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="nb">declare</span> -A ext_counts
+</span></span><span class="line"><span class="cl"><span class="k">for</span> file in *<span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">ext</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">file</span><span class="p">##*.</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$file</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$ext</span><span class="s2">&#34;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">ext</span><span class="o">=</span><span class="s2">&#34;no_ext&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">((</span>ext_counts<span class="o">[</span><span class="nv">$ext</span><span class="o">]</span>++<span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> ext in <span class="s2">&#34;</span><span class="si">${</span><span class="p">!ext_counts[@]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$ext</span><span class="s2">: </span><span class="si">${</span><span class="nv">ext_counts</span><span class="p">[</span><span class="nv">$ext</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><p>你可以试试用本文介绍的方法，将上述结果按键（扩展名）排序后输出。</p>
+<p>示例2：从用户输入生成菜单</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="nv">options</span><span class="o">=(</span><span class="s2">&#34;Option 1&#34;</span> <span class="s2">&#34;Option 2&#34;</span> <span class="s2">&#34;Exit&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PS3</span><span class="o">=</span><span class="s2">&#34;Choose an option: &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">select</span> opt in <span class="s2">&#34;</span><span class="si">${</span><span class="nv">options</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="nv">$opt</span> in
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Option 1&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;You chose Option 1&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Option 2&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;You chose Option 2&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Exit&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">break</span>
+</span></span><span class="line"><span class="cl">            <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">&#34;Invalid option </span><span class="nv">$REPLY</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">esac</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
 </span></span></code></pre></div>
 
-<h2 class="relative group">根据修改时间查找文件 
-    <div id="%E6%A0%B9%E6%8D%AE%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6" class="anchor"></div>
+<h2 class="relative group">常见问题和注意事项 
+    <div id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%B9%E6%8D%AE%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p><code>find</code> 可以根据文件的修改时间来查找文件。假设你想找到过去7天内修改过的 <code>abc.zip</code> 文件，可以使用 <code>-mtime</code> 选项：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;abc.zip&#34;</span> -mtime -7
-</span></span></code></pre></div><p>这里的 <code>-7</code> 表示在过去7天内修改过的文件。如果你想查找超过7天前修改的文件，可以去掉减号：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;abc.zip&#34;</span> -mtime +7
-</span></span></code></pre></div>
+<p>空格敏感：在赋值时，确保等号两边没有空格。</p>
+<p>索引越界：尝试访问不存在的索引不会出现错误，会返回空值，所以应注意索引的范围和值的有效性，尤其是删除索引元素后。</p>
+<p>使用括号：数组排序后的结果赋值给数组，应避免遗漏最外层的半角括号。</p>
+<p>使用引号：在进行数组遍历、连接等操作时，获取所有数组元素的表达式应当用双引号括起来，以确保包含空格的元素值能够保持其完整性。如果不使用双引号包裹这些表达式，含有空格的元素将被视为多个独立的、由空格分隔的元素，从而可能导致意外的行为或错误的结果。</p>
+<p>明确定义关联数组：使用直接赋值的方式会创建索引数组，虽然值是关联数组的形式，此时的赋值结果不符合预期，应使用<code>declare -A</code>进行明确定义。</p>
+<p>Bash中很多地方的双引号可以省略，例如以下语句都能获取预期的结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">declare</span> -a <span class="nv">colors</span><span class="o">=(</span>red green blue<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;%s\n&#34;</span> <span class="si">${</span><span class="nv">colors</span><span class="p">[@]</span><span class="si">}</span> <span class="c1"># 每行打印一个颜色</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">declare</span> -A <span class="nv">grades</span><span class="o">=([</span>John<span class="o">]=</span><span class="m">90</span> <span class="o">[</span>Mike<span class="o">]=</span>85<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;%s\n&#34;</span> <span class="si">${</span><span class="p">!grades[@]</span><span class="si">}</span> <span class="c1"># 每行打印一个姓名</span>
+</span></span></code></pre></div><p>但是，当执行以下语句后，上述printf的结果不再符合预期，空格分隔的元素值或者名称被分行输出：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">colors</span><span class="o">+=(</span><span class="s2">&#34;soft red&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">grades</span><span class="o">+=([</span><span class="s2">&#34;Zhang San&#34;</span><span class="o">]=</span>90<span class="o">)</span>
+</span></span></code></pre></div><p>使用双引号可以避免出现上述问题：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;%s\n&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">colors</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;%s\n&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="p">!grades[@]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>因此，不建议省略双引号，平时养成使用双引号的习惯很重要。</p>
 
-<h2 class="relative group">根据文件类型查找 
-    <div id="%E6%A0%B9%E6%8D%AE%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E6%9F%A5%E6%89%BE" class="anchor"></div>
+
+<h2 class="relative group">总结 
+    <div id="%E6%80%BB%E7%BB%93" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%B9%E6%8D%AE%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E6%9F%A5%E6%89%BE" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
     </span>        
     
 </h2>
-<p><code>find</code> 支持根据文件类型进行查找。例如，如果你想查找所有普通文件（而非目录或其他类型的文件），可以使用 <code>-type f</code>：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -type f -name <span class="s2">&#34;abc.zip&#34;</span>
-</span></span></code></pre></div><p>对于目录，可以使用 <code>-type d</code>：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -type d -name <span class="s2">&#34;abc&#34;</span>
-</span></span></code></pre></div>
-
-<h2 class="relative group">在根目录下查找（需要超级用户权限） 
-    <div id="%E5%9C%A8%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%9F%A5%E6%89%BE%E9%9C%80%E8%A6%81%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%9C%A8%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%9F%A5%E6%89%BE%E9%9C%80%E8%A6%81%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>如果你需要从系统的根目录 <code>/</code> 开始查找文件，通常需要超级用户的权限，因为某些目录对普通用户不可访问。例如，要在整个系统中查找 <code>abc.zip</code> 文件，你可以这样做：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo find / -name <span class="s2">&#34;abc.zip&#34;</span>
-</span></span></code></pre></div><p>结合其他条件进行复杂查询</p>
-<p><code>find</code> 的真正强大之处在于它可以组合多种条件进行复杂查询。比如，你想查找过去30天内修改过且大于100KB的 <code>.zip</code> 文件，可以这样写：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;*.zip&#34;</span> -size +100k -mtime -30
-</span></span></code></pre></div><p>这里，<code>-size +100k</code> 表示文件大小超过100KB，<code>-mtime -30</code> 表示过去30天内修改过的文件。</p>
-
-
-<h2 class="relative group">执行操作 
-    <div id="%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>除了查找文件，<code>find</code> 还可以在找到文件后执行一些操作。例如，你可以删除所有匹配的文件（谨慎使用！）：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;abc.zip&#34;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
-</span></span></code></pre></div><p>或者，将找到的文件列表输出到一个文本文件中：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -name <span class="s2">&#34;abc.zip&#34;</span> &gt; found_files.txt
-</span></span></code></pre></div><p><code>-exec</code> 后面跟的是要执行的命令，<code>{}</code> 代表当前找到的文件，<code>\;</code> 表示 <code>-exec</code> 选项的结束。</p>
-<p>find命令是一个非常灵活且功能丰富的工具，适用于各种复杂的文件查找场景。通过掌握它的基本语法和高级特性，可以更高效地管理和操作文件系统。</p>
+<p>Shell数组为我们的脚本编写提供了极大的便利，使得管理复杂的数据集变得更加容易。无论是简单的任务还是复杂的自动化流程，掌握数组的使用都是提高效率的关键一步。</p>
 
           
           
@@ -826,7 +977,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;title=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;title=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -845,7 +996,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;text=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;text=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -863,7 +1014,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6&#43;https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/"
+      href="https://bsky.app/intent/compose?text=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88&#43;https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/"
       title=""
       aria-label=""
       >
@@ -881,7 +1032,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6%20https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/"
+      href="https://s2f.kytta.dev/?text=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88%20https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/"
       title=""
       aria-label=""
       >
@@ -900,7 +1051,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -919,7 +1070,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;description=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;description=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -938,7 +1089,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;quote=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;quote=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -957,7 +1108,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;subject=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="mailto:?body=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;subject=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -976,7 +1127,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title=""
       aria-label=""
       >
@@ -995,7 +1146,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/software/use-the-find-command-to-efficiently-find-files/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20find%20%e5%91%bd%e4%bb%a4%e9%ab%98%e6%95%88%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6"
+      href="https://t.me/share/url?url=https://www.kad8.com/software/use-shell-arrays-to-easily-manage-data-collections/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8Shell%e6%95%b0%e7%bb%84%e8%bd%bb%e6%9d%be%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e9%9b%86%e5%90%88"
       title=""
       aria-label=""
       >
@@ -1021,11 +1172,11 @@
   
   
 
-  <a href="/ai/nvidia-blackwell-ultra-version-will-be-available-next-year/" class="min-w-full">
+  <a href="/software/backing-up-a-mysql-database-using-command-line/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/nvidia-blackwell-ultra-version-will-be-available-next-year/featured-NVIDIA-Blackwell-Ultra-B300-AI-GPU_hu8644794509201159639.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/backing-up-a-mysql-database-using-command-line/featured-backup-MySQL_hu6440135286905254165.jpg);"></div>
         
       
 
@@ -1033,7 +1184,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/nvidia-blackwell-ultra-version-will-be-available-next-year/">英伟达 Blackwell Ultra 版本将于明年上市</div>
+          href="/software/backing-up-a-mysql-database-using-command-line/">使用命令行备份MySQL数据库</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1072,7 +1223,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-07T00:10:10&#43;08:00">2024-12-07</time>
+  <time datetime="2024-11-19T19:30:53&#43;08:00">2024-11-19</time>
   
 
   
@@ -1096,10 +1247,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blackwell-ultra/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mysql/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blackwell Ultra
+    Mysql
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/database/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Database
   </span>
 </span>
   </span>
@@ -1125,11 +1284,11 @@
   
   
 
-  <a href="/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/" class="min-w-full">
+  <a href="/software/limit-memory-and-cpu-using-docker-compose/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/featured-Samsung-advanced-packaging-0_hu6188322935140073637.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/limit-memory-and-cpu-using-docker-compose/featured-docker-compose_hu18049204220259157055.jpeg);"></div>
         
       
 
@@ -1137,7 +1296,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/samsung-advanced-packaging-pivot-with-nvidia-production-win/">三星将为英伟达GPU提供先进封装</div>
+          href="/software/limit-memory-and-cpu-using-docker-compose/">使用docker-compose限制内存和cpu</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1176,7 +1335,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-06T23:57:22&#43;08:00">2024-12-06</time>
+  <time datetime="2024-10-28T00:30:51&#43;08:00">2024-10-28</time>
   
 
   
@@ -1200,26 +1359,10 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/samsung/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker-compose/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Samsung
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/packaging/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Packaging
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvidia/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nvidia
+    Docker-Compose
   </span>
 </span>
   </span>
@@ -1245,11 +1388,11 @@
   
   
 
-  <a href="/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/" class="min-w-full">
+  <a href="/ai/setting-direction-for-enterprise-ai-infrastructure/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/featured-GPU-vs-LPU_hu700435244105783605.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/setting-direction-for-enterprise-ai-infrastructure/featured-enterprise-infrastructure-of-ai_hu11374852213717621947.png);"></div>
         
       
 
@@ -1257,7 +1400,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/">GPU 与 LPU：哪个更适合 AI 工作负载</div>
+          href="/ai/setting-direction-for-enterprise-ai-infrastructure/">如何构建高效可靠的AI基础设施</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1296,7 +1439,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-06T23:10:01&#43;08:00">2024-12-06</time>
+  <time datetime="2024-10-26T19:56:51&#43;08:00">2024-10-26</time>
   
 
   
@@ -1320,18 +1463,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GPU
+    AI
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/lpu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infrastructure/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    LPU
+    Infrastructure
   </span>
 </span>
   </span>
@@ -1368,8 +1511,8 @@
           
         
       <script>
-        var oid = "views_software\/use-the-find-command-to-efficiently-find-files\/index.md"
-        var oid_likes = "likes_software\/use-the-find-command-to-efficiently-find-files\/index.md"
+        var oid = "views_software\/use-shell-arrays-to-easily-manage-data-collections\/index.md"
+        var oid_likes = "likes_software\/use-shell-arrays-to-easily-manage-data-collections\/index.md"
       </script>
       
       
@@ -1389,7 +1532,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/software/how-to-mount-hard-drive-in-linux-system/">
+            <a class="flex group mr-3" href="/software/use-the-find-command-to-efficiently-find-files/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1401,11 +1544,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux系统下如何挂载硬盘</span
+                  >使用 find 命令高效查找文件</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-12-02T22:14:15&#43;08:00">2024-12-02</time>
+                    <time datetime="2024-12-07T10:00:19&#43;08:00">2024-12-07</time>
                   
                 </span>
               </span>
@@ -1413,28 +1556,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/software/use-shell-arrays-to-easily-manage-data-collections/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用Shell数组轻松管理数据集合</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-12-07T15:32:22&#43;08:00">2024-12-07</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
