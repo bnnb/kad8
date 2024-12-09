@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 07 Dec 2024 16:33:30 +0800</lastBuildDate><atom:link href="https://www.kad8.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 23:57:44 +0800</lastBuildDate><atom:link href="https://www.kad8.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 上常用的 20 CMD个命令及示例</title>
+      <link>https://www.kad8.com/software/20-commonly-used-cmd-commands-and-examples-on-windows/</link>
+      <pubDate>Mon, 09 Dec 2024 23:57:44 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/software/20-commonly-used-cmd-commands-and-examples-on-windows/</guid>
+      <description>&lt;p&gt;使用 Windows 的时候，如何快速查看本机 IP 地址？毫无疑问，按需 “Win键”加 “R键”，打开命令提示符窗口，输入&lt;code&gt;ipconfig&lt;/code&gt;即可快速看到&lt;code&gt;ip&lt;/code&gt;地址。&lt;/p&gt;
+&lt;p&gt;在Windows操作系统中，命令提示符（CMD）是一个强大的工具，它允许用户与操作系统进行交互式操作。以下是一些常用的CMD命令及其操作示例，实际使用中 Windows命令行输入的时候是不用区分大小写的，我们这里使用大写作为示范。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;CD命令 
+    &lt;div id=&#34;cd%E5%91%BD%E4%BB%A4&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#cd%E5%91%BD%E4%BB%A4&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;用途：用于切换目录。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/software/20-commonly-used-cmd-commands-and-examples-on-windows/featured-windows-10.jpg" />
+    </item>
+    
     <item>
       <title>Linux之父怒怼x86微架构级别：完全崩溃的垃圾</title>
       <link>https://www.kad8.com/software/linus-torvalds-says-amd-intel-x86-levels-are-completely-broken-garbage/</link>
