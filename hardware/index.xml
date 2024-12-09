@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sat, 07 Dec 2024 10:09:25 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 23:46:48 +0800</lastBuildDate><atom:link href="https://www.kad8.com/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达明年将推出Arm架构处理器AI个人电脑</title>
+      <link>https://www.kad8.com/hardware/nvidia-will-launch-arm-based-ai-pc/</link>
+      <pubDate>Mon, 09 Dec 2024 23:46:48 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/hardware/nvidia-will-launch-arm-based-ai-pc/</guid>
+      <description>&lt;p&gt;生成式AI应用带动新一波AI服务器需求，同时AI也为PC个人电脑与手机等终端装置注入新动能。一年半前供应链即传出，英伟达高昂气势将再次挑战x86架构双雄英伟达和超威（AMD），携手联发科于2025年推出AI PC电脑平台。&lt;/p&gt;
+&lt;p&gt;据PC供应链透露，英伟达策略可能有所改变，除可能与联发科合作外，同时也已计划自行针对消费与商用市场，推出Arm架构CPU与GPU平台，预计2025年9月登场。&lt;/p&gt;
+&lt;p&gt;尽管AI服务器平台已占营收大头，但英伟达抢食x86双雄PC版图的企图心10多年来未曾改变，由于英伟达已在AI市场与产业链具有优势，整体PC平台设计能力也大幅提升，AI GPU更是英伟达的强项，预估于Windows On Arm（WOA）阵营中有机会跃升大哥，成为英特尔、超威的头号敌人。&lt;/p&gt;
+&lt;p&gt;微软于2011年曾揭露WOA平台开发计划，同时推出为Arm架构设计的Windows RT版本，最终则因Surface及Windows RT诸多设计缺陷终告失败，当时参与的芯片厂包括高通、英伟达和德州仪器等。&lt;/p&gt;
+&lt;p&gt;苹果在2020年正式宣告「去英特尔化」且取得成功，WOA阵营信心满满，力图抢食PC个人电脑市场版图。此波AI PC大战由高通打头阵，6月携手宏碁、华硕、联想、惠普、戴尔和微软，推出搭载Snapdragon X Elite的Copilot+ PC。&lt;/p&gt;
+&lt;p&gt;但由于兼容性问题未见明显改善，加上英特尔、超威也陆续推出AI PC机型，性能、功耗大幅强化，同时高通与Arm的争讼交火，致使不仅终端买气平淡，后续笔记本电脑品牌厂商开案意愿也大减。&lt;/p&gt;
+&lt;p&gt;高通抢进AI PC突陷乱流，也让市场关注焦点转向锁定联发科、英伟达抢进AI PC时间进度，并盛传双方将携手合作。据了解，英伟达在不少产品领域与联发科展开合作，例如先前联发科推出的汽车智能座舱芯片。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.kad8.com/hardware/nvidia-will-launch-arm-based-ai-pc/featured-nvidia-ai-pc.png" />
+    </item>
+    
     <item>
       <title>铭瑄准备推出带双SSD插槽的显卡</title>
       <link>https://www.kad8.com/hardware/maxsun-makes-a-gpu-with-two-built-in-m-2-ssd-ports/</link>
