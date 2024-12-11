@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Mon, 09 Dec 2024 23:57:44 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Dec 2024 12:24:39 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NPU</title>
+      <link>https://www.kad8.com/tags/npu/</link>
+      <pubDate>Wed, 11 Dec 2024 12:24:39 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/npu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TOPS</title>
+      <link>https://www.kad8.com/tags/tops/</link>
+      <pubDate>Wed, 11 Dec 2024 12:24:39 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/tops/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>CMD</title>
       <link>https://www.kad8.com/tags/cmd/</link>
@@ -1664,16 +1684,6 @@
       <pubDate>Thu, 24 Oct 2024 22:39:07 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/flops/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>TOPS</title>
-      <link>https://www.kad8.com/tags/tops/</link>
-      <pubDate>Thu, 24 Oct 2024 22:39:07 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/tops/</guid>
       <description></description>
       
     </item>
