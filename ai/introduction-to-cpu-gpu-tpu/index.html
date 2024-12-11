@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>神经网络处理器NPU简介 &middot; Kontronn Asia Design Center</title>
-  <meta name="title" content="神经网络处理器NPU简介 &middot; Kontronn Asia Design Center" />
+  <title>什么是CPU、GPU、TPU &middot; Kontronn Asia Design Center</title>
+  <meta name="title" content="什么是CPU、GPU、TPU &middot; Kontronn Asia Design Center" />
   
-  <meta name="description" content="Introduction to NPU(Neural-Network Processing Unit)" />
-  <meta name="keywords" content="NPU, TOPS, " />
+  <meta name="description" content="Introduction to CPU GPU TPU" />
+  <meta name="keywords" content="CPU, GPU, TPU, " />
   
   
-  <link rel="canonical" href="https://www.kad8.com/ai/introduction-to-npu/" />
+  <link rel="canonical" href="https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/" />
   
   
   
@@ -66,24 +66,25 @@
   
   
   
-  <meta property="og:url" content="https://www.kad8.com/ai/introduction-to-npu/">
+  <meta property="og:url" content="https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/">
   <meta property="og:site_name" content="Kontronn Asia Design Center">
-  <meta property="og:title" content="神经网络处理器NPU简介">
-  <meta property="og:description" content="Introduction to NPU(Neural-Network Processing Unit)">
+  <meta property="og:title" content="什么是CPU、GPU、TPU">
+  <meta property="og:description" content="Introduction to CPU GPU TPU">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="ai">
-    <meta property="article:published_time" content="2024-12-11T12:24:39+08:00">
-    <meta property="article:modified_time" content="2024-12-11T12:24:39+08:00">
-    <meta property="article:tag" content="NPU">
-    <meta property="article:tag" content="TOPS">
-    <meta property="og:image" content="https://www.kad8.com/ai/introduction-to-npu/featured-npu-introduction.png">
+    <meta property="article:published_time" content="2024-12-11T12:35:03+08:00">
+    <meta property="article:modified_time" content="2024-12-11T12:35:03+08:00">
+    <meta property="article:tag" content="CPU">
+    <meta property="article:tag" content="GPU">
+    <meta property="article:tag" content="TPU">
+    <meta property="og:image" content="https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/featured-cpu-gpu-tpu.jpeg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.kad8.com/ai/introduction-to-npu/featured-npu-introduction.png">
-  <meta name="twitter:title" content="神经网络处理器NPU简介">
-  <meta name="twitter:description" content="Introduction to NPU(Neural-Network Processing Unit)">
+  <meta name="twitter:image" content="https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/featured-cpu-gpu-tpu.jpeg">
+  <meta name="twitter:title" content="什么是CPU、GPU、TPU">
+  <meta name="twitter:description" content="Introduction to CPU GPU TPU">
 
   
   <script type="application/ld+json">
@@ -91,26 +92,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Ais",
-    "name": "神经网络处理器NPU简介",
-    "headline": "神经网络处理器NPU简介",
-    "description": "Introduction to NPU(Neural-Network Processing Unit)",
-    "abstract": "\u003cp\u003e\u003ca href=\u0022https:\/\/www.gaitpu.com\u0022 target=\u0022_blank\u0022\u003eTPU\u003c\/a\u003e是Google专属用于其数据中心业务的，可以先忽略，其实它也术语一种NPU。CPU可以说是个人电脑、服务器、笔记本、手机最核心的物理组件，GPU则是AI时代的“CPU”，用于加速深度学习应用，那么一个问题来了，享用 AI 只能通过云端的 GPU 运算吗？能不能在本地也能加速 AI 模型呢？这就要说到 NPU 神经网络处理器（Neural-network Processing Unit）。\u003c\/p\u003e\n\u003cp\u003e和CPU与GPU不同的是，NPU专门用于加速AI推理任务（比如由标量、向量和张量数学组成的神经网络层），尤其是手机终端设备，可以把它想象成GPU，核心特点有两点：\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e并行处理能力强\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e近存储计算或存储内计算，实现存储和计算的一体化\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eNPU 和 GPU 的区别\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eGPUs更适合通用计算，NPUs是专门为AI和机器学习任务设计的专用处理器，去除了一些多余的功能。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eGPUs虽然并行能力更强，但功耗很大，而NPU由于其设计的原因，性能效率更好，适合终端设备。\u003c\/p\u003e",
+    "name": "什么是CPU、GPU、TPU",
+    "headline": "什么是CPU、GPU、TPU",
+    "description": "Introduction to CPU GPU TPU",
+    "abstract": "\u003cp\u003eGoogle今年发布了第六代自研芯片——\u003ca href=\u0022https:\/\/www.gaitpu.com\u0022 target=\u0022_blank\u0022\u003eTensor Processing Unit（TPU）\u003c\/a\u003e，命名为Trillium。\u003c\/p\u003e\n\u003cp\u003e那到底什么是CPU、GPU、TPU？可能大部分人不知道吧。\u003c\/p\u003e\n\u003col\u003e\n\u003cli\u003e什么是CPU、GPU和TPU\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e它们都是处理计算任务的芯片，尽管CPU、GPU和TPU都是处理器，但它们的专用程度逐步增加。\u003c\/p\u003e\n\u003cp\u003eCPU是“中央处理单元”的缩写，这是一种通用芯片，可以处理各种任务。就像大脑一样，CPU对某些任务的处理时间可能更长，因为它并不专门针对特定领域。\u003c\/p\u003e\n\u003cp\u003e接下来是GPU，GPU已成为加速计算任务的主力，从图像渲染到AI工作负载。它属于ASIC（应用专用集成电路）的一种。集成电路通常使用硅制造，因此人们也常用“硅”来指代芯片，简单来说，ASIC是为单一、特定用途设计的。\u003c\/p\u003e\n\u003cp\u003eTPU，即Tensor Processing Unit，是Google自研的ASIC。Google设计TPU的初衷就是为了运行AI计算任务，使其比CPU和GPU更加专用。TPU驱动了许多Google的热门AI服务，包括搜索、YouTube和DeepMind的大语言模型。\u003c\/p\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e那么CPU、GPU和TPU都在哪里使用呢\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003eCPU和GPU都在日常生活中非常常见的设备中使用：几乎每部智能手机中都有CPU，而它们也存在于个人计算设备如笔记本电脑中。高端游戏系统或某些台式设备中可能会配备GPU，TPU则仅在Google的数据中心内使用\u003c\/p\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003eGoogle为什么开始考虑研发TPU？\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003eCPU是在20世纪50年代末发明的，GPU大约在90年代末出现。\u003c\/p\u003e\n\u003cp\u003e大约十年前，Google开始考虑研发TPU，当时语音识别服务质量显著提升，但数据中心计算机数量越来越大，需要一种比现有硬件更高效的解决方案，而且需要每个芯片具备更强的处理能力。\u003c\/p\u003e\n\u003cp\u003e“T”代表Tensor，Tensor是一种用于机器学习的数据结构名称。简单来说，许多数学运算在幕后支持着AI任务的实现。\u003c\/p\u003e\n\u003col start=\u00224\u0022\u003e\n\u003cli\u003eTPU Trillium\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e最新的TPU Trillium提升了计算能力：与上一代TPU v5e相比，Trillium的单芯片峰值计算性能提高了4.7倍。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/www.kad8.com\/ai\/introduction-to-npu\/",
+    "url" : "https:\/\/www.kad8.com\/ai\/introduction-to-cpu-gpu-tpu\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-12-11T12:24:39\u002b08:00",
-    "datePublished": "2024-12-11T12:24:39\u002b08:00",
+    "dateCreated": "2024-12-11T12:35:03\u002b08:00",
+    "datePublished": "2024-12-11T12:35:03\u002b08:00",
     
-    "dateModified": "2024-12-11T12:24:39\u002b08:00",
+    "dateModified": "2024-12-11T12:35:03\u002b08:00",
     
-    "keywords": ["NPU","TOPS"],
+    "keywords": ["CPU","GPU","TPU"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "46"
+    "wordCount": "23"
   }]
   </script>
 
@@ -440,7 +441,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      神经网络处理器NPU简介
+      什么是CPU、GPU、TPU
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -481,7 +482,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-11T12:24:39&#43;08:00">2024-12-11</time>
+  <time datetime="2024-12-11T12:35:03&#43;08:00">2024-12-11</time>
   
 
   
@@ -505,18 +506,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/npu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    NPU
+    CPU
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TOPS
+    GPU
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tpu/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    TPU
   </span>
 </span>
   </span>
@@ -576,28 +585,30 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p><a href="https://www.gaitpu.com" target="_blank">TPU</a>是Google专属用于其数据中心业务的，可以先忽略，其实它也术语一种NPU。CPU可以说是个人电脑、服务器、笔记本、手机最核心的物理组件，GPU则是AI时代的“CPU”，用于加速深度学习应用，那么一个问题来了，享用 AI 只能通过云端的 GPU 运算吗？能不能在本地也能加速 AI 模型呢？这就要说到 NPU 神经网络处理器（Neural-network Processing Unit）。</p>
-<p>和CPU与GPU不同的是，NPU专门用于加速AI推理任务（比如由标量、向量和张量数学组成的神经网络层），尤其是手机终端设备，可以把它想象成GPU，核心特点有两点：</p>
-<ul>
-<li>
-<p>并行处理能力强</p>
-</li>
-<li>
-<p>近存储计算或存储内计算，实现存储和计算的一体化</p>
-</li>
-</ul>
-<p>NPU 和 GPU 的区别</p>
-<ul>
-<li>
-<p>GPUs更适合通用计算，NPUs是专门为AI和机器学习任务设计的专用处理器，去除了一些多余的功能。</p>
-</li>
-<li>
-<p>GPUs虽然并行能力更强，但功耗很大，而NPU由于其设计的原因，性能效率更好，适合终端设备。</p>
-</li>
-</ul>
-<p>CPU、GPU、NPU各有所长，并且相辅相成。对于设备端的AI电脑、AI手机芯片，通常通过将三者整合为系统级芯片（SoC）的方式，提高能源效率和性能。</p>
-<p>在去年英特尔发表的Core Ultra 芯片（代号“Meteor Lake”）首次将 NPU 整合到系统级芯片中，提出了 AI PC 的概念。</p>
-<p>那如何衡量一台电脑符合 AI PC 概念呢？度量它的单位叫做 TOPS，和CPU与GPU衡量性能单位 TFLOPS 不一样，TOPS（Trillions of Operations Per Second）表示每秒兆次计算，目前如果一台电脑或笔记本，TOPS 达到 40+，就认为符合 AI PC 标准。</p>
+          <p>Google今年发布了第六代自研芯片——<a href="https://www.gaitpu.com" target="_blank">Tensor Processing Unit（TPU）</a>，命名为Trillium。</p>
+<p>那到底什么是CPU、GPU、TPU？可能大部分人不知道吧。</p>
+<ol>
+<li>什么是CPU、GPU和TPU</li>
+</ol>
+<p>它们都是处理计算任务的芯片，尽管CPU、GPU和TPU都是处理器，但它们的专用程度逐步增加。</p>
+<p>CPU是“中央处理单元”的缩写，这是一种通用芯片，可以处理各种任务。就像大脑一样，CPU对某些任务的处理时间可能更长，因为它并不专门针对特定领域。</p>
+<p>接下来是GPU，GPU已成为加速计算任务的主力，从图像渲染到AI工作负载。它属于ASIC（应用专用集成电路）的一种。集成电路通常使用硅制造，因此人们也常用“硅”来指代芯片，简单来说，ASIC是为单一、特定用途设计的。</p>
+<p>TPU，即Tensor Processing Unit，是Google自研的ASIC。Google设计TPU的初衷就是为了运行AI计算任务，使其比CPU和GPU更加专用。TPU驱动了许多Google的热门AI服务，包括搜索、YouTube和DeepMind的大语言模型。</p>
+<ol start="2">
+<li>那么CPU、GPU和TPU都在哪里使用呢</li>
+</ol>
+<p>CPU和GPU都在日常生活中非常常见的设备中使用：几乎每部智能手机中都有CPU，而它们也存在于个人计算设备如笔记本电脑中。高端游戏系统或某些台式设备中可能会配备GPU，TPU则仅在Google的数据中心内使用</p>
+<ol start="3">
+<li>Google为什么开始考虑研发TPU？</li>
+</ol>
+<p>CPU是在20世纪50年代末发明的，GPU大约在90年代末出现。</p>
+<p>大约十年前，Google开始考虑研发TPU，当时语音识别服务质量显著提升，但数据中心计算机数量越来越大，需要一种比现有硬件更高效的解决方案，而且需要每个芯片具备更强的处理能力。</p>
+<p>“T”代表Tensor，Tensor是一种用于机器学习的数据结构名称。简单来说，许多数学运算在幕后支持着AI任务的实现。</p>
+<ol start="4">
+<li>TPU Trillium</li>
+</ol>
+<p>最新的TPU Trillium提升了计算能力：与上一代TPU v5e相比，Trillium的单芯片峰值计算性能提高了4.7倍。</p>
+<p>另一个优势是Trillium是迄今为止我们最环保的TPU——相比上一代TPU，它的能效提升了67%。随着AI需求不断增长，行业需要更可持续的基础设施扩展。Trillium本质上使用更少的电力来完成相同的工作。</p>
 
           
           
@@ -615,7 +626,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/introduction-to-npu/&amp;title=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;title=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -634,7 +645,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/introduction-to-npu/&amp;text=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://twitter.com/intent/tweet/?url=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;text=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -652,7 +663,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b&#43;https://www.kad8.com/ai/introduction-to-npu/"
+      href="https://bsky.app/intent/compose?text=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU&#43;https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/"
       title=""
       aria-label=""
       >
@@ -670,7 +681,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://s2f.kytta.dev/?text=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b%20https://www.kad8.com/ai/introduction-to-npu/"
+      href="https://s2f.kytta.dev/?text=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU%20https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/"
       title=""
       aria-label=""
       >
@@ -689,7 +700,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/introduction-to-npu/&amp;resubmit=true&amp;title=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://reddit.com/submit/?url=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;resubmit=true&amp;title=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="提交到 Reddit"
       aria-label="提交到 Reddit"
       >
@@ -708,7 +719,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/introduction-to-npu/&amp;description=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;description=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="钉到 Pinterest"
       aria-label="钉到 Pinterest"
       >
@@ -727,7 +738,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/introduction-to-npu/&amp;quote=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;quote=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -746,7 +757,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://www.kad8.com/ai/introduction-to-npu/&amp;subject=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="mailto:?body=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;subject=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -765,7 +776,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/introduction-to-npu/&amp;resubmit=true&amp;title=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://api.whatsapp.com/send?text=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;resubmit=true&amp;title=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title=""
       aria-label=""
       >
@@ -784,7 +795,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://www.kad8.com/ai/introduction-to-npu/&amp;resubmit=true&amp;title=%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%a4%84%e7%90%86%e5%99%a8NPU%e7%ae%80%e4%bb%8b"
+      href="https://t.me/share/url?url=https://www.kad8.com/ai/introduction-to-cpu-gpu-tpu/&amp;resubmit=true&amp;title=%e4%bb%80%e4%b9%88%e6%98%afCPU%e3%80%81GPU%e3%80%81TPU"
       title=""
       aria-label=""
       >
@@ -810,11 +821,11 @@
   
   
 
-  <a href="/ai/computer-computing-power-unit-introduction/" class="min-w-full">
+  <a href="/ai/difference-between-cpu-and-gpu/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/computer-computing-power-unit-introduction/featured-computing-power_hu12420348815275521962.webp);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/difference-between-cpu-and-gpu/featured-cpu-vs-gpu_hu6941947086386186526.webp);"></div>
         
       
 
@@ -822,7 +833,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ai/computer-computing-power-unit-introduction/">计算机算力单位简介</div>
+          href="/ai/difference-between-cpu-and-gpu/">CPU与GPU的区别</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -861,7 +872,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-24T22:39:07&#43;08:00">2024-10-24</time>
+  <time datetime="2024-10-21T23:01:17&#43;08:00">2024-10-21</time>
   
 
   
@@ -885,26 +896,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/computing-power/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Computing Power
+    CPU
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/flops/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    FLOPS
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tops/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TOPS
+    GPU
   </span>
 </span>
   </span>
@@ -930,11 +933,11 @@
   
   
 
-  <a href="/software/20-commonly-used-cmd-commands-and-examples-on-windows/" class="min-w-full">
+  <a href="/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/software/20-commonly-used-cmd-commands-and-examples-on-windows/featured-windows-10_hu10086348089548693658.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/featured-GPU-vs-LPU_hu700435244105783605.png);"></div>
         
       
 
@@ -942,7 +945,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/software/20-commonly-used-cmd-commands-and-examples-on-windows/">Windows 上常用的 20 CMD个命令及示例</div>
+          href="/ai/gpu-vs-lpu-which-is-better-for-ai-workloads/">GPU 与 LPU：哪个更适合 AI 工作负载</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -981,7 +984,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-09T23:57:44&#43;08:00">2024-12-09</time>
+  <time datetime="2024-12-06T23:10:01&#43;08:00">2024-12-06</time>
   
 
   
@@ -1005,18 +1008,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/windows/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Windows
+    GPU
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cmd/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/lpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    CMD
+    LPU
   </span>
 </span>
   </span>
@@ -1042,11 +1045,11 @@
   
   
 
-  <a href="/hardware/nvidia-will-launch-arm-based-ai-pc/" class="min-w-full">
+  <a href="/ai/intel-chiplet-gpu-design-patents/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/hardware/nvidia-will-launch-arm-based-ai-pc/featured-nvidia-ai-pc_hu1562412409348567682.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/ai/intel-chiplet-gpu-design-patents/featured-Intel_Chiplet_hu18050095102120156922.jpg);"></div>
         
       
 
@@ -1054,7 +1057,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hardware/nvidia-will-launch-arm-based-ai-pc/">英伟达明年将推出Arm架构处理器AI个人电脑</div>
+          href="/ai/intel-chiplet-gpu-design-patents/">英特尔获得 Chiplet GPU 设计专利</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1093,7 +1096,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-09T23:46:48&#43;08:00">2024-12-09</time>
+  <time datetime="2024-11-01T17:39:30&#43;08:00">2024-11-01</time>
   
 
   
@@ -1117,18 +1120,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvidia/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/chiplet/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nvidia
+    Chiplet
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai-pc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gpu/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AI PC
+    GPU
   </span>
 </span>
   </span>
@@ -1165,8 +1168,8 @@
           
         
       <script>
-        var oid = "views_ai\/introduction-to-npu\/index.md"
-        var oid_likes = "likes_ai\/introduction-to-npu\/index.md"
+        var oid = "views_ai\/introduction-to-cpu-gpu-tpu\/index.md"
+        var oid_likes = "likes_ai\/introduction-to-cpu-gpu-tpu\/index.md"
       </script>
       
       
@@ -1186,7 +1189,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/ai/nvidia-blackwell-ultra-version-will-be-available-next-year/">
+            <a class="flex group mr-3" href="/ai/introduction-to-npu/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1198,11 +1201,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >英伟达 Blackwell Ultra 版本将于明年上市</span
+                  >神经网络处理器NPU简介</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-12-07T00:10:10&#43;08:00">2024-12-07</time>
+                    <time datetime="2024-12-11T12:24:39&#43;08:00">2024-12-11</time>
                   
                 </span>
               </span>
@@ -1210,28 +1213,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/ai/introduction-to-cpu-gpu-tpu/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >什么是CPU、GPU、TPU</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-12-11T12:35:03&#43;08:00">2024-12-11</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

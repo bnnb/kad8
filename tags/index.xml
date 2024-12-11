@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Wed, 11 Dec 2024 12:24:39 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Dec 2024 12:35:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU</title>
+      <link>https://www.kad8.com/tags/cpu/</link>
+      <pubDate>Wed, 11 Dec 2024 12:35:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/cpu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://www.kad8.com/tags/gpu/</link>
+      <pubDate>Wed, 11 Dec 2024 12:35:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/gpu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TPU</title>
+      <link>https://www.kad8.com/tags/tpu/</link>
+      <pubDate>Wed, 11 Dec 2024 12:35:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/tpu/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>NPU</title>
       <link>https://www.kad8.com/tags/npu/</link>
@@ -164,16 +194,6 @@
       <pubDate>Fri, 06 Dec 2024 23:57:22 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/samsung/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>GPU</title>
-      <link>https://www.kad8.com/tags/gpu/</link>
-      <pubDate>Fri, 06 Dec 2024 23:10:01 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/gpu/</guid>
       <description></description>
       
     </item>
@@ -1734,16 +1754,6 @@
       <pubDate>Tue, 22 Oct 2024 23:29:17 +0800</pubDate>
       
       <guid>https://www.kad8.com/tags/ryzen-7/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>CPU</title>
-      <link>https://www.kad8.com/tags/cpu/</link>
-      <pubDate>Mon, 21 Oct 2024 23:01:17 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/tags/cpu/</guid>
       <description></description>
       
     </item>
