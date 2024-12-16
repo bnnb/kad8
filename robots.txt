@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.kad8.com/sitemap.xml
